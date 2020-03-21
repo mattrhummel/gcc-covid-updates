@@ -104,8 +104,8 @@
 }
 .callout.alert {
 
-  background-color: $alert;
-  border: 1px solid $alert;
+  background-color: $alert !important;
+  border: 1px solid $alert !important;
 
   .close-button {
     color: $secondary;
