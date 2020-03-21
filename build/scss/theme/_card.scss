@@ -77,3 +77,14 @@ min-height: 100%;
 }
 
 }
+
+.card {
+
+a.button {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+}
