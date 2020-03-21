@@ -582,7 +582,10 @@ p a {
   p {
     color: $white;
   }
-
+  a {
+    color: $white;
+    padding: 0 1rem;
+  }
   a.primary.button {
     color: $white !important;
   }
