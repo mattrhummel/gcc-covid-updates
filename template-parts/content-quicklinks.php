@@ -26,7 +26,7 @@
 
         <li class="black-button show-for-medium"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
         <li class="red-button  show-for-medium"><a href="/admissions/request-information/">get info</a></li>
-        <li class="yellow-button  show-for-medium"><a href="/donate/" class="primary">give</a></li>
+        <li class="yellow-button  show-for-medium"><a href="/educational-foundation/donate/" class="primary">give</a></li>
         <li><button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button></li>
 
     </ul>
@@ -72,7 +72,7 @@
 
         <li class="black-button"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
         <li class="red-button"><a href="/admissions/request-information/">get info</a></li>
-        <li class="yellow-button"><a href="/donate/" class="primary">give</a></li>
+        <li class="yellow-button"><a href="/educational-foundation/donate/" class="primary">give</a></li>
 
     </ul>
 
