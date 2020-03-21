@@ -443,7 +443,7 @@ p a {
   a.button {
     color: $white !important;
     background-color: $black !important;
-    margin: 0 0 1rem 1rem;
+    margin: 0 0 1rem 0;
     text-decoration: none;
 
     &:hover {
@@ -522,7 +522,7 @@ p a {
     a.button {
     color: $secondary !important;
     background-color: $white !important;
-        margin: 0 0 1rem 1rem;
+        margin: 0 0 1rem 0;
         text-decoration: none;
 
     &:hover {
