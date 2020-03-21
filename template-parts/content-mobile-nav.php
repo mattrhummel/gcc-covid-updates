@@ -5,8 +5,27 @@
 </button>
   </div>
        
-
   <div class="row expanded no-js mobile-nav">
+
+    <div class="row mobile-search">
+      
+     <form class="float-right" role="search" method="get" id="searchform" action="<?php echo get_home_url(); ?>/search_gcse/">
+                  <div class="input-group">
+                    <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
+                    <input type="hidden" name="ie" value="utf8" title="hidden" />
+                    <input type="hidden" name="oe" value="utf8" title="hidden" />
+                    <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
+                    <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
+                    
+                    <input type="text" name="q" id="search-field" class="input-group-field">
+                    
+                    <div class="input-group-button">
+                      <button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+                    </div>
+                  </div>
+    </form>
+
+    </div>
 
   	<div class="mobile-resources">
 
@@ -32,6 +51,15 @@
     
     <?php  //function located in inc/main-navigation.php
     gcc_wp_2018_mobile_offcanvas(); ?>
+
+    <hr>
+
+       <ul class="menu mobile-quicklinks">
+
+      <li><a href="https://mysupport.germanna.edu/">24/7 student support</a></li>
+      <li><a href="/contact-us/">contact us</a></li>
+
+    </ul>
 
 
   </div>

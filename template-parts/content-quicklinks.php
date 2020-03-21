@@ -22,17 +22,16 @@
   </div>
 </div>
 
-<div class="top-banner" id="top-menu" data-toggler="hide">
+<div class="top-banner show-for-xlarge" id="top-menu" data-toggler="hide">
 
 <div class="top-bar">
 
-  <div class="top-bar-left">
+  <div class="top-bar-left ">
 
       <?php  //function located in inc/main-navigation.php
       //gcc_wp_2018_resource_menu(); ?>
 
-
-    <ul class="dropdown menu align-center  show-for-xlarge" data-dropdown-menu>
+    <ul class="dropdown menu align-center " data-dropdown-menu>
       <li class="red-button">
         <a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
       </li>
@@ -48,7 +47,6 @@
       </li>
     </ul>
 
-
   </div>
 
   <div class="top-bar-right">
@@ -56,7 +54,7 @@
      <?php //function located in inc/main-navigation.php
       //gcc_wp_2018_information_menu(); ?>
 
-      <ul class="menu">
+      <ul class="menu stacked">
 
         <li class="black-button"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
         <li class="red-button"><a href="https://www.germanna.edu/admissions/request-information/">get info</a></li>
@@ -68,8 +66,7 @@
 
 </div>
 
-<div class="row expanded collapse search-container clearfix">
-
+<div class="row expanded search-container clearfix show-for-xlarge">
 
      <form class="float-right" role="search" method="get" id="searchform" action="<?php echo get_home_url(); ?>/search_gcse/">
                   <div class="input-group">
@@ -85,7 +82,7 @@
                       <button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
                     </div>
                   </div>
-                </form>
+    </form>
 
     <ul class="menu float-right">
 

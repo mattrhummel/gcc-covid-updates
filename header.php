@@ -79,4 +79,4 @@
           <?php  //quicklinks
           get_template_part( 'template-parts/content', 'quicklinks' );
           ?>
-          <main>
+          <main class=" clearfix">
