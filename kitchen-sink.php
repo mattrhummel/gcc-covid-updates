@@ -38,65 +38,6 @@ get_header(); ?>
           ?>
 
         
-  <h2>Colors</h2>
-
-    <div class="row">
-        <div class="small-3 large-3 columns" style="background-color: #AD1B31; display: block; padding: 10px; margin: 0 6px 0 12px; color: #ffffff; height: 220px; width: 220px;">
-            <p>Primary Color: #AD1B31</p>
-                </div>
-        <div class="small-3 large-3 columns" style="background-color: #000000; display: block; margin: 0 6px; color: #ffffff; height: 220px; width: 220px;">
-            <p>Secondary Color: #000000</p>
-                </div>
-
-        <div class="small-3 large-3 columns" style="background-color: #E6B034; display: block; padding: 10px; margin: 0 6px; color: #ffffff; height: 220px; width: 220px;">
-            <p>Accent Color: #E6B034</p>
-                </div>
-
-                <div class="small-3 large-3 columns" >
-          
-                </div>
-
-                </div>
-
-         <div class="row">
-
-          <div class="small-3 large-3 columns" style="background-color: #f04124; display: block; padding: 10px; margin: 10px 6px 0 12px; color: #ffffff; height: 220px; width: 220px;">
-            <p>Alert Color: #Af04124</p>
-                </div>
-        <div class="small-3 large-3 columns" style="background-color: #43AC6A; display: block; padding: 10px;margin: 10px 6px 0px 6px; color: #ffffff;height: 220px; width: 220px;">
-            <p>Success Color: #43AC6A</p>
-                </div>
-
-        <div class="small-3 large-3 columns" style="background-color: #f08a24; display: block; padding: 10px; margin: 10px 6px 0px 6px; color: #ffffff;height: 220px; width: 220px;">
-            <p>Warning color: #f08a24</p>
-                </div>
-
-                <div class="small-3 large-3 columns" >
-          
-                </div>
-
-                </div>
-
-                <div class="row">
-
-          <div class="small-3 large-3 columns" style="background-color: #a0d3e8; display: block; padding: 10px; margin: 10px 6px 0 12px; color: #ffffff;height: 220px; width: 220px;">
-            <p>Info Color: #a0d3e8</p>
-                </div>
-        <div class="small-3 large-3 columns" style="background-color: #2980b9; display: block; padding: 10px; margin: 10px 6px 0px 6px; color: #ffffff;height: 220px; width: 220px;">
-            <p>Anchor Color: #2980b9</p>
-                </div>
-
-        <div class="small-3 large-3 columns">
-        <div class="small-3 large-3 columns" style="background-color: #444444; display: block; padding: 10px; margin: 10px 0px 0px 0px; color: #ffffff;height: 220px; width: 220px;">
-            <p>Main Nav Color: #444444</p>
-            
-                </div>
-
-                <div class="small-3 large-3 columns" >
-          
-                </div>
-
-                </div>
 
  <hr >
 
@@ -104,8 +45,8 @@ get_header(); ?>
 
  <h3>Fonts Stacks</h3>
 
- <p><strong>Heading Font:</strong> "Century Gothic",Calibri, Arial, sans-serif<br/>
- <strong>Body Fonts:</strong> "Calibri", Arial, sans-serif</p>
+ <p><strong>Heading Font:</strong> "Robot", Arial, sans-serif<br/>
+ <strong>Body Fonts:</strong> "Roboto", Arial, sans-serif</p>
 
 
     <h3>Headings</h3>
@@ -144,8 +85,11 @@ get_header(); ?>
       </ol>
 
       <h3 style="margin-top: 20px;">Blockquote</h3>
-      <blockquote>Use this for when quoting someone<cite>Isaac Asimov</cite></blockquote>
 
+          <blockquote>
+            Those people who think they know everything are a great annoyance to those of us who do.
+            <cite>Isaac Asimov</cite>
+          </blockquote>
       <hr>
 
       <h2>Buttons</h2>
@@ -156,77 +100,147 @@ get_header(); ?>
         <div class="small-9 large-9 columns">
           <a href="#" class="button secondary">Secondary Button</a>
         </div>
+          <div class="small-9 large-9 columns">
+          <a href="#" class="button alert">Secondary Button</a>
+        </div>
+           <div class="small-9 large-9 columns">
+          <a href="#" class="button success">Secondary Button</a>
+        </div>
+           <div class="small-9 large-9 columns">
+          <a href="#" class="button warning">Secondary Button</a>
+        </div>
       </div>
 
       <hr>
 
       <h2>Button Groups</h2>
 
-      <div class="small-6 large-6 columns">
       <p><strong>Primary Button Group</strong></p>
-      <ul class="button-group">
-        <li><a href="#" class="small button">Button 1</a></li>
-        <li><a href="#" class="small button">Button 2</a></li>
-        <li><a href="#" class="small button">Button 3</a></li>
-      </ul>
+
+      <div class="button-group">
+          <a class="button">One</a>
+          <a class="button">Two</a>
+          <a class="button">Three</a>
       </div>
 
-      <div class="small-6 large-6 columns">
-    
       <p><strong>Secondary Button Group</strong></p>
 
-      <ul class="button-group">
-        <li><a href="#" class="small button secondary">Button 1</a></li>
-        <li><a href="#" class="small button secondary">Button 2</a></li>
-        <li><a href="#" class="small button secondary">Button 3</a></li>
-      </ul>
-      </div>
+        <div class="button-group">
+          <a class="button button">One</a>
+          <a class="button button">Two</a>
+          <a class="button button">Three</a>
+       </div>
+  
+      <p><strong>Alert Button Group</strong></p>
+
+        <div class="button-group">
+          <a class="button alert">One</a>
+          <a class="button alert">Two</a>
+          <a class="button alert">Three</a>
+       </div>
 
       <hr>
 
       <h2 id="forms">Forms</h2>
-      <form>
-        <fieldset>
-          <legend>Fieldset</legend>
+    
 
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-12.columns">
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns">
-            </div>
-            <div class="large-4 columns">
-              <label>Input Label</label>
-              <input type="text" placeholder="large-4.columns">
-            </div>
-            <div class="large-4 columns">
-              <div class="row collapse">
-                <label>Input Label</label>
-                <div class="small-9 columns">
-                  <input type="text" placeholder="small-9.columns">
-                </div>
-                <div class="small-3 columns">
-                  <span class="postfix">.com</span>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="row">
-            <div class="large-12 columns">
-              <label>Textarea Label</label>
-              <textarea placeholder="small-12.columns"></textarea>
-            </div>
-          </div>
-
-        </fieldset>
-      </form>
+<form data-abide novalidate>
+  <div data-abide-error class="alert callout" style="display: none;">
+    <p><i class="fi-alert"></i> There are some errors in your form.</p>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell small-12">
+        <label>Number Required
+          <input type="text" placeholder="1234" aria-describedby="example1Hint1" aria-errormessage="example1Error1" required pattern="number">
+          <span class="form-error">
+            Yo, you had better fill this out, it's required.
+          </span>
+        </label>
+      <p class="help-text" id="example1Hint1">Here's how you use this input field!</p>
+      </div>
+      <div class="cell small-12">
+        <label>Password Required
+          <input type="password" id="password" placeholder="yeti4preZ" aria-describedby="example1Hint2" aria-errormessage="example1Error2" required >
+          <span class="form-error">
+            I'm required!
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint2">Enter a password please.</p>
+      </div>
+      <div class="cell small-12">
+        <label>Re-enter Password
+          <input type="password" placeholder="yeti4preZ" aria-describedby="example1Hint3" aria-errormessage="example1Error3" required pattern="alpha_numeric" data-equalto="password">
+          <span class="form-error">
+            Hey, passwords are supposed to match!
+          </span>
+        </label>
+        <p class="help-text" id="example1Hint3">This field is using the `data-equalto="password"` attribute, causing it to match the password field above.</p>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <label>URL Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL.
+          <input type="text" placeholder="https://get.foundation" pattern="url">
+        </label>
+      </div>
+      <div class="cell large-6">
+        <label>Website Pattern, not required, but throws error if it doesn't match the Regular Expression for a valid URL or a Domain.
+          <input type="text" placeholder="https://zurb.com or zurb.com" pattern="website">
+        </label>
+      </div>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <div class="cell large-6">
+        <label>European Cars, Choose One, it can't be the blank option.
+          <select id="select" required>
+            <option value=""></option>
+            <option value="volvo">Volvo</option>
+            <option value="saab">Saab</option>
+            <option value="mercedes">Mercedes</option>
+            <option value="audi">Audi</option>
+          </select>
+        </label>
+      </div>
+      <fieldset class="cell large-6">
+        <legend>Check these out</legend>
+        <input id="checkbox1" type="checkbox"><label for="checkbox1">Checkbox 1</label>
+        <input id="checkbox2" type="checkbox" required><label for="checkbox2">Checkbox 2</label>
+        <input id="checkbox3" type="checkbox"><label for="checkbox3">Checkbox 3</label>
+      </fieldset>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <fieldset class="cell large-6">
+        <legend>Choose Your Favorite - not required, you can leave this one blank.</legend>
+        <input type="radio" name="pockets" value="Red" id="pocketsRed"><label for="pocketsRed">Red</label>
+        <input type="radio" name="pockets" value="Blue" id="pocketsBlue"><label for="pocketsBlue">Blue</label>
+        <input type="radio" name="pockets" value="Yellow" id="pocketsYellow"><label for="pocketsYellow">Yellow</label>
+      </fieldset>
+      <fieldset class="cell large-6">
+        <legend>Choose Your Favorite, and this is required, so you have to pick one.</legend>
+        <input type="radio" name="pokemon" value="Red" id="pokemonRed"><label for="pokemonRed">Red</label>
+        <input type="radio" name="pokemon" value="Blue" id="pokemonBlue" required><label for="pokemonBlue">Blue</label>
+        <input type="radio" name="pokemon" value="Yellow" id="pokemonYellow"><label for="pokemonYellow">Yellow</label>
+      </fieldset>
+    </div>
+  </div>
+  <div class="grid-container">
+    <div class="grid-x grid-margin-x">
+      <fieldset class="cell large-6">
+        <button class="button" type="submit" value="Submit">Submit</button>
+      </fieldset>
+      <fieldset class="cell large-6">
+        <button class="button" type="reset" value="Reset">Reset</button>
+      </fieldset>
+    </div>
+  </div>
+</form>
 
       <hr>
       <h2>Inline Lists</h2>
@@ -273,69 +287,40 @@ get_header(); ?>
       <hr>
       <h2>Accordion</h2>
  
-  <h3>Standard</h3>
-  <dl class="accordion yourcustomclass" data-accordion="">
-  <dd class="accordion-navigation active">
-    <a href="#panel1a">Accordion 1</a>
-    <div id="panel1a" class="content active">
-      <ul class="small-block-grid-2 large-block-grid-3 ">
-        <li><img src="http://placehold.it/350x150"></li>
-        <li><img src="http://placehold.it/350x150"></li>
-        <li><img src="http://placehold.it/350x150"></li>
-      </ul>
+  <ul class="accordion" data-accordion>
+  <li class="accordion-item is-active" data-accordion-item>
+    <!-- Accordion tab title -->
+    <a href="#" class="accordion-title">Accordion 1</a>
+
+    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
+    <div class="accordion-content" data-tab-content>
+      <p>Panel 1. Lorem ipsum dolor</p>
+      <a href="#">Nowhere to Go</a>
     </div>
-  </dd>
-  <dd class="accordion-navigation">
-    <a href="#panel2a">Accordion 2</a>
-    <div id="panel2a" class="content">
-      <div class="row">
-        <div class="small-6 columns">
-          <p>Panel 2. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-      </div>
-      <div class="small-6 columns">
-        <img src="http://placehold.it/350x150">
-      </div>
-    </div>
-  </div></dd>
-  <dd class="accordion-navigation">
-    <a href="#panel3a">Accordion 3</a>
-    <div id="panel3a" class="content">
-      Panel 3. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-    </div>
-  </dd>
+  </li>
+  <!-- ... -->
 </ul>
 
       <hr>
       <h2>Tabs</h2>
-      <dl class="tabs" data-tab>
-        <dd class="active"><a href="#panel2-1">Tab 1</a></dd>
-        <dd><a href="#panel2-2">Tab 2</a></dd>
-        <dd><a href="#panel2-3">Tab 3</a></dd>
-        <dd><a href="#panel2-4">Tab 4</a></dd>
-      </dl>
-      <div class="tabs-content">
-        <div class="content active" id="panel2-1">
-          <p>First panel content goes here...</p>
-        </div>
-        <div class="content" id="panel2-2">
-          <p>Second panel content goes here...</p>
-        </div>
-        <div class="content" id="panel2-3">
-          <p>Third panel content goes here...</p>
-        </div>
-        <div class="content" id="panel2-4">
-          <p>Fourth panel content goes here...</p>
-        </div>
-      </div>
-
+      
+      <div class="tabs-content" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panel1">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+  <div class="tabs-panel" id="panel2">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  </div>
+</div>
     
       <hr>
-      <h2 >Sub Nav</h2>
-      <ul class="sub-nav">
-        <li><a href="#">Active</a></li>
-        <li><a href="#">Pending</a></li>
-        <li><a href="#">Suspended</a></li>
-      </ul>
+      <h2>Menu</h2>
+     <ul class="menu align-right">
+        <li><a href="#">One</a></li>
+        <li><a href="#">Two</a></li>
+        <li><a href="#">Three</a></li>
+        <li><a href="#">Four</a></li>
+    </ul>
 
       <hr>
 
@@ -373,12 +358,10 @@ get_header(); ?>
 
       <hr>
       <h2 id="thumbnails">Thumbnails</h2>
-      <p><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/earth-th-sm.jpg" alt=""><img class="th" src="http://foundation.zurb.com/docs/assets/img/examples/space-th-sm.jpg" alt=""></p>
-
-      <hr>
-      <h2 id="tooltips">Tooltips</h2>
-      <p>The tooltips can be positioned on the <span data-tooltip class="has-tip" data-width="210" title="I'm on bottom and the default position.">&quot;tip-bottom&quot;</span>, which is the default position, <span data-tooltip class="has-tip tip-top noradius" data-width="210" title="I'm on the top and I'm not rounded!">&quot;tip-top&quot; (hehe)</span>, <span data-tooltip="left" class="has-tip tip-left" data-width="90" title="I'm on the left!">&quot;tip-left&quot;</span>, or <span data-tooltip="right" class="has-tip tip-right" data-width="120" title="I'm on the right!">&quot;tip-right&quot;</span> of the target element by adding the appropriate class to them. You can even add your own custom class to style each tip differently. On a small device, the tooltips are full width and bottom aligned.</p>
-
+     <img class="thumbnail" src="assets/img/thumbnail/01.jpg" alt="Photo of Uranus.">
+    <a href="#" class="thumbnail"><img src="assets/img/thumbnail/02.jpg" alt="Photo of Neptune."></a>
+      <img class="thumbnail" src="assets/img/thumbnail/03.jpg" alt="Photo of Pluto.">
+      
       </div>
 
       
