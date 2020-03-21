@@ -274,27 +274,27 @@ get_header(); ?>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout primary">
+     <div class="callout small primary">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout secondary">
+     <div class="callout small secondary">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout alert">
+     <div class="callout small alert">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout success">
+     <div class="callout small success">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout warning">
+     <div class="callout small warning">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
