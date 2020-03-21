@@ -11,17 +11,16 @@
 
     h2, h3, h4, h5 {
       padding: 1rem;
-      color: $black;
-      
+      color: $white;
     }
 
     p {
-      padding: 0; 
+      padding: 0 1rem; 
       font-size: 1.2rem;
-      color: $black !important;
+      color: $white;
+
       a {
         text-decoration: underline;
-         padding: 0 1rem; 
       }
     }
 
@@ -580,10 +579,7 @@ p a {
   p {
     color: $white;
   }
-  a {
-    color: $white;
-    padding: 0 1rem;
-  }
+
   a.primary.button {
     color: $white !important;
   }
