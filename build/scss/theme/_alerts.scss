@@ -21,6 +21,7 @@
 
       a {
         text-decoration: underline;
+        padding-left: 1rem;
       }
     }
 
@@ -120,6 +121,7 @@
 
   p {
     color: $secondary;
+    padding: 0 1rem;
   }
 
 ul.accordion {
@@ -511,7 +513,7 @@ p a {
   }
 
   a {
-        text-decoration: underline;
+    text-decoration: underline;
     color: $white;
 
     &:hover {
