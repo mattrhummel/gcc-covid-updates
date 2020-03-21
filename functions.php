@@ -82,4 +82,4 @@ require get_template_directory() . '/inc/customizer.php';
 /**
  * Cleanup.
  */
-// require get_template_directory() . '/inc/cleanup.php';
+require get_template_directory() . '/inc/cleanup.php';
