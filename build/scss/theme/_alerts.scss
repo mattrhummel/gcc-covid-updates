@@ -49,165 +49,6 @@
     }
 
 }
-.callout.green {
-
-  background-color: $success;
-  border: 1px solid $success;
-
-  .close-button {
-    color: $secondary;
-  }
-
-  .close-button:hover {
-    color: $primary;
-  }
-
-    h2, h3, h4, h5 {
-      padding: 1rem;
-      color: $white;
-    }
-
-    p {
-      padding: 0 1rem; 
-      font-size: 1.2rem;
-      color: $white;
-
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    ul {
-      padding: 0 1rem 1rem 1rem;
-
-      li {
-        padding: 0;
-
-        a {
-          padding: 0;
-        }
-      }
-    }
-
-    table {
-      width: 96% !important;
-      margin: 0 auto 1rem;
-    }
-
-    .callout-image {
-
-        width: 100%;
-        padding: 0 1rem;
-        margin-bottom: .9rem;
-    }
-
-}
-.callout.alert {
-
-  background-color: $alert !important;
-  border: 1px solid $alert !important;
-
-  .close-button {
-    color: $secondary;
-  }
-
-  .close-button:hover {
-    color: $primary;
-  }
-
-    h2, h3, h4, h5 {
-      padding: 1rem;
-      color: $white;
-    }
-
-    p {
-      padding: 0 1rem; 
-      font-size: 1.2rem;
-      color: $white;
-
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    ul {
-      padding: 0 1rem 1rem 1rem;
-
-      li {
-        padding: 0;
-
-        a {
-          padding: 0;
-        }
-      }
-    }
-
-    table {
-      width: 96% !important;
-      margin: 0 auto 1rem;
-    }
-
-    .callout-image {
-
-        width: 100%;
-        padding: 0 1rem;
-        margin-bottom: .9rem;
-    }
-
-}
-.callout.black {
-
-  background-color: $black;
-  border: 1px solid $black;
-
-  .close-button {
-    color: $secondary;
-  }
-
-  .close-button:hover {
-    color: $primary;
-  }
-
-    h2, h3, h4, h5 {
-      padding: 1rem;
-      color: $white;
-    }
-
-    p {
-      padding: 0 1rem; 
-      font-size: 1.2rem;
-      color: $white;
-
-      a {
-        text-decoration: underline;
-      }
-    }
-
-    ul {
-      padding: 0 1rem 1rem 1rem;
-
-      li {
-        padding: 0;
-
-        a {
-          padding: 0;
-        }
-      }
-    }
-
-    table {
-      width: 96% !important;
-      margin: 0 auto 1rem;
-    }
-
-    .callout-image {
-
-        width: 100%;
-        padding: 0 1rem;
-        margin-bottom: .9rem;
-    }
-
-}
 .callout.small {
   display: block;
   overflow: hidden;
@@ -342,6 +183,7 @@ span.primary.label {
 .page-template-page-full .entry-content .small-uncollapse > .columns .callout, .entry-content .small-uncollapse > .columns .callout, .page-template-page-full .entry-content .small-uncollapse > .columns .callout, .entry-content .small-uncollapse > .columns .fp-tabs-wrap {
     margin: 1rem 0;
 }
+
 //Secondary callout
 .callout.secondary {
   background-color: $light-gray !important;
@@ -395,13 +237,7 @@ p a {
   position: relative;
   text-align: right;
 }
-//Alert callout
-.callout.alert {
-  background-color: $light-gray !important;
-  border: 2px solid $primary !important;
-  padding: 1rem;
-  color: $secondary !important;
-}
+
 //Closing Announcement
 .closing {
 
@@ -574,3 +410,157 @@ p a {
    }
  }
 }
+.callout.alert {
+  background-color: $alert !important;
+  border: 2px solid $alert !important;
+  color: $black !important;
+
+  h2,
+  h3 {
+
+    color: $black;
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  h4, h5,h6 {
+    color: $secondary;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: $secondary;
+  }
+
+  a.primary.button {
+    color: $secondary !important;
+  }
+
+    /* visited link */
+  a.button.primary:visited {
+      color: $secondary;
+      background: rgba(255,255,255, .01);
+  }
+  /* selected link */
+  a.button.primary:active {
+      color: $secondary;
+      background: rgba(255,255,255, .01);
+  }
+  a.button.primary:hover {
+    background: rgba(255,255,255, .01);
+    color: $secondary;
+  }
+  a.button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $alert;
+    position: absolute;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+    margin-left: 0.8rem;
+    margin-top: -.2rem;
+    background-color: $black;
+    padding: 0.2rem 0.4rem;
+  }
+  a.button.primary:hover::after {
+    background-color: $black;
+    color: $white;
+    padding: 0.2rem 0.4rem;
+  }
+
+  }
+
+  .callout.success {
+  background-color: $success !important;
+  border: 2px solid $success !important;
+  color: $white !important;
+
+  h2,
+  h3 {
+
+    color: $white;
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  h4, h5,h6 {
+    color: $white;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: $white;
+  }
+
+  a.primary.button {
+    color: $white !important;
+  }
+
+    a.button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $success;
+    position: absolute;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+    margin-left: 0.8rem;
+    margin-top: -.2rem;
+    background-color: $white;
+    padding: 0.2rem 0.4rem;
+  }
+  a.button.primary:hover::after {
+    background-color: $success;
+    color: $white;
+    padding: 0.2rem 0.4rem;
+  }
+
+  }
+
+  .callout.warning {
+  background-color: $black !important;
+  border: 2px solid $black !important;
+  color: $white !important;
+
+  h2,
+  h3 {
+
+    color: $white;
+    font-size: 1.4rem;
+    margin-top: 0;
+  }
+
+  h4, h5,h6 {
+    color: $white;
+    padding-bottom: 0;
+  }
+
+  p {
+    color: $white;
+  }
+
+  a.primary.button {
+    color: $white !important;
+  }
+
+    a.button.primary::after {
+    font-family: FontAwesome;
+    content: "\f061";
+    border-radius: 100%;
+    color: $black;
+    position: absolute;
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+    margin-left: 0.8rem;
+    margin-top: -.2rem;
+    background-color: $white;
+    padding: 0.2rem 0.4rem;
+  }
+  a.button.primary:hover::after {
+    background-color: $black;
+    color: $white;
+    padding: 0.2rem 0.4rem;
+  }
+
+  }

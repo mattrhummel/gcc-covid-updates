@@ -326,12 +326,12 @@ $buttongroup-radius-on-each: true;
 // 13. Callout
 // -----------
 
-$callout-background: $primary;
+$callout-background: $light-gray;
 $callout-background-fade: 1%;
 $callout-border: none;
 $callout-margin: 0 0 2rem 0;
 $callout-padding: 2rem;
-$callout-font-color: $white;
+$callout-font-color: $secondary;
 $callout-font-color-alt: $body-background;
 $callout-radius: $global-radius;
 $callout-link-tint: 30%;
