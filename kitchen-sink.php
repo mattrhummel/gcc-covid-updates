@@ -320,15 +320,43 @@ get_header(); ?>
       <hr>
       <h2>Tabs</h2>
       
-      <div class="tabs-content" data-tabs-content="example-tabs">
+<ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
+  <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
+  <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
+  <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
+  <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="example-tabs">
   <div class="tabs-panel is-active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+    <p>one</p>
+    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
+    <p><a href="#">I am a link but don&#39;t do anything</a></p>
   </div>
   <div class="tabs-panel" id="panel2">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+    <p>two</p>
+    <textarea></textarea>
+    <button class="button">I do nothing!</button>
+  </div>
+  <div class="tabs-panel" id="panel3">
+    <p>three</p>
+    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
+  </div>
+  <div class="tabs-panel" id="panel4">
+    <p>four</p>
+    <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
+  </div>
+  <div class="tabs-panel" id="panel5">
+    <p>five</p>
+    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
+  </div>
+  <div class="tabs-panel" id="panel6">
+    <p>six</p>
+    <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
   </div>
 </div>
-    
       <hr>
       <h2>Menu</h2>
      <ul class="menu align-right">
