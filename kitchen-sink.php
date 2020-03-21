@@ -320,45 +320,16 @@ get_header(); ?>
       <hr>
       <h2>Tabs</h2>
       
-<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
-  <li class="tabs-title"><a href="#panel2">Tab 2</a></li>
-  <li class="tabs-title"><a href="#panel3">Tab 3</a></li>
-  <li class="tabs-title"><a href="#panel4">Tab 4</a></li>
-  <li class="tabs-title"><a href="#panel5">Tab 5</a></li>
-  <li class="tabs-title"><a href="#panel6">Tab 6</a></li>
-</ul>
-
-<div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-content" data-tabs-content="example-tabs">
   <div class="tabs-panel is-active" id="panel1">
-    <p>one</p>
-    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
-    <p><a href="#">I am a link but don&#39;t do anything</a></p>
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
   </div>
   <div class="tabs-panel" id="panel2">
-    <p>two</p>
-    <textarea></textarea>
-    <button class="button">I do nothing!</button>
-  </div>
-  <div class="tabs-panel" id="panel3">
-    <p>three</p>
-    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
-  </div>
-  <div class="tabs-panel" id="panel4">
-    <p>four</p>
-    <img class="thumbnail" src="assets/img/generic/rectangle-2.jpg">
-  </div>
-  <div class="tabs-panel" id="panel5">
-    <p>five</p>
-    <p>Check me out! I&#39;m a super cool Tab panel with text content!</p>
-  </div>
-  <div class="tabs-panel" id="panel6">
-    <p>six</p>
-    <img class="thumbnail" src="assets/img/generic/rectangle-8.jpg">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
   </div>
 </div>
+    
       <hr>
-
       <h2>Menu</h2>
      <ul class="menu align-right">
         <li><a href="#">One</a></li>
@@ -403,13 +374,16 @@ get_header(); ?>
 
       <hr>
       <h2 id="thumbnails">Thumbnails</h2>
-     <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Uranus.">
-    <a href="#" class="thumbnail"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Neptune."></a>
-      <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Pluto.">
+     <img class="thumbnail" src="assets/img/thumbnail/01.jpg" alt="Photo of Uranus.">
+    <a href="#" class="thumbnail"><img src="assets/img/thumbnail/02.jpg" alt="Photo of Neptune."></a>
+      <img class="thumbnail" src="assets/img/thumbnail/03.jpg" alt="Photo of Pluto.">
       
-   
+      </div>
 
-       
+      
+      </div>
+    </div>
+    
     <?php get_sidebar();?>
     
       </div><!--.pagecontent-->
