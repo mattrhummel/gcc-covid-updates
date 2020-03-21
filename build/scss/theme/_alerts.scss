@@ -122,6 +122,13 @@
     color: $secondary;
   }
 
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
 ul.accordion {
 
 li.accordion-item {
