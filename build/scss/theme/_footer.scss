@@ -4,16 +4,17 @@
   color: $white;
   text-align: center;
 
-     @media screen and (min-width: 40em) {
-    
-     text-align: left;
+   @media screen and (min-width: 40em) {
+  
+   text-align: left;
 
-    }
+  }
 
   .top-footer {
 
    .custom-logo-link {
     margin: 0 0 2rem 0;
+    max-width: 260px;
     }
 
     .marketing-site-footer-block  {
@@ -21,7 +22,7 @@
   
   }
 
-      padding: 2rem;
+    padding: 2rem;
 
     .contact-icon, .contact {
       
