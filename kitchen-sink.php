@@ -319,15 +319,7 @@ get_header(); ?>
 
       <hr>
       <h2>Tabs</h2>
-      
-      <div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel is-active" id="panel1">
-    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
-  </div>
-  <div class="tabs-panel" id="panel2">
-    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
-  </div>
-</div>
+
     
       <hr>
       <h2>Menu</h2>
@@ -387,10 +379,8 @@ get_header(); ?>
     <?php get_sidebar();?>
     
       </div><!--.pagecontent-->
-  
-    </article>
 
-  <div class="row expanded entry-footer">
+        <div class="row expanded entry-footer">
      <footer>
          <?php $u_time = get_the_time('U'); 
         $u_modified_time = get_the_modified_time('U'); 
@@ -401,6 +391,9 @@ get_header(); ?>
         <?php gcc_wp_2018_entry_footer(); ?>
     <footer>
   </div>
+  
+    </article>
+
     
    <?php endwhile; // End of the loop. ?>
 
