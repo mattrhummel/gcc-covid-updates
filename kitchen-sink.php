@@ -374,9 +374,9 @@ get_header(); ?>
 
       <hr>
       <h2 id="thumbnails">Thumbnails</h2>
-     <img class="thumbnail" src="assets/img/thumbnail/01.jpg" alt="Photo of Uranus.">
-    <a href="#" class="thumbnail"><img src="assets/img/thumbnail/02.jpg" alt="Photo of Neptune."></a>
-      <img class="thumbnail" src="assets/img/thumbnail/03.jpg" alt="Photo of Pluto.">
+     <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Uranus.">
+    <a href="#" class="thumbnail"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Neptune."></a>
+      <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Pluto.">
       
       </div>
 
