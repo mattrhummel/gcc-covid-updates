@@ -1,0 +1,127 @@
+//Branding and Main Navigation
+@media screen and (min-width: 40em) {
+
+.branding {
+  background-color: $primary;
+  padding: 0;
+  max-width: 300px !important;
+  margin-bottom: 1rem;
+  max-height: 100px;
+}
+
+
+.custom-logo-link, .mobile-logo {
+  overflow: hidden;
+  display: block;
+  position: relative;
+}
+.custom-logo-link {
+  margin: 1rem 2rem;
+}
+.mobile-logo {
+  margin: .5rem;
+}
+
+
+#main-menu,
+#menu-container,
+#popout-menu {
+  //main sidebar styles
+  background-color: $light-gray;
+  //do not change these styles
+  overflow: visible;
+  position: absolute;
+  z-index: 99999;
+
+  .gcc-main-nav {
+    //sidebar navigation styles
+    background-color: $light-gray;
+    position: relative;
+    //top menu
+    
+    li {
+      a {
+        background-color: transparent;
+        -webkit-text-decoration-skip: objects;
+        line-height: inherit;
+        color: $primary;
+        cursor: pointer;
+        padding: 0.5rem 2rem 0.5rem 1rem;
+        font-weight: 600;
+        transition: all 0.25s ease-in;
+        font-size: 1.1rem;
+
+        span {
+          position: absolute;
+          right: 10px;
+          top: 10px;
+          font-size: 1.2rem;
+        }
+
+      }
+      a:hover {
+        background-color: $medium-gray;
+        color: $secondary;
+      }
+
+      a::selection {
+        //keeps top menu item highlighted when over pop out menu
+        background-color: $medium-gray;
+
+      }
+      //pop out menu
+      ul.nested {
+        width: 830px;
+        padding: 1rem;
+        background-color: $medium-gray;
+        top: -50px;
+        left: 290px;
+
+        li {
+          //puts menu items into columns
+          width: 100% !important;
+          width: 36%;
+          max-width: 360px !important;
+          /*Adjust width of columnes*/
+          position: relative;
+          display: inline-block;
+          margin: 0 1rem;
+
+          a {
+            transition: all 0.25s ease-in;
+            border-bottom: 1px solid rgba(0,0,0, .2);
+            padding: 0.5rem;
+            color: $black;
+          }
+
+          a:hover {
+            background-color: $light-gray;
+            color: $primary;
+          }
+
+          a::before {
+            font-family: 'FontAwesome';
+            content: "\f054";
+            left: 0;
+            padding-right: 0.8rem;
+            font-size: 0.5rem;
+          }
+        }
+      }
+
+      li:hover a {
+        //popout menu hover
+        background-color: $medium-gray;
+      }
+    }
+
+    li:hover a {
+      //top menu hover
+      background-color: $medium-gray;
+      color: $primary;
+    }
+  }
+}
+
+}
+
