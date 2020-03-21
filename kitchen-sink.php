@@ -268,21 +268,37 @@ get_header(); ?>
       </ul>
 
       <hr>
-      <h2>Panels</h2>
-      <div class="row">
-        <div class="large-6 columns">
-          <div class="panel">
-            <h5>This is a regular panel.</h5>
-            <p>It has an easy to override visual style, and is appropriately subdued.</p>
-          </div>
-        </div>
-        <div class="large-6 columns">
-          <div class="panel callout radius">
-            <h5>This is a callout panel with radiused edges.</h5>
-            <p>It&#39;s a little ostentatious, but useful for important content.</p>
-          </div>
-        </div>
-      </div>
+      <h2>Callouts</h2>
+     <div class="callout">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
+     <div class="callout primary">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
+     <div class="callout secondary">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
+     <div class="callout alert">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
+     <div class="callout success">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
+     <div class="callout warning">
+  <h2>This is a secondary callout</h2>
+  <p>It has an easy to override visual style, and is appropriately subdued.</p>
+  <a href="#">It's dangerous to go alone, take this.</a>
+</div>
 
       <hr>
       <h2>Accordion</h2>
