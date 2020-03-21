@@ -432,8 +432,25 @@ p a {
     color: $secondary;
   }
 
-  a.primary.button {
-    color: $secondary !important;
+  a {
+    color: $black;
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  a.button {
+    color: $white !important;
+    background-color: $black !important;
+    margin: 0 0 1rem 1rem;
+    text-decoration: none;
+
+    &:hover {
+      background-color: $black !important;
+      color: $white !important;
+      text-decoration: underline;
+    }
   }
 
     /* visited link */
@@ -491,6 +508,28 @@ p a {
 
   p {
     color: $white;
+  }
+
+  a {
+        text-decoration: underline;
+    color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+    a.button {
+    color: $secondary !important;
+    background-color: $white !important;
+        margin: 0 0 1rem 1rem;
+        text-decoration: none;
+
+    &:hover {
+      background-color: $white !important;
+      color: $black !important;
+      text-decoration: underline;
+    }
   }
 
   a.primary.button {
