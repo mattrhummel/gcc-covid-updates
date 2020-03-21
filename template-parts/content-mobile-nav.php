@@ -3,7 +3,7 @@
 <button class="close-button-menu" aria-label="<?php _e('Close menu', 'gcc-wp-2018' ); ?>" type="button" data-close>
           <?php esc_html_e('Close', 'gcc-wp-2018' ) ?><span class="fa fa-close" aria-hidden="true"></span>
 </button>
-  </div>
+</div>
        
   <div class="row expanded no-js mobile-nav">
 

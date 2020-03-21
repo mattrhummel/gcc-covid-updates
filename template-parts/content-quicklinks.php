@@ -1,8 +1,7 @@
-<div class="title-bar hide-for-xlarge expanded hide-for-print">
+<div class="title-bar hide-for-xlarge expanded hide-for-print clearfix">
   <div class="title-bar-left">
-    <button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button>
 
-    <?php if ( get_theme_mod( 'gcc_wp_2018_mobile_logo' ) ) : ?>
+        <?php if ( get_theme_mod( 'gcc_wp_2018_mobile_logo' ) ) : ?>
         
         <a href="<?php echo esc_url( home_url() ); ?>" class="mobile-logo" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home" itemprop="url">
 
@@ -18,6 +17,21 @@
         </hgroup>
 
     <?php endif; ?>
+
+  </div>
+
+  <div class="title-bar-right">
+
+    <ul class="menu float-right">
+
+        <li class="black-button show-for-medium"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
+        <li class="red-button  show-for-medium"><a href="https://www.germanna.edu/admissions/request-information/">get info</a></li>
+        <li class="yellow-button  show-for-medium"><a href="/donate" class="primary">give</a></li>
+        <li><button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button></li>
+
+    </ul>
+  
+
 
   </div>
 </div>
@@ -54,7 +68,7 @@
      <?php //function located in inc/main-navigation.php
       //gcc_wp_2018_information_menu(); ?>
 
-      <ul class="menu stacked">
+      <ul class="menu">
 
         <li class="black-button"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
         <li class="red-button"><a href="https://www.germanna.edu/admissions/request-information/">get info</a></li>

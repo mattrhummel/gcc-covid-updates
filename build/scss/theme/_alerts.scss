@@ -49,6 +49,165 @@
     }
 
 }
+.callout.green {
+
+  background-color: $success;
+  border: 1px solid $success;
+
+  .close-button {
+    color: $secondary;
+  }
+
+  .close-button:hover {
+    color: $primary;
+  }
+
+    h2, h3, h4, h5 {
+      padding: 1rem;
+      color: $white;
+    }
+
+    p {
+      padding: 0 1rem; 
+      font-size: 1.2rem;
+      color: $white;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding: 0 1rem 1rem 1rem;
+
+      li {
+        padding: 0;
+
+        a {
+          padding: 0;
+        }
+      }
+    }
+
+    table {
+      width: 96% !important;
+      margin: 0 auto 1rem;
+    }
+
+    .callout-image {
+
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: .9rem;
+    }
+
+}
+.callout.alert {
+
+  background-color: $alert;
+  border: 1px solid $alert;
+
+  .close-button {
+    color: $secondary;
+  }
+
+  .close-button:hover {
+    color: $primary;
+  }
+
+    h2, h3, h4, h5 {
+      padding: 1rem;
+      color: $white;
+    }
+
+    p {
+      padding: 0 1rem; 
+      font-size: 1.2rem;
+      color: $white;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding: 0 1rem 1rem 1rem;
+
+      li {
+        padding: 0;
+
+        a {
+          padding: 0;
+        }
+      }
+    }
+
+    table {
+      width: 96% !important;
+      margin: 0 auto 1rem;
+    }
+
+    .callout-image {
+
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: .9rem;
+    }
+
+}
+.callout.black {
+
+  background-color: $black;
+  border: 1px solid $black;
+
+  .close-button {
+    color: $secondary;
+  }
+
+  .close-button:hover {
+    color: $primary;
+  }
+
+    h2, h3, h4, h5 {
+      padding: 1rem;
+      color: $white;
+    }
+
+    p {
+      padding: 0 1rem; 
+      font-size: 1.2rem;
+      color: $white;
+
+      a {
+        text-decoration: underline;
+      }
+    }
+
+    ul {
+      padding: 0 1rem 1rem 1rem;
+
+      li {
+        padding: 0;
+
+        a {
+          padding: 0;
+        }
+      }
+    }
+
+    table {
+      width: 96% !important;
+      margin: 0 auto 1rem;
+    }
+
+    .callout-image {
+
+        width: 100%;
+        padding: 0 1rem;
+        margin-bottom: .9rem;
+    }
+
+}
 .callout.small {
   display: block;
   overflow: hidden;

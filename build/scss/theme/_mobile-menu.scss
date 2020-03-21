@@ -18,10 +18,16 @@ outline: none;
 
 padding: .5rem !important;
 
+
 .title-bar-left {
-  
+  max-width: 130px;
   margin: 0;
   position: relative;
+
+  @media screen and (min-width: 40em) {
+  max-width: 150px
+
+  }
 
   a.logo {
     padding: 1rem;
@@ -33,6 +39,34 @@ padding: .5rem !important;
     position: relative;
     margin: 1rem;
   }
+
+}
+
+.title-bar-right {
+
+  ul.menu {
+
+    li {
+a {
+    color: $white;
+    padding: 1.2rem .5rem;
+    font-size: 1rem;
+    font-weight: 800;
+    text-transform: uppercase;
+
+ @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      font-size: 1.2rem;
+      padding: 1.2rem 1rem;
+  }
+
+
+    &:hover {
+      color: $black;
+    }
+
+  }
+
+    }
    
    button {
     color: $white;
@@ -40,12 +74,17 @@ padding: .5rem !important;
     font-size: 1.8rem;
     font-weight: 800;
 
+    &:hover {
+      color: $black;
+    }
+
     span {
-      padding-right: 1rem;
+      padding-right: .5rem;
     }
 
   }
 
+} 
 }
 
 }

@@ -13,7 +13,7 @@
 
 <div class="column small-12 <?php the_field( 'home_box_column_class' ); ?> promotion-container">
 
-	<?php the_field( 'home_box_content' ); ?>
+ <?php the_field( 'home_box_content' ); ?>
 
 </div>
 
