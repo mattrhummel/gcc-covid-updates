@@ -358,6 +358,7 @@ get_header(); ?>
   </div>
 </div>
       <hr>
+
       <h2>Menu</h2>
      <ul class="menu align-right">
         <li><a href="#">One</a></li>
@@ -406,12 +407,9 @@ get_header(); ?>
     <a href="#" class="thumbnail"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Neptune."></a>
       <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/ShortpixelBackups/wp-content/uploads/2018/06/lgc-featured-image.jpg" alt="Photo of Pluto.">
       
-      </div>
+   
 
-      
-      </div>
-    </div>
-    
+       
     <?php get_sidebar();?>
     
       </div><!--.pagecontent-->
