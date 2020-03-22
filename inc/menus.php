@@ -3,6 +3,7 @@
     'main-navigation' => 'Main Navigation', // registers the menu in the WordPress admin menu editor
     'top-navigation' => 'Top Navigation',
     'quicklinks-bar' => 'Quicklinks Bar',
+    'top-bar-right-menu'  => 'Top Bar Right Menu',
     'information-menu' => 'Information Menu', 
     'resource-menu' => 'Resource Menu',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor

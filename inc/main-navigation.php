@@ -36,6 +36,14 @@ function gcc_wp_2018_main_navigation() {
         'walker' => ''      // walker to customize menu (see foundation-nav-walker)
 	));
 }
+function gcc_wp_2018_top_bar_right_menu () {
+         wp_nav_menu(array(
+        'container' => true,             // remove menu container
+        'items_wrap' => '<ul class="menu" aria-labelledby="menu_action_buttons">%3$s</ul>' ,                  // menu name
+        'theme_location' => 'top-bar-right-menu',  // where it's located in the theme
+        'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
+    ));
+}
 function gcc_wp_2018_information_menu () {
          wp_nav_menu(array(
         'container' => true,             // remove menu container

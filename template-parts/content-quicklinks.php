@@ -78,16 +78,16 @@
 
   <div class="top-bar-right">
     
-     <?php //function located in inc/main-navigation.php
-      //gcc_wp_2018_information_menu(); ?>
+     <?php 
+      gcc_wp_2018_top_bar_right_menu(); ?>
 
-      <ul class="menu">
+<!--       <ul class="menu">
 
         <li class="black-button"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
         <li class="red-button"><a href="/admissions/request-information/">get info</a></li>
         <li class="yellow-button"><a href="/educational-foundation/donate/" class="primary">give</a></li>
 
-    </ul>
+    </ul> -->
 
   </div>
 
