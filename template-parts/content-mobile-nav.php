@@ -9,7 +9,7 @@
 
     <div class="row mobile-search">
       
-     <form class="float-right" role="search" method="get" id="searchform" action="<?php echo get_home_url(); ?>/search_gcse/">
+     <form class="float-right" role="search" method="get" id="searchform-mobile" action="<?php echo get_home_url(); ?>/search_gcse/">
                   <div class="input-group">
                     <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
                     <input type="hidden" name="ie" value="utf8" title="hidden" />
