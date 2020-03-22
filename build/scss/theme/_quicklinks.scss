@@ -235,7 +235,7 @@ ul.menu {
   margin: 0;
   padding: 1rem 0;
 
-ul.menu {
+ul.menu.resource-links {
 
   margin-right: 1rem;
      
@@ -259,6 +259,11 @@ ul.menu {
             }   
 
       }
+  }
+
+ .active > a {
+    background-color: $white;
+    color: $black;
   }
 
     li:first-of-type a:after {

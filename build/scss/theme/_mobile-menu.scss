@@ -213,7 +213,7 @@ a {
 }
 
 
-ul.menu.mobile-quicklinks {
+ul.menu.resource-links {
 
   margin-right: 1rem;
      
@@ -221,7 +221,7 @@ ul.menu.mobile-quicklinks {
   
       margin:  0;
        text-transform: uppercase;
-  
+  width: 100%;
            a {
             color: $success;
             padding: .5rem 0;

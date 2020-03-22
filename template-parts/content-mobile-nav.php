@@ -70,13 +70,7 @@
 
     <hr>
 
-       <ul class="menu mobile-quicklinks">
-
-      <li><a href="https://mysupport.germanna.edu/">24/7 student support</a></li>
-      <li><a href="/contact-us/">contact us</a></li>
-
-    </ul>
-
-
+  <?php 
+      gcc_wp_2018_resource_menu(); ?>
   </div>
 </div>

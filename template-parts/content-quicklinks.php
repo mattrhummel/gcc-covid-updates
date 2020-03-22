@@ -22,14 +22,12 @@
 
   <div class="title-bar-right">
 
-    <ul class="menu float-right">
+      <ul class="menu float-right">
 
-        <li><button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button></li>
+            <li><button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span><?php _e('Menu', 'gcc-wp-2018'); ?></button></li>
 
-    </ul>
+      </ul>
   
-
-
   </div>
 </div>
 
@@ -81,14 +79,6 @@
      <?php 
       gcc_wp_2018_top_bar_right_menu(); ?>
 
-<!--       <ul class="menu">
-
-        <li class="black-button"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
-        <li class="red-button"><a href="/admissions/request-information/">get info</a></li>
-        <li class="yellow-button"><a href="/educational-foundation/donate/" class="primary">give</a></li>
-
-    </ul> -->
-
   </div>
 
 </div>
@@ -111,12 +101,16 @@
                   </div>
     </form>
 
-    <ul class="menu float-right">
+
+    <?php 
+      gcc_wp_2018_resource_menu(); ?>
+
+   <!--  <ul class="menu float-right">
 
       <li><a href="https://mysupport.germanna.edu/">24/7 student support</a></li>
       <li><a href="/contact-us/">contact us</a></li>
 
-    </ul>
+    </ul> -->
 
   </div>
 
