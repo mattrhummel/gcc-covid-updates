@@ -24,9 +24,6 @@
 
     <ul class="menu float-right">
 
-        <li class="black-button show-for-medium"><a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">apply</a></li>
-        <li class="red-button  show-for-medium"><a href="/admissions/request-information/">get info</a></li>
-        <li class="yellow-button  show-for-medium"><a href="/educational-foundation/donate/" class="primary">give</a></li>
         <li><button class="float-right" type="button" data-toggle="popout-menu" data-open="offCanvasLeft"><span class="fa fa-bars" aria-hidden="true"></span>Menu</button></li>
 
     </ul>
@@ -36,7 +33,7 @@
   </div>
 </div>
 
-<div class="top-banner show-for-xlarge" id="top-menu" data-toggler="hide">
+<div class="top-banner" id="top-menu" data-toggler="hide">
 
 <div class="top-bar">
 
@@ -45,7 +42,7 @@
       <?php  //function located in inc/main-navigation.php
       //gcc_wp_2018_resource_menu(); ?>
 
-    <ul class="dropdown menu align-center " data-dropdown-menu>
+    <ul class="dropdown menu align-center hide-for-medium-only hide-for-large-only show-for-xlarge" data-dropdown-menu>
       <li class="red-button">
         <a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
       </li>
@@ -80,7 +77,7 @@
 
 </div>
 
-<div class="row expanded search-container clearfix show-for-xlarge">
+<div class="row expanded search-container clearfix hide-for-medium-only hide-for-large-only show-for-xlarge">
 
      <form class="float-right" role="search" method="get" id="searchform" action="<?php echo get_home_url(); ?>/search_gcse/">
                   <div class="input-group">
