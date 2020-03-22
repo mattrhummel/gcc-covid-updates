@@ -2,7 +2,10 @@
 <?php
 	$args =  array (
 	'post_type' => 'event_promotions',
-	'posts_per_page'=>-1,
+	'post_status' => 'publish',
+    'orderby' => 'publish_date',
+    'order' => 'DESC',
+	'posts_per_page'=>5,
 	);
 	?>
 	<?php
@@ -10,11 +13,30 @@
 	
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
+<div class="column small-12 medium-6 large-4 promotion-container">
+<div class="card card-<?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
 
-<div class="column small-12 <?php the_field( 'home_box_column_class' ); ?> promotion-container">
+<?php // ACF Image Object
 
- <?php the_field( 'home_box_content' ); ?>
+$image = get_field('promotion_event_image');
+// vars
+$url = $image['url'];
 
+?>
+
+<div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
+  
+  <div class="card-section">
+	<?php the_title('<h2>', '</h2>', 'gcc-wp-2018') ?>
+
+<?php if( get_field('promotion_event_date') ): ?>
+  	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
+<?php endif; ?>
+
+    <p class="promotion-description"><?php the_field( 'promotion_event_description' ); ?></p>
+    <a class="button small" href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_field( 'promotion_event_button_text' ); ?></a>
+  </div>
+</div>
 </div>
 
 	<?php endwhile; ?>
