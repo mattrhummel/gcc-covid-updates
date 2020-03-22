@@ -50,7 +50,7 @@
         <li><a href="/admissions/transcript-request/">Transcripts</a>
         <li><a href="/student-activities/">Student Activities</a></li>
         <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
-        <li><a href="http://germanna.libguides.com/library">Libraries</a></li>
+        <li><a href="/library/">Libraries</a></li>
         <li><a href="/veterans/">Military & Families</a>
         <li><a href="/educational-foundation/alumni/">Alumni</a>
         </li>
