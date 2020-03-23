@@ -254,6 +254,7 @@ ul.menu.resource-links {
     background-clip: padding-box;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+    width: 100%;
   }
 
   [type="text"] {
@@ -263,7 +264,7 @@ ul.menu.resource-links {
     border-left: 1px solid $medium-gray;
     border-top: 1px solid $medium-gray;
     border-bottom: 1px solid $medium-gray;
-    width: 100%;
+    width: 240px;
   }
   .button {
     align-items: center;
