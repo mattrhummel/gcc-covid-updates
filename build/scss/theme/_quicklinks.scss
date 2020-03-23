@@ -1,7 +1,12 @@
 .top-banner {
 padding: .5rem 1rem;
 background-color: $white;
+height: auto;
+
+@media screen and (min-width: 40em) {
 height: 108px;
+
+  }
 
 .top-bar {
   
@@ -19,7 +24,6 @@ ul.dropdown {
             background-color: $primary;
             color: $white;
             text-transform: uppercase;
-            width: auto;
             font-size: .85rem;
 
             &:hover {
