@@ -252,7 +252,7 @@ $accordion-content-padding: 2rem 1.5rem 1rem 1.5rem;
 $accordionmenu-padding: $global-menu-padding;
 $accordionmenu-nested-margin: $global-menu-nested-margin;
 $accordionmenu-submenu-padding: $accordionmenu-padding;
-$accordionmenu-arrows: false;
+$accordionmenu-arrows: true;
 $accordionmenu-arrow-color: $white;
 $accordionmenu-item-background: null;
 $accordionmenu-border: null;
@@ -260,7 +260,7 @@ $accordionmenu-submenu-toggle-background: null;
 $accordion-submenu-toggle-border: $accordionmenu-border;
 $accordionmenu-submenu-toggle-width: 0;
 $accordionmenu-submenu-toggle-height: $accordionmenu-submenu-toggle-width;
-$accordionmenu-arrow-size: 6px;
+// $accordionmenu-arrow-size: 6px;
 
 // 9. Badge
 // --------
