@@ -93,23 +93,11 @@ get_header(); ?>
       <hr>
 
       <h2>Buttons</h2>
-      <div class="row">
-        <div class="small-3 large-3 columns">
           <a href="#" class="button primary">Primary Button</a>
-        </div>
-        <div class="small-9 large-9 columns">
           <a href="#" class="button secondary">Secondary Button</a>
-        </div>
-          <div class="small-9 large-9 columns">
           <a href="#" class="button alert">Secondary Button</a>
-        </div>
-           <div class="small-9 large-9 columns">
           <a href="#" class="button success">Secondary Button</a>
-        </div>
-           <div class="small-9 large-9 columns">
           <a href="#" class="button warning">Secondary Button</a>
-        </div>
-      </div>
 
       <hr>
 
