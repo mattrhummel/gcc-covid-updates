@@ -220,13 +220,13 @@ ul.menu.resource-links {
       li {
   
       margin:  0;
-       text-transform: uppercase;
-  width: 100%;
+      text-transform: uppercase;
+      width: 100%;
            a {
             color: $success;
             padding: .5rem 0;
             font-weight: 100;
-            font-size: .95rem;
+            font-size: 1rem;
             &:hover {
               color: rgb(44,87,81);
               text-decoration: underline;
@@ -306,7 +306,7 @@ ul.menu.vertical {
             color: $white;
             padding: .5rem 1rem;
             font-weight: 100;
-            font-size: .85rem;
+            font-size: .95rem;
 
             &:hover {
               background-color: $secondary;
@@ -325,7 +325,13 @@ ul.menu.vertical {
             
              margin-left: 0;
             border-top: 1px solid rgba(255,255,255, .2);
-          }
+         
+         a {
+          padding: .6rem 1rem;
+          font-size: .95rem;
+         }
+
+         }
         }
 
       }

@@ -8,88 +8,75 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: contain;
+  }
 }
- }
 .hero-section-text {
-  color: $secondary;
-  width: 100%;
-  display: block;
-  position: relative;
-  background-color: $light-gray;
-  padding: 1rem 1rem;
+  // color: $secondary;
 
-  h1 {
-      margin: 0;
-      color: $primary;
-  }
+  // .entry-meta {
+  //   display: block;
+  //   width: 100%;
+  //   padding: 1rem 0;
 
+  //   a {
+  //     color: $white;
+  //   }
 
-  .entry-meta {
-    display: block;
-    width: 100%;
-    padding: 1rem 0;
-
-    a {
-      color: $white;
-    }
-
-    a:hover {
-      color: $white;
-      text-decoration: underline;
-    }
-  }
+  //   a:hover {
+  //     color: $white;
+  //     text-decoration: underline;
+  //   }
+  // }
 }
 
 .crumbs-container {
-  padding: 0;
-  margin: 0;
-  background-color: $medium-gray;
-  border-bottom: 10px solid $primary;
-  width: 100%;
+  // padding: 0;
+  // margin: 0;
+  // width: 100%;
 
 
-  .breadcrumbs {
-    margin-left: 2rem;
-    padding: 0;
+  // .breadcrumbs {
+  
+  //   padding: 0;
 
-    li {
-      padding: 1rem 0 0;
+  //   li {
+  //     padding: 1rem 0 0;
 
-      a {
-        font-weight: 700;
-      }
-    }
+  //     a {
+  //       font-weight: 700;
+  //     }
+  //   }
 
-    li.disabled {
-      color: $dark-gray;
-    }
-  }
-    ul.page-icons {
+  //   li.disabled {
+  //     color: $dark-gray;
+  //   }
+  // }
+  //   ul.page-icons {
 
-      padding: 1.2rem 0;
+  //     padding: 1.2rem 0;
 
-        li  {
+  //       li  {
 
-             a  {
+  //            a  {
 
-              padding: 0 1rem 0 0;
+  //             padding: 0 1rem 0 0;
 
-                span {
-                  display: inline-block;
-                }
+  //               span {
+  //                 display: inline-block;
+  //               }
 
-                span.icon-text {
+  //               span.icon-text {
 
-                  font-weight: 900;
-                  padding: 0 1rem 0 .5rem;
+  //                 font-weight: 900;
+  //                 padding: 0 1rem 0 .5rem;
 
-                }
+  //               }
 
-             }
+  //            }
 
-        }
+  //       }
 
-  }
+  // }
 }
 
 .post-meta {
