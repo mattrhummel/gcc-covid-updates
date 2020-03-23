@@ -1,4 +1,4 @@
-<?php
+d<?php
 /**
 * The header for our theme
 *
@@ -71,7 +71,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     <?php } ?>
     
-  
   </head>
   
   <body <?php body_class(); ?>>
