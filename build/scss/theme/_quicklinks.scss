@@ -57,7 +57,7 @@ ul.dropdown {
           a {
             background-color: $primary;
 
-                &:hover {
+            &:hover {
               background-color: rgb(147,27,56);
             }
             &:focus {
@@ -80,7 +80,7 @@ ul.dropdown {
           }
         
       }
-        li.yellow-button {
+      li.yellow-button {
         
           a {
             background-color: $alert;

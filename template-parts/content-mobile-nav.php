@@ -31,7 +31,7 @@
 
     <ul class="vertical menu accordion-menu"  data-accordion-menu>
       <li class="red-button">
-        <a href="https://gcc.my.vccs.edu/">mygcc</a>
+        <a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
       </li>
       <li class="green-button"><a href="/students/">online students</a></li>
       <li  class="green-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>

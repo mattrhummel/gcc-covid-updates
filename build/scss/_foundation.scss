@@ -47,7 +47,7 @@ html {
 @import '_vendor/sassy-lists/stylesheets/functions/remove';
 @import '_vendor/sassy-lists/stylesheets/functions/replace';
 @import '_vendor/sassy-lists/stylesheets/functions/to-list';
-@import 'theme/animate';
+// @import 'theme/animate';
 //@import '_vendor/lazy-load';
 
 // Settings
@@ -113,7 +113,6 @@ html {
 @import 'theme/page';
 @import 'theme/alerts';
 @import 'theme/label';
-@import 'theme/directory-styles';
 @import 'theme/tabs';
 @import 'theme/card';
 @import 'theme/workforce';

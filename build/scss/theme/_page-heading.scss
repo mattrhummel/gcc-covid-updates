@@ -1,19 +1,15 @@
-$hero-height: 34vh;
-
 .hero-section {
+  height: auto;
   position: relative;
-  height: 28vh;
-  margin-bottom: 0;
-  padding-bottom: 0;
-  width: 100%;
-
+  margin: 40px 0;
   img {
-    background: no-repeat;
-    background-size: cover;
-    height: 28vh;
-  }
+      height: auto;
+  width: 100%;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: contain;
 }
-
+ }
 .hero-section-text {
   color: $secondary;
   width: 100%;
