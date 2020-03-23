@@ -1,16 +1,12 @@
 .top-banner {
-padding: .5rem 1rem;
-background-color: $white;
-height: auto;
 
 @media screen and (min-width: 40em) {
-height: 108px;
+	
+	height: 108px;
 
-  }
+ }
 
 .top-bar {
-  
-  padding: 0;
 
 .top-bar-left {
 
@@ -74,8 +70,7 @@ ul.dropdown {
       li.black-button {  
           a {
             background-color: $secondary;
-
-                &:hover {
+			&:hover {
               background-color: rgba(0,0,0, .8);
             }
             &:focus {
@@ -156,11 +151,11 @@ ul.menu {
           a {
             background-color: $primary;
 
-                &:hover {
+              &:hover {
               background-color: rgb(147,27,56);
             }
-            &:focus {
-               background-color: rgb(147,27,56);
+              &:focus {
+              background-color: rgb(147,27,56);
             }
           }
         
@@ -170,30 +165,29 @@ ul.menu {
         
           a {
             background-color: $secondary;
-                   &:hover {
+              &:hover {
               background-color: rgba(0,0,0, .8);
             }
             &:focus {
               background-color: rgba(0,0,0, .8);
             }
-          }
-        
+          }   
       }
 
-        li.yellow-button {
+      li.yellow-button {
         
           a {
             background-color: $alert;
-                  color: $secondary;
-                               &:hover {
-              background-color: rgb(223,213,90);
-            }
-            &:focus {
-             background-color: rgb(223,213,90);
-            }
+            color: $secondary;
+	            &:hover {
+	              background-color: rgb(223,213,90);
+	            }
+	            &:focus {
+	             background-color: rgb(223,213,90);
+	            }
           }
-        
-      }
+		}
+      
       li.green-button {
         
           a {
@@ -232,34 +226,29 @@ ul.menu {
 }
 
 }
-
 .search-container {
 
-  margin: 0;
-  padding: 1rem 0;
+  padding: .5rem 1rem;
+  background-color: $white;
 
 ul.menu.resource-links {
-
-  margin-right: 1rem;
-     
+  
       li {
   
-        margin:  0;
-        text-transform: uppercase;
+        	text-transform: uppercase;
   
            a {
             color: $success;
             padding: .5rem 0;
             font-size: .85rem;
+            
             &:hover {
               color: rgb(44,87,81);
               text-decoration: underline;
             }
             &:focus {
                color: rgb(44,87,81);
-              text-decoration: underline;
-
-            
+               text-decoration: underline;
             }   
 
       }
@@ -274,14 +263,12 @@ ul.menu.resource-links {
        content: "|";
        text-align: center;
        padding: 0 1rem;
-
     }
 
     li:last-child a:after {
        content: "";
        text-align: center;
        padding: 0 1rem;
-
     }
 }
   .input-group {
