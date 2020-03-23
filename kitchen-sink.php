@@ -258,12 +258,12 @@ get_header(); ?>
       <hr>
       <h2>Callouts</h2>
      <div class="callout">
-  <h2>This is a secondary callout</h2>
+  <h2>This is a standard callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
      <div class="callout small primary">
-  <h2>This is a secondary callout</h2>
+  <h2>This is a small primary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
@@ -273,17 +273,17 @@ get_header(); ?>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
      <div class="callout small alert">
-  <h2>This is a secondary callout</h2>
+  <h2>This is a alert callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
      <div class="callout small success">
-  <h2>This is a secondary callout</h2>
+  <h2>This is a success callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
-     <div class="callout small warning">
-  <h2>This is a secondary callout</h2>
+<div class="callout small warning">
+  <h2>This is a warning callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
 </div>
