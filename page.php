@@ -65,7 +65,7 @@ get_header(); ?>
 
       </div>
 
-      <?php endif; ?>
+    <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
 
