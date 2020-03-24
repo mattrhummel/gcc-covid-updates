@@ -9,15 +9,21 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   
-  <div class="row gutter-small expanded content-area">
+  <div class="content-area">
   
-    <div class="small-12 columns">
-
       <div class="entry-content" id="main" tabindex="0">
+
+        <div class="row">
+
+          <div class="columns small-12">
   
       <?php //Page Heading
       get_template_part( 'template-parts/content', 'page-heading' );
       ?>
+
+    </div>
+
+  </div>
 
         <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
@@ -26,10 +32,8 @@ get_header(); ?>
         the_content();
         ?>
       </div>
-    </div>
 
     </div>
-
 
   </article>
 

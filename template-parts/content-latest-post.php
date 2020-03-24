@@ -19,7 +19,7 @@
 
     <?php if ( has_post_thumbnail() ) : ?>
 
-      <div class="row latest-post" data-equalizer-watch>
+      <div class="row card" data-equalizer-watch>
       <div class="medium-12 columns">
       
        <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
@@ -31,7 +31,7 @@
 
     <?php else: ?>
 
-      <div class="row latest-post" data-equalizer-watch>
+      <div class="row card" data-equalizer-watch>
       
       <div class="medium-12 columns">
       <h3 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>

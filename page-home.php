@@ -63,7 +63,7 @@ $highlights_heading = get_field('highlights_heading');
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-    <div class="latest-post">
+    <div class="card" style="padding: 1rem;">
       
       <h3 class="post-title"><a href="<?php the_permalink(); ?>">   
 
@@ -115,7 +115,7 @@ $highlights_heading = get_field('highlights_heading');
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-    <div class="latest-post">
+    <div class="card" style="padding: 1rem;">
       
       <h3 class="post-title"><a href="<?php the_permalink(); ?>">   
 
