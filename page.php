@@ -33,13 +33,13 @@ get_header(); ?>
           get_template_part( 'template-parts/content', 'page-alert' );
           ?>
 
-          <?php if (is_page('workforce')) : ; ?>
+<!--           <?php //if (is_page('workforce')) : ; ?>
 
           
-        <?php putRevSlider( 'workforce-nov-4' ); ?>
+        <?php //putRevSlider( 'workforce-nov-4' ); ?>
 
 
-          <?php endif; ?>
+          <?php //endif; ?> -->
 
           <?php if (is_page('12255')) : ; ?>
 
@@ -54,18 +54,6 @@ get_header(); ?>
           the_content();
           ?>
 
-  <?php if (is_page('workforce')) : ; ?>
-          
-  <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
-
-       <h2><?php the_field('workforce_highlights_heading'); ?></h2>
-
-
-        <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
-
-      </div>
-
-    <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
 
@@ -120,6 +108,9 @@ get_header(); ?>
         <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
 
         <?php endif; ?>
+
+       
+
 
         <?php if (is_page('donate') ) : ; ?>
 
