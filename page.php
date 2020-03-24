@@ -54,7 +54,7 @@ get_header(); ?>
           the_content();
           ?>
 
-  <?php if (is_page('workforce')) {  ?>
+  <?php if (is_page('workforce')) : ; ?>
           
   <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 
@@ -65,7 +65,7 @@ get_header(); ?>
 
       </div>
 
-          <?php endif; ?>
+      <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
 
