@@ -28,7 +28,6 @@ get_header(); ?>
       ?>
       <?php } ?>
       
-      <div class="entry-content" id="main">
        
           <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-alert' );
@@ -39,6 +38,9 @@ get_header(); ?>
             <?php putRevSlider( 'diversity-slider' ); ?>
 
           <?php endif; ?>
+
+          <div class="entry-content" id="main">
+
 
           <?php
           the_content();
