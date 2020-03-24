@@ -16,11 +16,14 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
  
-  <?php //Page Heading
-  get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
+
   <div class="row expanded content-area">
     <div class="small-12 medium-12 large-9 float-left columns" >
+
+        <?php //Page Heading
+  get_template_part( 'template-parts/content', 'page-heading' );
+  ?>
+  
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
