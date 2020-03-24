@@ -63,10 +63,7 @@ get_header(); ?>
 
        <h2><?php the_field('workforce_highlights_heading'); ?></h2>
 
-         <?php
-            the_content();
-         ?>
-
+  
         <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
 
       </div>
