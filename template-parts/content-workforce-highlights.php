@@ -1,4 +1,4 @@
-<div class="row">
+<div class="row" data-equalizer>
 	<?php
 	$args =  array (
 	'post_type' => 'workforce_news_post',
@@ -11,13 +11,23 @@
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
 	<?php if ( has_post_thumbnail() ) : ?>
+	
 	<div class="columns medium-6">
-		<div class="callout callout-workforce-highlights primary small" data-equalizer-watch>
+		<div class="card">
+			 <div class="card-divider" data-equalizer-watch>
 			<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-			<?php the_post_thumbnail( 'full', array('class' => 'callout-image')); ?>
+		</div>
+
+
+	   <?php the_post_thumbnail( 'full', array('class' => 'callout-image')); ?>
+		
+		<div class="card-section">
 			<p><?php the_excerpt(); ?></p>
 		</div>
+
+		</div>
 	</div>
+	
 	<?php endif; ?>
 	<?php endwhile; ?>
 	<?php wp_reset_postdata(); ?>

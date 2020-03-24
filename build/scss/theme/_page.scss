@@ -8,6 +8,18 @@
   margin-top: 1rem;
   margin-bottom: 1rem;
 
+  .image-background {
+     background-position: top center; 
+ background-repeat: none; 
+ background-size: cover;
+ padding: 0;
+ height: 350px; 
+}
+
+.lead {
+  font-size: 1.8rem;
+}
+
 }
 
 // article {
@@ -312,8 +324,6 @@ a {
 }
 
 }
-
-
 
 .department-links {
   ul.vertical.menu {

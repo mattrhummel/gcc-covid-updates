@@ -43,7 +43,7 @@ get_header(); ?>
 
           <?php if (is_page('12255')) : ; ?>
 
-            <?php putRevSlider( 'diversity-slider' ); ?>
+            <?php //putRevSlider( 'diversity-slider' ); ?>
 
           <?php endif; ?>
 
