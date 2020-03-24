@@ -7,7 +7,6 @@
 
 .callout.success {
 
-
     a {
      text-decoration: underline;
      color: $white;
@@ -16,7 +15,6 @@
       text-decoration: none;
     }
   }
-
   .button {
       text-decoration: none;
       background-color: $white;
@@ -30,8 +28,6 @@
       }
 
   }
-
-
     ul {
 
       li {
@@ -39,6 +35,10 @@
         a {
 
           color: $white;
+
+          &:hover {
+            text-decoration: underline;
+          }
 
         }
       }
@@ -106,7 +106,7 @@
       color: $white;
 
       &:hover {
-
+        
         background-color: $secondary;
         color: $white;
 
@@ -121,9 +121,10 @@
         a {
 
           color: $black;
-            &:hover {
-              color: $dark-gray;
-            }
+          
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 
@@ -131,7 +132,7 @@
 
 }
 
-.callout.warning{
+.callout.warning {
 
     a {
      text-decoration: underline;
@@ -163,7 +164,11 @@
         a {
 
           color: $white;
-
+    
+          &:hover {
+            text-decoration: underline;
+          }
+          
         }
       }
 

@@ -257,13 +257,13 @@ get_header(); ?>
 
       <hr>
       <h2>Callouts</h2>
-     <div class="callout">
+  
+  <div class="callout">
   <h2>This is a standard callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <p><a href="#">It's dangerous to go alone, take this.</a></p>
   <p><a href="#" class="button">Button in BasicCallout</a></p>
 
-</div>
      <div class="callout small primary">
   <h2>This is a small primary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
@@ -274,7 +274,7 @@ get_header(); ?>
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <p><a href="#">It's dangerous to go alone, take this.</a></p>
-     <p> <a href="#" class="button">Button in Secondary Callout</a></p>
+  <p><a href="#" class="button">Button in Secondary Callout</a></p>
 </div>
      <div class="callout small alert">
   <h2>This is a alert callout</h2>
