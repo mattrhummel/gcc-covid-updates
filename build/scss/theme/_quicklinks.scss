@@ -102,13 +102,15 @@ ul.dropdown {
       li.green-button {
         
           a {
-            background-color: $success;
+            background-color: $light-gray;
+            color: $black;
 
             &:hover {
-              background-color: rgb(44,87,81);
+              background-color: $medium-gray;
+
             }
             &:focus {
-               background-color: rgb(44,87,81);
+               background-color: $medium-gray;
             }
           
         }
@@ -118,136 +120,23 @@ ul.dropdown {
 }
 
 .top-bar-right {
- 
-ul.menu {
-     
-      li {
-  
-       margin-left: 0;
-       margin-bottom: .5rem;
-       text-transform: uppercase;
-       width: 100%;
 
-          @media screen and (min-width: 40em) {
-
-            width: auto;
-            margin-bottom: 0;
-            margin-left: .5rem;
-
-       }
-  
-  
-         a {
-
-            background-color: $primary;
-            color: $white;
-            font-size: .85rem;
-            text-align: center;
-            &:hover {
-              background-color: $secondary;
-            }
-            &:focus {
-              background-color: $secondary;
-            }
-        }
-
-      }
-
-      li.red-button {
-        
-          a {
-            background-color: $primary;
-
-              &:hover {
-              background-color: rgb(147,27,56);
-            }
-              &:focus {
-              background-color: rgb(147,27,56);
-            }
-          }
-        
-      }
-
-      li.black-button {
-        
-          a {
-            background-color: $secondary;
-              &:hover {
-              background-color: rgba(0,0,0, .8);
-            }
-            &:focus {
-              background-color: rgba(0,0,0, .8);
-            }
-          }   
-      }
-
-      li.yellow-button {
-        
-          a {
-            background-color: $alert;
-            color: $secondary;
-	            &:hover {
-	              background-color: rgb(223,213,90);
-	            }
-	            &:focus {
-	             background-color: rgb(223,213,90);
-	            }
-          }
-		}
-      
-      li.green-button {
-        
-          a {
-            background-color: $success;
-               &:hover {
-              background-color: rgb(44,87,81);
-            }
-            &:focus {
-               background-color: rgb(44,87,81);
-            }
-        }
-      }
-    }
-
-}
-.mygcc-button {   
-      margin: 10px;
-    
-     .button {
-        color: $white;
-        background-color: $secondary;
-        font-family: $font-family-monospace;
-        text-transform: uppercase;
-        font-size: 1.2em;
-        border:none;
-        transition: none;
-        &:hover {
-        background-color: rgb(141,36,55);
-        color: $white;
-        }
-        &:focus {
-        border: none;
-        outline: none;
-        }
-      }
-}
-
-}
 .search-container {
 
-  padding: .5rem 1rem;
+  padding: 1rem 0;
   background-color: $white;
 
-ul.menu.resource-links {
+  ul.menu.resource-links {
   
       li {
   
-        	text-transform: uppercase;
+          text-transform: uppercase;
   
            a {
             color: $success;
             padding: .5rem 0;
             font-size: .85rem;
+            background-color: $white;
             
             &:hover {
               color: rgb(44,87,81);
@@ -269,13 +158,13 @@ ul.menu.resource-links {
     li a:after {
        content: "|";
        text-align: center;
-       padding: 0 1rem;
+       padding: 0 .5rem;
     }
 
     li:last-child a:after {
        content: "";
        text-align: center;
-       padding: 0 1rem;
+       padding: .5rem;
     }
 }
   .input-group {
@@ -296,7 +185,7 @@ ul.menu.resource-links {
     border-left: 1px solid $medium-gray;
     border-top: 1px solid $medium-gray;
     border-bottom: 1px solid $medium-gray;
-    width: 180px;
+    width: 150px;
   }
   .button {
     align-items: center;
@@ -322,4 +211,10 @@ ul.menu.resource-links {
   }
 
 }
+ 
+}
+
+
+}
+
 }

@@ -9,7 +9,7 @@
 
         </a>
 
-        <?php else : ?>
+          <?php else : ?>
 
         <hgroup>
             <h1 class="site-title"><a href="<?php echo esc_url( home_url() ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
@@ -68,15 +68,11 @@
   <div class="top-bar-right">
     
      <?php 
-      gcc_wp_2018_top_bar_right_menu(); ?>
+      //gcc_wp_2018_top_bar_right_menu(); ?>
 
-  </div>
+<div class="search-container show-for-xlarge">
 
-</div>
-
-<div class="row expanded search-container clearfix hide-for-medium-only hide-for-large-only show-for-xlarge">
-
-     <form class="float-right" role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
+<form class="float-right" role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
         <div class="input-group">
           <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
           <input type="hidden" name="ie" value="utf8" title="hidden" />
@@ -95,6 +91,16 @@
     <?php 
       gcc_wp_2018_resource_menu(); ?>
 
+
+      </div>
+
+  </div>
+
+</div>
+
+<div class="row expanded search-container clearfix hide-for-medium-only hide-for-large-only show-for-xlarge">
+
+    
   </div>
 
 </div>
