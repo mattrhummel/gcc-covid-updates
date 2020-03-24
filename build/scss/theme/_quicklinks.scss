@@ -32,6 +32,11 @@ ul.dropdown {
             span {
               margin-right: .5rem;
             }
+
+            span.fa-caret-down {
+              margin: 0 0 0 .3rem;
+              color: $white;
+            }
         }
    
         ul {
@@ -111,6 +116,7 @@ ul.dropdown {
     }
 
 }
+
 .top-bar-right {
  
 ul.menu {
@@ -124,9 +130,10 @@ ul.menu {
 
           @media screen and (min-width: 40em) {
 
-        width: auto;
-        margin-bottom: 0;
-        margin-left: .5rem
+            width: auto;
+            margin-bottom: 0;
+            margin-left: .5rem;
+
        }
   
   

@@ -35,27 +35,16 @@
       </li>
       <li class="green-button"><a href="/students/">online students</a></li>
       <li  class="green-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
-       <li class="black-button"><a href="#" class="primary">resources</a>
+       <li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
 
         <ul class="menu">
-        <li><a href="https://www.germanna.edu/class-schedule">Class Schedule</a></li>
-        <li><a href="https://m.sis.vccs.edu/index.php/app/catalog/listSubjects?institution=GC297">Browse Courses</a></li>
-        <li><a href="/academic-calendar/">Academic Calendar</a></li>
-        <li><a href="/bookstore/">Bookstore</a></li>
-        <li><a href="/admissions/admissions-forms/">Admissions Forms</a></li>
-        <li><a href="/academic-center-for-excellence/brainfuse-online-tutoring/">Brainfuse Online Tutoring</a></li>
-        <li><a href="/graduation/">Graduation</a></li>
-        <li><a href="/bookstore/included-course-material-information/">IncludeED Program</a></li>
-        <li><a href="/printing/">Printing</a></li>
-        <li><a href="/admissions/transcript-request/">Transcripts</a>
-        <li><a href="/student-activities/">Student Activities</a></li>
-        <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
-        <li><a href="/library/">Libraries</a></li>
-        <li><a href="/veterans/">Military & Families</a>
-        <li><a href="/educational-foundation/alumni/">Alumni</a>
-        </li>
-        <li><a href="https://www.vawizard.org/wizard/home">Virginia Education Wizard</a></li>
-          <!-- ... -->
+          <li><a href="/bookstore/">Bookstore</a></li>
+          <li><a href="/admissions/transcript-request/">Transcripts</a>
+          <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
+          <li><a href="/library/">Libraries</a></li>
+          <li><a href="/veterans/">Military & Families</a>
+          <li><a href="/educational-foundation/alumni/">Alumni</a>
+          </li>
         </ul>
 
       </li>
