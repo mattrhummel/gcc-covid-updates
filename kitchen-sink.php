@@ -103,12 +103,21 @@ get_header(); ?>
 
       <h2>Button Groups</h2>
 
+     <p><strong>Standard Button Group</strong></p>
+
+      <div class="button-group">
+          <a class="button light-gray">One</a>
+          <a class="button light-gray">Two</a>
+          <a class="button light-gray">Three</a>
+      </div>
+
+
       <p><strong>Primary Button Group</strong></p>
 
       <div class="button-group">
-          <a class="button">One</a>
-          <a class="button">Two</a>
-          <a class="button">Three</a>
+          <a class="button primary">One</a>
+          <a class="button primary">Two</a>
+          <a class="button primary">Three</a>
       </div>
 
       <p><strong>Secondary Button Group</strong></p>
