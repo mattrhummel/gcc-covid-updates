@@ -1,6 +1,4 @@
 <div class="row expanded">
-
-<p class="lead"><?php the_field('page_heading'); ?></p>
 		
 <div class="columns small-12">
 
