@@ -7,6 +7,16 @@
 
 .callout.success {
 
+
+    a {
+     text-decoration: underline;
+     color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
   .button {
 
       background-color: $white;
@@ -21,9 +31,6 @@
 
   }
 
-    a {
-    color: $white;
-  }
 
     ul {
 
@@ -41,8 +48,17 @@
 }
 .callout.secondary {
 
-  .button {
+  a {
+     text-decoration: underline;
+     color: $white;
 
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .button {
+      text-decoration: none;
       background-color: $white;
       color: $black;
 
@@ -55,17 +71,16 @@
 
   }
 
-  a {
-    color: $white;
-  }
-
     ul {
 
       li {
 
         a {
-
+          text-decoration: none;
           color: $white;
+          &:hover {
+            text-decoration: underline;
+          }
 
         }
       }
@@ -76,8 +91,17 @@
 
 .callout.alert {
 
-  .button {
+  a {
+     text-decoration: underline;
+     color: $black;
 
+    &:hover {
+      text-decoration: none;
+    }
+  }
+
+  .button {
+      text-decoration: none;
       background-color: $black;
       color: $white;
 
@@ -107,10 +131,19 @@
 
 }
 
-.callout.success {
+.callout.warning{
+
+    a {
+     text-decoration: underline;
+     color: $white;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
 
   .button {
-
+      text-decoration: none;
       background-color: $white;
       color: $black;
 
@@ -122,11 +155,7 @@
       }
 
   }
-
-    a {
-    color: $white;
-  }
-
+  
     ul {
 
       li {
