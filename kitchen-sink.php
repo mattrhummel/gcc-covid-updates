@@ -95,9 +95,9 @@ get_header(); ?>
       <h2>Buttons</h2>
           <a href="#" class="button primary">Primary Button</a>
           <a href="#" class="button secondary">Secondary Button</a>
-          <a href="#" class="button alert">Secondary Button</a>
-          <a href="#" class="button success">Secondary Button</a>
-          <a href="#" class="button warning">Secondary Button</a>
+          <a href="#" class="button alert">Alert Button</a>
+          <a href="#" class="button success">Success Button</a>
+          <a href="#" class="button warning">Warning Button</a>
 
       <hr>
 
