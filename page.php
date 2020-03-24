@@ -28,50 +28,38 @@ get_header(); ?>
       ?>
       <?php } ?>
       
-       
           <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-alert' );
           ?>
 
-<!--           <?php //if (is_page('workforce')) : ; ?>
-
-          
-        <?php //putRevSlider( 'workforce-nov-4' ); ?>
-
-
-          <?php //endif; ?> -->
-
           <?php if (is_page('12255')) : ; ?>
 
-            <?php putRevSlider( 'diversity-slider' ); ?>
+              <?php putRevSlider( 'diversity-slider' ); ?>
 
           <?php endif; ?>
 
           <div class="entry-content" id="main">
 
+              <?php
+              the_content();
+              ?>
 
-          <?php
-          the_content();
-          ?>
+            <?php if (is_page('workforce')) : ; ?>
 
+              <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 
-          <?php if (is_page('workforce')) : ; ?>
+               <h2><?php the_field('workforce_highlights_heading'); ?></h2>
 
+                <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
 
-      <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
-
-       <h2><?php the_field('workforce_highlights_heading'); ?></h2>
-
-        <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
-
-      </div>
+              </div>
 
           <?php endif; ?>
-
 
         <?php if (is_page('40255')) : ; ?>
 
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
+          
           <?php
           $args =  array (
           'post_type' => 'bhm_events',
@@ -124,102 +112,99 @@ get_header(); ?>
         <?php endif; ?>
 
        
-
-
-        <?php if (is_page('donate') ) : ; ?>
-
-      
-<div id="bbox-root"></div>
-<script type="text/javascript">
-       window.bboxInit = function () {
-           bbox.showForm('7ac5f578-b467-4690-815f-dc7eab20bca5');
-       };
-       (function () {
-           var e = document.createElement('script'); e.async = true;
-           e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
-           document.getElementsByTagName('head')[0].appendChild(e);
-       } ());
-</script>
-
-
+       <?php if (is_page('donate') ) : ; ?>
+    
+            <div id="bbox-root"></div>
+            <script type="text/javascript">
+                   window.bboxInit = function () {
+                       bbox.showForm('7ac5f578-b467-4690-815f-dc7eab20bca5');
+                   };
+                   (function () {
+                       var e = document.createElement('script'); e.async = true;
+                       e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+                       document.getElementsByTagName('head')[0].appendChild(e);
+                   } ());
+            </script>
 
         <?php endif; ?>
 
-        <?php if (is_page('27725')) : ; ?>
+        <?php if (is_page('local-scholarship-aid')) : ; ?>
 
-        <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
+            <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
 
-          <?php // get raw date
-$date = get_field('scholarship_deadline', false, false); ?>
-<?php // make date object
-$date = new DateTime($date); ?>
+              <?php // get raw date
+                $date = get_field('scholarship_deadline', false, false); ?>
+                <?php // make date object
+                $date = new DateTime($date); ?>
 
-          <?php
-          $args =  array (
-          'post_type' => 'local_scholarships',
-          'posts_per_page'=> -1,
-          );
-          ?>
-          <?php
-          $query = new WP_Query( $args ); ?>
-          <?php if ( $query->have_posts() ) : ?>
-          <?php while ( $query->have_posts() ) : $query->the_post();?>
+              <?php
+              $args =  array (
+              'post_type' => 'local_scholarships',
+              'posts_per_page'=> -1,
+              );
+              ?>
 
-              
-              <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?> 
+              <?php
+              $query = new WP_Query( $args ); ?>
+              <?php if ( $query->have_posts() ) : ?>
+              <?php while ( $query->have_posts() ) : $query->the_post();?>
 
-              <p><?php the_field( 'scholarship_short_description' ); ?></p>
+                  
+                  <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?> 
 
-              <p><strong>Scholarship Deadline:</strong> <?php the_field( 'scholarship_deadline' ); ?></p>
+                  <p><?php the_field( 'scholarship_short_description' ); ?></p>
 
-              <?php if( get_field('scholarship_information') ): ?>
+                  <p><strong>Scholarship Deadline:</strong> <?php the_field( 'scholarship_deadline' ); ?></p>
 
-              <ul class="accordion" data-accordion data-allow-all-closed="true">
-              
-                <li class="accordion-item" data-accordion-item>
-                  <a href="#" class="accordion-title">Scholarship Details</a>
-                    <div class="accordion-content" data-tab-content>
-                      
-                      <?php the_field( 'scholarship_information' ); ?>
+                  <?php if( get_field('scholarship_information') ): ?>
 
-                    </div>
-                  </li>
-              
-              </ul>
+                  <ul class="accordion" data-accordion data-allow-all-closed="true">
+                  
+                    <li class="accordion-item" data-accordion-item>
+                      <a href="#" class="accordion-title">Scholarship Details</a>
+                        <div class="accordion-content" data-tab-content>
+                          
+                          <?php the_field( 'scholarship_information' ); ?>
 
-              <?php endif; ?>
+                        </div>
+                      </li>
+                  
+                  </ul>
 
-           <?php if( get_field('scholarship_application_url') ): ?>
-             
-              <a href="<?php the_field( 'scholarship_application_url' ); ?>"><?php the_field( 'scholarship_application_button_text' ); ?></a>
+                  <?php endif; ?>
 
+               <?php if( get_field('scholarship_application_url') ): ?>
+                 
+                  <a href="<?php the_field( 'scholarship_application_url' ); ?>"><?php the_field( 'scholarship_application_button_text' ); ?></a>
+
+                <?php endif; ?>
+
+
+
+                <?php if( get_field('scholarship_information_url') ): ?>
+
+                  |           
+                  <a href="<?php the_field( 'scholarship_information_url' ); ?>"><?php the_field( 'scholarship_information_button_text' ); ?></a>
+
+                <?php endif; ?>
+
+            <hr>
+                          
+            <?php endwhile; ?>
+            <?php wp_reset_postdata(); ?>
+            <?php else : ?>
+            <p><?php esc_html_e( 'Sorry, no scholarships display', 'gcc-wp-2018'); ?></p>
             <?php endif; ?>
-
-
-
-            <?php if( get_field('scholarship_information_url') ): ?>
-
-              |            
-
-              <a href="<?php the_field( 'scholarship_information_url' ); ?>"><?php the_field( 'scholarship_information_button_text' ); ?></a>
-
-            <?php endif; ?>
-
-        <hr>
-                      
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no scholarships display', 'gcc-wp-2018'); ?></p>
-        <?php endif; ?>
-      </div>
+          </div>
             
           <?php endif; ?>     
 
 
-<?php if (is_page('27603')) : ; ?>
+<?php //student activities events
+  if (is_page('27603')) : ; ?>
 
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
+          
           <?php
           $args =  array (
           'post_type' => 'sa_events',
@@ -229,10 +214,12 @@ $date = new DateTime($date); ?>
           'posts_per_page'=> -1,
           );
           ?>
+
           <?php
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
           <?php while ( $query->have_posts() ) : $query->the_post();?>
+          
           <div class="small-12 medium-12 large-6 columns">
             <div class="callout primary small"  data-equalizer-watch>
               
@@ -266,7 +253,8 @@ $date = new DateTime($date); ?>
 
 <?php endif; ?>
 
-<?php if (is_page('26400')) : ; ?>
+<?php //pathways
+  if (is_page('26400')) : ; ?>
 
 <h2><?php _e('Included Pathways', 'gcc-wp-2018'); ?></h2>
 
@@ -310,24 +298,28 @@ $date = new DateTime($date); ?>
   
           <div class="row expanded">     
           
-          <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
+            <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
           <div class="small-12 medium-6 large-6 columns">    
 
-          <?php the_excerpt(); ?> 
+            <?php the_excerpt(); ?> 
 
-         <p><a href="<?php the_field('pathway_url');?>"><?php _e('View Programs', 'gcc-wp-2018') ?></a></p>
+            <p><a href="<?php the_field('pathway_url');?>"><?php _e('View Programs', 'gcc-wp-2018') ?></a></p>
 
           </div>
 
           <div class="small-12 medium-6 columns">     
           
-          <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>" style="width: 100%; background-size: cover; background-position: top center;">
-              <?php endif; ?>
+            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt;?>" width="<?php echo $width;?>" height="<?php echo $height;?>" style="width: 100%; background-size: cover; background-position: top center;">
+            
+            <?php endif; ?>
+
           </div>
 
           </div>
+
           <hr>
+
         <?php endwhile; ?>
         <?php wp_reset_postdata(); ?>
         <?php else : ?>
@@ -343,20 +335,21 @@ $date = new DateTime($date); ?>
     <?php get_sidebar();?>
     
       </div><!--.pagecontent-->
+
+    <div class="row expanded entry-footer">
+       <footer>
+           <?php //last modified page test 
+           $u_time = get_the_time('U'); 
+          $u_modified_time = get_the_modified_time('U'); 
+          if ($u_modified_time >= $u_time + 86400) { 
+          echo "<p>Last modified on "; 
+          the_modified_time('F j, Y'); 
+          "</p> "; }  ?>
+          <?php gcc_wp_2018_entry_footer(); ?>
+      <footer>
+    </div>
   
     </article>
-
-  <div class="row expanded entry-footer">
-     <footer>
-         <?php $u_time = get_the_time('U'); 
-        $u_modified_time = get_the_modified_time('U'); 
-        if ($u_modified_time >= $u_time + 86400) { 
-        echo "<p>Last modified on "; 
-        the_modified_time('F j, Y'); 
-        "</p> "; }  ?>
-        <?php gcc_wp_2018_entry_footer(); ?>
-    <footer>
-  </div>
     
    <?php endwhile; // End of the loop. ?>
 
