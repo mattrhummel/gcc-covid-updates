@@ -295,14 +295,19 @@
   margin: 0;
 
 
+a {
+  display: block;
+  padding: 0 1rem;
+}
+
 }
 
 .textwidget {
   padding: 1rem ;
 
-a {
+  a {
   text-decoration: underline;
-}
+  }
 
 }
 

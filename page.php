@@ -33,6 +33,14 @@ get_header(); ?>
           get_template_part( 'template-parts/content', 'page-alert' );
           ?>
 
+          <?php if (is_page('workforce')) : ; ?>
+
+          
+        <?php putRevSlider( 'workforce-nov-4' ); ?>
+
+
+          <?php endif; ?>
+
           <?php if (is_page('12255')) : ; ?>
 
             <?php putRevSlider( 'diversity-slider' ); ?>
@@ -45,6 +53,19 @@ get_header(); ?>
           <?php
           the_content();
           ?>
+
+  <?php if (is_page('workforce')) {  ?>
+          
+  <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+
+       <h2><?php the_field('workforce_highlights_heading'); ?></h2>
+
+
+        <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
+
+      </div>
+
+          <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
 
@@ -64,7 +85,7 @@ get_header(); ?>
 
           <div class="small-12 columns">
               
-              <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
+                <?php the_title('<h2>', '</h2>', 'gcc-wp-2018'); ?>
 
                 <p>
                   <?php the_field( 'event_date' ); ?>, <?php if( get_field('event_start_time') ): ?>
@@ -100,17 +121,17 @@ get_header(); ?>
 
         <?php endif; ?>
 
-        <?php if (is_page('41713') ) : ; ?>
+        <?php if (is_page('donate') ) : ; ?>
 
       
 <div id="bbox-root"></div>
 <script type="text/javascript">
        window.bboxInit = function () {
-           bbox.showForm('d0995e50-9313-4532-b2bf-28561c56f1d9');
+           bbox.showForm('7ac5f578-b467-4690-815f-dc7eab20bca5');
        };
        (function () {
            var e = document.createElement('script'); e.async = true;
-           e.src = 'https://nam04.safelinks.protection.outlook.com/?url=https%3A%2F%2Fbbox.blackbaudhosting.com%2Fwebforms%2Fbbox-min.js&amp;data=02%7C01%7CMHummel%40germanna.edu%7C50ef56dda9234da4f38808d7bfac861d%7C81259a06defb41f98a9d4fa2f6dd84c2%7C0%7C0%7C637188620029965998&amp;sdata=u6oBn%2BfxHT%2BAm1vZFryo%2BCstb%2BWgZu0StAr%2FQhxfOAA%3D&amp;reserved=0';
+           e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
            document.getElementsByTagName('head')[0].appendChild(e);
        } ());
 </script>

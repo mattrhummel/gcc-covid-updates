@@ -11,7 +11,7 @@ get_header(); ?>
   
   <div class="content-area">
   
-      <div class="entry-content" id="main" tabindex="0">
+      <div class="entry-content" id="main">
 
         <div class="row">
 
