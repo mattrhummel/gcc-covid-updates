@@ -101,6 +101,7 @@
   }
 
   .button {
+    
       text-decoration: none;
       background-color: $black;
       color: $white;
@@ -114,22 +115,22 @@
 
   }
 
-    ul {
+  ul {
 
       li {
 
         a {
 
-          color: $black;
+           color: $black;
           
-          &:hover {
-            text-decoration: underline;
-          }
+            &:hover {
+              text-decoration: underline;
+            }
+
         }
       }
 
     }
-
 }
 
 .callout.warning {
@@ -144,6 +145,7 @@
   }
 
   .button {
+
       text-decoration: none;
       background-color: $white;
       color: $black;
@@ -168,7 +170,7 @@
           &:hover {
             text-decoration: underline;
           }
-          
+
         }
       }
 
