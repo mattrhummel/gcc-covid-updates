@@ -1,5 +1,4 @@
 <div class="row expanded">
-		
 <div class="columns small-12">
 
 			<div class="callout">

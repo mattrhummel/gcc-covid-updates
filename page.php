@@ -57,18 +57,14 @@ get_header(); ?>
 
           <?php if (is_page('workforce')) : ; ?>
 
-                  <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 
       <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 
        <h2><?php the_field('workforce_highlights_heading'); ?></h2>
 
-  
         <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
 
       </div>
-
-
 
           <?php endif; ?>
 
