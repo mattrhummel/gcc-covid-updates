@@ -114,9 +114,17 @@ get_header(); ?>
       <p><strong>Secondary Button Group</strong></p>
 
         <div class="button-group">
-          <a class="button button">One</a>
-          <a class="button button">Two</a>
-          <a class="button button">Three</a>
+          <a class="button secondary">One</a>
+          <a class="button secondary">Two</a>
+          <a class="button secondary">Three</a>
+       </div>
+
+          <p><strong>Success Button Group</strong></p>
+
+        <div class="button-group">
+          <a class="button success">One</a>
+          <a class="button success">Two</a>
+          <a class="button success">Three</a>
        </div>
   
       <p><strong>Alert Button Group</strong></p>
@@ -125,6 +133,14 @@ get_header(); ?>
           <a class="button alert">One</a>
           <a class="button alert">Two</a>
           <a class="button alert">Three</a>
+       </div>
+
+      <p><strong>Warning Button Group</strong></p>
+
+        <div class="button-group">
+          <a class="button warning">One</a>
+          <a class="button warning">Two</a>
+          <a class="button warning">Three</a>
        </div>
 
       <hr>
