@@ -381,13 +381,16 @@ ul.menu.vertical {
       }
       li.green-button {
         
-          a {
-            background-color: $success;
-               &:hover {
-              background-color: rgb(44,87,81);
+             a {
+            background-color: $medium-gray;
+            color: $black;
+
+            &:hover {
+              background-color: $light-gray;
+
             }
             &:focus {
-               background-color: rgb(44,87,81);
+               background-color: $light-gray;
             }
         }
       }

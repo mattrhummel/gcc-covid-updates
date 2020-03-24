@@ -102,15 +102,15 @@ ul.dropdown {
       li.green-button {
         
           a {
-            background-color: $light-gray;
+            background-color: $medium-gray;
             color: $black;
 
             &:hover {
-              background-color: $medium-gray;
+              background-color: $light-gray;
 
             }
             &:focus {
-               background-color: $medium-gray;
+               background-color: $light-gray;
             }
           
         }
