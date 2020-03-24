@@ -261,38 +261,38 @@ get_header(); ?>
   <h2>This is a standard callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-  <a href="#" class="button">Button in BasicCallout</a>
+  <p><a href="#" class="button">Button in BasicCallout</a></p>
 
 </div>
      <div class="callout small primary">
   <h2>This is a small primary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-      <a href="#" class="button">Button in Primary Callout</a>
+      <p><a href="#" class="button">Button in Primary Callout</a></p>
 </div>
      <div class="callout small secondary">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-      <a href="#" class="button">Button in Secondary Callout</a>
+     <p> <a href="#" class="button">Button in Secondary Callout</a></p>
 </div>
      <div class="callout small alert">
   <h2>This is a alert callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-      <a href="#" class="button">Button in Alert Callout</a>
+     <p> <a href="#" class="button">Button in Alert Callout</a></p>
 </div>
      <div class="callout small success">
   <h2>This is a success callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-    <a href="#" class="button">Button in Success Callout</a>
+    <p><a href="#" class="button">Button in Success Callout</a></p>
 </div>
 <div class="callout small warning">
   <h2>This is a warning callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <a href="#">It's dangerous to go alone, take this.</a>
-  <a href="#" class="button">Button in Warning Callout</a>
+ <p> <a href="#" class="button">Button in Warning Callout</a></p>
 </div>
 
       <hr>
