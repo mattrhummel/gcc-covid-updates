@@ -273,7 +273,7 @@ get_header(); ?>
      <div class="callout small secondary">
   <h2>This is a secondary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
-  <a href="#">It's dangerous to go alone, take this.</a>
+  <p><a href="#">It's dangerous to go alone, take this.</a></p>
      <p> <a href="#" class="button">Button in Secondary Callout</a></p>
 </div>
      <div class="callout small alert">
