@@ -73,6 +73,7 @@
     }
 
 }
+
 .callout.alert {
 
   .button {
@@ -99,6 +100,41 @@
             &:hover {
               color: $dark-gray;
             }
+        }
+      }
+
+    }
+
+}
+
+.callout.success {
+
+  .button {
+
+      background-color: $white;
+      color: $black;
+
+      &:hover {
+
+        background-color: $medium-gray;
+        color: black;
+
+      }
+
+  }
+
+    a {
+    color: $white;
+  }
+
+    ul {
+
+      li {
+
+        a {
+
+          color: $white;
+
         }
       }
 
