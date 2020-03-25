@@ -14,9 +14,6 @@ get_header(); ?>
   
   <?php
   while ( have_posts() ) : the_post(); ?>
-  <?php //Page Heading
-  get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
 
    <div class="row expanded content-area">
 
