@@ -218,3 +218,16 @@ ul.dropdown {
 }
 
 }
+
+.banner-bottom {
+  padding: .5rem 0 1rem 0;
+
+
+  .button-group {
+   margin: 0 1rem 1rem 1rem;
+   a {
+    margin-bottom: .5rem;
+    text-transform: uppercase;
+   }
+  }
+}
