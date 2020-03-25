@@ -16,8 +16,8 @@ Text Domain: , 'gcc-wp-2018'
 }
 @include foundation-global-styles;
 @include foundation-reveal;
-// @include foundation-xy-grid-classes;
 @include foundation-grid;
+@include foundation-xy-grid-classes;
 @include foundation-flex-grid;
 @include foundation-flex-classes;
 @include foundation-typography;

@@ -2,7 +2,7 @@
 // foundation.zurb.com
 // Licensed under MIT Open Source
 
-// sass-lint:disable force-element-nesting, no-qualifying-elements
+// sass-lint:disable no-qualifying-elements
 
 ////
 /// @group table
@@ -115,34 +115,6 @@ $table-stack-breakpoint: medium !default;
     background-color: $table-background;
   }
 
-  @mixin my-table-stack {
-  thead {
-    th {
-      display: block;
-    }
-  }
-
-  tfoot {
-    display: none;
-  }
-
-  tr,
-  th,
-  td {
-    display: block;
-  }
-
-  td {
-    border-top: 0;
-  }
-}
-
-table.my-stack {
-   @include breakpoint(medium down) {
-      @include my-table-stack;
-   }
-}
-
   // Caption
   caption {
     padding: $table-padding;
@@ -216,6 +188,7 @@ table.my-stack {
 
 /// Adds the general styles for tables.
 /// @param {Keyword} $stripe [$table-stripe] - Uses keywords even, odd, or none to darken rows of the table. The default value is even.
+/// @param {Boolean} $nest [false] - Needed if you only want to apply this to a specific table.
 @mixin table(
   $stripe: $table-stripe,
   $nest: false
@@ -274,7 +247,7 @@ table.my-stack {
     }
 
     // Darkens the odd striped table rows.
-    @elseif($table-stripe == odd) {
+    @else if($table-stripe == odd) {
       &:not(.unstriped) tr:nth-of-type(odd):hover {
         background-color: $table-row-stripe-hover;
       }
@@ -290,7 +263,7 @@ table.my-stack {
     }
 
     // Darkens the odd striped table rows.
-    @elseif($table-stripe == odd) {
+    @else if($table-stripe == odd) {
       &.striped tr:nth-of-type(odd):hover {
         background-color: $table-row-stripe-hover;
       }
@@ -351,8 +324,5 @@ table.my-stack {
   .table-scroll {
     overflow-x: auto;
 
-    table {
-      width: auto;
-    }
   }
 }
