@@ -13,17 +13,16 @@ get_header(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-
    <div class="row expanded content-area">
 
-    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="xlarge">
+      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="xlarge">
          <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
          </button> 
-     </div>
+      </div>
 
-        <?php get_sidebar();?>
+    <?php get_sidebar();?>
 
-    <div class="columns small-12 medium-12 xlarge-9 xlarge-pull-3" >
+    <div class="columns small-12 medium-12 xlarge-9 xlarge-pull-3">
     
     <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-heading' );

@@ -336,12 +336,13 @@ ul.menu.vertical {
 
       }
 
+
       li.red-button {
         
           a {
             background-color: $primary;
 
-                &:hover {
+            &:hover {
               background-color: rgb(147,27,56);
             }
             &:focus {
@@ -351,11 +352,10 @@ ul.menu.vertical {
         
       }
 
-      li.black-button {
-        
+      li.black-button {  
           a {
             background-color: $secondary;
-                   &:hover {
+      &:hover {
               background-color: rgba(0,0,0, .8);
             }
             &:focus {
@@ -364,13 +364,13 @@ ul.menu.vertical {
           }
         
       }
-
-        li.yellow-button {
+      li.yellow-button {
         
           a {
             background-color: $alert;
-                  color: $secondary;
-                      &:hover {
+            color: $secondary;
+
+            &:hover {
               background-color: rgb(223,213,90);
             }
             &:focus {
@@ -379,9 +379,9 @@ ul.menu.vertical {
           }
         
       }
-      li.green-button {
+      li.gray-button {
         
-             a {
+          a {
             background-color: $medium-gray;
             color: $black;
 
@@ -392,6 +392,22 @@ ul.menu.vertical {
             &:focus {
                background-color: $light-gray;
             }
+          
+        }
+      }
+            li.green-button {
+        
+          a {
+            background-color: $success;
+            color: $white;
+
+            &:hover {
+              background-color: rgb(43,85,80);
+            }
+            &:focus {
+               background-color: rgb(43,85,80);
+            }
+          
         }
       }
     }

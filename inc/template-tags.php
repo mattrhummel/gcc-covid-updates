@@ -282,8 +282,8 @@ if ( is_singular() ) :
 			<li class="red-button">
 				<a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
 			</li>
-			<li class="green-button"><a href="/students/">online students</a></li>
-			<li  class="green-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
+			<li class="gray-button"><a href="/students/">online students</a></li>
+			<li  class="gray-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
 			<li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
 			<ul class="menu">
 				<li><a href="/educational-foundation/alumni/">Alumni</a>
@@ -297,7 +297,7 @@ if ( is_singular() ) :
 			<!-- ... -->
 		</ul>
 	</li>
-	<li  class="yellow-button"><a href="/educational-foundation/donate/">give</a></li>
+	<li  class="green-button"><a href="/educational-foundation/donate/">give</a></li>
 </ul>
 <hr>
 </div>
@@ -310,8 +310,8 @@ function gcc_wp_2018_resources_desktop() { ?>
 <li class="red-button">
 	<a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
 </li>
-<li class="green-button"><a href="/students/">online students</a></li>
-<li class="green-button"><a href="/faculty-staff/">faculty & staff</a></li>
+<li class="gray-button"><a href="/students/">online students</a></li>
+<li class="gray-button"><a href="/faculty-staff/">faculty & staff</a></li>
 <li class="black-button"><a href="#" class="primary">resources <span class="fa fa-caret-down"></span></a>
 <ul class="menu">
 	<li><a href="/educational-foundation/alumni/">Alumni</a>
@@ -325,7 +325,7 @@ function gcc_wp_2018_resources_desktop() { ?>
 <!-- ... -->
 </ul>
 </li>
-<li  class="yellow-button"><a href="/educational-foundation/donate/">give</a></li>
+<li  class="green-button"><a href="/educational-foundation/donate/">give</a></li>
 </ul>
 <?php }
 ?>

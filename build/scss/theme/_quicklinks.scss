@@ -100,7 +100,7 @@ ul.dropdown {
           }
         
       }
-      li.green-button {
+      li.gray-button {
         
           a {
             background-color: $medium-gray;
@@ -112,6 +112,21 @@ ul.dropdown {
             }
             &:focus {
                background-color: $light-gray;
+            }
+          
+        }
+      }
+            li.green-button {
+        
+          a {
+            background-color: $success;
+            color: $white;
+
+            &:hover {
+              background-color: rgb(43,85,80);
+            }
+            &:focus {
+               background-color: rgb(43,85,80);
             }
           
         }
