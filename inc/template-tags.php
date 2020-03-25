@@ -304,7 +304,7 @@ function gcc_wp_2018_resources_mobile() { ?>
         </ul>
 
       </li>
-      <li  class="yellow-button"><a href="/donate/">give</a></li>
+      <li  class="yellow-button"><a href="/educational-foundation/donate/">give</a></li>
   </ul>
    <hr>
 </div> 
@@ -331,7 +331,7 @@ function gcc_wp_2018_resources_desktop() { ?>
           <!-- ... -->
         </ul>
       </li>
-      <li  class="yellow-button"><a href="/donate/">give</a></li>
+      <li  class="yellow-button"><a href="/educational-foundation/donate/">give</a></li>
     </ul>
 <?php }
 ?>
