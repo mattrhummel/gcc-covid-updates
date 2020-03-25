@@ -220,8 +220,8 @@ if ( is_singular() ) :
 	//mobile calltos
 	function gcc_wp_2018_callto_buttons_mobile() { ?>
 	<div class="button-group stacked-for-small  expanded button-group">
-		<a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply', 'gcc-wp-2018'); ?></a>
-		<a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get info', 'gcc-wp-2018') ?></a>
+		<a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
+		<a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get started', 'gcc-wp-2018') ?></a>
 	</div>
 	<?php }
 	?>
@@ -229,8 +229,8 @@ if ( is_singular() ) :
 	//main menu calltos
 	function gcc_wp_2018_callto_buttons_main_menu() { ?>
 	<div class="stacked expanded button-group">
-		<a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply', 'gcc-wp-2018'); ?></a>
-		<a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get info', 'gcc-wp-2018') ?></a>
+		<a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
+		<a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get started', 'gcc-wp-2018') ?></a>
 	</div>
 	<?php }
 	?>
