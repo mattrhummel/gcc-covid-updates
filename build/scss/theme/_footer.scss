@@ -10,15 +10,9 @@
 
 .top-footer {
 
-  padding: 40px 20px;
+  padding: 40px ;
 
-  @media screen and (min-width: 40em) and (max-width: 63.9375em) { 
-    padding: 40px 10px;
-  }
 
-  @media screen and (min-width: 64em) {   
-   padding: 40px 0 100px 0;
- }
 
 .footer-logo {
   margin-bottom: 40px;
@@ -121,6 +115,15 @@ padding-right: 0;
 .button-group {
 
   text-transform: uppercase;
+  
+  .secondary {
+    background-color: #6a1b29;
+
+    &:hover {
+      background-color: $white;
+      color: $primary;
+    }
+  }
 
   .primary {
     background-color: #6a1b29;

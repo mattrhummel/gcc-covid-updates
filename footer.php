@@ -48,6 +48,9 @@
 
     </div>
     <div class="small-12 medium-only-12 large-5 columns button-column">
+
+            <?php gcc_wp_2018_callto_buttons_main_menu(); ?>
+
         
     </div>
   </div>
