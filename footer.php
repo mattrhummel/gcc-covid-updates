@@ -61,7 +61,7 @@
       
       <div class="small-12 medium-only-12 large-7 columns">      
           <?php 
-          //gcc_wp_2018_footer_links_menu(); ?>
+          gcc_wp_2018_footer_links_menu(); ?>
 
         <div class="tips">
           
