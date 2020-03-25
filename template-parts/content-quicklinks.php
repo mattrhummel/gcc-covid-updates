@@ -66,10 +66,7 @@
   </div>
 
   <div class="top-bar-right">
-    
-     <?php 
-      //gcc_wp_2018_top_bar_right_menu(); ?>
-
+   
 <div class="search-container show-for-xlarge">
 
 <form class="float-right" role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
@@ -98,9 +95,12 @@
 
 </div>
 
-<div class="row expanded search-container clearfix hide-for-medium-only hide-for-large-only show-for-xlarge">
+<div class="row expanded banner-bottom clearfix hide-for-medium-only hide-for-medium hide-for-large">
+      
+     <?php 
+      gcc_wp_2018_top_bar_right_menu(); ?>
 
-    
+
   </div>
 
 </div>

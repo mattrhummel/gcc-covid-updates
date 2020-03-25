@@ -56,7 +56,7 @@ function gcc_wp_2018_top_bar_left_menu () {
 function gcc_wp_2018_top_bar_right_menu () {
          wp_nav_menu(array(
         'container' => true,             // remove menu container
-        'items_wrap' => '<div class="button-group" aria-labelledby="menu_action_buttons">%3$s</div>' ,                  // menu name
+        'items_wrap' => '<ul class="menu expanded" aria-labelledby="menu_action_buttons">%3$s</ul>' ,                  // menu name
         'theme_location' => 'top-bar-right-menu',  // where it's located in the theme
         'fallback_cb' => 'main_nav_fb',   // fallback function (see below)
     ));
