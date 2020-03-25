@@ -94,6 +94,14 @@ function gcc_wp_2018_quicklinks_bar() {
         'walker' => ''      // walker to customize menu (see foundation-nav-walker)
 	));
 }
+function gcc_wp_2018_footer_links_menu() {
+         wp_nav_menu(array(
+        'container' => true,             // remove menu container
+        'items_wrap' => '<div><ul class="vertical menu large-horizontal">%3$s</ul></div>' ,                  // menu name
+        'theme_location' => 'footer-links-menu',  // where it's located in the theme
+        'depth' => 0,                     // limit the depth of the nav
+    ));
+}
 function gcc_wp_2018_calltos() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container

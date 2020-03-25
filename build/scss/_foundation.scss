@@ -126,8 +126,8 @@ html {
 @import 'font-awesome/font-awesome';
 
 @mixin foundation-everything(
-  $flex: false,
-  $prototype: false
+  $flex: true,
+  $prototype: true
 ) {
   @if $flex {
     $global-flexbox: true !global;

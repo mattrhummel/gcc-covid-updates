@@ -4,7 +4,8 @@
     'top-navigation' => 'Top Navigation',
     'quicklinks-bar' => 'Quicklinks Bar',
     'top-bar-right-menu'  => 'Top Bar Right Menu',
-     'top-bar-left-menu'  => 'Top Bar Left Menu',
+    'top-bar-left-menu'  => 'Top Bar Left Menu',
+    'footer-links-menu' => 'Footer Links Menu',
     'information-menu' => 'Information Menu', 
     'resource-menu' => 'Resource Menu',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor
