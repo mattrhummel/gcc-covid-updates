@@ -65,7 +65,7 @@ html {
 @import 'components/off-canvas';
 // Components
 @import 'grid/grid';
-@import 'xy-grid/xy-grid';
+// @import 'xy-grid/xy-grid';
 @import 'typography/typography';
 //Forms
 @import 'forms/forms';
@@ -127,8 +127,8 @@ html {
 @import 'font-awesome/font-awesome';
 
 @mixin foundation-everything(
-  $flex: true,
-  $prototype: true
+  $flex: false,
+  $prototype: false
 ) {
   @if $flex {
     $global-flexbox: true !global;
@@ -187,10 +187,5 @@ html {
     @include foundation-prototype-classes;
   }
 }
-// @import 'small-only';
-// @import 'medium-only';
-// @import 'medium-and-up';
-// @import 'large-and-up.scss';
-// @import 'large-only.scss';
 
 @import 'theme/mobile-menu';
