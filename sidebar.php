@@ -193,14 +193,6 @@
   //custom department widgets
   dynamic_sidebar( 'edfoundation-widgets' );
   }
-  if ( is_page('25329')) {
-  //custom department widgets
-  dynamic_sidebar( 'edfoundation-widgets' );
-  }
-  if ( is_page('26722')) {
-  //custom department widgets
-  dynamic_sidebar( 'edfoundation-widgets' );
-  }
   //facilities
   if ( is_page('57') || $post->post_parent == '57' ) {
   //custom department widgets
