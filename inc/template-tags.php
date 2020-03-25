@@ -222,19 +222,119 @@ function getPrevNext() {
 <?php
 }?>
 <?php
-//page icons
-	function gcc_wp_2018_page_icons() {  ?>
-		
-		<ul class="menu horizontal page-icons hide-for-print">
-			 <li>
-				 <a data-toggle="featured-image section-menu main-menu quicklink top-menu big-featured-image" title="<?php _e('Distraction free reading', 'gcc-wp-2018'); ?>"><span class="fa fa-eye-slash page-icon" aria-hidden="true" ></span><span class="icon-text hide-for-medium"><?php _e('Distraction free', 'gcc-wp-2018'); ?></span></a>
-			</li>
-			<li>
-				<a href="javascript:window.print()" title="<?php _e('Print page', 'gcc-wp-2018'); ?>"><span class="fa fa-print  page-icon" aria-hidden="true"></span><span class="icon-text hide-for-medium"><?php _e('Print page', 'gcc-wp-2018'); ?></span></a>
-			</li>
-	</ul>
-	
-<?php } ?>
+//mobile calltos
+function gcc_wp_2018_callto_buttons_mobile() { ?>
+  <div class="button-group stacked-for-small  expanded button-group">
+    <a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply', 'gcc-wp-2018'); ?></a>
+    <a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get info', 'gcc-wp-2018') ?></a>
+  </div>
+<?php }
+?>
+<?php
+//main menu calltos
+function gcc_wp_2018_callto_buttons_main_menu() { ?>
+  <div class="stacked expanded button-group">
+    <a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply', 'gcc-wp-2018'); ?></a>
+    <a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get info', 'gcc-wp-2018') ?></a>
+  </div>
+<?php }
+?>
+<?php
+//desktop top bar search
+function gcc_wp_2018_search_desktop() { ?>
+  <form class="float-right" role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
+        <div class="input-group">
+          <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
+          <input type="hidden" name="ie" value="utf8" title="hidden" />
+          <input type="hidden" name="oe" value="utf8" title="hidden" />
+          <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
+          <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
+          
+          <input type="text" name="q" id="search-field" class="input-group-field">
+          
+          <div class="input-group-button">
+            <button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+          </div>
+        </div>
+      </form>  
+<?php }
+?>
+<?php
+//desktop top bar search
+function gcc_wp_2018_search_mobile() { ?>
+<form class="float-right" role="search" method="get" id="searchform-mobile" action="<?php echo get_home_url(); ?>/search_gcse/">
+          <div class="input-group">
+            <input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
+            <input type="hidden" name="ie" value="utf8" title="hidden" />
+            <input type="hidden" name="oe" value="utf8" title="hidden" />
+            <input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
+            <input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
+            
+            <input type="text" name="q" id="search-field" class="input-group-field">
+            
+            <div class="input-group-button">
+              <button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+            </div>
+          </div>
+</form> 
+<?php }
+?>
+<?php
+//mobile resources menu
+function gcc_wp_2018_resources_mobile() { ?>
+  	<div class="mobile-resources">
+
+    <ul class="vertical menu accordion-menu"  data-accordion-menu>
+      <li class="red-button">
+        <a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
+      </li>
+      <li class="green-button"><a href="/students/">online students</a></li>
+      <li  class="green-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
+       <li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
+
+        <ul class="menu">
+          <li><a href="/educational-foundation/alumni/">Alumni</a>
+          </li>
+          <li><a href="/bookstore/">Bookstore</a></li>
+          <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
+          <li><a href="/library/">Libraries</a></li>
+          <li><a href="/veterans/">Military & Families</a>
+          <li><a href="/admissions/transcript-request/">Transcripts</a>
+          <!-- ... -->
+        </ul>
+
+      </li>
+      <li  class="yellow-button"><a href="/donate/">give</a></li>
+  </ul>
+   <hr>
+</div> 
+<?php }
+?>
+<?php
+//desktop resources menu
+function gcc_wp_2018_resources_desktop() { ?>
+<ul class="dropdown menu align-center hide-for-medium-only hide-for-large-only show-for-xlarge" data-dropdown-menu>
+          <li class="red-button">
+            <a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
+          </li>
+          <li class="green-button"><a href="/students/">online students</a></li>
+          <li class="green-button"><a href="/faculty-staff/">faculty & staff</a></li>
+          <li class="black-button"><a href="#" class="primary">resources <span class="fa fa-caret-down"></span></a>
+          <ul class="menu">
+          <li><a href="/educational-foundation/alumni/">Alumni</a>
+          </li>
+          <li><a href="/bookstore/">Bookstore</a></li>
+          <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
+          <li><a href="/library/">Libraries</a></li>
+          <li><a href="/veterans/">Military & Families</a>
+          <li><a href="/admissions/transcript-request/">Transcripts</a>
+          <!-- ... -->
+        </ul>
+      </li>
+      <li  class="yellow-button"><a href="/donate/">give</a></li>
+    </ul>
+<?php }
+?>
 <?php
 //close button
 function gcc_wp_2018_close_button() { ?>
