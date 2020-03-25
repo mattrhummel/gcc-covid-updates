@@ -12,75 +12,71 @@
 <?php //closing main container, do not remove ?>
 </main>
 
-
 <footer class="site-footer hide-for-print">
-<div class="top-footer row expanded gutter-small">
-  <div class="small-12 medium-12 large-6 columns">
-    <div class="small-12 medium-7 columns">
-  
-      <div class="footer-logo">      
+<div class="row top-footer">
+  <div class="small-12 medium-12 large-4 columns">
+    
+    <div class="footer-logo">      
        <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
     </div>
     
-    <p>
-        <?php the_field('primary_address', 'option'); ?><br/>
-       <a href="tel:<?php  the_field('primary_phone_number', 'option'); ?>">
-       <?php  the_field('primary_phone_number', 'option'); ?></a>
-    </p>
+  </div>
+  <div class="small-12 medium-12 large-8 columns footer-content">
+    <div class="large-7 columns footer-contacts">
+      <h3><?php bloginfo( 'name' ); ?></h3>
+      
+      <p><?php the_field('primary_address', 'option'); ?><br/>
+        
+      <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
+        <?php _e('(540) 891-3000', 'gcc-wp-2019') ?></a>
+        
+      </p>
 
-     <h2><?php _e('#germanna', 'gcc-wp-2018'); ?></h2>
-      <div class="social">
-      <?php gcc_wp_2018_social_icons(); ?>
+      <p><a href="/admissions/contact-us/">Contact Us</a></p>
+
+      <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
+      <div class="social">       
+        <ul class="social-icons">
+          <li><a href="https://www.facebook.com/<?php the_field('facebook_id', 'option'); ?>"><span class="fa fa-facebook-f" aria-hidden="true" title="Germanna on Facebook"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://twitter.com/<?php the_field('twitter_id', 'option'); ?>"><span class="fa fa-twitter"  aria-hidden="true"><span class="icon-text" title="Germanna on Twitter"><?php _e('Twitter', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.instagram.com/<?php the_field('instagram_id', 'option'); ?>"><span class="fa fa-instagram"  aria-hidden="true" title="Germanna on Instagram"><span class="icon-text"><?php _e('Instagram', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.youtube.com/user/<?php the_field('youtube_id', 'option'); ?>" title="Germanna on Youtube"><span class="fa fa-youtube"  aria-hidden="true"><span class="icon-text"><?php _e('Youtube', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.flickr.com/photos/<?php the_field('flickr_id', 'option'); ?>"><span class="fa fa-flickr"  aria-hidden="true" title="Germanna on Flickr"><span class="icon-text"><?php _e('Flickr', 'gcc-wp-2018');?></span></span></a></li>
+          <li><a href="https://www.linkedin.com/school/<?php the_field('linkedin_id', 'option'); ?>"><span class="fa fa-linkedin"  aria-hidden="true" title="Germanna on LinkedIn"><span class="icon-text"><?php _e('LinkedIn', 'gcc-wp-2018');?></span></span></a></li>
+        </ul>
+      </div>
+
     </div>
+    <div class="small-12 medium-only-12 large-5 columns button-column">
+        
     </div>
-    <div class="medium-5 columns">
-
-
-
   </div>
-</div>
-<div class="small-12 medium-12 large-6 columns">
-  <div class="medium-6 columns footer-links">
-    <map name="FooterMenu1">
-    <?php wp_nav_menu( array( 'menu' => 'Footer Col3 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </map>
-  </div>
-  <div class="medium-6 columns  footer-links">
-    <map name="FooterMenu2">
-    <?php wp_nav_menu( array( 'menu' => 'Footer Col4 Menu', 'container' => 'true', 'menu_class' => 'menu vertical') ); ?>
-    </map>
-  </div>
-</div>
 </div>
 <div class="site-footer-bottom hide-for-print">
-
-  <div class="row expanded bottom-footer-content">
-  
-  <div class="small-12 medium-5 large-6 columns">
-
-    <div class="tips">
+  <div class="bottom-footer-content">
+    <div class="row">
       
-      <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
+      <div class="small-12 medium-only-12 large-7 columns">      
+          <?php 
+          //gcc_wp_2018_footer_links_menu(); ?>
+
+        <div class="tips">
+          
+          <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
+          
+          <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text"><?php _e('report an incident', 'gcc-wp-2018')?></span></span></a>
+        
+        </div>
+      </div>
       
-      <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text">report an incident</span></span></a>
-    
+      <div class="small-12 medium-only-12 large-5 columns">
+        <?php the_field('bottom_footer_text', 'option'); ?> 
+        <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
+           <?php bloginfo( 'name' ); ?></p> 
+      </div>
+
     </div>
   </div>
-
-<div class="small-12 medium-7 large-6 columns">
-
-  <p>&copy;
-    <?php echo date('Y'); ?>
-    <?php bloginfo( 'name' ); ?><br/>
-      <?php the_field('bottom_footer_text', 'option'); ?>
-
-  </p>
-
-
-</div>
-
-</div>
-
 </div>
 </footer>
 
