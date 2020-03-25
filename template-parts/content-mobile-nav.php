@@ -37,14 +37,15 @@
       <li  class="green-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
        <li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
 
-        <ul class="menu">
+    <ul class="menu">
+            <li><a href="/educational-foundation/alumni/">Alumni</a>
+          </li>
           <li><a href="/bookstore/">Bookstore</a></li>
-          <li><a href="/admissions/transcript-request/">Transcripts</a>
           <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
           <li><a href="/library/">Libraries</a></li>
           <li><a href="/veterans/">Military & Families</a>
-          <li><a href="/educational-foundation/alumni/">Alumni</a>
-          </li>
+          <li><a href="/admissions/transcript-request/">Transcripts</a>
+          <!-- ... -->
         </ul>
 
       </li>
