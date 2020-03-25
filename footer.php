@@ -18,11 +18,10 @@
   <div class="small-12 medium-12 large-6 columns">
     <div class="small-12 medium-7 columns">
   
-     <?php  //germanna logo
-        if ( function_exists( 'the_custom_logo' ) ) {
-        the_custom_logo();
-        }
-    ?>
+      <div class="footer-logo">      
+       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
+    </div>
+    
     <p>
         <?php the_field('primary_address', 'option'); ?><br/>
        <a href="tel:<?php  the_field('primary_phone_number', 'option'); ?>">
