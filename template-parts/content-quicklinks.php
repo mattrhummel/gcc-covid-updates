@@ -61,6 +61,7 @@
         </ul>
 
       </li>
+      <li  class="yellow-button"><a href="/faculty-staff/">give</a></li>
     </ul>
 
   </div>
@@ -100,7 +101,6 @@
       <div class="button-group stacked-for-small  expanded button-group">
         <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded">apply</a>
         <a href="" class="button primary expanded">get info</a>
-        <a href="/donate/" class="button alert expanded">give</a>
       </div>
       </div><!--.branding-->
   </div>
