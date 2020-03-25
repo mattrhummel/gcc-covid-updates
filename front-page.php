@@ -17,14 +17,13 @@ get_header(); ?>
     
     <div class="entry-content" id="main">
   
-  <div class="row">
+  <div class="row expanded">
         
-        <div class="columns small-12">  
           <?php //Page Heading
          the_content();
           ?>
-        </div>
-      </div>
+  
+  </div>
 
 <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
 
