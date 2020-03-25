@@ -77,6 +77,14 @@ function gcc_wp_2018_resource_menu() {
         'depth' => 0,                     // limit the depth of the nav
     ));
 }
+function gcc_wp_2018_resource_menu_mobile() {
+         wp_nav_menu(array(
+        'container' => true,             // remove menu container
+        'items_wrap' => '<ul class="menu resource-links"  aria-labelledby="menu_resource">%3$s</ul>' ,                  // menu name
+        'theme_location' => 'resource-menu',  // where it's located in the theme
+        'depth' => 0,                     // limit the depth of the nav
+    ));
+}
 function gcc_wp_2018_quicklinks_bar() {
          wp_nav_menu(array(
         'container' => true,             // remove menu container

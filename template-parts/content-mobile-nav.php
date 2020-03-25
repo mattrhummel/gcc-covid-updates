@@ -15,6 +15,6 @@
     gcc_wp_2018_mobile_offcanvas(); ?>
     <hr>
     <?php
-    gcc_wp_2018_resource_menu(); ?>
+   gcc_wp_2018_resource_menu_mobile(); ?>
   </div>
 </div>
