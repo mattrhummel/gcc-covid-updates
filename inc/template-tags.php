@@ -297,6 +297,7 @@ function gcc_wp_2018_resources_mobile() { ?>
           </li>
           <li><a href="/bookstore/">Bookstore</a></li>
           <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
+			<li><a href="https://applications.germanna.edu/human-resources/employment-opportunities.asp">Employment Opportunities</a></li>
           <li><a href="/library/">Libraries</a></li>
           <li><a href="/veterans/">Military & Families</a>
           <li><a href="/admissions/transcript-request/">Transcripts</a>
@@ -325,6 +326,7 @@ function gcc_wp_2018_resources_desktop() { ?>
           </li>
           <li><a href="/bookstore/">Bookstore</a></li>
           <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
+          <li><a href="https://applications.germanna.edu/human-resources/employment-opportunities.asp">Employment Opportunities</a></li>
           <li><a href="/library/">Libraries</a></li>
           <li><a href="/veterans/">Military & Families</a>
           <li><a href="/admissions/transcript-request/">Transcripts</a>
