@@ -95,6 +95,13 @@ get_header(); ?>
           </blockquote>
       <hr>
 
+      <h2>Labels</h2>
+
+      <span class="label primary">Primary Label</span>
+<span class="label secondary">Secondary Label</span>
+<span class="label success">Success Label</span>
+<span class="label alert">Alert Label</span>
+
       <h2>Buttons</h2>
           <a href="#" class="button primary">Primary Button</a>
           <a href="#" class="button secondary">Secondary Button</a>
