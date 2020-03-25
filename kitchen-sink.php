@@ -95,12 +95,26 @@ get_header(); ?>
           </blockquote>
       <hr>
 
+      <h2>Lead</h2>
+    
+
+<p class="lead">What are your cats <em>really</em> dreaming about while they sleep?</p>
+      
+      <hr>
+
+
       <h2>Labels</h2>
 
-      <span class="label primary">Primary Label</span>
+
+
+ <span class="label primary">Primary Label</span>
 <span class="label secondary">Secondary Label</span>
 <span class="label success">Success Label</span>
 <span class="label alert">Alert Label</span>
+<span class="label warning">Warning Label</span>
+
+      <hr>
+
 
       <h2>Buttons</h2>
           <a href="#" class="button primary">Primary Button</a>
@@ -298,7 +312,7 @@ get_header(); ?>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
   <p><a href="#">It's dangerous to go alone, take this.</a></p>
   <p><a href="#" class="button">Button in BasicCallout</a></p>
-
+ </div>
      <div class="callout small primary">
   <h2>This is a small primary callout</h2>
   <p>It has an easy to override visual style, and is appropriately subdued.</p>
@@ -350,6 +364,20 @@ get_header(); ?>
       <hr>
       <h2>Tabs</h2>
 
+      <ul class="tabs" data-tabs id="example-tabs">
+  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Tab 1</a></li>
+  <li class="tabs-title"><a data-tabs-target="panel2" href="#panel2">Tab 2</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="example-tabs">
+  <div class="tabs-panel is-active" id="panel1">
+    <p>Vivamus hendrerit arcu sed erat molestie vehicula. Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor. Suspendisse dictum feugiat nisl ut dapibus.</p>
+  </div>
+  <div class="tabs-panel" id="panel2">
+    <p>Suspendisse dictum feugiat nisl ut dapibus.  Vivamus hendrerit arcu sed erat molestie vehicula. Ut in nulla enim. Phasellus molestie magna non est bibendum non venenatis nisl tempor.  Sed auctor neque eu tellus rhoncus ut eleifend nibh porttitor.</p>
+  </div>
+</div>
+
     
       <hr>
       <h2>Menu</h2>
@@ -396,15 +424,16 @@ get_header(); ?>
 
       <hr>
       <h2 id="thumbnails">Thumbnails</h2>
-     <img class="thumbnail" src="assets/img/thumbnail/01.jpg" alt="Photo of Uranus.">
-    <a href="#" class="thumbnail"><img src="assets/img/thumbnail/02.jpg" alt="Photo of Neptune."></a>
-      <img class="thumbnail" src="assets/img/thumbnail/03.jpg" alt="Photo of Pluto.">
+     <img class="thumbnail" src="ahttps://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/8AB7BF85-8D0D-43A2-A58A-95E630B8277F-scaled-1.jpg" alt="Photo of Uranus.">
+    
+    <a href="#" class="thumbnail"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/8AB7BF85-8D0D-43A2-A58A-95E630B8277F-scaled-1.jpg" alt="Photo of Neptune."></a>
+    
+    <img class="thumbnail" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/8AB7BF85-8D0D-43A2-A58A-95E630B8277F-scaled-1.jpg" alt="Photo of Pluto.">
       
       </div>
 
       
       </div>
-    </div>
     
     <?php get_sidebar();?>
     
