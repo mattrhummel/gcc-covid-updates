@@ -18,26 +18,21 @@ get_header(); ?>
   get_template_part( 'template-parts/content', 'page-heading' );
   ?>
 
-  <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-9 float-left columns" >
-      
-      <?php // if the page has a featured image
-      if  (has_post_thumbnail( ) )  { ?>
-      
-      <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image">
-        <?php the_post_thumbnail('', array ('class' => 'lazy'));  ?>
+   <div class="row expanded content-area">
+
+      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="xlarge">
+         <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+         </button> 
       </div>
 
-      <?php  }  else {  //.pagesubbanner
-      // if page doesn't have a featured image
-      ?>
-      <?php } ?>
-      
-      <div class="entry-content" id="main" tabindex="0">
-        
-        <?php //Page Heading
-        get_template_part( 'template-parts/content', 'page-alert' );
+    <?php get_sidebar();?>
+
+    <div class="columns small-12 medium-12 xlarge-9 xlarge-pull-3">
+    
+    <?php //Page Heading
+          get_template_part( 'template-parts/content', 'page-heading' );
         ?>
+
 
         <?php
         the_content();
@@ -77,10 +72,7 @@ get_header(); ?>
         
         </div>
       </div>
-      <aside class="small-12 medium-12 large-4 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
-        <?php dynamic_sidebar( 'covid-widgets' ); ?>
-      </aside>
-      </div><!--.pagecontent-->
+
         <div class="row expanded entry-footer">
      <footer>
          <?php $u_time = get_the_time('U'); 

@@ -12,12 +12,23 @@ get_header(); ?>
   while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
- 
-  <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-9 float-left columns" >
-        <?php //Page Heading
+
+
+   <div class="row expanded content-area">
+
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="xlarge">
+         <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+         </button> 
+     </div>
+
+        <?php get_sidebar();?>
+
+    <div class="columns small-12 medium-12 xlarge-9 xlarge-pull-3" >
+    
+    <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-heading' );
         ?>
+
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -331,9 +342,7 @@ get_header(); ?>
 
       </div>
     </div>
-    
-    <?php get_sidebar();?>
-    
+        
       </div><!--.pagecontent-->
 
     <div class="row expanded entry-footer">
