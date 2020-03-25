@@ -14,13 +14,14 @@ ul.dropdown {
      
       li {
         margin-left: .2rem;
-  
          a {
 
             background-color: $primary;
             color: $white;
             text-transform: uppercase;
-            font-size: .85rem;
+            font-size: .8rem;
+                   padding: .5rem .8rem;
+
 
             &:hover {
               background-color: $secondary;
@@ -134,8 +135,8 @@ ul.dropdown {
   
            a {
             color: $success;
-            padding: .5rem 0;
-            font-size: .85rem;
+            padding: .7rem 0;
+            font-size: .8rem;
             background-color: $white;
             
             &:hover {

@@ -224,9 +224,9 @@ ul.menu.resource-links {
       width: 100%;
            a {
             color: $success;
-            padding: .5rem 0;
+            padding: .3rem 0;
             font-weight: 100;
-            font-size: 1rem;
+            font-size: .8rem;
             &:hover {
               color: rgb(44,87,81);
               text-decoration: underline;
@@ -306,7 +306,7 @@ ul.menu.vertical {
             color: $white;
             padding: .5rem 1rem;
             font-weight: 100;
-            font-size: .95rem;
+            font-size: .8rem;
 
             &:hover {
               background-color: $secondary;
