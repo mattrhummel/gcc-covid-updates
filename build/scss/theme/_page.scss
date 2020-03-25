@@ -422,19 +422,19 @@ li:last-child a,
 
 .widget {
 
+
   ul {
     
-    list-style: none;
+    list-style: disc;
     padding: 0;
     
     li {
     
       padding: .3rem 0;
 
-
       a {
 
-        padding: 1rem;
+        padding:0;
         display: block;
 
            /* mouse over link */
