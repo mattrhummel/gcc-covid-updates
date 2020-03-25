@@ -10,14 +10,15 @@ get_header(); ?>
 <?php
 	while ( have_posts() ) : the_post(); ?>
 
-		<?php //Page Heading
-		get_template_part( 'template-parts/content', 'page-heading' );
- ?>
-
-		<!--Page Content-->
-		<div class="row gutter-small expanded content-area">
-
-			<div class="small-12 entry-content" id="main" tabindex="0">
+  <div class="content-area">
+    
+    <div class="entry-content" id="main">
+      <div class="row">
+        <div class="columns small-12">
+          
+          <?php //Page Heading
+          get_template_part( 'template-parts/content', 'page-heading' );
+          ?>
 
 			<?php
 			    the_content();
@@ -36,13 +37,9 @@ get_header(); ?>
 	</script>
 
 			</div>
+	</div><!--.pagecontent-->
 
-
-		
-
-
-
-		</div><!--.pagecontent-->
+</div>
 
 <?php endwhile; // End of the loop. ?>
 
