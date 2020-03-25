@@ -23,11 +23,12 @@ function main_menu() {
       <?php 
       //gcc_wp_2018_top_bar_right_menu(); ?>
 
-      <div class="stacked expanded button-group">
-        <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded">apply</a>
-        <a href="" class="button primary expanded">get info</a>
-        <a href="/donate/" class="button alert expanded">give</a>
-      </div>
+        <div class="stacked expanded button-group">
+          <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded">apply</a>
+          <a href="" class="button primary expanded">get info</a>
+          <a href="/donate/" class="button alert expanded">give</a>
+        </div>
+      
       </div><!--.branding-->
 
         <?php
