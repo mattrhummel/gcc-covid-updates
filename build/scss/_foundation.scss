@@ -131,7 +131,7 @@ html {
   $prototype: false
 ) {
   @if $flex {
-    $global-flexbox: true !global;
+    $global-flexbox: false !global;
   }
 
   @include foundation-global-styles;

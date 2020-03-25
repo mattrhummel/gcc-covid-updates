@@ -5,6 +5,11 @@
 
 .entry-content {
 
+.button-group {
+  a {
+    margin-right: .3rem !important;
+  }
+}
   margin-top: 1rem;
   margin-bottom: 1rem;
 
@@ -328,6 +333,7 @@ button.mobile-sidebar-button {
 .widget {
   margin-bottom: 1rem;
 
+
   h3 {
   background-color: $medium-gray;
   border-bottom: 2px solid $primary;
@@ -344,7 +350,7 @@ a {
 
 }
 
-h3:first-child {
+h3:first-of-type {
   display: none;
 
 @media screen and (min-width: 64em) {

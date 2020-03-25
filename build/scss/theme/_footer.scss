@@ -98,6 +98,7 @@ a[href^="tel"] {
   &:hover{
     color: $white;
     cursor: default;
+    text-decoration: none;
   }
 }
 
@@ -213,7 +214,7 @@ padding-right: 0;
 .site-footer-bottom {
 
   background: $white;
-  padding: 1.4rem 0 8rem 0;
+  padding: 1.4rem 0 3rem 0;
   
   .bottom-footer-content {
 
