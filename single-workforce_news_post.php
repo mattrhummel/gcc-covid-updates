@@ -10,11 +10,35 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <?php
   while ( have_posts() ) : the_post(); ?>
-  <?php
-  get_template_part( 'template-parts/content', 'workforce-single-heading' );
-  ?>
-  <div class="row gutter-small expanded content-area">
-    <div class="columns small-12 medium-12 large-9">
+  <div class="row expanded content-area">
+  
+    <div class="columns small-12">
+      <header>
+    <h1 class="entry-title"><?php the_title(); ?></h1>
+      <?php if ( 'post' === get_post_type() ) : ?>
+    <p><?php the_date();?></p>
+  <?php endif; ?>
+      <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+      <div title="breadcrumbs trail">
+        <ul class="breadcrumbs">
+          <?php $home_page = get_the_title( get_option('page_on_front'));
+          $post_title = get_the_title( get_option('page_for_posts'));
+          ?>
+          <li role="menuitem">
+            <a href="<?php echo get_site_url(); ?>">
+              <?php echo $home_page; ?>
+            </a>
+          </li>
+          <li role="menuitem">
+            <a href="/workforce/">
+              <?php _e('Workforce', 'workforce'); ?>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+</header>
+      
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -24,7 +48,8 @@ get_header(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-      <div class="entry-content" id="main" tabindex="0">
+
+
         <?php
         the_content( sprintf(
         wp_kses(
@@ -41,9 +66,7 @@ get_header(); ?>
         ); ?>
       </div>
     </div>
-    <aside class="small-12 medium-12 large-4 columns right page-nav hide-for-print" id="section-menu"  data-toggler="hide">
-      <?php dynamic_sidebar( 'workforce-widgets' ); ?>
-    </aside>
+ 
     <?php endwhile; // End of the loop. ?>
   </article>
   <?php

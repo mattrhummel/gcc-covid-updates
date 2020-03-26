@@ -423,7 +423,7 @@
   dynamic_sidebar( 'veterans-widgets' );
   }
   //workforce
-  if ( is_page('113') || $post->post_parent == '113' ) {
+  if ( is_page('113') || $post->post_parent == '113' || is_post_type_archive( 'workforce-updates' ) ) {
   //custom department widgets
   dynamic_sidebar( 'workforce-widgets' );
   }

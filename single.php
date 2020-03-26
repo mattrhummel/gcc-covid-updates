@@ -42,14 +42,11 @@ get_header(); ?>
 									<?php echo $post_title; ?>
 								</a>
 							</li>
-							<li role="menuitem">
-								<?php the_title(); ?>
-							</li>
 						</ul>
 					</div>
 				</nav>
 			</header>
-			<div class="entry-content" id="main">
+			<div class="entry-content" id="main" style="margin-top: 20px;">
 				<?php the_content(); ?>
 			</div>
 		</div>
