@@ -47,13 +47,13 @@
 
           <div class="small-12 medium-4 columns right">
             <div class="button-group show-for-medium">
+
+              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button primary"> 
+                  <?php _e('Future Students', 'gcc-wp-2018'); ?>
+              </a>
               
               <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button secondary apply-button"> 
                   <?php _e('Apply Now', 'gcc-wp-2018'); ?>
-              </a>
-
-              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button primary"> 
-                  <?php _e('Get Started', 'gcc-wp-2018'); ?>
               </a>
 
             </div>
@@ -73,8 +73,6 @@
     get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
-
-    
     <div class="off-canvas-wrapper no-js">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <?php main_menu(); //main sidebar navigation ?>

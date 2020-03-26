@@ -50,8 +50,8 @@
     <div class="small-12 medium-only-12 large-5 columns button-column">
    
       <div class="button-group stacked show-for-large">
+      <a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('Future Students', 'gcc-wp-2018') ?></a>
         <a href="<?php esc_html__('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
-        <a href="<?php esc_html__('/admissions/request-information/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('get started', 'gcc-wp-2018') ?></a>
        <a href="<?php esc_html__('/educational-foundation/donate/','gcc-wp-2018'); ?>" class="button primary expanded"><?php _e('give', 'gcc-wp-2018') ?></a>
       </div>
   
