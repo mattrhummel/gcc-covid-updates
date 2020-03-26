@@ -262,7 +262,7 @@
     bottom: 0;
     left: 0;
     height: auto;
-    background-color: $primary;
+    background-color: $white;
     width: 100%;
     padding: .5rem 8rem .5rem .2rem;
     min-width: 100%;
@@ -279,13 +279,13 @@
     }
 
     .close-button {
-      color: $white;
+      color: $black;
       font-size: 2rem;
       font-weight: 800
     }
 
     p {
-      color: $white;
+      color: $black;
       font-size: 1rem;
       font-weight: 800;
       margin: 0;
@@ -311,34 +311,17 @@
     .button-group {
 
         float: none;
-        margin-right: 20px;
 
-     @media screen and (min-width: 64em) {
+
+      @media screen and (min-width: 64em) {
 
         float: right;
     
     }
 
-   .button.banner-button {
-    margin: .2rem .1rem 0 .1rem; 
-    font-weight: 800;
-    background-color: $light-gray;
-    padding: .5rem 1rem;
-    font-size: 1.2rem;
-    color: $secondary;
-    border-radius: 10px;
+    a {
+      text-transform: uppercase;
+    }
 
-   }
-        
-   .button.banner-button-hollow {
-    margin: .2rem .2rem 0 .1rem; 
-    font-weight: 800;
-    background-color: $primary;
-    padding: .5rem 1rem;
-    font-size: 1.2rem;
-    color: $white;
-    border-radius: 10px;
-  
-   }
  }
 }

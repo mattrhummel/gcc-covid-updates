@@ -47,12 +47,12 @@
           <div class="small-12 medium-4 columns">
             <div class="button-group show-for-medium">
               
-              <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button banner-button-hollow apply-button"> 
-                  <?php the_field( 'banner_button_1_text', 'options' ); ?>
+              <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button secondary apply-button"> 
+                  <?php _e('Apply Now', 'gcc-wp-2018'); ?>
               </a>
 
-              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button banner-button request-button"> 
-                  <?php the_field( 'banner_button_2_text', 'options' ); ?>
+              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button primary"> 
+                  <?php _e('Get Started', 'gcc-wp-2018'); ?>
               </a>
 
             </div>
