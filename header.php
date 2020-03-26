@@ -33,7 +33,7 @@
     </div>
 
     <?php if( get_field('banner_text', 'options') ): ?>  
-<div id="bannerAnnouncement" class="bottom-banner hide-for-print" data-closable>
+<div id="bannerAnnouncement" class="bottom-banner show-for-medium hide-for-print" data-closable>
       
       <div class="row expanded">
         <div class="row">
