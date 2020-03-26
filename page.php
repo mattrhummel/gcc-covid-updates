@@ -58,7 +58,7 @@ get_header(); ?>
 
             <?php if (is_page('workforce')) : ; ?>
 
-             <?php putRevSlider( 'workforce-nov-4' ); ?>
+              <?php putRevSlider( 'workforce-nov-4' ); ?>
 
               <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 
