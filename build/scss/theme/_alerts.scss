@@ -263,18 +263,22 @@
     left: 0;
     height: auto;
     background-color: $white;
+    border-top: 2px solid $primary;
     width: 100%;
     padding: .5rem 8rem .5rem .2rem;
     min-width: 100%;
 
 @media screen and (max-width: 39.9375em) {
 
-      padding: .5rem 0 .5rem .2rem;
+      padding: 1rem 0 .5rem .2rem;
 
 }
+ @media screen and (min-width: 40em) {
+    padding: 1rem 2.6rem .5rem 1rem;
 
+ }
     @media screen and (min-width: 64em) {
-    padding: .5rem 2.6rem .5rem 1rem;
+    padding: 1rem 2.6rem .5rem 1rem;
 
     }
 
@@ -286,38 +290,28 @@
 
     p {
       color: $black;
-      font-size: 1rem;
-      font-weight: 800;
-      margin: 0;
-      line-height: auto;
-
-
+      font-weight: bold;
         @media screen and (min-width: 40em) {
 
-        font-size: 1.4rem;
-        margin: 0;
-        padding-top: .2rem;
+        font-size: 1.2rem;
       
       }
         
         @media screen and (min-width: 64em) {
         
-        font-size: 1.6rem;
-        margin: 0;
+        font-size: 1.4rem;
      }
 
     }
 
     .button-group {
 
-        float: none;
+      float: none;
+      margin: 0;
 
-
-      @media screen and (min-width: 64em) {
-
+    @media screen and (min-width: 64em) {
         float: right;
-    
-    }
+       }
 
     a {
       text-transform: uppercase;

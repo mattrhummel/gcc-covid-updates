@@ -33,9 +33,10 @@
     </div>
 
     <?php if( get_field('banner_text', 'options') ): ?>  
-<div id="bannerAnnouncement" class="bottom-banner show-for-medium hide-for-print" data-closable>
-      
+<div id="bannerAnnouncement" class="bottom-banner show-for-large hide-for-print" data-closable>
+    
       <div class="row expanded">
+
         <div class="row">
 
           <div class="small-12 medium-8 columns ">
@@ -44,7 +45,7 @@
             
           </div>
 
-          <div class="small-12 medium-4 columns">
+          <div class="small-12 medium-4 columns right">
             <div class="button-group show-for-medium">
               
               <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button secondary apply-button"> 
