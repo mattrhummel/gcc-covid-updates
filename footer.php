@@ -33,9 +33,7 @@
         <?php _e('(540) 891-3000', 'gcc-wp-2019') ?></a>
         
       </p>
-
-      <p><a href="/admissions/contact-us/">Contact Us</a></p>
-
+      
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
       <div class="social">       
         <ul class="social-icons">
