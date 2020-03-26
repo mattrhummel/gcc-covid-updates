@@ -310,9 +310,11 @@ ul.menu.vertical {
 
             &:hover {
               background-color: $secondary;
+              text-decoration: none;
             }
             &:focus {
               background-color: $secondary;
+              text-decoration: none;
             }
 
             span {
