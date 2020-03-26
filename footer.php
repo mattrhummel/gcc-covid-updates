@@ -15,7 +15,7 @@
 
 
 <footer class="site-footer hide-for-print">
-<div class="row top-footer">
+<div class="row expanded collapse top-footer">
   <div class="small-12 medium-12 large-4 columns">
     
     <div class="footer-logo">      
@@ -33,7 +33,7 @@
         <?php _e('(540) 891-3000', 'gcc-wp-2019') ?></a>
         
       </p>
-      
+
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
       <div class="social">       
         <ul class="social-icons">
@@ -60,7 +60,7 @@
 </div>
 <div class="site-footer-bottom hide-for-print">
   <div class="bottom-footer-content">
-    <div class="row">
+    <div class="row expanded">
       
       <div class="small-12 medium-only-12 large-7 columns">      
           <?php 
