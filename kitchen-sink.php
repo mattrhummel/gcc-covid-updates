@@ -129,7 +129,7 @@ get_header(); ?>
 
      <p><strong>Standard Button Group</strong></p>
 
-      <div class="button-group expanded ">
+      <div class="expanded button-group">
           <a class="button light-gray">One</a>
           <a class="button light-gray">Two</a>
           <a class="button light-gray">Three</a>
