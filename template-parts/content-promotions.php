@@ -14,7 +14,7 @@
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
 <div class="column small-12 medium-6 large-4">
-<div class="callout <?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
+<div class="callout"  data-equalizer-watch>
 
 <?php // ACF Image Object
 
