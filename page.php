@@ -40,7 +40,7 @@ while ( have_posts() ) : the_post(); ?>
       <?php endif; ?>
 
       <?php if (is_page('workforce')) : ; ?>
-      <?php //putRevSlider( 'workforce-nov-4' ); ?>
+      <?php putRevSlider( 'workforce-nov-4' ); ?>
       <?php endif; ?>
       
 
@@ -51,6 +51,22 @@ while ( have_posts() ) : the_post(); ?>
        <?php
         the_content();
         ?>
+
+        <?php if (is_page('workforce')) : ; ?>
+        
+        <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+          
+  
+          <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
+
+          <h2><?php the_field('workforce_highlights_heading'); ?></h2>
+          
+
+          <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
+
+        </div>
+
+        <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
@@ -91,7 +107,6 @@ while ( have_posts() ) : the_post(); ?>
           <?php endif; ?>
         </div>
         <?php endif; ?>
-
         <?php if (is_page('56') ) : ; ?>
         <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
         <?php endif; ?>
@@ -110,7 +125,6 @@ while ( have_posts() ) : the_post(); ?>
         } ());
         </script>
         <?php endif; ?>
-
         <?php if (is_page('local-scholarship-aid')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           <?php // get raw date
@@ -162,7 +176,6 @@ while ( have_posts() ) : the_post(); ?>
         </div>
         
         <?php endif; ?>
-
         <?php //student activities events
         if (is_page('27603')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
@@ -207,8 +220,6 @@ while ( have_posts() ) : the_post(); ?>
           <?php endif; ?>
         </div>
         <?php endif; ?>
-
-
         <?php //pathways
         if (is_page('26400')) : ; ?>
         <h2><?php _e('Included Pathways', 'gcc-wp-2018'); ?></h2>
@@ -288,7 +299,6 @@ while ( have_posts() ) : the_post(); ?>
           <?php gcc_wp_2018_entry_footer(); ?>
           <footer>
      </div>
-     
       </article>
       
       <?php endwhile; // End of the loop. ?>
