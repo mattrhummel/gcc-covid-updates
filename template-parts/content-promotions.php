@@ -27,7 +27,7 @@
 
 <div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
   
-<?php the_title('<h2>', '</h2>', 'gcc-wp-2018') ?>
+<?php the_title('<h3>', '</h3>', 'gcc-wp-2018') ?>
 
 <?php if( get_field('promotion_event_date') ): ?>
   	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
