@@ -27,13 +27,7 @@ get_header(); ?>
 
 <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
 
-<div id="highlights" class="row expanded">
-
-<div class="highlights-content">
-
-<div class="row expanded">
-
-<div id="4080701046" class="column large-8 large-offset-2 collapse">
+<div class="row expanded" id="4080701046" data-equalizer>
 
 <h2 class="text-center"><?php _e('Latest News', 'gcc-wp-2018'); ?></h2>
 
@@ -59,8 +53,9 @@ get_header(); ?>
 
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
+<div class="column medium-4">
 
-    <div class="card" style="padding: 1rem;">
+    <div class="callout" data-equalizer-watch>
       
       <h3 class="post-title"><a href="<?php the_permalink(); ?>">   
 
@@ -71,6 +66,7 @@ get_header(); ?>
 
     </div>
 
+</div>
 
 <?php endwhile; ?>
 
@@ -82,14 +78,10 @@ get_header(); ?>
 
 <?php endif; ?>
 
+
+</div>
+
     <a href="<?php esc_html_e('/blog/', 'gcc-wp-2018' ); ?>" class="button expanded"><?php esc_html_e('View all Highlights', 'gcc-wp-2018' ); ?></a>
-
-
-</div>
-
-</div>
-
-</div>
 
 </div>
 
