@@ -15,22 +15,23 @@
 */
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
-  while ( have_posts() ) : the_post(); ?>
-  <header>
-    <div class="hero-section-text">
-      <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-      <?php gcc_wp_2018_page_icons() ?>
-    </div>
-    <div class="row expanded crumbs-container">
-      <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>">
-        <?php the_breadcrumb() ?>
-      </nav>
-    </div>
-  </header>
-  <!--Page Content-->
-  <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-9 float-left columns" >
+
+   <div class="row expanded content-area">
+
+      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+         <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+         </button>
+
+        
+      </div>
+
+    <?php get_sidebar();?>
+
+    <div class="columns small-12 large-9 large-pull-3">
+    
+    <?php //Page Heading
+          get_template_part( 'template-parts/content', 'page-heading' );
+        ?>
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -162,10 +163,24 @@ get_header(); ?>
               </div>
               
             </div>
-            <?php get_sidebar();?>
+
+
       
               </div><!--.pagecontent-->
-              <?php endwhile; // End of the loop. ?>
+
+                  <div class="row expanded entry-footer">
+       <footer>
+           <?php //last modified page test 
+           $u_time = get_the_time('U'); 
+          $u_modified_time = get_the_modified_time('U'); 
+          if ($u_modified_time >= $u_time + 86400) { 
+          echo "<p>Last modified on "; 
+          the_modified_time('F j, Y'); 
+          "</p> "; }  ?>
+          <?php gcc_wp_2018_entry_footer(); ?>
+      <footer>
+    </div>
+
             </article>
             <?php
             get_footer();
