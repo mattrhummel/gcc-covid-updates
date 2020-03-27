@@ -72,7 +72,6 @@ html {
 //Theme Styles
 @import 'components/title-bar';
 @import 'components/top-bar';
-@import 'theme/quicklinks';
 @import 'theme/sidebar';
 @import 'components/visibility';
 @import 'components/float';
@@ -106,21 +105,10 @@ html {
 @import 'components/tooltip';
 @import 'prototype/prototype';
 @import 'theme/reveal';
-@import 'theme/home';
 @import 'theme/promotions';
-@import 'theme/blog';
 @import 'theme/page';
 @import 'theme/alerts';
-@import 'theme/label';
-@import 'theme/tabs';
-@import 'theme/card';
-@import 'theme/workforce';
-@import 'theme/custom-wpforms';
-@import 'theme/helpers';
-@import 'theme/wp-styles';
 @import 'theme/footer';
-@import 'theme/specific-page-styles.scss';
-@import 'theme/print';
 @import 'theme/search';
 @import 'font-awesome/font-awesome';
 
