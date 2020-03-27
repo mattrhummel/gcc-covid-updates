@@ -26,7 +26,7 @@ get_header(); ?>
 
     <div class="columns small-12 large-9 large-pull-3">
     
-    <?php //Page Heading
+        <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-heading' );
         ?>
 
@@ -39,6 +39,13 @@ get_header(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
+
+            <?php if (is_page('diversity-and-inclusion')) : ; ?>
+
+              <?php putRevSlider( 'diversity-slider' ); ?>
+
+          <?php endif; ?>
+
 
           <?php if (is_page('workforce')) : ; ?>
 
