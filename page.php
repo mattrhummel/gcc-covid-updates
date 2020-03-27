@@ -19,10 +19,10 @@ while ( have_posts() ) : the_post(); ?>
     <?php get_sidebar();?>
     <div class="columns small-12 large-9 large-pull-3">
        
-           <header>
-              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-              <?php the_breadcrumb() ?> 
-          </header>
+     <header>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_breadcrumb() ?> 
+    </header>
 
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
@@ -33,7 +33,6 @@ while ( have_posts() ) : the_post(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-
         
        <div class="entry-content" id="main">
 
@@ -45,7 +44,6 @@ while ( have_posts() ) : the_post(); ?>
       <?php putRevSlider( 'workforce-nov-4' ); ?>
       <?php endif; ?>
       
-
       <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
       ?>
