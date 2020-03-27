@@ -35,7 +35,7 @@ while ( have_posts() ) : the_post(); ?>
         
        <div class="entry-content" id="main">
 
-          <?php if (is_page('diversity-and-inclusion')) : ; ?>
+      <?php if (is_page('diversity-and-inclusion')) : ; ?>
       <?php putRevSlider( 'diversity-slider' ); ?>
       <?php endif; ?>
 
