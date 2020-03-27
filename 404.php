@@ -5,7 +5,7 @@
 * @package WordPress
 */
 get_header(); ?>
-<div class="row expanded page-404-container">
+<div class="row expanded">
 	
 	<?php
 	$error_page_heading = get_field('error_page_heading', 'option');
@@ -15,7 +15,9 @@ get_header(); ?>
 	$error_page_button_url = get_field('error_page_button_url', 'option');
 	?>				
 		
-	<div class="row page-404-content">
+	<div class="row expanded page-404-container">
+
+		<div class="columns medium-10 page-404-content">
 	
 			<h1><?php echo $error_page_heading; ?></h1>
 			<?php
@@ -59,8 +61,10 @@ get_header(); ?>
           </div>
         </div>
     </form>
-	
+
 </div>
+</div>
+	
 </div>
 <?php
 endif;
