@@ -23,7 +23,7 @@ get_header(); ?>
     <div class="small-12 medium-12 large-9 float-left columns" >
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
-      <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
+      <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
         <?php the_post_thumbnail('', array ('class' => 'lazy'));  ?>
       </div>
       <?php  }  else {  //.pagesubbanner

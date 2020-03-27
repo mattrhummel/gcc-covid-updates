@@ -1,5 +1,5 @@
 <!--Page Content-->
-<div class="row gutter-small expanded content-area">
+<div class="row expanded collapse expanded content-area">
 
 <div class="small-12 medium-9 entry-content" id="main" tabindex="0">
 
@@ -89,7 +89,6 @@
       <div class="nav-previous alignleft"><?php next_posts_link( '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>Older posts' ); ?></div>
       <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts <span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>' ); ?>
       </div>
-
 
 
 </div>

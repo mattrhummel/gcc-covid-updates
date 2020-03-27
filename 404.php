@@ -15,9 +15,9 @@ get_header(); ?>
 	$error_page_button_url = get_field('error_page_button_url', 'option');
 	?>				
 		
-	<div class="row hero-section-404-text">
+	<div class="row page-404-text">
 	
-			<h1 class="page-title"><?php echo $error_page_heading; ?></h1>
+			<h1><?php echo $error_page_heading; ?></h1>
 			<?php
 			if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 			<p><?php

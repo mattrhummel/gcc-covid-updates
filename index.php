@@ -11,78 +11,130 @@
  * @package gccwp-2018
  */
 get_header();
-$post_page_featured_image = get_field('post_page_featured_image', 'option');
-$post_page_title= get_field('post_page_title', 'option');
-
-// vars
-	$url = $post_page_featured_image['url'];
-	$title = $post_page_featured_image['title'];
-	$alt = $post_page_featured_image['alt'];
-	$caption = $post_page_featured_image['caption'];
-
-	// thumbnail
-	$size = 'large';
-	$thumb = $post_page_featured_image['sizes'][ $size ];
-	$width = $post_page_featured_image['sizes'][ $size . '-width' ];
-	$height = $post_page_featured_image['sizes'][ $size . '-height' ];
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
 
-<?php  if ( !empty( $post_page_featured_image ) ) { ?>
-
-  <div class="row gutter-small expanded">
-
-  <header class="hero-section hero-section-single">
-
-<img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
-
-      <div class="hero-section-text">
-        <h1><?php echo $post_page_title; ?></h1>
-      </div>
-
-    <div class="row expanded crumbs-container show-for-medium">
-
-      <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-          <?php gcc_wp_2018_post_page_breadcrumbs(); ?>
-      </nav>
-
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="row expanded content-area">
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
     </div>
+    <?php get_sidebar();?>
+    <div class="columns small-12 large-9 large-pull-3">
 
-  </header>
-
-  </div>
-  <?php  }  else {  //.pagesubbanner
-  // if page doesn't have a featured image
-  ?>
-  <div class="row gutter-small expanded">
-
-  <header class="hero-section-plain">
-
-      <?php //if the child page doesn't have a featured images
-      //gcc_featured_image_on_child(); ?>
-
-      <div class="hero-section-text">
-        <h1><?php echo $post_page_title; ?></h1>
-      </div>
-
-      <div class="crumbs-container-plain">
+      <header>
+        <h1 class="entry-title">News</h1>
+        <?php if ( 'post' === get_post_type() ) : ?>
+        <p><?php the_date();?></p>
+        <?php endif; ?>
+        
         <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-          <?php gcc_wp_2018_post_page_breadcrumbs(); ?>
+          <div title="breadcrumbs trail">
+            <ul class="breadcrumbs">
+              <?php $home_page = get_the_title( get_option('page_on_front'));
+              $post_title = get_the_title( get_option('page_for_posts'));
+              ?>
+              <li role="menuitem">
+                <a href="<?php echo get_site_url(); ?>">
+                  <?php echo $home_page; ?>
+                </a>
+              </li>
+            </ul>
+          </div>
         </nav>
+      </header>
+
+         <?php
+  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+
+  $args =  array (
+
+  'post_type' => 'post',
+  'posts_per_page'=>-5,
+  'paged'          => $paged
+  );
+  ?>
+
+  <?php
+
+  $query = new WP_Query( $args ); ?>
+
+  <?php if ( $query->have_posts() ) : ?>
+
+  <?php while ( $query->have_posts() ) : $query->the_post();?>
+
+  <?php if ( has_post_thumbnail() ) : ?>
+
+      <div class="row card">
+
+      <div class="medium-12 columns">
+          <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <p><?php the_excerpt(
+        sprintf(
+              wp_kses(
+                /* translators: %s: Name of current post. Only visible to screen readers */
+                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
+                array(
+                  'span' => array(
+                    'class' => array(),
+                  ),
+                )
+              ),
+              get_the_title()
+            )
+
+      ); ?></p>
+
+      </div>
       </div>
 
-  </header>
+    <?php else: ?>
 
-  </div>
+    <div class="row card">
+      <div class="medium-12 columns">
+<h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      <p><?php the_excerpt(
 
-<?php } ?>
+        sprintf(
+              wp_kses(
+                /* translators: %s: Name of current post. Only visible to screen readers */
+                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
+                array(
+                  'span' => array(
+                    'class' => array(),
+                  ),
+                )
+              ),
+              get_the_title()
+            )
 
-       <?php //Display all post content
-       get_template_part( 'template-parts/content', 'postpage' );
-       ?>
+      ); ?></p>
 
+      </div>
+      </div>
+
+  <?php  endif; ?>
+
+<?php endwhile;  ?>
+
+
+      <?php wp_reset_postdata(); ?>
+
+      <?php else : ?>
+
+      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018' ); ?></p>
+
+      <?php endif; ?>
+
+      <div class="nav-previous alignleft"><?php next_posts_link( '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>Older posts' ); ?></div>
+      <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts <span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>' ); ?>
+      </div>
+
+     </div>
+   </div>
 </article>
 
 <?php

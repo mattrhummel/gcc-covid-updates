@@ -12,11 +12,13 @@ while ( have_posts() ) : the_post(); ?>
     
     <div class="entry-content" id="main">
       <div class="row expanded">
-        <div class="columns small-12">
+        <div class="columns small-12 medium-offset-2">
           
-          <?php //Page Heading
-          get_template_part( 'template-parts/content', 'page-heading' );
-          ?>
+          <header>
+              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+              <?php the_breadcrumb() ?> 
+          </header>
+
         </div>
       </div>
       <?php //Page Heading
