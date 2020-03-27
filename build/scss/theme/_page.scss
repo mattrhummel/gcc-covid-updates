@@ -10,14 +10,17 @@
     background-size: contain;
   }
 }
-.page-404-text {
+.page-404-container {
   
  display: flex;
  text-align: center;
  width: 100%;
  height: 75vh;
- justify-content: center;
- align-items:center;
+
+ .page-404-content {
+   justify-content: center;
+   align-items:center;
+ }
 
 }
 

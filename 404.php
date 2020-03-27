@@ -5,7 +5,7 @@
 * @package WordPress
 */
 get_header(); ?>
-<div class="row expanded hero-section-404">
+<div class="row expanded page-404-container">
 	
 	<?php
 	$error_page_heading = get_field('error_page_heading', 'option');
@@ -15,7 +15,7 @@ get_header(); ?>
 	$error_page_button_url = get_field('error_page_button_url', 'option');
 	?>				
 		
-	<div class="row page-404-text">
+	<div class="row page-404-content">
 	
 			<h1><?php echo $error_page_heading; ?></h1>
 			<?php
