@@ -57,9 +57,9 @@ get_header(); ?>
 
     <div class="callout" data-equalizer-watch>
       
-      <h3 class="post-title"><a href="<?php the_permalink(); ?>">   
+      <h4 class="post-title"><a href="<?php the_permalink(); ?>">   
 
-        <?php the_title(); ?></a></h3>
+        <?php the_title(); ?></a></h4>
 
         <p><?php echo get_the_date(); ?></p>
 
