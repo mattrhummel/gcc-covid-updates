@@ -5,7 +5,7 @@
 	'post_status' => 'publish',
     'orderby' => 'publish_date',
     'order' => 'DESC',
-	'posts_per_page'=>5,
+	'posts_per_page'=>-1,
 	);
 	?>
 	<?php
@@ -13,7 +13,7 @@
 	
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
-<div class="column small-12 medium-6 large-4 promotion-container">
+<div class="column small-12 medium-6 large-4">
 <div class="callout <?php the_field( 'promotion_event_color' ); ?>"  data-equalizer-watch>
 
 <?php // ACF Image Object
