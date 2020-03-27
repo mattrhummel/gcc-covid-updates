@@ -11,8 +11,8 @@ while ( have_posts() ) : the_post(); ?>
   <div class="content-area">
     
     <div class="entry-content" id="main">
-      <div class="row expanded">
-        <div class="columns small-12 medium-offset-2">
+      <div class="row">
+        <div class="columns small-12">
           
           <header>
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
