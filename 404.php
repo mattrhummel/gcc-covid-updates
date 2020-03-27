@@ -17,7 +17,7 @@ get_header(); ?>
 		
 	<div class="row expanded page-404-container">
 
-		<div class="columns medium-10 page-404-content">
+		<div class="columns medium-5 page-404-content">
 	
 			<h1><?php echo $error_page_heading; ?></h1>
 			<?php
