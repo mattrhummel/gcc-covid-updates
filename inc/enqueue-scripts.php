@@ -2,9 +2,6 @@
 function gcc_wp_2018_scripts() {
 wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '2020323', 'all' );
 
-if (is_page('germanna-quick-facts')) wp_enqueue_style( 'gcc-wp-2018-chart-styles', 'https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.css', array(), '202036', 'all' );
-
-
 // Deregister the jquery version bundled with WordPress.
 wp_deregister_script( 'jquery' );
 
