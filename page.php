@@ -34,26 +34,37 @@ while ( have_posts() ) : the_post(); ?>
       <?php if (is_page('diversity-and-inclusion')) : ; ?>
       <?php putRevSlider( 'diversity-slider' ); ?>
       <?php endif; ?>
+
       <?php if (is_page('workforce')) : ; ?>
       <?php putRevSlider( 'workforce-nov-4' ); ?>
       <?php endif; ?>
       
       <?php //Page Heading
-      get_template_part( 'template-parts/content', 'page-alert' );
+        get_template_part( 'template-parts/content', 'page-alert' );
       ?>
+
       <?php if (is_page('12255')) : ; ?>
       <?php //putRevSlider( 'diversity-slider' ); ?>
       <?php endif; ?>
-      <div class="entry-content" id="main">
-        <?php
+      
+       <div class="entry-content" id="main">
+       
+       <?php
         the_content();
         ?>
+
         <?php if (is_page('workforce')) : ; ?>
+        
         <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
+          
           <h2><?php the_field('workforce_highlights_heading'); ?></h2>
+          
+          <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
+
           <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
         </div>
         <?php endif; ?>
+
         <?php if (is_page('40255')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           
@@ -270,21 +281,21 @@ while ( have_posts() ) : the_post(); ?>
         <?php endif; ?>
       </div>
     </div>
-    
+
     </div><!--.pagecontent-->
+
     <div class="row expanded entry-footer">
-      <footer>
-        <?php //last modified page test
-        $u_time = get_the_time('U');
-        $u_modified_time = get_the_modified_time('U');
-        if ($u_modified_time >= $u_time + 86400) {
-        echo "<p>Last modified on ";
-          the_modified_time('F j, Y');
-        "</p> "; }  ?>
-        <?php gcc_wp_2018_entry_footer(); ?>
         <footer>
-        </div>
-        
+          <?php //last modified page test
+          $u_time = get_the_time('U');
+          $u_modified_time = get_the_modified_time('U');
+          if ($u_modified_time >= $u_time + 86400) {
+          echo "<p>Last modified on ";
+            the_modified_time('F j, Y');
+          "</p> "; }  ?>
+          <?php gcc_wp_2018_entry_footer(); ?>
+          <footer>
+     </div>
       </article>
       
       <?php endwhile; // End of the loop. ?>

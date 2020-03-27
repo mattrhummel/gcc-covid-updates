@@ -12,7 +12,7 @@
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
 	<?php if ( has_post_thumbnail() ) : ?>
 	
-	<div class="columns medium-6">
+	  <div class="columns medium-6">
 		<div class="card">
 			 <div class="card-divider" data-equalizer-watch>
 			<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
