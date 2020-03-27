@@ -5,6 +5,7 @@
 * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
 *
 * @package gccwp-2018
+* Template Name: backup
 */
 get_header(); ?>
 <?php
@@ -18,12 +19,10 @@ while ( have_posts() ) : the_post(); ?>
     </div>
     <?php get_sidebar();?>
     <div class="columns small-12 large-9 large-pull-3">
-       
-           <header>
-              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-              <?php the_breadcrumb() ?> 
-          </header>
-
+      
+      <?php //Page Heading
+      get_template_part( 'template-parts/content', 'page-heading' );
+      ?>
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
