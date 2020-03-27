@@ -51,8 +51,6 @@ get_header(); ?>
         <ul class="tabs" data-tabs id="example-tabs">
           <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">
           <?php _e('Tutoring appointments', 'gcc-wp-2018'); ?></a></li>
-          <li class="tabs-title"><a href="#panel2c">
-          <?php _e('FAC Math Center', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel3c">
           <?php _e('Math resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel4c">
@@ -62,10 +60,6 @@ get_header(); ?>
           <!-- Tab 1 -->
           <div class="tabs-panel is-active" id="panel1c">
             <?php the_field( 'tutoring_appointments_content' ); ?>
-          </div>
-          <!-- Tab 2 -->
-          <div class="tabs-panel" id="panel2c">
-            <?php the_field( 'fac_math_center_content' ); ?>
           </div>
           <!-- Tab 3 -->
           <div class="tabs-panel" id="panel3c">
