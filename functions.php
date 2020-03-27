@@ -19,10 +19,6 @@
 */
 require get_template_directory() . '/inc/theme-supports.php';
 /**
- * Custom Post Types.
- */
-require get_template_directory() . '/inc/custom-post-types.php';
-/**
  * Theme Settings
  */
 require get_template_directory() . '/inc/theme-settings.php';
@@ -47,14 +43,6 @@ require get_template_directory() . '/inc/content-width.php';
  */
 require get_template_directory() . '/inc/menus.php';
 /**
- * Social Icons.
- */
-require get_template_directory() . '/inc/social-icons.php';
-/**
- * Weather alerts.
- */
-// require get_template_directory() . '/inc/weather-alert.php';
-/**
  * Register widgets.
  *
  * @link https://developer.wordpress.org/themes/functionality/sidebars/#registering-a-sidebar
@@ -73,8 +61,6 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
-require get_template_directory() . '/inc/summer-bridge-template.php';
-require get_template_directory() . '/inc/autism-support-group-template.php';
 /**
  * Customizer additions.
  */
