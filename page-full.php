@@ -11,7 +11,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="content-area">
     
     <div class="entry-content" id="main">
-      <div class="row">
+      <div class="row expanded">
         <div class="columns small-12">
           
           <?php //Page Heading
