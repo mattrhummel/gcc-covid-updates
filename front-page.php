@@ -14,14 +14,12 @@
 get_header(); ?>
 
   <div class="content-area">
-    
-    <div class="entry-content" id="main">
-  
-  <div class="row expanded">
+      
+    <div class="row expanded">
         
-          <?php //Page Heading
-         the_content();
-          ?>
+      <?php //Page Heading
+     the_content();
+      ?>
   
   </div>
 
@@ -84,8 +82,6 @@ get_header(); ?>
 
     <a href="<?php esc_html_e('/blog/', 'gcc-wp-2018' ); ?>" class="button expanded"><?php esc_html_e('View all Highlights', 'gcc-wp-2018' ); ?></a>
 
-
-</div>
 
 </div>
 
