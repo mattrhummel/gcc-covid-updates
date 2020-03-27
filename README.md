@@ -1,1 +1,1 @@
-# gcc-2018-theme-wp
+# GCC Online Students WordPress Theme

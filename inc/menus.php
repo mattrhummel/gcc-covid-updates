@@ -1,12 +1,12 @@
 <?php 	// This theme uses wp_nav_menu() in one location.
   register_nav_menus( array(
     'main-navigation' => 'Main Navigation', // registers the menu in the WordPress admin menu editor
-    'top-navigation' => 'Top Navigation',
-    'quicklinks-bar' => 'Quicklinks Bar',
+    // 'top-navigation' => 'Top Navigation',
+    // 'quicklinks-bar' => 'Quicklinks Bar',
     'top-bar-right-menu'  => 'Top Bar Right Menu',
     'top-bar-left-menu'  => 'Top Bar Left Menu',
     'footer-links-menu' => 'Footer Links Menu',
-    'information-menu' => 'Information Menu', 
+    // 'information-menu' => 'Information Menu', 
     'resource-menu' => 'Resource Menu',
     'about-menu' => 'About Menu',// registers the departmental menus in the WordPress admin menu editor
     'archive-menu' => 'Archive Menu',
@@ -49,8 +49,8 @@
     'facilities-menu' => 'Facilities Menu',
     'faculty-menu' => 'Faculty Menu',
     'financial-aid-menu' => 'Financial Aid Menu',
-    'footer-col3-menu' => 'Footer Col3 Menu',
-    'footer-col4-menu' => 'Footer Col4 Menu',
+    // 'footer-col3-menu' => 'Footer Col3 Menu',
+    // 'footer-col4-menu' => 'Footer Col4 Menu',
     'gainful-employment-menu' => 'Gainful Employment Menu',
     'ged-testing-menu' => 'GED Testing Menu',
     'germanna-ready-menu' => 'Germanna Ready Menu',
@@ -95,7 +95,7 @@
     'programs-menu' => 'Programs Menu',
     'sacs-menu' => 'SACS Menu',
     'scholars-program-menu' => 'Scholars Program Menu',
-    'sails-menu' => 'Sails Menu',
+    // 'sails-menu' => 'Sails Menu',
     'student-activities-menu' => 'Student Activities Menu',
     'student-development-menu' => 'Student Development Menu',
     'students-menu' => 'Students Menu',
@@ -107,11 +107,11 @@
     'welcome-day-menu' => 'Welcome Day Menu',
     'workforce-menu' => 'Workforce Menu',
     'workforce-home-menu' => 'Workforce Home Menu',
-       'business-pathway-menu' => 'Business Pathway Menu',
-       'health-sciences-pathway-menu' => 'Health Sciences Pathway Menu',
-       'humanities-arts-pathway-menu' => 'Humanities and Arts Pathway Menu',
-       'it-technical-studies-pathway-menu' => 'IT and Technical Studies Pathway Menu',
-       'publis-service-pathway-menu' => 'Public Service Pathway Menu',
-       'science-engineering-pathway-menu' => 'Science and Engineering Pathway Menu',
-       'social-sciences-education-pathway-menu' => 'Socials Sciences and Education Pathway Menu'
+    'business-pathway-menu' => 'Business Pathway Menu',
+    'health-sciences-pathway-menu' => 'Health Sciences Pathway Menu',
+    'humanities-arts-pathway-menu' => 'Humanities and Arts Pathway Menu',
+    'it-technical-studies-pathway-menu' => 'IT and Technical Studies Pathway Menu',
+    'publis-service-pathway-menu' => 'Public Service Pathway Menu',
+    'science-engineering-pathway-menu' => 'Science and Engineering Pathway Menu',
+    'social-sciences-education-pathway-menu' => 'Socials Sciences and Education Pathway Menu'
   ) );
