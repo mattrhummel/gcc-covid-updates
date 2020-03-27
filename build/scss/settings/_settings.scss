@@ -242,7 +242,7 @@ $accordion-item-padding: 1rem;
 $accordion-content-background: $white;
 $accordion-content-border: 1px solid $medium-gray;
 $accordion-content-color: $secondary;
-$accordion-content-padding: 2rem 1.5rem 1rem 1.5rem;
+$accordion-content-padding: 1rem 1.5rem;
 
 // 8. Accordion Menu
 // -----------------
@@ -814,7 +814,7 @@ $table-stack-breakpoint: small;
 // 51. Tabs
 // --------
 
-$tab-margin: 0 0 1rem 0;
+$tab-margin: 0;
 $tab-background: $light-gray;
 $tab-color: $primary-color;
 $tab-background-active: $light-gray;
