@@ -12,8 +12,6 @@
 <?php //closing main container, do not remove ?>
 </main>
 
-
-
 <footer class="site-footer hide-for-print">
 <div class="row expanded collapse top-footer">
   <div class="small-12 medium-12 large-4 columns">
