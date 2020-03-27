@@ -64,10 +64,10 @@ get_header(); ?>
   <?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-      <div class="row card">
+      <div class="row callout small">
       <div class="medium-12 columns">
      
-       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+       <h2 style="line-height: 1.2; display: block;"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
       
         <?php echo get_the_date(); ?>
 
