@@ -39,6 +39,12 @@ get_header(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
+
+          <?php if (is_page('workforce')) : ; ?>
+
+            <?php putRevSlider( 'workforce-nov-4' ); ?>
+
+          <?php endif; ?>
       
           <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-alert' );
@@ -46,7 +52,7 @@ get_header(); ?>
 
           <?php if (is_page('12255')) : ; ?>
 
-              <?php putRevSlider( 'diversity-slider' ); ?>
+              <?php //putRevSlider( 'diversity-slider' ); ?>
 
           <?php endif; ?>
 
@@ -57,8 +63,6 @@ get_header(); ?>
               ?>
 
             <?php if (is_page('workforce')) : ; ?>
-
-              <?php putRevSlider( 'workforce-nov-4' ); ?>
 
               <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
 
