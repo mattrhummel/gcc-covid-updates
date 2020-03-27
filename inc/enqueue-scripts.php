@@ -14,7 +14,7 @@ wp_deregister_script( 'jquery-migrate' );
 // CDN hosted jQuery migrate for compatibility with jQuery 3.x
 wp_register_script( 'jquery-migrate', '//code.jquery.com/jquery-migrate-3.0.1.min.js', array('jquery'), '3.0.1', true );
 
-wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdn.jsdelivr.net/npm/foundation-sites@6.5.3/dist/js/foundation.min.js', array(), '20191025', true );
+wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js', array(), '20191025', true );
 
 wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20191118', true );
 
