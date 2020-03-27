@@ -31,7 +31,11 @@ while ( have_posts() ) : the_post(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-      <?php if (is_page('diversity-and-inclusion')) : ; ?>
+
+        
+       <div class="entry-content" id="main">
+
+          <?php if (is_page('diversity-and-inclusion')) : ; ?>
       <?php putRevSlider( 'diversity-slider' ); ?>
       <?php endif; ?>
 
@@ -39,15 +43,10 @@ while ( have_posts() ) : the_post(); ?>
       <?php putRevSlider( 'workforce-nov-4' ); ?>
       <?php endif; ?>
       
+
       <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
       ?>
-
-      <?php if (is_page('12255')) : ; ?>
-      <?php //putRevSlider( 'diversity-slider' ); ?>
-      <?php endif; ?>
-      
-       <div class="entry-content" id="main">
        
        <?php
         the_content();
@@ -60,11 +59,13 @@ while ( have_posts() ) : the_post(); ?>
   
           <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
 
-               <h2><?php the_field('workforce_highlights_heading'); ?></h2>
+          <h2><?php the_field('workforce_highlights_heading'); ?></h2>
           
 
           <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
+
         </div>
+
         <?php endif; ?>
 
         <?php if (is_page('40255')) : ; ?>
