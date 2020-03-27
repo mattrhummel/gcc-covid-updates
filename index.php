@@ -66,23 +66,10 @@ get_header(); ?>
 
       <div class="row card">
       <div class="medium-12 columns">
-<h2 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-      <p><?php the_excerpt(
-
-        sprintf(
-              wp_kses(
-                /* translators: %s: Name of current post. Only visible to screen readers */
-                __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-                array(
-                  'span' => array(
-                    'class' => array(),
-                  ),
-                )
-              ),
-              get_the_title()
-            )
-
-      ); ?></p>
+     
+       <h2><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+      
+        <?php echo get_the_date(); ?>
 
       </div>
       </div>
