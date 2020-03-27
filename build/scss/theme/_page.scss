@@ -42,276 +42,6 @@
 
 }
 
-// article {
-//   position: relative;
-// }
-
-// .content-area {
-//   background: $white;
-//   position: relative;
-
-// }
-
-// .pathways-row-2 {
-//   margin: auto;
-//   width: 75%;
-// }
-
-// #pathways .pathways-content .pathways-row-1 .column,
-// #pathways .pathways-content .pathways-row-1 .columns,
-// #pathways .pathways-content .pathways-row-2 .column,
-// #pathways .pathways-content .pathways-row-2 .columns {
-//   float: left !important;
-// }
-
-// .entry-content {
-//   padding: 2rem 1rem;
-//   overflow: hidden;
-//   border: none;
-//   background-color: $white;
-//   .columns {
-//     padding-left: 0;
-// }
-
-// p {
-
-//   a {
-//     font-weight: normal;
-//    text-decoration: underline;
-//   }
-
-// }
-
-// p.lead {
-//   font-size: 2rem;
-//   font-weight: 100;
-// }
-
-// ol,
-//   ul {
-// li {
-
-// font-size: 1.2rem;
-
-// a {
-//    font-weight: normal;
-//    text-decoration: underline;
-// }
-//     }
-//   }
-
-// h2 {
-//   color: $secondary;
-// }
-
-// /* unvisited link */
-// a:link {
-//     color: $primary;
-
-// }
-
-
-// /* mouse over link */
-// a:hover {
-//     color: $secondary;
-// }
-
-// /* selected link */
-// a:active {
-//     color: $primary;
-// }
-
-// a {
-//   font-weight: normal;
-//    text-decoration: underline;
-// }
-
-// a:hover {
-//   text-decoration: underline;
-// }
-
-// /* unvisited link */
-// a.button:link {
-//     color: $white;
-//     text-decoration: none;
-// }
-
-// /* visited link */
-// a.button:visited {
-//     color: $white;
-//     background-color: $secondary;
-// }
-
-// /* mouse over link */
-// a.button:hover {
-//     color: $primary;
-//     background-color: $medium-gray
-
-// }
-
-// /* selected link */
-// a.button:active {
-//     color: $primary;
-//     background-color: $medium-gray;
-// }
-
-// /* unvisited link */
-// a.button.hollow:link {
-//     color: $primary;
-// }
-
-// /* visited link */
-// a.button.hollow:visited {
-//     color: $primary;
-//     background-color: $secondary;
-// }
-
-// /* mouse over link */
-// a.button.hollow:hover {
-//     color: $white;
-//     background-color: $primary;
-// }
-
-// /* selected link */
-// a.button.hollow:active {
-//     color: $secondary;
-//     background-color: $medium-gray;
-// }
-
-// ul.accordion {
-//   margin-bottom: 2rem;
-//   li.accordion-item {
-//       a.accordion-title {
-        
-// }
-//     }
-//   }
-
-// .button-group a {
-//   margin-right: 1rem;
-// }
-
-// //custom wpforms styles
-
-// .wpforms-field-label {
-// }
-
-// .wpforms-field-sublabel {
-//   margin-bottom: 1rem !important;
-// }
-
-// button.wpforms-page-next  , button.wpforms-page-prev  {
-
-//   background-color: $secondary !important;
-//   color: $white !important;
-//   font-weight: 800 !important;
-//   font-size: 1rem !important;
-//   border-radius: 25px !important;
-
-// }
-// button:hover.wpforms-page-next  , button:hover.wpforms-page-prev  {
-
-//   background-color: $primary !important;
-//   color: $white !important;
-
-// }
-// .label {
-
-//     padding: .3rem 1rem;
-//     margin: 0 1rem;
-// }
-// table .label {
-//   margin-left: 1rem;
-// }
-// .spring-save {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-save.jpg');
-//  background-position: top right; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  background-color: #eee;
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px; 
-// }
-
-// .spring-skill {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-skill-2.jpg');
-//  background-position: top left; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  background-color: #eee;
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px; 
-// }
-
-// .spring-learn {
-//  background-image: url('https://www.germanna.edu/wp-content/uploads/spring-learn.jpg');
-//  background-position: top right; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  background-color: #eee;
-//  margin: 0 0 21px 0;
-//  padding: 21px;
-//  height: 350px;
-// }
-// //DE Styles
-// .de-on-campus {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/on-campus.jpg');
-//  background-position: top right; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  margin: 0 0 20px 0;
-//  padding: 0;
-//  height: 350px; 
-// }
-// .de-in-school {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/in-school.jpg');
-//  background-position: top left; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  padding: 0;
-//  height: 350px; 
-//  margin: 0 0 20px 0;
-// }
-
-// .de-early-college {
-//  background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/early-college.jpg');
-//  background-position: top center; 
-//  background-repeat: none; 
-//  background-size: cover;
-//  padding: 0;
-//  height: 350px; 
-//  margin: 0 0 20px 0;
-// }
-
-// .icon-check-red:before,
-// .icon-check-blue:before {
-//    font-family: FontAwesome;
-//    display: inline-block;
-//    padding: 0;
-//    vertical-align: middle;
-//    content: "\f058";
-//    font-size: 2rem;
-// }
-// .icon-check-red:before {  
-//    color: $primary;
-// }
-// .icon-check-blue:before {
-//    color: #2C3C73;
-// }
-// }
-
-// .moretag {
-//   padding: 1rem 0;
-//   display: block;
-// }
-
-// .page-nav {
-//   background-color: $light-gray;
-//   padding: 0 !important;
-//   margin: 0;
-// }
 // //Page Side bar
 
 button.mobile-sidebar-button { 
@@ -343,11 +73,8 @@ button.mobile-sidebar-button {
     color: $secondary;
   }
 }
-
-
 .widget {
   margin-bottom: 1rem;
-
 
   h3 {
   background-color: $medium-gray;
@@ -376,12 +103,7 @@ h3:first-of-type {
 }
 
 .textwidget {
-  padding: 1rem ;
-
-  a {
-  text-decoration: underline;
-  }
-
+  padding: 1rem;
 }
 
 }
@@ -461,7 +183,6 @@ li:last-child a,
            /* mouse over link */
       &:hover {
         color: $secondary;
-        text-decoration: underline;
       }
 
       /* selected link */
@@ -491,8 +212,7 @@ li:last-child a,
       border-bottom: 1px solid $medium-gray;
       padding: 0;
 
-      a:link {
-          font-weight: 800;
+      a {
           padding: 1rem 1rem 1rem 1.4rem;
           font-weight: bold;
           color: $dark-gray;
@@ -501,13 +221,11 @@ li:last-child a,
       /* visited link */
       a:visited {
           color: $primary;
-          text-decoration: underline;
       }
 
       /* mouse over link */
       a:hover {
         color: $primary;
-        text-decoration: underline;
       }
 
       /* selected link */
@@ -558,56 +276,6 @@ span:hover {
 
 }
 
-// .menu-about-governance-menu-container {
-//   ul.menu {
-//     margin: 1rem 0;
-//   li {
-//       display: block;
-//   width: 100%;
-//   a {
-//         padding: 0.5rem 1rem;
-//   font-weight: bold;
-//   color: $dark-gray;
-//   line-height: 1.4rem;
-// }
-
-// a:hover {
-//   background-color: $black;
-//   color: $white;
-// }
-//     }
-
-// .active > a {
-//   background-color: $black;
-//   color: $white;
-// }
-//   }
-// }
-
-// .menu-facts-and-figures-container {
-//   ul.menu {
-//     margin: 1rem 0;
-//       li {
-//           display: block;
-//       width: 100%;
-//       a {
-//               padding: 0.5rem 1rem;
-//         font-weight: bold;
-//         color: $dark-gray;
-//       }
-
-//       a:hover {
-//         background-color: $black;
-//         color: $white;
-//       }
-// }
-
-// .active > a {
-//   background-color: $black;
-//   color: $white;
-// }
-//   }
-// }
 .entry-footer {
  text-align: left; 
  background-color: #f9f9f9; 
@@ -619,18 +287,3 @@ span:hover {
   font-weight: 800;
  }
 }
-// /*Tabs*/
-// .fp-tabs-wrap {
-//   margin-bottom: 1.6rem;
-// }
-// /*callout equal heights*/
-// .callout.small {
-//   padding: 0.5rem;
-//   position: relative;
-//   ul {
-
-//   li {
-//   padding: 0.3rem 0;
-// }
-//   }
-// }

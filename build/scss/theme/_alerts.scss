@@ -8,13 +8,14 @@
 .callout.success {
 
     a {
-     text-decoration: underline;
      color: $white;
 
     &:hover {
-      text-decoration: none;
+       text-decoration: underline;
     }
+
   }
+
   .button {
       text-decoration: none;
       background-color: $white;
@@ -92,11 +93,10 @@
 .callout.alert {
 
   a {
-     text-decoration: underline;
      color: $black;
 
     &:hover {
-      text-decoration: none;
+      text-decoration: underline;
     }
   }
 
