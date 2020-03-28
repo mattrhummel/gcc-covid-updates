@@ -1,4 +1,4 @@
-.reveal {
+.reveal-overlay {
  		position: relative;
 	    margin: 0;
 	    padding: 0;
@@ -9,5 +9,6 @@
 		height:100% !important;
 		width: 100% !important;
 	    z-index: 9999999 !important;
-		background-color: rgba(0,0,0, 1) !important;	   
+		background-color: rgba(0,0,0, 1) !important;
+	   
 }
