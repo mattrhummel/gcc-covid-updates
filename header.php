@@ -24,10 +24,10 @@
 </script>
 <script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
 
-  
   </head>
   
   <body <?php body_class(); ?>>
+    
     <div id="skip">
       <a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a>
     </div>
