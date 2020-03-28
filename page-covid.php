@@ -24,7 +24,7 @@ get_header(); ?>
 
     <?php get_sidebar();?>
 
-    <div class="columns small-12 medium-12 xlarge-9 xlarge-pull-3">
+    <div class="columns small-12 large-9 large-pull-3">
     
     <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-heading' );
