@@ -30,7 +30,6 @@ get_header(); ?>
           get_template_part( 'template-parts/content', 'page-heading' );
         ?>
 
-
         <?php
         the_content();
         ?>
@@ -71,7 +70,7 @@ get_header(); ?>
       </div>
 
         <div class="row expanded entry-footer">
-     <footer>
+       <footer>
          <?php $u_time = get_the_time('U'); 
         $u_modified_time = get_the_modified_time('U'); 
         if ($u_modified_time >= $u_time + 86400) { 

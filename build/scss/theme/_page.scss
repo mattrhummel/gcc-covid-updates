@@ -122,6 +122,7 @@ h3:first-of-type {
     /* visited link */
     a:visited {
         color: $secondary;
+    background-color: $white;
     }
 
     /* mouse over link */
@@ -192,7 +193,7 @@ background-color: $light-gray;
 
   .active > a {
     color: $secondary;
-    font-weight: 800;
+    background-color: $white;
   }
 
 }
@@ -215,7 +216,8 @@ background-color: $light-gray;
 
       /* visited link */
       a:visited {
-          color: $secondary;
+         color: $secondary;
+    background-color: $white;
       }
 
       /* mouse over link */
