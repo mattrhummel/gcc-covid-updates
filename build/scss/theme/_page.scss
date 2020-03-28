@@ -70,10 +70,13 @@ button.mobile-sidebar-button {
     color: $secondary;
   }
 }
-
+.widget:first-of-type {
+  background-color: $white;
+}
 .widget {
   margin-bottom: 1rem;
   background-color: $light-gray;
+
   h3 {
   width: 100%;
   padding: 1rem 1rem 0 1rem;
