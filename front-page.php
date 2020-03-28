@@ -57,7 +57,7 @@ get_header(); ?>
 
     <div class="callout" data-equalizer-watch>
       
-      <h4 class="post-title"><a href="<?php the_permalink(); ?>" style="line-height: 1.2; display: block; width: 100%;">   
+       <h4 class="post-title"><a href="<?php the_permalink(); ?>" style="line-height: 1.2; display: block; width: 100%;">   
 
         <?php the_title(); ?></a></h4>
 

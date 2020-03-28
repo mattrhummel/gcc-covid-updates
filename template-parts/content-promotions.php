@@ -13,29 +13,31 @@
 	
 	<?php if ( $query->have_posts() ) : ?>
 	<?php while ( $query->have_posts() ) : $query->the_post();?>
+
 <div class="column small-12 medium-6 large-4">
 
-<div class="callout"  data-equalizer-watch>
+	<div class="callout"  data-equalizer-watch>
 
-	<?php // ACF Image Object
+			<?php // ACF Image Object
 
-	$image = get_field('promotion_event_image');
-	// vars
-	$url = $image['url'];
+			$image = get_field('promotion_event_image');
+			// vars
+			$url = $image['url'];
 
-	?>
+			?>
 
-<div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
-  
-	<a href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_title('<h3>', '</h3>', 'gcc-wp-2018') ?></a>
+	<div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
+	  
+	   <a href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_title('<h3 class="h4">', '</h3>', 'gcc-wp-2018') ?></a>
 
-<?php if( get_field('promotion_event_date') ): ?>
-  	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
-<?php endif; ?>
+			<?php if( get_field('promotion_event_date') ): ?>
+			  	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
+			<?php endif; ?>
 
-    <p class="promotion-description"><?php the_field( 'promotion_event_description' ); ?></p>
+	    <p class="promotion-description"><?php the_field( 'promotion_event_description' ); ?></p>
 
-</div>
+	</div>
+	
 </div>
 
 	<?php endwhile; ?>
