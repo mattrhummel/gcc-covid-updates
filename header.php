@@ -32,45 +32,8 @@
       <a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a>
     </div>
 
-    <?php if( get_field('banner_text', 'options') ): ?>  
-<div id="bannerAnnouncement" class="bottom-banner show-for-large hide-for-print" data-closable>
-    
-      <div class="row expanded">
-
-        <div class="row">
-
-          <div class="small-12 medium-8 columns ">
-            
-            <p><?php the_field( 'banner_text', 'options' ); ?></p>
-            
-          </div>
-
-          <div class="small-12 medium-4 columns right">
-            <div class="button-group show-for-medium">
-
-              <a href="<?php echo the_field( 'banner_button_2_url', 'options' ); ?>" class="button primary"> 
-                  <?php _e('Future Students', 'gcc-wp-2018'); ?>
-              </a>
-              
-              <a href="<?php echo the_field( 'banner_button_1_url', 'options' ); ?>" class="button secondary apply-button"> 
-                  <?php _e('Apply Now', 'gcc-wp-2018'); ?>
-              </a>
-
-            </div>
-          </div>
-          
-          <button id="closeButton" class="close-button" aria-label="Dismiss alert" type="button" data-close>
-          <span aria-hidden="true">&times;</span>
-          </button>
-
-        </div>
-      </div>
-</div>
-
-<?php endif; ?>
-
     <?php
-    get_template_part( 'template-parts/content', 'weather-alert' );
+      get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
     <div class="off-canvas-wrapper no-js">
