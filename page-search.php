@@ -20,9 +20,7 @@ get_header(); ?>
           get_template_part( 'template-parts/content', 'page-heading' );
           ?>
 
-			<?php
-			    the_content();
-			?>
+		
 
 			<script async>
 		(function() {
