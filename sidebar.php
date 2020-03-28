@@ -189,7 +189,7 @@
   dynamic_sidebar( 'dual-enrollment-widgets' );
   }
   //educational foundation
-  if ( is_page('52') || $post->post_parent == '52' ) {
+  if ( is_page('52') || $post->post_parent == '52'  || is_page('donate') ) {
   //custom department widgets
   dynamic_sidebar( 'edfoundation-widgets' );
   }
