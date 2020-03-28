@@ -63,7 +63,6 @@ get_header(); ?>
 
         <p><?php echo get_the_date(); ?></p>
 
-
     </div>
 
 </div>
@@ -79,14 +78,13 @@ get_header(); ?>
 <?php endif; ?>
 
 </div>
-<div class="row text-center">
-    <a href="<?php esc_html_e('/blog/', 'gcc-wp-2018' ); ?>" class="button float-center" style="width: 200px; margin-top: 20px;"><?php esc_html_e('View all Highlights', 'gcc-wp-2018' ); ?></a>
-</div>
-</div>
 
-
-
+  <div class="row text-center">
+      <a href="<?php esc_html_e('/blog/', 'gcc-wp-2018' ); ?>" class="button float-center" style="width: 200px; margin-top: 20px;"><?php esc_html_e('View all Highlights', 'gcc-wp-2018' ); ?></a>
+  </div>
 </div>
 
-	  
+
+</div>
+ 
 <?php get_footer();

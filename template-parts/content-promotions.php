@@ -27,14 +27,14 @@
 
 <div class="card-image" style="background-image: url('<?php echo $url ?>');"></div>
   
-<?php the_title('<h3>', '</h3>', 'gcc-wp-2018') ?>
+	<a href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_title('<h3>', '</h3>', 'gcc-wp-2018') ?></a>
 
 <?php if( get_field('promotion_event_date') ): ?>
   	<p class="promotion-date"><?php the_field( 'promotion_event_date' ); ?></p>
 <?php endif; ?>
 
     <p class="promotion-description"><?php the_field( 'promotion_event_description' ); ?></p>
-    <a class="button small" href="<?php the_field( 'promotion_event_button_url' ); ?>"><?php the_field( 'promotion_event_button_text' ); ?></a>
+
 </div>
 </div>
 
