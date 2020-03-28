@@ -3,11 +3,11 @@
 html {
   scroll-behavior: smooth;
 }
-.no-js .top-bar .title-bar .reveal-overlay {
+.no-js .top-bar .title-bar{
   display: none;
   z-index: 0;
 }
- .no-js .owl-carousel .reveal-overlay {
+ .no-js {
     display: none;
     z-index: 0;
 }
@@ -23,7 +23,7 @@ html {
     z-index: 0;
   }
 
-  .no-js .owl-carousel {
+  .no-js  {
     display: block;
     z-index: 0;
   }
