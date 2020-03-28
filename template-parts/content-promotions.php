@@ -1,4 +1,4 @@
-<div class="row expanded promotion" data-equalizer id="promotion-events">
+<div class="row expanded" data-equalizer id="promotion-events">
 <?php
 	$args =  array (
 	'post_type' => 'event_promotions',
