@@ -18,7 +18,7 @@ get_header(); ?>
 			
 		</div>
 		<?php get_sidebar();?>
-		<div class="columns small-12 large-9 large-pull-3">
+	  <div class="columns small-12 large-9 large-pull-3">
 			
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
@@ -46,10 +46,13 @@ get_header(); ?>
 					</div>
 				</nav>
 			</header>
+			
 			<div class="entry-content" id="main" style="margin-top: 20px;">
 				<?php the_content(); ?>
 			</div>
+
 		</div>
+
 	</div>
 	
 	<div class="row expanded entry-footer">

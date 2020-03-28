@@ -65,13 +65,13 @@ get_header(); ?>
 
 
       <div class="row callout small">
-      <div class="medium-12 columns">
-     
-       <h2 ><a href="<?php the_permalink(); ?>" style="line-height: 1.2; display: block; width: 100%;"><?php the_title(); ?></a></h2>
-      
-        <?php echo get_the_date(); ?>
+        <div class="medium-12 columns">
+       
+         <h2 ><a href="<?php the_permalink(); ?>" style="line-height: 1.2; display: block; width: 100%;"><?php the_title(); ?></a></h2>
+        
+          <?php echo get_the_date(); ?>
 
-      </div>
+        </div>
       </div>
 
 
