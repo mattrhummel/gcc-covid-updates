@@ -5,7 +5,7 @@ register_sidebar(array(//default sidebar widget for page.php(default template)
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),//shows description of widget in widget box.
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 	register_sidebar(array(
@@ -14,7 +14,7 @@ register_sidebar(array(//default sidebar widget for page.php(default template)
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -23,7 +23,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
   ));
 register_sidebar(array(
@@ -41,7 +41,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -50,7 +50,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -59,7 +59,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -68,7 +68,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	//end footer widgets
 	));
@@ -78,7 +78,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -87,7 +87,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -96,7 +96,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 ));
 	register_sidebar(array(
@@ -105,7 +105,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -114,7 +114,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -123,7 +123,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -132,7 +132,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -141,7 +141,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -150,7 +150,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -159,7 +159,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -168,7 +168,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -177,7 +177,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -186,7 +186,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -195,7 +195,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -204,7 +204,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -213,7 +213,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -222,7 +222,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -231,7 +231,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -240,7 +240,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -249,7 +249,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -258,7 +258,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -267,7 +267,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -276,7 +276,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -285,7 +285,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -294,7 +294,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -303,7 +303,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -312,7 +312,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -321,7 +321,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -330,7 +330,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -338,7 +338,7 @@ register_sidebar(array(
 	'name' => __( 'Facilities Sidebar widgets', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -347,7 +347,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -356,7 +356,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -365,7 +365,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -374,7 +374,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -383,7 +383,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -392,7 +392,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -401,7 +401,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -410,7 +410,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -419,7 +419,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -428,7 +428,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -437,7 +437,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -446,7 +446,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -455,7 +455,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -464,7 +464,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -473,7 +473,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -482,7 +482,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -491,7 +491,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -500,7 +500,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -509,7 +509,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -518,7 +518,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -527,7 +527,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -536,7 +536,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -545,7 +545,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -554,7 +554,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -563,7 +563,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -572,7 +572,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -581,7 +581,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -590,7 +590,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -599,7 +599,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 	register_sidebar(array(
@@ -608,7 +608,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 	register_sidebar(array(
@@ -617,7 +617,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -626,7 +626,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -635,7 +635,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -644,7 +644,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -653,7 +653,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 	register_sidebar(array(
@@ -662,7 +662,7 @@ register_sidebar(array(
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 		'before_widget' => '<div class="widget">',
 		'after_widget' => '</div>',
-		'before_title' => '<h3 class="h4">',
+		'before_title' => '<h3>',
 		'after_title' => '</h3>',
 		));
 register_sidebar(array(
@@ -671,7 +671,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -680,7 +680,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -689,7 +689,7 @@ register_sidebar(array(
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 'before_widget' => '<div class="widget">',
 'after_widget' => '</div>',
-'before_title' => '<h3 class="h4">',
+'before_title' => '<h3>',
 'after_title' => '</h3>',
 ));
 register_sidebar(array(
@@ -698,7 +698,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(//FEATURED AREA WIDGETS
@@ -707,7 +707,7 @@ register_sidebar(array(//FEATURED AREA WIDGETS
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -734,7 +734,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
@@ -743,7 +743,7 @@ register_sidebar(array(
 	'description' => __( 'Drag widgets to this footer container', 'gcc-wp-2018' ),
 	'before_widget' => '<div class="widget">',
 	'after_widget' => '</div>',
-	'before_title' => '<h3 class="h4">',
+	'before_title' => '<h3>',
 	'after_title' => '</h3>',
 	));
 }

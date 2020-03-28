@@ -523,13 +523,13 @@ $offcanvas-background: $light-gray;
 $offcanvas-shadow: 0 0 10px rgba($black, 0);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0);
-$offcanvas-overlay-zindex: 9999999;
-$offcanvas-push-zindex: 999999999;
-$offcanvas-overlap-zindex: 99999999;
-$offcanvas-reveal-zindex: 99999999;
+$offcanvas-overlay-zindex: 10000;
+$offcanvas-push-zindex: 100000;
+$offcanvas-overlap-zindex: 10000;
+$offcanvas-reveal-zindex: 10000;
 $offcanvas-transition-length: 0.5s;
 $offcanvas-transition-timing: ease;
-$offcanvas-fixed-reveal: false;
+$offcanvas-fixed-reveal: true;
 $offcanvas-exit-background: rgba($white, 0);
 $maincontent-class: 'off-canvas-content';
 

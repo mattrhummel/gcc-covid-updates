@@ -3,11 +3,11 @@
 html {
   scroll-behavior: smooth;
 }
-.no-js .top-bar .title-bar .reveal {
+.no-js .top-bar .title-bar .reveal-overlay {
   display: none;
   z-index: 0;
 }
- .no-js .owl-carousel .reveal {
+ .no-js .owl-carousel .reveal-overlay {
     display: none;
     z-index: 0;
 }
