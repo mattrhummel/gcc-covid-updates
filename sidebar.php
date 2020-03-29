@@ -16,7 +16,7 @@
   }
   
   //international admissions
-  if ( is_page('56') ) {
+  if ( is_page('27674') ) {
   //custom department widgets
   dynamic_sidebar( 'international-students-widgets' );
   }
