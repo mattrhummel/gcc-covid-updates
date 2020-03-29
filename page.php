@@ -176,6 +176,12 @@ while ( have_posts() ) : the_post(); ?>
         </div>
         
         <?php endif; ?>
+
+        <?php if (is_page('international-admissions')) : ; ?>
+
+          <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
+
+        <?php endif; ?>
         <?php //student activities events
         if (is_page('27603')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
