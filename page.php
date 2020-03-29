@@ -47,6 +47,13 @@ while ( have_posts() ) : the_post(); ?>
       <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
       ?>
+
+      
+        <?php if (is_page('27674')) : ; ?>
+
+          <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
+
+        <?php endif; ?>
        
        <?php
         the_content();
@@ -177,11 +184,6 @@ while ( have_posts() ) : the_post(); ?>
         
         <?php endif; ?>
 
-        <?php if (is_page('27674')) : ; ?>
-
-          <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
-
-        <?php endif; ?>
         <?php //student activities events
         if (is_page('27603')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
