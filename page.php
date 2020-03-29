@@ -177,7 +177,7 @@ while ( have_posts() ) : the_post(); ?>
         
         <?php endif; ?>
 
-        <?php if (is_page('international-admissions')) : ; ?>
+        <?php if (is_page('27674')) : ; ?>
 
           <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
 
