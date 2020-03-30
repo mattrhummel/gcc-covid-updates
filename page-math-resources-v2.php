@@ -29,9 +29,11 @@ get_header(); ?>
 
     <div class="columns small-12 large-9 large-pull-3">
     
-    <?php //Page Heading
-          get_template_part( 'template-parts/content', 'page-heading' );
-        ?>
+    <header>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_breadcrumb() ?> 
+    </header>
+
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -175,6 +177,6 @@ get_header(); ?>
       <footer>
     </div>
 
-            </article>
+</article>
             <?php
             get_footer();
