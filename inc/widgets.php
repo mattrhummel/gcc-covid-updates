@@ -567,6 +567,69 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
+	'id' => 'business-pathways-widgets',
+	'name' => __( ' Business Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'health-sciences-pathways-widgets',
+	'name' => __( 'Health Sciences Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'humanities-arts-pathways-widgets',
+	'name' => __( 'Humanities and Arts Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'it-technical-studies-pathways-widgets',
+	'name' => __( 'IT and Technical Studies Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'public-service-pathways-widgets',
+	'name' => __( 'Public Service Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'science-engineering-pathways-widgets',
+	'name' => __( 'Science and Engineering Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
+	'id' => 'social-sciences-education-pathways-widgets',
+	'name' => __( 'Social Sciences and Education Pathways Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
 'id' => 'publications-widgets',
 'name' => __( 'Publications Sidebar widgets', 'gcc-wp-2018' ),
 'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
