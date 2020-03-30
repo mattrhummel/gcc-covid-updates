@@ -347,6 +347,11 @@
   //custom department widgets
   dynamic_sidebar( 'health-sciences-pathways-widgets' );
   }
+  //humanities and arts pathways
+  if ( is_page('20595') || $post->post_parent == '20595' ) {
+  //custom department widgets
+  dynamic_sidebar( 'humanities-arts-pathways-widgets' );
+  }
   //paying for college
   if ( is_page('89') || $post->post_parent == '89' ) {
   //custom department widgets
