@@ -342,6 +342,11 @@
   //custom department widgets
   dynamic_sidebar( 'business-pathways-widgets' );
   }
+     //health pathways
+  if ( is_page('20594') || $post->post_parent == '20594' ) {
+  //custom department widgets
+  dynamic_sidebar( 'health-sciences-pathways-widgets' );
+  }
   //paying for college
   if ( is_page('89') || $post->post_parent == '89' ) {
   //custom department widgets
