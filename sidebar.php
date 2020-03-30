@@ -337,6 +337,11 @@
   //custom department widgets
   dynamic_sidebar( 'pathways-widgets' );
   }
+   //business pathways
+  if ( is_page('20593') || $post->post_parent == '20593' ) {
+  //custom department widgets
+  dynamic_sidebar( 'business-pathways-widgets' );
+  }
   //paying for college
   if ( is_page('89') || $post->post_parent == '89' ) {
   //custom department widgets
