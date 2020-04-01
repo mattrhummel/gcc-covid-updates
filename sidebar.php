@@ -352,6 +352,26 @@
   //custom department widgets
   dynamic_sidebar( 'humanities-arts-pathways-widgets' );
   }
+  //it pathways
+  if ( is_page('20596') || $post->post_parent == '20596' ) {
+  //custom department widgets
+  dynamic_sidebar( 'it-technical-studies-pathways-widgets' );
+  }
+    //public service pathways
+  if ( is_page('20597') || $post->post_parent == '20597' ) {
+  //custom department widgets
+  dynamic_sidebar( 'public-service-pathways-pathways-widgets' );
+  }
+   // science and engineering pathways
+  if ( is_page('20598') || $post->post_parent == '20598' ) {
+  //custom department widgets
+  dynamic_sidebar( 'science-engineering-pathways-widgets' );
+  }
+   // social science pathways
+  if ( is_page('20599') || $post->post_parent == '20599' ) {
+  //custom department widgets
+  dynamic_sidebar( 'social-sciences-education-pathways-widgets' );
+  }
   //paying for college
   if ( is_page('89') || $post->post_parent == '89' ) {
   //custom department widgets
