@@ -340,7 +340,7 @@
   //pathways
   if ( is_page('20670') ) {
   //custom department widgets
-  dynamic_sidebar( 'pathways-widgets' );
+  dynamic_sidebar( 'transfer-pathways-widgets' );
   }
    //business pathways
   if ( is_page('20593') || $post->post_parent == '20593' ) {
