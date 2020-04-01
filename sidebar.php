@@ -360,7 +360,7 @@
     //public service pathways
   if ( is_page('20597') || $post->post_parent == '20597' ) {
   //custom department widgets
-  dynamic_sidebar( 'public-service-pathways-pathways-widgets' );
+  dynamic_sidebar( 'public-service-pathways-widgets' );
   }
    // science and engineering pathways
   if ( is_page('20598') || $post->post_parent == '20598' ) {
