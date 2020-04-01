@@ -17,7 +17,7 @@
 			 <div class="card-divider">
 			<h4 class="h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		</div>
- <div style="height: 300px;">
+ <div style="height: 250px;">
 	   <?php the_post_thumbnail('large', array('class' => 'class="image-background"')); ?>
 	</div>	
 		<div class="card-section">
