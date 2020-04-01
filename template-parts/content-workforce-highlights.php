@@ -21,7 +21,7 @@
 	   <?php the_post_thumbnail('large', array('class' => 'class="image-background"')); ?>
 	</div>	
 		<div class="card-section">
-			<p><?php the_excerpt(); ?></p>
+			<?php the_excerpt(); ?>
 		</div>
 
 		</div>
