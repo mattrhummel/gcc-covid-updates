@@ -41,7 +41,7 @@ while ( have_posts() ) : the_post(); ?>
       <?php endif; ?>
 
       <?php if (is_page('workforce')) : ; ?>
-      <?php //putRevSlider( 'workforce-nov-4' ); ?>
+      <?php putRevSlider( 'workforce-nov-4' ); ?>
       <?php endif; ?>
       
       <?php //Page Heading
