@@ -1,9 +1,10 @@
-<div class="row expanded">
-<div class="columns small-12">
+<div class="row expanded" data-equalizer>
+<div class="columns small-12 medium-4">
 
-			<div class="callout">
-			<h3><?php the_field('box_1_heading'); ?></h3>
-
+		<div class="card" data-equalizer-watch>
+		<div class="card-divider">
+			<h3 class="h5"><?php the_field('box_1_heading'); ?></h3>
+</div>
 <?php // ACF Image Object
 
 $image = get_field('box_1_image');
@@ -12,17 +13,20 @@ $url = $image['url'];
 
 ?>
 
-<div class="image-background" style="background-image: url('<?php echo $url ?>'); margin-bottom: 10px;"></div>
-  	
-			<p class="description"><?php the_field('box_1_description'); ?></p>
+<div class="image-background" style="background-image: url('<?php echo $url ?>'); "></div>
+
+  			<div class="card-section">
+			<p><?php the_field('box_1_description'); ?></p>
 			<a href="<?php the_field('box_1_url');?>" class="button primary" ><?php the_field('box_1_button_text'); ?></a>
 		</div>
-
+  </div>
 </div>
 
-<div class="columns small-12">
-     <div class="callout">
-				<h3><?php the_field('box_2_heading');  ?></h3>
+<div class="columns small-12 medium-4">
+   <div class="card" data-equalizer-watch>
+     	<div class="card-divider">
+				<h3 class="h5"><?php the_field('box_2_heading');  ?></h3>
+			</div>
 		<?php // ACF Image Object
 
 $image = get_field('box_2_image');
@@ -31,17 +35,21 @@ $url = $image['url'];
 
 ?>
 
-<div class="image-background" style="background-image: url('<?php echo $url ?>'); margin-bottom: 10px;"></div>
-  	
-	
-			<p class="description"><?php the_field('box_2_description'); ?></p>
+<div class="image-background" style="background-image: url('<?php echo $url ?>'); "></div>
+ 
+		<div class="card-section">
+			<p><?php the_field('box_2_description'); ?></p>
 			<a href="<?php the_field('box_2_url');?>" class="button primary" ><?php the_field('box_2_button_text'); ?></a>
-</div>
-	</div>
+		</div>
 
-<div class="columns small-12">
-	<div class="callout">
-			<h3><?php the_field('box_3_heading');  ?></h3>
+	</div>
+</div>
+
+<div class="columns small-12 medium-4">
+	<div class="card" data-equalizer-watch>
+		<div class="card-divider">
+			<h3 class="h5"><?php the_field('box_3_heading');  ?></h3>
+		</div>
 <?php // ACF Image Object
 
 $image = get_field('box_3_image');
@@ -50,32 +58,42 @@ $url = $image['url'];
 
 ?>
 
-<div class="image-background" style="background-image: url('<?php echo $url ?>'); margin-bottom: 10px;">
+<div class="image-background" style="background-image: url('<?php echo $url ?>');">
 	
 </div>
-  
 
-			<p class="description"><?php the_field('box_3_description'); ?></p>
+  	     <div class="card-section">
+			<p><?php the_field('box_3_description'); ?></p>
 			<a href="<?php the_field('box_3_url');?>" class="button primary" ><?php the_field('box_3_button_text'); ?></a>
+		</div>
+
+</div>
 </div>
 </div>
 
+<div class="row">
 <div class="columns small-12 medium-6">
-	<div class="callout">
-		<h3><?php the_field('box_4_heading'); ?></h3>
-
+	<div class="card" data-equalizer-watch>
+	<div class="card-divider">
+		<h3 class="h4"><?php the_field('box_4_heading'); ?></h3>
+	</div>
+	    <div class="card-section">
 		<p class="description"><?php the_field('box_4_description'); ?></p>
 		<a href="<?php the_field('box_4_url');?>" class="button primary" ><?php  the_field('box_4_button_text'); ?></a>
+	</div>
 	</div>
 </div>
 
 <div class="columns small-12 medium-6">
-	<div class="callout">
-		
-		<h2><?php the_field('box_5_heading');  ?></h2>
-
+	<div class="card" data-equalizer-watch>
+	<div class="card-divider">
+		<h3 class="h4"><?php the_field('box_5_heading');  ?></h2>
+	</h3>
+</div>
+	  <div class="card-section">
 		<p class="description"><?php the_field('box_5_description');  ?></p>
 		<a href="<?php the_field('box_5_url');?>" class="button primary" ><?php  the_field('box_5_button_text'); ?></a>
+	 </div>
 	</div>
 </div>
 

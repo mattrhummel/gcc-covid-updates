@@ -13,14 +13,13 @@
 	<?php if ( has_post_thumbnail() ) : ?>
 	
 	  <div class="columns medium-6">
-		<div class="card">
-			 <div class="card-divider" data-equalizer-watch>
-			<h4 class="post-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
+		<div class="card" data-equalizer-watch>
+			 <div class="card-divider">
+			<h4 class="h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		</div>
-
-
-	   <?php the_post_thumbnail( 'full', array('class' => 'callout-image')); ?>
-		
+ <div style="height: 300px;">
+	   <?php the_post_thumbnail('large', array('class' => 'class="image-background"')); ?>
+	</div>	
 		<div class="card-section">
 			<p><?php the_excerpt(); ?></p>
 		</div>
