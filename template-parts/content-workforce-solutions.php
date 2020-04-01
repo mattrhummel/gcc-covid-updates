@@ -1,4 +1,4 @@
-<div class="row expanded" data-equalizer>
+<div class="row expanded" data-equalizer style="margin-top: 20px;">
 <div class="columns small-12 medium-4">
 
 		<div class="card" data-equalizer-watch>
