@@ -333,7 +333,7 @@
   dynamic_sidebar( 'orientation-widgets' );
   }
   //pathways
-  if ( is_page('20591') ) {
+  if ( is_page('20591') && is_page('20670') ) {
   //custom department widgets
   dynamic_sidebar( 'pathways-widgets' );
   }
