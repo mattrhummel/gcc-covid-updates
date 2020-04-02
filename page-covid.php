@@ -17,21 +17,21 @@ get_header(); ?>
 
    <div class="row expanded content-area">
 
-      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="xlarge">
-         <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
-         </button> 
-      </div>
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
+    </div>
 
     <?php get_sidebar();?>
 
-    <div class="columns small-12 large-9 large-pull-3">
+    <div class="columns small-12 large-9 float-left">
     
     <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-heading' );
         ?>
 
-    
-
+  
         <div class="row expanded">
 
           <?php

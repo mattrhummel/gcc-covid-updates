@@ -7,7 +7,7 @@
 * @package gccwp-2018
 */
 ?>
-<aside class="columns small-12 large-3 large-push-9 page-nav hide-for-print" id="section-menu" data-dropdown>
+<aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
   <?php //get page widgets
   //admissions
   if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {

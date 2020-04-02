@@ -1,4 +1,39 @@
 //Branding and Main Navigation
+
+.nav-panel {
+  position: relative;
+}
+
+button.mobile-sidebar-button { 
+
+  background-color: $light-gray;
+  text-align: left;
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+  font-family: $font-family-monospace;
+  color: $secondary;
+  font-weight: $global-weight-bold;
+
+  &:hover {
+    color: $secondary;
+    background-color: $light-gray;
+  }
+
+  &:focus {
+      color: $secondary;
+      background-color: $light-gray;
+  }
+
+  &::after {
+    content: '\f0c9 ';
+    font-family: FontAwesome;
+    line-height: inherit;
+    font-size: 1.6rem;
+    float: right;
+    color: $secondary;
+  }
+}
+
 @media screen and (min-width: 40em) {
 
 .branding {

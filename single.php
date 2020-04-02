@@ -12,13 +12,13 @@ get_header(); ?>
 	while ( have_posts() ) : the_post(); ?>
 	<div class="row expanded content-area">
 		
-		<div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
-			<button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
-			</button>
-			
-		</div>
+	    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
+    </div>
 		<?php get_sidebar();?>
-	  <div class="columns small-12 large-9 large-pull-3">
+	  <div class="columns small-12 large-9 float-left">
 			
 			<header>
 				<h1 class="entry-title"><?php the_title(); ?></h1>
