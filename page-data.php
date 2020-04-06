@@ -18,12 +18,21 @@ get_header(); ?>
 
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
- 
-  <?php //Page Heading
-  get_template_part( 'template-parts/content', 'page-heading' );
-  ?>
   <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-9 float-left columns" >
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
+    </div>
+    <?php get_sidebar();?>
+
+    <div class="columns small-12 large-9 float-left">
+       
+     <header>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_breadcrumb() ?> 
+    </header>
+
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -33,8 +42,8 @@ get_header(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-      
-      <div class="entry-content" id="main" tabindex="0">
+        
+       <div class="entry-content" id="main">
        
           <?php //Page Heading
           get_template_part( 'template-parts/content', 'page-alert' );
