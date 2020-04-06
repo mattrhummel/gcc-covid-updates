@@ -58,7 +58,7 @@ get_header(); ?>
 
          <?php the_field( 'table_one' ); ?>
 
-          <canvas id="myChartGraduationRateBar" width="400" height="300"></canvas>
+          <canvas id="myChartGraduationRateBar" width="400" height="200"></canvas>
 
     </div>
 
@@ -79,25 +79,25 @@ get_header(); ?>
 
     <?php the_field( 'table_two' ); ?>
 
-    <canvas id="myChartRetentionBar" width="400" height="300"></canvas>
+    <canvas id="myChartRetentionBar" width="400" height="200"></canvas>
 
 </div>
 </li>
 </ul>
 
-<h2>First-time Full-time Student Retention Rates</h2>
+<h2>12-month Unduplicated Headcount (Credit)</h2>
 
 <ul class="accordion" data-accordion data-allow-all-closed="true">
 
  <li class="accordion-item" data-accordion-item>
 
-    <a href="#" class="accordion-title">View First-time Full-time Student Retention Rates Data</a>
+    <a href="#" class="accordion-title">View 12-month Unduplicated Headcount (Credit) Data</a>
 
     <div class="accordion-content" data-tab-content>
 
     <?php the_field( 'table_three' ); ?>
 
-  <canvas id="myChartHeadcountBar"  width="400" height="300"></canvas>
+  <canvas id="myChartHeadcountBar"  width="400" height="200"></canvas>
 
 </div>
 </li>
@@ -116,7 +116,7 @@ get_header(); ?>
 
  <?php the_field( 'table_four' ); ?>
 
-  <canvas id="myChartCredentialsAwardedBar" width="400" height="300"></canvas>
+  <canvas id="myChartCredentialsAwardedBar" width="400" height="200"></canvas>
 
 </div>
 </li>
@@ -151,7 +151,7 @@ get_header(); ?>
 
  <?php the_field( 'table_six' ); ?>
 
-  <canvas id="myChartFinanceBar" width="400" height="300"></canvas>
+  <canvas id="myChartFinanceBar" width="400" height="200"></canvas>
 
 </div>
 </li>
@@ -169,7 +169,7 @@ get_header(); ?>
  
  <?php the_field( 'table_seven' ); ?>
 
- <canvas id="myChartHumanResourcesBar"  width="400" height="300"></canvas>
+ <canvas id="myChartHumanResourcesBar"  width="400" height="200"></canvas>
 
 </div>
 </li>
@@ -186,7 +186,7 @@ get_header(); ?>
 
  <?php the_field( 'table_eight' ); ?>
  
-   <canvas id="myChartStudentFacultyRatioBar" width="400" height="300"></canvas>
+   <canvas id="myChartStudentFacultyRatioBar" width="400" height="200"></canvas>
 
 </div>
 </li>
@@ -291,7 +291,7 @@ get_header(); ?>
 
         <div class="tabs-panel" id="bar3">
 
-          <canvas id="myChartWageOutcomesBar3"  width="400" height="300" ></canvas>
+          <canvas id="myChartWageOutcomesBar3"  width="400" height="200" ></canvas>
 
         </div>
 
@@ -362,21 +362,22 @@ var myChartGraduationRateBar = new Chart(ctx1, {
         datasets: [{
             label: 'graduation rates by %',
             data: [28, 31, 32, 33, 37],
+            barThickness: 40,
             backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
@@ -385,7 +386,8 @@ var myChartGraduationRateBar = new Chart(ctx1, {
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax: 100
                 }
             }]
         },
@@ -409,21 +411,22 @@ var myChartRetentionBar = new Chart(ctx3, {
         datasets: [{
             label: 'retention rates by %',
             data: [66, 68, 63, 70, 68],
-            backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                barThickness: 40,
+       backgroundColor: [
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
@@ -432,7 +435,8 @@ var myChartRetentionBar = new Chart(ctx3, {
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax: 100
                 }
             }]
         },
@@ -454,21 +458,22 @@ var myChartHeadcountBar = new Chart(ctx5, {
         datasets: [{
             label: 'headcount',
             data: [10012, 9520, 9135, 9077, 9583],
-            backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                barThickness: 40,
+       backgroundColor: [
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
@@ -477,8 +482,8 @@ var myChartHeadcountBar = new Chart(ctx5, {
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
-                }
+                    beginAtZero: true,
+                    suggestedMax: 15000                }
             }]
         },
          title: {
@@ -500,21 +505,22 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
         datasets: [{
             label: 'total of awarded combined degress',
             data: [1730, 1833, 2017, 2303, 1794],
+                barThickness: 40,
             backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                     'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
+                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
@@ -523,8 +529,9 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
-                }
+                    beginAtZero: true,
+                     suggestedMax: 3000                    
+                 }
             }]
         },
          title: {
@@ -541,72 +548,95 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
 var ctx9 = document.getElementById('myChartStudentFinancialAidBar').getContext('2d');
 
 var myChartStudentFinancialAidBar = new Chart(ctx9, {
-    type: 'line',
-
+    type: 'horizontalBar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
-        datasets: [
-            
-{
+        
+        datasets: [ 
+        {
             label: 'Total grant aid received by all undergraduate students',
-            data: [7505794, 6741756, 6175973, 6311784, 7183675],
+            data: [75057, 67417, 61759, 63117, 71836],
+            barThickness: 30,
+            backgroundColor: [
+                 '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],
+            borderColor: [
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],
         
     },
-
-{ type: 'bar',
-            label: 'Average amount of grant aid awarded to undergraduate students',
+        {   
+           label: 'Average amount of grant aid awarded to undergraduate students',
             data: [2721, 2919, 2636, 2704, 2902],
-   backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+               barThickness: 30,
+    backgroundColor: [
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)'
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)',
+                'rgb(153, 153, 153)'
             ],
     },
 
-{
- type: 'bar',
+    {
+    
          label: '# of Pell Grants awarded',
             data: [1964, 1579, 1562, 1550, 1669],
+               barThickness: 30,
              backgroundColor: [
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-               'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)'
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+               'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)'
             ],
             borderColor: [
-                      'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-               'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)'
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)',
+               'rgb(0, 0, 0)',
+                'rgb(0, 0, 0)'
             ],
-        }]
+        }
+
+        ]
     },
  options: {
+
        scales: {
-            yAxes: [{
+            xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stacked: true,
+                    offset: true,
+                    suggestedMax: 10000
                 }
             }]
         },
         title: {
             display: true,
-           text: 'Select an option below to hide or show data.'
+            text: 'Select an option below to hide or show data.'
         }
     }
 });
@@ -618,65 +648,77 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
 var ctx11 = document.getElementById('myChartFinanceBar').getContext('2d');
 
 var myChartFinanceBar = new Chart(ctx11, {
-    type: 'line',
+    type: 'horizontalBar',
     data: {
         labels: ['fall 14', 'fall 15', 'fall 16', 'fall 17', 'fall 18'],
         datasets: [
             
-{
+{ 
             label: 'Total Current Assets',
             data: [1045444, 8212790, 8563301, 11163027, 12521150],
-        
-    },
-
-{ type: 'bar',
-            label: 'Revenues per FTE Enrollment',
-            data: [8454, 9038, 9998, 9752, 9286],
-      backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+            backgroundColor: [
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+            ],
+    },
+{ 
+            label: 'Revenues per FTE Enrollment',
+            data: [8454, 9038, 9998, 9752, 9286],
+            backgroundColor: [
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+            ],
+            borderColor: [
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
             ],
     },
 
 {
- type: 'bar',
          label: 'Expenses per FTE Enrollment',
             data: [8360, 9382, 9642, 9580, 9008],
+
              backgroundColor: [
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-               'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)'
+                      '#999999',
+                      '#999999',
+                      '#999999',
+                      '#999999',
+                      '#999999',
             ],
             borderColor: [
-                      'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)',
-               'rgba(0, 0, 0, 0.8)',
-                'rgba(0, 0, 0, 0.8)'
+                      '#999999',
+                      '#999999',
+                      '#999999',
+                      '#999999',
+                      '#999999',
             ],
         }]
     },
     options: {
         scales: {
-            yAxes: [{
+            xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stacked: true,
+                    offset: false,
+                    suggestedMax: 100
+            
                 }
             }]
         },
@@ -686,7 +728,6 @@ var myChartFinanceBar = new Chart(ctx11, {
         }
     }
 });
-
 
 //human resources
 
@@ -702,20 +743,18 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
             label: 'full-time staff',
             data: [236, 247, 241, 241, 244],
                 backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                   '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
             ],
     },
 
@@ -724,20 +763,19 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
          label: 'part-time staff',
             data: [297, 362, 333, 336, 322],
              backgroundColor: [
-                'rgba(138, 138, 138, 0.8)',
-                'rgba(106, 106, 106, 0.8)',
-                'rgba(74, 74, 74, 0.8)',
-                'rgba(42, 42, 42, 0.8)',
-                'rgba(26, 26, 26, 0.8)',
-                'rgba(10, 10, 10, 0.8)'
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+
             ],
             borderColor: [
-                 'rgba(138, 138, 138, 0.8)',
-                'rgba(106, 106, 106, 0.8)',
-                'rgba(74, 74, 74, 0.8)',
-                'rgba(42, 42, 42, 0.8)',
-                'rgba(26, 26, 26, 0.8)',
-                'rgba(10, 10, 10, 0.8)'
+                        '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
+                      '#000000',
             ],
         }]
     },
@@ -745,7 +783,10 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
         scales: {
             xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                   beginAtZero: true,
+                    stacked: true,
+                    offset: false,
+                    suggestedMax: 500
                 }
             }]
         },
@@ -767,21 +808,22 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
         datasets: [{
             label: 'ratio :1',
             data: [27, 24, 23, 22, 22],
+              barThickness: 60,
             backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+          ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
             ],
             borderWidth: 0
         }]
@@ -790,7 +832,9 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
         scales: {
            xAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    stacked: true,
+                    suggestedMax: 50
                 }
             }]
         },
