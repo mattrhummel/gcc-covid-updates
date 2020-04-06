@@ -143,6 +143,8 @@ get_header(); ?>
 
  <?php the_field( 'table_five' ); ?>
 
+ <canvas id="myChartStudentFinancialAidBarA" width="400" height="300"></canvas>
+
  <canvas id="myChartStudentFinancialAidBar" width="400" height="300"></canvas>
 </div>
 </li>
@@ -159,6 +161,8 @@ get_header(); ?>
     <div class="accordion-content" data-tab-content>
 
  <?php the_field( 'table_six' ); ?>
+
+  <canvas id="myChartFinanceBarA" width="400" height="200"></canvas>
 
   <canvas id="myChartFinanceBar" width="400" height="200"></canvas>
 
@@ -214,64 +218,17 @@ get_header(); ?>
     <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
     <div class="accordion-content" data-tab-content>
       
-<div class="row expanded">
 
-<ul class="tabs" data-tabs id="wages-tabs">
-  <li class="tabs-title is-active"><a href="#table" aria-selected="true">View table</a></li>
-  <li class="tabs-title"><a href="#bar" data-tabs-target="bar">View bar chart</a></li>
-</ul>
+          <canvas id="myChartWageOutcomesBar1A"  width="680" height="500"></canvas>
 
-<div class="tabs-content" data-tabs-content="wages-tabs">
+
+          <canvas id="myChartWageOutcomesBar1"  width="680" height="300"></canvas>
     
-    <div class="tabs-panel is-active" id="table">
-
-        <?php the_field( 'table_wages_1' ); ?>
-
-    </div>
-
-
-    <div class="tabs-panel" id="bar">
-
-      <canvas id="myChartWageOutcomesBar1"  width="680" height="500"></canvas>
-
-    </div>
 
 </div>
-
-</div>
-
-<div class="row expanded">
-
-<h3> Wages in 2018</h3>
-
-<p>80% of graduates with full-time wages fall within this range.</p>
-
-    <ul class="tabs" data-tabs id="wages-tabs-2">
-      <li class="tabs-title is-active"><a href="#table2" aria-selected="true">View table</a></li>
-      <li class="tabs-title"><a href="#bar2" data-tabs-target="bar2">View bar chart</a></li>
-    </ul>
-
-    <div class="tabs-content" data-tabs-content="wages-tabs-2">
-        
-        <div class="tabs-panel is-active" id="table2">
-
-            <?php the_field( 'table_wages_2' ); ?>
-
-        </div>
-
-        <div class="tabs-panel" id="bar2">
-
-            <canvas id="myChartWageOutcomesBar2" width="680" height="500" ></canvas>
-
-        </div>
-
-    </div>
-
-</div>
-
-</div><!--accordion content-->
 </li>
 </ul>
+
 
 <h3>Occupational and Technical Credit</h3>
 
@@ -283,62 +240,15 @@ get_header(); ?>
 
     <div class="accordion-content" data-tab-content>
 
-<div class="row expanded">
-
-    <ul class="tabs" data-tabs id="wages-tabs-3">
-      <li class="tabs-title is-active"><a href="#table3" aria-selected="true">View table</a></li>
-      <li class="tabs-title"><a href="#bar3" data-tabs-target="bar3">View bar chart</a></li>
-    </ul>
-
-    <div class="tabs-content" data-tabs-content="wages-tabs-3">
-        
-        <div class="tabs-panel is-active" id="table3">
-
+    
          <?php the_field( 'table_wages_3' ); ?>
 
-        </div>
-
-        <div class="tabs-panel" id="bar3">
+          <canvas id="myChartWageOutcomesBar3A"  width="400" height="200" ></canvas>
 
           <canvas id="myChartWageOutcomesBar3"  width="400" height="200" ></canvas>
 
-        </div>
-
-    </div>
-
-</div>
-
-<div class="row expanded">
-
-<h3> Wages in 2018</h3>
-
-<p>80% of graduates with full-time wages fall within this range.</p>
-
-    <ul class="tabs" data-tabs id="wages-tabs-4">
-      <li class="tabs-title is-active"><a href="#table4" aria-selected="true">View table</a></li>
-      <li class="tabs-title"><a href="#bar4" data-tabs-target="bar4">View bar chart</a></li>
-    </ul>
-
-    <div class="tabs-content" data-tabs-content="wages-tabs-4">
-            
-        <div class="tabs-panel is-active" id="table4">
-
-            <?php the_field( 'table_wages_4' ); ?>
-
-        </div>
-
-        <div class="tabs-panel" id="bar4">
-
-            <canvas id="myChartWageOutcomesBar4"  width="680" height="500"></canvas>
-
-        </div>
-
-    </div>
-
-</div>
-</div>
-
-</li>
+      </div>
+    </li>
   
 </ul>
 
@@ -352,7 +262,7 @@ get_header(); ?>
 
     <div class="accordion-content" data-tab-content>
 
- <?php the_field( 'table_ten' ); ?>
+        <canvas id="myEnrollmentBar" width="400" height="300"></canvas>
 
 </div>
 </li>
@@ -365,15 +275,13 @@ get_header(); ?>
 var ctx1 = document.getElementById('myChartGraduationRateBar').getContext('2d');
 
 var myChartGraduationRateBar = new Chart(ctx1, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'graduation rates by %',
             data: [28, 31, 32, 33, 37],
-            barThickness: 40,
             backgroundColor: [
-                'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
@@ -386,17 +294,16 @@ var myChartGraduationRateBar = new Chart(ctx1, {
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    suggestedMax: 100
+                    suggestedMax: 50
                 }
             }]
         },
@@ -413,16 +320,14 @@ var myChartGraduationRateBar = new Chart(ctx1, {
 var ctx3 = document.getElementById('myChartRetentionBar').getContext('2d');
 
 var myChartRetentionBar = new Chart(ctx3, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
 
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'retention rates by %',
             data: [66, 68, 63, 70, 68],
-                barThickness: 40,
-       backgroundColor: [
-                'rgb(169, 15, 55)',
+            backgroundColor: [
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
@@ -435,14 +340,13 @@ var myChartRetentionBar = new Chart(ctx3, {
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                     beginAtZero: true,
                     suggestedMax: 100
@@ -461,15 +365,13 @@ var myChartRetentionBar = new Chart(ctx3, {
 var ctx5 = document.getElementById('myChartHeadcountBar').getContext('2d');
 
 var myChartHeadcountBar = new Chart(ctx5, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'headcount',
             data: [10012, 9520, 9135, 9077, 9583],
-                barThickness: 40,
        backgroundColor: [
-                'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
@@ -482,14 +384,13 @@ var myChartHeadcountBar = new Chart(ctx5, {
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
             ],
             borderWidth: 0
         }]
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                     beginAtZero: true,
                     suggestedMax: 15000                }
@@ -508,15 +409,13 @@ var myChartHeadcountBar = new Chart(ctx5, {
 var ctx7 = document.getElementById('myChartCredentialsAwardedBar').getContext('2d');
 
 var myChartCredentialsAwardedBar = new Chart(ctx7, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'total of awarded combined degress',
             data: [1730, 1833, 2017, 2303, 1794],
-                barThickness: 40,
             backgroundColor: [
-                'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
@@ -524,7 +423,6 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
                 'rgb(169, 15, 55)',
             ],
             borderColor: [
-                     'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
                 'rgb(169, 15, 55)',
@@ -553,21 +451,19 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
 
 
 //financial aid
+var ctx9a = document.getElementById('myChartStudentFinancialAidBarA').getContext('2d');
 
-var ctx9 = document.getElementById('myChartStudentFinancialAidBar').getContext('2d');
-
-var myChartStudentFinancialAidBar = new Chart(ctx9, {
-    type: 'horizontalBar',
+var myChartStudentFinancialAidBarA = new Chart(ctx9a, {
+    type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         
         datasets: [ 
         {
             label: 'Total grant aid received by all undergraduate students',
-            data: [75057, 67417, 61759, 63117, 71836],
-            barThickness: 30,
+            data: [7505794, 6741756, 6175973, 6311784, 7183675],
             backgroundColor: [
-                 '#B22043',
+                  '#B22043',
                   '#B22043',
                   '#B22043',
                   '#B22043',
@@ -583,11 +479,38 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
                   '#B22043'
             ],
         
-    },
+    }]
+},
+ options: {
+
+       scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    stacked: true,
+                    offset: true,
+                    suggestedMax: 10000
+                }
+            }]
+        },
+        title: {
+            display: false,
+            text: 'Select an option below to hide or show data.'
+        }
+    }
+});
+
+var ctx9 = document.getElementById('myChartStudentFinancialAidBar').getContext('2d');
+
+var myChartStudentFinancialAidBar = new Chart(ctx9, {
+    type: 'bar',
+    data: {
+        labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
+        
+        datasets: [ 
         {   
            label: 'Average amount of grant aid awarded to undergraduate students',
             data: [2721, 2919, 2636, 2704, 2902],
-               barThickness: 30,
     backgroundColor: [
                 'rgb(153, 153, 153)',
                 'rgb(153, 153, 153)',
@@ -610,7 +533,6 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
     
          label: '# of Pell Grants awarded',
             data: [1964, 1579, 1562, 1550, 1669],
-               barThickness: 30,
              backgroundColor: [
                 'rgb(0, 0, 0)',
                 'rgb(0, 0, 0)',
@@ -634,17 +556,17 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
  options: {
 
        scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                     beginAtZero: true,
                     stacked: true,
                     offset: true,
-                    suggestedMax: 10000
+                    suggestedMax: 1000
                 }
             }]
         },
         title: {
-            display: true,
+            display: false,
             text: 'Select an option below to hide or show data.'
         }
     }
@@ -653,24 +575,23 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
 
 
 //finance
+var ctx11a = document.getElementById('myChartFinanceBarA').getContext('2d');
 
-var ctx11 = document.getElementById('myChartFinanceBar').getContext('2d');
-
-var myChartFinanceBar = new Chart(ctx11, {
-    type: 'horizontalBar',
+var myChartFinanceBarA = new Chart(ctx11a, {
+    type: 'bar',
     data: {
-        labels: ['fall 14', 'fall 15', 'fall 16', 'fall 17', 'fall 18'],
+        labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [
-            
 { 
             label: 'Total Current Assets',
-            data: [1045444, 8212790, 8563301, 11163027, 12521150],
+            data: [10454444, 8212790, 8563301, 11163027, 12521150],
             backgroundColor: [
+                        '#B22043',
                   '#B22043',
                   '#B22043',
                   '#B22043',
                   '#B22043',
-                  '#B22043',
+                  '#B22043'
             ],
             borderColor: [
                   '#B22043',
@@ -678,8 +599,35 @@ var myChartFinanceBar = new Chart(ctx11, {
                   '#B22043',
                   '#B22043',
                   '#B22043',
+                  '#B22043'
             ],
+    }]
     },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                offset: true,
+               suggestedMax: 500
+            
+                }
+            }]
+        },
+         title: {
+            display: false,
+            text: 'Select an option below to hide or show data.'
+        }
+    }
+});
+
+var ctx11 = document.getElementById('myChartFinanceBar').getContext('2d');
+
+var myChartFinanceBar = new Chart(ctx11, {
+    type: 'bar',
+    data: {
+        labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
+        datasets: [
 { 
             label: 'Revenues per FTE Enrollment',
             data: [8454, 9038, 9998, 9752, 9286],
@@ -721,18 +669,17 @@ var myChartFinanceBar = new Chart(ctx11, {
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    stacked: true,
-                    offset: false,
-                    suggestedMax: 100
+                offset: true,
+               suggestedMax: 500
             
                 }
             }]
         },
          title: {
-            display: true,
+            display: false,
             text: 'Select an option below to hide or show data.'
         }
     }
@@ -743,7 +690,7 @@ var myChartFinanceBar = new Chart(ctx11, {
 var ctx13 = document.getElementById('myChartHumanResourcesBar').getContext('2d');
 
 var myChartHumanResourcesBar = new Chart(ctx13, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['fall 14', 'fall 15', 'fall 16', 'fall 17', 'fall 18'],
         datasets: [
@@ -790,7 +737,7 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
                    beginAtZero: true,
                     stacked: true,
@@ -800,7 +747,7 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
             }]
         },
          title: {
-            display: true,
+            display: false,
             text: 'Select an option below to hide or show data.'
         }
     }
@@ -808,18 +755,16 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
 
 //student to faculty ratio
 
-var ctx15 = document.getElementById('myChartStudentFacultyRatioBar').getContext('2d');
+var ctx15 = document.getElementById('myChartStudentFacultyRatioBar');
 
 var myChartStudentFacultyRatioBar = new Chart(ctx15, {
-    type: 'horizontalBar',
+    type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'ratio :1',
             data: [27, 24, 23, 22, 22],
-              barThickness: 60,
             backgroundColor: [
-                  '#B22043',
                   '#B22043',
                   '#B22043',
                   '#B22043',
@@ -831,19 +776,18 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
                   '#B22043',
                   '#B22043',
                   '#B22043',
-                  '#B22043',
                   '#B22043'
             ],
-            borderWidth: 0
         }]
     },
     options: {
         scales: {
-           xAxes: [{
+           yAxes: [{
                 ticks: {
                     beginAtZero: true,
-                    stacked: true,
-                    suggestedMax: 50
+                    suggestedMax:50,
+                    offset: true,
+                    stacked: true
                 }
             }]
         },
@@ -857,374 +801,305 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
 
 //wage outcomes
 
+var ctx17a = document.getElementById('myChartWageOutcomesBar1A').getContext('2d');
+
+var myChartWageOutcomesBar1A = new Chart(ctx17a, {
+    type: 'bar',
+    data: {
+            labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+
+        datasets: [{
+            label: 'Median Wage',
+            data: [49159, 44475, 38788, 29550, 18173],
+            backgroundColor: [
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+
+            ],
+            borderColor: [
+                 '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],   
+        }],
+    },
+    options: {
+        scales: {
+            yAxes: [{
+                ticks: {
+                    beginAtZero: true,
+                    suggestedMax:10000,
+                    offset: true,
+                    stacked: true
+                }
+            }]
+        },
+         title: {
+            display: false,
+            text: 'Select an option below to hide or show data.'
+        }
+    }
+});
+
 var ctx17 = document.getElementById('myChartWageOutcomesBar1').getContext('2d');
 
 var myChartWageOutcomesBar1 = new Chart(ctx17, {
     type: 'bar',
     data: {
+            labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+
         datasets: [{
-            label: 'Median Wage',
-            data: [49159, 44475, 38788, 29550, 18173],
+            label: '% of Graduates w/ Reported Wage',
+            data: [56, 58, 55, 63, 59],
             backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
+
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                 '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
             ],   
-        }, {
-            label: 'Percentage of Graduates w/ Reported Wage',
-            data: [56, 58, 55, 63, 59],
-
-            // Changes this dataset to become a line
-            type: 'line'
         }],
-        labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
-
-
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax:100,
+                    offset: false,
+                    stacked: true
                 }
             }]
         },
          title: {
-            display: true,
+            display: false,
             text: 'Select an option below to hide or show data.'
         }
     }
 });
 
 //wage outcomes
+var ctx19a = document.getElementById('myChartWageOutcomesBar3A').getContext('2d');
 
-var ctx18 = document.getElementById('myChartWageOutcomesBar2').getContext('2d');
-
-var myChartWageOutcomesBar2 = new Chart(ctx18,  {
-    type: 'horizontalBar',
+var myChartWageOutcomesBar3A = new Chart(ctx19a, {
+    type: 'bar',
     data: {
-        labels: ['10th %', '25th %', 'Median', '75th %', '90th %'],
-        datasets: [
-{
-            label: '10 years (07-08)',
-            data: [16172, 27963, 49159, 70025, 103117],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+         labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+        datasets: [{
+            label: 'Median Wage',
+            data: [66101, 67179, 59131, 58116, 54028],
+            backgroundColor: [
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '8 years (09 - 10)',
-            data: [15680, 29230, 44475, 64672, 89947],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '5 years (12-13)',
-            data: [13769, 24008, 38788, 50481, 66488],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '3 years (14-15)',
-            data: [8084, 16807, 29550, 43940, 59104],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '18 months (16-17)',
-            data: [5419, 10121, 18173, 29327, 43401],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-
-        ]
+                    '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],   
+        }],
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax:10000,
+                    offset: true,
+                    stacked: false
                 }
             }]
         },
          title: {
-            display: true,
-            text: 'Select an option below to show or hide data.'
+            display: false,
+            text: 'Select an option below to hide or show data.'
         }
     }
 });
 
-
-
-//wage outcomes
 
 var ctx19 = document.getElementById('myChartWageOutcomesBar3').getContext('2d');
 
 var myChartWageOutcomesBar3 = new Chart(ctx19, {
     type: 'bar',
     data: {
+         labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
         datasets: [{
-            label: 'Median Wage',
-            data: [66101, 67179, 59131, 58116, 54028],
+            label: '% of Graduates w/ Reported Wage',
+            data: [69, 68, 74, 75, 78],
             backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
             ],   
-        }, {
-            label: 'Percentage of Graduates w/ Reported Wage',
-            data: [69, 68, 74, 75, 78],
-
-            // Changes this dataset to become a line
-            type: 'line'
         }],
-        labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
-
-
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax:100,
+                    offset: true,
+                    stacked: false
                 }
             }]
         },
          title: {
-            display: true,
+            display: false,
             text: 'Select an option below to hide or show data.'
         }
     }
 });
 
+var enrollmentBar = document.getElementById('myEnrollmentBar').getContext('2d');
 
-//wage outcomes
-
-var ctx21 = document.getElementById('myChartWageOutcomesBar4').getContext('2d');
-
-var myChartWageOutcomesBar4 = new Chart(ctx21, {
-    type: 'horizontalBar',
+var myEnrollmentBar = new Chart(enrollmentBar, {
+    type: 'bar',
     data: {
-        labels: ['10th %', '25th %', 'Median', '75th %', '90th %'],
+         labels: ['2011-12', '2012-13', '2013-14', '2014-15', '2015-16',  '2016-17',  '2017-18',  '2018-19'],
         datasets: [
-{
-            label: '10 years (07-08)',
-            data: [27297, 48874, 66101, 88863, 109781],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+        {
+            label: 'Majority Students - Men',
+            data: [193, 200, 208, 211, 246, 217, 265, 248],
+            backgroundColor: [
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '8 years (09 - 10)',
-            data: [22309, 45513, 67179, 85775, 99588],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '5 years (12-13)',
-            data: [21366, 36218, 59131, 73522, 86765],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],   
+        },        {
+            label: 'Majority Students - Women',
+            data: [232, 235, 303, 315, 293, 328, 322, 326],
+            backgroundColor: [
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '3 years (14-15)',
-            data: [24233, 43091, 58116, 69258, 77088],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-            borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
-            ],
-    },
-
-    {
-            label: '18 months (16-17)',
-            data: [21557, 37513, 54028, 61209, 75598],
-                backgroundColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
+            ],   
+        },    {
+            label: 'Student of Color - Men',
+            data: [34, 65, 59, 47, 73, 69, 81, 75],
+            backgroundColor: [
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
             ],
             borderColor: [
-                'rgba(169, 15, 55, 0.4)',
-                'rgba(147, 13, 46, 0.4)',
-                'rgba(124, 11, 39, 0.4)',
-                'rgba(102, 9, 32, 0.4)',
-                'rgba(81, 6, 25, 0.4)',
-                'rgba(63, 5, 20, 0.4)'
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+            ],   
+        },    {
+            label: 'Student of Color - Women',
+            data: [57, 75, 85, 113, 104, 131, 113, 107],
+            backgroundColor: [
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc'
             ],
-    },
+            borderColor: [
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc'
+            ],   
+        }
 
-
-        ]
+        ],
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
+
+
                 ticks: {
-                    beginAtZero: true
+                    beginAtZero: true,
+                    suggestedMax: 400,
                 }
             }]
         },
          title: {
-            display: true,
-            text: 'Select an option below to show or hide data.'
+            display: false,
+            text: 'Select an option below to hide or show data.'
         }
     }
 });
+
 
 </script>
 
