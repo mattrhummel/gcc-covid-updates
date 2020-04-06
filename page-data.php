@@ -15,6 +15,9 @@ get_header(); ?>
   while ( have_posts() ) : the_post(); ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
  
   <?php //Page Heading
   get_template_part( 'template-parts/content', 'page-heading' );
