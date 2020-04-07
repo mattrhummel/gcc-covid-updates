@@ -79,6 +79,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 </script>
 <script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
 
+<script type="text/javascript">
+    window._monsido = window._monsido || {
+        token: "lrvTEPRsbj3KzBDEpgbUnQ",
+    };
+</script>
+<script type="text/javascript" async src="https://app-script.monsido.com/v2/monsido-script.js"></script>
+
 <!-- Facebook Pixel Code -->
 
 <script>

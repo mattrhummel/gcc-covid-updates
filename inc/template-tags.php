@@ -244,7 +244,7 @@ if ( is_singular() ) :
 			<input type="hidden" name="oe" value="utf8" title="hidden" />
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-			
+			<label for="q" style="display:none;">Search</label> 
 			<input type="text" name="q" id="search-field" class="input-group-field">
 			
 			<div class="input-group-button">
@@ -264,7 +264,8 @@ if ( is_singular() ) :
 			<input type="hidden" name="oe" value="utf8" title="hidden" />
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-			
+			<label for="q" style="display:none;">Search</label> 
+
 			<input type="text" name="q" id="search-field" class="input-group-field">
 			
 			<div class="input-group-button">
