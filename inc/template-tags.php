@@ -265,8 +265,7 @@ if ( is_singular() ) :
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
 			<label for="q" style="display:none;">Search</label> 
-
-			<input type="text" name="q" id="search-field" class="input-group-field">
+			<input type="text" name="q" id="search-field-mobile" class="input-group-field">
 			
 			<div class="input-group-button">
 				<button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
