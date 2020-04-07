@@ -10,30 +10,20 @@
 *
 */
 get_header(); ?>
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
+<?php
   while ( have_posts() ) : the_post(); ?>
   
-    <header>
-          <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-          <?php the_breadcrumb() ?> 
-    </header>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <div class="row expanded content-area">
-    <div class="small-12 medium-12 large-9 float-left columns" >
-      <?php // if the page has a featured image
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
       
-      if  (has_post_thumbnail( ) )  { ?>
-      <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
-        <?php the_post_thumbnail('', array ('class' => 'lazy'));  ?>
-      </div>
+    </div>
+    <?php get_sidebar();?>
 
-        <?php  }  else {  //.pagesubbanner
-        // if page doesn't have a featured image
-        ?>
-        <?php } ?>
-
-      <div class="entry-content" id="main" tabindex="0">
+    <div class="columns small-12 large-9 float-left">
         <?php //Page Heading
         get_template_part( 'template-parts/content', 'page-alert' );
         ?>
