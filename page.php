@@ -59,6 +59,22 @@ while ( have_posts() ) : the_post(); ?>
         the_content();
         ?>
 
+        <?php if (is_page('search_gcse')) : ; ?>
+
+           <script async>
+            (function() {
+              var cx = '004235661866003871264:hsv9lloki5k';
+              var gcse = document.createElement('script');
+              gcse.type = 'text/javascript';
+              gcse.async = true;
+              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+              var s = document.getElementsByTagName('script')[0];
+              s.parentNode.insertBefore(gcse, s);
+            })();
+          </script>
+  
+         <?php endif; ?>
+
         <?php if (is_page('germanna-quick-facts')) : ;  ?>
         
           <?php get_template_part( 'template-parts/content', 'quickfacts' ); ?>
