@@ -337,23 +337,6 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
                   '#999999',
                   '#999999'
             ],   
-        },    {
-            label: 'Student of Color - Women',
-            data: [57, 75, 85, 113, 104, 131, 113, 107],
-            backgroundColor: [
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc'
-            ],
-            borderColor: [
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc',
-                  '#cccccc'
-            ],   
         }
 
         ],
