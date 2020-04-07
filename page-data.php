@@ -56,8 +56,6 @@ get_header(); ?>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js"></script>
 
 <h2>Graduation Rates</h2>
-
-
          <?php the_field( 'table_one' ); ?>
 
           <canvas id="myChartGraduationRateBar" width="400" height="200"></canvas>
@@ -65,14 +63,12 @@ get_header(); ?>
 
 <h2>First-time Full-time Student Retention Rates</h2>
 
-
     <?php the_field( 'table_two' ); ?>
 
     <canvas id="myChartRetentionBar" width="400" height="200"></canvas>
 
 
 <h2>12-month Unduplicated Headcount (Credit)</h2>
-
 
     <?php the_field( 'table_three' ); ?>
 
@@ -145,8 +141,6 @@ get_header(); ?>
 
 
         <canvas id="myEnrollmentBar" width="400" height="300"></canvas>
-
-
 
 <script>
 
