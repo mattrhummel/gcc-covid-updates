@@ -16,7 +16,7 @@ get_header(); ?>
       </button>
       
     </div>
-    <?php get_sidebar();?>
+    <?php dynamic_sidebar( 'workforce-widgets' );?>
 
     <div class="columns small-12 large-9 float-left"> 
 
