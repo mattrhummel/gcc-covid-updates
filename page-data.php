@@ -79,7 +79,6 @@ get_header(); ?>
 
   <canvas id="myChartHeadcountBar"  width="400" height="200"></canvas>
 
-</div>
 
 <h2>Credentials Awarded</h2>
 
