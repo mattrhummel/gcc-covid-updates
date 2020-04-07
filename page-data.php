@@ -285,44 +285,96 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
     type: 'bar',
     data: {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
-        datasets: [{
-            label: 'total of awarded combined degress',
-            data: [1730, 1833, 2017, 2303, 1794],
+                datasets: [
+        {
+            label: 'Degrees',
+            data: [789, 843, 933, 911, 878],
             backgroundColor: [
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
             ],
             borderColor: [
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
-                'rgb(169, 15, 55)',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043',
+                  '#B22043'
+            ],   
+        },        {
+            label: 'Certificates',
+            data: [693, 695, 784, 771, 653],
+            backgroundColor: [
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
             ],
-            borderWidth: 0
-        }]
+            borderColor: [
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000',
+                  '#000000'
+            ],   
+        },    {
+            label: 'Career Studies Certificates',
+            data: [248, 295, 300, 621, 263],
+            backgroundColor: [
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999'
+            ],
+            borderColor: [
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999',
+                  '#999999'
+            ],   
+        },    {
+            label: 'Student of Color - Women',
+            data: [57, 75, 85, 113, 104, 131, 113, 107],
+            backgroundColor: [
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc'
+            ],
+            borderColor: [
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc',
+                  '#cccccc'
+            ],   
+        }
+
+        ],
     },
     options: {
         scales: {
-            xAxes: [{
+            yAxes: [{
+
+
                 ticks: {
                     beginAtZero: true,
-                     suggestedMax: 3000                    
-                 }
+                    suggestedMax: 400,
+                }
             }]
         },
          title: {
             display: false,
-            text: 'Graduation Rates by %'
+            text: 'Select an option below to hide or show data.'
         }
     }
 });
-
-
-
 //financial aid
 var ctx9a = document.getElementById('myChartStudentFinancialAidBarA').getContext('2d');
 
