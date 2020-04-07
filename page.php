@@ -49,7 +49,6 @@ while ( have_posts() ) : the_post(); ?>
         get_template_part( 'template-parts/content', 'page-alert' );
       ?>
 
-      
         <?php if (is_page('27674')) : ; ?>
 
           <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
@@ -59,6 +58,12 @@ while ( have_posts() ) : the_post(); ?>
        <?php
         the_content();
         ?>
+
+        <?php if (is_page('germanna-quick-facts')) : ;  ?>
+        
+          <?php get_template_part( 'template-parts/content', 'quickfacts' ); ?>
+        
+        <?php endif; ?>
 
         <?php if (is_page('workforce')) : ; ?>
         
@@ -184,6 +189,7 @@ while ( have_posts() ) : the_post(); ?>
         </div>
         
         <?php endif; ?>
+
 
         <?php //student activities events
         if (is_page('27603')) : ; ?>
