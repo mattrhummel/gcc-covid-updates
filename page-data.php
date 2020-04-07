@@ -70,7 +70,6 @@ get_header(); ?>
 
     <canvas id="myChartRetentionBar" width="400" height="200"></canvas>
 
-</div>
 
 <h2>12-month Unduplicated Headcount (Credit)</h2>
 
