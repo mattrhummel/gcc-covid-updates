@@ -278,6 +278,7 @@ if ( is_singular() ) :
 	//mobile resources menu
 	function gcc_wp_2018_resources_mobile() { ?>
 	<div class="mobile-resources">
+		<map title="Resources Menu Mobile" id="resources-menu-mobile">
 		<ul class="vertical menu accordion-menu"  data-accordion-menu>
 			<li class="red-button">
 				<a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
@@ -292,13 +293,14 @@ if ( is_singular() ) :
 			<li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
 			<li><a href="/library/">Libraries</a></li>
 			<li><a href="/about-germanna/locations/">Locations</a></li>			
-			<li><a href="/veterans/">Military & Families</a>
-			<li><a href="/admissions/transcript-request/">Transcripts</a>
+			<li><a href="/veterans/">Military & Families</a></li>
+			<li><a href="/admissions/transcript-request/">Transcripts</a></li>
 			<!-- ... -->
 		</ul>
 	</li>
-	<li  class="green-button"><a href="/donate/">give</a></li>
+	<li class="green-button"><a href="/donate/">give</a></li>
 </ul>
+</map>
 <hr>
 </div>
 <?php }
@@ -306,6 +308,7 @@ if ( is_singular() ) :
 <?php
 //desktop resources menu
 function gcc_wp_2018_resources_desktop() { ?>
+<map title="Resources Menu Desktop" id="resources-menu-desktop">
 <ul class="dropdown menu align-center hide-for-medium-only hide-for-large-only show-for-xlarge" data-dropdown-menu>
 <li class="red-button">
 	<a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
@@ -320,12 +323,13 @@ function gcc_wp_2018_resources_desktop() { ?>
 <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
 <li><a href="/library/">Libraries</a></li>
 <li><a href="/about-germanna/locations/">Locations</a></li>
-<li><a href="/veterans/">Military & Families</a>
-<li><a href="/admissions/transcript-request/">Transcripts</a>
+<li><a href="/veterans/">Military & Families</a></li>
+<li><a href="/admissions/transcript-request/">Transcripts</a></li>
 </ul>
 </li>
 <li  class="green-button"><a href="/donate/">give</a></li>
 </ul>
+</map>
 <?php }
 ?>
 <?php
