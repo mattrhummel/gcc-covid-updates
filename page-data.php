@@ -57,108 +57,47 @@ get_header(); ?>
 
 <h2>Graduation Rates</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Graduation Rates Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
          <?php the_field( 'table_one' ); ?>
 
           <canvas id="myChartGraduationRateBar" width="400" height="200"></canvas>
 
-    </div>
-
-</li>
-
-</ul>
 
 <h2>First-time Full-time Student Retention Rates</h2>
 
-
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View First-time Full-time Student Retention Rates Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
     <?php the_field( 'table_two' ); ?>
 
     <canvas id="myChartRetentionBar" width="400" height="200"></canvas>
 
 </div>
-</li>
-</ul>
 
 <h2>12-month Unduplicated Headcount (Credit)</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View 12-month Unduplicated Headcount (Credit) Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
     <?php the_field( 'table_three' ); ?>
 
   <canvas id="myChartHeadcountBar"  width="400" height="200"></canvas>
 
 </div>
-</li>
-</ul>
 
 <h2>Credentials Awarded</h2>
-
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Credentials Awarded Data</a>
-
-    <div class="accordion-content" data-tab-content>
-
 
  <?php the_field( 'table_four' ); ?>
 
   <canvas id="myChartCredentialsAwardedBar" width="400" height="200"></canvas>
 
-</div>
-</li>
-</ul>
 
 <h2>Student Financial Aid</h2>
-
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Student Financial Aid Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
  <?php the_field( 'table_five' ); ?>
 
  <canvas id="myChartStudentFinancialAidBarA" width="400" height="300"></canvas>
 
  <canvas id="myChartStudentFinancialAidBar" width="400" height="300"></canvas>
-</div>
-</li>
-</ul>
 
 <h2>Finance</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Finance Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
  <?php the_field( 'table_six' ); ?>
 
@@ -166,107 +105,49 @@ get_header(); ?>
 
   <canvas id="myChartFinanceBar" width="400" height="200"></canvas>
 
-</div>
-</li>
-</ul>
 
 <h2>Human Resources</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Human Resources Data</a>
-
-    <div class="accordion-content" data-tab-content>
  
  <?php the_field( 'table_seven' ); ?>
 
  <canvas id="myChartHumanResourcesBar"  width="400" height="200"></canvas>
 
-</div>
-</li>
-</ul>
 <h2>Student-to-Faculty Ratio</h2>
-
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Student-to-Faculty Ratio Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
  <?php the_field( 'table_eight' ); ?>
  
    <canvas id="myChartStudentFacultyRatioBar" width="400" height="200"></canvas>
 
-</div>
-</li>
-</ul>
 
 <h2>Wage Outcomes, 2018 Calendar Year</h2>
 
 <h3>Associate’s Degree (Bachelor Credit)</h3>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
   
-  <li class="accordion-item" data-accordion-item>
-    <!-- Accordion tab title -->
-    <a href="#" class="accordion-title">View Associate’s Degree (Bachelor Credit) Data</a>
-
-    <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-    <div class="accordion-content" data-tab-content>
-      
-
           <canvas id="myChartWageOutcomesBar1A"  width="680" height="500"></canvas>
 
 
           <canvas id="myChartWageOutcomesBar1"  width="680" height="300"></canvas>
     
 
-</div>
-</li>
-</ul>
-
-
 <h3>Occupational and Technical Credit</h3>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
   
-  <li class="accordion-item" data-accordion-item>
-    <!-- Accordion tab title -->
-    <a href="#" class="accordion-title">View Occupational and Technical Credit Data</a>
-
-    <div class="accordion-content" data-tab-content>
-
     
          <?php the_field( 'table_wages_3' ); ?>
 
           <canvas id="myChartWageOutcomesBar3A"  width="400" height="200" ></canvas>
 
           <canvas id="myChartWageOutcomesBar3"  width="400" height="200" ></canvas>
+    
 
-      </div>
-    </li>
-  
-</ul>
 
 <h2>Enrollment</h2>
 
-<ul class="accordion" data-accordion data-allow-all-closed="true">
-
- <li class="accordion-item" data-accordion-item>
-
-    <a href="#" class="accordion-title">View Enrollment Data</a>
-
-    <div class="accordion-content" data-tab-content>
 
         <canvas id="myEnrollmentBar" width="400" height="300"></canvas>
 
-</div>
-</li>
-</ul>
 
 
 <script>
