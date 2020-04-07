@@ -714,11 +714,11 @@ var ctx17a = document.getElementById('myChartWageOutcomesBar1A').getContext('2d'
 var myChartWageOutcomesBar1A = new Chart(ctx17a, {
     type: 'bar',
     data: {
-            labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+        labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)'],
 
         datasets: [{
             label: 'Median Wage',
-            data: [49159, 44475, 38788, 29550, 18173],
+            data: [18173, 29550, 38788, 44475, 49159],
             backgroundColor: [
                   '#B22043',
                   '#B22043',
@@ -759,11 +759,11 @@ var ctx17 = document.getElementById('myChartWageOutcomesBar1').getContext('2d');
 var myChartWageOutcomesBar1 = new Chart(ctx17, {
     type: 'bar',
     data: {
-            labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+        labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)'],
 
         datasets: [{
             label: '% of Graduates w/ Reported Wage',
-            data: [56, 58, 55, 63, 59],
+            data: [59, 63, 55, 58, 56],
             backgroundColor: [
                   '#000000',
                   '#000000',
@@ -805,10 +805,10 @@ var ctx19a = document.getElementById('myChartWageOutcomesBar3A').getContext('2d'
 var myChartWageOutcomesBar3A = new Chart(ctx19a, {
     type: 'bar',
     data: {
-         labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+        labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)'],
         datasets: [{
             label: 'Median Wage',
-            data: [66101, 67179, 59131, 58116, 54028],
+            data: [54028, 58116, 59131, 67179, 66101],
             backgroundColor: [
                   '#B22043',
                   '#B22043',
@@ -849,10 +849,10 @@ var ctx19 = document.getElementById('myChartWageOutcomesBar3').getContext('2d');
 var myChartWageOutcomesBar3 = new Chart(ctx19, {
     type: 'bar',
     data: {
-         labels: ['10 years (2007-08)', '8 years (2009 – 10)', '5 years (2012 – 13)', '3 years (2014 – 15)','18 months (2016-17)'],
+        labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)'],
         datasets: [{
             label: '% of Graduates w/ Reported Wage',
-            data: [69, 68, 74, 75, 78],
+            data: [78, 75, 74, 68, 69],
             backgroundColor: [
                   '#000000',
                   '#000000',
