@@ -18,8 +18,9 @@ get_header(); ?>
     </div>
     <?php get_sidebar();?>
 
-    <div class="columns small-12 large-9 float-left"> <header>
-    
+    <div class="columns small-12 large-9 float-left"> 
+
+    <header>  
     <h1 class="entry-title"><?php the_title(); ?></h1>
       <?php if ( 'post' === get_post_type() ) : ?>
     <p><?php the_date();?></p>
@@ -47,7 +48,7 @@ get_header(); ?>
       
     <?php // if the page has a featured image
     if  (has_post_thumbnail( ) )  { ?>
-    <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
+    <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" style="margin-bottom: 20px;">
       <?php the_post_thumbnail('', array ('alt' => false));  ?>
     </div>
     <?php  }  else {  //.pagesubbanner

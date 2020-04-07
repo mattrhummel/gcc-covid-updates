@@ -55,9 +55,9 @@ while ( have_posts() ) : the_post(); ?>
 
         <?php endif; ?>
        
-       <?php
-        the_content();
-        ?>
+         <?php
+          the_content();
+          ?>
 
         <?php if (is_page('search_gcse')) : ; ?>
 
