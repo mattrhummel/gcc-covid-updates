@@ -16,8 +16,11 @@ get_header(); ?>
       </button>
       
     </div>
-    <?php dynamic_sidebar( 'workforce-widgets' );?>
 
+    <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
+    <?php dynamic_sidebar( 'workforce-widgets' );?>
+ </aside>
+ 
     <div class="columns small-12 large-9 float-left"> 
 
     <header>  
