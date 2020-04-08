@@ -98,7 +98,7 @@ while ( have_posts() ) : the_post(); ?>
 
                 <p><?php the_excerpt(); ?></p>
 
-                <a href="<?php the_permalink(); ?>" class="button primary">Read Story</a>
+                <a href="<?php the_permalink(); ?>" class="button primary expanded">Read Story</a>
 
            </div>  
 
