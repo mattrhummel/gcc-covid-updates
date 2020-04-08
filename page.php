@@ -79,30 +79,32 @@ while ( have_posts() ) : the_post(); ?>
         <!-- pagination here -->
         <!-- the loop -->
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        
-        <div class="column large-6">
-         
-            <div class="callout small success" data-equalizer-watch>
-                 
-               
-                <h4><?php the_title(); ?></h4>
+
+          <div class="row expanded" data-equalizer="">
+<div class="medium-4 columns">
+
+    <?php // ACF Image Object
+      $image     = get_field( 'story_image' );
+      $alt       = $image['alt'];
+      $imageSize = $image['sizes'][ 'large' ];
+      ?>
+
+<div class="hide-for-small-only callout" style="background-image: url('<?php echo $imageSize ?>'); background-repeat: no-repeat; background-size: cover; background-position: center right;" data-equalizer-watch=""></div>
+</div>
+<div class="medium-8 columns">
+<div class="callout success large" data-equalizer-watch="">
+
+  <h4><?php the_title(); ?></h4>
                 
-                <p class="h3"><?php the_field( 'story_heading' ); ?></p>
+  <p class="h3"><?php the_field( 'story_heading' ); ?></p>
 
-                <?php // ACF Image Object
-                $image     = get_field( 'story_image' );
-                $alt       = $image['alt'];
-                $imageSize = $image['sizes'][ 'large' ];
-                echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
-                ?>
+  <a href="<?php the_permalink(); ?>" class="button primary expanded">Read Story</a>
 
-                <p><?php the_excerpt(); ?></p>
+</div>
+</div>
+</div>
+        
 
-                <a href="<?php the_permalink(); ?>" class="button primary expanded">Read Story</a>
-
-           </div>  
-
-        </div>
           
         <?php endwhile; ?>
         <!-- end of the loop -->
