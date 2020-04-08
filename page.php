@@ -81,6 +81,9 @@ while ( have_posts() ) : the_post(); ?>
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div class="small-12 medium-12 large-6 columns">
           <a href="<?php the_permalink(); ?>" class="stories">
+            <div class="section-divider">
+                <h3><?php the_title(); ?></h3>
+            </div>
             <div class="card">
               <?php // ACF Image Object
               $image     = get_field( 'story_image' );
@@ -90,7 +93,7 @@ while ( have_posts() ) : the_post(); ?>
               ?>
               
               <div class="card-section" data-equalizer-watch>
-                <h3><?php the_title(); ?></h3>
+                
               </div>
             </div>
           </a>
