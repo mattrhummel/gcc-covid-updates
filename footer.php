@@ -12,6 +12,12 @@
 <?php //closing main container, do not remove ?>
 </main>
 
+<div class="row expanded">
+  
+  <form id="wpforms-form-43666" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="43666" method="post" enctype="multipart/form-data" action="/form-test/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-43666-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-43666-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-43666-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Email Address..." required></div></div><div class="wpforms-field wpforms-field-hp"></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="43666"><input type="hidden" name="wpforms[author]" value="2"><input type="hidden" name="wpforms[post_id]" value="43668"><button type="submit" name="wpforms[submit]" class="wpforms-submit button primary" id="wpforms-submit-43666" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button><img src="https://germannacc.staging.wpengine.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt=""></div></form>
+
+</div>
+
 <footer class="site-footer hide-for-print">
 <div class="row expanded collapse top-footer">
   <div class="small-12 medium-12 large-4 columns">
