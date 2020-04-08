@@ -539,6 +539,7 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'ratio :1',
+            barThickness: 40,
             data: [27, 24, 23, 22, 22],
             backgroundColor: [
                   '#B22043',
