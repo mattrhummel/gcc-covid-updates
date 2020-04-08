@@ -87,7 +87,7 @@ while ( have_posts() ) : the_post(); ?>
                
                 <h4><?php the_title(); ?></h4>
                 
-                <p><?php the_field( 'story_heading' ); ?></p>
+                <p class="h3"><?php the_field( 'story_heading' ); ?></p>
 
                 <?php // ACF Image Object
                 $image     = get_field( 'story_image' );
