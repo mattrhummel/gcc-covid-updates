@@ -11,57 +11,59 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
-<div class="row expanded" style="height: 200px; background-color: #f9f9f9;">
-
-<div class="form">
-
-<div class="columns medium-6">
-
-</div>
-
-<div class="columns medium-6" >
+<div class="row expanded" style="background-color: #f9f9f9;">
 
 <div id="wpforms-43666">
 
-  <form id="wpforms-form-43666" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="43666" method="post" enctype="multipart/form-data" action="/form-test/">
+     <div class="columns medium-6 show-for-medium" style="background-image: url('https://germannacc.staging.wpengine.com/wp-content/uploads/home-sign-up.jpg'); height: 300px; background-position: top center; background-size: cover;">
 
-    <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
-
-     <div class="row expanded">
-     
-     <p class="h2">Sign-up for updates</p>
-   
     </div>
 
-    <div class="input-group">
-  
-    
-        <label for="wpforms-43666-field_1" style="display: none;">Email <span class="wpforms-required-label">*</span></label>
+    <div class="columns medium-6">
 
-        <input type="email" id="wpforms-43666-field_1" class="input-group-field" name="wpforms[fields][1]" placeholder="Email Address..." required>
+        <form id="wpforms-form-43666" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="43666" method="post" enctype="multipart/form-data" action="/form-test/">
 
-      <input type="hidden" name="wpforms[id]" value="43666">
-      <input type="hidden" name="wpforms[author]" value="2">
-      <input type="hidden" name="wpforms[post_id]" value="43668">
-    
+          <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
 
-    <div class="input-group-button">
+      <div class="callout primary large">
+        
+           <div class="row expanded">
+           
+            <p class="h2">Sign-up for updates</p>
+         
+            </div>
 
-      <button type="submit" name="wpforms[submit]" class="button" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button>
+          <div class="input-group">
+              
+              <label for="wpforms-43666-field_1" style="display: none;">Email <span class="wpforms-required-label">*</span></label>
 
-      <img src="https://germannacc.staging.wpengine.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="">
+              <input type="email" id="wpforms-43666-field_1" class="input-group-field" name="wpforms[fields][1]" placeholder="Email Address..." required>
 
-  </div>
+            <input type="hidden" name="wpforms[id]" value="43666">
+            <input type="hidden" name="wpforms[author]" value="2">
+            <input type="hidden" name="wpforms[post_id]" value="43668">
+          
 
-   </div>
+            <div class="input-group-button">
 
-    </form>
-  </div>  
-  </div>
+              <button type="submit" name="wpforms[submit]" class="button" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button>
+
+              <img src="https://germannacc.staging.wpengine.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="">
+
+          </div>
+
+        </div>
+
+      </div>
+
+      </form>
+
+    </div>  
+
   </div>
 
 </div>
-</div>
+
 
 <footer class="site-footer hide-for-print">
 <div class="row expanded collapse top-footer">
