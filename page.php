@@ -98,7 +98,6 @@ while ( have_posts() ) : the_post(); ?>
 
         </div>
           
-        </div>
         <?php endwhile; ?>
         <!-- end of the loop -->
         <!-- pagination here -->
@@ -106,7 +105,8 @@ while ( have_posts() ) : the_post(); ?>
         <?php else : ?>
         <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
         <?php endif; ?>
-        
+                </div>
+
         </div><!--.otherstories--> 
 
           <?php endif; ?>
