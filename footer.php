@@ -11,7 +11,7 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
-<div class="row expanded" style="height: 100px; background-color: #f9f9f9;">
+<div class="row expanded" style="height: 200px; background-color: #f9f9f9;">
 
 <div class="form">
 
@@ -27,9 +27,15 @@
 
     <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
 
+     <div class="row expanded">
+     
+     <p class="h2">Sign-up for updates</p>
+   
+    </div>
+
     <div class="input-group">
-
-
+  
+    
         <label for="wpforms-43666-field_1" style="display: none;">Email <span class="wpforms-required-label">*</span></label>
 
         <input type="email" id="wpforms-43666-field_1" class="input-group-field" name="wpforms[fields][1]" placeholder="Email Address..." required>
@@ -37,6 +43,7 @@
       <input type="hidden" name="wpforms[id]" value="43666">
       <input type="hidden" name="wpforms[author]" value="2">
       <input type="hidden" name="wpforms[post_id]" value="43668">
+    
 
     <div class="input-group-button">
 
