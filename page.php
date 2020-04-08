@@ -82,7 +82,7 @@ while ( have_posts() ) : the_post(); ?>
         
         <div class="column large-6">
          
-            <div class="callout primary" data-equalizer-watch>
+            <div class="callout success" data-equalizer-watch>
                  
                
                 <h4><?php the_title(); ?></h4>
