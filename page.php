@@ -59,7 +59,7 @@ while ( have_posts() ) : the_post(); ?>
           the_content();
           ?>
 
-          <?php if (is_page('43629')) : ; ?>
+        <?php if (is_page('43629')) : ; ?>
 
                   <div class="row expanded" data-equalizer data-equalize-on="large">
         <hr>
