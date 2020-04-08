@@ -79,20 +79,24 @@ while ( have_posts() ) : the_post(); ?>
         <!-- pagination here -->
         <!-- the loop -->
         <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-        <div class="small-12 medium-12 large-6 columns">
+        
+        <div class="column large-6">
          
-          <a href="<?php the_permalink(); ?>" class="stories">
-            <div class="callout">
-                <h3><?php the_title(); ?></h3>
-              <?php // ACF Image Object
-              $image     = get_field( 'story_image' );
-              $alt       = $image['alt'];
-              $imageSize = $image['sizes'][ 'large' ];
-              echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
-              ?>
-         </div>       
-            </div>
-          </a>
+            <div class="callout primary">
+                 <a href="<?php the_permalink(); ?>" class="stories">
+                  <h3><?php the_title(); ?></h3>
+                </a>
+
+                <?php // ACF Image Object
+                $image     = get_field( 'story_image' );
+                $alt       = $image['alt'];
+                $imageSize = $image['sizes'][ 'large' ];
+                echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
+                ?>
+
+           </div>  
+
+        </div>
           
         </div>
         <?php endwhile; ?>
