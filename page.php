@@ -83,9 +83,11 @@ while ( have_posts() ) : the_post(); ?>
         <div class="column large-6">
          
             <div class="callout primary" data-equalizer-watch>
-                 <a href="<?php the_permalink(); ?>">
-                  <h3><?php the_title(); ?></h3>
-                 </a>
+                 
+               
+                <h4><?php the_title(); ?></h4>
+                
+                <p><?php the_excerpt(); ?></p>
 
                 <?php // ACF Image Object
                 $image     = get_field( 'story_image' );
@@ -93,6 +95,10 @@ while ( have_posts() ) : the_post(); ?>
                 $imageSize = $image['sizes'][ 'large' ];
                 echo '<img src="' . $imageSize . '" alt="' . $alt . '" />';
                 ?>
+
+                <p><?php the_excerpt(); ?></p>
+
+                <a href="<?php the_permalink(); ?>" class="button primary">Read Story</a>
 
            </div>  
 
