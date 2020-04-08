@@ -1,7 +1,7 @@
 <h2>Graduation Rates</h2>
 
 
-          <canvas id="myChartGraduationRateBar" width="400" height="200"></canvas>
+          <canvas id="myChartGraduationRateBar" width="300" height="180"></canvas>
 
 
 <h2>First-time Full-time Student Retention Rates</h2>

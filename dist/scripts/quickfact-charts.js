@@ -7,6 +7,7 @@ var myChartGraduationRateBar = new Chart(ctx1, {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'graduation rates by %',
+            barThickness: 40,
             data: [28, 31, 32, 33, 37],
             backgroundColor: [
                 'rgb(169, 15, 55)',
@@ -53,6 +54,7 @@ var myChartRetentionBar = new Chart(ctx3, {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'retention rates by %',
+             barThickness: 40,
             data: [66, 68, 63, 70, 68],
             backgroundColor: [
                 'rgb(169, 15, 55)',
@@ -97,6 +99,7 @@ var myChartHeadcountBar = new Chart(ctx5, {
         labels: ['2014-15', '2015-16', '2016-17', '2017-18', '2018-19'],
         datasets: [{
             label: 'headcount',
+             barThickness: 40,
             data: [10012, 9520, 9135, 9077, 9583],
        backgroundColor: [
                 'rgb(169, 15, 55)',
@@ -142,6 +145,7 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
                 datasets: [
         {
             label: 'Degrees',
+            barThickness: 20,
             data: [789, 843, 933, 911, 878],
             backgroundColor: [
                   '#B22043',
@@ -159,6 +163,7 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
             ],   
         },        {
             label: 'Certificates',
+            barThickness: 20,
             data: [693, 695, 784, 771, 653],
             backgroundColor: [
                   '#000000',
@@ -176,6 +181,7 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
             ],   
         },    {
             label: 'Career Studies Certificates',
+            barThickness: 20,
             data: [248, 295, 300, 621, 263],
             backgroundColor: [
                   '#999999',
@@ -223,6 +229,7 @@ var myChartStudentFinancialAidBarA = new Chart(ctx9a, {
         datasets: [ 
         {
             label: 'Total grant aid received by all undergraduate students',
+            barThickness: 40,
             data: [7505794, 6741756, 6175973, 6311784, 7183675],
             backgroundColor: [
                   '#B22043',
@@ -272,6 +279,7 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
         datasets: [ 
         {   
            label: 'Average amount of grant aid awarded to undergraduate students',
+           barThickness: 20,
             data: [2721, 2919, 2636, 2704, 2902],
     backgroundColor: [
                 'rgb(153, 153, 153)',
@@ -295,6 +303,7 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
     
          label: '# of Pell Grants awarded',
             data: [1964, 1579, 1562, 1550, 1669],
+            barThickness: 20,
              backgroundColor: [
                 'rgb(0, 0, 0)',
                 'rgb(0, 0, 0)',
@@ -346,6 +355,7 @@ var myChartFinanceBarA = new Chart(ctx11a, {
         datasets: [
 { 
             label: 'Total Current Assets',
+             barThickness: 40,
             data: [10454444, 8212790, 8563301, 11163027, 12521150],
             backgroundColor: [
                         '#B22043',
@@ -392,6 +402,7 @@ var myChartFinanceBar = new Chart(ctx11, {
         datasets: [
 { 
             label: 'Revenues per FTE Enrollment',
+            barThickness: 20,
             data: [8454, 9038, 9998, 9752, 9286],
             backgroundColor: [
                       '#000000',
@@ -411,6 +422,7 @@ var myChartFinanceBar = new Chart(ctx11, {
 
 {
          label: 'Expenses per FTE Enrollment',
+         barThickness: 20,
             data: [8360, 9382, 9642, 9580, 9008],
 
              backgroundColor: [
@@ -459,6 +471,7 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
             
 {
             label: 'full-time staff',
+             barThickness: 20,
             data: [236, 247, 241, 241, 244],
                 backgroundColor: [
                    '#B22043',
@@ -479,6 +492,7 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
 {
 
          label: 'part-time staff',
+          barThickness: 20,
             data: [297, 362, 333, 336, 322],
              backgroundColor: [
                       '#000000',
@@ -572,6 +586,7 @@ var myChartWageOutcomesBar1A = new Chart(ctx17a, {
 
         datasets: [{
             label: 'Median Wage',
+             barThickness: 40,
             data: [18173, 29550, 38788, 44475, 49159,],
             backgroundColor: [
                   '#B22043',
@@ -618,6 +633,7 @@ var myChartWageOutcomesBar1 = new Chart(ctx17, {
 
         datasets: [{
             label: '% of Graduates w/ Reported Wage',
+             barThickness: 40,
             data: [59, 63, 55, 58, 56],
             backgroundColor: [
                   '#000000',
@@ -663,6 +679,7 @@ var myChartWageOutcomesBar3A = new Chart(ctx19a, {
         labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)', '10 years (2007 - 08)'],
         datasets: [{
             label: 'Median Wage',
+             barThickness: 40,
             data: [54028, 58116, 59131, 67179, 66101],
             backgroundColor: [
                   '#B22043',
@@ -707,7 +724,9 @@ var myChartWageOutcomesBar3 = new Chart(ctx19, {
         labels: ['18 months (2016-17)', '3 years (2014 – 15)','5 years (2012 – 13)', '8 years (2009 – 10)',  '10 years (2007 - 08)'],
         datasets: [{
             label: '% of Graduates w/ Reported Wage',
+             barThickness: 40,
             data: [78, 75, 74, 68, 69],
+
             backgroundColor: [
                   '#000000',
                   '#000000',
