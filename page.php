@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 
         <?php if (is_page('43629')) : ; ?>
 
-                  <div class="row expanded" data-equalizer data-equalize-on="large">
+        <div class="row expanded" data-equalizer data-equalize-on="large">
         <hr>
         <h3><?php _e('Success Stories', 'gcc-wp-2018'); ?></h3>
         <?php
@@ -82,10 +82,10 @@ while ( have_posts() ) : the_post(); ?>
         
         <div class="column large-6">
          
-            <div class="callout primary">
-                 <a href="<?php the_permalink(); ?>" class="stories">
+            <div class="callout primary" data-equalizer-watch>
+                 <a href="<?php the_permalink(); ?>">
                   <h3><?php the_title(); ?></h3>
-                </a>
+                 </a>
 
                 <?php // ACF Image Object
                 $image     = get_field( 'story_image' );
