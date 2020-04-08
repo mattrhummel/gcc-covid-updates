@@ -11,19 +11,57 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
+<div class="row expanded" style="height: 100px; background-color: #f9f9f9;">
 
-<div class="row expanded">
-  
-       
-         <div class="wpforms-container inline-fields" id="wpforms-43666"><form id="wpforms-form-43666" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="43666" method="post" enctype="multipart/form-data" action="/form-test/"><noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript><div class="wpforms-field-container"><div id="wpforms-43666-field_1-container" class="wpforms-field wpforms-field-email" data-field-id="1"><label class="wpforms-field-label wpforms-label-hide" for="wpforms-43666-field_1">Email <span class="wpforms-required-label">*</span></label><input type="email" id="wpforms-43666-field_1" class="wpforms-field-medium wpforms-field-required" name="wpforms[fields][1]" placeholder="Email Address..." required></div></div><div class="wpforms-submit-container" ><input type="hidden" name="wpforms[id]" value="43666"><input type="hidden" name="wpforms[author]" value="2"><input type="hidden" name="wpforms[post_id]" value="43668"><button type="submit" name="wpforms[submit]" class="wpforms-submit button primary" id="wpforms-submit-43666" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button><img src="https://germannacc.staging.wpengine.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt=""></div></form></div>  <!-- .wpforms-container --><div></div>
+<div class="form">
+
+<div class="columns medium-6">
+
+</div>
+
+<div class="columns medium-6" >
+
+<div id="wpforms-43666">
+
+  <form id="wpforms-form-43666" class="wpforms-validate wpforms-form wpforms-ajax-form" data-formid="43666" method="post" enctype="multipart/form-data" action="/form-test/">
+
+    <noscript class="wpforms-error-noscript">Please enable JavaScript in your browser to complete this form.</noscript>
+
+    <div class="input-group">
+
+
+        <label for="wpforms-43666-field_1" style="display: none;">Email <span class="wpforms-required-label">*</span></label>
+
+        <input type="email" id="wpforms-43666-field_1" class="input-group-field" name="wpforms[fields][1]" placeholder="Email Address..." required>
+
+      <input type="hidden" name="wpforms[id]" value="43666">
+      <input type="hidden" name="wpforms[author]" value="2">
+      <input type="hidden" name="wpforms[post_id]" value="43668">
+
+    <div class="input-group-button">
+
+      <button type="submit" name="wpforms[submit]" class="button" value="wpforms-submit" aria-live="assertive" data-alt-text="Sending..." data-submit-text="Submit">Submit</button>
+
+      <img src="https://germannacc.staging.wpengine.com/wp-content/plugins/wpforms/assets/images/submit-spin.svg" class="wpforms-submit-spinner" style="display: none;" width="26" height="26" alt="">
+
+  </div>
+
+   </div>
+
+    </form>
+  </div>  
+  </div>
+  </div>
+
+</div>
 </div>
 
 <footer class="site-footer hide-for-print">
 <div class="row expanded collapse top-footer">
   <div class="small-12 medium-12 large-4 columns">
     
-    <div class="footer-logo">      
-       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
+    <div class="footer-logo">
+      <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
     </div>
     
   </div>
@@ -33,13 +71,12 @@
       
       <p><?php the_field('primary_address', 'option'); ?><br/>
         
-      <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
+        <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
         <?php _e('(540) 891-3000', 'gcc-wp-2019') ?></a>
         
       </p>
-
       <h4><?php _e('#germanna', 'gcc-wp-2018'); ?></h4>
-      <div class="social">       
+      <div class="social">
         <ul class="social-icons">
           <li><a href="https://www.facebook.com/<?php the_field('facebook_id', 'option'); ?>"><span class="fa fa-facebook-f" aria-hidden="true" title="Germanna on Facebook"><span class="icon-text"><?php _e('Facebook', 'gcc-wp-2018');?></span></span></a></li>
           <li><a href="https://twitter.com/<?php the_field('twitter_id', 'option'); ?>"><span class="fa fa-twitter"  aria-hidden="true"><span class="icon-text" title="Germanna on Twitter"><?php _e('Twitter', 'gcc-wp-2018');?></span></span></a></li>
@@ -49,16 +86,15 @@
           <li><a href="https://www.linkedin.com/school/<?php the_field('linkedin_id', 'option'); ?>"><span class="fa fa-linkedin"  aria-hidden="true" title="Germanna on LinkedIn"><span class="icon-text"><?php _e('LinkedIn', 'gcc-wp-2018');?></span></span></a></li>
         </ul>
       </div>
-
     </div>
     <div class="small-12 medium-only-12 large-5 columns button-column">
-   
+      
       <div class="button-group stacked show-for-large">
-      <a href="/admissions/request-information/" class="button primary expanded"><?php _e('Future Students', 'gcc-wp-2018') ?></a>
+        <a href="/admissions/request-information/" class="button primary expanded"><?php _e('Future Students', 'gcc-wp-2018') ?></a>
         <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
-       <a href="/donate/" class="button primary expanded"><?php _e('give', 'gcc-wp-2018') ?></a>
+        <a href="/donate/" class="button primary expanded"><?php _e('give', 'gcc-wp-2018') ?></a>
       </div>
-  
+      
     </div>
   </div>
 </div>
@@ -66,53 +102,43 @@
   <div class="bottom-footer-content">
     <div class="row expanded">
       
-      <div class="small-12 medium-only-12 large-7 columns">      
-          <?php 
-          gcc_wp_2018_footer_links_menu(); ?>
-
+      <div class="small-12 medium-only-12 large-7 columns">
+        <?php
+        gcc_wp_2018_footer_links_menu(); ?>
         <div class="tips">
           
           <a href="<?php echo get_field( 'tips_url', 'options' ); ?>" class="tips-logo" aria-hidden="true">
-          
-          <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text"><?php _e('report an incident', 'gcc-wp-2018')?></span></span></a>
+            
+            <span><?php echo get_field( 'tips_text', 'options' ); ?><span class="hide-text"><?php _e('report an incident', 'gcc-wp-2018')?></span></span></a>
+            
+          </div>
+        </div>
         
+        <div class="small-12 medium-only-12 large-5 columns">
+          <?php the_field('bottom_footer_text', 'option'); ?>
+          <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
+          <?php bloginfo( 'name' ); ?></p>
         </div>
       </div>
-      
-      <div class="small-12 medium-only-12 large-5 columns">
-        <?php the_field('bottom_footer_text', 'option'); ?> 
-        <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
-           <?php bloginfo( 'name' ); ?></p> 
-      </div>
-
     </div>
   </div>
-</div>
 </footer>
-
-
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
-
-
 </div>
 </div>
 </div>
-
-
 <?php wp_footer(); ?>
-
 <script>
-  
-  $(document).foundation();
-  
-  $(function() {
-        $('.lazy').Lazy();
-  });
-  
-</script>
 
+$(document).foundation();
+
+$(function() {
+$('.lazy').Lazy();
+});
+
+</script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
 <!-- begin SnapEngage code for testing -->
