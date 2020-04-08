@@ -63,7 +63,7 @@ while ( have_posts() ) : the_post(); ?>
 
         <div class="row expanded" data-equalizer data-equalize-on="large">
         <hr>
-        <h3><?php _e('Success Stories', 'gcc-wp-2018'); ?></h3>
+        <h2><?php _e('Success Stories', 'gcc-wp-2018'); ?></h2>
         <?php
         $this_post = $post->ID;
         $args =  array (
@@ -94,11 +94,11 @@ while ( have_posts() ) : the_post(); ?>
 <div class="medium-8 columns">
 <div class="callout success large" data-equalizer-watch="">
 
-  <h4><?php the_title(); ?></h4>
+  <h3><?php the_title(); ?></h3>
                 
-  <p class="h3"><?php the_field( 'story_heading' ); ?></p>
+  <p><?php the_field( 'story_heading' ); ?></p>
 
-  <a href="<?php the_permalink(); ?>" class="button primary expanded">Read Story</a>
+  <a href="<?php the_permalink(); ?>" class="button primary">Read Story</a>
 
 </div>
 </div>
