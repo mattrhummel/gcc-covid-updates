@@ -1,4 +1,5 @@
 <div class="row expanded" data-equalizer id="promotion-events">
+<h2 class="text-center"><?php _e('Germanna Now', 'gcc-wp-2018'); ?></h2>
 <?php
 	$args =  array (
 	'post_type' => 'event_promotions',

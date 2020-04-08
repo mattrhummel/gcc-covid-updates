@@ -27,7 +27,7 @@ get_header(); ?>
     <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
     
     <div class="row expanded" id="4080701046" data-equalizer>
-      <h2 class="text-center"><?php _e('Latest News', 'gcc-wp-2018'); ?></h2>
+      <h2 class="text-center"><?php _e('News from Germanna', 'gcc-wp-2018'); ?></h2>
       <?php
       $args =  array (
       'post_type' => 'post',
