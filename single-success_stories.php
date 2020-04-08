@@ -11,49 +11,16 @@ get_header(); ?>
 	<?php
 	while ( have_posts() ) : the_post(); ?>
 	
-	<div class="row expanded">
-		<header class="hero-section">
-			<?php //if the child page doesn't have a featured images
-			//gcc_featured_image_on_child(); ?>
-			<div class="hero-section-text">
-				<h1 class="entry-title"><?php _e('Success Stories: ', 'gcc-wp-2018'); ?><?php the_title(); ?></h1>
-				<?php gcc_wp_2018_page_icons() ?>
-			</div>
-			<div class="post-meta">
-				<?php if ( 'post' === get_post_type() ) : ?>
-			<p><strong></span><?php gcc_wp_2018_posted_on();
-		?> | <?php gcc_wp_2018_entry_footer(); ?> </strong></p>
-		<?php endif; ?>
-	</div>
-	<div class="crumbs-container">
-		<nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-			<div title="breadcrumbs trail">
-				<ul class="breadcrumbs">
-					<?php $home_page = get_the_title( get_option('page_on_front'));
-					$post_title = get_the_title( get_option('page_for_posts'));
-					?>
-					<li role="menuitem">
-						<a href="<?php echo get_site_url(); ?>">
-							<?php echo $home_page; ?>
-						</a>
-					</li>
-					<li role="menuitem">
-						<a href="<?php _e('/success/', 'gcc-wp-2018'); ?>">
-							<?php _e('Success Stories', 'gcc-wp-2018'); ?>
-						</a>
-					</li>
-					<li role="menuitem">
-						<?php the_title(); ?>
-					</li>
-				</ul>
-			</div>
-		</nav>
-	</div>
-</header>
-<!--Page Content-->
-<div class="row gutter-small expanded content-area">
-	<div class="columns small-12 medium-9">
-		<div class="entry-content" id="main" tabindex="0">
+  <div class="row expanded content-area">
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
+    </div>
+    <?php get_sidebar();?>
+
+    <div class="columns small-12 large-9 float-left">
+      <div class="entry-content" id="main" tabindex="0">
 			<h2><?php the_field( 'story_heading' ); ?></h2>
 			
 			<?php // ACF Image Object
