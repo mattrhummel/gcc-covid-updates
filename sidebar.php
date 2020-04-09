@@ -295,7 +295,7 @@
   dynamic_sidebar( 'marketing-widgets' );
   }
 //marketing web
-  if ( is_page('43685') || $post->post_parent == '43685') ) {
+  if ( is_page('43685') || $post->post_parent == '43685') {
   //custom department widgets
   dynamic_sidebar( 'marketing-web-widgets' );
   }
