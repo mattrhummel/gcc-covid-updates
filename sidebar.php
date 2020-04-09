@@ -300,7 +300,7 @@
   dynamic_sidebar( 'marketing-web-widgets' );
   }
   //marketing branding
-  if ( is_page('41905') || $post->post_parent == '41905' ) {
+  if ( is_page('43679') || $post->post_parent == '43679' ) {
   //custom department widgets
   dynamic_sidebar( 'marketing-branding-widgets' );
   }
