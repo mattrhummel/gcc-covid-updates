@@ -26,8 +26,22 @@ var myChartGraduationRateBar = new Chart(ctx1, {
             borderWidth: 0
         }]
     },
+    plugins: [ChartDataLabels],
     options: {
-        scales: {
+           plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -73,8 +87,22 @@ var myChartRetentionBar = new Chart(ctx3, {
             borderWidth: 0
         }]
     },
+      plugins: [ChartDataLabels],
     options: {
-        scales: {
+           plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -118,8 +146,22 @@ var myChartHeadcountBar = new Chart(ctx5, {
             borderWidth: 0
         }]
     },
+     plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -201,8 +243,22 @@ var myChartCredentialsAwardedBar = new Chart(ctx7, {
 
         ],
     },
+      plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
 
 
@@ -250,9 +306,22 @@ var myChartStudentFinancialAidBarA = new Chart(ctx9a, {
         
     }]
 },
- options: {
+   plugins: [ChartDataLabels],
+    options: {
+         plugins: {
+            // Change options for ALL labels of THIS CHART
 
-       scales: {
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -324,9 +393,22 @@ var myChartStudentFinancialAidBar = new Chart(ctx9, {
 
         ]
     },
- options: {
+  plugins: [ChartDataLabels],
+    options: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
 
-       scales: {
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -375,8 +457,22 @@ var myChartFinanceBarA = new Chart(ctx11a, {
             ],
     }]
     },
+     plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -441,8 +537,22 @@ var myChartFinanceBar = new Chart(ctx11, {
             ],
         }]
     },
+    plugins: [ChartDataLabels],
     options: {
-        scales: {
+         plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -511,8 +621,22 @@ var myChartHumanResourcesBar = new Chart(ctx13, {
             ],
         }]
     },
+      plugins: [ChartDataLabels],
     options: {
-        scales: {
+         plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                    beginAtZero: true,
@@ -557,8 +681,22 @@ var myChartStudentFacultyRatioBar = new Chart(ctx15, {
             ],
         }]
     },
+     plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
            yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -607,8 +745,22 @@ var myChartWageOutcomesBar1A = new Chart(ctx17a, {
             ],   
         }],
     },
+     plugins: [ChartDataLabels],
     options: {
-        scales: {
+         plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -653,8 +805,22 @@ var myChartWageOutcomesBar1 = new Chart(ctx17, {
             ],   
         }],
     },
+     plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -698,8 +864,22 @@ var myChartWageOutcomesBar3A = new Chart(ctx19a, {
             ],   
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
-        scales: {
+          plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -744,8 +924,22 @@ var myChartWageOutcomesBar3 = new Chart(ctx19, {
             ],   
         }],
     },
+    plugins: [ChartDataLabels],
     options: {
-        scales: {
+           plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },scales: {
             yAxes: [{
                 ticks: {
                     beginAtZero: true,
@@ -865,11 +1059,26 @@ var myEnrollmentBar = new Chart(enrollmentBar, {
 
         ],
     },
+      plugins: [ChartDataLabels],
     options: {
+        plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                 align: 'end',
+                anchor: 'end',
+                padding: 4,
+                color: '#333333',
+                font: {
+                size: '16',
+                weight: '800'
+                }
+            }
+        },
         scales: {
             yAxes: [{
 
-
+                minBarLength: 100,
                 ticks: {
                     beginAtZero: true,
                     suggestedMax: 400,
