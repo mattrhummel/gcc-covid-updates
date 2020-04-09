@@ -12,18 +12,3 @@ $(document).ready(function(){
     });
 
 });
-
-$(document).ready(function() {
-
-  //Init the carousel
-  $(".owl-carousel").owlCarousel({
-  	loop: true,
-    items:1,
-    margin:0,
-    stagePadding:0,
-    mouseDrag: false,
-    smartSpeed:500,
-    items: 1
-});
-
-});
