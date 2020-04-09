@@ -12,7 +12,7 @@
   //admissions
   if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {
   //custom department widgets
-  dynamic_sidebar( 'admissions-widgets' );
+  dynamic_sidebar( 'admissions-widfgets' );
   }
   
   //international admissions
@@ -295,7 +295,7 @@
   dynamic_sidebar( 'marketing-widgets' );
   }
 //marketing web
-  if ( is_page('41908') || $post->post_parent == '41908' || is_page('41908') ) {
+  if ( is_page('43685') || $post->post_parent == '43685') ) {
   //custom department widgets
   dynamic_sidebar( 'marketing-web-widgets' );
   }
