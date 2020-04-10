@@ -106,7 +106,7 @@ html {
 @import 'theme/footer';
 @import 'theme/search';
 @import 'theme/wp-styles';
-// @import 'font-awesome/font-awesome';
+@import 'font-awesome/font-awesome';
 
 @mixin foundation-everything(
   $flex: false,
