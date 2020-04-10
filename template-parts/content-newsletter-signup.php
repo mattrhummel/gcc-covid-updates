@@ -10,7 +10,9 @@
       <p class="h2"><?php _e('Sign-up for updates') ?></p>
 
       <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
-      
+
+        <p class="right"><a href="https://germannacc.staging.wpengine.com/about-germanna/privacy-policy/"><?php _e('Privacy Policy', 'gcc-wp-2018'); ?></a></p>
+
     </div>
   </div>
 </div>
