@@ -335,3 +335,11 @@ padding-right: 0;
   background-position: top center; 
   background-size: cover;
 }
+
+div.wpforms-container-full .wpforms-form input[type="submit"], div.wpforms-container-full .wpforms-form button[type="submit"], div.wpforms-container-full .wpforms-form .wpforms-page-button {
+    background-color: $primary !important;
+    border: 1px solid $primary !important;
+    color: $white;
+    font-size: 1em;
+    padding: 10px 15px;
+}
