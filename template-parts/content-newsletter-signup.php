@@ -7,9 +7,8 @@
   <div class="columns medium-6">
     <div class="callout primary large" data-equalizer-watch>
 
-<!-- Begin Constant Contact Inline Form Code -->
-<div class="ctct-inline-form" data-form-id="91c35afd-c04e-4233-b56c-a9e931c6ef14"></div>
-<!-- End Constant Contact Inline Form Code -->
-
+      <p class="h2"><?php _e('Sign up for updates') ?></p>
+      <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
+    </div>
   </div>
 </div>
