@@ -16,11 +16,12 @@
 
 <?php get_template_part('template-parts/content', 'top-footer'); ?>
 
+<?php get_template_part('template-parts/content', 'newsletter-signup'); ?>
+
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
 
 </footer>
 
-<?php get_template_part('template-parts/content', 'newsletter-signup'); ?>
 
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
