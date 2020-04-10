@@ -29,14 +29,9 @@ if ( ! function_exists( 'gcc_wp_2018_deregister_style' ) ) :
 function gcc_wp_2018_deregister_style() {
 
     wp_deregister_style('dashicons');
-    wp_deregister_style('admin-bar');
     wp_deregister_style('wp-block-library');
     wp_deregister_style('ctct_form_styles');
     wp_deregister_style('aioseop-toolbar-menu');
-    wp_deregister_style('wp-mediaelement');
-    wp_deregister_style('mediaelement');
-    wp_deregister_style('media-views');
-    wp_deregister_style('imgareaselect');
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
