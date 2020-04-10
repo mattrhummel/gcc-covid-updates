@@ -341,3 +341,9 @@ padding-right: 0;
     padding-right: 0 !important;
     vertical-align: top;
 }
+
+[type="datetime-local"], [type="month"], [type="week"], [type="email"], [type="number"], [type="search"], [type="tel"], [type="time"], [type="url"], [type="color"], [type="text"], [type="password"], [type="date"], [type="datetime"], textarea {
+    
+    height: auto !important;
+ 
+}
