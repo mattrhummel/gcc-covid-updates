@@ -7,11 +7,11 @@
   <div class="columns medium-6">
     <div class="callout primary large" data-equalizer-watch>
 
-      <p class="h2"><?php _e('Sign-up for updates') ?></p>
+    <p class="h2"><?php _e('Sign-up for updates') ?></p>
 
-      <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
+    <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
 
-        <p class="right"><a href="https://germannacc.staging.wpengine.com/about-germanna/privacy-policy/"><?php _e('Privacy Policy', 'gcc-wp-2018'); ?></a></p>
+    <p class="right"><a href="https://germannacc.staging.wpengine.com/about-germanna/privacy-policy/"><?php _e('Privacy Policy', 'gcc-wp-2018'); ?></a></p>
 
     </div>
   </div>
