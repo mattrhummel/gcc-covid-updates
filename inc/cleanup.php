@@ -37,6 +37,7 @@ function gcc_wp_2018_deregister_style() {
     wp_deregister_style( 'imgareaselect' );
     wp_deregister_style( 'wpcdt-public-css' );
     wp_deregister_style( 'ctct_form_styles' );
+    wp_deregister_style('wpforms-smart-phone-field');
     wp_deregister_style('wpforms-full');
 }
 
