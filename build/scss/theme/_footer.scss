@@ -335,3 +335,9 @@ padding-right: 0;
   background-position: top center; 
   background-size: cover;
 }
+//for signup form
+.wpforms-container.inline-fields .wpforms-field {
+    display: table-cell;
+    padding-right: 2%;
+    vertical-align: top;
+}
