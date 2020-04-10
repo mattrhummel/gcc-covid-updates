@@ -8,9 +8,7 @@
     <div class="callout primary large" data-equalizer-watch>
 
       <p class="h2"><?php _e('Sign up for updates') ?></p>
-      
-      <?php echo do_shortcode( '[wpforms id="43666"]', false ); ?>
-
+      <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
     </div>
   </div>
 </div>
