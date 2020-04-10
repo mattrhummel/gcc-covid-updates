@@ -10,9 +10,9 @@
 <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
   <?php //get page widgets
   //admissions
-  if ( is_page('24') || $post->post_parent == '24' ) {
+  if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {
   //custom department widgets
-  dynamic_sidebar( 'admissions-widfgets' );
+  dynamic_sidebar( 'admissions-widgets' );
   }
   //international admissions
   if ( is_page('27674') ) {
