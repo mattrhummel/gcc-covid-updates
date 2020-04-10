@@ -10,11 +10,10 @@
 <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
   <?php //get page widgets
   //admissions
-  if ( is_page('24') || $post->post_parent == '24' || is_page('11434') || is_page('14104') ) {
+  if ( is_page('24') || $post->post_parent == '24' ) {
   //custom department widgets
   dynamic_sidebar( 'admissions-widfgets' );
   }
-  
   //international admissions
   if ( is_page('27674') ) {
   //custom department widgets
