@@ -12,11 +12,11 @@
 <?php //closing main container, do not remove ?>
 </main>
 
+<?php get_template_part('template-parts/content', 'newsletter-signup'); ?>
+
 <footer class="site-footer hide-for-print">
 
 <?php get_template_part('template-parts/content', 'top-footer'); ?>
-
-<?php get_template_part('template-parts/content', 'newsletter-signup'); ?>
 
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
 
