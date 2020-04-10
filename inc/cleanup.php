@@ -27,6 +27,16 @@ endif;
 //remove plugin scripts
 if ( ! function_exists( 'gcc_wp_2018_deregister_style' ) ) :
 function gcc_wp_2018_deregister_style() {
+
+    wp_deregister_style('dashicons-css');
+    wp_deregister_style('admin-bar-css');
+    wp_deregister_style('wp-block-library-css');
+    wp_deregister_style('ctct_form_styles-css');
+    wp_deregister_style('aioseop-toolbar-menu-css');
+    wp_deregister_style('wp-mediaelement-css');
+    wp_deregister_style('mediaelement-css');
+    wp_deregister_style('media-views-css');
+    wp_deregister_style('imgareaselect-css');
 }
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
