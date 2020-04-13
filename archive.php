@@ -1,29 +1,34 @@
 <?php
 /**
- * The template for displaying archive pages
+ * The template for displaying all post.
+ *
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site may use a
+ * different template.
  *
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gccwp-2018
  */
-get_header();
-$post_page_title= get_field('post_page_title', 'option');
-?>
+get_header(); ?>
 
-
-    <div class="row expanded content-area">
-    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+  <div class="row expanded content-area">
+      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
       <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
       </button>
       
     </div>
     <?php get_sidebar();?>
-
     <div class="columns small-12 large-9 float-left">
        
-     <header>
-        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+  <header>
+        <h1 class="entry-title"><?php _e('News', 'gcc-wp-2018'); ?></h1>
+        <?php if ( 'post' === get_post_type() ) : ?>
+        <p><?php the_date();?></p>
+        <?php endif; ?>
+        
+        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
             <ul class="breadcrumbs">
               <?php $home_page = get_the_title( get_option('page_on_front'));
@@ -37,48 +42,59 @@ $post_page_title= get_field('post_page_title', 'option');
             </ul>
           </div>
         </nav>
-    </header>
+      </header>
 
- <?php
-		if ( have_posts() ) : ?>
+  <?php
+  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
 
- <?php
-								/* Start the Loop */
-	while ( have_posts() ) : the_post();
+  $args =  array (
 
-/*
- * Include the Post-Type-specific template for the content.
- * If you want to override this in a child theme, then include a file
- * called content-___.php (where ___ is the Post Type name) and that will be used instead.
- */
-?>
+  'post_type' => 'post',
+  'posts_per_page'=>-5,
+  'paged'          => $paged
+  );
+  ?>
 
-<div class="callout primary">
+  <?php
 
-<a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
+  $query = new WP_Query( $args ); ?>
 
-<h3>
-        <a href="<?php the_permalink(); ?>">
-            <?php the_title(); ?>
-        </a>
-</h3>
+  <?php if ( $query->have_posts() ) : ?>
 
- <p><strong>
-    <?php
-            gcc_wp_2018_posted_on();
-                ?>
-                <?php if (is_tag()) {
-                # code...
-                _e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
-            </strong></p>
-
-</div>
-
-<?php endif; ?>
-<?php endwhile; ?>
+  <?php while ( $query->have_posts() ) : $query->the_post();?>
 
 
-</div>
-</div>
+      <div class="row callout small">
+        <div class="medium-12 columns">
+       
+         <h2 ><a href="<?php the_permalink(); ?>" style="line-height: 1.2; display: block; width: 100%;"><?php the_title(); ?></a></h2>
+        
+          <?php echo get_the_date(); ?>
+
+        </div>
+      </div>
+
+
+<?php endwhile;  ?>
+
+
+      <?php wp_reset_postdata(); ?>
+
+      <?php else : ?>
+
+      <p><?php esc_html_e( 'Sorry, no posts matched your criteria.', 'gcc-wp-2018' ); ?></p>
+
+      <?php endif; ?>
+
+
+      <div class="nav-previous alignleft"><?php next_posts_link( '<span class="fa fa-chevron-left" aria-hidden="true" style="padding-right: .5rem;"></span>Older posts' ); ?></div>
+      <div class="nav-next alignright"><?php previous_posts_link( 'Newer posts <span class="fa fa-chevron-right" aria-hidden="true" style="padding-left: .5rem;"></span>' ); ?>
+      </div>
+
+     </div>
+   </div>
+
+</article>
+
 <?php
 get_footer();
