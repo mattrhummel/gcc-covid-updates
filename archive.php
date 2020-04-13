@@ -43,7 +43,7 @@ $post_page_title= get_field('post_page_title', 'option');
 
        <?php
 								/* Start the Loop */
-	while ( have_posts() ) : the_post();
+while ( have_posts() ) : the_post();
 
 /*
  * Include the Post-Type-specific template for the content.
@@ -77,13 +77,12 @@ $post_page_title= get_field('post_page_title', 'option');
                         </strong>
                         </p>
                     </div>
+                </div>
                     <!-- .entry-meta -->
                     <?php endif; ?>
 
                 </div>
             </div>
-
-</div>
 
             <?php endwhile;
 
