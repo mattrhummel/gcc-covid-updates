@@ -8,7 +8,6 @@ get_header(); ?>
 <div class="row expanded">
 	
 	<?php
-	$error_page_heading = get_field('error_page_heading', 'option');
 	$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
 	$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
 	$error_page_button_text = get_field('error_page_button_text', 'option');
@@ -19,7 +18,7 @@ get_header(); ?>
 
 		<div class="columns medium-5 page-404-content">
 	
-			<h1><?php echo $error_page_heading; ?></h1>
+			<h1><?php _e('Nothing Founds','gcc-wp-2018'); ?></h1>
 			<?php
 			if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 			<p><?php
@@ -41,9 +40,9 @@ get_header(); ?>
 			<?php
 				get_search_form();
 			else : ?>
-			<p><?php  echo $error_page_error_message_1;  ?></p>
-			<p><?php echo $error_page_error_message_2;  ?></p>
-			<p><a href="<?php echo $error_page_button_url; ?>" class="button primary"><?php echo $error_page_button_text; ?></a>
+			<p><?php _e('It seems the information you are looking for can’t be found. Please use the search box below and try again.', 'gcc-wp-2018'); ?></p>
+			<p><?php _e('Still having trouble?','gcc-wp-2018'); ?></p>
+			<p><a href="/contact-us/" class="button primary"><?php _e('Send us a Question','gcc-wp-2018'); ?></a>
 		</p>
 
     <form role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
