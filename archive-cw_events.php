@@ -24,7 +24,7 @@ $post_page_title= get_field('post_page_title', 'option');
     <div class="columns small-12 large-9 float-left">
        
      <header>
-       <h1><?php echo the_archive_title(); ?></h1>
+       <h1><?php echo get_the_archive_title(); ?></h1>
                 <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
             <ul class="breadcrumbs">
@@ -73,6 +73,8 @@ $post_page_title= get_field('post_page_title', 'option');
               <?php if( get_field('event_details') ): ?>
               <a href="<?php echo the_permalink(); ?>" class="button primary"><?php _e('Learn more', 'gcc-wp-2018'); ?></a>
               <?php endif; ?>
+
+              <p><?php echo the_taxonomies(); ?></p>
             </div>
             
           
