@@ -1,6 +1,6 @@
 <?php
 function gcc_wp_2018_scripts() {
-wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '2020323', 'all' );
+wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '2020413', 'all' );
 //font awesome
 wp_enqueue_style( 'gcc-wp-2018-theme-fonts', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', array(), '5.13.0', 'all' );
 
