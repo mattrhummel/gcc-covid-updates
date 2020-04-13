@@ -6,7 +6,7 @@
 	'post_status' => 'publish',
     'orderby' => 'publish_date',
     'order' => 'DESC',
-	'posts_per_page'=>-1,
+	'posts_per_page'=>3,
 	);
 	?>
 	<?php
