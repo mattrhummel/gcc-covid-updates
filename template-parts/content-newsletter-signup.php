@@ -1,4 +1,4 @@
-<div id="newsletter-form" class="reveal" data-reveal="">
+<div id="newsletter-form" class="reveal large" data-reveal>
 <div class="row expanded collapse" id="wpforms-43666" data-equalizer>
   <div class="columns medium-6 show-for-medium">
     <div class="callout primary large signup-image" data-equalizer-watch>
