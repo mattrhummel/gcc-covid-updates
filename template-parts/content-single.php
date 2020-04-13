@@ -39,15 +39,6 @@ get_the_category_list();
 ?>
 
 
-<?php
-
- // If comments are open or we have at least one comment, load up the comment template.
- if ( comments_open() || get_comments_number() ) :
-	 comments_template();
- endif;
-
-?>
-
 </div>
 </div>
 
@@ -57,10 +48,15 @@ get_sidebar(); ?>
 
 </div><!--.pagecontent-->
 
-<?php if ( get_edit_post_link() ) : ?>
-
-	<footer class="entry-footer">
-		<?php gcc_wp_2018_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-
-<?php endif; ?>
+    <div class="row expanded entry-footer">
+        <footer>
+          <?php //last modified page test
+          $u_time = get_the_time('U');
+          $u_modified_time = get_the_modified_time('U');
+          if ($u_modified_time >= $u_time + 86400) {
+          echo "<p>Last modified on ";
+            the_modified_time('F j, Y');
+          "</p> "; }  ?>
+          <?php gcc_wp_2018_entry_footer(); ?>
+          <footer>
+     </div>
