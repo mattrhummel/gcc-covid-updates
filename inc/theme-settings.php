@@ -17,31 +17,6 @@ if( function_exists('acf_add_options_page') ) {
  		'redirect'		=> false,
 		
 	));
-    $child1 = acf_add_options_page(array(
-		'page_title' 	=> 'Home Slides',
-		'menu_title'	=> 'Home Slides',
-		'menu_slug' 	=> 'home-slides',
-		'capability'	=> 'edit_posts',
-		'parent_slug'   => $parent['menu_slug'],
-		'redirect'		=> false,
-	));
-    $child2 = acf_add_options_page(array(
-		'page_title' 	=> 'Footer Banner',
-		'menu_title'	=> 'Footer Banner',
-		'menu_slug' 	=> 'banner-callto',
-		'capability'	=> 'edit_posts',
-		'parent_slug'   => $parent['menu_slug'],
-		'redirect'		=> false,
-	));
-    $child3 = acf_add_options_page(array(
-		'page_title' 	=> 'Full Screen Popup',
-		'menu_title'	=> 'Full Screen Popup',
-		'menu_slug' 	=> 'popup',
-		'capability'	=> 'edit_posts',
-		'parent_slug'   => $parent['menu_slug'],
-		'redirect'		=> false,
-	));
-
 }
 
 function gcc_pagination() {
