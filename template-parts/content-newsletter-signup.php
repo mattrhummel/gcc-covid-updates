@@ -7,11 +7,11 @@
   <div class="columns medium-6">
     <div class="callout primary large" data-equalizer-watch>
 
-    <p class="h4"><?php _e('Sign up for updates') ?></p>
+    <p class="h4" style="text-transform: uppercase;"><?php _e('The latest updates from Germanna') ?></p>
 
     <?php echo do_shortcode( '[wpforms id="43666"]'); ?>
 
-    <p class="right"><a href="https://germannacc.staging.wpengine.com/about-germanna/privacy-policy/"><?php _e('Privacy Policy', 'gcc-wp-2018'); ?></a></p>
+    <p class="">By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</p>
 
     </div>
   </div>
