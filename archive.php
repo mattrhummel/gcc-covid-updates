@@ -10,8 +10,6 @@ get_header();
 $post_page_title= get_field('post_page_title', 'option');
 ?>
 
-    <?php
-		if ( have_posts() ) : ?>
 
     <div class="row expanded content-area">
     <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
@@ -41,7 +39,10 @@ $post_page_title= get_field('post_page_title', 'option');
         </nav>
     </header>
 
-       <?php
+ <?php
+		if ( have_posts() ) : ?>
+
+ <?php
 								/* Start the Loop */
 	while ( have_posts() ) : the_post();
 
@@ -51,9 +52,6 @@ $post_page_title= get_field('post_page_title', 'option');
  * called content-___.php (where ___ is the Post Type name) and that will be used instead.
  */
 ?>
-
-
-<?php if ( 'post' === get_post_type() ) : ?>
 
 <div class="callout primary">
 
@@ -65,30 +63,22 @@ $post_page_title= get_field('post_page_title', 'option');
         </a>
 </h3>
 
-<p><strong>
+ <p><strong>
     <?php
-	gcc_wp_2018_posted_on();
-	?>
-	<?php if (is_tag()) {
-		# code...
-		_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
-	</strong></p>
-
-<?php } ?>
+            gcc_wp_2018_posted_on();
+                ?>
+                <?php if (is_tag()) {
+                # code...
+                _e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
+            </strong></p>
 
 </div>
-                    <!-- .entry-meta -->
-                    <?php endif; ?>
-               
-                </div>
-            </div>
 
-       <?php endwhile;
-	
-    else :
-
-endif; ?>
+<?php endif; ?>
+<?php endwhile; ?>
 
 
+</div>
+</div>
 <?php
 get_footer();
