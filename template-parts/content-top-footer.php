@@ -10,7 +10,8 @@
     <div class="large-7 columns footer-contacts">
       <h3><?php bloginfo( 'name' ); ?></h3>
       
-      <p><?php the_field('primary_address', 'option'); ?><br/>
+      <p><?php _e('P.O. Box 1430<br/>
+      Locust Grove, VA 22508', 'gcc-wp-2018'); ?><br/>
         
         <a href="tel:<?php _e('540-891-3000', 'gcc-wp-2019') ?>">
         <?php _e('(540) 891-3000', 'gcc-wp-2019') ?></a>
