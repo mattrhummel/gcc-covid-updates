@@ -52,62 +52,40 @@ $post_page_title= get_field('post_page_title', 'option');
  */
 ?>
 
+
+<?php if ( 'post' === get_post_type() ) : ?>
+
 <div class="callout primary">
 
-                    <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
+<a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
-                    <h3 class="post-title">
-                        <a href="<?php the_permalink(); ?>">
-                            <?php the_title(); ?>
-                        </a>
-                    </h3>
+<h3>
+        <a href="<?php the_permalink(); ?>">
+            <?php the_title(); ?>
+        </a>
+</h3>
 
-                    <?php if ( 'post' === get_post_type() ) : ?>
-                    <div class="entry-meta">
-                        <p>
-                            <strong>
-					<?php
-    		gcc_wp_2018_posted_on();
-				?>
-				<?php if (is_tag()) {
-				# code...
-				_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
-			</strong></p>
-                        <?php } ?>
-                        </strong>
-                        </p>
-                    </div>
+<p><strong>
+    <?php
+	gcc_wp_2018_posted_on();
+	?>
+	<?php if (is_tag()) {
+		# code...
+		_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
+	</strong></p>
+
+<?php } ?>
+
+</div>
                     <!-- .entry-meta -->
                     <?php endif; ?>
-                    <p>
-                        <?php the_excerpt(
-
-		sprintf(
-				 wp_kses(
-					 /* translators: %s: Name of current post. Only visible to screen readers */
-					 __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-					 array(
-						 'span' => array(
-							 'class' => array(),
-						 ),
-					 )
-				 ),
-				 get_the_title()
-			 )
-
-	); ?>
-                    </p>
+               
                 </div>
             </div>
 
-</div>
-
-            <?php endwhile;
-
-	the_posts_navigation(); ?>
-
-
-    <?php	else :
+       <?php endwhile;
+	
+    else :
 
 endif; ?>
 
