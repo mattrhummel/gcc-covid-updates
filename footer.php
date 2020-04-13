@@ -12,7 +12,6 @@
 <?php //closing main container, do not remove ?>
 </main>
 
-<?php get_template_part('template-parts/content', 'newsletter-signup'); ?>
 
 <footer class="site-footer hide-for-print">
 
