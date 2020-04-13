@@ -13,39 +13,22 @@ $post_page_title= get_field('post_page_title', 'option');
     <?php
 		if ( have_posts() ) : ?>
 
-        <header class="hero-section hero-section-single">
+    <div class="row expanded content-area">
+    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
+      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
+      </button>
+      
+    </div>
+    <?php get_sidebar();?>
 
-            <img src="<?php echo $thumb; ?>" alt="<?php echo $alt; ?>" width="<?php echo $width; ?>" height="<?php echo $height; ?>" />
+    <div class="columns small-12 large-9 float-left">
+       
+     <header>
+        <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+        <?php the_breadcrumb() ?> 
+    </header>
 
-            <div class="hero-section-text" style="width: 75%;">
-                <h1>
-                    <?php echo $post_page_title; ?>
-                </h1>
-                
-                <p>
-                    <?php echo get_the_archive_title(); ?>
-                </p>
-
-            </div>
-
-            <div class="row expanded crumbs-container show-for-medium">
-
-                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
-
-                    <?php gcc_wp_2018_archive_breadcrumbs(); ?>
-
-                </nav>
-
-            </div>
-
-        </header>
-
-        <!--Page Content-->
-        <div class="row gutter-small expanded content-area">
-
-            <div class="small-12 medium-9 entry-content">
-
-                <?php
+       <?php
 								/* Start the Loop */
 								while ( have_posts() ) : the_post();
 
@@ -57,9 +40,8 @@ $post_page_title= get_field('post_page_title', 'option');
 
 								?>
 
-                    <div class="row latest-post">
+                    <div class="callout primary">
                         <div class="medium-12 columns">
-
 
                             <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
@@ -125,6 +107,8 @@ $post_page_title= get_field('post_page_title', 'option');
 
 
         </div>
+
+
 
         <?php
 get_footer();
