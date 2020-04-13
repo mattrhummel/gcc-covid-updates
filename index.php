@@ -23,10 +23,7 @@ get_header(); ?>
     <div class="columns small-12 large-9 float-left">
        
   <header>
-        <h1 class="entry-title"><?php _e('News', 'gcc-wp-2018'); ?></h1>
-        <?php if ( 'post' === get_post_type() ) : ?>
-        <p><?php the_date();?></p>
-        <?php endif; ?>
+        <h1><?php _e('News', 'gcc-wp-2018'); ?></h1>
         
         <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
