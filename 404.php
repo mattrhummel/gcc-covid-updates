@@ -6,13 +6,6 @@
 */
 get_header(); ?>
 <div class="row expanded">
-	
-	<?php
-	$error_page_error_message_1 = get_field('error_page_error_message_1', 'option');
-	$error_page_error_message_2 = get_field('error_page_error_message_2', 'option');
-	$error_page_button_text = get_field('error_page_button_text', 'option');
-	$error_page_button_url = get_field('error_page_button_url', 'option');
-	?>				
 		
 	<div class="row expanded page-404-container">
 
