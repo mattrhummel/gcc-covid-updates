@@ -25,90 +25,92 @@ $post_page_title= get_field('post_page_title', 'option');
        
      <header>
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        <?php the_breadcrumb() ?> 
+                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+          <div title="breadcrumbs trail">
+            <ul class="breadcrumbs">
+              <?php $home_page = get_the_title( get_option('page_on_front'));
+              $post_title = get_the_title( get_option('page_for_posts'));
+              ?>
+              <li role="menuitem">
+                <a href="<?php echo get_site_url(); ?>">
+                  <?php echo $home_page; ?>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
     </header>
 
        <?php
 								/* Start the Loop */
-								while ( have_posts() ) : the_post();
+	while ( have_posts() ) : the_post();
 
-										/*
-										 * Include the Post-Type-specific template for the content.
-										 * If you want to override this in a child theme, then include a file
-										 * called content-___.php (where ___ is the Post Type name) and that will be used instead.
-										 */
+/*
+ * Include the Post-Type-specific template for the content.
+ * If you want to override this in a child theme, then include a file
+ * called content-___.php (where ___ is the Post Type name) and that will be used instead.
+ */
+?>
 
-								?>
+<div class="callout primary">
 
-                    <div class="callout primary">
-                        <div class="medium-12 columns">
+                    <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
 
-                            <a href="<?php the_permalink(); ?>"><?php the_title('<h2 class="screen-reader-text">', '</h2>') ?></a>
+                    <h3 class="post-title">
+                        <a href="<?php the_permalink(); ?>">
+                            <?php the_title(); ?>
+                        </a>
+                    </h3>
 
-                            <h3 class="post-title">
-                                <a href="<?php the_permalink(); ?>">
-                                    <?php the_title(); ?>
-                                </a>
-                            </h3>
-
-                            <?php if ( 'post' === get_post_type() ) : ?>
-                            <div class="entry-meta">
-                                <p>
-                                    <strong>
-							<?php
-	        		gcc_wp_2018_posted_on();
-						?>
-						<?php if (is_tag()) {
-						# code...
-						_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
-					</strong></p>
-                                <?php } ?>
-                                </strong>
-                                </p>
-                            </div>
-                            <!-- .entry-meta -->
-                            <?php endif; ?>
-                            <p>
-                                <?php the_excerpt(
-
-				sprintf(
-						 wp_kses(
-							 /* translators: %s: Name of current post. Only visible to screen readers */
-							 __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
-							 array(
-								 'span' => array(
-									 'class' => array(),
-								 ),
-							 )
-						 ),
-						 get_the_title()
-					 )
-
-			); ?>
-                            </p>
-                        </div>
+                    <?php if ( 'post' === get_post_type() ) : ?>
+                    <div class="entry-meta">
+                        <p>
+                            <strong>
+					<?php
+    		gcc_wp_2018_posted_on();
+				?>
+				<?php if (is_tag()) {
+				# code...
+				_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
+			</strong></p>
+                        <?php } ?>
+                        </strong>
+                        </p>
                     </div>
+                    <!-- .entry-meta -->
+                    <?php endif; ?>
+                    <p>
+                        <?php the_excerpt(
 
-                    <?php endwhile;
+		sprintf(
+				 wp_kses(
+					 /* translators: %s: Name of current post. Only visible to screen readers */
+					 __( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'gcc-wp-2018' ),
+					 array(
+						 'span' => array(
+							 'class' => array(),
+						 ),
+					 )
+				 ),
+				 get_the_title()
+			 )
 
-			the_posts_navigation(); ?>
-
+	); ?>
+                    </p>
+                </div>
             </div>
 
+</div>
 
-            <?php //Template Sidebar
-		 	 get_template_part( '/sidebars/archive-sidebar' ); ?>
+            <?php endwhile;
 
-            <?php	else :
-
-			get_template_part( 'template-parts/content', 'none' );
-
-		endif; ?>
+	the_posts_navigation(); ?>
 
 
-        </div>
+    <?php	else :
+
+endif; ?>
 
 
-
-        <?php
+<?php
 get_footer();
