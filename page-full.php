@@ -22,7 +22,7 @@ while ( have_posts() ) : the_post(); ?>
         </div>
       </div>
       <?php //Page Heading
-      get_template_part( 'template-parts/content', 'page-alert' );
+        get_template_part( 'template-parts/content', 'page-alert' );
       ?>
       <?php
       the_content();
