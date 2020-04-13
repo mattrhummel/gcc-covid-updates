@@ -6,23 +6,7 @@
  *
  * @package gccwp-2018
  */
-get_header();
-$post_page_featured_image = get_field('post_page_featured_image', 'option');
-$post_page_title= get_field('post_page_title', 'option');
-
-	// vars
-	$url = $post_page_featured_image['url'];
-	$title = $post_page_featured_image['title'];
-	$alt = $post_page_featured_image['alt'];
-	$caption = $post_page_featured_image['caption'];
-
-	// thumbnail
-	$size = 'large';
-	$thumb = $post_page_featured_image['sizes'][ $size ];
-	$width = $post_page_featured_image['sizes'][ $size . '-width' ];
-	$height = $post_page_featured_image['sizes'][ $size . '-height' ];
-?>
-
+get_header();?>
     <?php
 		if ( have_posts() ) : ?>
 
