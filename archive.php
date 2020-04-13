@@ -6,7 +6,10 @@
  *
  * @package gccwp-2018
  */
-get_header();?>
+get_header();
+$post_page_title= get_field('post_page_title', 'option');
+?>
+
     <?php
 		if ( have_posts() ) : ?>
 
@@ -18,6 +21,7 @@ get_header();?>
                 <h1>
                     <?php echo $post_page_title; ?>
                 </h1>
+                
                 <p>
                     <?php echo get_the_archive_title(); ?>
                 </p>
