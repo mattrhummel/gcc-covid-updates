@@ -65,23 +65,15 @@
   dynamic_sidebar( 'alumni-widgets' );
   }
   //post pages
-  if ( is_singular('post'))  {
+  if ( is_singular())  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
-  if ( is_category('highlights'))  {
+  if ( is_category())  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
-  if ( is_home('post'))  {
-  //custom archive widgets
-  dynamic_sidebar( 'single-widgets' );
-  }
-  if ( is_archive('safety-alerts'))  {
-  //custom archive widgets
-  dynamic_sidebar( 'single-widgets' );
-  }
-  if ( is_archive('highlights'))  {
+  if ( is_archive())  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
