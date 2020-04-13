@@ -18,7 +18,7 @@
         </div>
         
         <div class="small-12 medium-only-12 large-5 columns">
-          <p><?php _e('Germanna is part of the', 'gcc-wp-2018'); ?><a href="https://www.vccs.edu/"><?php _e('Virginia Community College System', 'gcc-wp-2018'); ?></a></p>
+          <p><?php _e('Germanna is part of the', 'gcc-wp-2018'); ?><a href="https://www.vccs.edu/"> <?php _e('Virginia Community College System', 'gcc-wp-2018'); ?></a></p>
           <p class="copywrite"><?php _e('&copy;', 'gcc-wp-2018'); ?>
           <?php bloginfo( 'name' ); ?></p>
         </div>
