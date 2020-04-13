@@ -53,24 +53,45 @@ while ( have_posts() ) : the_post();
 ?>
 
 <div class="callout primary">
- 
+
+   
      <h3 class="post-title">
           <a href="<?php the_permalink(); ?>">
               <?php the_title(); ?>
           </a>
       </h3>
 
-  </div>
+                    <?php if ( 'post' === get_post_type() ) : ?>
+                    <div class="entry-meta">
+                        <p>
+                            <strong>
+					<?php
+    		gcc_wp_2018_posted_on();
+				?>
+				<?php if (is_tag()) {
+				# code...
+				_e('| Posted in:', 'gcc-wp-2018'); echo single_tag_title(); ?>
+			</strong></p>
+                        <?php } ?>
+                        </strong>
+                        </p>
+                    </div>
+</div>
+                    <!-- .entry-meta -->
+                    <?php endif; ?>
 
-<?php endif; ?>
+       </div>
+       </div>        
 
-                
- <?php endwhile;
+            <?php endwhile;
 
 	the_posts_navigation(); ?>
 
 
-         </div>
-</div>
+    <?php	else :
+
+endif; ?>
+
+
 <?php
 get_footer();
