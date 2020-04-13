@@ -62,6 +62,8 @@ while ( have_posts() ) : the_post();
 
   </div>
 
+<?php endif; ?>
+
                 
  <?php endwhile;
 
