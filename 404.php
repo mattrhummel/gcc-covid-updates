@@ -18,7 +18,7 @@ get_header(); ?>
 
 		<div class="columns medium-5 page-404-content">
 	
-			<h1><?php _e('Nothing Founds','gcc-wp-2018'); ?></h1>
+			<h1><?php _e('Nothing Found','gcc-wp-2018'); ?></h1>
 			<?php
 			if ( is_home() && current_user_can( 'publish_posts' ) ) : ?>
 			<p><?php
