@@ -67,3 +67,33 @@ return __('%s');
             }
         return $title;    
     });
+ //generated applicant id for pta application
+ /*
+ * Create a unique_id Smart Tag and assign it to each form submission.
+ *
+ * @link https://wpforms.com/developers/how-to-create-a-unique-id-for-each-form-entry/
+ *
+ */
+ 
+///Generate Unique ID Smart Tag for WPForms
+function wpf_dev_register_smarttag( $tags ) {
+ 
+    // Key is the tag, item is the tag name.
+    $tags['unique_id'] = 'Unique ID';
+ 
+    return $tags;
+}
+add_filter( 'wpforms_smart_tags', 'wpf_dev_register_smarttag' );
+ 
+function wpf_dev_process_smarttag( $content, $tag ) {
+ 
+    // Only run if it is our desired tag.
+    if ( 'unique_id' === $tag ) {
+         
+        // Replace the tag with value.
+        $content = str_replace( '{unique_id}', uniqid(), $content );
+    }
+ 
+    return $content;
+}
+add_filter( 'wpforms_smart_tag_process', 'wpf_dev_process_smarttag', 10, 2 );
