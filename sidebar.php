@@ -65,6 +65,10 @@
   dynamic_sidebar( 'alumni-widgets' );
   }
  //post pages
+    if ( is_home())  {
+  //custom archive widgets
+  dynamic_sidebar( 'single-widgets' );
+  }
   if ( is_singular('post'))  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
@@ -73,7 +77,7 @@
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
-  if ( is_archive())  {
+  if ( is_archive(''))  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
