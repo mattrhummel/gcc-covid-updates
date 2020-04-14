@@ -64,12 +64,12 @@
   //custom department widgets
   dynamic_sidebar( 'alumni-widgets' );
   }
-  //post pages
-  if ( is_singular('highlights'))  {
+ //post pages
+  if ( is_singular('post'))  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
-  if ( is_category())  {
+   if ( is_category('highlights'))  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
