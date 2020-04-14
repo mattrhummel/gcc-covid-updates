@@ -19,7 +19,6 @@
   //custom department widgets
   dynamic_sidebar( 'international-students-widgets' );
   }
-
   //academic center for excellence sidebar
   if ( is_page('108') || $post->post_parent == '108' ) {
   //custom department widgets
@@ -48,11 +47,6 @@
   if ( is_page('26') || $post->post_parent == '26') {
   //custom department widgets
   dynamic_sidebar( 'academic-widgets' );
-  }
-  //acc
-  if ( is_page('27') || $post->post_parent == '27' ) {
-  //custom department widgets
-  dynamic_sidebar( 'acc-widgets' );
   }
   //advising
   if ( is_page('9124') || $post->post_parent == '9124' ) {
@@ -132,19 +126,6 @@
   //custom department widgets
   dynamic_sidebar( 'college-police-widgets' );
   }
-  if ( is_category( '1803' )) {
-  //custom department widgets
-  dynamic_sidebar( 'college-police-widgets' );
-  }
-  if ( is_archive( '1803' )) {
-  //custom department widgets
-  dynamic_sidebar( 'college-police-widgets' );
-  }
-  //contact
-  if ( is_page('18651') || $post->post_parent == '18651' ) {
-  //custom department widgets
-  dynamic_sidebar( 'contact-widgets' );
-  }
   //counseling
   if ( is_page('44') || $post->post_parent == '44' ) {
   //custom department widgets
@@ -171,12 +152,10 @@
   //custom department widgets
   dynamic_sidebar( 'diversity-widgets' );
   }
-     //educational foundation
+  //educational foundation
   if (  is_page('41767') ) {
-
   //custom department widgets
   dynamic_sidebar( 'de-early-college-widgets' );
-
   }
   //dual enrollment
   if ( is_page('49') || $post->post_parent == '49' ) {
@@ -193,11 +172,6 @@
   //custom department widgets
   dynamic_sidebar( 'facilities-widgets' );
   }
-  //faculty and staff
-  if ( is_page('58') || $post->post_parent == '58' ) {
-  //custom department widgets
-  dynamic_sidebar( 'faculty-widgets' );
-  }
   //financial aid
   if ( is_page('59') || $post->post_parent == '59' ) {
   //custom department widgets
@@ -207,11 +181,6 @@
   if ( is_page('60') || $post->post_parent == '60' ) {
   //custom department widgets
   dynamic_sidebar( 'gainful-employment-widgets' );
-  }
-  //g3
-  if ( is_page('26400') || $post->post_parent == '26400') {
-  //custom department widgets
-  dynamic_sidebar( 'get-skilled-widgets' );
   }
   //ged testing
   if ( is_page('62') || $post->post_parent == '62' ) {
@@ -299,7 +268,7 @@
   //custom department widgets
   dynamic_sidebar( 'marketing-branding-widgets' );
   }
-   //marketing recruiting
+  //marketing recruiting
   if ( is_page('41913') || $post->post_parent == '41913' ) {
   //custom department widgets
   dynamic_sidebar( 'marketing-recruiting-widgets' );
@@ -406,11 +375,6 @@
   if ( is_page('99') || $post->post_parent == '99' ) {
   //custom department widgets
   dynamic_sidebar( 'publications-widgets' );
-  }
-  //sails
-  if ( is_page('9106') || $post->post_parent == '9106' ) {
-  //custom department widgets
-  dynamic_sidebar( 'sails-widgets' );
   }
   //scholars program
   if ( is_page('103') || $post->post_parent == '103' ) {
