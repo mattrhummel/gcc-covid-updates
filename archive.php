@@ -41,20 +41,28 @@ $post_page_title= get_field('post_page_title', 'option');
         </nav>
     </header>
 
-      <?php
-          $args =  array (
-            'post_type' => 'cw_events',
-            'posts_per_page'=>-1,
-             'meta_key'      => 'event_date',
-            'orderby'     => 'meta_value',
-            'order'       => 'DESC'
-          );
-          ?>
+      <?php $custom_terms = get_terms('cw_event_categories'); ?>
 
-          <?php
-          $query = new WP_Query( $args ); ?>
-          <?php if ( $query->have_posts() ) : ?>
-          <?php while ( $query->have_posts() ) : $query->the_post();?>
+
+  <?php foreach($custom_terms as $custom_term) {
+    wp_reset_query();
+    $args = array('post_type' => 'cw_events',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'cw_event_categories',
+                'field' => 'slug',
+                'terms' => $custom_term->slug,
+            ),
+        ),
+     ); ?>
+
+    <?php $loop = new WP_Query($args);
+     
+    if($loop->have_posts()) { 
+
+     while($loop->have_posts()) : $loop->the_post();
+
+      ?>
 
             <div class="callout primary">
               
@@ -76,13 +84,11 @@ $post_page_title= get_field('post_page_title', 'option');
             </div>
             
           
-        <?php endwhile; ?>
-        <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no currents to display', 'gcc-wp-2018'); ?></p>
-        <?php endif; ?>
+        <?php 
 
+         endwhile; } }
+        
+         ?>
 <?php endif; ?>
-
 <?php
 get_footer();

@@ -65,7 +65,7 @@
   dynamic_sidebar( 'alumni-widgets' );
   }
   //post pages
-  if ( is_singular())  {
+  if ( is_singular('highlights'))  {
   //custom archive widgets
   dynamic_sidebar( 'single-widgets' );
   }
