@@ -1,8 +1,6 @@
 <?php
 function gcc_wp_2018_scripts() {
 wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '2020413', 'all' );
-//font awesome
-wp_enqueue_style( 'gcc-wp-2018-theme-fonts', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', array(), '5.13.0', 'all' );
 
 if (is_page('germanna-quick-facts')) wp_enqueue_script( 'gcc-wp-2018-chartjs', '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js', array(), '2.9.3', true );
 
@@ -25,4 +23,8 @@ wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdnjs.cloudflare.com/ajax/libs/f
 //wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20191118', true );
 }
 add_action( 'wp_enqueue_scripts', 'gcc_wp_2018_scripts', 10, 2);
+function prefix_add_footer_styles() {
+    wp_enqueue_style( 'gcc-wp-2018-theme-fonts', '//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css', array(), '5.13.0', 'all' );
+};
+add_action( 'get_footer', 'prefix_add_footer_styles' );
 ?>
