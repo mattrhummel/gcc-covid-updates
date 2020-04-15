@@ -96,5 +96,3 @@ function wpf_dev_process_smarttag( $content, $tag ) {
     return $content;
 }
 add_filter( 'wpforms_smart_tag_process', 'wpf_dev_process_smarttag', 10, 2 );
-//stop wordpress from removing content
-remove_filter( 'the_content', 'wpautop' );
