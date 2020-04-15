@@ -192,7 +192,6 @@ while ( have_posts() ) : the_post(); ?>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
           <?php else : ?>
-          <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
           <?php endif; ?>
         </div>
         <?php endif; ?>
