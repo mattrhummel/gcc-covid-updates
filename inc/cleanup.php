@@ -44,12 +44,14 @@ function gcc_wp_2018_deregister_style() {
 
 add_action( 'wp_enqueue_scripts','gcc_wp_2018_deregister_style' );
 endif;
-//do not remove the below functions, required for foundation shortcodes
+//do not remove the below functions
 if ( ! function_exists( 'gcc_wp_2018_clean_shortcodes' ) ) :
 function gcc_wp_2018_clean_shortcodes( $content ) {
 $array = array (
 '<p>[' => '[',
 ']</p>' => ']',
+'<i>[' => '[',
+']</i>' => ']',
 ']<br />' => ']'
 );
 $content = strtr( $content, $array );
