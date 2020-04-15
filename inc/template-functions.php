@@ -96,15 +96,3 @@ function wpf_dev_process_smarttag( $content, $tag ) {
     return $content;
 }
 add_filter( 'wpforms_smart_tag_process', 'wpf_dev_process_smarttag', 10, 2 );
-// START Stop removing div tags from WordPress - Linklay
-function ikreativ_tinymce_fix( $init )
-{
-    // html elements being stripped
-    $init['extended_valid_elements'] = 'div[*]';
-    $init['extended_valid_elements'] = 'i[*]';
-    // pass back to wordpress
-    return $init;
-}
-add_filter('tiny_mce_before_init', 'ikreativ_tiny_mce_fix');
-
-// END Stop removing div tags from WordPress - Linklay
