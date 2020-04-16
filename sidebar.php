@@ -172,6 +172,11 @@
   //custom department widgets
   dynamic_sidebar( 'facilities-widgets' );
   }
+  //faculty
+  if ( is_page('faculty-staff') || $post->post_parent == 'faculty-staff' ) {
+  //custom department widgets
+  dynamic_sidebar( 'faculty-widgets' );
+  }
   //financial aid
   if ( is_page('59') || $post->post_parent == '59' ) {
   //custom department widgets
