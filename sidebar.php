@@ -173,7 +173,7 @@
   dynamic_sidebar( 'facilities-widgets' );
   }
   //faculty
-  if ( is_page('faculty-staff') || $post->post_parent == 'faculty-staff' ) {
+  if ( is_page('faculty-staff')) {
   //custom department widgets
   dynamic_sidebar( 'faculty-widgets' );
   }
