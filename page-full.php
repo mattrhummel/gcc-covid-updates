@@ -23,11 +23,11 @@ while ( have_posts() ) : the_post(); ?>
       </div>
       <div style="padding-left: 10px; padding-right: 10px;">
 
-      <?php //Page Heading
-        get_template_part( 'template-parts/content', 'page-alert' );
-      ?>
+        <?php //Page Heading
+          get_template_part( 'template-parts/content', 'page-alert' );
+        ?>
 
-    </div>
+      </div>
 
       <?php
       the_content();
