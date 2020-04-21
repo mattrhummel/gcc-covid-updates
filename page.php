@@ -35,7 +35,7 @@ while ( have_posts() ) : the_post(); ?>
       ?>
       <?php } ?>
         
-       <div class="entry-content" id="main">
+     <div class="entry-content" id="main">
 
       <?php if (is_page('diversity-and-inclusion')) : ; ?>
       <?php putRevSlider( 'diversity-slider' ); ?>
@@ -59,65 +59,6 @@ while ( have_posts() ) : the_post(); ?>
           the_content();
           ?>
 
-        <?php if (is_page('43629')) : ; ?>
-
-        <div class="row expanded" data-equalizer data-equalize-on="large">
-        <hr>
-        <h2><?php _e('Success Stories', 'gcc-wp-2018'); ?></h2>
-        <?php
-        $this_post = $post->ID;
-        $args =  array (
-        'post_type' => 'success_stories',
-        'posts_per_page'=>4,
-        'order' => 'ASC',
-        'orderby'        => 'rand',
-        'post__not_in' => array($this_post)
-        );
-        // the query
-        $the_query = new WP_Query( $args ); ?>
-        <?php if ( $the_query->have_posts() ) : ?>
-        <!-- pagination here -->
-        <!-- the loop -->
-        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-          <div class="row expanded" data-equalizer="">
-<div class="medium-4 columns">
-
-    <?php // ACF Image Object
-      $image     = get_field( 'story_image' );
-      $alt       = $image['alt'];
-      $imageSize = $image['sizes'][ 'large' ];
-      ?>
-
-<div class="hide-for-small-only callout" style="background-image: url('<?php echo $imageSize ?>'); background-repeat: no-repeat; background-size: cover; background-position: center right;" data-equalizer-watch=""></div>
-</div>
-<div class="medium-8 columns">
-<div class="callout success large" data-equalizer-watch="">
-
-  <h3><?php the_title(); ?></h3>
-                
-  <p><?php the_field( 'story_heading' ); ?></p>
-
-  <a href="<?php the_permalink(); ?>" class="button primary">Read Story</a>
-
-</div>
-</div>
-</div>
-        
-
-          
-        <?php endwhile; ?>
-        <!-- end of the loop -->
-        <!-- pagination here -->
-        <?php wp_reset_postdata(); ?>
-        <?php else : ?>
-        <p><?php esc_html_e( 'Sorry, no posts matched your criteria.' ); ?></p>
-        <?php endif; ?>
-                </div>
-
-        </div><!--.otherstories--> 
-
-          <?php endif; ?>
 
         <?php if (is_page('search_gcse')) : ; ?>
 
