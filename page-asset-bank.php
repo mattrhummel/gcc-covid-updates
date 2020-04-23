@@ -28,7 +28,7 @@ while ( have_posts() ) : the_post(); ?>
         ?>
 
       </div>
-     
+
 <?php 
 $args = array(
 'post_status' => 'inherit',
@@ -37,11 +37,13 @@ $args = array(
 );
 
 $args['tax_query'] = array(
+
 array(
     'taxonomy' => 'asset_bank_categories',
     'terms' => array( 'zoom-background' ),
     'field' => 'slug',
 ),
+
 );
 
 $the_query = new WP_Query( $args ); ?>
@@ -57,8 +59,6 @@ $the_query = new WP_Query( $args ); ?>
     $the_query->the_post();
         ?>
 
-<?php  ?>
-
  <div class="columns medium-4">
     <div class="callout" data-equalizer-watch>
 
@@ -72,7 +72,6 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php  }
 }  ?>
-
 
 </div>
 
