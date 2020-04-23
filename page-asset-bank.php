@@ -122,7 +122,8 @@ $the_query = new WP_Query( $args ); ?>
     <div class="card" data-equalizer-watch style="padding-top: 40px; text-align: center;">
   
     <?php echo wp_get_attachment_image( get_the_ID(), array('300', '200'), "", array( "class" => "thumbnail", "style" => "margin: 0 auto; padding:" ) );  ?>
-   
+  
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="card-section">
       <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
     </div>
@@ -168,7 +169,7 @@ $the_query = new WP_Query( $args ); ?>
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
         ?>
-
+    <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
  <ul>
     <li>
       <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
@@ -213,7 +214,7 @@ $the_query = new WP_Query( $args ); ?>
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
         ?>
-
+      <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
   <ul>
 
    <li>
