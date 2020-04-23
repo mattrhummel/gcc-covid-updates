@@ -245,9 +245,7 @@ wp_reset_postdata();
   </div>
 </div>
 
-
-      
-    </div>
+</div>
   </div>
 </article>
 <?php endwhile; // End of the loop. ?>
