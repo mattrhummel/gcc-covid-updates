@@ -120,7 +120,7 @@ $the_query = new WP_Query( $args ); ?>
  <div class="columns medium-4">
     <div class="callout" data-equalizer-watch>
 
-    <?php echo wp_get_attachment_image( get_the_ID(), array('500', '500'), "", array( "class" => "thumbnail" ) );  ?>
+    <?php echo wp_get_attachment_image( get_the_ID(), array('500', '200'), "", array( "class" => "thumbnail" ) );  ?>
    
     <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
