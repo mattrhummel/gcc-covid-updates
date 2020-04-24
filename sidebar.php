@@ -259,7 +259,7 @@
   dynamic_sidebar( 'location-widgets' );
   }
   //marketing
-  if ( is_page('79') && is_page('marketing-and-recruitment-staff') ) {
+  if ( is_page('79') || is_page('44556') ) {
   //custom department widgets
   dynamic_sidebar( 'marketing-widgets' );
   }
