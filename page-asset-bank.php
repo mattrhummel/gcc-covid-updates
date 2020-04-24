@@ -26,6 +26,7 @@ while ( have_posts() ) : the_post(); ?>
 <ul class="tabs" data-tabs id="example-tabs">
   <li class="tabs-title is-active"><a href="#zoom-backgrounds" aria-selected="true">Zoom Backgrounds</a></li>
   <li class="tabs-title"><a data-tabs-target="logos" href="#logos">Logos</a></li>
+  <li class="tabs-title"><a data-tabs-target="coloring-pages" href="#coloring-pages">Coloring Pages</a></li>
   <li class="tabs-title"><a data-tabs-target="templates" href="#templates">Templates</a></li>
   <li class="tabs-title"><a data-tabs-target="panel2" href="#fonts">Fonts</a></li>
 </ul>
@@ -140,6 +141,59 @@ wp_reset_postdata();
 
 ?>
   </div>
+  <div class="tabs-panel" id="coloring-pages">
+    <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'asset_bank_categories',
+    'terms' => array( 'coloring-pages' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
+
+  <h2><?php _e('Coloring Pages', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+
+ <div class="columns medium-4">
+    <div class="card" data-equalizer-watch style="padding-top: 40px; text-align: center;">
+  
+    <?php echo wp_get_attachment_image( get_the_ID(), array('300', '200'), "", array( "class" => "thumbnail", "style" => "margin: 0 auto; padding:" ) );  ?>
+  
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+    <div class="card-section">
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </div>
+  </div>
+ </div>
+
+<?php  }
+}  ?>
+
+</div>
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
    <div class="tabs-panel" id="templates">
         <?php 
 $args = array(
@@ -169,8 +223,9 @@ $the_query = new WP_Query( $args ); ?>
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
         ?>
-    <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
- <ul>
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+
+<ul>
     <li>
       <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
     </li>
