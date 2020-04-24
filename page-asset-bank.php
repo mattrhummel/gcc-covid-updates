@@ -28,7 +28,6 @@ while ( have_posts() ) : the_post(); ?>
   <li class="tabs-title"><a data-tabs-target="logos" href="#logos">Logos</a></li>
   <li class="tabs-title"><a data-tabs-target="coloring-pages" href="#coloring-pages">Coloring Pages</a></li>
   <li class="tabs-title"><a data-tabs-target="templates" href="#templates">Templates</a></li>
-  <li class="tabs-title"><a data-tabs-target="panel2" href="#fonts">Fonts</a></li>
 </ul>
 
 <div class="tabs-content" data-tabs-content="example-tabs">
@@ -233,55 +232,6 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php  }
 }  ?>
-
-
-<?php /* Restore original Post Data */
-wp_reset_postdata();
-
-?>
-  </div>
-   <div class="tabs-panel" id="fonts">
-        <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'attachment',
-);
-
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'asset_bank_categories',
-    'terms' => array( 'fonts' ),
-    'field' => 'slug',
-),
-
-);
-
-$the_query = new WP_Query( $args ); ?>
-
-<?php if ( $the_query->have_posts() ) { ?>
-
-
-  <h2><?php _e('Fonts', 'gcc-wp-2018'); ?></h2>
- 
-  <?php
-    while ( $the_query->have_posts() ) {
-    $the_query->the_post();
-        ?>
-      <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
-  <ul>
-
-   <li>
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
-    </li>
-
-  </ul>
-  
-
-<?php  }
-}  ?>
-
 
 
 <?php /* Restore original Post Data */
