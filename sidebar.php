@@ -279,7 +279,7 @@
   dynamic_sidebar( 'marketing-branding-widgets' );
   }
   //marketing recruiting
-  if ( is_page('41913') || $post->post_parent == '41913' ) {
+  if ( is_page('43683') || $post->post_parent == '43683' ) {
   //custom department widgets
   dynamic_sidebar( 'marketing-recruiting-widgets' );
   }
