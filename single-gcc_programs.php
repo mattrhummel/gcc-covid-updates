@@ -58,7 +58,6 @@ get_header(); ?>
       <?php } ?>
       <h2>Program Description</h2>
       <?php the_field( 'program_description' ); ?>
-
       <div class="row" data-equalizer>
         <div class="columns medium-4">
           <div class="callout success small" data-equalizer-watch>
@@ -79,26 +78,24 @@ get_header(); ?>
           </div>
         </div>
       </div>
-
       
-<?php
-$financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
-$value = $field['value'];
-$label = $field['choices'][ $value ];
-?>
-<p>Financial Aid Eligible: <?php echo esc_html($label); ?></p>
-<p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
-<p>Program Cost: <?php the_field('program_cost'); ?></p>
-
-<?php
-$full_or_part_time = get_field_object( 'full_or_part_time' );
-$value1 = $field['value'];
-$label1 = $field['choices'][ $value ];
-?>
-<p>Full or Part Time: <?php echo esc_html($label1); ?></p>
-  </div>
-  
-  <?php endwhile; // End of the loop. ?>
-</article>
-<?php
-get_footer();
+      <?php
+      $financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
+      $value = $field['value'];
+      $label = $field['choices'][ $value ];
+      ?>
+      <p>Financial Aid Eligible: <?php echo esc_html($label); ?></p>
+      <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
+      <p>Program Cost: <?php the_field('program_cost'); ?></p>
+      <?php
+      $full_or_part_time = get_field_object( 'full_or_part_time' );
+      $value1 = $field['value'];
+      $label1 = $field['choices'][ $value ];
+      ?>
+      <p>Full or Part Time: <?php echo esc_html($label1); ?></p>
+    </div>
+    
+    <?php endwhile; // End of the loop. ?>
+  </article>
+  <?php
+  get_footer();
