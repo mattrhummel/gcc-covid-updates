@@ -63,7 +63,7 @@ get_header(); ?>
     <?php
     $department_dean = get_field( 'department_dean' );
     ?>
-    <p>Department Dean: <?php echo esc_html($color['label']); ?></span></p>
+    <p>Department Dean: <?php echo esc_html($department_dean['label']); ?></span></p>
 
     <p>Prgoram Chair: <?php the_field( 'program_chair' ); ?></p>
     <p>Pathway Type: <?php the_field( 'pathway_type' ); ?></p>
