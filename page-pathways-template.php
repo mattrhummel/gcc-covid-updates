@@ -6,7 +6,7 @@
 *
 * @package gccwp-2018
 *
-* Template Name: Pathways List
+* Template Name: Programs of Study List
 *
 */
 get_header(); ?>
