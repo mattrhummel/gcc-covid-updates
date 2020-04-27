@@ -58,22 +58,22 @@ get_header(); ?>
       <?php } ?>
       <h2>Program Description</h2>
       <?php the_field( 'program_description' ); ?>
-      
+
       <div class="row" data-equalizer>
         <div class="columns medium-4">
-          <div class="callout success small" data-eqlaizer-watch>
+          <div class="callout success small" data-equalizer-watch>
             <p class="h3">Department Dean</p>
+                        <p><?php the_field( 'department_dean' );?></p>
           </div>
         </div>
         <div class="columns medium-4">
-          <div class="callout secondary small"  data-eqlaizer-watch>
-            <p><?php the_field( 'department_dean' );?></p>
+          <div class="callout secondary small"  data-equalizer-watch>
             <p class="h3">Program Chair</p>
             <p><?php the_field( 'program_chair' ); ?></p>
           </div>
         </div>
         <div class="columns medium-4">
-          <div class="callout alert small" data-eqlaizer-watch>
+          <div class="callout alert small"  data-equalizer-watch>
             <p class="h3">Pathway Type</p>
             <p><?php the_field( 'pathway_type' ); ?></p>
           </div>
