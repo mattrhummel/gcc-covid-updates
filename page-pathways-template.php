@@ -52,7 +52,7 @@ $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'gcc_programs',
-    'terms' => array( 'business' ),
+    'terms' => array( 'business-pathway' ),
     'field' => 'slug',
 ),
 
@@ -107,7 +107,7 @@ $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'gcc_programs',
-    'terms' => array( 'health-science' ),
+    'terms' => array( 'health-science-pathway' ),
     'field' => 'slug',
 ),
 
@@ -160,7 +160,7 @@ $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'gcc_programs',
-    'terms' => array( 'humanities-and-arts' ),
+    'terms' => array( 'humanities-and-arts-pathway' ),
     'field' => 'slug',
 ),
 
@@ -213,7 +213,7 @@ $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'gcc_programs',
-    'terms' => array( 'it-and-technical-studies' ),
+    'terms' => array( 'it-and-technical-studies-pathway' ),
     'field' => 'slug',
 ),
 
@@ -259,7 +259,7 @@ $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'gcc_programs',
-    'terms' => array( 'public-service' ),
+    'terms' => array( 'public-service-pathway' ),
     'field' => 'slug',
 ),
 
@@ -293,7 +293,7 @@ wp_reset_postdata();
 
 ?>
   </div>
-     <div class="tabs-panel" id="science-and-engineering">
+     <div class="tabs-panel" id="science-and-engineering-pathway">
         <?php 
 $args = array(
 'post_status' => 'inherit',
