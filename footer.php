@@ -27,8 +27,6 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
 </div><!--.close-canvas-content-->
-</div>
-</div>
 
 <?php wp_footer(); ?>
 <script>

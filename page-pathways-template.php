@@ -313,9 +313,8 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
-
 ?>
-</div>
+
 <div class="tabs-panel" id="public-service">
  <?php 
 $args = array(
@@ -378,13 +377,11 @@ $the_query = new WP_Query( $args ); ?>
 <?php  }
 }  ?>
 
-</div>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
 
 ?>
-</div>
 <div class="tabs-panel" id="science-and-engineering-pathway">
        
  <?php 
@@ -454,10 +451,12 @@ $the_query = new WP_Query( $args ); ?>
 wp_reset_postdata();
 
 ?>
+
 </div>
 </div>
 </div>
-</div>
+
+
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
