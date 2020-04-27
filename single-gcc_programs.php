@@ -64,15 +64,17 @@ get_header(); ?>
       <div class="columns medium-6">
         <div class="callout small" data-equalizer-watch>
           
-     <h2>Program Description</h2>
+     <h2 class="h3">Program Description</h2>
       <?php the_field( 'program_description' ); ?>
 
         </div>
       </div>
       <div class="columns medium-6">
         <div class="callout warning small" data-equalizer-watch>
+
+          <h3 class="h4">Financial Aid & Tuition Details</h3>
           
-          <?php
+           <?php
             $financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
             $value = $field['value'];
             $label = $field['choices'][ $value ];
