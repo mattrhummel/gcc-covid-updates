@@ -41,7 +41,7 @@ get_header(); ?>
           'post_type' => 'gcc_programs',
           'post_status' => 'publish',
           'orderby' => 'publish_date',
-          'order' => 'DESC',
+          'order' => 'ASC',
           'posts_per_page'=> -1,
           );
           ?>
