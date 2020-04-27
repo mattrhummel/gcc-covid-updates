@@ -77,7 +77,7 @@ get_header(); ?>
             <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
             <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
             <p>Program Cost: $<?php the_field('program_cost'); ?></p>
-            <p>Full or Part Time: <?php the_field( 'full_or_part_time' ); ?></p>
+            <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
           
         </div>
       </div>
