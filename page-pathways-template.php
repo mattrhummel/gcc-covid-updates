@@ -23,8 +23,10 @@ get_header(); ?>
       
     </div>
 
-    <?php get_sidebar();?>
-
+   <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
+      <?php dynamic_sidebar( 'pathways-widgets' );?>
+  </aside>
+ 
     <div class="columns small-12 large-9 float-left">
     
     <?php //Page Heading
