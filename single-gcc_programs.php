@@ -58,6 +58,7 @@ get_header(); ?>
       <?php } ?>
       <h2>Program Description</h2>
       <?php the_field( 'program_description' ); ?>
+      
       <div class="row" data-equalizer>
         <div class="columns medium-4">
           <div class="callout success small" data-eqlaizer-watch>
