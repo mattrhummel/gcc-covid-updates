@@ -42,21 +42,20 @@ while ( have_posts() ) : the_post(); ?>
 <div class="tabs-panel is-active" id="business">
     
 <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'business-pathway' ),
+            )
+        )
+    );
 
-$args['tax_query'] = array(
 
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'business-pathway' ),
-    'field' => 'slug',
-),
-
-);
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -64,7 +63,7 @@ $the_query = new WP_Query( $args ); ?>
 
 <div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('Business Pathways', 'gcc-wp-2018'); ?></h2>
+  <p class="h4"><?php _e('Business Pathways', 'gcc-wp-2018'); ?></p>
  
   <?php
     while ( $the_query->have_posts() ) {
@@ -75,20 +74,20 @@ $the_query = new WP_Query( $args ); ?>
   <div class="card" data-equalizer-watch>
 
   <div class="card-divider">
-      <?php the_title(); ?>
+      <h2 class="h5"><?php the_title(); ?></h2>
   </div>
     <div class="card-section">
      
-        <p class="h3">Department Dean</p>
+        <p class="h6">Department Dean</p>
         <p><?php the_field( 'department_dean' );?></p>
 
-        <p class="h3">Program Chair</p>
+        <p class="h6">Program Chair</p>
         <p><?php the_field( 'program_chair' ); ?></p>
 
-        <p class="h3">Pathway Type</p>
+        <p class="h6">Pathway Type</p>
         <p><?php the_field( 'pathway_type' ); ?></p>
 
-        <h3 class="h4">Financial Aid & Tuition Details</h3>
+        <h3 class="h6">Financial Aid & Tuition Details</h3>
       
         <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
         <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
@@ -111,21 +110,19 @@ wp_reset_postdata();
 </div>
   <div class="tabs-panel" id="health-science">
     <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'health-science-pathway' ),
+            )
+        )
+    );
 
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'health-science-pathway' ),
-    'field' => 'slug',
-),
-
-);
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -180,21 +177,19 @@ wp_reset_postdata();
   </div>
   <div class="tabs-panel" id="humanities-and-arts">
     <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'humanities-and-arts-pathway' ),
+            )
+        )
+    );
 
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'humanities-and-arts-pathway' ),
-    'field' => 'slug',
-),
-
-);
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -249,21 +244,19 @@ wp_reset_postdata();
   </div>
    <div class="tabs-panel" id="it-and-technical-studies">
      <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'it-and-technical-studies-pathway' ),
+            )
+        )
+    );
 
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'humanities-and-arts-pathway' ),
-    'field' => 'slug',
-),
-
-);
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -271,7 +264,7 @@ $the_query = new WP_Query( $args ); ?>
 
 <div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('IT and Technical Studies Pathways', 'gcc-wp-2018'); ?></h2>
  
   <?php
     while ( $the_query->have_posts() ) {
@@ -317,29 +310,26 @@ wp_reset_postdata();
 
 <div class="tabs-panel" id="public-service">
  <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
-
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'humanities-and-arts-pathway' ),
-    'field' => 'slug',
-),
-
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'public-service-pathway' ),
+            )
+        )
+    );
 
 $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) { ?>
 
-<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
+<div class="row expanded" data-equalizer>
 
-  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('Public Service Pathways', 'gcc-wp-2018'); ?></h2>
  
   <?php
     while ( $the_query->have_posts() ) {
@@ -385,21 +375,19 @@ wp_reset_postdata();
 <div class="tabs-panel" id="science-and-engineering-pathway">
        
  <?php 
-$args = array(
-'post_status' => 'inherit',
-'posts_per_page' => -1,
-'post_type' => 'gcc_programs',
-);
+$args = 
+    array(
+        'posts_per_page' => -1,
+        'post_type' => 'gcc_programs',
+        'tax_query' => array(
+            array(
+                'taxonomy' => 'pathway_names',
+                'field' => 'slug',
+                'terms' => array( 'science-and-engineering-pathway' ),
+            )
+        )
+    );
 
-$args['tax_query'] = array(
-
-array(
-    'taxonomy' => 'pathway_names',
-    'terms' => array( 'humanities-and-arts-pathway' ),
-    'field' => 'slug',
-),
-
-);
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -407,7 +395,7 @@ $the_query = new WP_Query( $args ); ?>
 
 <div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('Science and Engineering Pathways', 'gcc-wp-2018'); ?></h2>
  
   <?php
     while ( $the_query->have_posts() ) {
