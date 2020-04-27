@@ -81,7 +81,7 @@ get_header(); ?>
             ?>
             <p>Financial Aid Eligible: <?php echo esc_html($label); ?></p>
             <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
-            <p>Program Cost: <?php the_field('program_cost'); ?></p>
+            <p>Program Cost: $<?php the_field('program_cost'); ?></p>
           
         </div>
       </div>
