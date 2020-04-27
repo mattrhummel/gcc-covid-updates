@@ -10,77 +10,340 @@
 *
 */
 get_header(); ?>
+<?php
+while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   
-  <?php
-  while ( have_posts() ) : the_post(); ?>
-
-   <div class="row expanded content-area">
-
-    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
-      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
-      </button>
-      
-    </div>
-
-   <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
-      <?php dynamic_sidebar( 'pathways-widgets' );?>
-  </aside>
- 
-    <div class="columns small-12 large-9 float-left">
+  <div class="content-area">
     
-    <?php //Page Heading
-          get_template_part( 'template-parts/content', 'page-heading' );
-        ?>
+    <div class="entry-content" id="main">
 
-
-        <?php the_content(); ?>
-
-        <div class="row expanded">
-
-          <?php
-          $args =  array (
-          'post_type' => 'gcc_programs',
-          'post_status' => 'publish',
-          'orderby' => 'publish_date',
-          'order' => 'ASC',
-          'posts_per_page'=> -1,
-          );
-          ?>
-
-          <?php
-          $query = new WP_Query( $args ); ?>
-          <?php if ( $query->have_posts() ) : ?>
-              <ul>
-          <?php while ( $query->have_posts() ) : $query->the_post();?>
+      <div class="row expanded">
+        <div class="columns small-12">
           
-              <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+          <header>
+              <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+              <?php the_breadcrumb() ?> 
+          </header>
 
-          <?php endwhile; ?>
-
-               </ul>
-
-          <?php wp_reset_postdata(); ?>
-          <?php else : ?>
-          <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
-          <?php endif; ?>
-        </div>
-        
         </div>
       </div>
 
-        <div class="row expanded entry-footer">
-       <footer>
-         <?php $u_time = get_the_time('U'); 
-        $u_modified_time = get_the_modified_time('U'); 
-        if ($u_modified_time >= $u_time + 86400) { 
-        echo "<p>Last modified on "; 
-        the_modified_time('F j, Y'); 
-        "</p> "; }  ?>
-        <?php gcc_wp_2018_entry_footer(); ?>
-    <footer>
+<ul class="tabs" data-tabs id="pathways-list">
+  <li class="tabs-title is-active"><a href="#business" aria-selected="true">Business</a></li>
+  <li class="tabs-title"><a data-tabs-target="logos" href="#health-science">Health Science</a></li>
+  <li class="tabs-title"><a data-tabs-target="humanities-and-arts" href="#humanities-and-arts">Humanities & Arts</a></li>
+  <li class="tabs-title"><a data-tabs-target="it-and-technical-studies" href="#it-and-technical-studies">IT & Technical Studies</a></li>
+  <li class="tabs-title"><a data-tabs-target="public-service" href="#public-service">Public Service</a></li>
+  <li class="tabs-title"><a data-tabs-target="science-and-engineering" href="#science-and-engineering">Science and Engineering</a></li>
+</ul>
+
+<div class="tabs-content" data-tabs-content="pathways-list">
+  <div class="tabs-panel is-active" id="business">
+    
+<?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'business' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
+
+  <h2><?php _e('Business Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+
+ <div class="columns medium-4">
+  <div class="card" data-equalizer-watch style="text-align: center;">
+
+    <?php echo wp_get_attachment_image( get_the_ID(), array('500', '500'), "", array( "class" => "thumbnail" ) );  ?>
+   
+    <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+    <div class="card-section" style="padding-top: 0;">
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </div>
   </div>
-      <?php endwhile; // End of the loop. ?>
-    </article>
-    <?php
-    get_footer();
+ </div>
+
+<?php  }
+}  ?>
+
+</div>
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+
+
+  </div>
+  <div class="tabs-panel" id="health-science">
+    <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'health-science' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
+
+  <h2><?php _e('Health Science Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+
+ <div class="columns medium-4">
+    <div class="card" data-equalizer-watch style="padding-top: 40px; text-align: center;">
+  
+    <?php echo wp_get_attachment_image( get_the_ID(), array('300', '200'), "", array( "class" => "thumbnail", "style" => "margin: 0 auto; padding:" ) );  ?>
+  
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+    <div class="card-section">
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </div>
+  </div>
+ </div>
+
+<?php  }
+}  ?>
+
+</div>
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
+  <div class="tabs-panel" id="humanities-and-arts">
+    <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'humanities-and-arts' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
+
+  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+
+ <div class="columns medium-4">
+    <div class="card" data-equalizer-watch style="padding-top: 40px; text-align: center;">
+  
+    <?php echo wp_get_attachment_image( get_the_ID(), array('300', '200'), "", array( "class" => "thumbnail", "style" => "margin: 0 auto; padding:" ) );  ?>
+  
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+    <div class="card-section">
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </div>
+  </div>
+ </div>
+
+<?php  }
+}  ?>
+
+</div>
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
+   <div class="tabs-panel" id="it-and-technical-studies">
+        <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'it-and-technical-studies' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+
+  <h2><?php _e('IT and Technical Studies Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+
+<ul>
+    <li>
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </li>
+</ul>
+
+<?php  }
+}  ?>
+
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
+     <div class="tabs-panel" id="public-service">
+        <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'public-service' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+
+  <h2><?php _e('Public Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+
+<ul>
+    <li>
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </li>
+</ul>
+
+<?php  }
+}  ?>
+
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
+     <div class="tabs-panel" id="science-and-engineering">
+        <?php 
+$args = array(
+'post_status' => 'inherit',
+'posts_per_page' => -1,
+'post_type' => 'attachment',
+);
+
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'gcc_programs',
+    'terms' => array( 'science-and-engineering' ),
+    'field' => 'slug',
+),
+
+);
+
+$the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+
+  <h2><?php _e('Science and Engineering Pathways', 'gcc-wp-2018'); ?></h2>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+
+<ul>
+    <li>
+      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+    </li>
+</ul>
+
+<?php  }
+}  ?>
+
+
+<?php /* Restore original Post Data */
+wp_reset_postdata();
+
+?>
+  </div>
+</div>
+
+</div>
+  </div>
+</article>
+<?php endwhile; // End of the loop. ?>
+<?php
+get_footer();
