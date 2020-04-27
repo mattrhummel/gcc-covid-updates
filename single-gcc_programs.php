@@ -62,10 +62,10 @@ get_header(); ?>
 
     <div class="row" data-equalizer>
       <div class="columns medium-6">
-        <div class="callout small" data-equalizer-watch>
+        <div class="callout small large" data-equalizer-watch>
           
-     <h2 class="h3">Program Description</h2>
-      <?php the_field( 'program_description' ); ?>
+         <h2 class="h3">Program Description</h2>
+          <?php the_field( 'program_description' ); ?>
 
         </div>
       </div>
