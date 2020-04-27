@@ -63,7 +63,7 @@ get_header(); ?>
         <div class="columns medium-4">
           <div class="callout success small" data-equalizer-watch>
             <p class="h3">Department Dean</p>
-                        <p><?php the_field( 'department_dean' );?></p>
+            <p><?php the_field( 'department_dean' );?></p>
           </div>
         </div>
         <div class="columns medium-4">
@@ -79,8 +79,11 @@ get_header(); ?>
           </div>
         </div>
       </div>
-      
-    </div>
+
+      <p>Financial Aid Eligible: <?php the_field('financial_aid_eligible'); ?></p>
+      <p>Number of Credits: <?php the_field('number_of_creidts'); ?></p>
+      <p>Program Cost: <?php the_field('program_cost'); ?></p>
+      <p>Full or Part Time: <?php the_field('full_or_part_time'); ?></p>
   </div>
   
   <?php endwhile; // End of the loop. ?>
