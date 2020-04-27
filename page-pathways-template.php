@@ -51,7 +51,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'business-pathway' ),
     'field' => 'slug',
 ),
@@ -122,7 +122,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'health-science-pathway' ),
     'field' => 'slug',
 ),
@@ -191,7 +191,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'humanities-and-arts-pathway' ),
     'field' => 'slug',
 ),
@@ -260,7 +260,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'it-and-technical-studies-pathway' ),
     'field' => 'slug',
 ),
@@ -297,7 +297,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'public-service-pathway' ),
     'field' => 'slug',
 ),
@@ -339,7 +339,7 @@ $args = array(
 $args['tax_query'] = array(
 
 array(
-    'taxonomy' => 'gcc_programs',
+    'taxonomy' => 'pathway_names',
     'terms' => array( 'science-and-engineering' ),
     'field' => 'slug',
 ),
