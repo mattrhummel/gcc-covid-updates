@@ -59,14 +59,16 @@ get_header(); ?>
     ?>
     <?php } ?>
 
-
+  <h2>Program Description</h2>
+  <div class="callout">
+  <?php the_field( 'program_description' ); ?>
   <p class="h3">Department Dean</p> 
-  <p><?php the_field( 'department_dean' );?></span></p>
+  <p><?php the_field( 'department_dean' );?></p>
   <p class="h3">Program Chair
   <p><?php the_field( 'program_chair' ); ?></p>
   <p class="h3">Pathway Type</p>
   <p><?php the_field( 'pathway_type' ); ?></p>
-  
+  </div>
 
       </div>
     </div>
