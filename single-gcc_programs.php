@@ -61,7 +61,7 @@ get_header(); ?>
 
 
     <div class="row" data-equalizer>
-      <div class="columns medium-6">
+      <div class="columns medium-8">
         <div class="callout small large" data-equalizer-watch>
           
          <h2 class="h3">Program Description</h2>
@@ -69,26 +69,20 @@ get_header(); ?>
 
         </div>
       </div>
-      <div class="columns medium-6">
+      <div class="columns medium-4">
         <div class="callout warning small" data-equalizer-watch>
 
           <h3 class="h4">Financial Aid & Tuition Details</h3>
           
-           <?php
-            $financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
-            $value = $field['value'];
-            $label = $field['choices'][ $value ];
+            <?php
+              $financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
+              $value = $field['value'];
+              $label = $field['choices'][ $value ];
             ?>
             <p>Financial Aid Eligible: <?php echo esc_html($label); ?></p>
             <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
             <p>Program Cost: <?php the_field('program_cost'); ?></p>
-            <?php
-            $full_or_part_time = get_field_object( 'full_or_part_time' );
-            $value1 = $field['value'];
-            $label1 = $field['choices'][ $value1 ];
-            ?>
-            <p>Full or Part Time: <?php echo esc_html($label1); ?></p>
-
+          
         </div>
       </div>
     </div>
