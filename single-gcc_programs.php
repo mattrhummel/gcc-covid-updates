@@ -73,15 +73,11 @@ get_header(); ?>
         <div class="callout warning small" data-equalizer-watch>
 
           <h3 class="h4">Financial Aid & Tuition Details</h3>
-          
-            <?php
-              $financial_aid_eligible = get_field_object( 'financial_aid_eligible' );
-              $value = $field['value'];
-              $label = $field['choices'][ $value ];
-            ?>
-            <p>Financial Aid Eligible: <?php echo esc_html($label); ?></p>
+      
+            <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
             <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
             <p>Program Cost: $<?php the_field('program_cost'); ?></p>
+            <p>Full or Part Time: <?php the_field( 'full_or_part_time' ); ?></p>
           
         </div>
       </div>
