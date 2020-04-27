@@ -90,7 +90,7 @@ get_header(); ?>
       <?php
       $full_or_part_time = get_field_object( 'full_or_part_time' );
       $value1 = $field['value'];
-      $label1 = $field['choices'][ $value ];
+      $label1 = $field['choices'][ $value1 ];
       ?>
       <p>Full or Part Time: <?php echo esc_html($label1); ?></p>
     </div>
