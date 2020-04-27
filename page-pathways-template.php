@@ -39,7 +39,7 @@ while ( have_posts() ) : the_post(); ?>
 </ul>
 
 <div class="tabs-content" data-tabs-content="pathways-list">
-  <div class="tabs-panel is-active" id="business">
+<div class="tabs-panel is-active" id="business">
     
 <?php 
 $args = array(
@@ -108,9 +108,7 @@ $the_query = new WP_Query( $args ); ?>
 wp_reset_postdata();
 
 ?>
-
-
-  </div>
+</div>
   <div class="tabs-panel" id="health-science">
     <?php 
 $args = array(
@@ -318,9 +316,7 @@ wp_reset_postdata();
 
 ?>
 </div>
-
-  </div>
-     <div class="tabs-panel" id="public-service">
+<div class="tabs-panel" id="public-service">
  <?php 
 $args = array(
 'post_status' => 'inherit',
@@ -389,9 +385,7 @@ wp_reset_postdata();
 
 ?>
 </div>
-
-  </div>
-     <div class="tabs-panel" id="science-and-engineering-pathway">
+<div class="tabs-panel" id="science-and-engineering-pathway">
        
  <?php 
 $args = array(
