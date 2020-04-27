@@ -72,13 +72,29 @@ $the_query = new WP_Query( $args ); ?>
         ?>
 
  <div class="columns medium-4">
-  <div class="card" data-equalizer-watch style="text-align: center;">
+  <div class="card" data-equalizer-watch>
 
-    <?php echo wp_get_attachment_image( get_the_ID(), array('500', '500'), "", array( "class" => "thumbnail" ) );  ?>
-   
-    <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
-    <div class="card-section" style="padding-top: 0;">
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+  <div class="card-divider">
+      <?php the_title(); ?>
+  </div>
+    <div class="card-section">
+     
+        <p class="h3">Department Dean</p>
+        <p><?php the_field( 'department_dean' );?></p>
+
+        <p class="h3">Program Chair</p>
+        <p><?php the_field( 'program_chair' ); ?></p>
+
+        <p class="h3">Pathway Type</p>
+        <p><?php the_field( 'pathway_type' ); ?></p>
+
+        <h3 class="h4">Financial Aid & Tuition Details</h3>
+      
+        <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
+        <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
+        <p>Program Cost: $<?php the_field('program_cost'); ?></p>
+        <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
+
     </div>
   </div>
  </div>
