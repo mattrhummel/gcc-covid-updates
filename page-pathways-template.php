@@ -315,7 +315,7 @@ $the_query = new WP_Query( $args ); ?>
 wp_reset_postdata();
 
 ?>
-</d iv>
+</div>
 <div class="tabs-panel" id="public-service">
  <?php 
 $args = array(
@@ -456,7 +456,8 @@ wp_reset_postdata();
 ?>
 </div>
 </div>
-
+</div>
+</div>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
