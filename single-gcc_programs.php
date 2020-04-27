@@ -60,10 +60,13 @@ get_header(); ?>
     <?php } ?>
 
 
-   
-    <p>Department Dean: <?php the_field( 'department_dean' );?></span></p>
-    <p>Prgoram Chair: <?php the_field( 'program_chair' ); ?></p>
-    <p>Pathway Type: <?php the_field( 'pathway_type' ); ?></p>
+  <p class="h3">Department Dean</p> 
+  <p><?php the_field( 'department_dean' );?></span></p>
+  <p class="h3">Program Chair
+  <p><?php the_field( 'program_chair' ); ?></p>
+  <p class="h3">Pathway Type</p>
+  <p><?php the_field( 'pathway_type' ); ?></p>
+  
 
       </div>
     </div>
