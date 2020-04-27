@@ -45,7 +45,7 @@ while ( have_posts() ) : the_post(); ?>
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
@@ -116,7 +116,7 @@ wp_reset_postdata();
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
@@ -185,7 +185,7 @@ wp_reset_postdata();
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
@@ -250,18 +250,18 @@ wp_reset_postdata();
 ?>
   </div>
    <div class="tabs-panel" id="it-and-technical-studies">
-        <?php 
+     <?php 
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'pathway_names',
-    'terms' => array( 'it-and-technical-studies-pathway' ),
+    'terms' => array( 'humanities-and-arts-pathway' ),
     'field' => 'slug',
 ),
 
@@ -271,34 +271,68 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) { ?>
 
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('IT and Technical Studies Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
  
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+        ?>
 
+ <div class="columns medium-4">
+   <div class="card" data-equalizer-watch>
 
+  <div class="card-divider">
+      <?php the_title(); ?>
+  </div>
+    <div class="card-section">
+     
+        <p class="h3">Department Dean</p>
+        <p><?php the_field( 'department_dean' );?></p>
+
+        <p class="h3">Program Chair</p>
+        <p><?php the_field( 'program_chair' ); ?></p>
+
+        <p class="h3">Pathway Type</p>
+        <p><?php the_field( 'pathway_type' ); ?></p>
+
+        <h3 class="h4">Financial Aid & Tuition Details</h3>
+      
+        <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
+        <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
+        <p>Program Cost: $<?php the_field('program_cost'); ?></p>
+        <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
+
+    </div>
+  </div>
+ </div>
 
 <?php  }
 }  ?>
 
+</div>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
 
 ?>
+</div>
+
   </div>
      <div class="tabs-panel" id="public-service">
-        <?php 
+ <?php 
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'pathway_names',
-    'terms' => array( 'public-service-pathway' ),
+    'terms' => array( 'humanities-and-arts-pathway' ),
     'field' => 'slug',
 ),
 
@@ -308,39 +342,69 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) { ?>
 
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('Public Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
  
   <?php
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
         ?>
 
+ <div class="columns medium-4">
+   <div class="card" data-equalizer-watch>
 
+  <div class="card-divider">
+      <?php the_title(); ?>
+  </div>
+    <div class="card-section">
+     
+        <p class="h3">Department Dean</p>
+        <p><?php the_field( 'department_dean' );?></p>
 
+        <p class="h3">Program Chair</p>
+        <p><?php the_field( 'program_chair' ); ?></p>
+
+        <p class="h3">Pathway Type</p>
+        <p><?php the_field( 'pathway_type' ); ?></p>
+
+        <h3 class="h4">Financial Aid & Tuition Details</h3>
+      
+        <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
+        <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
+        <p>Program Cost: $<?php the_field('program_cost'); ?></p>
+        <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
+
+    </div>
+  </div>
+ </div>
 
 <?php  }
 }  ?>
 
+</div>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
 
 ?>
+</div>
+
   </div>
      <div class="tabs-panel" id="science-and-engineering-pathway">
-        <?php 
+       
+ <?php 
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
-'post_type' => 'attachment',
+'post_type' => 'gcc_programs',
 );
 
 $args['tax_query'] = array(
 
 array(
     'taxonomy' => 'pathway_names',
-    'terms' => array( 'science-and-engineering' ),
+    'terms' => array( 'humanities-and-arts-pathway' ),
     'field' => 'slug',
 ),
 
@@ -350,29 +414,54 @@ $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) { ?>
 
+<div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <h2><?php _e('Science and Engineering Pathways', 'gcc-wp-2018'); ?></h2>
+  <h2><?php _e('Humanities and Arts Pathways', 'gcc-wp-2018'); ?></h2>
  
   <?php
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
         ?>
-  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 
-<ul>
-    <li>
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
-    </li>
-</ul>
+ <div class="columns medium-4">
+   <div class="card" data-equalizer-watch>
+
+  <div class="card-divider">
+      <?php the_title(); ?>
+  </div>
+    <div class="card-section">
+     
+        <p class="h3">Department Dean</p>
+        <p><?php the_field( 'department_dean' );?></p>
+
+        <p class="h3">Program Chair</p>
+        <p><?php the_field( 'program_chair' ); ?></p>
+
+        <p class="h3">Pathway Type</p>
+        <p><?php the_field( 'pathway_type' ); ?></p>
+
+        <h3 class="h4">Financial Aid & Tuition Details</h3>
+      
+        <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
+        <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
+        <p>Program Cost: $<?php the_field('program_cost'); ?></p>
+        <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
+
+    </div>
+  </div>
+ </div>
 
 <?php  }
 }  ?>
 
+</div>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
 
 ?>
+</div>
+
   </div>
 </div>
 
