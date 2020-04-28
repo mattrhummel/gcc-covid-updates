@@ -46,7 +46,6 @@ a img.aligncenter {
 }
 
 .wp-caption {
-  background-color: $light-gray;
   border: 1px solid $medium-gray;
   max-width: 96%;
   /* Image does not overflow the content area */
@@ -56,7 +55,6 @@ a img.aligncenter {
 }
 
 .wp-caption-text {
-  background: $light-gray;
   color: $dark-gray;
   padding: 1rem;
   font-weight: bold;
@@ -126,8 +124,8 @@ a img.aligncenter {
 
 .gallery:after {content:"";display:table;clear:both;}
 .gallery-item {
-  background-color: $light-gray;
-  padding: 1rem;
+
+  padding: 1rem 0 0 0;
 }
 
 img.aligncenter, div.aligncenter, figure.aligncenter, img.wp-post-image {display:block; margin:1em auto;}
