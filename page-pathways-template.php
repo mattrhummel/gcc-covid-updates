@@ -374,7 +374,7 @@ wp_reset_postdata();
 ?>
 <div class="tabs-panel" id="science-and-engineering-pathway">
        
- <?php 
+<?php 
 $args = 
     array(
         'posts_per_page' => -1,
@@ -387,7 +387,6 @@ $args =
             )
         )
     );
-
 
 $the_query = new WP_Query( $args ); ?>
 
