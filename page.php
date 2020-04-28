@@ -77,7 +77,6 @@ while ( have_posts() ) : the_post(); ?>
         
         <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
           
-          
           <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
           <h2><?php the_field('workforce_highlights_heading'); ?></h2>
           
