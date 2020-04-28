@@ -77,7 +77,7 @@ get_header(); ?>
         the_modified_time('F j, Y'); 
         "</p> "; }  ?>
         <?php gcc_wp_2018_entry_footer(); ?>
-    <footer>
+    </footer>
   </div>
       <?php endwhile; // End of the loop. ?>
     </article>
