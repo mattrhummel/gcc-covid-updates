@@ -332,7 +332,7 @@ while ( have_posts() ) : the_post(); ?>
             the_modified_time('F j, Y');
           "</p> "; }  ?>
           <?php gcc_wp_2018_entry_footer(); ?>
-          <footer>
+          </footer>
      </div>
       </article>
       
