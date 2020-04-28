@@ -60,7 +60,9 @@ while ( have_posts() ) : the_post(); ?>
           ?>
       <?php if (is_page('website-statistics')) : ; ?>
 
-          <iframe width="600" height="450" src="https://datastudio.google.com/embed/reporting/37a0b848-8cfc-48e3-8f82-214b072e17bc/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+          <iframe width="800" height="1000" src="https://datastudio.google.com/embed/reporting/37a0b848-8cfc-48e3-8f82-214b072e17bc/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+
 
       <?php endif; ?>
 
