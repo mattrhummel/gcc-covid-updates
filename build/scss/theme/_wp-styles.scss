@@ -61,6 +61,7 @@ a img.aligncenter {
   padding: 1rem;
   font-weight: bold;
   margin-top: 1rem;
+  text-align: center;
 }
 
 .wp-caption.alignnone {
@@ -124,7 +125,10 @@ a img.aligncenter {
 }
 
 .gallery:after {content:"";display:table;clear:both;}
-
+.gallery-item {
+  background-color: $light-gray;
+  padding: 1rem;
+}
 
 img.aligncenter, div.aligncenter, figure.aligncenter, img.wp-post-image {display:block; margin:1em auto;}
 img.alignright, div.alignright, figure.alignright {float:right; margin:1em 0 1em 2em;}
