@@ -321,23 +321,24 @@ while ( have_posts() ) : the_post(); ?>
     </div>
 
     </div><!--.pagecontent-->
-    <?php $u_time = get_the_time('U'); ?>
-    <?php if ($u_time): ;?>
     
-    <div class="row expanded entry-footer">
-        <footer>
-          <?php //last modified page test
-          
-          $u_modified_time = get_the_modified_time('U');
-          if ($u_modified_time >= $u_time + 86400) {
-          echo "<p>Last modified on ";
-            the_modified_time('F j, Y');
-          "</p> "; }  ?>
-          <?php gcc_wp_2018_entry_footer(); ?>
-          </footer>
-     </div>
 
-    <?php endif ?>
+          <?php //last modified page test
+          $u_time = get_the_time('U');
+          $u_modified_time = get_the_modified_time('U');
+          if ($u_modified_time >= $u_time + 86400) { ?>
+
+           <div class="row expanded entry-footer">
+              <footer>
+                <?php echo "<p>Last modified on ";
+                  the_modified_time('F j, Y');
+                "</p> "; ?>
+                <?php gcc_wp_2018_entry_footer(); ?>
+                </footer>
+           </div>
+
+              }  ?>
+              
       </article>
       
       <?php endwhile; // End of the loop. ?>
