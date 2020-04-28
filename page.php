@@ -337,8 +337,8 @@ while ( have_posts() ) : the_post(); ?>
                 </footer>
            </div>
 
-              }  ?>
-              
+             <?php } endif;  ?>
+
       </article>
       
       <?php endwhile; // End of the loop. ?>
