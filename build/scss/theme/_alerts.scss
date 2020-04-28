@@ -10,7 +10,6 @@
 
 }
 
-
 .callout.primary {
 
   background-color: $light-gray !important;
@@ -278,69 +277,4 @@
   a.button.primary {
     padding-left: 0
   }
-}
-
-.bottom-banner {
-
-    position: fixed;
-    z-index: 99999999;
-    bottom: 0;
-    left: 0;
-    height: auto;
-    background-color: $white;
-    border-top: 2px solid $primary;
-    width: 100%;
-    padding: .5rem 8rem .5rem .2rem;
-    min-width: 100%;
-
-@media screen and (max-width: 39.9375em) {
-
-      padding: 1rem 0 .5rem .2rem;
-
-}
- @media screen and (min-width: 40em) {
-    padding: 1rem 2.6rem .5rem 1rem;
-
- }
-    @media screen and (min-width: 64em) {
-    padding: 1rem 2.6rem .5rem 1rem;
-
-    }
-
-    .close-button {
-      color: $black;
-      font-size: 2rem;
-      font-weight: 800
-    }
-
-    p {
-      color: $black;
-      font-weight: bold;
-        @media screen and (min-width: 40em) {
-
-        font-size: 1.2rem;
-      
-      }
-        
-        @media screen and (min-width: 64em) {
-        
-        font-size: 1.4rem;
-     }
-
-    }
-
-    .button-group {
-
-      float: none;
-      margin: 0;
-
-    @media screen and (min-width: 64em) {
-        float: right;
-       }
-
-    a {
-      text-transform: uppercase;
-    }
-
- }
 }
