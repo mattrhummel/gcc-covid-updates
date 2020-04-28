@@ -337,7 +337,7 @@ while ( have_posts() ) : the_post(); ?>
                 </footer>
            </div>
 
-             <?php } endif;  ?>
+             <?php } ?>
 
       </article>
       
