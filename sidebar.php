@@ -431,7 +431,7 @@
   //custom department widgets
   dynamic_sidebar( 'transfer-services-widgets' );
   }
-  if ( is_page('guaranteed-admission-agreements') || $post->post_parent == 'guaranteed-admission-agreements/' ) {
+  if ( is_page('7092') || $post->post_parent == '7092' ) {
   //custom department widgets
   dynamic_sidebar( 'transfer-services-widgets' );
   }
