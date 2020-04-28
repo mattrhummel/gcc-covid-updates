@@ -17,14 +17,12 @@ while ( have_posts() ) : the_post(); ?>
       
     </div>
     <?php get_sidebar();?>
-
     <div class="columns small-12 large-9 float-left">
-       
-     <header>
+      
+      <header>
         <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-        <?php the_breadcrumb() ?> 
-    </header>
-
+        <?php the_breadcrumb() ?>
+      </header>
       <?php // if the page has a featured image
       if  (has_post_thumbnail( ) )  { ?>
       <div class="page-heading-image hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" >
@@ -34,76 +32,58 @@ while ( have_posts() ) : the_post(); ?>
       // if page doesn't have a featured image
       ?>
       <?php } ?>
-        
-     <div class="entry-content" id="main">
-
-      <?php if (is_page('diversity-and-inclusion')) : ; ?>
-      <?php putRevSlider( 'diversity-slider' ); ?>
-      <?php endif; ?>
-
-      <?php if (is_page('workforce')) : ; ?>
-      <?php putRevSlider( 'workforce-nov-4' ); ?>
-      <?php endif; ?>
       
-      <?php //Page Heading
-        get_template_part( 'template-parts/content', 'page-alert' );
-      ?>
-
-        <?php if (is_page('27674')) : ; ?>
-
-          <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
-
+      <div class="entry-content" id="main">
+        <?php if (is_page('diversity-and-inclusion')) : ; ?>
+        <?php putRevSlider( 'diversity-slider' ); ?>
         <?php endif; ?>
-       
-         <?php
-          the_content();
-          ?>
-      <?php if (is_page('website-statistics')) : ; ?>
-
-          <iframe width="800" height="1000" src="https://datastudio.google.com/embed/reporting/37a0b848-8cfc-48e3-8f82-214b072e17bc/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
-
-
-
-      <?php endif; ?>
-
+        <?php if (is_page('workforce')) : ; ?>
+        <?php putRevSlider( 'workforce-nov-4' ); ?>
+        <?php endif; ?>
+        
+        <?php //Page Heading
+        get_template_part( 'template-parts/content', 'page-alert' );
+        ?>
+        <?php if (is_page('27674')) : ; ?>
+        <script src="https://studyinthestates.dhs.gov/assets/widget/sits-widget.js" type="text/javascript"></script>
+        <?php endif; ?>
+        
+        <?php
+        the_content();
+        ?>
+        <?php if (is_page('website-statistics')) : ; ?>
+        <iframe width="800" height="1000" src="https://datastudio.google.com/embed/reporting/37a0b848-8cfc-48e3-8f82-214b072e17bc/page/6zXD" frameborder="0" style="border:0" allowfullscreen></iframe>
+        <?php endif; ?>
         <?php if (is_page('search_gcse')) : ; ?>
-
-           <script async>
-            (function() {
-              var cx = '004235661866003871264:hsv9lloki5k';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-  
-         <?php endif; ?>
-
+        <script async>
+        (function() {
+        var cx = '004235661866003871264:hsv9lloki5k';
+        var gcse = document.createElement('script');
+        gcse.type = 'text/javascript';
+        gcse.async = true;
+        gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(gcse, s);
+        })();
+        </script>
+        
+        <?php endif; ?>
         <?php if (is_page('germanna-quick-facts')) : ;  ?>
         
-          <?php get_template_part( 'template-parts/content', 'quickfacts' ); ?>
+        <?php get_template_part( 'template-parts/content', 'quickfacts' ); ?>
         
         <?php endif; ?>
-
         <?php if (is_page('workforce')) : ; ?>
         
         <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
           
-  
+          
           <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
-
           <h2><?php the_field('workforce_highlights_heading'); ?></h2>
           
-
           <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
-
         </div>
-
         <?php endif; ?>
-
         <?php if (is_page('40255')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
           
@@ -210,8 +190,6 @@ while ( have_posts() ) : the_post(); ?>
         </div>
         
         <?php endif; ?>
-
-
         <?php //student activities events
         if (is_page('27603')) : ; ?>
         <div class="row expanded" data-equalizer data-equalize-on="medium" id="sa-events">
@@ -251,7 +229,7 @@ while ( have_posts() ) : the_post(); ?>
           
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
-          <?php else : ?> 
+          <?php else : ?>
           <?php endif; ?>
         </div>
         <?php endif; ?>
@@ -319,28 +297,23 @@ while ( have_posts() ) : the_post(); ?>
         <?php endif; ?>
       </div>
     </div>
-
     </div><!--.pagecontent-->
     
-
-          <?php //last modified page test
-          $u_time = get_the_time('U');
-          $u_modified_time = get_the_modified_time('U');
-          if ($u_modified_time >= $u_time + 86400) { ?>
-
-           <div class="row expanded entry-footer">
-              <footer>
-                <?php echo "<p>Last modified on ";
-                  the_modified_time('F j, Y');
-                "</p> "; ?>
-                <?php gcc_wp_2018_entry_footer(); ?>
-                </footer>
-           </div>
-
-             <?php }; ?>
-
-      </article>
-      
-      <?php endwhile; // End of the loop. ?>
-      <?php
-      get_footer();
+    <?php //last modified page test
+    $u_time = get_the_time('U');
+    $u_modified_time = get_the_modified_time('U');
+    if ($u_modified_time >= $u_time + 86400) { ?>
+    <div class="row expanded entry-footer">
+      <footer>
+        <?php echo "<p>Last modified on ";
+          the_modified_time('F j, Y');
+        "</p> "; ?>
+        <?php gcc_wp_2018_entry_footer(); ?>
+      </footer>
+    </div>
+    <?php }; ?>
+  </article>
+  
+  <?php endwhile; // End of the loop. ?>
+  <?php
+  get_footer();
