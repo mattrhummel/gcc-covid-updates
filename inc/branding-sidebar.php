@@ -2,7 +2,7 @@
 //The main branding and navigations section of the website on the left side, shows on desktops, hidden for mobile.
 function main_menu() {
 ?>
-<div class="off-canvas position-left reveal-for-xlarge" id="main-menu" data-toggler="hide">
+<div class="off-canvas position-left reveal-for-xlarge" id="branding-menu" data-toggler="hide">
   <button class="close-button" aria-label="<?php _e('Close menu', 'gcc-wp-2018'); ?>" type="button" data-close>
   <span aria-hidden="true">&times;</span>
   </button>
