@@ -67,6 +67,7 @@
     'international-education-menu' => 'International Education Menu',
     'locations-menu' => 'Locations Menu',
     'legal-menu' => 'Legal Menu',
+    'mcdi-menu' => 'Multicultural Coalition for Diversity and Inclusion Menu',
     'marketing-menu' => 'Marketing Menu',
     'marketing-web-menu' => 'Marketing Web Menu',
     'marketing-branding-menu' => 'Marketing Branding Menu',

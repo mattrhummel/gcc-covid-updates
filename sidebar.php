@@ -258,6 +258,11 @@
   //custom department widgets
   dynamic_sidebar( 'location-widgets' );
   }
+  //mcdi
+  if ( is_page('44967') || $post->post_parent == '44967' ) {
+  //custom department widgets
+  dynamic_sidebar( 'mcdi-widgets' );
+  }
   //marketing
   if ( is_page('79')) {
   //custom department widgets
