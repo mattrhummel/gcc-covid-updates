@@ -11,7 +11,18 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
+<?php if( get_field('page_footer_contact') ) { ?>
+<div class="row expanded collapse">
 
+  <div class="callout large">
+    
+    <?php the_field( 'page_footer_contact' ); ?>
+
+  </div>
+
+</div>
+
+<?php } ?>
 
 <footer class="site-footer hide-for-print">
 
