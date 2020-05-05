@@ -11,18 +11,32 @@
 ?>
 <?php //closing main container, do not remove ?>
 </main>
-<?php if( get_field('page_footer_contact') ) { ?>
+
+<?php  //setup alert from parent page and pulls the field into subpages.
+$page_footer_contact = get_field('page_footer_contact');
+global $post;
+if ( get_field('page_footer_contact', $post->post_parent ) ):
+?>
 <div class="row expanded collapse">
-
-  <div class="callout large">
-    
-    <?php the_field( 'page_footer_contact' ); ?>
-
-  </div>
-
+	<div class="callout hide-for-print">
+		<?php the_field('page_footer_contact', $post->post_parent );?>
+	</div>
 </div>
+<?php endif; ?>
 
-<?php } ?>
+<?php //last modified page test
+$u_time = get_the_time('U');
+$u_modified_time = get_the_modified_time('U');
+if ($u_modified_time >= $u_time + 86400) { ?>
+<div class="row expanded entry-footer">
+  <footer>
+    <?php echo "<p>Last modified on ";
+      the_modified_time('F j, Y');
+    "</p> "; ?>
+    <?php gcc_wp_2018_entry_footer(); ?>
+  </footer>
+</div>
+<?php }; ?>
 
 <footer class="site-footer hide-for-print">
 
@@ -31,7 +45,6 @@
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
 
 </footer>
-
 
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
