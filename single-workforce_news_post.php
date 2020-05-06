@@ -52,7 +52,7 @@ get_header(); ?>
     <?php // if the page has a featured image
     if  (has_post_thumbnail( ) )  { ?>
     <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" style="margin-bottom: 20px;">
-      <?php the_post_thumbnail('', array ('alt' => false));  ?>
+      <?php the_post_thumbnail();  ?>
     </div>
     <?php  }  else {  //.pagesubbanner
     // if page doesn't have a featured image
