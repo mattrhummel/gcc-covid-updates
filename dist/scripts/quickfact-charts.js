@@ -35,7 +35,7 @@ var genderPie = new Chart(pieGender, {
     }
 });
 //graduation rates
-var pieAge = document.getElementById('agePie');
+var pieAge = document.getElementById('agePie')
 var agePie = new Chart(pieAge, {
     type: 'pie',
     data: {
