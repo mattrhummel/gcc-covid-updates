@@ -68,11 +68,7 @@ while ( have_posts() ) : the_post(); ?>
         </script>
         
         <?php endif; ?>
-        <?php if (is_page('germanna-quick-facts')) : ;  ?>
-        
-        <?php get_template_part( 'template-parts/content', 'quickfacts' ); ?>
-        
-        <?php endif; ?>
+   
         <?php if (is_page('workforce')) : ; ?>
         
         <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
