@@ -18,8 +18,8 @@
 			<h4 class="h5"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
 		</div>
 
-			<div class="card-section">
-			<?php the_excerpt(); ?>
+		 <div class="card-section">
+			<?php the_field( 'wf_post_description' ); ?>
 		</div>
 
  	<div class="update-background">
