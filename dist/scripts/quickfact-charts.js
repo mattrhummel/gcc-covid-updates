@@ -27,7 +27,7 @@ var genderPie = new Chart(pieGender, {
                 padding: 4,
                 color: '#ffff',
                 font: {
-                size: '40',
+                size: '20',
                 weight: '800'
                 }
             }
@@ -63,7 +63,7 @@ var agePie = new Chart(pieAge, {
                 padding: 4,
                 color: '#ffff',
                 font: {
-                size: '40',
+                size: '20',
                 weight: '800'
                 }
             }
@@ -99,7 +99,7 @@ var facultyPie = new Chart(pieFaculty, {
                 padding: 4,
                 color: '#ffff',
                 font: {
-                size: '40',
+                size: '20',
                 weight: '800'
                 }
             }
