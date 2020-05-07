@@ -283,3 +283,71 @@ span:hover {
   font-weight: 800;
  }
 }
+
+.transfer-box {
+
+
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  flex-flow: column wrap;
+
+.transfer-partners {
+  
+  list-style: none;
+
+
+  li {
+
+        display: inline-block;
+        font-weight: bold;
+        border: 5px solid #000000;
+        border-radius: 100%;
+        padding: 8px;
+        margin: .1rem;
+        font-size: .95rem;
+
+ /* Medium and up */
+@media screen and (min-width: 40em) {
+ border-radius: 100%;
+        padding: 10px;
+        margin: .2rem;
+        font-size: 1.2rem;
+
+}
+ /* Medium and up */
+@media screen and (min-width: 64em) {
+ border-radius: 100%;
+        padding: 16px;
+        margin: .2rem;
+        font-size: 1.8rem;
+
+}
+      }
+
+     li.umw {
+          color: #4D6B8B;
+          border: 5px solid #4D6B8B;
+        }
+
+      li.vcu {
+        color: #FFBA01;
+        border: 5px solid #FFBA01;
+      }
+
+     li.gmu {
+        color: #006940;
+        border: 5px solid #006940;
+      }
+
+     li.odu {
+        color: #003057;
+        border: 5px solid #003057;
+      }
+    li.jmu {
+        color: #451B84;
+        border: 5px solid #451B84;
+      }
+
+}
+}
