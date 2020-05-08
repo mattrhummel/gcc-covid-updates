@@ -19,7 +19,6 @@
  justify-content: center;
  align-items:center;
 
-
 }
 
 .content-area {
@@ -61,7 +60,6 @@
  margin: 0 0 10px 0;
  height: auto; 
  max-height: 320px;
-
 
 }
 
@@ -133,10 +131,7 @@ h3:first-of-type {
       color: $primary;
       text-decoration: underline;
     }
-
- 
-
-    }
+}
 
 li.active {
   text-decoration: underline;
@@ -180,7 +175,7 @@ background-color: $light-gray;
         padding:0;
         display: block;
 
-           /* mouse over link */
+      /* mouse over link */
       &:hover {
         color: $secondary;
       }
@@ -286,8 +281,9 @@ span:hover {
 
 .transfer-box {
 
-
-  display: flex ;
+  margin: 0;
+  padding: 0;
+  display: flex;
   align-items: center;
   justify-content: center;
   flex-flow: column wrap;
@@ -295,7 +291,7 @@ span:hover {
 .transfer-partners {
   
   list-style: none;
-
+  margin-left: 0;
 
   li {
 
@@ -304,26 +300,45 @@ span:hover {
         border: 5px solid #000000;
         border-radius: 100%;
         padding: 8px;
-        margin: .1rem;
+        margin: 0 0 .1rem .1rem;
         font-size: .95rem;
 
  /* Medium and up */
-@media screen and (min-width: 40em) {
- border-radius: 100%;
+   @media screen and (min-width: 40em) {
+        border-radius: 100%;
         padding: 10px;
         margin: .2rem;
-        font-size: 1.2rem;
+        font-size: 1rem;
+
+}
+/* Medium only */
+@media screen and (min-width: 40em) and (max-width: 63.9375em) {
+
+   border-radius: 100%;
+        padding: 20px;
+        margin: .1rem;
+        font-size: 1.6rem;
 
 }
  /* Medium and up */
 @media screen and (min-width: 64em) {
- border-radius: 100%;
-        padding: 16px;
-        margin: .2rem;
-        font-size: 1.8rem;
+      border-radius: 100%;
+        padding: 12px;
+        margin: 0;
+        font-size: 1.1rem;
+}
+
+/* Large only */
+@media screen and (min-width: 64em) and (max-width: 74.9375em) {
+   border-radius: 100%;
+        padding: 12px;
+        margin: .1rem;
+        font-size: 1rem;
 
 }
-      }
+
+
+    }
 
      li.umw {
           color: #4D6B8B;
