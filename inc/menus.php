@@ -8,6 +8,7 @@
     'about-menu' => 'About Menu',
     'archive-menu' => 'Archive Menu',
     'single-post-menu' => 'Single Post Menu',
+    'calendar-menu' => 'Calendar Menu',
     'cw-events-menu' => 'CW Events Menu',
     'covid-menu' => 'Covid Menu',
     'academics-menu' => 'Academics Menu',

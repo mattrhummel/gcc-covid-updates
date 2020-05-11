@@ -60,7 +60,7 @@ $the_query = new WP_Query( $args ); ?>
   <?php
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
-        ?>
+  ?>
 
  <div class="columns medium-4">
     <div class="card" data-equalizer-watch style="padding-top: 40px; text-align: center;">

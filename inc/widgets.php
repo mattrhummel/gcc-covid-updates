@@ -181,6 +181,15 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
+	'id' => 'calendar-widgets',
+	'name' => __( 'Calendar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
 		'id' => 'arts-sciences-widgets',
 		'name' => __( 'Arts and Sciences Sidebar', 'gcc-wp-2018' ),
 		'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),

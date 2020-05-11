@@ -19,7 +19,6 @@ $post_page_title= get_field('post_page_title', 'option');
       </button>
       
     </div>
-    <?php get_sidebar();?>
 
     <div class="columns small-12 large-9 float-left">
        

@@ -6,13 +6,11 @@
 *
 * @package gccwp-2018
 *
-* Template Name: College Wide Events
 *
 */
 get_header(); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
-  while ( have_posts() ) : the_post(); ?>
    
    <div class="row expanded content-area">
     
@@ -29,8 +27,7 @@ get_header(); ?>
     <div class="columns small-12 large-9 float-left">
       
      <header>
-
-       <?php the_title('<h1>', '</h1>') ?>
+<h1><?php echo get_the_archive_title(); ?></h1>
                 <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
             <ul class="breadcrumbs">
@@ -42,72 +39,80 @@ get_header(); ?>
                   <?php echo $home_page; ?>
                 </a>
               </li>
+               <li role="menuitem">
+                <a href="/calendar/">
+                 <?php _e('Calendar', 'gcc-wp-2018'); ?>
+                </a>
+              </li>
             </ul>
           </div>
         </nav>
     </header>  
 
-                    <?php // ACF Image Object
+ <?php
 
-                    $image = get_field('calendar_image');
-                    // vars
-                    $url = $image['url'];
 
-                ?>
-   
+$args = array(
+  'post_type' => 'cw_events',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'cw_event_categories',
+      'field'    => 'slug',
+      'terms'    => $term,
+    ),
+  ),
+);
+$query = new WP_Query( $args );
 
-<?php
+  if($query->have_posts()) { 
 
-        $args =  array (
-              'post_type' => 'cw_events',
-              'order'       => 'DESC',
-            );
 
-      $terms = get_terms( 'cw_event_categories' );
-      
-      // Get Taxonomy Terms ?>
-                 
-         <?php  if (( ! empty( $terms ))  ) { ?>
 
-            <?php foreach ( $terms as $term ) { ?>
-
+     while($query->have_posts()) : $query->the_post();
+?>
+        
             <div class="row expanded" data-equalizer>
 
-              <div class="columns medium-5">
+              <div class="columns medium-4">
 
                <div class="callout" style="background-color: #ffffff; padding: 0;" data-equalizer-watch>
 
-               <div style="background-image: url('<?php the_field( 'calendar_image', $term ); ?>'); background-size: cover; height: 300px; background-position: center center;" ></div>
+<?php     // ACF Image Object
+
+$image = get_field('event_image');
+// vars
+$url = $image['url'];
+
+?>
+    <div style="background-image: url('<?php echo $url; ?>'); background-size: cover; height: 170px; background-position: center center;" ></div>
 
               </div>
 
             </div>
-              <div class="columns medium-7" >
+              <div class="columns medium-8" >
 
-              <div class="callout" data-equalizer-watch>
-   
-                  <h3><a href="<?php echo $term->slug; ?>">
+                <div class="callout" data-equalizer-watch>
                     
-                    <?php echo $term->name;  ?> </a>
-
-                  </h3>
-                  
-                     <p><?php echo $term->description; ?></p>
-
+                    <p class="h3"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></p>
+                    
+                    <p><?php the_field( 'event_date' ); ?><br/>
+                    <?php the_field( 'event_location' ); ?></p>
+                 
                 </div>
 
              </div>
 
            </div>
-           <?php 
 
-             }
+<?php endwhile; 
+wp_reset_query();
 
-           } ?>
+} 
 
-    <?php endwhile; // End of the loop. ?>
+?>
 
-  </div>
+
+             </div>
 </div>
 
 </article>
