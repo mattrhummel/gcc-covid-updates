@@ -33,6 +33,11 @@ while ( have_posts() ) : the_post(); ?>
       the_content();
       ?>
 
+<div class="row expanded">
+  <div class="callout hide-for-print">
+    <?php the_field('page_footer_contact', $post->post_parent );?>
+  </div>
+</div>
     </div>
   </div>
 </article>
