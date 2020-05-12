@@ -292,11 +292,15 @@ while ( have_posts() ) : the_post(); ?>
         <?php endif; ?>
       </div>
 
-      <div class="row">
-  <div class="callout hide-for-print">
-    <?php the_field('page_footer_contact', $post->post_parent );?>
-  </div>
+<?php if( get_field('page_footer_contact', $post->post_parent) ): ?>
+
+<div class="row expanded">
+    <div class="callout hide-for-print">
+          <?php the_field('page_footer_contact', $post->post_parent );?>
+    </div>
 </div>
+
+<?php endif; ?>
 
     </div>
     </div><!--.pagecontent-->
