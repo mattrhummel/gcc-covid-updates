@@ -17,7 +17,7 @@ $page_footer_contact = get_field('page_footer_contact');
 global $post;
 if ( get_field('page_footer_contact', $post->post_parent ) ):
 ?>
-<div class="row expanded collapse">
+<div class="row expanded">
 	<div class="callout hide-for-print">
 		<?php the_field('page_footer_contact', $post->post_parent );?>
 	</div>
