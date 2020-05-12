@@ -32,7 +32,7 @@ while ( have_posts() ) : the_post(); ?>
       <?php
       the_content();
       ?>
-<?php if( get_field('page_footer_contact') ): ?>
+<?php if( get_field('page_footer_contact', $post->post_parent) ): ?>
 
 <div class="row expanded">
     <div class="callout hide-for-print">
