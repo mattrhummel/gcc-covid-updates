@@ -29,9 +29,8 @@ get_header(); ?>
     <div class="columns small-12 large-9 float-left">
       
      <header>
-
        <?php the_title('<h1>', '</h1>') ?>
-                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+        <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
             <ul class="breadcrumbs">
               <?php $home_page = get_the_title( get_option('page_on_front'));
@@ -47,15 +46,14 @@ get_header(); ?>
         </nav>
     </header>  
 
-                    <?php // ACF Image Object
+<?php // ACF Image Object
 
-                    $image = get_field('calendar_image');
-                    // vars
-                    $url = $image['url'];
+$image = get_field('calendar_image');
+// vars
+$url = $image['url'];
 
-                ?>
-   
-
+?>
+  
 <?php
 
         $args =  array (
@@ -92,7 +90,7 @@ get_header(); ?>
 
                   </h3>
                   
-                     <p><?php echo $term->description; ?></p>
+                  <p><?php echo $term->description; ?></p>
 
                 </div>
 
@@ -112,5 +110,5 @@ get_header(); ?>
 
 </article>
 
-  <?php
-  get_footer();
+<?php
+get_footer();
