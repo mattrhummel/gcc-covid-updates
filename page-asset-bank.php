@@ -25,7 +25,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <ul class="tabs" data-tabs id="example-tabs">
   <li class="tabs-title is-active"><a href="#logos">Logos</a></li>
-  <li class="tabs-title"><a data-tabs-target="powerpoints" href="#powerpoints">Powerpoints</a></li>
+  <li class="tabs-title"><a data-tabs-target="templates" href="#templates">Templates</a></li>
   <li class="tabs-title"><a href="#zoom-backgrounds" aria-selected="true">Zoom Backgrounds</a></li>
   <li class="tabs-title"><a data-tabs-target="coloring-pages" href="#coloring-pages">Coloring Pages</a></li>
 </ul>
@@ -193,7 +193,10 @@ wp_reset_postdata();
 
 ?>
   </div>
-   <div class="tabs-panel" id="powerpoints">
+   <div class="tabs-panel" id="templates">
+
+    <h2><?php _e('Templates', 'gcc-wp-2018'); ?></h2>
+
         <?php 
 $args = array(
 'post_status' => 'inherit',
@@ -213,13 +216,9 @@ array(
 
 $the_query = new WP_Query( $args ); ?>
 
-<?php if ( $the_query->have_posts() ) { ?>
-
-
-  <h2><?php _e('Powerpoints', 'gcc-wp-2018'); ?></h2>
-
-
 <ul>
+
+<?php if ( $the_query->have_posts() ) { ?>
  
   <?php
     while ( $the_query->have_posts() ) {
@@ -232,7 +231,9 @@ $the_query = new WP_Query( $args ); ?>
     </li>
 
 <?php  }
+
 }  ?>
+
 
 </ul>
 
@@ -240,6 +241,8 @@ $the_query = new WP_Query( $args ); ?>
 wp_reset_postdata();
 
 ?>
+
+
   </div>
 </div>
 
