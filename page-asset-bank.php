@@ -217,6 +217,9 @@ $the_query = new WP_Query( $args ); ?>
 
 
   <h2><?php _e('Powerpoints', 'gcc-wp-2018'); ?></h2>
+
+
+<ul>
  
   <?php
     while ( $the_query->have_posts() ) {
@@ -224,15 +227,14 @@ $the_query = new WP_Query( $args ); ?>
         ?>
   <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 
-<ul>
     <li>
       <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
     </li>
-</ul>
 
 <?php  }
 }  ?>
 
+</ul>
 
 <?php /* Restore original Post Data */
 wp_reset_postdata();
