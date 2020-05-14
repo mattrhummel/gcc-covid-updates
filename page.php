@@ -17,6 +17,7 @@ while ( have_posts() ) : the_post(); ?>
       
     </div>
     <?php get_sidebar();?>
+    
     <div class="columns small-12 large-9 float-left">
       
       <header>

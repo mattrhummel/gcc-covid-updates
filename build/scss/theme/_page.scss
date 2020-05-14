@@ -81,9 +81,9 @@
 
   width: 100%;
   padding: 1rem;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
   margin: 0;
-
+  
 a {
   display: block;
   padding: 0 1rem;
@@ -99,6 +99,14 @@ h3:first-of-type {
     display: block;
 
   }
+}
+
+h4 {
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-size: .95rem;
 }
 
 .textwidget {
