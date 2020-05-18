@@ -288,10 +288,6 @@ span:hover {
 
 .transfer-box {
  
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-items: center;
 
 .transfer-partners {
   
@@ -303,7 +299,7 @@ justify-items: center;
   
     padding: 10px;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
 
  span  {
         
@@ -315,6 +311,7 @@ justify-items: center;
         display: inline-block;
         line-height: 1;
         top: -3px;
+          font-size: 1.2rem;
       }
 
     }
