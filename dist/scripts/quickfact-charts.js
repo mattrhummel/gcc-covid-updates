@@ -47,13 +47,13 @@ var genderAndAgePie = new Chart(pieGenderAndAge, {
     }
 });
 //graduation rates
-var pieAge = document.getElementById('agePie')
-var agePie = new Chart(pieAge, {
+var pieStudentCount = document.getElementById('studentCountPie')
+var studentCountPie = new Chart(pieStudentCount, {
     type: 'pie',
     data: {
-    labels: ['under 25', 'over 25'],
+    labels: ['Full-time', 'Part-time'],
          datasets: [{
-            data: [77, 33],
+            data: [31, 69],
             backgroundColor: [
              'rgb(22, 86, 160)',
                 'rgb(141, 183, 60)'
@@ -71,7 +71,9 @@ var agePie = new Chart(pieAge, {
             // Change options for ALL labels of THIS CHART
 
             datalabels: {
-                
+                formatter: function(value, context) {
+                    return value + '%';
+                },
                 padding: 4,
                 color: '#ffff',
                 font: {
