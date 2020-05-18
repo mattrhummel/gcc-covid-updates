@@ -27,15 +27,23 @@ var genderAndAgePie = new Chart(pieGenderAndAge, {
             // Change options for ALL labels of THIS CHART
 
             datalabels: {
-                
+                formatter: function(value, context) {
+                    return value + '%';
+                },                
                 padding: 4,
                 color: '#ffff',
+
                 font: {
                 size: '20',
                 weight: '800'
-                }
+
+                },
+
+
+
             }
-        }    
+        },
+
     }
 });
 //graduation rates
