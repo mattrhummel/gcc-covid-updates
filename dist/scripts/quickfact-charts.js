@@ -1,18 +1,22 @@
 //graduation rates
-var pieGender = document.getElementById('genderPie');
-var genderPie = new Chart(pieGender, {
+var pieGenderAndAge = document.getElementById('genderAndAgePie');
+var genderAndAgePie = new Chart(pieGenderAndAge, {
     type: 'pie',
     data: {
-    labels: ['male', 'female'],
+    labels: ['male', 'female', 'under 25', 'over 25'],
          datasets: [{
-            data: [40, 60],
+            data: [40, 60, 77, 33],
             backgroundColor: [
-             'rgb(22, 86, 160)',
-                'rgb(141, 183, 60)'
+                'rgb(22, 86, 160)',
+                'rgb(141, 183, 60)',
+                 'rgb(15, 64, 119)',
+                  'rgb(95, 122, 40)'
             ],
             borderColor: [
              'rgb(22, 86, 160)',
-                'rgb(141, 183, 60)'  
+                'rgb(141, 183, 60)',
+                 'rgb(15, 64, 119)',
+                  'rgb(95, 122, 40)'  
             ],
             borderWidth: 0
         }]
