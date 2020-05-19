@@ -322,6 +322,11 @@
   dynamic_sidebar( 'pathways-widgets' );
   }
   //pathways
+  if ( is_page('online-programs') ) {
+  //custom department widgets
+  dynamic_sidebar( 'pathways-widgets' );
+  }
+  //pathways
   if ( is_page('20670') ) {
   //custom department widgets
   dynamic_sidebar( 'transfer-pathways-widgets' );

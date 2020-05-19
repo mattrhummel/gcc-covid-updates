@@ -94,7 +94,7 @@ $url = $image['url'];
 
                 <div class="callout" data-equalizer-watch>
                     
-                    <p class="h3"><?php the_title();?></p>
+                    <p class="h3"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></p>
                     
                     <p><?php the_field( 'event_date' ); ?><br/>
                     <?php the_field( 'event_location' ); ?></p>
@@ -105,10 +105,10 @@ $url = $image['url'];
 
            </div>
 
-<?php } endwhile; 
+<?php endwhile; 
 wp_reset_query();
 
- 
+} 
 
 ?>
 
