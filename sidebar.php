@@ -322,7 +322,7 @@
   dynamic_sidebar( 'pathways-widgets' );
   }
   //pathways
-  if ( is_page('online-programs') ) {
+  if ( is_page('online-degrees') ) {
   //custom department widgets
   dynamic_sidebar( 'pathways-widgets' );
   }
