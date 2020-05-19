@@ -33,6 +33,7 @@
       
       <div class="button-group stacked show-for-large">
         <a href="/admissions/request-information/" class="button primary expanded"><?php _e('Future Students', 'gcc-wp-2018') ?></a>
+        <a href="/pathways/online-degrees/" class="button primary expanded"><?php _e('online degrees', 'gcc-wp-2018') ?></a>
         <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
         <a href="/donate/" class="button primary expanded"><?php _e('give', 'gcc-wp-2018') ?></a>
       </div>
