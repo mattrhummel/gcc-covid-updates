@@ -27,8 +27,9 @@ get_header(); ?>
     <div class="columns small-12 large-9 float-left">
       
      <header>
-<h1><?php echo get_the_archive_title(); ?></h1>
-                <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
+    
+    <h1><?php echo get_the_archive_title(); ?></h1>
+    <nav aria-label="<?php _e('You are here:', 'gcc-wp-2018');?>" role="navigation">
           <div title="breadcrumbs trail">
             <ul class="breadcrumbs">
               <?php $home_page = get_the_title( get_option('page_on_front'));
@@ -93,7 +94,7 @@ $url = $image['url'];
 
                 <div class="callout" data-equalizer-watch>
                     
-                    <p class="h3"><a href="<?php the_permalink(); ?>"><?php the_title();?></a></p>
+                    <p class="h3"><?php the_title();?></p>
                     
                     <p><?php the_field( 'event_date' ); ?><br/>
                     <?php the_field( 'event_location' ); ?></p>
@@ -104,10 +105,10 @@ $url = $image['url'];
 
            </div>
 
-<?php endwhile; 
+<?php } endwhile; 
 wp_reset_query();
 
-} 
+ 
 
 ?>
 

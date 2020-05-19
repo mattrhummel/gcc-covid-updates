@@ -11,9 +11,7 @@
 */
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <?php
-  while ( have_posts() ) : the_post(); ?>
-   
+
    <div class="row expanded content-area">
     
       <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
@@ -46,37 +44,35 @@ get_header(); ?>
         </nav>
     </header>  
 
-<?php // ACF Image Object
+<?php 
+$args = array(
+  'post_type' => 'cw_events',
+  'posts_per_page'=> 10
 
-$image = get_field('calendar_image');
+);
+$query = new WP_Query( $args );
+
+  if($query->have_posts()) { 
+
+     while($query->have_posts()) : $query->the_post();
+?>
+
+
+<?php     // ACF Image Object
+
+$image = get_field('event_image');
 // vars
 $url = $image['url'];
 
 ?>
-  
-<?php
 
-        $args =  array (
-              'post_type' => 'cw_events',
-              'order'       => 'DESC',
-            );
-
-      $terms = get_terms( 'cw_event_categories' );
-      
-      // Get Taxonomy Terms ?>
-                 
-         <?php  if (( ! empty( $terms ))  ) { ?>
-
-            <?php foreach ( $terms as $term ) { ?>
-
-            <div class="row expanded" data-equalizer>
+<div class="row expanded" data-equalizer>
 
               <div class="columns medium-5">
 
                <div class="callout" style="background-color: #ffffff; padding: 0;" data-equalizer-watch>
 
-               <div style="background-image: url('<?php the_field( 'calendar_image', $term ); ?>'); background-size: cover; height: 300px; background-position: center center;" ></div>
-
+               <div style="background-image: url('<?php echo $url; ?>'); background-size: cover; height: 300px; background-position: center center;" ></div>
               </div>
 
             </div>
@@ -84,26 +80,26 @@ $url = $image['url'];
 
               <div class="callout" data-equalizer-watch>
    
-                  <h3><a href="<?php echo $term->slug; ?>">
+                  <h3>
                     
-                    <?php echo $term->name;  ?> </a>
+                    <?php the_title();  ?>
 
                   </h3>
                   
-                  <p><?php echo $term->description; ?></p>
-
+                  <p><?php the_field( 'event_date' ); ?></p>
+                  <p><?php the_field( 'event_location' ); ?></p>
                 </div>
 
              </div>
 
            </div>
-           <?php 
 
-             }
+<?php endwhile; 
+wp_reset_query();
 
-           } ?>
+} 
 
-    <?php endwhile; // End of the loop. ?>
+?>
 
   </div>
 </div>
