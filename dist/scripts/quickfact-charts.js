@@ -90,6 +90,44 @@ var agePie = new Chart(pieAge, {
 
     }
 });
+//graduation rates
+var pieStudentCount = document.getElementById('studentCountPie')
+var studentCountPie = new Chart(pieStudentCount, {
+    type: 'pie',
+    data: {
+    labels: ['Full-time', 'Part-time'],
+         datasets: [{
+            data: [31, 69],
+            backgroundColor: [
+             'rgb(22, 86, 160)',
+                'rgb(141, 183, 60)'
+            ],
+            borderColor: [
+             'rgb(22, 86, 160)',
+                'rgb(141, 183, 60)'  
+            ],
+            borderWidth: 0
+        }]
+    },
+    plugins: [ChartDataLabels],
+    options: {
+           plugins: {
+            // Change options for ALL labels of THIS CHART
+
+            datalabels: {
+                formatter: function(value, context) {
+                    return value + '%';
+                },
+                padding: 4,
+                color: '#ffff',
+                font: {
+                size: '20',
+                weight: '800'
+                }
+            }
+        }    
+    }
+});
 //faculty 
 var pieFaculty = document.getElementById('facultyPie');
 var facultyPie = new Chart(pieFaculty, {
