@@ -28,18 +28,17 @@ while ( have_posts() ) : the_post(); ?>
 
         </div>
       </div>
-
-    
+ 
 <?php 
 $args = 
     array(
         'posts_per_page' => -1,
+        'orderby' => 'title',
+        'order'   => 'ASC',
         'post_type' => 'gcc_programs',
         'meta_key'    => 'online_degree',
         'meta_value'  => 'yes'
     );
-
-
 
 $the_query = new WP_Query( $args ); ?>
 
@@ -47,8 +46,6 @@ $the_query = new WP_Query( $args ); ?>
 
 <div class="row expanded" data-equalizer style="padding-left: 10px; padding-right: 10px;">
 
-  <p class="h4"><?php _e('Business Pathways', 'gcc-wp-2018'); ?></p>
- 
   <?php
     while ( $the_query->have_posts() ) {
     $the_query->the_post();
@@ -61,6 +58,8 @@ $the_query = new WP_Query( $args ); ?>
       <h2 class="h5"><?php the_title(); ?></h2>
   </div>
     <div class="card-section">
+
+     <p class="h6"><?php the_field( 'program_description' ); ?></p>
      
         <p class="h6">Department Dean</p>
         <p><?php the_field( 'department_dean' );?></p>
