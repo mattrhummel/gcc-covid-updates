@@ -1,0 +1,95 @@
+.transfer-box {
+ 
+
+.transfer-partners {
+  
+  list-style: none;
+  margin-left: 0;
+
+
+  li {
+  
+    padding: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+
+ span  {
+        
+        font-weight: bold;
+        border: 5px solid #000000;
+        border-radius: 100%;
+        margin-right: 10px;
+        text-align: center;
+        display: inline-block;
+        line-height: 1;
+        top: -3px;
+      }
+
+    }
+
+     li.umw {
+      span{
+          color: #4D6B8B;
+          border: 5px solid #4D6B8B;
+              padding: 18px 8px;
+        }
+        }
+
+      li.vcu {
+             span{
+        color: #FFBA01;
+        border: 5px solid #FFBA01;
+         padding: 18px 12px;
+      }
+      }
+
+     li.gmu {
+           span{
+        color: #006940;
+        border: 5px solid #006940;
+            padding: 18px 11px;
+}
+      }
+
+     li.odu {
+           span{
+        color: #003057;
+        border: 5px solid #003057;
+            padding: 18px 12px;
+      }
+      }
+    li.jmu {
+           span{
+        color: #451B84;
+        border: 5px solid #451B84;
+            padding: 18px 12px;
+      }
+      }
+
+}
+}
+.circle-bullets {
+
+  list-style: none;
+  margin-left: 0;
+  li {
+     
+     margin-bottom: .4rem;
+      
+      span {
+        font-weight: 700;
+        background-color: $primary;
+        border-radius: 100%;
+        margin-right: 5px;
+        font-size: .95rem;
+        text-align: center;
+        display: inline-block;
+        line-height: .95;
+        color: $white;
+        padding: 6px 8px;
+        font-family: 'Times New Roman', san-serif;
+      }
+
+  }
+
+}
