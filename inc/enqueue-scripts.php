@@ -2,7 +2,6 @@
 function gcc_wp_2018_scripts() {
 wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '2020504', 'all' );
 
-
 if (is_page('germanna-at-a-glance')) wp_enqueue_script( 'gcc-wp-2018-chartjs', '//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.bundle.min.js', array(), '2.9.3', true );
 
 if (is_page('germanna-at-a-glance')) wp_enqueue_script( 'gcc-wp-2018-chartjs-labels', '//cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.7.0', array(), '0.7.0', true );

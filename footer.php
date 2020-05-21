@@ -102,5 +102,27 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 <?php
 }
 ?>
+<?php
+if ( is_page('11434') && is_page('home') && is_page('24') && is_page('40526') ) {  ?>
+<!-- begin SnapEngage code for counseling -->
+<script type="text/javascript">
+(function() {
+var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
+se.src = '//storage.googleapis.com/code.snapengage.com/js/6c8b2bc0-51a5-4181-817e-709cb15c4910.js';
+var done = false;
+se.onload = se.onreadystatechange = function() {
+if (!done&&(!this.readyState||this.readyState==='loaded'||this.readyState==='complete')) {
+done = true;
+/* Place your SnapEngage JS API code below */
+/* SnapEngage.allowChatSound(true); Example JS API: Enable sounds for Visitors. */
+}
+};
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
+})();
+</script>
+<!-- end SnapEngage code -->
+<?php
+}
+?>
 </body>
 </html>
