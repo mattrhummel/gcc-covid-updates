@@ -11,7 +11,7 @@ if (is_page('germanna-at-a-glance')) wp_enqueue_script( 'gcc-wp-2018-chartjs-scr
 
 wp_deregister_script( 'jquery' );
 
-wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js', array(), '1.10.2', true );
+wp_enqueue_script( 'jquery', '//ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js', array(), '1.10.2', true );
 
 wp_deregister_script( 'jquery-migrate' );
 
