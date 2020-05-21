@@ -51,11 +51,13 @@ get_header(); ?>
         ?>
         <ul class="tabs" data-tabs id="example-tabs">
           <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">
-          <?php _e('Tutoring appointments', 'gcc-wp-2018'); ?></a></li>
+          <?php _e('Tutoring Appointments', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel3c">
-          <?php _e('Math resources', 'gcc-wp-2018'); ?></a></li>
+          <?php _e('Math Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel4c">
-          <?php _e('Academic links ', 'gcc-wp-2018'); ?></a></li>
+          <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
+          <li class="tabs-title"><a href="#panel5c">
+          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
         </ul>
         <div class="tabs-content" data-tabs-content="example-tabs">
           <!-- Tab 1 -->
@@ -64,7 +66,7 @@ get_header(); ?>
           </div>
           <!-- Tab 3 -->
           <div class="tabs-panel" id="panel3c">
-            <h2><?php _e('Math resources', 'gcc-wp-2018'); ?></h2>
+            <h2><?php _e('Math Resources', 'gcc-wp-2018'); ?></h2>
             <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
             <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
             
@@ -119,11 +121,11 @@ get_header(); ?>
                         <?php endif; ?>
                         
                         <?php if ( get_sub_field( 'algebra_basics_handouts' ) ) : ?>
-                      </div>
+                       </div>
                       <!-- algebra basics tab -->
                       <div class="tabs-panel" id="basics-<?php the_sub_field('course_number')?>">
                         
-                        <h3><?php _e('Course essentials', 'gcc-wp-2018'); ?></h3>
+                        <h3><?php _e('Course Essentials', 'gcc-wp-2018'); ?></h3>
                         <hr>
                         <div class="callout primary small">
                           
@@ -153,15 +155,16 @@ get_header(); ?>
                   <div class="tabs-panel" id="panel4c">
                     <?php the_field( 'academic_links_content' ); ?>
                   </div>
+                  <div class="tabs-panel" id="panel5c">
+                    <?php the_field( 'virtual_math_center_content' ); ?>
+                  </div>
                 </div>
                 <?php the_field( 'additional_content' ); ?>
               </div>
               
             </div>
 
-
-      
-              </div><!--.pagecontent-->
+          </div><!--.pagecontent-->
 
 </article>
             <?php
