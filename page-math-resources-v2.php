@@ -52,12 +52,12 @@ get_header(); ?>
         <ul class="tabs" data-tabs id="example-tabs">
           <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">
           <?php _e('Tutoring Appointments', 'gcc-wp-2018'); ?></a></li>
+         <li class="tabs-title"><a href="#panel5c">
+          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel3c">
           <?php _e('Math Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel4c">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
-          <li class="tabs-title"><a href="#panel5c">
-          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
         </ul>
         <div class="tabs-content" data-tabs-content="example-tabs">
           <!-- Tab 1 -->
