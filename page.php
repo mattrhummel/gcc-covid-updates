@@ -74,10 +74,12 @@ while ( have_posts() ) : the_post(); ?>
         
         <div data-equalizer data-equalize-by-row="true" data-equalize-on="medium">
           
-          <?php get_template_part( 'template-parts/content', 'workforce-solutions' ); ?>
+          <?php the_content(); ?>
+          
           <h2><?php the_field('workforce_highlights_heading'); ?></h2>
           
           <?php get_template_part( 'template-parts/content', 'workforce-highlights' ); ?>
+        
         </div>
         <?php endif; ?>
         <?php if (is_page('40255')) : ; ?>
