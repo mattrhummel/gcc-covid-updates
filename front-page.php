@@ -56,7 +56,7 @@ get_header(); ?>
 <img style="width: 100%;" src="https://germannacc.staging.wpengine.com/wp-content/uploads/home-sign-up.jpg" width="300" height="300" />
 <p class="h4">Get the latest updates from Germanna</p>
 
-<?php do_shortcode( '[wpforms id="43666"]', false ); ?>
+<?php echo do_shortcode( '[wpforms id="43666"]'); ?>
 
 <p>By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</p>
 </div>
