@@ -119,9 +119,9 @@ function wpf_dev_form_redirect() {
     <script>
         jQuery(function($){
             $("form#wpforms-form-25133").click(function(){
-                var selectedval = $(".wpforms-form input[type='radio']:checked").val();
+                var selectedval = $(".wpforms-valid input[type='radio']:checked").val();
                 if(selectedval == "No"){
-                    window.location = "/";
+                    window.location = "/thank-you";
                 }
                 if(selectedval == "Yes"){
                     $(".wpforms-submit").addClass("show-submit");
