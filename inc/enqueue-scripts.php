@@ -20,8 +20,6 @@ wp_enqueue_script( 'gcc-wp-2018-lazy-load', get_template_directory_uri() . '/dis
 
 wp_enqueue_script( 'gcc-wp-2018-foundation', '//cdnjs.cloudflare.com/ajax/libs/foundation/6.6.1/js/foundation.min.js', array(), '20191025', true );
 
-wp_enqueue_script( 'gcc-wp-2018-pie-charts', get_template_directory_uri() . '/dist/scripts/pizza.min.js', array(), '3.0.0', true );
-
 
 //wp_enqueue_script( 'gcc-wp-2018-scripts', get_template_directory_uri() . '/dist/scripts/main.min.js', array(), '20191118', true );
 }
