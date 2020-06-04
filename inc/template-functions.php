@@ -96,3 +96,39 @@ function wpf_dev_process_smarttag( $content, $tag ) {
     return $content;
 }
 add_filter( 'wpforms_smart_tag_process', 'wpf_dev_process_smarttag', 10, 2 );
+add_action( 'wp_head', function () { ?>
+ 
+    <style>
+ 
+    #wpforms-form-25133 .wpforms-submit-container .wpforms-submit {
+            visibility:hidden;
+        }
+ 
+    #wpforms-form-25133 .wpforms-submit-container .wpforms-submit.show-submit {
+            visibility:visible;
+        }
+ 
+    </style>
+ 
+<?php } );
+ 
+ 
+// Conditional logic for Submit button for rn application
+function wpf_dev_form_redirect() {
+    ?>
+    <script>
+        jQuery(function($){
+            $("form#wpforms-form-25133").click(function(){
+                var selectedval = $(".wpforms-valid input[type='radio']:checked").val();
+                if(selectedval == "No"){
+                    window.location = "/thank-you";
+                }
+                if(selectedval == "Yes"){
+                    $(".wpforms-submit").addClass("show-submit");
+                }
+            });
+        });
+    </script>
+    <?php
+}
+add_action( 'wpforms_wp_footer', 'wpf_dev_form_redirect' );
