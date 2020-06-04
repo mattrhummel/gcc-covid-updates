@@ -7,14 +7,31 @@ display: block;
 position: relative;
 word-wrap: break-word;
 
+.logo {
+	margin-left: 20px;
+}
+
 html {
 	color: $white;
 
 }
 
+
 h1 {
+	font-size: 64px;
+	line-height: 66px;
+@media screen and (min-width: 40em) {
+
+font-size: 160px;
+line-height: 160px;
+}
+@media screen and (min-width: 64em) {
+
 	font-size: 200px;
-	line-height: 180px;
+line-height: 180px;
+}
+
+
 }
 
 p{

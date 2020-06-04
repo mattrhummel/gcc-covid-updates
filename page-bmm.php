@@ -9,7 +9,7 @@ while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   
     
-      <div class="row expanded" id="main" style="margin-top: 40px; margin-bottom: 180px;">
+      <div class="row expanded" id="main" style="margin-top: 40px; margin-bottom: 80px;">
 
         <div class="columns small-12">
 
@@ -17,7 +17,7 @@ while ( have_posts() ) : the_post(); ?>
 
           <div class="row expanded" style="margin-top: 60px;">
 
-            <div class="columns medium-8">
+            <div class="columns large-10">
          
              <?php
                 the_content();

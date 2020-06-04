@@ -8,7 +8,7 @@
 */
 ?>
 <!DOCTYPE html>
-<html class="no-js" <?php language_attributes(); ?>>
+<html <?php language_attributes(); ?>>
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,6 +26,6 @@
       <a href="#main" class="show-on-focus"><?php esc_html_e('skip to content', 'gcc-wp-2018') ?></a>
     </div>
 
-    <main class="clearfix">
+    <main>
 
-       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo" height="80px" width="168px;" /></a>
+       <a href="<?php bloginfo('url'); ?>" class="logo"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo" height="80px" width="168px;" /></a>
