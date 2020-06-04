@@ -28,4 +28,4 @@
 
     <main class="clearfix">
 
-       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
+       <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo" height="80px" width="168px;" /></a>
