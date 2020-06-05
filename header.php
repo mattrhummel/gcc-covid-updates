@@ -37,9 +37,9 @@
 
     <div class="bmm-banner" data-closable>
     
-     <div class="footer-logo">
+     <div class="logo">
 
-        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
+        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo" height="100" width="180"/></a>
 
       </div>
 
