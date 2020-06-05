@@ -77,7 +77,7 @@ align-items: center;
 justify-content: center; 
 flex-direction: column;
 
-	.footer-container {
+.footer-container {
 
 text-align: center;
 align-items: center;
@@ -89,6 +89,7 @@ ul {
 
  	li {
  		display: inline-block;
+ 		
  		a {
 				color: $white;
 				font-weight: bold;

@@ -53,7 +53,7 @@
     </p>
 
   </div>
-  <button class="close-button close-button-reveal" data-close aria-label="Close modal" type="button">
+  <button class="close-button-reveal" data-close aria-label="Close modal" type="button">
     <span class="fa fa-times" aria-hidden="true"></span>
   </button>
 </div>
