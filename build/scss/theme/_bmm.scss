@@ -30,8 +30,8 @@ h1 {
 
 
 }
-.wpforms-field-label {
-	color: $white;
+.wpforms-field-label, .wpforms-field-label-inline {
+	color: $white !important;
 }
 
 p {
