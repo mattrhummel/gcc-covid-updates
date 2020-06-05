@@ -2,7 +2,7 @@
 
 background-color: #000000;
 color: $white;
-padding: 0 40px 0 40px;
+padding: 20px 40px 20px 40px;
 display: block;
 position: relative;
 word-wrap: break-word;
@@ -22,13 +22,13 @@ h1 {
 	line-height: 66px;
 @media screen and (min-width: 40em) {
 
-font-size: 160px;
-line-height: 160px;
+font-size: 100px;
+line-height: 100px;
 }
 @media screen and (min-width: 64em) {
 
-	font-size: 200px;
-line-height: 180px;
+	font-size: 140px;
+line-height: 150px;
 }
 
 

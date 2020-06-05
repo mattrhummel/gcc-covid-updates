@@ -13,7 +13,7 @@ while ( have_posts() ) : the_post(); ?>
 
         <div class="columns small-12">
 
-          <?php the_title('<h1> #', '</h1>', 'gcc-wp-2018'); ?>
+          <?php the_title('<h1>', '</h1>', 'gcc-wp-2018'); ?>
 
           <div class="row expanded" style="margin-top: 60px;">
 
