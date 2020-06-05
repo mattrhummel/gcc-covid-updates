@@ -45,7 +45,7 @@
     
      <div class="footer-logo">
 
-        <a href="<?php bloginfo('url'); ?>"><img src="https://www.germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
+        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
 
       </div>
 
