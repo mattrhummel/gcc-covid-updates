@@ -47,9 +47,10 @@
     
     <h1>Black Minds Matter</h1>
     <a class="button" href="/blackmindsmatter">Learn more</a>
-    <p class="continue"><a class="subheader" data-close aria-label="Close modal" type="button">
-  Continue to Site<span class="fa fa-arrow-right" aria-hidden="true"></span></a></p>
-  </button>
+    <p>
+      <button class="continue" data-close aria-label="Close modal" type="button">
+      Continue to Site<span class="fa fa-arrow-right" aria-hidden="true"></span></button>
+    </p>
 
   </div>
   <button class="close-button close-button-reveal" data-close aria-label="Close modal" type="button">
