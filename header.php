@@ -39,7 +39,7 @@
     
      <div class="logo">
 
-        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/heartgermanna_nostroke.png" alt="white germanna logo" height="117" width="607"/></a>
+        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo" height="40" width="200"/></a>
 
       </div>
 
@@ -49,7 +49,8 @@
     <a class="button" href="/blackmindsmatter">Learn more</a>
     <p>
       <button class="continue" data-close aria-label="Close modal" type="button">
-      Continue to Site<span class="fa fa-arrow-right" aria-hidden="true"></span></button>
+        <span class="fa fa-arrow-right" aria-hidden="true"></span>
+      Continue to GERMANNA.COM</button>
     </p>
 
   </div>

@@ -23,7 +23,8 @@ background-size: cover;
 	align-item: flex-start;
 	position: absolute;
 	top: 40px;
-	height: 117px;
+	height: 100px;
+	width: 200px;
 }
 .callout {
 display: flex;
@@ -35,7 +36,8 @@ h1 {
 	text-transform: uppercase;
 }
 .button {
-	margin-bottom: 10px;
+	margin-top: 20px;
+	margin-bottom: 30px;
 
 }
 button.continue {
@@ -45,7 +47,7 @@ button.continue {
 	color: $white;
 	cursor: pointer;
   span {
-  	margin-left: 10px;
+  	margin-right: 10px;
   }
 }
 

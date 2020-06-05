@@ -12,11 +12,15 @@ html {
 
 }
 
+.logo {
+	margin-left: 18px;
+}
+
 h1 {
 	font-size: 42px;
 	line-height: 42px;
 	text-transform: uppercase;
-   padding-left: 10px;
+   	padding-left: 12px;
 }
 
 blockquote {
@@ -73,23 +77,26 @@ ul {
 
 footer {
 	display: flex;
-align-items: center;
-justify-content: center; 
+align-items: start;
+justify-content: start; 
 flex-direction: column;
 
 .footer-container {
 
-text-align: center;
-align-items: center;
+align-items: start;
 
+.logo {
+	margin-left: 24px;
+}
 ul {
 	margin-top: 20px;
+	margin-left: 25px;
  	list-style: none;
  	display: block;
 
  	li {
  		display: inline-block;
- 		
+
  		a {
 				color: $white;
 				font-weight: bold;
