@@ -30,8 +30,11 @@ h1 {
 
 
 }
-label, .wpforms-field-label, .wpforms-field-label-inline {
+
+form {
+	label, .wpforms-field-label, .wpforms-field-label-inline {
 	color: $white !important;
+	}
 }
 
 p {
@@ -42,10 +45,12 @@ ul {
 
 	li {
 		a {
-		  color: $white;
+		  	color: $white;
+			
 			&:hover {
-				color: $primary;
+				text-decoration: underline;
 			}
+			
 		}
 	}
 
