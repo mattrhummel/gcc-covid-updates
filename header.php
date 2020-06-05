@@ -43,7 +43,9 @@
  -->
     <div class="full reveal" id="exampleModal1" data-reveal data-open>
    <div class="footer-logo">
-      <a href="<?php bloginfo('url'); ?>"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo"/></a>
+
+      <a href="<?php bloginfo('url'); ?>"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
+      
     </div>
 
   <div class="callout secondary">
