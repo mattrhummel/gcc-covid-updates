@@ -12,7 +12,7 @@ word-wrap: break-word;
 }
 
 html {
-	color: $white !important;
+	color: $white;
 
 }
 
@@ -30,9 +30,25 @@ h1 {
 
 
 }
+.wpforms-field-label {
+	color: $white;
+}
 
-p{
+p {
 	font-size: 18px;
+}
+
+ul {
+
+	li {
+		a {
+		  color: $white;
+			&:hover {
+				color: $primary;
+			}
+		}
+	}
+
 }
 
 .subheader {
