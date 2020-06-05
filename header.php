@@ -42,19 +42,21 @@
 <!-- <p><a data-open="exampleModal1">Click me for a modal</a></p>
  -->
     <div class="full reveal" id="exampleModal1" data-reveal data-open>
-   <div class="footer-logo">
+    
+     <div class="footer-logo">
 
-      <a href="<?php bloginfo('url'); ?>"><img src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
-      
-    </div>
+        <a href="<?php bloginfo('url'); ?>"><img src="/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo"/></a>
+
+      </div>
 
   <div class="callout secondary">
-  <h1>Black Minds Matter</h1>
+    
+    <h1>Black Minds Matter</h1>
     <a class="button" href="/blackmindsmatter">Learn more</a>
 
   </div>
-  <button class="close-button" data-close aria-label="Close modal" type="button">
-    <span aria-hidden="true">&times;</span>
+  <button class="close-button close-button-reveal" data-close aria-label="Close modal" type="button">
+    <span class="fa fa-times" aria-hidden="true"></span>
   </button>
 </div>
 
