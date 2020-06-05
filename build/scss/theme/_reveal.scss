@@ -1,13 +1,18 @@
 .full.reveal {
 
-	position: absolute;
-	top: 0;
-	left: 0;
-	z-index: 1000000;
-	background-color: #000000;
-	text-align: center;
-	color: $white;
+position: absolute;
+top: 0;
+left: 0;
+z-index: 1000000;
+background-color: #000000;
+text-align: center;
+display: flex;
+align-items: center;
+justify-content: center; 
+flex-direction: column;
 
+
+color: $white;
 	   &:focus {
 	    	outline: none;
 			outline-style: none;
@@ -17,5 +22,13 @@
 .reveal-overlay {
 	    margin: 0;
 	    padding: 0;
+	    display: block;
+ 		background-repeat:no-repeat;
+		background-size: cover;
+		background-position: left;
+		height:100% !important;
+		width: 100% !important;
+	    z-index: 9999999 !important;
+z-index: 10000000;
 
 }
