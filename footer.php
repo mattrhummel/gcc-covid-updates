@@ -12,6 +12,7 @@
 <?php //closing main container, do not remove ?>
 </main>
 
+
 <?php  //setup alert from parent page and pulls the field into subpages.
 $page_footer_contact = get_field('page_footer_contact');
 global $post;
@@ -103,7 +104,7 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 }
 ?>
 <?php
-if ( is_page('11434') || is_page('8') || is_page('24') || is_page('40526') || is_page('20') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
+if ( is_page('11434') || is_page('24') || is_page('40526') || is_page('20') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
 <!-- begin SnapEngage code for counseling -->
 <script type="text/javascript">
 (function() {

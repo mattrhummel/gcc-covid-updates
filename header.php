@@ -30,6 +30,27 @@
       get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
+
+<script>jQuery(document).ready(function($) {
+  if($.cookie('showed_modal') != "true") {
+    $("#exampleModal1").foundation("open");
+    $.cookie('showed_modal', 'true', { expires: 7, path: '/'}); 
+  }
+});</script>
+
+<!-- <p><a data-open="exampleModal1">Click me for a modal</a></p>
+ -->
+<div class="full reveal" id="exampleModal1" data-reveal data-open>
+  <div class="callout secondary">
+  <h1>Black Minds Matter</h1>
+    <a class="button" href="/blackmindsmatter">Learn more</a>
+
+  </div>
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+    <span aria-hidden="true">&times;</span>
+  </button>
+</div>
+
     <div class="off-canvas-wrapper no-js">
       <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
         <?php main_menu(); //main sidebar navigation ?>
@@ -37,4 +58,6 @@
           <?php  //quicklinks
           get_template_part( 'template-parts/content', 'quicklinks' );
           ?>
+
           <main class=" clearfix">
+
