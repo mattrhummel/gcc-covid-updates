@@ -7,29 +7,34 @@ display: block;
 position: relative;
 word-wrap: break-word;
 
-.logo {
-	margin-left: 20px;
-}
-
 html {
 	color: $white;
 
 }
 
 h1 {
-	font-size: 64px;
-	line-height: 66px;
-@media screen and (min-width: 40em) {
-	font-size: 60px;
-	line-height: 60px;
-}
-@media screen and (min-width: 64em) {
-	font-size: 80px;
-	line-height: 80px;
-}
-
+	font-size: 42px;
+	line-height: 42px;
+	text-transform: uppercase;
 
 }
+
+blockquote {
+	background-color: #000000;
+	color: $white;
+	border-left: none;
+	padding: .5625rem 1.25rem 0 0;
+
+
+	p {
+		color: $white;
+	}
+
+	cite {
+		color: $white;
+	}
+}
+
 form {
 	label, .wpforms-field-label, .wpforms-field-label-inline {
 	color: $white !important;
@@ -40,9 +45,6 @@ p {
 	font-size: 18px;
 }
 
-.blockquote {
-	background-color: #000000;
-}
 
 ul {
 

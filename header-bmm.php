@@ -28,4 +28,8 @@
 
     <main>
 
-       <a href="<?php bloginfo('url'); ?>" class="logo"><img src="<?php echo get_theme_mod( 'gcc_wp_2018_mobile_logo' ); ?> " alt="white germanna logo" height="80px" width="168px;" /></a>
+       <div class="logo">
+
+        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/heartgermanna_nostroke.png" alt="white germanna logo" height="117" width="607"/></a>
+
+      </div>
