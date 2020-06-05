@@ -30,18 +30,12 @@
       get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
- <?php if (is_page('home')) : ; ?>
-  <script>jQuery(document).ready(function($) {
-    if($.cookie('showed_modal') != "true") {
-    $("#exampleModal1").foundation("open");
-    $.cookie('showed_modal', 'true', { expires: 7, path: '/'}); 
-  }
-});
-</script>
+<?php if (is_page('home')) : ; ?>
 
 <!-- <p><a data-open="exampleModal1">Click me for a modal</a></p>
  -->
-    <div class="full reveal" id="exampleModal1" data-reveal data-open>
+
+    <div class="bmm-banner" data-closable>
     
      <div class="footer-logo">
 

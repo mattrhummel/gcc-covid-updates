@@ -1,5 +1,4 @@
-.full.reveal {
-
+.bmm-banner {
 position: absolute;
 top: 0;
 left: 0;
@@ -10,13 +9,15 @@ display: flex;
 align-items: center;
 justify-content: center; 
 flex-direction: column;
-
 color: $white;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+	   background-size: cover;
 	   &:focus {
 	    	outline: none;
 			outline-style: none;
 	    }
-}
 
 .fa-times {
 	color: $white;
@@ -27,17 +28,5 @@ color: $white;
 	font-weight: bold;
 	font-size: 1.8rem;
 }
-
-.reveal-overlay {
-	    margin: 0;
-	    padding: 0;
-	    display: block;
- 		background-repeat:no-repeat;
-		background-size: cover;
-		background-position: left;
-		height:100% !important;
-		width: 100% !important;
-	    z-index: 9999999 !important;
-z-index: 10000000;
 
 }
