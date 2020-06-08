@@ -6,29 +6,24 @@ padding: 20px 40px 20px 40px;
 display: block;
 position: relative;
 word-wrap: break-word;
-
 html {
 	color: $white;
 
 }
-
 .logo {
 	margin-left: 14px;
 }
-
 h1 {
 	font-size: 42px;
 	line-height: 42px;
 	text-transform: uppercase;
    	padding-left: 12px;
 }
-
 blockquote {
 	background-color: #000000;
 	color: $white;
 	border-left: none;
 	padding: .5625rem 1.25rem 0 0;
-
 
 	p {
 		color: $white;
@@ -38,18 +33,14 @@ blockquote {
 		color: $white;
 	}
 }
-
 form {
 	label, .wpforms-field-label, .wpforms-field-label-inline {
 	color: $white !important;
 	}
 }
-
 p {
 	font-size: 18px;
 }
-
-
 ul {
 
 	li {
@@ -65,18 +56,8 @@ ul {
 	}
 
 }
-
-.subheader {
-	color: $white;
-}
-
-.lead {
-
-	font-size: 28px;
-}
-
 footer {
-	display: flex;
+display: flex;
 align-items: start;
 justify-content: start; 
 flex-direction: column;

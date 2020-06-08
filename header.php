@@ -50,7 +50,7 @@
     <p>
       <button class="continue" data-close aria-label="Close modal" type="button">
         <span class="fa fa-arrow-right" aria-hidden="true"></span>
-      Continue to GERMANNA.COM</button>
+      Continue to Germanna.edu</button>
     </p>
 
   </div>
