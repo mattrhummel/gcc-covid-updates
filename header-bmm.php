@@ -27,9 +27,3 @@
     </div>
 
     <main>
-
-       <div class="logo">
-
-        <a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/heartgermanna_nostroke.png" alt="white germanna logo" height="117" width="607"/></a>
-
-      </div>
