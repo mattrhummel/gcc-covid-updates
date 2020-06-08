@@ -1,11 +1,18 @@
 #bmm {
-
 background-color: #000000;
 color: $white;
-padding: 20px 40px 20px 40px;
+padding: 20px 10px 20px 10px;
 display: block;
 position: relative;
 word-wrap: break-word;
+
+@media screen and (min-width: 40em) {
+
+	padding: 20px 40px 20px 40px;
+	min-height: 100vh;
+
+}
+
 html {
 	color: $white;
 }
@@ -16,7 +23,6 @@ html {
 	    	outline: none;
 			outline-style: none;
 	    }
-
 	    .close-button {
 	    	color: $white;
 	    }
@@ -38,7 +44,6 @@ blockquote {
 	p {
 		color: $white;
 	}
-
 	cite {
 		color: $white;
 	}
@@ -80,10 +85,14 @@ display: flex;
 align-items: start;
 justify-content: start; 
 flex-direction: column;
-
+@media screen and (min-width: 40em) {
+position: absolute;
+bottom: 0;
+}
 .footer-container {
 
 align-items: start;
+
 
 .logo {
 	margin-left: 24px;

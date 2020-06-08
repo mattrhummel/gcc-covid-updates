@@ -10,7 +10,7 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 	<?php
 	while ( have_posts() ) : the_post(); ?>
-	<div class="row expanded content-area">
+	<div class="row expanded content-area" style="padding-bottom: 60px;">
 		
 	    <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
       <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
@@ -55,18 +55,6 @@ get_header(); ?>
 
 	</div>
 	
-	<div class="row expanded entry-footer">
-		<footer>
-			<?php //last modified page test
-			$u_time = get_the_time('U');
-			$u_modified_time = get_the_modified_time('U');
-			if ($u_modified_time >= $u_time + 86400) {
-			echo "<p>Last modified on ";
-				the_modified_time('F j, Y');
-			"</p> "; }  ?>
-			<?php gcc_wp_2018_entry_footer(); ?>
-			<footer>
-			</div>
 			<?php endwhile; // End of the loop. ?>
 		</article>
 		<?php
