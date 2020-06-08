@@ -10,7 +10,12 @@ html {
 	color: $white;
 }
 .reveal {
-	background-color: #000000;
+	background-color: #000000 !important;
+
+	   &:focus {
+	    	outline: none;
+			outline-style: none;
+	    }
 }
 .logo {
 	margin-left: 14px;
