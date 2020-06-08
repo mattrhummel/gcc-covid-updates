@@ -25,6 +25,15 @@ html {
 	    .close-button {
 	    	color: $white;
 	    }
+	    .button {
+	background-color: $white;
+	color: #000000; 
+
+		&:hover {
+			text-decoration: underline;
+		}
+	
+}
 }
 .button {
 	background-color: $white;
