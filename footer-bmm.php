@@ -17,5 +17,16 @@
 
 </footer>
 
+<?php wp_footer(); ?>
+<script>
+
+$(document).foundation();
+
+$(function() {
+$('.lazy').Lazy();
+});
+
+</script>
+
 </body>
 </html>
