@@ -45,7 +45,7 @@
 
   <div class="callout secondary">
     
-   <p><img src="https://www.germanna.edu/wp-content/uploads/black-minds-matter.png" alt="Black Minds Matter" height='45px' width="569px" /></p>
+   <p><img src="https://www.germanna.edu/wp-content/uploads/black-minds-matter.png" alt="Black Minds Matter" height='25px' width="529px" /></p>
     <a class="button" href="/blackmindsmatter">Learn more</a>
     <p>
       <button class="continue" data-close aria-label="Close modal" type="button">
