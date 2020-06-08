@@ -5,7 +5,7 @@
 
 	<div class="footer-container">
 
-<a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo" height="68" width="117" class="logo"/></a>
+	<a href="<?php bloginfo('url'); ?>"><img src="https://germannacc.staging.wpengine.com/wp-content/uploads/gcc-logo-white-small.svg" alt="white germanna logo" height="88" width="127" class="logo"/></a>
 
 
 <ul>

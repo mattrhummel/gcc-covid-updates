@@ -45,7 +45,7 @@
 
   <div class="callout secondary">
     
-    <h1>Black Minds Matter</h1>
+   <p><img src="https://www.germanna.edu/wp-content/uploads/black-minds-matter.png" alt="Black Minds Matter" /></p>
     <a class="button" href="/blackmindsmatter">Learn more</a>
     <p>
       <button class="continue" data-close aria-label="Close modal" type="button">
