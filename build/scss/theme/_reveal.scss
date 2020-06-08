@@ -31,24 +31,16 @@ display: flex;
 align-items: center;
 justify-content: center; 
 flex-direction: column;
-h1 {
-	font-size: 32px;
-	text-transform: uppercase;
-}
+
 .button {
 	margin-top: 20px;
 	margin-bottom: 30px;
 
 }
 button.continue {
-	font-size: 24px;
-	font-weight: bold;
 	padding: 0;
 	color: $white;
 	cursor: pointer;
-  span {
-  	margin-right: 10px;
-  }
 }
 
 }
@@ -58,8 +50,6 @@ button.continue {
 	position: absolute;
 	right: 10px;
 	top: 10px;
-	font-weight: bold;
-	font-size: 1.8rem;
 }
 
 }
