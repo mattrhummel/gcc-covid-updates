@@ -1,5 +1,5 @@
 .bmm-banner {
-position: absolute;
+position: fixed;
 top: 0;
 left: 0;
 z-index: 1000000;
@@ -23,8 +23,8 @@ background-size: cover;
 	align-item: flex-start;
 	position: absolute;
 	top: 40px;
-	height: 100px;
-	width: 200px;
+	height: 80px;
+	width: 180px;
 }
 .callout {
 display: flex;
@@ -38,7 +38,6 @@ flex-direction: column;
 
 }
 button.continue {
-	font-size: 18px;
 	padding: 0;
 	color: $white;
 	cursor: pointer;
