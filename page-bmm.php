@@ -8,11 +8,11 @@ get_header( 'bmm' ); ?>
 while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     
-      <div class="row expanded" id="main" class="content">
+      <div class="row expanded" id="main">
 
         <div class="columns small-12">
 
-          <div class="row expanded" style="margin-top: 60px;" class="content">
+          <div class="row expanded" style="margin-top: 60px;">
 
             <div class="columns large-10">
          
