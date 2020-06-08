@@ -44,6 +44,13 @@ html {
 		}
 	
 }
+p {
+	color: $white;
+
+	a {
+		color: $white;
+	}
+}
 blockquote {
 	background-color: #000000;
 	color: $white;
