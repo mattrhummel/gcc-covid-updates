@@ -26,9 +26,9 @@ html {
 	    	color: $white;
 	    }
 	    .button {
-	background-color: $white;
-	color: #000000; 
-
+	    	background-color: $white;
+			color: #000000; 
+	
 		&:hover {
 			text-decoration: underline;
 		}
@@ -41,8 +41,7 @@ html {
 
 		&:hover {
 			text-decoration: underline;
-		}
-	
+		}	
 }
 p {
 	color: $white;
@@ -65,7 +64,7 @@ blockquote {
 	}
 }
 .accordion-content {
-	background-color: #000000;
+	background-color: rgba(0,0,0, .88);
 }
 .accordion-title {
 	color: $white;
