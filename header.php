@@ -35,7 +35,7 @@
 <!-- <p><a data-open="exampleModal1">Click me for a modal</a></p>
  -->
 
-    <div class="bmm-banner" data-closable>
+<!--   <div class="bmm-banner" data-closable>
     
      <div class="logo">
 
@@ -55,7 +55,7 @@
     </p>
 
   </div>
-</div>
+</div> -->
 
 <?php endif; ?>
 
