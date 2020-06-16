@@ -264,6 +264,11 @@
   dynamic_sidebar( 'mcdi-widgets' );
   }
   //marketing
+  if ( is_page('27584')) {
+  //custom department widgets
+  dynamic_sidebar( 'marketing-widgets' );
+  }
+  //marketing
   if ( is_page('79')) {
   //custom department widgets
   dynamic_sidebar( 'marketing-widgets' );

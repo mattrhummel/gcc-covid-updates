@@ -23,15 +23,24 @@ while ( have_posts() ) : the_post(); ?>
         </div>
       </div>
 
-<ul class="tabs" data-tabs id="example-tabs">
-  <li class="tabs-title is-active"><a href="#logos">Logos</a></li>
-  <li class="tabs-title"><a data-tabs-target="templates" href="#templates">Templates</a></li>
-  <li class="tabs-title"><a href="#zoom-backgrounds" aria-selected="true">Zoom Backgrounds</a></li>
-  <li class="tabs-title"><a data-tabs-target="coloring-pages" href="#coloring-pages">Coloring Pages</a></li>
+
+<ul class="tabs" id="example-tabs" data-tabs role="tablist">
+  <li class="tabs-title is-active" role="presentation">
+    <a href="#logos" role="tab" tabindex="0" aria-selected="false" aria-controls="logos">Logos</a>
+  </li>
+  <li class="tabs-title" role="presentation">
+    <a data-tabs-target="templates" href="#templates" role="tab" tabindex="0" aria-selected="false" aria-controls="templates">Templates</a>
+  </li>
+  <li class="tabs-title" role="presentation">
+    <a href="#zoom-backgrounds" aria-selected="false" role="tab" tabindex="0" aria-controls="zoom-backgrounds">Zoom Backgrounds</a>
+  </li>
+  <li class="tabs-title" role="presentation">
+    <a data-tabs-target="coloring-pages" href="#coloring-pages" role="presentation" role="tab" tabindex="0" aria-selected="false" aria-controls="coloring-pages">Coloring Pages</a>
+  </li>
 </ul>
 
 <div class="tabs-content" data-tabs-content="example-tabs">
-  <div class="tabs-panel  is-active" id="logos">
+  <div class="tabs-panel  is-active" id="logos" role="tabpanel" aria-hidden="true" >
     <?php 
 $args = array(
 'post_status' => 'inherit',
@@ -84,7 +93,7 @@ wp_reset_postdata();
 
 ?>
   </div>
-  <div class="tabs-panel" id="zoom-backgrounds">
+  <div class="tabs-panel" id="zoom-backgrounds" role="tabpanel" aria-hidden="true" >
     
 <?php 
 $args = array(
@@ -140,7 +149,7 @@ wp_reset_postdata();
 
 
   </div>
-  <div class="tabs-panel" id="coloring-pages">
+  <div class="tabs-panel" id="coloring-pages" role="tabpanel" aria-hidden="true" >
     <?php 
 $args = array(
 'post_status' => 'inherit',
@@ -187,13 +196,13 @@ $the_query = new WP_Query( $args ); ?>
 }  ?>
 
 </div>
-
+s
 <?php /* Restore original Post Data */
 wp_reset_postdata();
 
 ?>
   </div>
-   <div class="tabs-panel" id="templates">
+   <div class="tabs-panel" id="templates" role="tabpanel" aria-hidden="true" >
 
     <h2><?php _e('Templates', 'gcc-wp-2018'); ?></h2>
 
