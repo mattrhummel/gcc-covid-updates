@@ -43,6 +43,11 @@ html {
 			text-decoration: underline;
 		}	
 }
+.card {
+	background-color: #000000;
+	color: $white;
+border: 1px solid $white;
+}
 p {
 	color: $white;
 
