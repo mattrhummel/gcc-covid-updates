@@ -56,75 +56,56 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="row expanded">
   <div class="columns medium-6">
-<form method="post" action="<?php echo $_SERVER['PHP_SELF']; ?>">
-  <label for="program_degree">Find programs by Pathway</label>
-<select name="program_degree" id="degree" class="postform" onchange="submit();">
-        <option selected="selected">Degree Type</option>
-        <option value="as">Associate of Applied Science</option>
-        <option value="aa-and-s">Associate of Arts &amp; Sciences</option>
-         <option value="certificate">Certificate</option>
+<form action="" method="GET" id="pathway-list">
+ <label for="program-pathway">Find programs by pathway</label>
+
+<select name="program-pathway" id="program-pathway" onchange="submit();">
+
+<option value="allprograms" <?php echo ($_GET['program-pathway'] == '1') ? ' selected="selected"' : ''; ?>>Show all</option>   
+
+ <?php 
+ $terms = get_terms('taxonomy=pathway_name&post_type=gcc_programs'); // you can use any taxonomy, instead of just 'category'
+ $count = count($terms); //How many are they?
+ if ( $count > 0 ){  //If there are more than 0 terms
+ foreach ( $terms as $term ) {  //for each term:
+
+    echo '<option value="'.$term->name.'"';
+    echo ($_GET['program-pathway'] == ''.$term->name.'') ? ' selected="selected"' : '';
+    echo '>'.$term->name.'</option>';
+}
+ } 
+ ?>
 </select>
 </form>
 </div>
 <div class="columns medium-6">
 
-<form action="" method="GET" id="newslist">
- <label for="programdegree">Find programs by degree</label>
-<select name="programdegree" id="programdegree" onchange="submit();">
-<option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
-<?php 
-    $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
-    foreach ($categories as $category) : 
-    echo '<option value="'.$category->name.'"';
-    echo ($_GET['programdegree'] == ''.$category->name.'') ? ' selected="selected"' : '';
-    echo '>'.$category->name.'</option>';
-    endforeach; 
-?>
+<form action="" method="GET" id="program-list">
+ <label for="program-degree">Find programs by degree</label>
+
+<select name="program-degree" id="program-degree" onchange="submit();">
+
+<option value="allprograms" <?php echo ($_GET['program-degree'] == '1') ? ' selected="selected"' : ''; ?>>Show all</option>   
+
+ <?php 
+ $terms = get_terms('taxonomy=program_degree&post_type=gcc_programs'); // you can use any taxonomy, instead of just 'category'
+ $count = count($terms); //How many are they?
+ if ( $count > 0 ){  //If there are more than 0 terms
+ foreach ( $terms as $term ) {  //for each term:
+
+    echo '<option value="'.$term->name.'"';
+    echo ($_GET['program-degree'] == ''.$term->name.'') ? ' selected="selected"' : '';
+    echo '>'.$term->name.'</option>';
+}
+ } 
+ ?>
 </select>
 </form>
+
 </div>
 </div>
 
-<?php // let the queries begin 
-$paged = ( get_query_var('paged') ) ? get_query_var('paged') : 1;  
-if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby' => 'DATE',
-    'paged' => $paged
-    ) ); 
-} else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programdegree']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby' => 'DATE',
-    'paged' => $paged,
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'program_degree',
-        'field' => 'name',
-        'terms' => $programcategory
-        ) 
-    ) 
-    ));
-}
-if ($programlist->have_posts()) :
-while ( $programlist->have_posts() ) : $programlist->the_post(); 
-?>
 
-<?php endwhile; 
-else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-<?php if(function_exists('wp_pagenavi')) {
-    wp_pagenavi(array('query' => $programlist));
-    } else {
-    echo 'Please enable WP-PageNavi!';
-    } ?> 
-<?php wp_reset_query(); ?>
 </div>
 
 </div>

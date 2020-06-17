@@ -128,13 +128,13 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 <?php if ( is_page('8') ) { ?>
 <script>
 if (Boolean(readCookie('hide'))) {
-                $('.bmm-banner').hide();
-                $('.bmm-banner').fadeOut(1000);
+                $('.closing').hide();
+                $('.closing').fadeOut(1000);
             }
             
-            $('.continue').click(function (e) {
+            $('.close-button-alert').click(function (e) {
 
-                $('.bmm-banner').fadeOut(700);
+                $('.closing').fadeOut(700);
                 e.stopPropagation();
 
                 createCookie('hide', true, 1)

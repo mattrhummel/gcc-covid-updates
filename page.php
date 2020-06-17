@@ -111,7 +111,7 @@ while ( have_posts() ) : the_post(); ?>
         
         <iframe id="form-76b1356d-d85d-4bd1-a890-12addb2746a2" class="blackbaud-donation-form" title="Donation Form"
 
-        style="background-color: white; max-width: 600px; min-width: 320px; min-height: 1200px; width: 100%; height: 100%; border: none;">
+        style="background-color: white; max-width: 700px; min-width: 320px; min-height: 1200px; width: 100%; height: 100%; border: none;">
 
 </iframe>
 
