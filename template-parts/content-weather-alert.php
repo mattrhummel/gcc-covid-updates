@@ -5,12 +5,12 @@ $sign_up_for_alerts_text = get_field('sign_up_for_alerts_text', 'option');
 $alerts_url = get_field('alerts_url', 'option');
 //Column 1 Heading
 if( !empty($closing_announcement_text) ): ?>
-<div id="closeAnnouncement" class="callout small closing alert hide-for-print" data-closable>
+<div id="closeAnnouncement" class="callout small closing alert hide-for-print" data-closable style="text-align: center;">
   <div class="row expanded">
-    <div class="small-11 columns ">
+    <div class="small-11 columns">
       <?php //Alert Text
       if( !empty($weather_alert_heading) ): ?>
-      <p style="text-align: center;"><?php echo $closing_announcement_text ?> 
+      <p><?php echo $closing_announcement_text ?> 
 
       <?php //Alert Text
       if( !empty($sign_up_for_alerts_text) ): ?>
