@@ -20,7 +20,6 @@ while ( have_posts() ) : the_post(); ?>
                 the_content();
               ?>
           
-
           <?php
           $args =  array (
           'post_type' => 'post',
