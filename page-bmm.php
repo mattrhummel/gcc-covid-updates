@@ -20,8 +20,7 @@ while ( have_posts() ) : the_post(); ?>
                 the_content();
               ?>
           
-          <h2>Resources</h2>
-          
+
           <?php
           $args =  array (
           'post_type' => 'post',
@@ -36,6 +35,9 @@ while ( have_posts() ) : the_post(); ?>
           <?php
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
+
+                      <h2>Resources</h2>
+
           <?php while ( $query->have_posts() ) : $query->the_post();?>
           
           <div class="card" style="padding: 1rem;">
@@ -50,7 +52,7 @@ while ( have_posts() ) : the_post(); ?>
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
           <?php else : ?>
-          <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
+          <p><?php esc_html_e( 'Sorry, no resources to display', 'gcc-wp-2018'); ?></p>
           <?php endif; ?>
         </div>
 
