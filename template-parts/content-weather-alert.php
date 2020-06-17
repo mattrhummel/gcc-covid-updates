@@ -10,7 +10,7 @@ if( !empty($closing_announcement_text) ): ?>
     <div class="small-11 columns ">
       <?php //Alert Text
       if( !empty($weather_alert_heading) ): ?>
-      <p><?php echo $closing_announcement_text ?> 
+      <p style="text-align: center;"><?php echo $closing_announcement_text ?> 
 
       <?php //Alert Text
       if( !empty($sign_up_for_alerts_text) ): ?>
@@ -18,7 +18,7 @@ if( !empty($closing_announcement_text) ): ?>
       <?php _e('|', 'gcc-wp-2018') ?><a href="<?php the_field( 'alerts_url', 'options' ); ?>"> <?php the_field( 'sign_up_for_alerts_text', 'options' ); ?></a>
 
       <?php endif; ?>
-      
+
       </p>
       <?php endif; ?>
     </div>
