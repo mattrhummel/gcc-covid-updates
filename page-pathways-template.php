@@ -147,7 +147,7 @@ endif;
 </div>
 </div>
 
-</div>
+
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
