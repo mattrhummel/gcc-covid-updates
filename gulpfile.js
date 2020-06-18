@@ -22,7 +22,7 @@ gulp.task('php', function() {
 
 gulp.task('browser-sync', ['php'], function() {
   browserSync({
-       proxy: "http://localhost:8888/refresh/",
+       proxy: "http://localhost:8888/covid-updates/",
        open: true,
        notify: false
   });
