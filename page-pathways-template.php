@@ -57,15 +57,15 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
   <div class="columns medium-6">
 
-<form action="" method="GET" id="program-list">
- <label for="programdegree">Find programs by pathway</label>
-<select name="programdegree" id="programdegree" onchange="submit();">
-<option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
+<form action="" method="GET" id="pathway-list">
+ <label for="programpathway">Find programs by pathway</label>
+<select name="programpathway" id="programdegree" onchange="submit();">
+<option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
 <?php 
-    $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
+    $categories = get_categories('taxonomy=pathway_namese&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
     echo '<option value="'.$category->name.'"';
-    echo ($_GET['programdegree'] == ''.$category->name.'') ? ' selected="selected"' : '';
+    echo ($_GET['programpathway'] == ''.$category->name.'') ? ' selected="selected"' : '';
     echo '>'.$category->name.'</option>';
     endforeach; 
 ?>
