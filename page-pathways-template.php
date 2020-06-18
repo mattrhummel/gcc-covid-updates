@@ -99,34 +99,34 @@ while ( have_posts() ) : the_post(); ?>
 </form>
 
 <?php // let the queries begin 
-if( !isset($_GET['programsearch, programdegree, programpathway']) || '' == $_GET['programsearch, programdegree, programpathway']) {
+if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
     
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
-    'orderby' => 'DATE'
+    'orderby' => 'TITLE',
+    'order' => 'ASC'
     ) ); 
 
 } 
 else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programsearch, programdegree, programpathway']; //get sort value
+    $programcategory = $_GET['programpathway, programdegree']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
     'orderby' => 'TITLE',
     'order' => 'DESC',
     'tax_query' => array(
-      'relation' => 'AND', 
         array(
         'taxonomy' => 'program_degree',
         'field' => 'name',
         'terms' => $programcategory
         ) 
     ),
-    array( 
+      array( 
         'taxonomy' => 'pathway_names',
-        'terms' => name,
-        'field' => 'slug', 
+        'field' => 'name', 
+        'terms' => $programcategory
     ), 
     ));
 
