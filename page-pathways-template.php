@@ -54,11 +54,14 @@ while ( have_posts() ) : the_post(); ?>
   </form>
 </div>
 </div>
-<div class="row expanded">
-  <div class="columns medium-6">
 
-<form action="" method="GET" id="pathway-list">
- <label for="programpathway">Find programs by pathway</label>
+<form action="" method="GET" id="pathways">
+
+<div class="row expanded">
+
+<div class="columns medium-6">
+
+<label for="programpathway">Find programs by pathway</label>
 <select name="programpathway" id="programpathway" onchange="submit();">
 <option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
 <?php 
@@ -70,15 +73,12 @@ while ( have_posts() ) : the_post(); ?>
     endforeach; 
 ?>
 </select>
-</form>
 
 </div>
 
 <div class="columns medium-6">
 
-
-<form action="" method="GET" id="program-list">
- <label for="programdegree">Find programs by degree</label>
+<label for="programdegree">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
 <option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
 <?php 
@@ -90,23 +90,23 @@ while ( have_posts() ) : the_post(); ?>
     endforeach; 
 ?>
 </select>
+
+</div>
+</div>
+
 </form>
 
-
-
-</div>
-</div>
-
 <?php // let the queries begin 
-
 if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
+    
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
-    'orderby' => 'DATE',
-    'paged' => $paged
+    'orderby' => 'DATE'
     ) ); 
-} else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+} 
+
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
     $programcategory = $_GET['programdegree']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
@@ -121,16 +121,52 @@ if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
         ) 
     ) 
     ));
+    $pathwaycategory = $_GET['programpathway']; //get sort value
+    $pathwaylist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'pathway_names',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ) 
+    ));
 }
 
-
-
-
 if ($programlist->have_posts()) : ?>
+
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
 
+<li>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
+</li>
+
+<?php endwhile; ?> 
+</ul>
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); 
+
+if ($pathwaylist->have_posts()) : ?>
+
+<ul>
+<?php while ( $pathwaylist->have_posts() ) : $pathwaylist->the_post(); 
+?>
 
 <li>
 <a href="<?php echo the_permalink(); ?>">
