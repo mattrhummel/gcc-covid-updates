@@ -112,7 +112,7 @@ if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
     'orderby' => 'TITLE',
-    'order' => 'ASC',
+    'order' => 'DESC',
     'tax_query' => array(
         array(
         'taxonomy' => 'program_degree',
@@ -123,16 +123,23 @@ if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
     ));
 }
 
+
+
+
 if ($programlist->have_posts()) : ?>
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
+
 
 <li>
 <a href="<?php echo the_permalink(); ?>">
 <?php 
   the_title();?>
 </a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
 </li>
 
 <?php endwhile; ?> 
