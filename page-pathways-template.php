@@ -59,10 +59,10 @@ while ( have_posts() ) : the_post(); ?>
 
 <form action="" method="GET" id="pathway-list">
  <label for="programpathway">Find programs by pathway</label>
-<select name="programpathway" id="programdegree" onchange="submit();">
+<select name="programpathway" id="programpathway" onchange="submit();">
 <option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
 <?php 
-    $categories = get_categories('taxonomy=pathway_namese&post_type=gcc_programs'); 
+    $categories = get_categories('taxonomy=pathway_names&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
     echo '<option value="'.$category->name.'"';
     echo ($_GET['programpathway'] == ''.$category->name.'') ? ' selected="selected"' : '';
