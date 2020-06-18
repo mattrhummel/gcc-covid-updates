@@ -121,20 +121,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
         ) 
     ) 
     ));
-    $pathwaycategory = $_GET['programpathway']; //get sort value
-    $pathwaylist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby' => 'TITLE',
-    'order' => 'DESC',
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'pathway_names',
-        'field' => 'name',
-        'terms' => $programcategory
-        ) 
-    ) 
-    ));
+    
 }
 
 if ($programlist->have_posts()) : ?>
@@ -162,6 +149,23 @@ endif;
 
 <?php wp_reset_query(); 
 
+else {
+
+$pathwaycategory = $_GET['programpathway']; //get sort value
+    $pathwaylist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'pathway_names',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ) 
+    ));
+}
 if ($pathwaylist->have_posts()) : ?>
 
 <ul>
@@ -186,6 +190,7 @@ endif;
 ?>  
 
 <?php wp_reset_query(); ?>
+
 
 </div>
 </div>
