@@ -297,6 +297,7 @@ if ( is_singular() ) :
 			<li><a href="/about-germanna/locations/">Locations</a></li>			
 			<li><a href="/veterans/">Military & Families</a></li>
 			<li><a href="/admissions/transcript-request/">Transcripts</a></li>
+			<li><a href="/academic-center-for-excellence/">Tutoring</a></li>
 			<!-- ... -->
 		</ul>
 	</li>
@@ -327,6 +328,7 @@ function gcc_wp_2018_resources_desktop() { ?>
 <li><a href="/about-germanna/locations/">Locations</a></li>
 <li><a href="/veterans/">Military & Families</a></li>
 <li><a href="/admissions/transcript-request/">Transcripts</a></li>
+	<li><a href="/academic-center-for-excellence/">Tutoring</a></li>
 </ul>
 </li>
 <li  class="green-button"><a href="/donate/">give</a></li>
