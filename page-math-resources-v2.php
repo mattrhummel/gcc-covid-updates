@@ -75,16 +75,16 @@ get_header(); ?>
                   <div class="row">
                     
                     <!-- course tabs -->
-                    <ul class="tabs" data-tabs id="example-tabs">
+                    <ul class="tabs" data-tabs id="dropdown-tabs">
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <li class="tabs-title"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review topics', 'gcc-wp-2018'); ?></a></li>
+                      <li class="tabs-title is-active"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review topics', 'gcc-wp-2018'); ?></a></li>
                       <?php endif; ?>
                       <?php if ( get_sub_field( 'algebra_basics_handouts' ) ) : ?>
                       <li class="tabs-title"><a data-tabs-target="basics-<?php the_sub_field('course_number')?>" href="#basics-<?php the_sub_field('course_number')?>"><?php _e('Course essentials', 'gcc-wp-2018'); ?></a></li>
                       <?php endif; ?>
                     </ul>
                     <!-- .tabs-nav -->
-                    <div class="tabs-content" data-tabs-content="example-tabs">
+                    <div class="tabs-content" data-tabs-content="dropdown-tabs">
                       <!-- review topics tab -->
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
                       <div class="tabs-panel is-active" id="review-<?php the_sub_field('course_number')?>">
@@ -143,17 +143,14 @@ get_header(); ?>
                     </ul>
                     <?php endif; ?>
                   </div>
-             
                   <div class="tabs-panel" id="virtual-math-center">
                     <?php the_field( 'virtual_math_center_content' ); ?>
                   </div>
-
                   <div class="tabs-panel" id="academic-links">
                     <?php the_field( 'academic_links_content' ); ?>
                   </div>
-
                 </div>
-                  <?php the_field( 'additional_content' ); ?>
+                <?php the_field( 'additional_content' ); ?>
               </div>
               
             </div>
