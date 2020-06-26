@@ -143,11 +143,7 @@ get_header(); ?>
                     </ul>
                     <?php endif; ?>
                   </div>
-                </div>
-
-                  <!-- .end of math resources tab -->
-                  <!-- Tab 4 -->
-
+             
                   <div class="tabs-panel" id="virtual-math-center">
                     <?php the_field( 'virtual_math_center_content' ); ?>
                   </div>
