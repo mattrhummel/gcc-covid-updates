@@ -60,77 +60,94 @@ get_header(); ?>
         <div class="tabs-content" data-tabs-content="math-resources-tabs">
           <div class="tabs-panel is-active" id="math-course-resources">
             <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
-            <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
-            <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
+            <p><strong><?php _e('Review Topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
+            <p><strong><?php _e('Course Essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
             
             <?php if ( have_rows( 'accordion_item' ) ) : ?>
             <ul class="accordion"  data-accordion data-allow-all-closed="true">
+              
               <?php while ( have_rows( 'accordion_item' ) ) : the_row(); ?>
               <li class="accordion-item" data-accordion-item>
                 <!-- Accordion tab title -->
                 <a href="#" class="accordion-title"><?php the_sub_field( 'accordion_item_title' ); ?></a>
-                <!-- Accordion tab content: it would start in the open state due to using the `is-active` state class. -->
-                <div class="accordion-content" data-tab-content>
+
+                  <div class="accordion-content" data-tab-content>
+                  
                   <h2><?php the_sub_field( 'accordion_item_title' ); ?></h2>
                   <div class="row">
                     
-                    <!-- course tabs -->
                     <ul class="tabs" data-tabs id="dropdown-tabs">
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <li class="tabs-title is-active"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review topics', 'gcc-wp-2018'); ?></a></li>
+                      
+                      <li class="tabs-title is-active"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review Topics', 'gcc-wp-2018'); ?></a></li>
+
                       <?php endif; ?>
+
                       <?php if ( get_sub_field( 'algebra_basics_handouts' ) ) : ?>
-                      <li class="tabs-title"><a data-tabs-target="basics-<?php the_sub_field('course_number')?>" href="#basics-<?php the_sub_field('course_number')?>"><?php _e('Course essentials', 'gcc-wp-2018'); ?></a></li>
+
+                      <li class="tabs-title"><a data-tabs-target="basics-<?php the_sub_field('course_number')?>" href="#basics-<?php the_sub_field('course_number')?>"><?php _e('Course Essentials', 'gcc-wp-2018'); ?></a></li>
+
                       <?php endif; ?>
                     </ul>
-                    <!-- .tabs-nav -->
+
                     <div class="tabs-content" data-tabs-content="dropdown-tabs">
-                      <!-- review topics tab -->
+
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <div class="tabs-panel is-active" id="review-<?php the_sub_field('course_number')?>">
                         
-                        <h3><?php _e('Review topics', 'gcc-wp-2018'); ?></h3>
+                       <div class="tabs-panel is-active" id="review-<?php the_sub_field('course_number')?>">
+                        
+                        <h3><?php _e('Review Topics', 'gcc-wp-2018'); ?></h3>
+
                         <hr>
+
                         <style>
                         .accordion-content ul {
                         margin-bottom:  0;
                         }
                         </style>
+
                         <div class="callout primary small">
                           
                           <h3><?php _e('Handouts', 'gcc-wp-2018'); ?></h3>
                           
-                          <!-- handouts content -->
                           <?php the_sub_field( 'review_handouts' ); ?>
                           
                         </div>
+
                         <div class="callout primary small">
+
                           <h3><?php _e('Videos', 'gcc-wp-2018'); ?></h3>
                           
-                          <!-- videos content -->
                           <?php the_sub_field( 'review_videos' ); ?>
+
                         </div>
                         
                         <?php endif; ?>
                         
                         <?php if ( get_sub_field( 'algebra_basics_handouts' ) ) : ?>
+
                        </div>
-                      <!-- algebra basics tab -->
-                      <div class="tabs-panel" id="basics-<?php the_sub_field('course_number')?>">
+
+                        <div class="tabs-panel" id="basics-<?php the_sub_field('course_number')?>">
                         
                         <h3><?php _e('Course Essentials', 'gcc-wp-2018'); ?></h3>
+
                         <hr>
+
                         <div class="callout primary small">
                           
                           <h3><?php _e('Handouts', 'gcc-wp-2018'); ?></h3>
-                          <!-- handouts content -->
+
                           <?php the_sub_field( 'algebra_basics_handouts' ); ?>
+                          
                         </div>
+
                         <div class="callout primary small">
+                          
                           <h3><?php _e('Videos', 'gcc-wp-2018'); ?></h3>
                           
-                          <!-- videos content -->
                           <?php the_sub_field( 'algebra_basics_videos' ); ?>
+                        
                         </div>
                         
                       </div>
@@ -141,21 +158,26 @@ get_header(); ?>
                       </li>  <!-- .accordion-item -->
                       <?php endwhile; ?>
                     </ul>
+
                     <?php endif; ?>
+
                   </div>
+
                   <div class="tabs-panel" id="virtual-math-center">
                     <?php the_field( 'virtual_math_center_content' ); ?>
                   </div>
+
                   <div class="tabs-panel" id="academic-links">
                     <?php the_field( 'academic_links_content' ); ?>
                   </div>
+
                 </div>
                 <?php the_field( 'additional_content' ); ?>
               </div>
               
             </div>
 
-          </div><!--.pagecontent-->
+          </div>
 
 </article>
             <?php
