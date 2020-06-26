@@ -52,9 +52,9 @@ get_header(); ?>
         <ul class="tabs" data-tabs id="example-tabs">
           <li class="tabs-title is-active"><a href="#panel3c">
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
-          <li class="tabs-title"><a href="#panel5c">
-          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel4c">
+          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
+          <li class="tabs-title"><a href="#panel5c">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
         <div class="tabs-content" data-tabs-content="example-tabs">
@@ -143,14 +143,19 @@ get_header(); ?>
                     </ul>
                     <?php endif; ?>
                   </div>
+                </div>
+     
                   <!-- .end of math resources tab -->
                   <!-- Tab 4 -->
+
                   <div class="tabs-panel" id="panel4c">
-                    <?php the_field( 'academic_links_content' ); ?>
-                  </div>
-                  <div class="tabs-panel" id="panel5c">
                     <?php the_field( 'virtual_math_center_content' ); ?>
                   </div>
+
+                  <div class="tabs-panel" id="panel5c">
+                    <?php the_field( 'academic_links_content' ); ?>
+                  </div>
+
                 </div>
                 <?php the_field( 'additional_content' ); ?>
               </div>
