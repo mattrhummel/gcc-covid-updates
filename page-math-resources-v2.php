@@ -54,7 +54,6 @@ get_header(); ?>
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel5c">
           <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
-          
           <li class="tabs-title"><a href="#panel4c">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
@@ -146,7 +145,7 @@ get_header(); ?>
                   </div>
                   <!-- .end of math resources tab -->
                   <!-- Tab 4 -->
-                  <div class="tabs-pane " id="panel4c">
+                  <div class="tabs-panel" id="panel4c">
                     <?php the_field( 'academic_links_content' ); ?>
                   </div>
                   <div class="tabs-panel" id="panel5c">
