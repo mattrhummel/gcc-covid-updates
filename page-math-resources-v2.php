@@ -87,7 +87,7 @@ get_header(); ?>
                     <div class="tabs-content" data-tabs-content="example-tabs">
                       <!-- review topics tab -->
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <div class="tabs-panel" id="review-<?php the_sub_field('course_number')?>">
+                      <div class="tabs-panel is-active" id="review-<?php the_sub_field('course_number')?>">
                         
                         <h3><?php _e('Review topics', 'gcc-wp-2018'); ?></h3>
                         <hr>
