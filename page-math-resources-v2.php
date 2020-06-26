@@ -59,7 +59,7 @@ get_header(); ?>
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
         <div class="tabs-content" data-tabs-content="example-tabs">
-          <div class="tabs-panel" id="panel3c">
+          <div class="tabs-panel is-active" id="panel3c">
             <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
             <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
             <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
@@ -78,7 +78,7 @@ get_header(); ?>
                     <!-- course tabs -->
                     <ul class="tabs" data-tabs id="example-tabs">
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <li class="tabs-title is-active"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review topics', 'gcc-wp-2018'); ?></a></li>
+                      <li class="tabs-title"><a href="#review-<?php the_sub_field('course_number')?>" aria-selected="true"><?php _e('Review topics', 'gcc-wp-2018'); ?></a></li>
                       <?php endif; ?>
                       <?php if ( get_sub_field( 'algebra_basics_handouts' ) ) : ?>
                       <li class="tabs-title"><a data-tabs-target="basics-<?php the_sub_field('course_number')?>" href="#basics-<?php the_sub_field('course_number')?>"><?php _e('Course essentials', 'gcc-wp-2018'); ?></a></li>
@@ -88,7 +88,7 @@ get_header(); ?>
                     <div class="tabs-content" data-tabs-content="example-tabs">
                       <!-- review topics tab -->
                       <?php if ( get_sub_field( 'review_handouts' ) ) : ?>
-                      <div class="tabs-panel is-active" id="review-<?php the_sub_field('course_number')?>">
+                      <div class="tabs-panel" id="review-<?php the_sub_field('course_number')?>">
                         
                         <h3><?php _e('Review topics', 'gcc-wp-2018'); ?></h3>
                         <hr>
@@ -146,7 +146,7 @@ get_header(); ?>
                   </div>
                   <!-- .end of math resources tab -->
                   <!-- Tab 4 -->
-                  <div class="tabs-panel" id="panel4c">
+                  <div class="tabs-pane " id="panel4c">
                     <?php the_field( 'academic_links_content' ); ?>
                   </div>
                   <div class="tabs-panel" id="panel5c">
