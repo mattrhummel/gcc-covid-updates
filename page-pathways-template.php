@@ -140,7 +140,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 
 <li>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php tf('curriculum_url'); ?>">
 <?php 
   the_title();?>
 </a>
