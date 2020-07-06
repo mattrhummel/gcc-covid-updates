@@ -137,10 +137,14 @@ if ($programlist->have_posts()) : ?>
 
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
+
+$curriculum_url = get_field('curriculum_url');
+
 ?>
 
+
 <li>
-<a href="<?php tf('curriculum_url'); ?>">
+<a href="<?php echo $curriculum_url ?>">
 <?php 
   the_title();?>
 </a>
