@@ -47,9 +47,14 @@ get_header(); ?>
         </nav>
       </header>
       
+<<<<<<< HEAD
   
 
       <div class="callout">
+=======
+    
+   <div class="callout">
+>>>>>>> df1d1454bc2297122d9a69dc19badf7a8e8b4489
      
       <div class="row">
       <div class="columns medium-6">
@@ -61,6 +66,7 @@ get_header(); ?>
         <p><?php echo esc_html( $degreeterm->description ); ?></p>
         <?php endif; ?>
 
+<<<<<<< HEAD
         <?php 
         $pathwayterm = get_field('pathway_names');
         if( $pathwayterm ): ?>
@@ -82,6 +88,19 @@ get_header(); ?>
 
     <p><?php the_field( 'program_description' ); ?></p>
       
+=======
+    </div>
+      <div class="columns medium-6" style="text-align: right;">
+
+        <p class="h4" style="text-transform: uppercase">Financial aid eligible</p>
+        
+
+
+      </div>
+    </div> 
+   </div>
+
+>>>>>>> df1d1454bc2297122d9a69dc19badf7a8e8b4489
      
     </div>
     

@@ -47,7 +47,11 @@ while ( have_posts() ) : the_post(); ?>
     <form role="search" method="get">
     <div class="input-group">
   
+<<<<<<< HEAD
       <label for="programsearch">Search for a program</label> 
+=======
+      <label for="programsearch" style="display:none;">Search</label> 
+>>>>>>> df1d1454bc2297122d9a69dc19badf7a8e8b4489
       <input type="text" name="programsearch" id="program-search" class="input-group-field">
       
       <div class="input-group-button">
