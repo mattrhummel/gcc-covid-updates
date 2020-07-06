@@ -82,11 +82,7 @@ while ( have_posts() ) : the_post(); ?>
   <p><?php the_field( 'program_description' ); ?></p>
     
   </div>
-    <div class="columns medium-6" style="text-align: right;">
 
-      <p class="h4" style="text-transform: uppercase">Financial aid eligible</p>
-      
-    </div>
   </div> 
  </div>
    
