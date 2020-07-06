@@ -62,6 +62,24 @@
   color: $white;
 }
 
+.accordion-content {
+  background-color: $success;
+    p {
+    margin-bottom: 0;
+    color: $white;
+   }
+
+   ul li {
+    color: $white;
+   }
+}
+.accordion-title {
+  color: $white;
+  background-color: $success;
+  text-decoration: none;
+
+}
+
 }
 .callout.secondary {
 

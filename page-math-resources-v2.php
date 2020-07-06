@@ -50,23 +50,17 @@ get_header(); ?>
         the_content();
         ?>
         <ul class="tabs" data-tabs id="example-tabs">
-          <li class="tabs-title is-active"><a href="#panel1c" aria-selected="true">
-          <?php _e('Tutoring Appointments', 'gcc-wp-2018'); ?></a></li>
-         <li class="tabs-title"><a href="#panel5c">
+          <li class="tabs-title is-active"><a href="#panel3c">
+          <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
+          <li class="tabs-title"><a href="#panel5c">
           <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
-          <li class="tabs-title"><a href="#panel3c">
-          <?php _e('Math Resources', 'gcc-wp-2018'); ?></a></li>
+          
           <li class="tabs-title"><a href="#panel4c">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
         <div class="tabs-content" data-tabs-content="example-tabs">
-          <!-- Tab 1 -->
-          <div class="tabs-panel is-active" id="panel1c">
-            <?php the_field( 'tutoring_appointments_content' ); ?>
-          </div>
-          <!-- Tab 3 -->
           <div class="tabs-panel" id="panel3c">
-            <h2><?php _e('Math Resources', 'gcc-wp-2018'); ?></h2>
+            <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
             <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
             <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
             

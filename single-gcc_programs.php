@@ -47,62 +47,40 @@ get_header(); ?>
         </nav>
       </header>
       
-      <?php // if the page has a featured image
-      if  (has_post_thumbnail( ) )  { ?>
-      <div class="hero-section hide-for-print visible-for-medium-up hidden-for-small-only" id="featured-image" data-toggler="hide" style="margin-bottom: 20px;">
-        <?php the_post_thumbnail('', array ('alt' => false));  ?>
-      </div>
-      <?php  }  else {  //.pagesubbanner
-      // if page doesn't have a featured image
-      ?>
-      <?php } ?>
+  
 
+      <div class="callout">
+     
+      <div class="row">
+      <div class="columns medium-6">
 
+        <?php 
+        $degreeterm = get_field('program_degree');
+        if( $degreeterm ): ?>
+        <h2><?php echo esc_html( $degreeterm->name ); ?></h2>
+        <p><?php echo esc_html( $degreeterm->description ); ?></p>
+        <?php endif; ?>
 
+        <?php 
+        $pathwayterm = get_field('pathway_names');
+        if( $pathwayterm ): ?>
+        <p><strong>Area of Study</strong><?php echo  $pathwayterm->term; ?></p>
+        <?php endif; ?>
 
-    <div class="row" data-equalizer>
-      <div class="columns medium-8">
-        <div class="callout small large" data-equalizer-watch>
-          
-         <h2 class="h3">Program Description</h2>
-          <?php the_field( 'program_description' ); ?>
-
-        </div>
-      </div>
-      <div class="columns medium-4">
-        <div class="callout warning small" data-equalizer-watch>
-
-          <h3 class="h4">Financial Aid & Tuition Details</h3>
-      
-            <p>Financial Aid Eligible: <?php the_field( 'financial_aid_eligible' ); ?></p>
-            <p>Number of Credits: <?php the_field('number_of_credits'); ?></p>
-            <p>Program Cost: $<?php the_field('program_cost'); ?></p>
-            <p>Options: <?php the_field( 'full_or_part_time' ); ?></p>
-          
-        </div>
-      </div>
     </div>
+      <div class="columns medium-6" style="text-align: right;">
 
-      <div class="row" data-equalizer>
-        <div class="columns medium-4">
-          <div class="callout success small" data-equalizer-watch>
-            <p class="h3">Department Dean</p>
-            <p><?php the_field( 'department_dean' );?></p>
-          </div>
-        </div>
-        <div class="columns medium-4">
-          <div class="callout secondary small"  data-equalizer-watch>
-            <p class="h3">Program Chair</p>
-            <p><?php the_field( 'program_chair' ); ?></p>
-          </div>
-        </div>
-        <div class="columns medium-4">
-          <div class="callout alert small"  data-equalizer-watch>
-            <p class="h3">Pathway Type</p>
-            <p><?php the_field( 'pathway_type' ); ?></p>
-          </div>
-        </div>
+        <p class="h4" style="text-transform: uppercase">Financial aid eligible</p>
+        
+
+
       </div>
+    </div> 
+   </div>
+
+    <h2>Program Purpose</h2>
+
+    <p><?php the_field( 'program_description' ); ?></p>
       
      
     </div>

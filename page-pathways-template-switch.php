@@ -40,24 +40,22 @@ while ( have_posts() ) : the_post(); ?>
       <div class="row expanded">
   <div class="columns medium-10">
     <h2>Search and Filter Programs</h2>
-
-  <form action="" method="GET" id="pathways">
-
-    <?php /* You can also leave 'action' blank: action="" */ ?>
-    <form role="search" method="get">
+<?php /* You can also leave 'action' blank: action="" */ ?>
+<form role="search" method="get" action="<?php echo get_home_url(); ?>/search_gcse/">
     <div class="input-group">
   
-      <label for="programsearch">Search for a program</label> 
-      <input type="text" name="programsearch" id="program-search" class="input-group-field">
+      <label for="q" style="display:none;">Search</label> 
+      <input type="text" name="q" id="search-field" class="input-group-field">
       
       <div class="input-group-button">
-        <button id="searchsubmit-desktop" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+        <button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
       </div>
     </div>
   </form>
 </div>
 </div>
 
+<form action="" method="GET" id="pathways">
 
 <div class="row expanded">
 
@@ -99,18 +97,17 @@ while ( have_posts() ) : the_post(); ?>
 </form>
 
 <?php // let the queries begin 
-if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
+if( !isset($_GET['programdegree']) || '' == $_GET['programdegree']) {
     
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
-    'orderby' => 'TITLE',
-    'order' => 'ASC'
+    'orderby' => 'DATE'
     ) ); 
-
 } 
+
 else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway, programdegree']; //get sort value
+    $programcategory = $_GET['programdegree']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
@@ -122,12 +119,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
         'field' => 'name',
         'terms' => $programcategory
         ) 
-    ),
-      array( 
-        'taxonomy' => 'pathway_names',
-        'field' => 'name', 
-        'terms' => $programcategory
-    ), 
+    ) 
     ));
 
 }
@@ -158,7 +150,59 @@ endif;
 
 <?php wp_reset_query(); ?>
 
+<?php // let the queries begin 
+if( !isset($_GET['programpathway']) || '' == $_GET['programpathway']) {
+    
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'DATE'
+    ) ); 
+} 
 
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+    $programcategory = $_GET['programpathway']; //get sort value
+    $pathwaylist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'pathway_name',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ) 
+    ));
+
+}
+
+if ($pathwaylist->have_posts()) : ?>
+
+<ul>
+<?php while ( $pathwaylist->have_posts() ) : $pathwaylist->the_post(); 
+?>
+
+<li>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
+</li>
+
+<?php endwhile; ?> 
+</ul>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); ?>
 
 </div>
 </div>
