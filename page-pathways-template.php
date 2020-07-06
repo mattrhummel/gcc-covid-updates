@@ -39,7 +39,7 @@ while ( have_posts() ) : the_post(); ?>
 
       <div class="row expanded">
   <div class="columns medium-10">
-    <h2>Search and Filter Programs</h2>
+    <h2>Search and Filter Programs of Study</h2>
 
   <form action="" method="GET" id="pathways">
 
