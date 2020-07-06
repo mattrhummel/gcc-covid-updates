@@ -29,25 +29,23 @@ while ( have_posts() ) : the_post(); ?>
   ?>
   </aside>
 
-        <div class="columns small-12 large-9 float-left">
+<div class="columns small-12 large-9 float-left">
    <header>
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
               <?php the_breadcrumb() ?> 
-          </header>
+  </header>
     
     <div class="entry-content" id="main">
 
       <div class="row expanded">
   <div class="columns medium-10">
-    <h2>Search and Filter Programs of Study</h2>
+    <h2>Search and Filter Programs</h2>
 
-  <form action="" method="GET" id="pathways">
+  <form action="" method="GET" id="pathways_search">
 
     <?php /* You can also leave 'action' blank: action="" */ ?>
-    <form role="search" method="get">
     <div class="input-group">
   
-      <label for="programsearch">Search for a program</label> 
       <label for="programsearch" style="display:none;">Search</label> 
       <input type="text" name="programsearch" id="program-search" class="input-group-field">
       
@@ -55,10 +53,8 @@ while ( have_posts() ) : the_post(); ?>
         <button id="searchsubmit-desktop" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
       </div>
     </div>
-  </form>
 </div>
 </div>
-
 
 <div class="row expanded">
 
@@ -99,75 +95,48 @@ while ( have_posts() ) : the_post(); ?>
 
 </form>
 
-<?php // let the queries begin 
-if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
-    
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby' => 'TITLE',
-    'order' => 'ASC'
-    ) ); 
-
-} 
-else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway, programdegree']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby' => 'TITLE',
-    'order' => 'DESC',
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'program_degree',
-        'field' => 'name',
-        'terms' => $programcategory
-        ) 
-    ),
-      array( 
-        'taxonomy' => 'pathway_names',
-        'field' => 'name', 
-        'terms' => $programcategory
-    ), 
-    ));
-
-}
-
-if ($programlist->have_posts()) : ?>
-
-<ul>
-<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
-
-$curriculum_url = get_field('curriculum_url');
+<?php if(!empty ( $_GET['programpathway'] )) {
 
 ?>
 
+<h2>Pathways</h2>
 
-<li>
-<a href="<?php echo $curriculum_url ?>">
+<?php
+
+}
+
+else;
+
+?>
+
+<?php if(!empty( $_GET['programdegree'] )) {
+
+?>
+
+<p>Degrees</p>
+
+<?php
+
+}
+
+else;
+
+?>
+
+<?php if(!empty( $_GET['programpathway'] ) && !empty( $_GET['programdegree'] )) {
+
+?>
+
+<p>pathway and degree selected test</p>
+
 <?php 
-  the_title();?>
-</a>
-<?php if( get_field('online_degree') == 'yes' ) { ?>
- online
-<?php } ?>
-</li>
 
-<?php endwhile; ?> 
-</ul>
+}
 
-<?php else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-
-<?php wp_reset_query(); ?>
-
-
+?>
 
 </div>
 </div>
-
 
 </article>
 <?php endwhile; // End of the loop. ?>
