@@ -95,35 +95,215 @@ while ( have_posts() ) : the_post(); ?>
 
 </form>
 
-<?php if(!empty ( $_GET['programpathway'] )) {
+<?php if(empty ( $_GET['programpathway'] ) && !empty ( $_GET['programdegree'])) {
+
+?>
+
+<h2>Pathways and Degrees</h2>
+
+<?php if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
+    
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'ASC'
+    ) ); 
+
+} 
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+    $programcategory = $_GET['programpathway, programdegree']; //get sort value
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'program_degree',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ),
+      array( 
+        'taxonomy' => 'pathway_names',
+        'field' => 'name', 
+        'terms' => $programcategory
+    ), 
+    ));
+
+}
+
+if ($programlist->have_posts()) : ?>
+
+<ul>
+<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
+?>
+
+<li>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
+</li>
+
+<?php endwhile; ?> 
+</ul>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); ?>
+
+
+
+<?php
+
+
+}
+
+elseif
+
+(!empty ( $_GET['programpathway'] )) {
 
 ?>
 
 <h2>Pathways</h2>
 
+<?php if( !isset($_GET['programpathway'])) {
+    
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'ASC'
+    ) ); 
+
+} 
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+    $programcategory = $_GET['programpathway']; //get sort value
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'pathway_names',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ), 
+    ));
+
+}
+
+if ($programlist->have_posts()) : ?>
+
+<ul>
+<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
+?>
+
+<li>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
+</li>
+
+<?php endwhile; ?> 
+</ul>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); ?>
+
+
+<?php
+
+
+}
+
+elseif
+
+(!empty( $_GET['programdegree'] )) {
+
+?>
+
+<h2>Degrees</h2>
+
+<?php if( !isset($_GET['programdegree'])) {
+    
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'ASC'
+    ) ); 
+
+} 
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+    $programcategory = $_GET['programdegree']; //get sort value
+    $programlist = new WP_Query( array(
+    'post_type' => 'gcc_programs', 
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC',
+    'tax_query' => array(
+        array(
+        'taxonomy' => 'program_degree',
+        'field' => 'name',
+        'terms' => $programcategory
+        ) 
+    ), 
+    ));
+
+}
+
+if ($programlist->have_posts()) : ?>
+
+<ul>
+<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
+?>
+
+<li>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+ online
+<?php } ?>
+</li>
+
+<?php endwhile; ?> 
+</ul>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); ?>
+
 <?php
 
 }
 
-else;
+elseif
 
-?>
-
-<?php if(!empty( $_GET['programdegree'] )) {
-
-?>
-
-<p>Degrees</p>
-
-<?php
-
-}
-
-else;
-
-?>
-
-<?php if(!empty( $_GET['programpathway'] ) && !empty( $_GET['programdegree'] )) {
+ (!empty( $_GET['programpathway'] ) && !empty( $_GET['programdegree'] )) {
 
 ?>
 
