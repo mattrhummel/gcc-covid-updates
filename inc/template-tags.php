@@ -220,6 +220,7 @@ if ( is_singular() ) :
 	//mobile calltos
 	function gcc_wp_2018_callto_buttons_mobile() { ?>
 	<div class="button-group stacked-for-small expanded button-group">
+		 <a href="/admissions/request-information/" class="button success"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
 	    <a href="/admissions/request-information/" class="button primary"><?php _e('future students', 'gcc-wp-2018') ?></a>
 	    <a href="/pathways/online-degrees/" class="button alert"><?php _e('online degrees', 'gcc-wp-2018') ?></a>
 		<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
@@ -230,6 +231,7 @@ if ( is_singular() ) :
 	//main menu calltos
 	function gcc_wp_2018_callto_buttons_main_menu() { ?>
 	<div class="button-group stacked show-for-large">
+		 <a href="/admissions/request-information/" class="button success"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
 	<a href="/admissions/request-information/" class="button primary expanded"><?php _e('future students', 'gcc-wp-2018') ?></a>
 		<a href="/pathways/online-degrees/" class="button alert"><?php _e('online degrees', 'gcc-wp-2018') ?></a>
 		<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
