@@ -205,6 +205,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
+
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
@@ -272,6 +273,9 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 }
 
 if ($programlist->have_posts()) : ?>
+
+    <h2><?php echo $programcategory->name ?>Pathways</h2>
+
 
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
