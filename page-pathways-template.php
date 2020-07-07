@@ -208,9 +208,9 @@ if ($programlist->have_posts()) : ?>
 <ul>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
-
+<?php $curriculum_url = get_field('curriculum_url'); ?>
 <li>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php echo $curriculum_url ?>">
 <?php 
   the_title();?>
 </a>
@@ -277,8 +277,9 @@ if ($programlist->have_posts()) : ?>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
 
+<?php $curriculum_url = get_field('curriculum_url'); ?>
 <li>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php echo $curriculum_url ?>">
 <?php 
   the_title();?>
 </a>
