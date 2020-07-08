@@ -17,8 +17,12 @@ function main_menu() {
         the_custom_logo();
         }
         ?>
+        <div class="callout small">
 
          <a href="/50-2/" class="button hollow text-center expanded"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
+
+         </div>
+
         <?php gcc_wp_2018_callto_buttons_main_menu();?>
         
         </div><!--.branding-->
