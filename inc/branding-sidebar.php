@@ -17,7 +17,7 @@ function main_menu() {
         the_custom_logo();
         }
         ?>
-        <div class="callout small">
+        <div class="callout small" style="padding: .5rem 2.7rem;">
 
          <a href="/50-2/" class="button hollow text-center expanded"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
 
