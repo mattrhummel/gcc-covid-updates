@@ -24,7 +24,7 @@ get_header(); ?>
       
     </div>
 
-    <div class="row expanded">
+<div class="row expanded">
 <div class="columns">
 <div class="callout warning large text-center">
 <div class="row expanded" data-equalizer="">
@@ -61,9 +61,16 @@ get_header(); ?>
 <p>By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</p>
 </div>
     
-    <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
+<?php get_template_part( 'template-parts/content', 'promotions' );  ?>
 
-    
+<div class="row expanded">
+<div class="columns">
+
+	<?php the_field( 'feature_banner' ); ?>
+
+</div>
+</div>
+  
 <?php get_template_part( 'template-parts/content', 'news' );  ?>
 
 </div>
