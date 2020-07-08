@@ -18,8 +18,8 @@ function main_menu() {
         }
         ?>
 
-         <a href="/50-2/" class="button hollow"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
-        <?php gcc_wp_2018_callto_buttons_main_menu(); ?>
+         <a href="/50-2/" class="button hollow text-center expanded"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
+        <?php gcc_wp_2018_callto_buttons_main_menu();?>
         
         </div><!--.branding-->
         <?php
