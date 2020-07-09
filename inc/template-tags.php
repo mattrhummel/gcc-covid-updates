@@ -219,7 +219,9 @@ if ( is_singular() ) :
 	<?php
 	//mobile calltos
 	function gcc_wp_2018_callto_buttons_mobile() { ?>
-   <a href="/50-2/" class="button hollow text-center expanded"><?php _e('50 years. Support Germanna', 'gcc-wp-2018') ?></a>
+<div class="button-group stacked-for-small expanded button-group">
+   <a href="/50-2/" class="button hollow text-center expanded" style=""><?php _e('50 years. Support Germanna', 'gcc-wp-2018') ?></a>
+</div>
 	<div class="button-group stacked-for-small expanded button-group">
 		
 	    <a href="/admissions/request-information/" class="button primary"><?php _e('future students', 'gcc-wp-2018') ?></a>
