@@ -17,7 +17,6 @@ function main_menu() {
         the_custom_logo();
         }
         ?>
-    
 
         <?php gcc_wp_2018_callto_buttons_main_menu();?>
         
