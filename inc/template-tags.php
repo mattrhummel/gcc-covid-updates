@@ -220,7 +220,7 @@ if ( is_singular() ) :
 	//mobile calltos
 	function gcc_wp_2018_callto_buttons_mobile() { ?>
 <div class="button-group stacked-for-small expanded button-group" style="margin: 0 1rem .5rem 1rem;">
-   <a href="/50-2/" class="button hollow text-center expanded" style=""><?php _e('50 years. Support Germanna', 'gcc-wp-2018') ?></a>
+   <a href="/50-2/" class="button hollow text-center expanded" style=""><?php _e('50 years young: Support Germanna', 'gcc-wp-2018') ?></a>
 </div>
 
 	<div class="button-group stacked-for-small expanded button-group">
