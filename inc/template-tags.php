@@ -309,7 +309,7 @@ if ( is_singular() ) :
 			<!-- ... -->
 		</ul>
 	</li>
-	<li class="green-button"><a href="/donate/">give</a></li>
+	<li class="green-button"><a href="/donate/">give now</a></li>
 </ul>
 </map>
 <hr>
@@ -339,7 +339,7 @@ function gcc_wp_2018_resources_desktop() { ?>
 	<li><a href="/academic-center-for-excellence/">Tutoring</a></li>
 </ul>
 </li>
-<li  class="green-button"><a href="/donate/">give</a></li>
+<li  class="green-button"><a href="/donate/">give now</a></li>
 </ul>
 </map>
 <?php }
