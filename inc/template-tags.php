@@ -222,10 +222,9 @@ if ( is_singular() ) :
 <div class="button-group stacked-for-small expanded button-group" style="margin: 0 1rem .5rem 1rem;">
    <a href="/50-2/" class="button hollow text-center expanded" style=""><?php _e('50 years. Support Germanna', 'gcc-wp-2018') ?></a>
 </div>
+
 	<div class="button-group stacked-for-small expanded button-group">
 
-		<a href="/50-2/" class="button hollow"><?php _e('50 years young: Support Germanna', 'gcc-wp-2018') ?></a>
-		
 	    <a href="/admissions/request-information/" class="button primary"><?php _e('future students', 'gcc-wp-2018') ?></a>
 	  <!--   <a href="/pathways/online-degrees/" class="button alert"><?php //_e('online degrees', 'gcc-wp-2018') ?></a> -->
 		<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
