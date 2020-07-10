@@ -221,7 +221,7 @@ if ( is_singular() ) :
 	function gcc_wp_2018_callto_buttons_mobile() { ?>
 	
 	<div class="button-group stacked-for-small expanded button-group" style="margin: 0 1rem .5rem 1rem;">
-	   <a href="/50-2/" class="button hollow text-center expanded" style=""><?php _e('50 years young: Support Germanna', 'gcc-wp-2018') ?></a>
+	   <a href="/50/" class="button hollow text-center expanded" style=""><?php _e('50 years young: Support Germanna', 'gcc-wp-2018') ?></a>
 	</div>
 
 	<div class="button-group stacked-for-small expanded button-group">
@@ -238,7 +238,7 @@ if ( is_singular() ) :
 	function gcc_wp_2018_callto_buttons_main_menu() { ?>
 	<div class="button-group stacked show-for-large">
 	
-	<a href="/50-2/" class="button hollow expanded"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
+	<a href="/50/" class="button hollow expanded"><?php _e('Support Germanna', 'gcc-wp-2018') ?></a>
 
 	<a href="/admissions/request-information/" class="button primary expanded"><?php _e('future students', 'gcc-wp-2018') ?></a>
 		<!-- <a href="/pathways/online-degrees/" class="button alert"><?php //_e('online degrees', 'gcc-wp-2018') ?></a> -->
