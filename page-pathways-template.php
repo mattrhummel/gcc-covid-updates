@@ -184,8 +184,6 @@ elseif
 
 ?>
 
-<h2>All <?php echo $programcategory ?> Pathways</h2>
-
 <?php if( !isset($_GET['programpathway'])) {
     
     $programlist = new WP_Query( array(
