@@ -184,7 +184,7 @@ elseif
 
 ?>
 
-<h2>All Pathways</h2>
+<h2>All <?php echo $programcategory ?> Pathways</h2>
 
 <?php if( !isset($_GET['programpathway'])) {
     
