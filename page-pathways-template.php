@@ -215,6 +215,9 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 }
 
 if ($programlist->have_posts()) : ?>
+
+<h2>All <?php echo $programcategory ?> Pathway Programs</h2>
+
 <table>
   <thead></thead>
 </table>
@@ -297,7 +300,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-    <h2>All <?php echo $programcategory ?> Degrees</h2>
+<h2>All <?php echo $programcategory ?> Degrees</h2>
 
 <table>
 <tr>
