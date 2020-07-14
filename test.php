@@ -1,294 +1,192 @@
-<div class="row expanded" data-equalizer>
-<div class="columns medium-2">
-<div class="callout large" data-equalizer-watch>
-	<img src="/wp-content/uploads/50thred.svg" alt="germanna 50 year anniversary logo" />
-</div>
-</div>
-<div class="columns medium-10">
-<div class="callout large alert" data-equalizer-watch>
-	<h2 class="h1">Germanna is about honoring our past</h2>
-	<h3 class="h2 subheader">For fifty years now, we've provided our community access to a high-quality and affordable education.</h3>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer>
-<h2 class="text-center">Germanna 50th Events</h2>
-<div class="columns medium-6">
-<div class="callout warning" data-equalizer-watch>
-	<h3>50th Anniversary Gala</h3>
-	<p>Saturday, October 3, 2020</p>
-</div>
-</div>
-<div class="columns medium-6">
-<div class="callout warning" data-equalizer-watch>
-	
-	<h3>Day of Giving</h3>
-	<p>October 5, 2020 fundraising to support Gladys P. Todd Academy</p>
-	<a href="donate" class="button">Give</a>
-	
-</div>
-
-</div>
-
-</div>
-<div class="row expanded" data-equalizer>
-<div class="columns medium-6 text-center">
-<div class="callout large" data-equalizer-watch>
-
-</div>
-</div>
-<div class="columns medium-6">
-<div class="callout success large" data-equalizer-watch>
-<h2 class="text-center">History of Germanna</h2>
-	
-<h3>1914</h3>
-					
-<p>Governor Alexander Spotswood established settlement for German miners and their families</p>
-	
-<h3>1956</h3>
-			
-<p>Memorial Foundation of the Germanna Colonies in Virginia, Inc organized</p>
-	
-<h3>1966</h3>
-	
-<p>Virginia legislature created a community college system</p>
-
-<h3>1969</h3>
-<p>Dr. Arnold Wirtala becomes Germanna's first President</p>
-<p>1969-1980</p>
-
-<h3>1970</h3>
-
-<p>Germanna Community College established</p>
-
-<p>Germanna held its first classes in partially completed building at Locust Grove</p>
-
-<h3>1980</h3>
-<p>Dr. William P. Briley becomes Germanna's second President</p>
-<p>1980-1984</p>
-
-<h3>1985</h3>
-<p>Dr. Marshall A. Smith becomes Germanna's third President</p>
-<p>1985-1986</p>
-
-<h3>1986</h3>
-<p>Dr. Frank Turnage becomes Germanna's fourth President</p>
-<p>1986 - 2007</p>
-
-<h3>1989</h3>
-
-<p>Germanna Board selected the 70-acre site donated by the John T. Hazel Family for the Fredericksburg Area Campus</p>
-
-<h3>1997</h3>
-
-<p>Fredericksburg Area Campus opens Phase I Dickinson Building named for Delegate V. Earl Dickinson whose efforts secured state funding for the campus</p>
-
-<h3>1998</h3>
-
-<p>College’s Educational Foundation receives 100 acres of land in Culpeper donated by Rose Bente Lee, Kaye and Marie Andrus, Nicholas and Flora Tomassetti, and Philip and Susan DeSiato
-</p>
-
-<h3>2004</h3>
-
-<p>Phase II, The Workforce Development and Technology Center opens</p>
-
-<h3>2006</h3>
-
-<p>Daniel Technology Center open</p>
-
-<h3>2007</h3>
-<p>Dr. David A. Sam becomes Germanna's fifth President</p>
-<p>2007 - 2017</p>
-
-<h3>2009</h3>
-
-<p>Germanna’s Stafford County Center opens</p>
-
-<h3>2011</h3>
-
-<p>August 23: Magnitude 5.8 earthquake closes Fredericksburg Area Campus, Dickinson building damaged and closed for the semester</p>
-<p>September 6: Fredericksburg Area Campus reopens</p>
-
-<h3>2012</h3>
-
-<p>Phase III, Science and Engineering Building and Information Commons at the Fredericksburg Area Campus opens </p>
-
-<p>Parking Garage at the Fredericksburg Area Campus opens</p>
-
-<p>Automotive Center in Stafford County opens </p>
-
-<h3>2015</h3>
-
-<p>Caroline Center in Caroline County opens</p>
-
-<h3>2017</h3>
-
-<p>FredCAT center in Central Park opens</p>
-
-<p>First Woman GCC President Janet Gullickson </p>
-
-<h3>2018</h3>
-
-<p>Barbara J. Fried Center in Stafford County opens</p>
-
-<h3>2019</h3>
-
-<p>Nursing programs begin classes at the Barbara J. Fried Center</p>
-
-<h3>2020</h3>
-
-<p>COVID-19 pandemic closes campus and all classes are moved online for the rest of the year</p>
-
-
+<header class="masthead text-white" style="background-image: url('https://fivegstaging.wpengine.com/wp-content/uploads/laptop.jpeg');">
+<div class="overlay"></div>
+<div class="container">
+<div class="row expanded">
+<div class="col-md-10 pr-lg-5">
+<h1 class="mb-3 w-50"><img src="https://fivegstaging.wpengine.com/wp-content/uploads/collegeeverywhere.svg" alt="college everywhere logo" /><span class="sr-only">College Everywhere</span></h1>
+<h2 class="mb-3">Your future. Fast.</h2>
+<p class="font-weight-light h3">100% online, accelerated degree programs</p>
+<p class="lead">Complete your two-year associate degree online–start to finish–in just one year. Starting this fall.</p>
+<p>Powered by Germanna Community College</p>
+<div class="col-md-3 p-0 m-0">
+<p><img src="https://fivegstaging.wpengine.com/wp-content/uploads/germanna-logo-1-color-white-large-2.svg"></p>
 </div>
 </div>
 </div>
-<div class="row expanded" data-equalizer>
-
-<div class="columns medium-6">
-<div class="callout large" data-equalizer-watch>
-
-<h2 class="text-center"> Business Partners</h2>
-<div class="row expanded collaps" data-equalizer>
-<div class="columns small-11 large-centered">
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/26195557_1580084078744648_6621066419832567865_n.jpg" alt="access eye logo" />
-
 </div>
-<div class="columns medium-9">
-<h3 class="subheader">Access Eye</h3>
+</header><section class="features-icons text-center">
+<div class="container">
+<div class="row">
+<div class="col-lg-4 pl-lg-5">
+<div class="mx-auto mb-3 mb-lg-3">
+<h2 class="mb-3"><i class="fa fa-search-dollar h2" aria-hidden="true"></i> Affordable</h2>
+<p class="lead">1/3 the cost of most four-year schools</p>
 </div>
 </div>
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/Atlantic-Builders-Logo-Red-CMYK.jpg" alt="atlantic builders logo" />
-
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Atlantatic Builders</h3>
+<div class="col-lg-4">
+<div class="mx-auto mb-3 mb-lg-3">
+<h2 class="mb-3"><i class="fa fa-clock h2" aria-hidden="true"></i> Faster Finish</h2>
+<p class="lead">Complete your degree in one year</p>
 </div>
 </div>
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/blt2d98beeab9f07e55-BBT-LOGO.jpg" alt="bb and t bank logo" />
-
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">BB &amp; T Bank</h3>
-</div>
-</div>
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/Logo_124035_Elite_VER_STK_BLU_RGB_FR.png" alt="coldwell banker elite logo" />
-
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Coldwell Banker Elite</h3>
-</div>
-</div>
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/CBTC_Chesapeake_CMYK.png" alt="community bank logo" />
-
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Community of the Chesapeake</h3>
-</div>
-</div>
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/Culpeper-Wood-Logo.png" alt="culpeper wood logo" />
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Culpeper Wood Preservers</h3>
-</div>
-</div>
-
-<div class="row expanded centered" style="margin-bottom: 40px;">
-<div class="columns medium-3 text-center">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/Jefferson-Home-Builders-Logo-2019.png" alt="jefferson home builders logo" />
-</div>
-<div class="columns medium-9" style="margin-bottom: 40px;">
-<h3 class="subheader">Jefferson Home Builders</h3>
-</div>
-</div>
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/REC_TEC_centered_4color-thmb.jpg" alt="rappahannock electric cooperative" />
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Rappahannock Electric Cooperative</h3>
-</div>
-</div>
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/stafford-printing.png" alt="stafford logo" />
-</div>
-<div class="columns medium-9 ">
-<h3 class="subheader">Stafford Printing</h3>
-</div>
-</div>
-
-<div class="row expanded" style="margin-bottom: 40px;">
-<div class="columns medium-3">
-
-<img src="https://germannacc.staging.wpengine.com/wp-content/uploads/wells-fargo-logo@logotyp.us-01.svg" alt="jefferson home builders logo" />
-</div>
-<div class="columns medium-9">
-<h3 class="subheader">Wells Fargo Bank</h3>
-</div>
-</div>
-
-
-</div>
-
-
+<div class="col-lg-4">
+<div class="mx-auto mb-3 mb-lg-3">
+<h2 class="mb-3"><i class="fa fa-award h2" aria-hidden="true"></i> Accredited</h2>
+<p class="lead">Top-quality, transferable degrees</p>
 </div>
 </div>
 </div>
-<div class="columns medium-6">
-
-<div class="callout secondary large" data-equalizer-watch>
-
-<h2>1970 Society Members</h2>
+</div>
+</div>
+</section>
+<section class="showcase">
+<div class="container-fluid p-0">
+<div class="row no-gutters">
+<div class="col-lg-12 showcase-img" style="background-image: url('https://fivegstaging.wpengine.com/wp-content/uploads/laptop.jpeg'); background-position: center center; background-repeat: no-repeat;" ></div>
+</div>
+</div>
+</section>
+<section class="features-icons bg-light">
+<div class="container">
+<h2 class="h1 font-weight-bold">100% online degrees</h2>
+<p class="mb-5 lead">Complete the first two years of your Bachelor’s degree or gain a career skill fast. Our online degree options are flexible, fully online and designed for busy, working adults.</p>
+<div class="row">
+<div class="col-lg-6">
+<div class="testimonial-item mb-5 mb-lg-0">
+<h2><i class="fa fa-chart-bar" aria-hidden="true" style="color: #b22144"></i> Business</h2>
+Sharpen your skills in accounting, communications and marketing. Continue your education through seamless transfer to a four-year college or university.
+<ul><li>Business Administration, Associate of Arts &amp; Sciences</li></ul>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="testimonial-item mb-5 mb-lg-0">
+<h2><i class="fa fa-university" aria-hidden="true"  style="color: #b22144"></i> College Transfer</h2>
+Save time and money by completing the first two years of your Bachelor’s degree in just one year. Choose from 45+ transfer partners to finish your degree.
+<ul><li>General Studies, Associate of Arts &amp; Sciences</li></ul>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-lg-6">
+<div class="testimonial-item mb-5 mb-lg-0">
+<h2><i class="fa fa-laptop-code" aria-hidden="true"  style="color: #b22144"></i> Cybersecurity &amp; I.T.</h2>
+Get started in one of the fastest growing industries in the country. Gain the core skillset needed to become a cybersecurity specialist, analyst or technician.
+<ul><li>Information System Technology, Cybersecurity, Associate of Applied Science</li></ul>
+</div>
+</div>
+<div class="col-lg-6">
+<div class="testimonial-item mb-5 mb-lg-0">
+<h2><i class="fa fa-heartbeat" aria-hidden="true"  style="color: #b22144"></i> Healthcare</h2>
+Start working towards a rewarding career in the healthcare industry. Complete the first two years towards your Bachelor’s of Science in Nursing (BSN) degree in a single year. Transfer to one of our partner universities to finish your degree.
+<ul><li>General Studies: Pre-BSN Specialization, Associate of Arts &amp; Sciences</li></ul>
+</div>
+</div>
+</div>
+</div>
+</section><section class="showcase">
+<div class="container-fluid p-0">
+<div class="row no-gutters">
+<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('http://fivegstaging.wpengine.com/wp-content/uploads/college-everywhere-family.jpg'); background-position: top left;" ></div>
+<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+<h2>College everywhere for working adults</h2>
+<p class="lead">Family first</p>
 <ul>
-<li>Joseph and Linda Daniel</li>
-<li>Mary Jane Pitts O'Neill</li>
-<li>Jefferson Home Builders</li>
-<li>Adam and Rhonda Fried</li>
-<li>Atlantic Builders</li>
-<li>Novant Health UVA Health System - Culpeper Medical Center</li>
-<li>Koppers Performance Chemicals</li>
-<li>Mary Washington Healthcare</li>
-<li>Virginia Foundation for Community Colleges</li>
-<li>Culpeper Wood Preservers</li>
-<li>Sunshine Lady Foundation</li>
-<li>Mary Washington Hospital Foundation</li>
-<li>Bruce and Sandra Davis</li>
-<li>Dominion Virginia Power</li>
-<li>Follett Higher Education Group</li>
-<li>Fredericksburg Savings Charitable Foundation</li>
-<li>Spotsylvania Regional Medical Center HCAVA</li>
-<li>Betty B. Baldwin</li>
-<li>Continental</li>
+<li class="lead">Balance family, work and learning</li>
+<li class="lead">Earn your college degree on your time</li>
+<li class="lead">Work towards your personal goals</li>
+</ul>
+</div>
+</div>
+<div class="row no-gutters">
+<div class="col-lg-6 text-white showcase-img" style="background-image: url('https://fivegstaging.wpengine.com/wp-content/uploads/college-everywhere-active-duty-service-member.jpg'); background-position: center center;"></div>
+<div class="col-lg-6 my-auto showcase-text">
+<h2>College everywhere for military families</h2>
+<p class="lead">Country first</p>
+<ul>
+<li class="lead">Earn credit for your military experience</li>
+<li class="lead">Learn on base, at sea or in the field</li>
+<li class="lead">Tuition assistance helps cover the cost</li>
+</ul>
+</div>
+</div>
+<div class="row no-gutters">
+<div class="col-lg-6 order-lg-2 text-white showcase-img" style="background-image: url('https://fivegstaging.wpengine.com/wp-content/uploads/college-everywhere-high-school-graduate.jpg'); background-position: top left;"></div>
+<div class="col-lg-6 order-lg-1 my-auto showcase-text">
+<h2>College everywhere for high school grads</h2>
+<p  class="lead">Future first</p>
+<ul>
+<li class="lead">Save time towards your four-year degree</li>
+<li class="lead">Transfer seamlessly to a four-year school</li>
+<li class="lead">Save money through our affordable cost</li>
 </ul>
 </div>
 </div>
 </div>
-
-
+</section>
+<section class="features-icons text-center bg-light">
+<div class="container">
+<div class="row d-flex">
+<div class="col-lg-4">
+<div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+<div class="mb-3"><i class="fa fa-chalkboard-teacher h2" aria-hidden="true"></i></div>
+<h2>Leader in Online Education</h2>
+<p class="lead mb-0">Learn from expert faculty who know how to teach online through high-quality, interactive learning experiences.</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="mx-auto mb-5 mb-lg-0 mb-lg-3">
+<div class="mb-3"><i class="fa fa-headset h2" aria-hidden="true"></i></div>
+<h2>Just-in-time Support</h2>
+<p class="lead mb-0">Get the support you need, when you need it. Online tutoring, transfer and career services are available, virtually.</p>
+</div>
+</div>
+<div class="col-lg-4">
+<div class="mx-auto mb-0 mb-lg-3">
+<div class="mb-3"><i class="fa fa-exchange-alt h2" aria-hidden="true"></i></div>
+<h2>Designed to Transfer</h2>
+<p class="lead mb-0">Take advantage of 45+ university transfer agreements. Credits you earn will count towards most four-year degrees.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section class="showcase">
+<div class="container-fluid p-0">
+<div class="row no-gutters">
+<div class="col-lg-6  text-white showcase-img" style="background-image: url('https://fivegstaging.wpengine.com/wp-content/uploads/GCCstaff006-1.jpg'); background-repeat: no-repeat; background-size: cover; background-position: top center;"></div>
+<div class="col-lg-6 my-auto showcase-text bg-warning">
+<div class="p-lg-5">
+<h2 class="mb-4">Pleased to—virtually—meet you</h2>
+<p class="lead">Our online, accelerated degree programs are a smart option for getting to your future fast. I’m here to answer any of your questions and help you get started. Let’s connect through a 45 minute virtual appointment.</p>
+<p>Christian Tompkins<br/>
+<em>Enrollment Services</em></p>
+<a href="https://calendly.com/ctompkins-2/germanna-community-college-college-everywhere" class="btn btn-dark">Book an online session</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<div class="container-fluid" style="position: fixed; bottom: 0; left: 0; background-color:  #fefe00; z-index: 1000;">
+<div class="row no-gutters">
+<div class="container">
+<div class="row no-gutters">
+<div class="col-md-9">
+<p class="lead font-weight-bold mt-md-3" style="line-height: 62px">Register by August 7. Classes begin August 10</h3>
+</div>
+<div class="col-md-3"><button type="button" class="btn btn-dark mr-0 mx-auto mt-md-3 float-md-right" style="line-height: 14px" data-toggle="modal" data-target="#requestInfoModal">Get Started</button></div></div></div></div></div></div>
+<div class="modal hide fade" id="requestInfoModal" tabindex="-1" role="dialog" aria-labelledby="requestInfoModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content bg-dark text-white" style="background-color: #000000;">
+      <div class="modal-header">
+        <h5 class="modal-title" id="staticBackdropLabel">Get Started</h5>
+        <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        [wpforms id="17" title="false" description="false"]
+      </div>
+    </div>
+  </div>
+</div>
