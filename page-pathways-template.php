@@ -142,8 +142,8 @@ if ($programlist->have_posts()) : ?>
   <tr>
     <thead>
     <th>Program of Study</th>
-    <th>Online Program</th>
-    <th>Financial Aid Eligible</th>
+    <th class="text-center">Online Program</th>
+    <th class="text-center">Financial Aid Eligible</th>
     </thead>
   </tr>
   <tbody>
@@ -156,8 +156,25 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td><?php the_field( 'online_degree' ); ?></td>
-<td><?php the_field('financial_aid_eligible'); ?>
+<td class="text-center">
+  
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span class="">Online</span></i>
+
+<?php }
+?>
+
+</td>
+<td class="text-center">
+
+<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+
+<?php }
+?>
+</td>
 </tr>
 
 <?php endwhile; ?> 
@@ -214,7 +231,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-<h2>All <?php echo $programcategory ?> Pathway Programs</h2>
+<h2>All <?php echo $programcategory ?> Programs</h2>
 
 <table>
   <thead></thead>
@@ -224,8 +241,8 @@ if ($programlist->have_posts()) : ?>
   <tr>
     <thead>
     <th>Program of Study</th>
-    <th>Online Program</th>
-    <th>Financial Aid Eligible</th>
+    <th class="text-center">Online Program</th>
+    <th class="text-center">Financial Aid Eligible</th>
     </thead>
   </tr>
 
@@ -240,8 +257,26 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td><?php the_field( 'online_degree' ); ?></td>
-<td><?php the_field('financial_aid_eligible'); ?>
+<td class="text-center">
+  
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+
+<?php }
+?>
+
+</td>
+<td class="text-center">
+
+<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+
+<?php }
+?>
+</td>
+
 </tbody>
 </tr>
 
@@ -304,8 +339,8 @@ if ($programlist->have_posts()) : ?>
 <tr>
 <thead>
 <th>Program of Study</th>
-<th>Online Program</th>
-<th>Financial Aid Eligible</th>
+<th class="text-center">Online Program</th>
+<th class="text-center">Financial Aid Eligible</th>
 </thead>
 </tr>
 <tbody>
@@ -320,8 +355,25 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td><?php the_field( 'online_degree' ); ?></td>
-<td><?php the_field('financial_aid_eligible'); ?></td>
+<td class="text-center">
+  
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+
+<?php }
+?>
+
+</td>
+<td class="text-center">
+
+<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+
+<?php }
+?>
+</td>
 </tr>
 
 <?php endwhile; ?> 
@@ -341,7 +393,7 @@ endif;
 
 elseif
 
- (!empty( $_GET['programpathway'] ) && !empty( $_GET['programdegree'] )) {
+ (empty( $_GET['programpathway'] ) && empty( $_GET['programdegree'] )) {
 
 ?>
 
