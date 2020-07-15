@@ -26,6 +26,18 @@ require get_template_directory() . '/inc/theme-settings.php';
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/branding-sidebar.php';
+function searchfilter($query) {
+    if ($query->is_search && !is_admin() ) {
+        if(isset($_GET['post_type'])) {
+            $type = $_GET['post_type'];
+                if($type == 'gcc_programs') {
+                    $query->set('post_type',array('gcc_programs'));
+                }
+        }       
+    }
+return $query;
+}
+add_filter('pre_get_posts','searchfilter');
 /**
  * Custom Breadcrumbs
  */

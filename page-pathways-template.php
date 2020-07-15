@@ -46,8 +46,8 @@ while ( have_posts() ) : the_post(); ?>
     <?php /* You can also leave 'action' blank: action="" */ ?>
     <div class="input-group">
   
-      <label for="programsearch" style="display:none;">Search</label> 
-      <input type="text" name="programsearch" id="program-search" class="input-group-field">
+      <label for="post_type" style="display:none;">Search</label> 
+      <input type="text" name="post_type" id="post_type" class="input-group-field" placeholder="<?php echo esc_attr_x( 'Search programs', 'placeholder' ) ?>">
       
       <div class="input-group-button">
         <button id="searchsubmit-desktop" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
@@ -95,13 +95,12 @@ while ( have_posts() ) : the_post(); ?>
 
 </form>
 
-<?php if(empty ( $_GET['programpathway'] ) && empty ( $_GET['programdegree'])) {
-
+<?php if(empty ( $_GET['programpathway'] ) && empty ( $_GET['programdegree']) && empty ($_GET['post_type'])) {
 ?>
 
 <h2>Online Pathways and Degrees</h2>
 
-<?php if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
+<?php if( !isset($_GET['post_type, programpathway, programdegree']) || '' == $_GET['post_type, programpathway, programdegree']) {
     
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
@@ -114,7 +113,7 @@ while ( have_posts() ) : the_post(); ?>
     ) ); 
 } 
 else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway, programdegree']; //get sort value
+    $programcategory = $_GET['post_type, programpathway, programdegree']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
@@ -160,7 +159,7 @@ if ($programlist->have_posts()) : ?>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span class="">Online</span></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -170,10 +169,11 @@ if ($programlist->have_posts()) : ?>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
+
 </td>
 </tr>
 
@@ -188,6 +188,105 @@ endif;
 
 <?php wp_reset_query(); ?>
 
+
+<?php
+
+}
+elseif
+
+(!empty ( $_GET['post_type'] )) {
+
+?>
+
+<?php if( !isset($_GET['post_type'])) {
+
+  $type = $_GET['post_type'];
+   
+    $programsearch = new WP_Query( array(
+    'post_type' => $type,
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'ASC'
+    ) ); 
+
+} 
+else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
+    $programcategory = $_GET['post_type']; //get sort value
+    $programsearch = new WP_Query( array(
+    
+    'posts_per_page' => -1,
+    'orderby' => 'TITLE',
+    'order' => 'DESC' 
+    ));
+
+}
+if ($programsearch->have_posts()) : 
+
+if($type == 'gcc_programs') {
+  
+  $programsearch->set('post_type',array('gcc_programs'));
+    
+} 
+?>
+
+<h2>All <span style="text-transform: capitalize;"><?php echo $programcategory ?></span> Programs</h2>
+
+<table>
+  <thead></thead>
+</table>
+
+<table style="width: 100%;">
+  <tr>
+    <thead>
+    <th>Program of Study</th>
+    <th class="text-center">Online Program</th>
+    <th class="text-center">Financial Aid Eligible</th>
+    </thead>
+  </tr>
+
+<?php while ( $programsearch->have_posts() ) : $programsearch->the_post(); 
+?>
+<?php $curriculum_url = get_field('curriculum_url'); ?>
+<tbody>
+<tr>
+  <td>
+<a href="<?php echo the_permalink(); ?>">
+<?php 
+  the_title();?>
+</a>
+</td>
+<td class="text-center">
+  
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+
+<?php }
+?>
+
+</td>
+<td class="text-center">
+
+<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+
+<?php }
+?>
+</td>
+
+</tbody>
+</tr>
+
+<?php endwhile; ?> 
+</table>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>  
+
+<?php wp_reset_query(); ?>
 
 
 <?php
@@ -261,7 +360,7 @@ if ($programlist->have_posts()) : ?>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -271,7 +370,7 @@ if ($programlist->have_posts()) : ?>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
@@ -359,7 +458,7 @@ if ($programlist->have_posts()) : ?>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -369,7 +468,7 @@ if ($programlist->have_posts()) : ?>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"></i>
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
