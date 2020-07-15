@@ -109,9 +109,27 @@ while ( have_posts() ) : the_post(); ?>
         
         <?php if (is_page('donate') ) : ; ?>
         
-        <iframe id="form-76b1356d-d85d-4bd1-a890-12addb2746a2" class="blackbaud-donation-form" title="Donation Form"
+       <div id="bbox-root"></div>
 
-        style="background-color: white; max-width: 700px; min-width: 320px; min-height: 1200px; width: 100%; height: 100%; border: none;">
+<script type="text/javascript">
+
+       window.bboxInit = function () {
+
+           bbox.showForm('7ac5f578-b467-4690-815f-dc7eab20bca5');
+
+       };
+
+       (function () {
+
+           var e = document.createElement('script'); e.async = true;
+
+           e.src = 'https://bbox.blackbaudhosting.com/webforms/bbox-min.js';
+
+           document.getElementsByTagName('head')[0].appendChild(e);
+
+       } ());
+
+</script>
 
 </iframe>
 
