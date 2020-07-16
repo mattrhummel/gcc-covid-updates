@@ -162,6 +162,8 @@ get_header(); ?>
 
                     <?php endif; ?>
 
+                  </div>
+
                   <div class="tabs-panel" id="virtual-math-center">
                     <?php the_field( 'virtual_math_center_content' ); ?>
                   </div>
