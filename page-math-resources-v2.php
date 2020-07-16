@@ -49,6 +49,7 @@ get_header(); ?>
         <?php
         the_content();
         ?>
+        <!--math resources tabs-->
         <ul class="tabs" data-tabs id="math-course-resources-tabs">
           <li class="tabs-title is-active"><a href="#math-course-resources-main">
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
