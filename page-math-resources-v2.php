@@ -50,15 +50,15 @@ get_header(); ?>
         the_content();
         ?>
         <ul class="tabs" data-tabs id="math-course-resources-tabs">
-          <li class="tabs-title is-active"><a href="#math-course-resources">
+          <li class="tabs-title is-active"><a href="#math-course-resources-main">
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#virtual-math-center">
           <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>      
-          <li class="tabs-title"><a href="academic-links">
+          <li class="tabs-title"><a href="#academic-links">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
       <div class="tabs-content" data-tabs-content="math-course-resources-tabs">
-          <div class="tabs-panel is-active" id="math-course-resources">
+          <div class="tabs-panel is-active" id="math-course-resources-main">
             <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
             <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
             <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
