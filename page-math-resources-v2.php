@@ -60,9 +60,6 @@ get_header(); ?>
         </ul>
       <div class="tabs-content" data-tabs-content="math-course-resources-tabs">
           <div class="tabs-panel is-active" id="math-course-resources-main">
-            <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
-            <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
-            <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
         <div class="tabs-content" data-tabs-content="math-resources-tabs">
           <div class="tabs-panel is-active" id="math-course-resources">
             <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
@@ -168,6 +165,7 @@ get_header(); ?>
                     <?php endif; ?>
 
                   </div>
+                </div>
 
                   <div class="tabs-panel" id="virtual-math-center">
                     <?php the_field( 'virtual_math_center_content' ); ?>
