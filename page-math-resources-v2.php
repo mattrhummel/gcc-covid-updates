@@ -53,17 +53,16 @@ get_header(); ?>
           <li class="tabs-title is-active"><a href="#panel3c">
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#panel5c">
-          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>
-          
+          <?php _e('Virtual Math Center ', 'gcc-wp-2018'); ?></a></li>      
           <li class="tabs-title"><a href="#panel4c">
           <?php _e('Academic Links ', 'gcc-wp-2018'); ?></a></li>
         </ul>
-        <div class="tabs-content" data-tabs-content="example-tabs">
+      <div class="tabs-content" data-tabs-content="example-tabs">
           <div class="tabs-panel" id="panel3c">
             <h2><?php _e('Math Course Resources', 'gcc-wp-2018'); ?></h2>
             <p><strong><?php _e('Review topics: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'review_topics_blurb' ); ?></p>
-            <p><strong><?php _e('Course essentials: ', 'gcc-wp-2018'); ?></strong><?php the_field( 'course_essentials_blurb' ); ?></p>
-        <ul class="tabs" data-tabs id="math-resources-tabs">
+course_essentials_blurb' ); ?></p>
+<ul>
           <li class="tabs-title is-active"><a href="#math-course-resources">
           <?php _e('Math Course Resources', 'gcc-wp-2018'); ?></a></li>
           <li class="tabs-title"><a href="#virtual-math-center">
