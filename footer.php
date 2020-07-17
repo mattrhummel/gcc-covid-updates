@@ -48,7 +48,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 
 <a href="admissions/request-info" class="get-started">
-    <div class="callout success">
+    <div class="callout">
         
         <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i> Get Started</span>
 
