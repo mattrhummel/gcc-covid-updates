@@ -137,13 +137,13 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-<table style="width: 100%;">
+<table style="width: 100%;" class="stack">
   <tr>
     <thead>
     <th>Program of Study</th>
-    <th class="text-center">Online Program</th>
-    <th class="text-center">Credits</th>
-    <th class="text-center">Financial Aid Eligible</th>
+    <th>Online Program</th>
+    <th>Credits</th>
+    <th>Financial Aid Eligible</th>
     </thead>
   </tr>
 
@@ -158,7 +158,7 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td class="text-center">
+<td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
@@ -168,8 +168,8 @@ if ($programlist->have_posts()) : ?>
 ?>
 
 </td>
-<td class="text-center"><?php the_field( 'number_of_credits' ); ?></td>
-<td class="text-center">
+<td><?php the_field( 'number_of_credits' ); ?></td>
+<td>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
@@ -232,13 +232,13 @@ if ($programlist->have_posts()) : ?>
 
 <h2>All <?php echo $programcategory ?> Programs</h2>
 
-<table style="width: 100%;">
+<table style="width: 100%;"  class="stack">
   <tr>
     <thead>
     <th>Program of Study</th>
-    <th class="text-center">Online Program</th>
-    <th class="text-center">Credits</th>
-    <th class="text-center">Financial Aid Eligible</th>
+    <th>Online Program</th>
+    <th>Credits</th>
+    <th>Financial Aid Eligible</th>
     </thead>
   </tr>
 
@@ -253,7 +253,7 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td class="text-center">
+<td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
@@ -263,8 +263,8 @@ if ($programlist->have_posts()) : ?>
 ?>
 
 </td>
-<td class="text-center"><?php the_field( 'number_of_credits' ); ?></td>
-<td class="text-center">
+<td><?php the_field( 'number_of_credits' ); ?></td>
+<td>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
@@ -329,13 +329,13 @@ if ($programlist->have_posts()) : ?>
 
 <h2>All <?php echo $programcategory ?> Degrees</h2>
 
-<table style="width: 100%;">
+<table style="width: 100%;"  class="stack">
   <tr>
     <thead>
     <th>Program of Study</th>
-    <th class="text-center">Online Program</th>
-    <th class="text-center">Credits</th>
-    <th class="text-center">Financial Aid Eligible</th>
+    <th>Online Program</th>
+    <th>Credits</th>
+    <th>Financial Aid Eligible</th>
     </thead>
   </tr>
 
@@ -350,7 +350,7 @@ if ($programlist->have_posts()) : ?>
   the_title();?>
 </a>
 </td>
-<td class="text-center">
+<td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 
@@ -360,8 +360,8 @@ if ($programlist->have_posts()) : ?>
 ?>
 
 </td>
-<td class="text-center"><?php the_field( 'number_of_credits' ); ?></td>
-<td class="text-center">
+<td><?php the_field( 'number_of_credits' ); ?></td>
+<td>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
