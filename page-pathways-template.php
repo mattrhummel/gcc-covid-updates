@@ -45,8 +45,7 @@ while ( have_posts() ) : the_post(); ?>
 
     <?php /* You can also leave 'action' blank: action="" */ ?>
     <div class="input-group">
-  
-      <label for="post_type" style="display:none;">Search</label> 
+      <label for="post_type" style="display:none;">Search programs</label> 
       <input type="text" name="post_type" id="post_type" class="input-group-field" placeholder="<?php echo esc_attr_x( 'Search programs', 'placeholder' ) ?>">
       
       <div class="input-group-button">
@@ -57,12 +56,13 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 
 <div class="row expanded">
-
+  <div class="columns">
+<p>Find programs by:</p>
+</div>
 <div class="columns medium-6">
-
-<label for="programpathway">Find programs by pathway</label>
+<label for="programpathway" class="show-for-sr">Find programs by pathway</label>
 <select name="programpathway" id="programpathway" onchange="submit();">
-<option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
+<option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Pathway</option>
 <?php 
     $categories = get_categories('taxonomy=pathway_names&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
@@ -77,9 +77,9 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="columns medium-6">
 
-<label for="programdegree">Find programs by degree</label>
+<label for="programdegree"  class="show-for-sr">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
-<option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Show all</option>
+<option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
 <?php 
     $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
