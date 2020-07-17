@@ -245,7 +245,7 @@ if($type == 'gcc_programs') {
     </thead>
   </tr>
 
-<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
+<?php while ( $programsearch->have_posts() ) : $programsearch->the_post(); 
 ?>
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tbody>
