@@ -79,7 +79,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <label for="programdegree"  class="show-for-sr">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
-<option value="" <?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
+<option value=""<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
 <?php 
     $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
     foreach ($categories as $category) : 

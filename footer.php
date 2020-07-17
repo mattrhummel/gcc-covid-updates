@@ -46,6 +46,17 @@ if ($u_modified_time >= $u_time + 86400) { ?>
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
+
+<a href="admissions/request-info" class="get-started">
+    <div class="callout alert">
+        
+        <span class="h4 font-weight-bold"><i class="fa fa-envelope"></i> Get Info</span>
+
+
+    </div>
+</a>
+
+
 </div><!--.close-canvas-content-->
 
 <?php wp_footer(); ?>

@@ -1,3 +1,15 @@
+a.get-started {
+  border-radius: 25px 0 0 25px; 
+  width: auto;
+  position: fixed;
+  right: 0;
+  bottom: 200px;
+
+  .callout {
+    box-shadow: 0 3px 5px #333333;
+  }
+}
+
 .site-footer {
   
   background: $primary;
