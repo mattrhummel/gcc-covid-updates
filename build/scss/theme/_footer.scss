@@ -1,12 +1,16 @@
 a.get-started {
   border-radius: 25px 0 0 25px; 
-  width: auto;
+  width: 300px;
   position: fixed;
   right: 0;
   bottom: 150px;
 
+
   .callout {
     box-shadow: 0 3px 5px #333333;
+    padding: 40px 10px;
+    border-left: $white 10px solid;
+    text-transform: uppercase;
   }
 }
 
