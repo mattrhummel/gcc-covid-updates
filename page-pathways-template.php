@@ -153,7 +153,7 @@ if ($programlist->have_posts()) : ?>
 <tbody>
 <tr>
   <td>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
@@ -251,7 +251,7 @@ if($type == 'gcc_programs') {
 <tbody>
 <tr>
   <td>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
@@ -350,7 +350,7 @@ if ($programlist->have_posts()) : ?>
 <tbody>
 <tr>
   <td>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
@@ -450,7 +450,7 @@ if ($programlist->have_posts()) : ?>
 <tbody>
 <tr>
   <td>
-<a href="<?php echo the_permalink(); ?>">
+<a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
