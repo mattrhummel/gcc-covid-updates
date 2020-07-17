@@ -37,6 +37,7 @@ this shows just degrees selected
 <thead>
 <th>Program of Study</th>
 <th class="text-center">Online Program</th>
+<th class="text-center">Credits</th>
 <th class="text-center">Financial Aid Eligible</th>
 </thead>
 </tr>
@@ -62,6 +63,8 @@ this shows just degrees selected
 ?>
 
 </td>
+<td class="text-center"><?php the_field( 'number_of_credits' ); ?></td>
+
 <td class="text-center">
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>

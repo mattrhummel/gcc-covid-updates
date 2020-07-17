@@ -32,6 +32,7 @@ function searchfilter($query) {
             $type = $_GET['post_type'];
                 if($type == 'gcc_programs') {
                     $query->set('post_type',array('gcc_programs'));
+                    
                 }
         }       
     }

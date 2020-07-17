@@ -26,7 +26,6 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
     ));
 
 }
-
 if ($programlist->have_posts()) : ?>
 
 this shows just pathways selected
@@ -42,6 +41,7 @@ this shows just pathways selected
     <thead>
     <th>Program of Study</th>
     <th class="text-center">Online Program</th>
+    <th class="text-center">Credits</th>
     <th class="text-center">Financial Aid Eligible</th>
     </thead>
   </tr>
@@ -67,6 +67,7 @@ this shows just pathways selected
 ?>
 
 </td>
+<td class="text-center"><?php the_field( 'number_of_credits' ); ?></td>
 <td class="text-center">
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
