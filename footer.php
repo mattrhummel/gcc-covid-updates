@@ -58,6 +58,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 </div><!--.close-canvas-content-->
 
+
 <?php wp_footer(); ?>
 <script>
 
@@ -180,5 +181,17 @@ if (Boolean(readCookie('hide'))) {
 
 </script>
 <?php } ?>
+<script>
+$(document).scroll(function() {
+    if ($(this).scrollTop()>400)
+     {
+        $('.get-started').show(400);
+     }
+    else
+     {
+      $('.get-started').hide(300);
+     }
+ });
+</script>
 </body>
 </html>
