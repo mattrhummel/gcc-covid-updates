@@ -59,7 +59,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="popout-banner">
 
-    <button type="button" class="button popout-icon" data-toggle="offCanvasNestedPush">
+    <button type="button" class="button popout-icon show-for-small-only" data-toggle="offCanvasNestedPush">
      <i class="fas fa-arrow-right"></i> Get Started</a>
     </button>
 
