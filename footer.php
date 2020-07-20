@@ -63,8 +63,11 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
      <i class="fas fa-arrow-right"></i> Get Started</a>
     </button>
 
-<div class="off-canvas position-right is-closed off-canvas-content get-started-offcanvas" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
+<div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
 <div class="callout warning">
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+  <span aria-hidden="true">&times;</span>
+</button>
     <h3>Don't wait get started today</h3>
     <a data-toggle="request-info-form">   
     <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>

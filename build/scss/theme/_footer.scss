@@ -1,7 +1,7 @@
 .popout-banner  {
   position: fixed;
   right: 0;
-  bottom: 80px;
+  bottom: 0;
   display: none;
   z-index: 100000;
 
@@ -13,7 +13,7 @@
          box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
          margin-right: 10px;
          display: block;
-
+         margin-bottom: 100px;
           @media screen and (min-width: 40em) { 
 
           display: none;
@@ -22,20 +22,20 @@
 }
 .off-canvas {
  text-transform: uppercase;
- background-color: #9D233C;
-     bottom: 100px !important;
-  .position-right {
-        bottom: 100px !important;
+   .callout.warning {
+    -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
+      -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
+      box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
+         text-transform: uppercase;
+         background-color: #9D233C;
+         z-index: 1000000;
+         width: 100%;
+         .close-button {
+          color: $white;
+         }
   }
-  .get-started-offcanvas {
 
-    padding: 10px;
-    h3 {
-      color: $white !important;
     }
-    }
-
-}
   
  @media screen and (min-width: 64em) { 
       left: 0;
