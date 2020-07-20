@@ -61,10 +61,10 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="popout-banner">
 <button data-toggle="request-info-form">   
-       <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Request Info</span>
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Request Info</span>
 </button>
 <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Apply Now</span>
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Apply Now</span>
 </a>
 </div>
 

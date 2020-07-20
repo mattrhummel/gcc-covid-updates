@@ -5,10 +5,8 @@
   display: none;
   z-index: 100000;
 
- @media screen and (min-width: 64em) {
-  
+ @media screen and (min-width: 64em) { 
       left: 0;
-
  }
 
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
@@ -24,18 +22,15 @@
   border-left: #0a1401  10px solid;
   text-transform: uppercase;
   color: $white; 
-  background-color: #9f1d0d;
+  background-color: $primary;
   display: block;
     
-    i {
-      margin-right: 10px;
-    }
-
+  i {
+    margin-right: 10px;
+  }
    &:hover {
-
     background-color: #0a1401;
     color: $white;
-
    }
    &:focus {
     background-color: #0a1401;
@@ -44,8 +39,8 @@
      @media screen and (min-width: 64em) {
         width: 300px;
    }
-   }
-    }
+ }
+}
 
 .site-footer {
   
