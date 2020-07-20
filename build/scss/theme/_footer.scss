@@ -37,12 +37,15 @@
     color: $white;
 
    }
+   &:focus {
+    background-color: #0a1401;
+    color: $white;
+   }
      @media screen and (min-width: 64em) {
         width: 300px;
    }
-    }
-
    }
+    }
 
 .site-footer {
   
