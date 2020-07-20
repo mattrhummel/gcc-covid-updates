@@ -1,13 +1,13 @@
 .popout-banner  {
   position: fixed;
-  left: 0;
-  bottom: 100px;
+  right: 0;
+  bottom: 140px;
   display: none;
   z-index: 100000;
 
  @media screen and (min-width: 64em) { 
       left: 0;
-       bottom: 40px;
+      bottom: 40px;
  }
 
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
