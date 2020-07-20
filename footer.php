@@ -10,6 +10,17 @@
 */
 ?>
 <?php //closing main container, do not remove ?>
+
+<div id="request-info-form" class="reveal" data-reveal="">
+    <h2>Request Information</h2>
+    <p>Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started.</p>
+
+    [wpforms id="27548" title="false" description="false"]
+
+    <p><small>By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</small></p>
+    <button class="close-button" type="button" data-close="" aria-label="Close reveal"><span aria-hidden="true">×</span></button>
+</div>
+
 </main>
 
 <?php  //setup alert from parent page and pulls the field into subpages.
@@ -46,18 +57,21 @@ if ($u_modified_time >= $u_time + 86400) { ?>
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
-
-<a href="admissions/request-info" class="get-started">
-    <div class="callout">
-        
-        <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i> Get Started</span>
-
+<div class="popout-banner">
+<button data-toggle="request-info-form">
+    <div class="callout primary">     
+       <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Request Info</span>
+    </div>
+</button>
+<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">
+    <div class="callout primary">     
+       <span class="h3 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Apply Now</span>
     </div>
 </a>
-
+</div>
 
 </div><!--.close-canvas-content-->
-
+</div>
 
 <?php wp_footer(); ?>
 <script>
@@ -185,11 +199,11 @@ if (Boolean(readCookie('hide'))) {
 $(document).scroll(function() {
     if ($(this).scrollTop()>400)
      {
-        $('.get-started').show(400);
+        $('.popout-banner').show(400);
      }
     else
      {
-      $('.get-started').hide(300);
+      $('.popout-banner').hide(300);
      }
  });
 </script>

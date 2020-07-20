@@ -1,24 +1,35 @@
-a.get-started {
-  border-radius: 25px 0 0 25px; 
-  width: 310px;
+.popout-banner  {
   position: fixed;
   left: 0;
   bottom: 40px;
   display: none;
   z-index: 100000;
 
+  a,button {
+  border-radius: 25px 0 0 25px; 
+  width: 310px;
+
   .callout {
     box-shadow: 0 3px 5px #333333;
-    background-color: #10A700;
-    padding: 40px 10px;
+    padding: 10px 10px;
+    margin-bottom: 10px;
     border-left: $white 10px solid;
     text-transform: uppercase;
-    color: $white;
+    color: $white; 
+
+    i {
+      margin-right: 10px;
+    }
   }
+  .callout.primary {
+    background-color: #9f1d0d !important;
+    color: $white !important;
+    }
+  .callouot.primary:hover {
+      background-color: #0a1401;
+    }
 }
 
-a.show-banner {
-  display: block;
 }
 
 .site-footer {
