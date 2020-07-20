@@ -58,12 +58,15 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
 <div class="popout-banner">
-<button data-toggle="request-info-form">   
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Request Info</span>
-</button>
-<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-circle-right"></i>Apply Now</span>
-</a>
+    <div class="callout warning">
+    <h3>Don't wait get started today</h3>
+    <a data-toggle="request-info-form">   
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
+    </a>
+    <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    </a>
+</div>
 </div>
 
 </div><!--.close-canvas-content-->

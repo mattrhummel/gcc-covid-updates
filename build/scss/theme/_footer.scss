@@ -1,44 +1,45 @@
 .popout-banner  {
   position: fixed;
   right: 0;
-  bottom: 140px;
+  bottom: 10px;
   display: none;
   z-index: 100000;
-
+  
  @media screen and (min-width: 64em) { 
       left: 0;
-      bottom: 40px;
+      bottom: 10px;
+    
  }
 
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       right: 0;
   }
-  
-  a, button {
-  width: 200px;
+  .callout {
+    -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+      -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+      box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
+        width: 300px;
+         text-transform: uppercase;
+  }
+  a {
   cursor: pointer;
   text-align: left;
   margin-bottom: 2px;
-  padding: 10px 10px;
-  border-left: #0a1401  10px solid;
-  text-transform: uppercase;
+  padding: 10px 0;
   color: $white; 
   background-color: $primary;
   display: block;
-    
+  text-decoration: none !important;
+  
+  &:hover {
+    text-decoration: underline !important;
+  }
+
   i {
     margin-right: 10px;
   }
-   &:hover {
-    background-color: #0a1401;
-    color: $white;
-   }
-   &:focus {
-    background-color: #0a1401;
-    color: $white;
-   }
      @media screen and (min-width: 64em) {
-        width: 310px;
+        width: 280px;
    }
  }
 }
