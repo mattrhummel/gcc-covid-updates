@@ -59,7 +59,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="popout-banner">
 
-    <button type="button" class="button popout-icon show-for-small-only hide-for-medium hide-for-large" data-toggle="offCanvasNestedPush">
+    <button type="button" class="button popout-icon hide-for-large" data-toggle="offCanvasNestedPush">
      <i class="fas fa-arrow-right"></i> Get Started</a>
     </button>
 
@@ -78,7 +78,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 </div>
 </div>
 
-<div class="callout warning hide-for-small-only">
+<div class="callout warning show-for-large">
     <h3 class="hide-for-small-only">Don't wait get started today</h3>
     <a data-toggle="request-info-form">   
     <span class="h5"><i class="fas fa-arrow-right"></i>Request Info</span>
