@@ -216,7 +216,7 @@ if (Boolean(readCookie('hide'))) {
 <?php } ?>
 <script>
 $(document).scroll(function() {
-    if ($(this).scrollTop()>400)
+    if ($(this).scrollTop()>200)
      {
         $('.popout-banner').show(400);
      }
