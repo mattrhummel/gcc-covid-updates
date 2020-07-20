@@ -11,8 +11,8 @@
 ?>
 <?php //closing main container, do not remove ?>
 
-<div id="request-info-form" class="reveal" data-reveal="" style="z-index: 9999999999999;">
-    <h2>Request Information</h2>
+<div id="request-info-form" class="reveal" data-reveal="" data-open="request-info-form" aria-labelledby="request-info-formHeader" style="z-index: 9999999999999;">
+    <h2 id="request-info-formHeader">Request Information</h2>
     <p>Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started.</p>
 
     [wpforms id="27548" title="false" description="false"]
