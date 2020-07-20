@@ -70,10 +70,10 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 </button>
     <h3>Don't wait get started today</h3>
     <a data-toggle="request-info-form">   
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
+    <span class="h5"><i class="fas fa-arrow-right"></i>Request Info</span>
     </a>
     <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    <span class="h5"><i class="fas fa-arrow-right"></i>Apply Now</span>
     </a>
 </div>
 </div>
@@ -81,10 +81,10 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 <div class="callout warning hide-for-small-only">
     <h3 class="hide-for-small-only">Don't wait get started today</h3>
     <a data-toggle="request-info-form">   
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
+    <span class="h5"><i class="fas fa-arrow-right"></i>Request Info</span>
     </a>
     <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    <span class="h5"><i class="fas fa-arrow-right"></i>Apply Now</span>
     </a>
 </div>
 
