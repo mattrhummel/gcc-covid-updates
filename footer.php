@@ -59,13 +59,23 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="popout-banner">
 
-    <button type="button" class="button popout-icon show-for-small-only" data-toggle="offCanvasNestedPush">
+    <button type="button" class="button popout-icon show-for-small-only hide-for-medium hide-for-large" data-toggle="offCanvasNestedPush">
      <i class="fas fa-arrow-right"></i> Get Started</a>
     </button>
 
-<div class="off-canvas position-right is-closed off-canvas-content" id="offCanvasNestedPush" data-off-canvas style="max-height: 300px; bottom: 10px;">
+<div class="off-canvas position-right is-closed off-canvas-content get-started-offcanvas" id="offCanvasNestedPush" data-off-canvas style="max-height: 300px;">
 
-  <div class="callout warning hide-for-small-only">
+    <h3>Don't wait get started today</h3>
+    <a data-toggle="request-info-form">   
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
+    </a>
+    <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
+    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    </a>
+
+</div>
+
+<div class="callout warning hide-for-small-only">
     <h3 class="hide-for-small-only">Don't wait get started today</h3>
     <a data-toggle="request-info-form">   
     <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
@@ -75,18 +85,6 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
     </a>
 </div>
 
-
-</div>
-
-    <div class="callout warning hide-for-small-only">
-    <h3 class="hide-for-small-only">Don't wait get started today</h3>
-    <a data-toggle="request-info-form">   
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Request Info</span>
-    </a>
-    <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5 font-weight-bold"><i class="fas fa-arrow-right"></i>Apply Now</span>
-    </a>
-</div>
 </div>
 
 </div><!--.close-canvas-content-->
