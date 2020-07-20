@@ -68,15 +68,7 @@ get_header(); ?>
         </div>
       </div>
 
- <div id="request-info-form" class="reveal" data-reveal="" style="z-index: 9999999999999;">
-    <h2>Request Information</h2>
-    <p>Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started.</p>
-
-    [wpforms id="27548" title="false" description="false"]
-
-    <p><small>By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</small></p>
-    <button class="close-button" type="button" data-close="" aria-label="Close reveal"><span aria-hidden="true">×</span></button>
-</div>
+      
 
       <?php endwhile; // End of the loop. ?>
     </article>
