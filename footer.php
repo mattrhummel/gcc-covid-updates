@@ -64,27 +64,26 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
     </button>
 
 <div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
-<div class="callout warning">
+<div class="callout alert">
     <button class="close-button" aria-label="Close menu" type="button" data-close>
   <span aria-hidden="true">&times;</span>
 </button>
     <h3>Don't wait get started today</h3>
-    <a data-toggle="request-info-form">   
-    <span class="h5"><i class="fas fa-arrow-right"></i>Request Info</span>
-    </a>
-    <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    <a class="button" data-toggle="request-info-form">   
+    Request Info</a>
+    <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
+    Apply Now
     </a>
 </div>
 </div>
 
-<div class="callout warning show-for-large">
-    <h3 class="hide-for-small-only">Don't wait get started today</h3>
-    <a data-toggle="request-info-form">   
-    <span class="h5"><i class="fas fa-arrow-right"></i>Request Info</span>
+<div class="callout alert show-for-large text-center">
+    <h5 class="hide-for-small-only">We're Here For You</h5>
+    <a class="button" data-toggle="request-info-form">   
+   Request Information
     </a>
-    <a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    <span class="h5"><i class="fas fa-arrow-right"></i>Apply Now</span>
+    <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
+   Apply Now
     </a>
 </div>
 

@@ -18,44 +18,46 @@
 
           display: none;
 
+
           }
 }
 .off-canvas {
  text-transform: uppercase;
  bottom: 0;
  margin-bottom: 0;
-   .callout.warning {
-    -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
-      -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
-      box-shadow: 4px 5px 10px 0px rgba(0,0,0,0);
+   .callout.alert {
+
          text-transform: uppercase;
-         background-color: #9D233C;
+         text-align: center;
          z-index: 1000000;
          width: 100%;
+          
 
-         .close-button {
-          color: $white;
+         a {
+          font-weight: 800;
          }
   }
 
     }
+
+    .off-canvas.is-transition-overlap.is-open {
+    -webkit-box-shadow: 0;
+    box-shadow: 0;
+    margin-bottom: 0;
+}
   
  @media screen and (min-width: 64em) { 
       left: 0;
-      bottom: 5px;
+      bottom:0;
     
  }
-
  @media screen and (min-width: 40em) and (max-width: 63.9375em) {
       right: 0;
   }
-  .callout.warning {
-    -webkit-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
-      -moz-box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
-      box-shadow: 4px 5px 10px 0px rgba(0,0,0,0.75);
-        width: 300px;
-         text-transform: uppercase;
-         background-color: #9D233C;
+  .callout.alert {
+      width: 290px;
+      text-transform: uppercase;
+      background-color: $alert;
   }
   a {
   cursor: pointer;
@@ -66,16 +68,16 @@
   background-color: #9D233C;
   display: block;
   text-decoration: none !important;
-  
+   text-transform: uppercase;
+   text-align: center;
+   font-weight: 800;
   &:hover {
     text-decoration: underline !important;
   }
 
-  i {
-    margin-right: 10px;
-  }
+
      @media screen and (min-width: 64em) {
-        width: 280px;
+        width: 260px;
    }
  }
 }
