@@ -1,36 +1,48 @@
 .popout-banner  {
   position: fixed;
-  left: 0;
+  right: 0;
   bottom: 40px;
   display: none;
   z-index: 100000;
 
-  a,button {
-  border-radius: 25px 0 0 25px; 
-  width: 310px;
+  @media screen and (min-width: 64em) {
+  
+      left: 0;
 
-  .callout {
-    box-shadow: 0 3px 5px #333333;
-    padding: 10px 10px;
-    margin-bottom: 10px;
-    border-left: $white 10px solid;
-    text-transform: uppercase;
-    color: $white; 
+ }
 
+
+    @media screen and (min-width: 40em) and (max-width: 63.9375em) {
+      right: 0;
+    }
+  
+  a, button {
+  width: 100%;
+  cursor: pointer;
+  text-align: left;
+  margin-bottom: 2px;
+  padding: 10px 10px;
+  border-left: #0a1401  10px solid;
+  text-transform: uppercase;
+  color: $white; 
+  background-color: #9f1d0d;
+  display: block;
     i {
       margin-right: 10px;
     }
-  }
-  .callout.primary {
-    background-color: #9f1d0d !important;
-    color: $white !important;
-    }
-  .callouot.primary:hover {
-      background-color: #0a1401;
-    }
-}
 
-}
+   &:hover {
+
+    background-color: #0a1401;
+    color: $white;
+
+   }
+     @media screen and (min-width: 64em) {
+        width: 310px;
+   }
+    }
+
+   }
 
 .site-footer {
   
