@@ -39,8 +39,8 @@ get_header(); ?>
                 </a>
               </li>
               <li role="menuitem">
-                <a href="/calendar/">
-                  Calendar
+                <a href="/COVID-19/">
+                 Covid-19
                 </a>
               </li>
               </li>
@@ -77,7 +77,7 @@ get_header(); ?>
     </div>
   
       </div>
-      
+
 
     <?php endwhile; // End of the loop. ?>
   </article>
