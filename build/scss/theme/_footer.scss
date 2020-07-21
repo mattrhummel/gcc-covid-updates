@@ -3,8 +3,10 @@
   right: 0;
   bottom: 0;
   display: none;
-
-
+  z-index: 100000;
+ @media screen and (min-width: 64em) { 
+   max-width: 300px;
+ }
   .popout-icon {
          text-transform: uppercase;
          background-color: #9D233C;
@@ -22,6 +24,7 @@
 
          text-transform: uppercase;
          text-align: center;
+         z-index: 1000000;
          width: 100%;
           
          a {
