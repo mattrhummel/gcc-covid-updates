@@ -95,7 +95,10 @@ array(
 remove_all_filters('posts_orderby');
 ?>
 
-<?php $the_query = new WP_Query( $args ); ?>
+<?php $the_query = new WP_Query( $args ); 
+shuffle( $the_query->posts );
+?>
+
 
 <?php if ( $the_query->have_posts() ) { ?>
 
