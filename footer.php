@@ -80,6 +80,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 <?php $args = array(
     'post_type'      => 'attachment',
     'orderby'        => 'rand',
+    'order'    => 'ASC',
     'post_status' => 'inherit',
     'posts_per_page' => 1,
 );
