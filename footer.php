@@ -77,14 +77,48 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 </div>
 </div>
 
-<div class="callout alert show-for-large text-center">
-    <h5 class="hide-for-small-only">We're Here For You</h5>
-    <a class="button" data-toggle="request-info-form">   
-   Request Information
-    </a>
-    <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-   Apply Now
-    </a>
+<div class="callout alert show-for-large text-center" style="padding: 10px 0;">
+
+  <img src="/wp-content/uploads/GCCheadshots099.jpg" alt="">
+  <?php $args = array(
+        'post_type' => 'attachment',
+        'post_mime_type' =>'image',
+        'post_status' => 'inherit',
+        'posts_per_page' => 1,
+        'orderby' => 'rand',
+        'tax_query' => array(
+        array(
+            'taxonomy' => 'image_category',
+        ),
+    ),
+);
+
+$query = new WP_Query( $args );
+
+  if($query->have_posts()) { 
+
+     while($query->have_posts()) : $query->the_post();
+?>
+  
+  <p>test</p>
+  
+<?php endwhile; 
+wp_reset_query();
+
+} 
+  
+?>
+  <div class="row">
+    <div class="columns">
+        <h5 class="hide-for-small-only" style="margin-top: 10px;">We're Here For You</h5>
+        <a class="button" data-toggle="request-info-form">   
+       Request Information
+        </a>
+        <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
+       Apply Now
+        </a>
+    </div>
+  </div>
 </div>
 
 </div>
