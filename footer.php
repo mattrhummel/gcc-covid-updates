@@ -92,11 +92,9 @@ array(
 ),
 
 );
-?>
 
-<?php $the_query = new WP_Query( $args ); 
 ?>
-
+<?php $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) { ?>
 
