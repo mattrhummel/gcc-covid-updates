@@ -20,7 +20,6 @@
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-
 </main>
 
 <?php  //setup alert from parent page and pulls the field into subpages.
@@ -28,9 +27,7 @@ $page_footer_contact = get_field('page_footer_contact');
 global $post;
 if ( get_field('page_footer_contact', $post->post_parent ) ):
 ?>
-
 <?php endif; ?>
-
 <?php //last modified page test
 $u_time = get_the_time('U');
 $u_modified_time = get_the_modified_time('U');
@@ -48,7 +45,6 @@ if ($u_modified_time >= $u_time + 86400) { ?>
 <footer class="site-footer hide-for-print">
 
 <?php get_template_part('template-parts/content', 'top-footer'); ?>
-
 <?php get_template_part('template-parts/content', 'bottom-footer'); ?>
 
 </footer>
@@ -60,7 +56,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 <div class="popout-banner">
 
     <button type="button" class="button popout-icon hide-for-xlarge hide-for-large hide-for-print clearfix" data-toggle="offCanvasNestedPush">
-     <i class="fas fa-arrow-right"></i> Get Started</a>
+     <i class="fas fa-arrow-right"></i><?php _e('Get Started', 'gcc-wp-2018'); ?></a>
     </button>
 
 <div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
@@ -68,11 +64,13 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
     <button class="close-button" aria-label="Close menu" type="button" data-close>
   <span aria-hidden="true">&times;</span>
 </button>
-    <h3>Don't wait get started today</h3>
+<?php ?>
+    <h3><?php _e( 'Don\'t wait get started today', 'gcc-wp-2018' ); ?></h3>
     <a class="button" data-toggle="request-info-form">   
-    Request Info</a>
-    <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-    Apply Now
+      <?php _e('Request Information', 'gcc-wp-2018'); ?></a>
+    <a class="button" 
+    href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
+    <?php _e('Apply Now', 'gcc-wp-2018'); ?>
     </a>
 </div>
 </div>
@@ -83,7 +81,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
     'post_type'      => 'attachment',
     'orderby'        => 'rand',
     'post_status' => 'inherit',
-    'posts_per_page' => 1,
+    'posts_per_page' => -1,
 );
 $args['tax_query'] = array(
 
@@ -101,14 +99,13 @@ array(
 <?php if ( $the_query->have_posts() ) { ?>
 
 <?php
-    while ( $the_query->have_posts() ) {
+while ( $the_query->have_posts() ) {
     $the_query->the_post();
   ?>
 
-  <?php echo wp_get_attachment_image( get_the_ID(), array('364', '635'));  ?>
+<?php echo wp_get_attachment_image( get_the_ID(), array('364', '635'));  ?>
   
-  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
-
+<?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
   
 <?php 
 wp_reset_query();
@@ -118,11 +115,10 @@ wp_reset_query();
   <div class="row">
     <div class="columns" style="padding-left: 15px;">
         <h5 class="hide-for-small-only" style="margin-top: 10px;">We're Here For You</h5>
-        <a class="button" data-toggle="request-info-form">   
-       Request Information
+        <a class="button" data-toggle="request-info-form"><?php _e('Request Information', 'gcc-wp-2018'); ?>
         </a>
-        <a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084"> 
-       Apply Now
+        <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
+       <?php _e('Apply Now', 'gcc-wp-2018'); ?>
         </a>
     </div>
   </div>
@@ -132,6 +128,7 @@ wp_reset_query();
 
 </div><!--.close-canvas-content-->
 </div>
+
 
 <?php wp_footer(); ?>
 <script>
@@ -209,7 +206,6 @@ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se
 <?php
 }
 ?>
-
 <?php if ( is_page('8') ) { ?>
 <script>
 if (Boolean(readCookie('hide'))) {

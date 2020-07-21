@@ -250,13 +250,11 @@ $the_query = new WP_Query( $args ); ?>
 wp_reset_postdata();
 
 ?>
-
-
-  </div>
+</div>
 </div>
 
 </div>
-  </div>
+</div>
 
   
       
