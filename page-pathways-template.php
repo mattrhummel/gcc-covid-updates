@@ -142,6 +142,7 @@ if ($programlist->have_posts()) : ?>
     <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
+    <th>Accelerated Program</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -161,6 +162,15 @@ if ($programlist->have_posts()) : ?>
 <td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+
+<?php }
+?>
+
+</td>
+<td>
+<?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
@@ -237,6 +247,7 @@ if ($programlist->have_posts()) : ?>
     <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
+    <th>Accelerated Program</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -256,6 +267,16 @@ if ($programlist->have_posts()) : ?>
 <td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+
+<?php }
+?>
+
+</td>
+<td>
+  
+<?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
@@ -334,6 +355,7 @@ if ($programlist->have_posts()) : ?>
     <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
+    <th>Accelerated Program</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -353,6 +375,16 @@ if ($programlist->have_posts()) : ?>
 <td>
   
 <?php if( get_field('online_degree') == 'yes' ) { ?>
+
+<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+
+<?php }
+?>
+
+</td>
+<td>
+  
+<?php if( get_field('accelerated_program') == 'yes' ) { ?>
 
 <i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
