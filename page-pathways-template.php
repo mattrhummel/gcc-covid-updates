@@ -427,11 +427,11 @@ endif;
 
 elseif
 
- (empty( $_GET['programpathway'] ) && empty( $_GET['programdegree'] )) {
+ (empty( $_GET['programpathway'] ) && empty( $_GET['programdegree'] ) && empty( $_GET['programonline'] )) {
 
 ?>
 
-<p>pathway and degree selected test</p>
+
 
 <?php 
 
