@@ -7,8 +7,10 @@
 * @package gccwp-2018
 */
 get_header(); ?>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 <div class="row expanded content-area">
-    
+      <?php
+  while ( have_posts() ) : the_post(); ?>
       <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
       <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
       </button>
@@ -79,7 +81,7 @@ get_header(); ?>
       </div>
 
 
-    <?php endwhile; // End of the loop. ?>
+  <?php endwhile; // End of the loop. ?>
   </article>
   <?php
   get_footer();
