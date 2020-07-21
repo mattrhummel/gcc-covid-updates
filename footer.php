@@ -77,26 +77,21 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="callout alert show-for-large text-center" style="padding: 10px 0;">
 
-<?php $args = array(
+<?php $args = array (
     'post_type'      => 'attachment',
     'orderby'        => 'rand',
     'post_status' => 'inherit',
     'posts_per_page' => 1,
-);
-$args['tax_query'] = array(
-
-array(
+    'tax_query' => array(
     'taxonomy' => 'asset_bank_categories',
-    'terms' => array( 'staff-photo' ),
-    'field' => 'slug',
-),
-
+    'terms' => 'staff-photo',
+    'field' => 'slug'
+)
 );
 remove_all_filters('posts_orderby');
 ?>
 
 <?php $the_query = new WP_Query( $args ); 
-shuffle( $the_query->posts );
 ?>
 
 
