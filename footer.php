@@ -109,7 +109,7 @@ wp_reset_query();
   
 ?>
   <div class="row">
-    <div class="columns">
+    <div class="columns" style="padding-left: 15px;">
         <h5 class="hide-for-small-only" style="margin-top: 10px;">We're Here For You</h5>
         <a class="button" data-toggle="request-info-form">   
        Request Information
