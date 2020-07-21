@@ -79,34 +79,41 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <div class="callout alert show-for-large text-center" style="padding: 10px 0;">
 
-  <img src="/wp-content/uploads/GCCheadshots099.jpg" alt="">
-  <?php $args = array(
-        'post_type' => 'attachment',
-        'post_mime_type' =>'image',
-        'post_status' => 'inherit',
-        'posts_per_page' => 1,
-        'orderby' => 'rand',
-        'tax_query' => array(
-        array(
-            'taxonomy' => 'image_category',
-        ),
-    ),
+<?php $args = array(
+    'post_type'      => 'attachment',
+    'orderby'        => 'rand',
+    'post_status' => 'inherit',
+    'posts_per_page' => 1,
+);
+$args['tax_query'] = array(
+
+array(
+    'taxonomy' => 'asset_bank_categories',
+    'terms' => array( 'staff-photo' ),
+    'field' => 'slug',
+),
+
 );
 
-$query = new WP_Query( $args );
-
-  if($query->have_posts()) { 
-
-     while($query->have_posts()) : $query->the_post();
 ?>
+<?php $the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
+<?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+  ?>
+
+  <?php echo wp_get_attachment_image( get_the_ID(), array('364', '635'));  ?>
   
-  <p>test</p>
+  <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+
   
-<?php endwhile; 
+<?php 
 wp_reset_query();
 
-} 
-  
+} }
 ?>
   <div class="row">
     <div class="columns" style="padding-left: 15px;">
