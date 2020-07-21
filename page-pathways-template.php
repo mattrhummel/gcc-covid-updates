@@ -84,9 +84,9 @@ while ( have_posts() ) : the_post(); ?>
 
 <label for="programdegree"  class="show-for-sr">Find programs by location</label>
 <select name="programonline" id="programonline" onchange="submit();">
-<option value=""<?php echo ($_GET['programonline'] == '') ? ' selected="selected"' : ''; ?>>Online or on Campus</option>
+<option value=""<?php echo ($_GET['programonline'] == '') ? ' selected="selected"' : ''; ?>>Online or On-Campus</option>
 <?php 
-    $categories = get_categories('taxonomy=online_degree&post_type=gcc_programs'); 
+    $categories = get_categories('taxonomy=program_locations&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
     echo '<option value="'.$category->name.'"';
     echo ($_GET['programonline'] == ''.$category->name.'') ? ' selected="selected"' : '';
@@ -100,10 +100,10 @@ while ( have_posts() ) : the_post(); ?>
 
 </form>
 
-<?php if(empty ( $_GET['programpathway'] ) && empty ( $_GET['programdegree']) && empty ($_GET['post_type'])) {
+<?php if(empty ( $_GET['programpathway'] ) && empty ( $_GET['programdegree']) && empty ($_GET['programonline'])) {
 ?>
 
-<?php if( !isset($_GET['programpathway, programdegree']) || '' == $_GET['programpathway, programdegree']) {
+<?php if( !isset($_GET['programpathway, programdegree, programonline']) || '' == $_GET['programpathway, programdegree, programonline']) {
     
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
@@ -113,7 +113,7 @@ while ( have_posts() ) : the_post(); ?>
     ) ); 
 } 
 else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway, programdegree']; //get sort value
+    $programcategory = $_GET['programpathway, programdegree, programonline']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
@@ -128,6 +128,11 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
     ),
       array( 
         'taxonomy' => 'pathway_names',
+        'field' => 'name', 
+        'terms' => $programcategory
+    ), 
+      array( 
+        'taxonomy' => 'program_locations',
         'field' => 'name', 
         'terms' => $programcategory
     ), 
