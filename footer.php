@@ -81,7 +81,7 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
     'post_type'      => 'attachment',
     'orderby'        => 'rand',
     'post_status' => 'inherit',
-    'posts_per_page' => -1,
+    'posts_per_page' => 1,
 );
 $args['tax_query'] = array(
 
