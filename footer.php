@@ -96,6 +96,7 @@ remove_all_filters('posts_orderby');
 ?>
 
 <?php $the_query = new WP_Query( $args ); 
+shuffle( $the_query->posts );
 ?>
 
 
