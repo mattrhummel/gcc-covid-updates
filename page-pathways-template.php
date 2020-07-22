@@ -39,8 +39,8 @@ while ( have_posts() ) : the_post(); ?>
 
       <?php the_content(); ?>
 
-      <div class="row expanded">
-  <div class="columns medium-12">
+<div class="row expanded">
+<div class="columns medium-12">
 
 <form action="" method="GET" id="pathways_search">
 
@@ -66,47 +66,14 @@ while ( have_posts() ) : the_post(); ?>
 </select>
 </div>
 </div>
-
-<div class="columns medium-4">
-<div class="callout secondary" data-equalizer-watch>
-<label for="programdegree" class="show-for-sr">Find programs by degree</label>
-<select name="programdegree" id="programdegree" onchange="submit();">
-<option value=""<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
-<?php 
-    $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
-    foreach ($categories as $category) : 
-    echo '<option value="'.$category->name.'"';
-    echo ($_GET['programdegree'] == ''.$category->name.'') ? ' selected="selected"' : '';
-    echo '>'.$category->name.'</option>';
-    endforeach; 
-?>
-</select>
-</div>
-</div>
-<div class="columns medium-4">
-<div class="callout success" data-equalizer-watch>
-<label for="programlocation"  class="show-for-sr">Find programs by location</label>
-<select name="programlocation" id="programlocation" onchange="submit();">
-<option value=""<?php echo ($_GET['programlocation'] == '') ? ' selected="selected"' : ''; ?>>Online or On-Campus</option>
-<?php 
-    $categories = get_categories('taxonomy=program_locations&post_type=gcc_programs'); 
-    foreach ($categories as $category) : 
-    echo '<option value="'.$category->name.'"';
-    echo ($_GET['programlocation'] == ''.$category->name.'') ? ' selected="selected"' : '';
-    echo '>'.$category->name.'</option>';
-    endforeach; 
-?>
-</select>
-</div>
-</div>
 </div>
 
 </form>
 
-<?php if(empty ( $_GET['programpathway'] ) && empty ( $_GET['programdegree']) && empty ($_GET['programlocation'])) {
+<?php if(empty ( $_GET['programpathway'] )) {
 ?>
 
-<?php if( !isset($_GET['programpathway, programdegree, programlocation']) || '' == $_GET['programpathway, programdegree, programlocation']) {
+<?php if( !isset($_GET['programpathway']) || '' == $_GET['programpathway']) {
     
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
@@ -116,7 +83,7 @@ while ( have_posts() ) : the_post(); ?>
     ) ); 
 } 
 else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway, programdegree, programlocation']; //get sort value
+    $programcategory = $_GET['programpathway']; //get sort value
     $programlist = new WP_Query( array(
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
@@ -127,18 +94,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
         'taxonomy' => 'pathway_names',
         'field' => 'name',
         'terms' => $programcategory
-        ),
-        array(
-        'taxonomy' => 'program_degree',
-        'field' => 'name',
-        'terms' => $programcategory
-        ),
-        array(
-        'taxonomy' => 'program_locations',
-        'field' => 'name',
-        'terms' => $programcategory
-        )
-
+        ),  
     ), 
     ));
 
@@ -149,12 +105,12 @@ if ($programlist->have_posts()) : ?>
 <table style="width: 100%;" class="stack">
   <tr>
     <thead>
-    <th>Program of Study</th>
-    <th>Online Program</th>
-    <th>Accelerated Program</th>
-    <th>Program Type</th>
-    <th>Credits</th>
-    <th>Financial Aid Eligible</th>
+      <th>Program of Study</th>
+      <th>Online Program</th>
+      <th>Accelerated Program</th>
+      <th>Program Type</th>
+      <th>Credits</th>
+      <th>Financial Aid Eligible</th>
   </thead>
   </tr>
 
@@ -357,237 +313,8 @@ endif;
 <?php
 
 }
-
-elseif
-
-(!empty( $_GET['programdegree'] )) {
-
 ?>
 
-<?php if( !isset($_GET['programdegree'])) {
-    
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC'
-    ) ); 
-
-} 
-else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programdegree']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC',
-    'tax_query' => array(
-        'taxonomy' => 'program_degree',
-        'field' => 'name',
-        'terms' => $programcategory
-    ), 
-    ));
-}
-
-if ($programlist->have_posts()) : ?>
-
-<h2><?php echo $programcategory ?> Degrees</h2>
-
-<table style="width: 100%;"  class="stack">
-  <tr>
-    <thead>
-      <th>Program of Study</th>
-      <th>Online Program</th>
-      <th>Accelerated Program</th>
-      <th>Degree Type</th>
-      <th>Credits</th>
-      <th>Financial Aid Eligible</th>
-    </thead>
-  </tr>
-<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
-?>
-<?php $curriculum_url = get_field('curriculum_url'); ?>
-<tr>
-  <td>
-<a href="<?php the_field( 'curriculum_url' ); ?>">
-<?php 
-  the_title();?>
-</a>
-</td>
-<td> 
-<?php if( get_field('online_degree') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('online_degree') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-</td>
-<td>
-  
-<?php if( get_field('accelerated_program') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('accelerated_program') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-</td>
-<td>
-<?php the_field( 'program_degree' );?>
-</td>
-<td><?php the_field( 'number_of_credits' ); ?></td>
-<td>
-
-<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
-<?php }
-?>
-<?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
-<?php }
-?>
-</td>
-
-</tr>
-
-<?php endwhile; ?> 
-</table>
-
-<?php else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-
-<?php wp_reset_query(); ?>
-
-<?php
-
-}
-
-elseif
-
-(!empty( $_GET['programlocation'] )) {
-
-?>
-
-<?php if( !isset($_GET['programlocation'])) {
-    
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC'
-    ) ); 
-
-} 
-else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programlocation']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC',
-    'tax_query' => array(
-        'taxonomy' => 'program_locations',
-        'field' => 'name',
-        'terms' => $programcategory
-    ), 
-    ));
-}
-
-if ($programlist->have_posts()) : ?>
-
-<h2><?php echo $programcategory ?></h2>
-
-<table style="width: 100%;"  class="stack">
-  <tr>
-    <thead>
-      <th>Program of Study</th>
-      <th>Online Program</th>
-      <th>Accelerated Program</th>
-      <th>Degree Type</th>
-      <th>Credits</th>
-      <th>Financial Aid Eligible</th>
-    </thead>
-  </tr>
-<?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
-?>
-<?php $curriculum_url = get_field('curriculum_url'); ?>
-<tr>
-  <td>
-<a href="<?php the_field( 'curriculum_url' ); ?>">
-<?php 
-  the_title();?>
-</a>
-</td>
-<td> 
-<?php if( get_field('online_degree') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('online_degree') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-</td>
-<td>
-  
-<?php if( get_field('accelerated_program') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('accelerated_program') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-</td>
-<td>
-<?php the_field( 'program_degree' );?>
-</td>
-<td><?php the_field( 'number_of_credits' ); ?></td>
-<td>
-
-<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
-<?php }
-?>
-<?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
-
-<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
-<?php }
-?>
-</td>
-
-</tr>
-
-<?php endwhile; ?> 
-</table>
 
 <?php else : 
 echo 'There are no news items in that category.'; 
