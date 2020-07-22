@@ -37,6 +37,8 @@ while ( have_posts() ) : the_post(); ?>
     
     <div class="entry-content" id="main">
 
+      <?php the_content(); ?>
+
       <div class="row expanded">
   <div class="columns medium-12">
 
