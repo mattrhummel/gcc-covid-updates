@@ -186,12 +186,11 @@ if ($programlist->have_posts()) : ?>
 
 </td>
 <td>
-  <?php 
-$terms = get_field('program_degree');
-if( $terms ): ?>
-    <?php foreach( $terms as $term ): ?>
-       <?php echo esc_html( $term->name ); ?>      
-    <?php endforeach; ?>
+<?php 
+$term = get_field('program_degree');
+if( $term ): ?>
+    <h2><?php echo esc_html( $term->name ); ?></h2>
+    <p><?php echo esc_html( $term->description ); ?></p>
 <?php endif; ?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
@@ -303,12 +302,11 @@ if ($programlist->have_posts()) : ?>
 </td>
 <td>
 <td>
-  <?php 
-$terms = get_field('program_degree');
-if( $terms ): ?>
-    <?php foreach( $terms as $term ): ?>
-       <?php echo esc_html( $term->name ); ?>      
-    <?php endforeach; ?>
+<?php 
+$term = get_field('program_degree');
+if( $term ): ?>
+    <h2><?php echo esc_html( $term->name ); ?></h2>
+    <p><?php echo esc_html( $term->description ); ?></p>
 <?php endif; ?>
 </td>
 </td>
@@ -422,12 +420,11 @@ if ($programlist->have_posts()) : ?>
 
 </td>
 <td>
-  <?php 
-$terms = get_field('program_degree');
-if( $terms ): ?>
-    <?php foreach( $terms as $term ): ?>
-       <?php echo esc_html( $term->name ); ?>      
-    <?php endforeach; ?>
+<?php 
+$term = get_field('program_degree');
+if( $term ): ?>
+    <h2><?php echo esc_html( $term->name ); ?></h2>
+    <p><?php echo esc_html( $term->description ); ?></p>
 <?php endif; ?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
