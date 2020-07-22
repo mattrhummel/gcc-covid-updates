@@ -22,14 +22,8 @@ while ( have_posts() ) : the_post(); ?>
       
     </div>
 
-  <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
-  <?php //get page widgets
- 
-  dynamic_sidebar( 'academic-widgets' );
-  ?>
-  </aside>
 
-<div class="columns small-12 large-9 float-left">
+<div class="columns small-12 float-left">
    <header>
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
               <?php the_breadcrumb() ?> 
