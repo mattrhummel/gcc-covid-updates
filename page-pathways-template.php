@@ -126,14 +126,16 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-<table style="width: 100%;" class="stack hover">
+<table style="width: 100%;" class="stack">
   <tr>
+    <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
     <th>Accelerated Program</th>
     <th>Program Type</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
+  </thead>
   </tr>
 
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
@@ -230,14 +232,16 @@ if ($programlist->have_posts()) : ?>
 
 <h2><?php echo $programcategory ?> Programs</h2>
 
-<table style="width: 100%;"  class="stack hover ">
+<table style="width: 100%;"  class="stack ">
   <tr>
+    <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
     <th>Accelerated Programs</th>
     <th>Degree Type</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
+  </thead>
   </tr>
 
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
@@ -341,14 +345,16 @@ if ($programlist->have_posts()) : ?>
 
 <h2><?php echo $programcategory ?> Degrees</h2>
 
-<table style="width: 100%;"  class="stack hover">
+<table style="width: 100%;"  class="stack">
   <tr>
+    <thead>
       <th>Program of Study</th>
       <th>Online Program</th>
       <th>Accelerated Program</th>
       <th>Degree Type</th>
       <th>Credits</th>
       <th>Financial Aid Eligible</th>
+    </thead>
   </tr>
 <?php while ( $programlist->have_posts() ) : $programlist->the_post(); 
 ?>
