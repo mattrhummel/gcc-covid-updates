@@ -47,8 +47,9 @@ while ( have_posts() ) : the_post(); ?>
 <p>Find programs by:</p>
 </div>
 </div>
-<div class="row expanded">
-<div class="columns medium-4">
+<div class="row expanded" data-equalizer-watch>
+<div class="columns alert medium-4">
+  <div class="callout">
 <label for="programpathway" class="show-for-sr">Find programs by pathway</label>
 <select name="programpathway" id="programpathway" onchange="submit();">
 <option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Pathway</option>
@@ -61,11 +62,11 @@ while ( have_posts() ) : the_post(); ?>
     endforeach; 
 ?>
 </select>
-
+</div>
 </div>
 
 <div class="columns medium-4">
-
+<div class="callout secondary" data-equalizer-watch>
 <label for="programdegree"  class="show-for-sr">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
 <option value=""<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
@@ -78,10 +79,10 @@ while ( have_posts() ) : the_post(); ?>
     endforeach; 
 ?>
 </select>
-
+</div>
 </div>
 <div class="columns medium-4">
-
+<div class="callout success" data-equalizer-watch>
 <label for="programdegree"  class="show-for-sr">Find programs by location</label>
 <select name="programonline" id="programonline" onchange="submit();">
 <option value=""<?php echo ($_GET['programonline'] == '') ? ' selected="selected"' : ''; ?>>Online or On-Campus</option>
@@ -94,7 +95,7 @@ while ( have_posts() ) : the_post(); ?>
     endforeach; 
 ?>
 </select>
-
+</div>
 </div>
 </div>
 
@@ -245,14 +246,14 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-<h2>All <?php echo $programcategory ?> Programs</h2>
+<h2><?php echo $programcategory ?> Programs</h2>
 
 <table style="width: 100%;"  class="stack">
   <tr>
     <thead>
     <th>Program of Study</th>
     <th>Online Program</th>
-    <th>Accelerated Program</th>
+    <th>Accelerated Programs</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -353,7 +354,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 if ($programlist->have_posts()) : ?>
 
-<h2>All <?php echo $programcategory ?> Degrees</h2>
+<h2><?php echo $programcategory ?> Degrees</h2>
 
 <table style="width: 100%;"  class="stack">
   <tr>

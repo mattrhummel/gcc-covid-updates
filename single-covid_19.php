@@ -67,13 +67,7 @@ get_header(); ?>
         )
         ); 
         ?>
-
-          <div class="row">
-
-               <?php the_content(); ?>  
-               
-          </div>
-      
+     
       </div>
 
     </div>
