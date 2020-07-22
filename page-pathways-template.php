@@ -214,7 +214,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
     'orderby'=> 'title', 
-    'order' => 'ASC'
+    'order' => 'ASC',
     'tax_query' => array(
         array(
         'taxonomy' => 'pathway_names',
@@ -325,7 +325,7 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
     'post_type' => 'gcc_programs', 
     'posts_per_page' => -1,
     'orderby'=> 'title', 
-    'order' => 'ASC'
+    'order' => 'ASC',
     'tax_query' => array(
         array(
         'taxonomy' => 'program_degree',
