@@ -186,12 +186,7 @@ if ($programlist->have_posts()) : ?>
 
 </td>
 <td>
-<?php 
-$term = get_field('program_degree');
-if( $term ): ?>
-    <h2><?php echo esc_html( $term->name ); ?></h2>
-    <p><?php echo esc_html( $term->description ); ?></p>
-<?php endif; ?>
+<?php the_field( 'program_degree' );?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
@@ -302,12 +297,7 @@ if ($programlist->have_posts()) : ?>
 </td>
 <td>
 <td>
-<?php 
-$term = get_field('program_degree');
-if( $term ): ?>
-    <h2><?php echo esc_html( $term->name ); ?></h2>
-    <p><?php echo esc_html( $term->description ); ?></p>
-<?php endif; ?>
+<?php the_field( 'program_degree' );?>
 </td>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
@@ -420,12 +410,7 @@ if ($programlist->have_posts()) : ?>
 
 </td>
 <td>
-<?php 
-$term = get_field('program_degree');
-if( $term ): ?>
-    <h2><?php echo esc_html( $term->name ); ?></h2>
-    <p><?php echo esc_html( $term->description ); ?></p>
-<?php endif; ?>
+<?php the_field( 'program_degree' );?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
