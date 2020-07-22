@@ -313,18 +313,6 @@ endif;
 <?php
 
 }
-
-elseif
-
- (empty( $_GET['programpathway'] ) && empty( $_GET['programdegree'] ) && empty( $_GET['programlocation'] )) {
-
-?>
-
-
-<?php 
-
-}
-
 ?>
 
 </div>
