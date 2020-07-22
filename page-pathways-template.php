@@ -481,7 +481,7 @@ endif;
 
 elseif
 
-(!empty( $_GET['programonlocation'] )) {
+(!empty( $_GET['programlocation'] )) {
 
 ?>
 
