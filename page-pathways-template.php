@@ -38,7 +38,7 @@ while ( have_posts() ) : the_post(); ?>
     <div class="entry-content" id="main">
 
       <div class="row expanded">
-  <div class="columns medium-10">
+  <div class="columns medium-12">
 
 <form action="" method="GET" id="pathways_search">
 
@@ -149,6 +149,7 @@ if ($programlist->have_posts()) : ?>
     <th>Program of Study</th>
     <th>Online Program</th>
     <th>Accelerated Program</th>
+    <th>Program Type</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -183,6 +184,12 @@ if ($programlist->have_posts()) : ?>
 <?php }
 ?>
 
+</td>
+<td>
+<?php $term = get_field('program_degree');
+if( $term ): ?>
+   <?php echo esc_html( $term->name ); ?>
+<?php endif; ?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
@@ -254,6 +261,7 @@ if ($programlist->have_posts()) : ?>
     <th>Program of Study</th>
     <th>Online Program</th>
     <th>Accelerated Programs</th>
+    <th>Degree Type</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -289,6 +297,12 @@ if ($programlist->have_posts()) : ?>
 <?php }
 ?>
 
+</td>
+<td>
+<?php $term = get_field('program_degree');
+if( $term ): ?>
+   <?php echo esc_html( $term->name ); ?>
+<?php endif; ?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
@@ -362,6 +376,7 @@ if ($programlist->have_posts()) : ?>
     <th>Program of Study</th>
     <th>Online Program</th>
     <th>Accelerated Program</th>
+    <th>Degree Type</th>
     <th>Credits</th>
     <th>Financial Aid Eligible</th>
     </thead>
@@ -397,6 +412,12 @@ if ($programlist->have_posts()) : ?>
 <?php }
 ?>
 
+</td>
+<td>
+<?php $term = get_field('program_degree');
+if( $term ): ?>
+   <?php echo esc_html( $term->name ); ?>
+<?php endif; ?>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
