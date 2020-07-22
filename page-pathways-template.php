@@ -313,19 +313,6 @@ endif;
 <?php
 
 }
-?>
-
-
-<?php else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-
-<?php wp_reset_query(); ?>
-
-<?php
-
-}
 
 elseif
 
