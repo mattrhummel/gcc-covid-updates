@@ -300,7 +300,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('online_degree') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -315,7 +315,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('accelerated_progam') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -334,7 +334,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -424,7 +424,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('online_degree') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -439,7 +439,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('accelerated_program') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
 
 <?php }
 ?>
@@ -458,7 +458,7 @@ if ($programlist->have_posts()) : ?>
 ?>
 <?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
 
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+<i class="fas fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
