@@ -69,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="columns medium-4">
 <div class="callout secondary" data-equalizer-watch>
-<label for="programdegree"  class="show-for-sr">Find programs by degree</label>
+<label for="programdegree" class="show-for-sr">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
 <option value=""<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
 <?php 
@@ -382,14 +382,11 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
     'orderby'=> 'title', 
     'order' => 'ASC',
     'tax_query' => array(
-        array(
         'taxonomy' => 'program_degree',
         'field' => 'name',
         'terms' => $programcategory
-        ) 
     ), 
     ));
-
 }
 
 if ($programlist->have_posts()) : ?>
