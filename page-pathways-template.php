@@ -52,7 +52,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="callout">
 <label for="programpathway" class="show-for-sr">Find programs by pathway</label>
 <select name="programpathway" id="programpathway" onchange="submit();">
-<option value="" <?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Pathway</option>
+<option value="<?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>">Pathway</option>
 <?php 
     $categories = get_categories('taxonomy=pathway_names&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
@@ -69,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="callout secondary" data-equalizer-watch>
 <label for="programdegree"  class="show-for-sr">Find programs by degree</label>
 <select name="programdegree" id="programdegree" onchange="submit();">
-<option value=""<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>>Degree/Certificate</option>
+<option value="<?php echo ($_GET['programdegree'] == '') ? ' selected="selected"' : ''; ?>">Degree/Certificate</option>
 <?php 
     $categories = get_categories('taxonomy=program_degree&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
@@ -85,7 +85,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="callout success" data-equalizer-watch>
 <label for="programdegree"  class="show-for-sr">Find programs by location</label>
 <select name="programonline" id="programonline" onchange="submit();">
-<option value=""<?php echo ($_GET['programonline'] == '') ? ' selected="selected"' : ''; ?>>Online or On-Campus</option>
+<option value="<?php echo ($_GET['programonline'] == '') ? ' selected="selected"' : ''; ?>">Online or On-Campus</option>
 <?php 
     $categories = get_categories('taxonomy=program_locations&post_type=gcc_programs'); 
     foreach ($categories as $category) : 
