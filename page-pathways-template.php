@@ -276,9 +276,7 @@ if ($programlist->have_posts()) : ?>
 
 </td>
 <td>
-<td>
 <?php the_field( 'program_degree' );?>
-</td>
 </td>
 <td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
