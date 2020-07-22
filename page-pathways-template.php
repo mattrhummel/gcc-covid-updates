@@ -456,6 +456,12 @@ if ($programlist->have_posts()) : ?>
 
 <?php }
 ?>
+<?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
+
+<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+
+<?php }
+?>
 </td>
 
 </tr>
