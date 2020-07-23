@@ -26,9 +26,9 @@ while ( have_posts() ) : the_post(); ?>
 
       <?php the_content(); ?>
 
-<div class="row expanded" data-equalizer stye="padding-left: 0; padding-right: 0;">
+<div class="row expanded" data-equalizer>
 
-<ul id="filters" style="list-style-type: none;">
+<ul id="filters" style="list-style-type: none; marging-left: 0;">
 
 <li style="list-style: none;">
   <div class="columns medium-3">
@@ -59,14 +59,14 @@ while ( have_posts() ) : the_post(); ?>
 </ul>
 </div>
 <div class="row expanded">
- 
+ <div class="columns">
 <?php $the_query = new WP_Query( 'post_type=gcc_programs&posts_per_page=-1&orderby=title&order=ASC' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
 <?php if ( $the_query->have_posts() ) : ?>
- <div class="columns" id="isotope-list">
- <div class="<?php echo $term->slug; ?> item">
+ <div id="isotope-list">
+
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
  $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item ?>
-
+<div class="<?php echo $term->slug; ?> item">
 <table style="width: 100%;" class="stack">
   <tr>
     <thead>
