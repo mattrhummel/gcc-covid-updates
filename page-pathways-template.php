@@ -96,35 +96,34 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
  <div class="columns">
 
+  <div id="isotope-list">
+
   <?php
     while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):
+      if($item_cats):?>
+
+        <div class="<?php echo $item_classes ?> item">
+        <table style="width: 100%;" class="stack">
+          <tr>
+            <thead>
+              <th>Program of Study</th>
+              <th>Program Type</th>
+              <th class="text-center">Online Option</th>
+              <th class="text-center">Accelerated Option</th>
+              <th class="text-center">Financial Aid Eligible</th>
+          </thead>
+          </tr>
+
+        <?php
         foreach($item_cats as $item_cat) {
 
           $item_classes .= $item_cat->slug . ' ';
 
-        }
-      endif;
 
   ?>
-
-<div id="isotope-list">
-
-<div class="<?php echo $item_classes ?> item">
-<table style="width: 100%;" class="stack">
-  <tr>
-    <thead>
-      <th>Program of Study</th>
-      <th>Program Type</th>
-      <th class="text-center">Online Option</th>
-      <th class="text-center">Accelerated Option</th>
-      <th class="text-center">Financial Aid Eligible</th>
-  </thead>
-  </tr>
-
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
   <td>
@@ -160,6 +159,9 @@ echo $program_degree ?>
 </td>
 </tr>
 
+  <?php  }
+      endif;
+      ?>
 <?php endwhile;  ?>
 
 </table>
