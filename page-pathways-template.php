@@ -165,7 +165,7 @@ echo $program_degree ?>
 </table>
 </div>
 
-<?php wp_reset_guery(); ?>
+<?php wp_reset_query(); ?>
 
 
 </div>
