@@ -114,8 +114,7 @@ while ( have_posts() ) : the_post(); ?>
 
   <div class="<?php echo $item_classes ?> item">
     
-  
-  <table style="width: 100%;" class="stack">
+  <table style="width: 100%;" class="stack" style="min-width: 100%;">
   <tr>
     <thead>
       <th>Program of Study</th>
@@ -125,7 +124,6 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center">Financial Aid Eligible</th>
   </thead>
   </tr>
-
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
