@@ -1,3 +1,4 @@
+<?php if ($programlist->have_posts()) : ?> ?>
 <table style="width: 100%;" class="stack">
   <tr>
     <thead>
@@ -50,3 +51,14 @@
 <?php endwhile; ?> 
 
 </table>
+
+<?php else : 
+echo 'There are no news items in that category.'; 
+endif; 
+?>
+
+<?php wp_reset_query(); ?>
+
+<?php
+
+}

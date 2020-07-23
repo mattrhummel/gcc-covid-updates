@@ -87,20 +87,9 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
 
 }
 
-if ($programlist->have_posts()) : ?>
-
-<?php get_template_part( 'template-parts/content', 'programtable' );  ?>
-
-<?php else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-
-<?php wp_reset_query(); ?>
+get_template_part( 'template-parts/content', 'programtable' );  ?>
 
 <?php
-
-}
 
 elseif
 
@@ -131,27 +120,8 @@ else { //if select value exists (and isn't 'show all'), the query that compares 
         ) 
     ), 
     ));
-
 }
-
-if ($programlist->have_posts()) : ?>
-
-<h2><?php echo $programcategory ?> Programs</h2>
-
-<?php get_template_part( 'template-parts/content', 'programtable' );  ?>
-
-<?php else : 
-echo 'There are no news items in that category.'; 
-endif; 
-?>  
-
-<?php wp_reset_query(); ?>
-
-<?php
-
-}
-?>
-
+get_template_part( 'template-parts/content', 'programtable' );  ?>
 </div>
 </div>
 
