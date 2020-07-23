@@ -16,13 +16,6 @@ while ( have_posts() ) : the_post(); ?>
 
   <div class="row expanded content-area">
 
-      <div class="mobile-sidebar" data-responsive-toggle="section-menu" data-hide-for="large">
-      <button class="button expanded mobile-sidebar-button" type="button" data-toggle="section-menu"><?php _e('In this Section', 'gcc-wp-2018'); ?>
-      </button>
-      
-    </div>
-
-
 <div class="columns small-12 float-left">
    <header>
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
