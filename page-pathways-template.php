@@ -66,7 +66,7 @@ while ( have_posts() ) : the_post(); ?>
 
    ?>
 
-<ul id="filters" style="list-style-type: none; marging-left: 0;">
+<ul id="filters" style="list-style-type: none; margin-left: 0;">
 
 <li style="list-style: none;">
   <div class="columns medium-3">
