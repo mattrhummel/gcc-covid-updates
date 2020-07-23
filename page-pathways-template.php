@@ -21,7 +21,10 @@ while ( have_posts() ) : the_post(); ?>
               <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
               <?php the_breadcrumb() ?> 
   </header>
-    
+    </div>
+  </div>
+  <div class="row expanded">
+  <div class="columns medium-9" id="main">
     <div class="entry-content" id="main">
 
       <?php the_content(); ?>
@@ -113,12 +116,17 @@ while ( have_posts() ) : the_post(); ?>
 </tr>
 
 <?php endwhile;  ?>
-<?php endif; ?>
+
 </table>
 </div>
-</div>
-</div>
 
+<?php endif; ?>
+
+
+</div>
+</div>
+</div>
+</div>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
