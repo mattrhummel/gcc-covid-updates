@@ -65,7 +65,8 @@ while ( have_posts() ) : the_post(); ?>
  <div id="isotope-list">
 
 <?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
- $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item ?>
+?>
+
 <div class="<?php echo $term->slug; ?> item">
 <table style="width: 100%;" class="stack">
   <tr>
@@ -104,18 +105,14 @@ while ( have_posts() ) : the_post(); ?>
 ?>
 </td>
 <td class="text-center">
-
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-
 <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
 <?php }
 ?>
 </td>
 </tr>
-
 </table>
-
+</div>
 <?php endwhile;  ?>
 <?php endif; ?>
 </div>
