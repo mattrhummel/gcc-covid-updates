@@ -31,11 +31,46 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="row expanded" data-equalizer>
 
+  <?php
+
+    global $paged;
+    global $post;
+    $args= array(
+
+        'post_type' => 'gcc_programs',
+        'pages' => $paged,
+        'orderby' => 'title',
+        'order' => 'ASC',
+    );
+
+   ?>
+
+   <?php 
+
+    $programs = new WP_Query($args);
+
+    if(is_array($programs->posts) && !empty($programs->post)) {
+
+        foreach($programs->posts as $programs->post) {
+
+          $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
+            if(is_array($post_taxs) && !empty($post_taxs)) {
+              foreach($post_taxs as $post_tax) {
+                $program_taxs[$post_tax->slug] = $post_tax->name;
+              }
+            }
+
+        }
+
+    }
+
+   ?>
+
 <ul id="filters" style="list-style-type: none; marging-left: 0;">
 
 <li style="list-style: none;">
   <div class="columns medium-3">
-  <a href="#" data-filter="*" class="selected">
+  <a href="#" data-filter="*">
      <div class="callout" data-equalizer-watch>
         All Programs
     </div>
@@ -44,30 +79,41 @@ while ( have_posts() ) : the_post(); ?>
 </li>
 
  <?php 
- $terms = get_terms("pathway_names"); // get all categories, but you can use any taxonomy
- $count = count($terms); //How many are they?
- if ( $count > 0 ){  //If there are more than 0 terms
- foreach ( $terms as $term ) {  //for each term: ?>
+
+ foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a href="#" data-filter="<?php echo $term->slug ?>"><div class="callout" data-equalizer-watch><?php echo $term->name  ?></div>
+    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout" data-equalizer-watch><?php echo $program_tax_name;  ?></div>
     </a>
   </div>
 </li>
 
- <?php }
- } 
- ?>
+ <?php  endforeach;?>
+
 </ul>
 </div>
 <div class="row expanded">
  <div class="columns">
-<?php $the_query = new WP_Query( 'post_type=gcc_programs&posts_per_page=-1&orderby=title&order=ASC' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
-<?php if ( $the_query->have_posts() ) : ?>
- <div id="isotope-list">
 
-<div class="<?php echo $term->slug; ?> item">
+  <?php
+    while($programs->have_posts()) : $programs->the_post();
+      $idd = get_the_ID();
+      $item_classes = '';
+      $item_cats = get_the_terms($post->ID, 'pathway_names');
+      if($item_cats):
+        foreach($item_cats as $item_cat) {
+
+          $item_classes .= $item_cat->slug . ' ';
+
+        }
+      endif;
+
+  ?>
+
+<div id="isotope-list">
+
+<div class="<?php echo $item_classes ?> item">
 <table style="width: 100%;" class="stack">
   <tr>
     <thead>
@@ -79,9 +125,6 @@ while ( have_posts() ) : the_post(); ?>
   </thead>
   </tr>
 
-<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
-?>
-
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
   <td>
@@ -91,7 +134,9 @@ while ( have_posts() ) : the_post(); ?>
 </a>
 </td>
 <td>
-<?php the_field( 'program_degree' );?>
+<?php 
+$program_degree = get_field('program_degree');
+echo $program_degree ?>
 </td>
 <td  class="text-center">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
@@ -120,7 +165,7 @@ while ( have_posts() ) : the_post(); ?>
 </table>
 </div>
 
-<?php endif; ?>
+<?php wp_reset_guery(); ?>
 
 
 </div>
