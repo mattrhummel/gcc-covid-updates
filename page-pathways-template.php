@@ -12,6 +12,7 @@
 get_header(); 
 
 while ( have_posts() ) : the_post(); ?>
+
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
   <div class="row expanded content-area">
@@ -88,7 +89,7 @@ while ( have_posts() ) : the_post(); ?>
   </div>
 </li>
 
- <?php  endforeach;?>
+ <?php endforeach;?>
 
 </ul>
 </div>
@@ -165,8 +166,6 @@ echo $program_degree ?>
 </div>
 
 <?php wp_reset_query(); ?>
-
-
 </div>
 </div>
 </div>
