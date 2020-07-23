@@ -93,81 +93,41 @@ while ( have_posts() ) : the_post(); ?>
 
 </ul>
 </div>
+  <div id="isotope-list">
 <div class="row expanded">
  <div class="columns">
-
-  <div id="isotope-list">
 
   <?php
     while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):?>
-
-        <div class="<?php echo $item_classes ?> item">
-        <table style="width: 100%;" class="stack">
-          <tr>
-            <thead>
-              <th>Program of Study</th>
-              <th>Program Type</th>
-              <th class="text-center">Online Option</th>
-              <th class="text-center">Accelerated Option</th>
-              <th class="text-center">Financial Aid Eligible</th>
-          </thead>
-          </tr>
-
-        <?php
+      if($item_cats):
         foreach($item_cats as $item_cat) {
 
           $item_classes .= $item_cat->slug . ' ';
 
+        }
+      endif;
 
   ?>
-<?php $curriculum_url = get_field('curriculum_url'); ?>
-<tr>
-  <td>
-<a href="<?php the_field( 'curriculum_url' ); ?>">
-<?php 
-  the_title();?>
-</a>
-</td>
-<td>
-<?php 
-$program_degree = get_field('program_degree');
-echo $program_degree ?>
-</td>
-<td  class="text-center">
-<?php if( get_field('online_degree') == 'yes' ) { ?>
-<i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
-<?php }
-?>
-</td>
-<td class="text-center">
-<?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
-<i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+  <div class="<?php echo $item_classes ?> item">
+    
+    <h1>  <?php 
+      the_title();
+      ?></h1>
 
-<?php }
-?>
-</td>
-<td class="text-center">
-<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-<i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-<?php }
-?>
-</td>
-</tr>
+  </div>
 
-  <?php  }
-      endif;
-      ?>
+ <?php wp_reset_query(); ?>
+
 <?php endwhile;  ?>
 
-</table>
+
 </div>
 
-<?php wp_reset_query(); ?>
+</div>
 </div>
 </div>
 </div>
