@@ -97,6 +97,17 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
  <div class="columns">
 
+    <table style="width: 100%;" class="stack">
+  <tr>
+    <thead>
+      <th>Program of Study</th>
+      <th>Program Type</th>
+      <th class="text-center">Online Option</th>
+      <th class="text-center">Accelerated Option</th>
+      <th class="text-center">Financial Aid Eligible</th>
+  </thead>
+  </tr>
+
   <?php
     while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
@@ -114,18 +125,6 @@ while ( have_posts() ) : the_post(); ?>
 
   <div class="<?php echo $item_classes ?> item">
     
-  
-  <table style="width: 100%;" class="stack">
-  <tr>
-    <thead>
-      <th>Program of Study</th>
-      <th>Program Type</th>
-      <th class="text-center">Online Option</th>
-      <th class="text-center">Accelerated Option</th>
-      <th class="text-center">Financial Aid Eligible</th>
-  </thead>
-  </tr>
-
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -163,11 +162,13 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
-</table>
-
-  </div>
+</div>
 
  <?php wp_reset_query(); ?>
+
+ </div>
+
+</table>
 
 <?php endwhile;  ?>
 
