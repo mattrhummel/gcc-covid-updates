@@ -9,8 +9,8 @@
 * Template Name: Programs of Study List
 *
 */
-get_header(); ?>
-<?php
+get_header(); 
+
 while ( have_posts() ) : the_post(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
@@ -26,105 +26,103 @@ while ( have_posts() ) : the_post(); ?>
 
       <?php the_content(); ?>
 
+<div class="row expanded" data-equalizer>
+
+<ul id="filters" style="list-style-type: none;">
+
+<li style="list-style: none;">
+  <div class="columns medium-3">
+  <a href="#" data-filter="*" class="selected">
+     <div class="callout" data-equalizer-watch>
+        All Programs
+    </div>
+  </a>
+  </div>
+</li>
+
+ <?php 
+ $terms = get_terms("pathway_names"); // get all categories, but you can use any taxonomy
+ $count = count($terms); //How many are they?
+ if ( $count > 0 ){  //If there are more than 0 terms
+ foreach ( $terms as $term ) {  //for each term: ?>
+
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a href="#" data-filter="<?php echo $term->slug ?>"><div class="callout" data-equalizer-watch><?php echo $term->name  ?></div>
+    </a>
+  </div>
+</li>
+
+ <?php }
+ } 
+ ?>
+</ul>
+</div>
 <div class="row expanded">
-<div class="columns medium-12">
+ 
+<?php $the_query = new WP_Query( 'post_type=gcc_programs&posts_per_page=-1&orderby=title&order=ASC' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
+<?php if ( $the_query->have_posts() ) : ?>
+ <div class="columns" id="isotope-list">
+ <div class="<?php echo $term->slug; ?> item">
+<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+ $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item ?>
 
-<form action="" method="GET" id="pathways_search">
+<table style="width: 100%;" class="stack">
+  <tr>
+    <thead>
+      <th>Program of Study</th>
+      <th>Program Type</th>
+      <th class="text-center">Online Option</th>
+      <th class="text-center">Accelerated Option</th>
+      <th class="text-center">Financial Aid Eligible</th>
+  </thead>
+  </tr>
 
-<div class="row expanded collapse">
-<div class="columns">
-<p>Find programs by:</p>
-</div>
-</div>
-<div class="row expanded" data-equalizer-watch>
-<div class="columns alert medium-4">
-  <div class="callout">
-<label for="programpathway" class="show-for-sr">Find programs by pathway</label>
-<select name="programpathway" id="programpathway" onchange="submit();">
-<option value=""<?php echo ($_GET['programpathway'] == '') ? ' selected="selected"' : ''; ?>>Pathway</option>
+<?php $curriculum_url = get_field('curriculum_url'); ?>
+<tr>
+  <td>
+<a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
-    $categories = get_categories('taxonomy=pathway_names&post_type=gcc_programs'); 
-    foreach ($categories as $category) : 
-    echo '<option value="'.$category->name.'"';
-    echo ($_GET['programpathway'] == ''.$category->name.'') ? ' selected="selected"' : '';
-    echo '>'.$category->name.'</option>';
-    endforeach; 
+  the_title();?>
+</a>
+</td>
+<td>
+<?php the_field( 'program_degree' );?>
+</td>
+<td  class="text-center">
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+<i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
+<?php }
 ?>
-</select>
-</div>
-</div>
-</div>
+</td>
+<td class="text-center">
+<?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
-</form>
+<i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
 
-<?php if(empty ( $_GET['programpathway'] )) {
+<?php }
 ?>
+</td>
+<td class="text-center">
 
-<?php if( !isset($_GET['programpathway']) || '' == $_GET['programpathway']) {
-    
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC' 
-    ) ); 
-} 
-else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC',
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'pathway_names',
-        'field' => 'name',
-        'terms' => $programcategory
-        ),  
-    ), 
-    ));
+<?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-}
+<i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
-get_template_part( 'template-parts/content', 'programtable' );  ?>
-
-<?php
-
-elseif
-
-(!empty ( $_GET['programpathway'] )) {
-
+<?php }
 ?>
-<?php if( !isset($_GET['programpathway'])) {
-    
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC'
-    ) ); 
-} 
-else { //if select value exists (and isn't 'show all'), the query that compares $_GET value and taxonomy term (name)
-    $programcategory = $_GET['programpathway']; //get sort value
-    $programlist = new WP_Query( array(
-    'post_type' => 'gcc_programs', 
-    'posts_per_page' => -1,
-    'orderby'=> 'title', 
-    'order' => 'ASC',
-    'tax_query' => array(
-        array(
-        'taxonomy' => 'pathway_names',
-        'field' => 'name',
-        'terms' => $programcategory
-        ) 
-    ), 
-    ));
-}
-get_template_part( 'template-parts/content', 'programtable' );  ?>
+</td>
+</tr>
+
+</table>
+
+<?php endwhile;  ?>
+<?php endif; ?>
+</div>
 </div>
 </div>
 
+</article>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
