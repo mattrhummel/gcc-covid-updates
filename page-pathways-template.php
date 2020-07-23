@@ -33,12 +33,11 @@ while ( have_posts() ) : the_post(); ?>
 
   <?php
 
-    global $paged;
-    global $post;
+
     $args= array(
 
         'post_type' => 'gcc_programs',
-        'pages' => $paged,
+         'posts_per_page'=> -1,
         'orderby' => 'title',
         'order' => 'ASC',
     );
