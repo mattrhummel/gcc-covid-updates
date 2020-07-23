@@ -93,10 +93,9 @@ if ($programlist->have_posts()) : ?>
   <tr>
     <thead>
       <th>Program of Study</th>
-      <th>Online Program</th>
-      <th>Accelerated Program</th>
       <th>Program Type</th>
-      <th>Credits</th>
+      <th>Online Option</th>
+      <th>Accelerated Option</th>
       <th>Financial Aid Eligible</th>
   </thead>
   </tr>
@@ -112,49 +111,27 @@ if ($programlist->have_posts()) : ?>
 </a>
 </td>
 <td>
-  
+<?php the_field( 'program_degree' );?>
+</td>
+<td>
 <?php if( get_field('online_degree') == 'yes' ) { ?>
-
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('online_degree') == 'no' ) { ?>
-
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
+<i class="fas fa-mobile-alt" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
 <td>
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
-
-<?php }
-?>
-<?php if( get_field('accelerated_progam') == 'no' ) { ?>
-
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-running" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
 
 <?php }
 ?>
 </td>
-<td>
-<?php the_field( 'program_degree' );?>
-</td>
-<td><?php the_field( 'number_of_credits' ); ?></td>
 <td>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fa fa-check" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-
-<?php }
-?>
-<?php if( get_field('financial_aid_eligible') == 'no' ) { ?>
-
-<i class="fa fa-times" style="color: red;" aria-hidden="true"><span  class="show-for-sr">Online</span></i>
+<i class="fas fa-dollar-sign" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
