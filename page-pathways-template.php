@@ -64,9 +64,6 @@ while ( have_posts() ) : the_post(); ?>
 <?php if ( $the_query->have_posts() ) : ?>
  <div id="isotope-list">
 
-<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
-?>
-
 <div class="<?php echo $term->slug; ?> item">
 <table style="width: 100%;" class="stack">
   <tr>
@@ -78,6 +75,9 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center">Financial Aid Eligible</th>
   </thead>
   </tr>
+
+<?php while ( $the_query->have_posts() ) : $the_query->the_post(); 
+?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -111,15 +111,14 @@ while ( have_posts() ) : the_post(); ?>
 ?>
 </td>
 </tr>
-</table>
-</div>
+
 <?php endwhile;  ?>
 <?php endif; ?>
+</table>
 </div>
 </div>
 </div>
 
-</article>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
