@@ -115,14 +115,14 @@ if ($programlist->have_posts()) : ?>
 </td>
 <td>
 <?php if( get_field('online_degree') == 'yes' ) { ?>
-<i class="fas fa-mobile-alt" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
+<i class="fa fa-chalkboard-teacher h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
 <td>
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
-<i class="fas fa-running" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+<i class="fas fa-running h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
 
 <?php }
 ?>
@@ -131,7 +131,7 @@ if ($programlist->have_posts()) : ?>
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fas fa-dollar-sign" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+<i class="fas fa-dollar-sign h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
