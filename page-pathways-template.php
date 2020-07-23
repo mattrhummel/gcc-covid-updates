@@ -26,7 +26,7 @@ while ( have_posts() ) : the_post(); ?>
 
       <?php the_content(); ?>
 
-<div class="row expanded" data-equalizer>
+<div class="row expanded" data-equalizer stye="padding-left: 0; padding-right: 0;">
 
 <ul id="filters" style="list-style-type: none;">
 
