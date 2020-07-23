@@ -94,9 +94,9 @@ if ($programlist->have_posts()) : ?>
     <thead>
       <th>Program of Study</th>
       <th>Program Type</th>
-      <th>Online Option</th>
-      <th>Accelerated Option</th>
-      <th>Financial Aid Eligible</th>
+      <th class="text-center">Online Option</th>
+      <th class="text-center">Accelerated Option</th>
+      <th class="text-center">Financial Aid Eligible</th>
   </thead>
   </tr>
 
@@ -113,25 +113,25 @@ if ($programlist->have_posts()) : ?>
 <td>
 <?php the_field( 'program_degree' );?>
 </td>
-<td>
+<td  class="text-center">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
-<i class="fa fa-chalkboard-teacher h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
+<i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
-<td>
+<td  class="text-center">
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
-<i class="fas fa-running h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+<i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
 
 <?php }
 ?>
 </td>
-<td>
+<td  class="text-center">
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
-<i class="fas fa-dollar-sign h3" style="color: #376d66;" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+<i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
