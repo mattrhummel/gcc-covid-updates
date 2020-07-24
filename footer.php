@@ -268,5 +268,12 @@ $(document).scroll(function() {
      }
  });
 </script>
+<style>
+.reveal-overlay {
+
+  z-index: 10000000000 !important;
+
+}
+</style>
 </body>
 </html>
