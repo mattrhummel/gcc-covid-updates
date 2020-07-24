@@ -63,7 +63,7 @@ if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_p
     </button>
 
 <div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
-<div class="callout alert" style="margin-bottom: 0;">
+<div class="callout alert">
     <button class="close-button" aria-label="Close menu" type="button" data-close>
   <span aria-hidden="true">&times;</span>
 </button>
@@ -78,7 +78,7 @@ if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_p
 </div>
 </div>
 
-<div class="callout alert show-for-large text-center" style="padding: 10px 0;">
+<div class="callout alert show-for-large text-center" style="padding: 10px 0; margin-bottom: 0;">
 
 <?php $args = array(
     'post_type'      => 'attachment',
