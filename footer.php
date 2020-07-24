@@ -63,7 +63,7 @@ if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_p
     </button>
 
 <div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
-<div class="callout alert">
+<div class="callout alert" style="margin-bottom: 0;">
     <button class="close-button" aria-label="Close menu" type="button" data-close>
   <span aria-hidden="true">&times;</span>
 </button>
