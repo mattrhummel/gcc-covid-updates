@@ -261,7 +261,6 @@ $(document).scroll(function() {
     if ($(this).scrollTop()>140)
      {
         $('.popout-banner').fadeIn();
-        $('.popout-banner').animate({marginTop:"-=5px"},600)
      }
     else
      {
