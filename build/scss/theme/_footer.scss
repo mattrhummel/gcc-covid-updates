@@ -426,3 +426,6 @@ div.wpforms-container-full .wpforms-form input[type="submit"], div.wpforms-conta
     color: $white !important;
     }
 }
+.reveal-overlay {
+  z-index: 1000000000 !important;
+}
