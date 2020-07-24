@@ -52,6 +52,7 @@ if ($u_modified_time >= $u_time + 86400) { ?>
 <?php
 get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
+
 <?php
 if ( is_page('11434') || is_page('8') || is_page('24') || is_page('40526') || is_page('20') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
 
@@ -132,8 +133,7 @@ wp_reset_query();
 </div><!--.close-canvas-content-->
 </div>
 
-
-}
+<?php  } ?>
 
 <?php wp_footer(); ?>
 <script>
