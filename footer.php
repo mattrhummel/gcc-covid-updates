@@ -258,7 +258,7 @@ if (Boolean(readCookie('hide'))) {
 <?php } ?>
 <script>
 $(document).scroll(function() {
-    if ($(this).scrollTop()>140)
+    if ($(this).scrollTop()>200)
      {
         $('.popout-banner').fadeIn();
      }
