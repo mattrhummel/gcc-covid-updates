@@ -1,3 +1,7 @@
+.reveal-overlay {
+  z-index: 1000000000 !important;
+}
+
 .page-heading-image {
   height: auto;
   position: relative;
