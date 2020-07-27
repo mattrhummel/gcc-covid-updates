@@ -150,7 +150,7 @@ wp_reset_postdata();
 
   </div>
   <div class="tabs-panel" id="coloring-pages" role="tabpanel" aria-hidden="true" >
-    <?php 
+<?php 
 $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
@@ -256,8 +256,7 @@ wp_reset_postdata();
 </div>
 </div>
 
-  
-      
+       
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php

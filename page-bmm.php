@@ -31,7 +31,7 @@ while ( have_posts() ) : the_post(); ?>
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
 
-           <h2>Resources</h2>
+          <h2>Resources</h2>
 
           <?php while ( $query->have_posts() ) : $query->the_post();?>
           
@@ -42,7 +42,7 @@ while ( have_posts() ) : the_post(); ?>
             
             <?php the_content(); ?>
 
-          </div>
+           </div>
           
           <?php endwhile; ?>
           <?php wp_reset_postdata(); ?>
