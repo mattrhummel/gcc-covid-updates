@@ -80,6 +80,10 @@ if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_p
 
 <div class="callout alert show-for-large text-center" style="padding: 10px 0; margin-bottom: 0;">
 
+  <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+  </button>
+
 <?php $args = array(
     'post_type'      => 'attachment',
     'orderby'        => 'rand',
