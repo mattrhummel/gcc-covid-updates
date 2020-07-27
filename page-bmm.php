@@ -26,9 +26,6 @@ while ( have_posts() ) : the_post(); ?>
           $args =  array (
           'post_type' => 'post',
           'category_name' => 'black minds matter',
-          'post_status' => 'publish',
-          'orderby' => 'publish_date',
-          'order' => 'DESC',
           'posts_per_page'=> -1,
           );
           ?>
