@@ -10,7 +10,7 @@ while ( have_posts() ) : the_post(); ?>
     
       <div class="row expanded" id="main">
 
-        <div class="columns small-12">
+        <div class="columns small-10">
 
           <div class="row expanded" style="margin-top: 60px;">
 
