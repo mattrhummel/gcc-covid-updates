@@ -14,7 +14,13 @@ while ( have_posts() ) : the_post(); ?>
 
           <div class="row expanded" style="margin-top: 60px;">
 
-            <div class="columns large-10">
+            <div class="columns large-3">
+
+              <?php dynamic_sidebar('black-minds-matter-widgets'); ?>
+
+            </div>
+
+            <div class="columns large-9">
                    
           <?php
           $args =  array (
