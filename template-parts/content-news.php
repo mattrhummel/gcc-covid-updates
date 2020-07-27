@@ -6,7 +6,8 @@
       'post_status' => 'publish',
       'orderby' => 'publish_date',
       'order' => 'DESC',
-      'posts_per_page'=>6
+      'posts_per_page'=>6,
+      'category__not_in' => 1863
       );
       ?>
       <?php
