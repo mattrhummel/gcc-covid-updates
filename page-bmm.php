@@ -38,7 +38,7 @@ while ( have_posts() ) : the_post(); ?>
           
           <div class="card" style="padding: 1rem;">
             
-            <?php the_title('<h3 style="margin-bottom: 0; padding-bottom: 0;">', '</h3>', 'gcc-wp-2018'); ?>
+            <?php the_title('<h2 style="margin-bottom: 0; padding-bottom: 0;">', '</h2>', 'gcc-wp-2018'); ?>
             <p><?php echo get_the_date(); ?></p>
             
             <?php the_content(); ?>
