@@ -37,8 +37,6 @@ while ( have_posts() ) : the_post(); ?>
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
 
-          <h2>Resources</h2>
-
           <?php while ( $query->have_posts() ) : $query->the_post();?>
           
           <div class="card" style="padding: 1rem;">
