@@ -20,7 +20,16 @@ while ( have_posts() ) : the_post(); ?>
 
             </div>
 
-          <div class="columns large-8" style="color: #ffffff;">
+          <div class="columns large-8">
+
+            <style>
+            h1,h2,h3,h4,h5,h6,p {
+
+            color:  #ffffff;
+
+            }
+
+          </style>
                    
             <?php the_content(); ?>
         
