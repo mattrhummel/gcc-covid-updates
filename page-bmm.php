@@ -15,11 +15,7 @@ while ( have_posts() ) : the_post(); ?>
           <div class="row expanded" style="margin-top: 60px;">
 
             <div class="columns large-10">
-         
-              <?php
-                the_content();
-              ?>
-          
+                   
           <?php
           $args =  array (
           'post_type' => 'post',
@@ -53,6 +49,8 @@ while ( have_posts() ) : the_post(); ?>
           <?php else : ?>
           <p><?php esc_html_e( 'Sorry, no resources to display', 'gcc-wp-2018'); ?></p>
           <?php endif; ?>
+
+          <?php the_content(); ?>
         
          </div>
 
