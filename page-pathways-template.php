@@ -111,7 +111,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
 
-<?php $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
+<?php $termsArray = get_the_terms( $post->ID, "pathway_names" );  //Get the terms for this particular item
  $termsString = ""; //initialize the string that will contain the terms ?>
 
 <div class="row expanded">
