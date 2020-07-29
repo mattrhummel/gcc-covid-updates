@@ -111,13 +111,15 @@ while ( have_posts() ) : the_post(); ?>
   <?php
     while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
-      $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');?>
 
-      <div class="stack <?php echo $item_classes  ?> item">
 
               
      <?php if($item_cats): ?>
+
+      <?php foreach($item_cats as $item_cat) { ?>
+
+       <div class="stack <?php echo $item_cats->slug  ?> item">
 
             <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
           <tr>
@@ -130,11 +132,7 @@ while ( have_posts() ) : the_post(); ?>
         </thead>
         </tr>
 
-  <?php foreach($item_cats as $item_cat) {
-
-          $item_classes .= $item_cat->slug . ' '; ?>
-        
-
+      
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
   <td>
