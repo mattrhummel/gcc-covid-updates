@@ -88,8 +88,6 @@ while ( have_posts() ) : the_post(); ?>
                 $item_classes .= $item_cat->slug . ' '; ?>
                 
                 <div class="<?php echo $item_classes?> item">
-                  <div class="row expanded">
-                    <div class="columns medium-12">
                       <div class="callout">
                         <div class="row expanded">
                           <div class="columns medium-3">
@@ -122,8 +120,6 @@ while ( have_posts() ) : the_post(); ?>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </div>
                 </div>
                 <?php     }
                 endif;
