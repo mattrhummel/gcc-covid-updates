@@ -118,11 +118,9 @@ while ( have_posts() ) : the_post(); ?>
         foreach($item_cats as $item_cat) {
 
           $item_classes .= $item_cat->slug . ' '; ?>
-
-          <div class="<?php echo $item_classes  ?> item">
         
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
-    <tr>
+  <tr>
     <thead>
       <th style="width: 500px;">Program of Study</th>
       <th style="width: 300px;">Program Type</th>
@@ -134,22 +132,22 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
-  <td style="width: 30%;">
+  <td style="width: 400px;">
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
 </td>
-<td style="width: 30%;">
+<td style="width: 200px;">
 <?php the_field( 'program_degree' );?>
 </td>
-<td class="text-center" style="width: 50%">
+<td  class="text-center" style="width: auto;">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
-<td class="text-center" style="width: 50%">
+<td  class="text-center" style="width: 50%">
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
@@ -168,17 +166,14 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
-
 </table>
 
-</div>
- 
-
-  <?php     }
+   <?php     }
       endif;
 
   ?>
-  
+
+
  <?php wp_reset_query(); ?>
 
 <?php endwhile;  ?>
