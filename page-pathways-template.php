@@ -119,11 +119,11 @@ while ( have_posts() ) : the_post(); ?>
 
           $item_classes .= $item_cat->slug . ' '; ?>
         
-<div class="<?php echo $item_classes  ?> item">
+<div class="<?php echo $item_classes?> item">
 
 <div class="row expanded">
 
-  <div class="coloumns medium-12">
+<div class="columns medium-12">
 
 <div class="callout">
 
