@@ -84,7 +84,6 @@ while ( have_posts() ) : the_post(); ?>
   </div>
 </li>
 
- 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
     <a data-filter=".science-and-engineering-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Science and Engineering</h2></div>
@@ -139,14 +138,6 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php $program_icon = get_field('program_icon', $term); ?>
 
- <?php 
-
- foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
-
-
-
- <?php endforeach;?>
-
 
 </div>
 <div class="columns medium-4">
@@ -172,6 +163,8 @@ while ( have_posts() ) : the_post(); ?>
         foreach($item_cats as $item_cat) {
 
           $item_classes .= $item_cat->slug . ' '; ?>
+
+          <div class="stack <?php echo $item_classes  ?> item">
         
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
   <tr>
@@ -185,6 +178,9 @@ while ( have_posts() ) : the_post(); ?>
   </tr>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
+
+ <?foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
+
 <tr>
   <td>
 <a href="<?php the_field( 'curriculum_url' ); ?>">
@@ -221,6 +217,11 @@ while ( have_posts() ) : the_post(); ?>
 </tr>
 
 </table>
+
+</div>
+
+
+ <?php endforeach;?>
 
    <?php     }
       endif;
