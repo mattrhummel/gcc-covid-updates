@@ -119,9 +119,11 @@ while ( have_posts() ) : the_post(); ?>
 
         $item_classes .= $item_cat->slug . ' '; ?>        
 
-          <div class="<?php echo $item_classes  ?> item">
+        <div class="<?php echo $item_classes  ?> item">
 
         <?php } ?>
+
+      <?php endforeach; ?>
         
   <table style="width: 100%;" class="stack" style="min-width: 100%;">
   <tr>
