@@ -25,13 +25,13 @@ while ( have_posts() ) : the_post(); ?>
     </div>
   </div>
   <div class="row expanded">
-  <div class="columns medium-9" id="main">
+  <div class="columns medium-12" id="main">
     <div class="entry-content" id="main">
 
-      <?php the_content(); ?>
 
-<div class="row expanded" data-equalizer>
+   <div class="row expanded" data-equalizer>
 
+<div class="columns medium-8">
   <?php
 
 
@@ -84,7 +84,7 @@ while ( have_posts() ) : the_post(); ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout" data-equalizer-watch><?php echo $program_tax_name;  ?></div>
+    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout text-center" data-equalizer-watch><i class="fa fa-check" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></div>
     </a>
   </div>
 </li>
@@ -93,7 +93,16 @@ while ( have_posts() ) : the_post(); ?>
 
 </ul>
 </div>
-  <div id="isotope-list">
+<div class="columns medium-4">
+    <?php the_content(); ?>
+  </div>
+</div>
+
+   <div class="row expanded" data-equalizer>
+
+<div class="columns medium-12">
+
+<div id="isotope-list">
 <div class="row expanded">
  <div class="columns">
 
@@ -105,16 +114,9 @@ while ( have_posts() ) : the_post(); ?>
       if($item_cats):
         foreach($item_cats as $item_cat) {
 
-          $item_classes .= $item_cat->slug . ' ';
-
-        }
-      endif;
-
-  ?>
-
-  <div class="<?php echo $item_classes ?> item">
-    
-  <table style="width: 100%;" class="stack" style="min-width: 100%;">
+          $item_classes .= $item_cat->slug . ' '; ?>
+        
+        <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
   <tr>
     <thead>
       <th>Program of Study</th>
@@ -124,6 +126,7 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center">Financial Aid Eligible</th>
   </thead>
   </tr>
+
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -163,7 +166,11 @@ while ( have_posts() ) : the_post(); ?>
 
 </table>
 
-  </div>
+   <?php     }
+      endif;
+
+  ?>
+
 
  <?php wp_reset_query(); ?>
 
@@ -172,6 +179,8 @@ while ( have_posts() ) : the_post(); ?>
 
 </div>
 
+</div>
+</div>
 </div>
 </div>
 </div>
