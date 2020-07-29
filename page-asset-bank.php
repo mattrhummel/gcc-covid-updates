@@ -24,6 +24,16 @@ while ( have_posts() ) : the_post(); ?>
       </div>
 
 
+      <div class="row expanded" style="padding-left: 0; padding-right: 0;">
+      <div class="columns small-12">
+        <?php
+        the_content();
+        ?>
+      </div>
+      </div>
+
+<div class="row expanded">
+  <div class="columns small-12">
 <ul class="tabs" id="example-tabs" data-tabs role="tablist">
   <li class="tabs-title is-active" role="presentation">
     <a href="#logos" role="tab" tabindex="0" aria-selected="false" aria-controls="logos">Logos</a>
@@ -255,7 +265,8 @@ wp_reset_postdata();
 
 </div>
 </div>
-
+</div>
+</div>
        
 </article>
 <?php endwhile; // End of the loop. ?>
