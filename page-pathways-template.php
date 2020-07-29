@@ -121,11 +121,11 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="<?php echo $item_classes  ?> item">
        
-<div class="callout">
 
 <?php  foreach($item_cats as $item_cat) {?>
+<div class="callout">
 <div class="row expanded">
-  
+
 <div class="columns">
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 
@@ -163,11 +163,8 @@ while ( have_posts() ) : the_post(); ?>
 <?php }
 ?>
 </div>
-
-<?php } ?>
-
-
 </div>
+<?php } ?>
 
 
 
