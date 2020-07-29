@@ -70,9 +70,9 @@ while ( have_posts() ) : the_post(); ?>
 
 <li style="list-style: none;">
   <div class="columns medium-3">
-  <a href="#" data-filter="*">
+  <a href="#" data-filter="*" class="text-center">
      <div class="callout" data-equalizer-watch>
-        All Programs
+        <i class="fa fa-check" style="margin-bottom: 10px;"></i><br/>All Programs
     </div>
   </a>
   </div>
