@@ -66,6 +66,8 @@ while ( have_posts() ) : the_post(); ?>
 
    ?>
 
+<?php $program_icon = get_field('program_icon'); ?>
+
 <ul id="filters" style="list-style-type: none; margin-left: 0;">
 
 <li style="list-style: none;">
@@ -84,7 +86,7 @@ while ( have_posts() ) : the_post(); ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php the_field( 'program_icon' ); ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
+    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
     </a>
   </div>
 </li>
