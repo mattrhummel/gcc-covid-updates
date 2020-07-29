@@ -87,11 +87,11 @@ while ( have_posts() ) : the_post(); ?>
                 foreach($item_cats as $item_cat) {
                 $item_classes .= $item_cat->slug . ' '; ?>
                 
-                <div class="<?php echo $item_classes?> item">
+                <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
                   <div class="row expanded" style="min-width: 100%;">
-                    <div class="columns small-12">
-                        <div class="callout">
-                        <div class="row expanded collapse">
+                    <div class="columns small-12" style="min-width: 100%;">
+                        <div class="callout" style="min-width: 100%;">
+                        <div class="row expanded collapse" style="min-width: 100%;">
                           <div class="columns medium-6">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
