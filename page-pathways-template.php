@@ -117,7 +117,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
  <div class="columns">
 
-        <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
+        <table style="width: 100%;" class="stack" style="min-width: 100%;">
           <tr>
           
           <thead>
