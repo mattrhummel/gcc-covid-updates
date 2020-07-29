@@ -84,8 +84,7 @@ while ( have_posts() ) : the_post(); ?>
  foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
 
   <?php 
-$term = get_queried_object();
-$program_icon = get_field('program_icon', $term); ?>
+  $program_icon = get_field('program_icon', $term); ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
