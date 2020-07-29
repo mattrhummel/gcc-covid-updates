@@ -71,8 +71,8 @@ while ( have_posts() ) : the_post(); ?>
 <li style="list-style: none;">
   <div class="columns medium-3">
   <a href="#" data-filter="*" class="text-center">
-     <div class="callout" data-equalizer-watch>
-        <i class="fa fa-check" style="margin-bottom: 10px;"></i><br/>All Programs
+     <div class="callout large" data-equalizer-watch>
+       <h2><i class="fa fa-check" style="margin-bottom: 10px;"></i><br/>All Programs</h2>
     </div>
   </a>
   </div>
@@ -84,7 +84,7 @@ while ( have_posts() ) : the_post(); ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout text-center" data-equalizer-watch><i class="fa fa-check" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></div>
+    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout large text-center" data-equalizer-watch><h2><i class="fa fa-check" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
     </a>
   </div>
 </li>
