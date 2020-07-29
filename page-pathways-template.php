@@ -123,10 +123,10 @@ while ( have_posts() ) : the_post(); ?>
 
         <?php } ?>
 
-      <?php endforeach; ?>
+
         
-  <table style="width: 100%;" class="stack" style="min-width: 100%;">
-  <tr>
+    <table style="width: 100%;" class="stack" style="min-width: 100%;">
+    <tr>
     <thead>
       <th >Program of Study</th>
       <th >Program Type</th>
