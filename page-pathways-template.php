@@ -113,8 +113,10 @@ while ( have_posts() ) : the_post(); ?>
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
+      if($item_cats):
 
       ?>
+
     <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
 
           <tr>
@@ -126,10 +128,6 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center">Financial Aid Eligible</th>
   </thead>
   </tr>
-      <?php 
-      if($item_cats):
-
-      ?>
 
       <?php  foreach($item_cats as $item_cat) {
 
