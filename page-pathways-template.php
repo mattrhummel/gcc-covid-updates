@@ -32,6 +32,77 @@ while ( have_posts() ) : the_post(); ?>
    <div class="row expanded" data-equalizer>
 
 <div class="columns medium-8">
+
+  <ul id="filters" style="list-style-type: none; margin-left: 0;">
+
+<li style="list-style: none;">
+  <div class="columns medium-3">
+  <a href="#" data-filter="*" class="text-center">
+     <div class="callout alert" data-equalizer-watch>
+       <h2 class="h5"><i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs</h2>
+    </div>
+  </a>
+  </div>
+</li>
+
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".business-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Business</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".public-service-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Public Service</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".it-and-technical-studies-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>IT &amp; Technical Studies</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".health-science-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Health Science</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".social-science-and-education"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Social Science &amp; Education</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".science-and-engineering-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Science and Engineering</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+  <li style="list-style-type: none;">
+    <div class="columns medium-3">
+    <a data-filter=".humanities-and-arts-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Humanities &amp; Arts</h2></div>
+    </a>
+  </div>
+</li>
+
+ 
+</ul>
+
   <?php
 
 
@@ -68,32 +139,15 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php $program_icon = get_field('program_icon', $term); ?>
 
-<ul id="filters" style="list-style-type: none; margin-left: 0;">
-
-<li style="list-style: none;">
-  <div class="columns medium-3">
-  <a href="#" data-filter="*" class="text-center">
-     <div class="callout alert" data-equalizer-watch>
-       <h2 class="h5"><i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs</h2>
-    </div>
-  </a>
-  </div>
-</li>
-
  <?php 
 
  foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
 
-  <li style="list-style-type: none;">
-    <div class="columns medium-3">
-    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
-    </a>
-  </div>
-</li>
+
 
  <?php endforeach;?>
 
-</ul>
+
 </div>
 <div class="columns medium-4">
     <?php the_content(); ?>
