@@ -121,8 +121,6 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="<?php echo $item_classes  ?> item">
        
-
-<?php  foreach($item_cats as $item_cat) {?>
 <div class="callout">
 <div class="row expanded">
 
@@ -164,9 +162,6 @@ while ( have_posts() ) : the_post(); ?>
 ?>
 </div>
 </div>
-<?php } ?>
-
-
 
    <?php   }
       endif;
