@@ -132,22 +132,22 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
-  <td style="width: 400px;">
+  <td style="width: 30%;">
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
 </td>
-<td style="width: 200px;">
+<td style="width: 30%;">
 <?php the_field( 'program_degree' );?>
 </td>
-<td  class="text-center"  style="width: 50%">
+<td class="text-center" style="width: 50%">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
-<td  class="text-center" style="width: 50%">
+<td class="text-center" style="width: 50%">
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
