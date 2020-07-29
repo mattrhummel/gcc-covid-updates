@@ -88,7 +88,7 @@ while ( have_posts() ) : the_post(); ?>
                 $item_classes .= $item_cat->slug . ' '; ?>
                 
                 <div class="<?php echo $item_classes?> item">
-                  <div class="row expanded">
+                  <div class="row expanded" style="min-width: 100%;">
                     <div class="columns small-12">
                         <div class="callout">
                         <div class="row expanded collapse">
@@ -99,7 +99,7 @@ while ( have_posts() ) : the_post(); ?>
                               the_title();?>
                             </a>
                           </div>
-                          <div class="columns ">
+                          <div class="columns">
                             <?php the_field( 'program_degree' );?>
                           </div>
                           <div class="columns">
