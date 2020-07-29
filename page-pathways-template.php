@@ -104,25 +104,22 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="columns medium-12">
 
+<?php $the_query = new WP_Query( 'posts_per_page=-1' ); //Check the WP_Query docs to see how you can limit which posts to display ?>
+<?php if ( $the_query->have_posts() ) : ?>
+
 <div id="isotope-list">
+
+<?php while ( $the_query->have_posts() ) : $the_query->the_post();?>
+
+<?php $termsArray = get_the_terms( $post->ID, "category" );  //Get the terms for this particular item
+ $termsString = ""; //initialize the string that will contain the terms ?>
+
 <div class="row expanded">
  <div class="columns">
 
-  <?php
-    while($programs->have_posts()) : $programs->the_post();
-      $idd = get_the_ID();
-      $item_cats = get_the_terms($post->ID, 'pathway_names');?>
-
-
-              
-     <?php if($item_cats): ?>
-
-      <?php foreach($item_cats as $item_cat) { ?>
-
-       <div class="stack <?php echo $item_cats->slug  ?> item">
-
-            <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
+        <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
           <tr>
+          
           <thead>
             <th >Program of Study</th>
             <th >Program Type</th>
@@ -132,6 +129,12 @@ while ( have_posts() ) : the_post(); ?>
         </thead>
         </tr>
 
+ <?php foreach ( $termsArray as $term ) { // for each term 
+ $termsString .= $term->slug.' '; //create a string that has all the slugs 
+ } ?>
+
+
+<div class="<?php echo $termsString; ?> item">
       
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -170,17 +173,14 @@ while ( have_posts() ) : the_post(); ?>
 </tr>
 
 
-   <?php     }
-      endif;
-
-  ?>
+</div>
 
 </table>
-</div>
- <?php wp_reset_query(); ?>
 
-<?php endwhile;  ?>
-
+<!-- end item -->
+    <?php endwhile;  ?>
+    </div> <!-- end isotope-list -->
+<?php endif; ?>
 
 </div>
 
