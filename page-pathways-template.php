@@ -66,7 +66,9 @@ while ( have_posts() ) : the_post(); ?>
 
    ?>
 
-<?php $program_icon = get_field('program_icon'); ?>
+<?php 
+$term = get_queried_object();
+$program_icon = get_field('program_icon', $term); ?>
 
 <ul id="filters" style="list-style-type: none; margin-left: 0;">
 
