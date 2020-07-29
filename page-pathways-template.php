@@ -115,12 +115,12 @@ while ( have_posts() ) : the_post(); ?>
       $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
         
-        foreach($item_cats as $item_cat) {
+      ?>
 
-          $item_classes .= $item_cat->slug . ' '; ?>
+          <div class="<?php echo $item_classes  ?> item">
         
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
-  <tr>
+    <tr>
     <thead>
       <th style="width: 500px;">Program of Study</th>
       <th style="width: 300px;">Program Type</th>
@@ -129,6 +129,10 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center" style="width: auto;">Financial Aid Eligible</th>
   </thead>
   </tr>
+
+   <?foreach($item_cats as $item_cat) {
+
+          $item_classes .= $item_cat->slug . ' '; ?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -166,12 +170,15 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
-</table>
-
-   <?php     }
+  <?php     }
       endif;
 
   ?>
+
+</table>
+
+</div>
+ 
 
 
  <?php wp_reset_query(); ?>
