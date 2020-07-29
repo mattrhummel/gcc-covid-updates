@@ -119,10 +119,8 @@ while ( have_posts() ) : the_post(); ?>
 
         $item_classes .= $item_cat->slug . ' '; ?>        
 
-        <div class="<?php echo $item_classes  ?> item">
-
-    <?php while($programs->have_posts()) : $programs->the_post();?>
-        
+<div class="<?php echo $item_classes  ?> item">
+       
     <table style="width: 100%;" class="stack" style="min-width: 100%;">
     <tr>
     <thead>
@@ -134,6 +132,7 @@ while ( have_posts() ) : the_post(); ?>
   </thead>
   </tr>
 
+<?php  foreach($item_cats as $item_cat) {?>
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
   <td>
@@ -170,9 +169,11 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
+<?php } ?>
+
+
 </table>
 
-<?php endwhile; ?>
 
 
    <?php   }
