@@ -25,7 +25,6 @@ while ( have_posts() ) : the_post(); ?>
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
           <div class="columns medium-8">
-         
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -62,13 +61,13 @@ while ( have_posts() ) : the_post(); ?>
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
                 <div class="columns medium-3">
-                  <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
+                  <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
                 </a>
               </div>
             </li>
             <?php endforeach;?>
           </ul>
-      </div>
+        </div>
         <div class="columns medium-4">
           <?php the_content(); ?>
         </div>
