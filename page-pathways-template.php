@@ -109,17 +109,21 @@ while ( have_posts() ) : the_post(); ?>
  <div class="columns">
 
   <?php
-    while($programs->have_posts()) : $programs->the_post();
+  while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
         
-        foreach($item_cats as $item_cat) {
+      foreach($item_cats as $item_cat) {
 
-          $item_classes .= $item_cat->slug . ' '; ?>
+        $item_classes .= $item_cat->slug . ' '; ?>        
+
+          <div class="<?php echo $item_classes  ?> item">
+
+        <?php } ?>
         
-  <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
+  <table style="width: 100%;" class="stack" style="min-width: 100%;">
   <tr>
     <thead>
       <th >Program of Study</th>
@@ -168,12 +172,13 @@ while ( have_posts() ) : the_post(); ?>
 
 </table>
 
-   <?php     }
+
+   <?php   
       endif;
 
   ?>
 
-
+  </div>
  <?php wp_reset_query(); ?>
 
 <?php endwhile;  ?>
