@@ -121,11 +121,13 @@ while ( have_posts() ) : the_post(); ?>
         
 <div class="<?php echo $item_classes  ?> item">
 
-<div class="callout">
-
 <div class="row expanded">
 
-  <div class="columns">
+<div class="callout">
+
+  <div class="row expanded">
+
+  <div class="columns medium-3">
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 
@@ -135,18 +137,18 @@ while ( have_posts() ) : the_post(); ?>
 </a>
 
 </div>
- <div class="columns">
+ <div class="columns medium-3">
 
 <?php the_field( 'program_degree' );?>
 </div>
- <div class="columns">
+ <div class="columns medium-2">
 
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </div>
- <div class="columns">
+ <div class="columns medium-2">
 
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
@@ -154,8 +156,8 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php }
 ?>
-</div>
- <div class="columns">
+</div> 
+ <div class="columns medium-2">
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
@@ -163,6 +165,8 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php }
 ?>
+
+</div>
 
 </div>
 </div>
