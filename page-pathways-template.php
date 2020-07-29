@@ -121,58 +121,53 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="<?php echo $item_classes  ?> item">
        
-    <table style="width: 100%;" class="stack" style="min-width: 100%;">
-    <tr>
-    <thead>
-      <th >Program of Study</th>
-      <th >Program Type</th>
-      <th class="text-center" >Online Option</th>
-      <th class="text-center" >Accelerated Option</th>
-      <th class="text-center" >Financial Aid Eligible</th>
-  </thead>
-  </tr>
+<div class="callout">
 
 <?php  foreach($item_cats as $item_cat) {?>
+<div class="row expanded">
+  
+<div class="columns">
 <?php $curriculum_url = get_field('curriculum_url'); ?>
-<tr>
-  <td>
+
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
-</td>
-<td >
+</div>
+
+<div class="columns">
 <?php the_field( 'program_degree' );?>
-</td>
-<td  >
+</div>
+
+<div class="columns">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
-</td>
-<td  >
+
+</div>
+<div class="columns">
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
 
 <?php }
 ?>
-</td>
-<td  class="text-center" style="width: 120px;">
+</div>
 
+<div class="columns">
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
 <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
-</td>
-</tr>
+</div>
 
 <?php } ?>
 
 
-</table>
+</div>
 
 
 
