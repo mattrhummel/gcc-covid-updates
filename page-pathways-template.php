@@ -114,12 +114,12 @@ while ( have_posts() ) : the_post(); ?>
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
+        foreach($item_cats as $item_cat) {
 
-      ?>
-
-    <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
-
-          <tr>
+          $item_classes .= $item_cat->slug . ' '; ?>
+        
+        <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
+  <tr>
     <thead>
       <th>Program of Study</th>
       <th>Program Type</th>
@@ -129,10 +129,6 @@ while ( have_posts() ) : the_post(); ?>
   </thead>
   </tr>
 
-      <?php  foreach($item_cats as $item_cat) {
-
-          $item_classes .= $item_cat->slug . ' '; ?>
-        
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
   <td>
