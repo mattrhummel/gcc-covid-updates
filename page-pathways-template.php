@@ -47,7 +47,7 @@ while ( have_posts() ) : the_post(); ?>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".business-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Business</h2></div>
+    <a data-filter=".business-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-briefcase" style="margin-bottom: 10px;"></i><br/>Business</h2></div>
     </a>
   </div>
 </li>
@@ -55,7 +55,7 @@ while ( have_posts() ) : the_post(); ?>
  
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".public-service-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Public Service</h2></div>
+    <a data-filter=".public-service-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-gavel" style="margin-bottom: 10px;"></i><br/>Public Service</h2></div>
     </a>
   </div>
 </li>
@@ -63,7 +63,7 @@ while ( have_posts() ) : the_post(); ?>
  
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".it-and-technical-studies-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>IT &amp; Technical Studies</h2></div>
+    <a data-filter=".it-and-technical-studies-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-server" style="margin-bottom: 10px;"></i><br/>IT &amp; Technical Studies</h2></div>
     </a>
   </div>
 </li>
@@ -71,7 +71,7 @@ while ( have_posts() ) : the_post(); ?>
  
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".health-science-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Health Science</h2></div>
+    <a data-filter=".health-science-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-user-md" style="margin-bottom: 10px;"></i><br/>Health Science</h2></div>
     </a>
   </div>
 </li>
@@ -79,14 +79,14 @@ while ( have_posts() ) : the_post(); ?>
  
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".social-science-and-education"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Social Science &amp; Education</h2></div>
+    <a data-filter=".social-science-and-education"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-user-md" style="margin-bottom: 10px;"></i><br/>Social Science &amp; Education</h2></div>
     </a>
   </div>
 </li>
 
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".science-and-engineering-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Science and Engineering</h2></div>
+    <a data-filter=".science-and-engineering-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-atom" style="margin-bottom: 10px;"></i><br/>Science and Engineering</h2></div>
     </a>
   </div>
 </li>
@@ -94,7 +94,7 @@ while ( have_posts() ) : the_post(); ?>
  
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".humanities-and-arts-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="" style="margin-bottom: 10px;"></i><br/>Humanities &amp; Arts</h2></div>
+    <a data-filter=".humanities-and-arts-pathway"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="fas fa-palette" style="margin-bottom: 10px;"></i><br/>Humanities &amp; Arts</h2></div>
     </a>
   </div>
 </li>
