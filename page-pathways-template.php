@@ -120,7 +120,6 @@ while ( have_posts() ) : the_post(); ?>
           $item_classes .= $item_cat->slug . ' '; ?>
 
           <div class="<?php echo $item_classes  ?> item">
-
         
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
     <tr>
@@ -132,8 +131,6 @@ while ( have_posts() ) : the_post(); ?>
       <th class="text-center" style="width: auto;">Financial Aid Eligible</th>
   </thead>
   </tr>
-
-  <?foreach ( $item_cats as $item_cat ):   //for each term: ?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -171,7 +168,6 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
-<?php endforeach;?>
 
 </table>
 
@@ -182,7 +178,7 @@ while ( have_posts() ) : the_post(); ?>
       endif;
 
   ?>
-
+  
  <?php wp_reset_query(); ?>
 
 <?php endwhile;  ?>
