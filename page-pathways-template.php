@@ -122,16 +122,16 @@ while ( have_posts() ) : the_post(); ?>
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
   <tr>
     <thead>
-      <th style="width: 50%;">Program of Study</th>
-      <th style="width: 50%;">Program Type</th>
-      <th class="text-center" style="width: 50%;">Online Option</th>
-      <th class="text-center" style="width: 50%;">Accelerated Option</th>
-      <th class="text-center" style="width: 50%;">Financial Aid Eligible</th>
+      <th style="width: 30%;">Program of Study</th>
+      <th style="width: 30%;">Program Type</th>
+      <th class="text-center" style="width: auto;">Online Option</th>
+      <th class="text-center" style="width: auto;">Accelerated Option</th>
+      <th class="text-center" style="width: auto;">Financial Aid Eligible</th>
   </thead>
   </tr>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
-<tr style="width: 30%;">
+<tr>
   <td style="width: 50%;">
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
@@ -141,13 +141,13 @@ while ( have_posts() ) : the_post(); ?>
 <td style="width: 50%;">
 <?php the_field( 'program_degree' );?>
 </td>
-<td  class="text-center" style="width: 50%;">
+<td  class="text-center" style="width: auto;">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
 </td>
-<td  class="text-center" style="width: 50%;">
+<td  class="text-center" style="width: auto;">
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
@@ -155,7 +155,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php }
 ?>
 </td>
-<td  class="text-center" style="width: 50%;">
+<td  class="text-center" style="width: auto;">
 
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
