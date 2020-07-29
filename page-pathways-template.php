@@ -121,7 +121,6 @@ while ( have_posts() ) : the_post(); ?>
 
         <div class="<?php echo $item_classes  ?> item">
 
-        <?php } ?>
         
     <table style="width: 100%;" class="stack" style="min-width: 100%;">
     <tr>
@@ -173,7 +172,7 @@ while ( have_posts() ) : the_post(); ?>
 </table>
 
 
-   <?php   
+   <?php   }
       endif;
 
   ?>
