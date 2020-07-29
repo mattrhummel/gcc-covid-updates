@@ -66,6 +66,7 @@ while ( have_posts() ) : the_post(); ?>
 
    ?>
 
+<?php $program_icon = get_field('program_icon', $term); ?>
 
 <ul id="filters" style="list-style-type: none; margin-left: 0;">
 
@@ -83,13 +84,9 @@ while ( have_posts() ) : the_post(); ?>
 
  foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
 
-  <?php 
-  $terms = get_field('pathway_names');
-  $cat_icon = get_field('program_icon', $queried_object); ?>
-
   <li style="list-style-type: none;">
     <div class="columns medium-3">
-    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php $icon = get_field('program_icon', $term->taxonomy . '_' . $term->term_id); echo $icon;?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
+    <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
     </a>
   </div>
 </li>
