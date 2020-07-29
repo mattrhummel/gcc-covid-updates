@@ -122,8 +122,8 @@ while ( have_posts() ) : the_post(); ?>
   <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
   <tr>
     <thead>
-      <th style="width: 20%;">Program of Study</th>
-      <th style="width: 20%;">Program Type</th>
+      <th style="width: 300px;">Program of Study</th>
+      <th style="width: 300px;">Program Type</th>
       <th class="text-center" style="width: auto;">Online Option</th>
       <th class="text-center" style="width: auto;">Accelerated Option</th>
       <th class="text-center" style="width: auto;">Financial Aid Eligible</th>
@@ -132,13 +132,13 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
-  <td style="width: 20%;">
+  <td style="width: 300px;">
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
 </td>
-<td style="width: 20%;">
+<td style="width: 300px;">
 <?php the_field( 'program_degree' );?>
 </td>
 <td  class="text-center" style="width: auto;">
