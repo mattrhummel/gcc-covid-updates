@@ -123,6 +123,8 @@ while ( have_posts() ) : the_post(); ?>
 
 <div class="row expanded">
 
+  <div class="coloumns medium-12">
+
 <div class="callout">
 
   <div class="row expanded">
@@ -165,6 +167,8 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php }
 ?>
+
+</div>
 
 </div>
 
