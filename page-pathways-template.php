@@ -89,31 +89,32 @@ while ( have_posts() ) : the_post(); ?>
                 
                 <div class="<?php echo $item_classes?> item">
                   <div class="row expanded">
-                      <div class="callout">
-                        <div class="row expanded">
-                          <div class="columns medium-3">
+                    <div class="columns small-12">
+                        <div class="callout">
+                        <div class="row expanded collapse">
+                          <div class="columns medium-6">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a>
                           </div>
-                          <div class="columns medium-3">
+                          <div class="columns ">
                             <?php the_field( 'program_degree' );?>
                           </div>
-                          <div class="columns medium-2">
+                          <div class="columns">
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
                             <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns medium-2">
+                          <div class="columns">
                             <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
                             <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns medium-2">
+                          <div class="columns">
                             <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
                             <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
                             <?php }
@@ -121,6 +122,7 @@ while ( have_posts() ) : the_post(); ?>
                           </div>
                         </div>
                       </div>
+                    </div>
                   </div>
                 </div>
                 <?php     }
