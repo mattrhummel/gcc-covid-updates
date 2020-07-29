@@ -88,33 +88,33 @@ while ( have_posts() ) : the_post(); ?>
                 $item_classes .= $item_cat->slug . ' '; ?>
                 
                 <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
-                  <div class="row expanded" style="min-width: 100%;">
-                    <div class="columns small-12" style="min-width: 100%;">
-                        <div class="callout" style="min-width: 100%;">
-                        <div class="row expanded collapse" style="min-width: 100%;">
-                          <div class="columns medium-6">
+                  <div class="row expanded" style="width: 100%;">
+                    <div class="columns small-12" style="width: 100%;">
+                        <div class="callout" style="width: 100%;">
+                        <div class="row expanded" style="width: 100%;">
+                          <div class="columns medium-3">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a>
                           </div>
-                          <div class="columns">
+                          <div class="columns medium-3">
                             <?php the_field( 'program_degree' );?>
                           </div>
-                          <div class="columns">
+                          <div class="columns medium-2">
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
                             <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns">
+                          <div class="columns medium-2">
                             <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
                             <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns">
+                          <div class="columns medium-2">
                             <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
                             <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
                             <?php }
