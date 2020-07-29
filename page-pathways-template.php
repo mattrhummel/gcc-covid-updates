@@ -112,23 +112,28 @@ while ( have_posts() ) : the_post(); ?>
     while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):
-        
-        foreach($item_cats as $item_cat) {
+      $item_cats = get_the_terms($post->ID, 'pathway_names');?>
+
+      <div class="stack <?php echo $item_classes  ?> item">
+
+              
+     <?php if($item_cats): ?>
+
+            <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
+          <tr>
+          <thead>
+            <th >Program of Study</th>
+            <th >Program Type</th>
+            <th class="text-center" >Online Option</th>
+            <th class="text-center" >Accelerated Option</th>
+            <th class="text-center" >Financial Aid Eligible</th>
+        </thead>
+        </tr>
+
+  <?php foreach($item_cats as $item_cat) {
 
           $item_classes .= $item_cat->slug . ' '; ?>
         
-  <table style="width: 100%;" class="stack <?php echo $item_classes  ?> item" style="min-width: 100%;">
-  <tr>
-    <thead>
-      <th >Program of Study</th>
-      <th >Program Type</th>
-      <th class="text-center" >Online Option</th>
-      <th class="text-center" >Accelerated Option</th>
-      <th class="text-center" >Financial Aid Eligible</th>
-  </thead>
-  </tr>
 
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 <tr>
@@ -166,14 +171,14 @@ while ( have_posts() ) : the_post(); ?>
 </td>
 </tr>
 
-</table>
 
    <?php     }
       endif;
 
   ?>
 
-
+</table>
+</div>
  <?php wp_reset_query(); ?>
 
 <?php endwhile;  ?>
