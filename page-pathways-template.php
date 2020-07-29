@@ -24,8 +24,8 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns medium-8">
-            <div class="callout" data-equalizer-watch>
+          <div class="columns medium-8" data-equalizer-watch>
+            <div class="callout">
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
