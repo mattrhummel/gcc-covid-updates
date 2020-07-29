@@ -109,42 +109,45 @@ while ( have_posts() ) : the_post(); ?>
  <div class="columns">
 
   <?php
-  while($programs->have_posts()) : $programs->the_post();
+    while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
         
-      foreach($item_cats as $item_cat) {
+        foreach($item_cats as $item_cat) {
 
-        $item_classes .= $item_cat->slug . ' '; ?>        
-
+          $item_classes .= $item_cat->slug . ' '; ?>
+        
 <div class="<?php echo $item_classes  ?> item">
-       
+
 <div class="callout">
+
 <div class="row expanded">
 
-<div class="columns">
+  <div class="columns">
+
 <?php $curriculum_url = get_field('curriculum_url'); ?>
 
 <a href="<?php the_field( 'curriculum_url' ); ?>">
 <?php 
   the_title();?>
 </a>
-</div>
 
-<div class="columns">
+</div>
+ <div class="columns">
+
 <?php the_field( 'program_degree' );?>
 </div>
+ <div class="columns">
 
-<div class="columns">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
 <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
 <?php }
 ?>
-
 </div>
-<div class="columns">
+ <div class="columns">
+
 <?php if( get_field('accelerated_progam') == 'yes' ) { ?>
 
 <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
@@ -152,23 +155,29 @@ while ( have_posts() ) : the_post(); ?>
 <?php }
 ?>
 </div>
+ <div class="columns">
 
-<div class="columns">
 <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
 
 <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
 
 <?php }
 ?>
+
 </div>
 </div>
 
-   <?php   }
+</div>
+
+</div>
+
+
+   <?php     }
       endif;
 
   ?>
 
-  </div>
+
  <?php wp_reset_query(); ?>
 
 <?php endwhile;  ?>
