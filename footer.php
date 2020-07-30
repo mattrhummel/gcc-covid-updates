@@ -70,7 +70,7 @@ function getRandomImage(imgAr, path) {
   <div class="row">
     <div class="columns" style="padding-left: 10px;">
       <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
-      <a class="button" data-toggle="offCanvasLeft1"><?php _e('Request Information', 'gcc-wp-2018'); ?>
+      <a class="button" data-toggle="offCanvasBottom1"><?php _e('Request Information', 'gcc-wp-2018'); ?>
       </a>
       <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
        <?php _e('Apply Now', 'gcc-wp-2018'); ?>
@@ -79,7 +79,7 @@ function getRandomImage(imgAr, path) {
   </div>
 </div>
 
-<div class="off-canvas position-left popout-form" id="offCanvasLeft1" data-off-canvas>
+<div class="off-canvas position-bottom popout-form" id="offCanvasBottom1" data-off-canvas>
 
   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
