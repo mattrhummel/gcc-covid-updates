@@ -78,9 +78,7 @@ function getRandomImage(imgAr, path) {
     </div>
   </div>
 </div>
-
-<div class="off-canvas position-bottom popout-form" id="offCanvasLeft1" data-off-canvas>
-
+<div class="off-canvas position-left popout-form" id="offCanvasLeft1" data-off-canvas>
   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
