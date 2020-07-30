@@ -101,7 +101,6 @@ function getRandomImage(imgAr, path) {
 
 $(document).foundation('_disableScroll', scrollTop);
 
-
 $(function() {
 $('.lazy').Lazy();
 });
