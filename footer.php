@@ -17,7 +17,7 @@
      <?php echo do_shortcode('[wpforms id="27548"]') ?>
       <p><small><?php _e('By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.', 'gcc-wp-2018') ?></small></p>
       <span class="close-button" data-close aria-label="Close modal">
-        <i class="fa fa-times" aria-hidden="true">&times;</i>
+        <i class="fa fa-times" aria-hidden="true"></i>
       </span>
   </div>
 </main>
