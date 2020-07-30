@@ -82,42 +82,21 @@ if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_p
 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
-<?php $args = array(
-    'post_type'      => 'attachment',
-    'orderby'        => 'rand',
-    'order'    => 'ASC',
-    'post_status' => 'inherit',
-    'posts_per_page' => 1,
-);
-$args['tax_query'] = array(
 
-array(
-    'taxonomy' => 'asset_bank_categories',
-    'terms' => array( 'staff-photo' ),
-    'field' => 'slug',
-),
+<script type="text/javascript">
+// place your images in this array
+var random_images_array = ['GCCheadshots080.jpg', 'GCCheadshots099.jpg'];
+function getRandomImage(imgAr, path) {
+    path = path || 'https://gccstaging1.wpengine.com/wp-content/uploads/'; // default path here
+    var num = Math.floor( Math.random() * imgAr.length );
+    var img = imgAr[ num ];
+    var imgStr = '<img src="' + path + img + '" alt = "">';
+    document.write(imgStr); document.close();
+}
+</script>
 
-);
-remove_all_filters('posts_orderby');
-?>
-<?php $the_query = new WP_Query( $args ); ?>
+<script type="text/javascript">getRandomImage(random_images_array, 'https://gccstaging1.wpengine.com/wp-content/uploads/')</script>
 
-<?php if ( $the_query->have_posts() ) { ?>
-
-<?php
-while ( $the_query->have_posts() ) {
-    $the_query->the_post();
-  ?>
-
-<?php echo wp_get_attachment_image( get_the_ID(), array('364', '635'));  ?>
-  
-<?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
-  
-<?php 
-wp_reset_query();
-
-} }
-?>
   <div class="row">
     <div class="columns" style="padding-left: 10px;">
         <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
