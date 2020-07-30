@@ -16,8 +16,8 @@
       <p><?php _e('Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started', 'gcc-wp-2018') ?></p>
      <?php echo do_shortcode('[wpforms id="27548"]') ?>
       <p><small><?php _e('By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.', 'gcc-wp-2018') ?></small></p>
-      <span class="close-button" data-close aria-label="Close modal" type="button">
-        <span aria-hidden="true">&times;</span>
+      <span class="close-button" data-close aria-label="Close modal">
+        <i class="fa fa-times" aria-hidden="true">&times;</i>
       </span>
   </div>
 </main>
