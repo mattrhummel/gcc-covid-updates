@@ -30,7 +30,7 @@
       get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
- <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas style="width: 500px; padding: 20px;">
+ <div class="off-canvas position-left" id="offCanvasLeft1" data-off-canvas>
 
   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
