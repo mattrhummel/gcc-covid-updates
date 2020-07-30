@@ -1,6 +1,7 @@
 <?php
 function gcc_wp_2018_scripts() {
-wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '20200723', 'all' );
+
+wp_enqueue_style( 'gcc-wp-2018-theme-styles' , get_template_directory_uri() . '/dist/css/style.min.css', array(), '20200730', 'all' );
 
 wp_enqueue_style('gcc-wp-2018-motion-ui', '//cdnjs.cloudflare.com/ajax/libs/motion-ui/1.1.1/motion-ui.min.css', array(), '2020605', 'all');
 

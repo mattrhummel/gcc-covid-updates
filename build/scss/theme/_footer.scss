@@ -16,31 +16,8 @@
          margin-right: 10px;
          margin-bottom: 80px;
 }
-.off-canvas {
- text-transform: uppercase;
- bottom: 0;
- margin-bottom: 0;
-   .callout.alert {
 
-         text-transform: uppercase;
-         text-align: center;
-         z-index: 1000000;
-         width: 100%;
-         margin-bottom: 0;
-          
-         a {
-          font-weight: 800;
-         }
-  }
 
-    }
-
-    .off-canvas.is-transition-overlap.is-open {
-    -webkit-box-shadow: 0;
-    box-shadow: 0;
-    margin-bottom: 0;
-}
-  
  @media screen and (min-width: 64em) { 
       left: 0;
       bottom:0;
@@ -71,6 +48,12 @@
   }
  
  }
+ off-canvas.is-open {
+    -webkit-transform: translate(0,0);
+    transform: translate(0,0);
+    width: 500px;
+    padding: 30px;
+}
 }
 
 .site-footer {
