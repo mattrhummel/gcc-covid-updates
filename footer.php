@@ -54,29 +54,9 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
 <?php
-if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_page('40526') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
+if ( is_page('8')) {  ?>
 
 <div class="popout-banner">
-
-    <button type="button" class="button popout-icon hide-for-xlarge hide-for-large hide-for-print clearfix" data-toggle="offCanvasNestedPush">
-     <i class="fas fa-arrow-right"></i><?php _e('Get Started', 'gcc-wp-2018'); ?></a>
-    </button>
-
-<div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
-<div class="callout alert">
-    <button class="close-button" aria-label="Close menu" type="button" data-close>
-  <span aria-hidden="true">&times;</span>
-</button>
-<?php ?>
-    <h3><?php _e( 'Don\'t wait get started today', 'gcc-wp-2018' ); ?></h3>
-    <a class="button" data-toggle="request-info-form">   
-      <?php _e('Request Information', 'gcc-wp-2018'); ?></a>
-    <a class="button" 
-    href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
-    <?php _e('Apply Now', 'gcc-wp-2018'); ?>
-    </a>
-</div>
-</div>
 
 <div class="callout alert show-for-large text-center" style="padding: 10px 0; margin-bottom: 0;"  data-closable>
 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
@@ -99,12 +79,12 @@ function getRandomImage(imgAr, path) {
 
   <div class="row">
     <div class="columns" style="padding-left: 10px;">
-        <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
-        <a class="button" data-toggle="request-info-form"><?php _e('Request Information', 'gcc-wp-2018'); ?>
-        </a>
-        <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
+      <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
+      <a class="button" data-toggle="request-info-form"><?php _e('Request Information', 'gcc-wp-2018'); ?>
+      </a>
+      <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
        <?php _e('Apply Now', 'gcc-wp-2018'); ?>
-        </a>
+      </a>
     </div>
   </div>
 </div>
