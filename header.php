@@ -30,7 +30,7 @@
       get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
-  <div id="request-info-form" class="reveal" data-reveal="" aria-labelledby="request-info-formHeader">
+  <div id="request-info-form" class="reveal" data-reveal aria-labelledby="request-info-formHeader">
       <h2 id="request-info-formHeader"><?php _e('Request Information', 'gcc-wp-2018') ?></h2>
       <p><?php _e('Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started', 'gcc-wp-2018') ?></p>
      <?php echo do_shortcode('[wpforms id="27548"]') ?>
