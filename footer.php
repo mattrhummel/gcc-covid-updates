@@ -82,6 +82,7 @@ function getRandomImage(imgAr, path) {
       <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
       <button class="button" data-toggle="request-info-form"><?php _e('Request Information', 'gcc-wp-2018'); ?>
       </button>
+      
       <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
        <?php _e('Apply Now', 'gcc-wp-2018'); ?>
       </a>
