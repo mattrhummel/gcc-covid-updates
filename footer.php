@@ -21,7 +21,6 @@
       </span>
   </div>
 </main>
-
 <?php  //setup alert from parent page and pulls the field into subpages.
 $page_footer_contact = get_field('page_footer_contact');
 global $post;
