@@ -99,7 +99,7 @@ function getRandomImage(imgAr, path) {
 <?php wp_footer(); ?>
 <script>
 
-$(document).foundation('_disableScroll', scrollTop);
+$(document).foundation();
 
 $(function() {
 $('.lazy').Lazy();
