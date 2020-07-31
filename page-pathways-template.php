@@ -24,7 +24,7 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns medium-9">
+          <div class="columns medium-6 xlarge-9">
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -46,12 +46,9 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-<button class="button alert expanded dropdown hide-for-xlarge" type="button" data-toggle="example-dropdown-bottom-left">Browse Programs</button>
 
-<div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
 
   <?php $program_icon = get_field('program_icon', $term); ?>
-
       <ul class="vertical menu" id="filters">
           <li>
               <a href="#" data-filter="*">
@@ -65,8 +62,8 @@ while ( have_posts() ) : the_post(); ?>
                 </a>
           </li>
             <?php endforeach;?>
-  </ul>
-</div>
+      </ul>
+
             <div class="show-for-xlarge">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
@@ -91,7 +88,7 @@ while ( have_posts() ) : the_post(); ?>
           </ul>
         </div>
       </div>
-        <div class="columns medium-3">
+        <div class="columns medium-6 xlarge-3">
           <!-- Bottom Left -->
           <?php the_content(); ?>
         </div>
