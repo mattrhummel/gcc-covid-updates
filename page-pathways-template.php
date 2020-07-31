@@ -49,7 +49,7 @@ while ( have_posts() ) : the_post(); ?>
 
 
   <?php $program_icon = get_field('program_icon', $term); ?>
-      <ul class="vertical menu" id="filters">
+      <ul class="vertical menu" id="filters-list">
           <li>
               <a href="#" data-filter="*">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
@@ -66,7 +66,7 @@ while ( have_posts() ) : the_post(); ?>
 
             <div class="show-for-xlarge">
             <?php $program_icon = get_field('program_icon', $term); ?>
-            <ul id="filters" style="list-style-type: none; margin-left: 0;">
+            <ul id="filters-boxes" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-6 large-3">
                   <a href="#" data-filter="*" class="text-center">
