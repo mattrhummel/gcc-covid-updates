@@ -49,9 +49,11 @@ while ( have_posts() ) : the_post(); ?>
             <div class="show-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
 
-            <a data-dropdown="filters" aria-controls="filters" aria-expanded="false">Browse Pathways</a>
+           <button class="button" type="button" data-toggle="filter-dropdown-bottom-left">Browse Programs</button>
+            
+            <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="filter-dropdown-bottom-left" data-dropdown data-auto-focus="true">
 
-            <ul id="filters" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+            <ul id="filters">
 
               <li>
                   <a href="#" data-filter="*" class="text-center">
@@ -61,14 +63,16 @@ while ( have_posts() ) : the_post(); ?>
 
               <?php
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
+              
               <li>
                   <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout large alert text-center" data-equalizer-watch><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
                 </a>
             </li>
+
             <?php endforeach;?>
           </ul>
         </div>
-
+      </div>
             <div class="hide-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
