@@ -46,7 +46,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-            <div class="show-for-small-only show-for-medium-only">
+            <div class="show-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
 
             <a data-dropdown="filters" aria-controls="filters" aria-expanded="false">Browse Pathways</a>
