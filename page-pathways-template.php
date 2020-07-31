@@ -51,6 +51,7 @@ while ( have_posts() ) : the_post(); ?>
   <?php $program_icon = get_field('program_icon', $term); ?>
 
       <div class="hide-for-xlarge">
+      <h2>Browse our Career Pathways</h2>
       <ul class="vertical menu" id="filters-list">
           <li>
               <a href="#" data-filter="*">
