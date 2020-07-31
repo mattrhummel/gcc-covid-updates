@@ -133,19 +133,19 @@ while ( have_posts() ) : the_post(); ?>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns medium-1">
+                          <div class="columns small-1">
                             <?php if( get_field('accelerated_program') == 'yes' ) { ?>
                             <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
-                           <div class="columns medium-1">
+                           <div class="columns  small-1">
                             <?php if( get_field('transfer_program') == 'yes' ) { ?>
                             <i class="fas fa-random fa-2x" aria-hidden="true"><span class="show-for-sr">transfer program</span></i>
                             <?php }
                             ?>
                           </div>
-                          <div class="columns medium-1">
+                          <div class="columns small-1">
                             <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
                             <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
                             <?php }
