@@ -46,8 +46,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-
-            <div class="hide-for-small-only">
+            <div class="show-for-large">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -73,12 +72,12 @@ while ( have_posts() ) : the_post(); ?>
       </div>
         <div class="columns medium-6 xlarge-4">
           <!-- Bottom Left -->
-<button class="button alert expanded dropdown hide-for-medium" type="button" data-toggle="example-dropdown-bottom-left">Browse Programs</button>
+<button class="button alert expanded dropdown hide-for-large" type="button" data-toggle="example-dropdown-bottom-left">Browse Programs</button>
 
 <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
 
   <?php $program_icon = get_field('program_icon', $term); ?>
-  
+
       <ul class="vertical menu" id="filters">
           <li>
               <a href="#" data-filter="*">
@@ -139,7 +138,7 @@ while ( have_posts() ) : the_post(); ?>
                             <?php }
                             ?>
                           </div>
-                           <div class="columns  small-1">
+                           <div class="columns small-1">
                             <?php if( get_field('transfer_program') == 'yes' ) { ?>
                             <i class="fas fa-random fa-2x" aria-hidden="true"><span class="show-for-sr">transfer program</span></i>
                             <?php }
