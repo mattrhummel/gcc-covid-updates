@@ -47,26 +47,6 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
 
-<!-- Bottom Left -->
-<button class="button expanded dropdown hide-for-medium" type="button" data-toggle="example-dropdown-bottom-left">Brows Programs</button>
-<div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
-  <?php $program_icon = get_field('program_icon', $term); ?>
-      <ul class="vertical menu" id="filters" style="list-style-type: none; margin-left: 0;">
-          <li style="list-style: none;">
-                  <a href="#" data-filter="*">
-                      <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
-                  </a>
-              </li>
-              <?php
-              foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
-          <li style="list-style-type: none;">
-                  <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
-                </a>
-          </li>
-            <?php endforeach;?>
-  </ul>
-</div>
-
             <div class="hide-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
@@ -92,6 +72,25 @@ while ( have_posts() ) : the_post(); ?>
         </div>
       </div>
         <div class="columns medium-6 xlarge-4">
+          <!-- Bottom Left -->
+<button class="button alert expanded dropdown hide-for-medium" type="button" data-toggle="example-dropdown-bottom-left">Brows Programs</button>
+<div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
+  <?php $program_icon = get_field('program_icon', $term); ?>
+      <ul class="vertical menu" id="filters" style="list-style-type: none; margin-left: 0;">
+          <li style="list-style: none;">
+                  <a href="#" data-filter="*">
+                      <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
+                  </a>
+              </li>
+              <?php
+              foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
+          <li style="list-style-type: none;">
+                  <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
+                </a>
+          </li>
+            <?php endforeach;?>
+  </ul>
+</div>
           <?php the_content(); ?>
         </div>
       </div>
