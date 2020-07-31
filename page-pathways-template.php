@@ -49,6 +49,8 @@ while ( have_posts() ) : the_post(); ?>
 
 
   <?php $program_icon = get_field('program_icon', $term); ?>
+
+      <div class="hide-for-xlarge">
       <ul class="vertical menu" id="filters-list">
           <li>
               <a href="#" data-filter="*">
@@ -63,6 +65,7 @@ while ( have_posts() ) : the_post(); ?>
           </li>
             <?php endforeach;?>
       </ul>
+    </div>
 
             <div class="show-for-xlarge">
             <?php $program_icon = get_field('program_icon', $term); ?>
