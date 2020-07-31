@@ -48,12 +48,12 @@ while ( have_posts() ) : the_post(); ?>
             ?>
 
 <!-- Bottom Left -->
-<button class="button expanded dropdown" type="button" data-toggle="example-dropdown-bottom-left">Brows Programs</button>
+<button class="button expanded dropdown hide-for-medium" type="button" data-toggle="example-dropdown-bottom-left">Brows Programs</button>
 <div class="dropdown-pane" data-position="bottom" data-alignment="left" id="example-dropdown-bottom-left" data-dropdown data-auto-focus="true">
   <?php $program_icon = get_field('program_icon', $term); ?>
       <ul class="vertical menu" id="filters" style="list-style-type: none; margin-left: 0;">
           <li style="list-style: none;">
-                  <a href="#" data-filter="*" class="text-center">
+                  <a href="#" data-filter="*">
                       <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
                   </a>
               </li>
