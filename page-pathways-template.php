@@ -46,7 +46,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-            <div class="show-for-large">
+            <div class="show-for-xlarge">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
