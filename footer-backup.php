@@ -10,6 +10,16 @@
 */
 ?>
 <?php //closing main container, do not remove ?>
+
+  <div id="request-info-form" class="reveal" data-reveal="" aria-labelledby="request-info-formHeader">
+      <h2 id="request-info-formHeader"><?php _e('Request Information', 'gcc-wp-2018') ?></h2>
+      <p><?php _e('Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started', 'gcc-wp-2018') ?></p>
+     <?php echo do_shortcode('[wpforms id="27548"]') ?>
+      <p><small><?php _e('By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.', 'gcc-wp-2018') ?></small></p>
+      <button class="close-button" data-close aria-label="Close modal" type="button">
+      <span aria-hidden="true">&times;</span>
+    </button>
+  </div>
 </main>
 
 <?php  //setup alert from parent page and pulls the field into subpages.
@@ -44,54 +54,81 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 ?>
 
 <?php
-if ( is_page('8')  ) {  ?>
+if ( is_page('11434') || is_page('8') || is_page('24') || is_page('44') ||  is_page('40526') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
 
 <div class="popout-banner">
 
-<div class="callout alert show-for-xlarge text-center" style="padding: 10px 0; margin-bottom: 0;"  data-closable>
+    <button type="button" class="button popout-icon hide-for-xlarge hide-for-large hide-for-print clearfix" data-toggle="offCanvasNestedPush">
+     <i class="fas fa-arrow-right"></i><?php _e('Get Started', 'gcc-wp-2018'); ?></a>
+    </button>
+
+<div class="off-canvas position-bottom is-closed" id="offCanvasNestedPush" data-off-canvas style="max-height: 180px; overflow: hidden;">
+<div class="callout alert">
+    <button class="close-button" aria-label="Close menu" type="button" data-close>
+  <span aria-hidden="true">&times;</span>
+</button>
+<?php ?>
+    <h3><?php _e( 'Don\'t wait get started today', 'gcc-wp-2018' ); ?></h3>
+    <a class="button" data-toggle="request-info-form">   
+      <?php _e('Request Information', 'gcc-wp-2018'); ?></a>
+    <a class="button" 
+    href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
+    <?php _e('Apply Now', 'gcc-wp-2018'); ?>
+    </a>
+</div>
+</div>
+
+<div class="callout alert show-for-large text-center" style="padding: 10px 0; margin-bottom: 0;"  data-closable>
 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
-</button>
+  </button>
+<?php $args = array(
+    'post_type'      => 'attachment',
+    'orderby'        => 'rand',
+    'order'    => 'ASC',
+    'post_status' => 'inherit',
+    'posts_per_page' => 1,
+);
+$args['tax_query'] = array(
 
-<script type="text/javascript">
-// place your images in this array
-var random_images_array = ['GCCheadshots080.jpg', 'GCCheadshots099.jpg'];
-function getRandomImage(imgAr, path) {
-    path = path || '/wp-content/uploads/'; // default path here
-    var num = Math.floor( Math.random() * imgAr.length );
-    var img = imgAr[ num ];
-    var imgStr = '<img src="' + path + img + '" alt = "">';
-    document.write(imgStr); document.close();
-}
-</script>
+array(
+    'taxonomy' => 'asset_bank_categories',
+    'terms' => array( 'staff-photo' ),
+    'field' => 'slug',
+),
 
-<script type="text/javascript">getRandomImage(random_images_array, '/wp-content/uploads/')</script>
+);
+remove_all_filters('posts_orderby');
+?>
+<?php $the_query = new WP_Query( $args ); ?>
 
+<?php if ( $the_query->have_posts() ) { ?>
+
+<?php
+while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+  ?>
+
+<?php echo wp_get_attachment_image( get_the_ID(), array('364', '635'));  ?>
+  
+<?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
+  
+<?php 
+wp_reset_query();
+
+} }
+?>
   <div class="row">
     <div class="columns" style="padding-left: 10px;">
-      <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
-      <a class="button" data-toggle="offCanvasLeft1" id="get-started-rif"><?php _e('Request Information', 'gcc-wp-2018'); ?>
-      </a>
-      <a class="button" id="get-started-apply" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
+        <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
+        <a class="button" data-toggle="request-info-form"><?php _e('Request Information', 'gcc-wp-2018'); ?>
+        </a>
+        <a class="button" href="<?php _e('https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084', 'gcc-wp-2018'); ?>"> 
        <?php _e('Apply Now', 'gcc-wp-2018'); ?>
-      </a>
+        </a>
     </div>
   </div>
 </div>
-<div class="off-canvas position-left popout-form" id="offCanvasLeft1" data-off-canvas>
-  <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
-    <span aria-hidden="true">&times;</span>
-  </button>
-
-      <h2 id="request-info-formHeader"><?php _e('Request Information', 'gcc-wp-2018') ?></h2>
-      <p><?php _e('Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started', 'gcc-wp-2018') ?></p>
-     <?php echo do_shortcode('[wpforms id="27548"]') ?>
-      <p><small><?php _e('By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.', 'gcc-wp-2018') ?></small></p>
-      <button class="close-button" data-close aria-label="Close modal" type="button">
-      <span aria-hidden="true">&times;</span>
-    </button>
-  </div>
-
 
 </div>
 

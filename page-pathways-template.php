@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded">
+        <div class="row expanded" data-equalizer>
           <div class="columns medium-8">
             <?php
             $args= array(
@@ -49,9 +49,9 @@ while ( have_posts() ) : the_post(); ?>
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
-                <div class="columns medium-3">
+                <div class="columns medium-4">
                   <a href="#" data-filter="*" class="text-center">
-                    <div class="callout alert" data-equalizer-watch>
+                    <div class="callout large alert" data-equalizer-watch>
                       <h2 class="h5"><i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs</h2>
                     </div>
                   </a>
@@ -60,8 +60,8 @@ while ( have_posts() ) : the_post(); ?>
               <?php
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
-                <div class="columns medium-3">
-                  <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
+                <div class="columns medium-4">
+                  <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout large alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
                 </a>
               </div>
             </li>
@@ -72,7 +72,7 @@ while ( have_posts() ) : the_post(); ?>
           <?php the_content(); ?>
         </div>
       </div>
-      <div class="row expanded" data-equalizer>
+      <div class="row expanded">
         <div class="columns medium-12">
           <div id="isotope-list">
             <div class="row expanded">
