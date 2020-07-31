@@ -46,6 +46,30 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
+            <div class="show-for-small-only show-for-medium-only">
+            <?php $program_icon = get_field('program_icon', $term); ?>
+
+            <a data-dropdown="filters" aria-controls="filters" aria-expanded="false">Browse Pathways</a>
+
+            <ul id="filters" class="f-dropdown" data-dropdown-content aria-hidden="true" tabindex="-1">
+
+              <li>
+                  <a href="#" data-filter="*" class="text-center">
+                      <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
+                  </a>
+              </li>
+
+              <?php
+              foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
+              <li>
+                  <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout large alert text-center" data-equalizer-watch><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
+                </a>
+            </li>
+            <?php endforeach;?>
+          </ul>
+        </div>
+
+            <div class="hide-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -68,6 +92,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
           </ul>
         </div>
+      </div>
         <div class="columns medium-6 xlarge-4">
           <?php the_content(); ?>
         </div>
