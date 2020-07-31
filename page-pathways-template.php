@@ -46,7 +46,6 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-            <div class="show-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
 
            <button class="button" type="button" data-toggle="filter-dropdown-bottom-left">Browse Programs</button>
@@ -72,7 +71,6 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
           </ul>
         </div>
-      </div>
             <div class="hide-for-small-only">
             <?php $program_icon = get_field('program_icon', $term); ?>
             <ul id="filters" style="list-style-type: none; margin-left: 0;">
