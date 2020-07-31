@@ -24,7 +24,7 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns large-8">
+          <div class="columns medium-8">
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -91,7 +91,7 @@ while ( have_posts() ) : the_post(); ?>
           </ul>
         </div>
       </div>
-        <div class="columns large-4">
+        <div class="columns medium-4">
           <!-- Bottom Left -->
           <?php the_content(); ?>
         </div>
