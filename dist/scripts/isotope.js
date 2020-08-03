@@ -1,13 +1,15 @@
 jQuery(function ($) {
  
  var $container = $('#isotope-list'); //The ID for the list with all the blog posts
+ 
  $container.isotope({ //Isotope options, 'item' matches the class in the PHP
  itemSelector : '.item', 
-   layoutMode : 'masonry'
+ layoutMode : 'masonry'
  });
  
  //Add the class selected to the item that is clicked, and remove from the others
- var $optionSets = $('#filters-boxes','#filters-list'),
+ var $optionSets = $('#filters-large, #filters-small'),
+ 
  $optionLinks = $optionSets.find('a');
  
  $optionLinks.click(function(){
@@ -16,7 +18,8 @@ jQuery(function ($) {
  if ( $this.hasClass('selected') ) {
    return false;
  }
- var $optionSet = $this.parents('#filters-boxes','#filters-list');
+ 
+ var $optionSet = $this.parents('#filters-large');
  $optionSets.find('.selected').removeClass('selected');
  $this.addClass('selected');
  
@@ -26,5 +29,6 @@ jQuery(function ($) {
  
  return false;
  });
+
  
 });

@@ -25,6 +25,8 @@ while ( have_posts() ) : the_post(); ?>
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
           <div class="columns medium-4 xlarge-9">
+
+            <?php $program_icon = get_field('program_icon'); ?>
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -46,13 +48,10 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-
-
-  <?php $program_icon = get_field('program_icon', $term); ?>
-
+  
       <div class="hide-for-xlarge">
       <h2>Browse our Career Pathways</h2>
-      <ul class="vertical menu" id="filters-list">
+      <ul class="vertical menu" id="filters-small">
           <li>
               <a href="#" data-filter="*">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
@@ -61,16 +60,14 @@ while ( have_posts() ) : the_post(); ?>
               <?php
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
           <li>
-                  <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
-                </a>
+               <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
+               </a>
           </li>
             <?php endforeach;?>
       </ul>
-    </div>
-
+     </div>
             <div class="show-for-xlarge">
-            <?php $program_icon = get_field('program_icon', $term); ?>
-            <ul id="filters-boxes" style="list-style-type: none; margin-left: 0;">
+            <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-6 large-3">
                   <a href="#" data-filter="*" class="text-center">
