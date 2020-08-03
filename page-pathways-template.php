@@ -128,10 +128,18 @@ while ( have_posts() ) : the_post(); ?>
                             <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
                             ?>
+                            <?php if( get_field('online_degree') == 'no' ) { ?>
+                            <i class="fas fa-times fa-2x" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Online Degree</span></i>
+                            <?php }
+                            ?>
                           </div>
                           <div class="columns small-1" style="min-width: 100px; display: inline-block;">
                             <?php if( get_field('accelerated_program') == 'yes' ) { ?>
                             <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <?php }
+                            ?>
+                             <?php if( get_field('accelerated_program') == 'no' ) { ?>
+                            <i class="fas fa-times fa-2x" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
