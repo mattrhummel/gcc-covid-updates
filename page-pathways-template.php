@@ -48,8 +48,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
 
-          <h2>Browse our Career Pathways</h2>
-           
+          <h2>Browse our Career Pathways</h2>  
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-2">
