@@ -65,7 +65,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
       </ul>
      </div>
-
+            
             <div class="show-for-xlarge">
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
