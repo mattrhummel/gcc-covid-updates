@@ -142,7 +142,7 @@ while ( have_posts() ) : the_post(); ?>
                             <?php }
                             ?>
                              <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                            <i class="fas fa-times fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <i class="fas fa-times fa-2x" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
