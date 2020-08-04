@@ -22,17 +22,12 @@ while ( have_posts() ) : the_post(); ?>
   </div>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
+
       <div class="entry-content" id="main">
-        <div class="row expanded">
-        <div class="columns medium-12">
+        
           <!-- Bottom Left -->
-         <div class="hide-for-small-only">
             <?php the_content(); ?>
-         </div>
-        </div>
-      </div>
-      <div class="row expanded">
-        <div class="columns medium-12">
+         
 
           <h2>Browse our Career Pathways</h2>
            
@@ -56,10 +51,8 @@ while ( have_posts() ) : the_post(); ?>
             </li>
             <?php endforeach;?>
           </ul>
-        </div>
-      </div>
-      <div class="row expanded">
-        <div class="columns medium-12">
+  
+  
           <div id="isotope-list">
             <div class="row expanded">
               <div class="columns">
@@ -136,10 +129,6 @@ while ( have_posts() ) : the_post(); ?>
         </div>
           </div>
         </div>
-      </div>
-    </div>
-  </div>
-</div>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
