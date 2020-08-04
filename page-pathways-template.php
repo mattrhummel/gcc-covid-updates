@@ -50,7 +50,7 @@ while ( have_posts() ) : the_post(); ?>
 
       <div class="hide-for-xlarge">
       <h2>Browse our Career Pathways</h2>
-      <ul class="vertical menu" id="filters-list">
+      <ul class="vertical menu" id="filters-small">
           <li>
               <a href="#" data-filter="*">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
