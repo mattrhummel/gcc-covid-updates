@@ -23,31 +23,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded" data-equalizer>
-          <div class="columns medium-4 xlarge-6">
-            <?php
-            $args= array(
-            'post_type' => 'gcc_programs',
-            'posts_per_page'=> -1,
-            'orderby' => 'title',
-            'order' => 'ASC',
-            );
-            ?>
-
-            <?php
-            $programs = new WP_Query($args);
-            if(is_array($programs->posts) && !empty($programs->post)) {
-            foreach($programs->posts as $programs->post) {
-            $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
-            if(is_array($post_taxs) && !empty($post_taxs)) {
-            foreach($post_taxs as $post_tax) {
-            $program_taxs[$post_tax->slug] = $post_tax->name;
-            }
-            }
-            }
-            }
-            ?>
-      </div>
+        <div class="row expanded">
         <div class="columns medium-12">
           <!-- Bottom Left -->
          <div class="hide-for-small-only">
@@ -63,7 +39,7 @@ while ( have_posts() ) : the_post(); ?>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-2">
-                  <a href="#" data-filter="*" class="button alert expanded text-center">
+                  <a href="#" data-filter="*" class="button alert expanded text-center" >
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
                   </a>
                 </div>
@@ -80,6 +56,10 @@ while ( have_posts() ) : the_post(); ?>
             </li>
             <?php endforeach;?>
           </ul>
+        </div>
+      </div>
+      <div class="row expanded">
+        <div class="columns medium-12">
           <div id="isotope-list">
             <div class="row expanded">
               <div class="columns">
@@ -152,6 +132,8 @@ while ( have_posts() ) : the_post(); ?>
                 <?php endwhile;  ?>
               </div>
             </div>
+          </div>
+        </div>
           </div>
         </div>
       </div>
