@@ -23,9 +23,9 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded">
-        <div class="columns medium-6">
-        <?php
+        <div class="row expanded" data-equalizer>
+          <div class="columns medium-4 xlarge-6">
+            <?php
             $args= array(
             'post_type' => 'gcc_programs',
             'posts_per_page'=> -1,
@@ -47,8 +47,19 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
+      </div>
+        <div class="columns medium-12">
+          <!-- Bottom Left -->
+         <div class="hide-for-small-only">
+            <?php the_content(); ?>
+         </div>
+        </div>
+      </div>
+      <div class="row expanded">
+        <div class="columns medium-12">
 
-          <h2>Browse our Career Pathways</h2>  
+          <h2>Browse our Career Pathways</h2>
+           
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-2">
@@ -142,18 +153,6 @@ while ( have_posts() ) : the_post(); ?>
               </div>
             </div>
           </div>
-
-       </div>
-        <div class="columns medium-6">
-          <!-- Bottom Left -->
-         <div class="hide-for-small-only">
-            <?php the_content(); ?>
-         </div>
-        </div>
-      </div>
-      <div class="row expanded">
-        <div class="columns medium-12">
-       
         </div>
       </div>
     </div>
