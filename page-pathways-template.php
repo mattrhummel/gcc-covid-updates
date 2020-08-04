@@ -24,8 +24,9 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns large-5">
-            <div class="callout" data-equalizer-watch>
+          <div class="columns large-5"> 
+            <div class="show-for-large">          
+            <div class="callout" data-equalizer-watch style="min-height: 500px;">
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -47,8 +48,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-       <div class="show-for-large">
-          <h2>Select a Career Pathways</h2>
+          <h2>Select a Career Pathway</h2>          
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -59,11 +59,10 @@ while ( have_posts() ) : the_post(); ?>
                 </div>
               </li>
               <?php
-
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
                 <div class="columns medium-6">
-                <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center" data-equalizer-watch>
+                  <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center" data-equalizer-watch>
                   <i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
                 </a>
               </div>
@@ -76,7 +75,7 @@ while ( have_posts() ) : the_post(); ?>
       </div>
         <div class="columns large-7">
         <div class="hide-for-large">
-         <h2>Select a Career Pathways</h2>
+         <h2>Select a Career Pathway</h2>
           <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
           <li>
               <a href="#" data-filter="*">
@@ -92,9 +91,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
       </ul>
      </div>
-
-          <!-- Bottom Left -->
-          <div class="callout " data-equalizer-watch>
+          <div class="callout" data-equalizer-watch>
             <?php the_content(); ?>
          </div>
         </div>
