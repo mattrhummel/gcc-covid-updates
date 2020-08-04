@@ -1,6 +1,6 @@
-<div class="row expanded">
+<div class="row expanded" data-equalizer>
 <div class="columns medium-6">
-	<div class="callout" data-equalizer-watch>
+<div class="callout" data-equalizer-watch>
 <div class="row">
 <div class="columns small-1"><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i></div>
 <div class="columns small-11"><p class="h4">Online</p>

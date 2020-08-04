@@ -75,7 +75,9 @@ while ( have_posts() ) : the_post(); ?>
         <div class="columns medium-7">
           <!-- Bottom Left -->
          <div class="hide-for-small-only">
+          <div class="callout" data-equalizer-watch>
             <?php the_content(); ?>
+          </div>
          </div>
         </div>
       </div>
