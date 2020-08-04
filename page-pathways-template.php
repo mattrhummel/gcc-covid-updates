@@ -48,8 +48,8 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
           <h2>Browse our Career Pathways</h2>
-           <div class="hide-for-xlarge">
-        <ul class="vertical menu" id="filters-small">
+          <div class="hide-for-xlarge">
+          <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
           <li>
               <a href="#" data-filter="*">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
@@ -64,6 +64,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
       </ul>
      </div>
+      <div class="show-for-xlarge">
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -86,6 +87,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
           </ul>
         </div>
+      </div>
       </div>
       </div>
         <div class="columns medium-7">
