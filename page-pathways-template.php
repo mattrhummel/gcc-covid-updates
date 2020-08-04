@@ -90,7 +90,7 @@ while ( have_posts() ) : the_post(); ?>
           </ul>
         </div>
       </div>
-        <div class="columns medium-8 xlarge-3">
+        <div class="columns medium-8 xlarge-6">
           <!-- Bottom Left -->
           <?php the_content(); ?>
         </div>
