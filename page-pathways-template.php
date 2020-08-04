@@ -47,8 +47,8 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-          <h2>Browse our Career Pathways</h2>
-       <div class="show-for-xlarge">
+       <div class="show-for-large">
+          <h2>Select a Career Pathways</h2>
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -75,9 +75,8 @@ while ( have_posts() ) : the_post(); ?>
       </div>
       </div>
         <div class="columns large-7">
-
-        <div class="hide-for-xlarge">
-         <h2>Browse our Career Pathways</h2>
+        <div class="hide-for-large">
+         <h2>Select a Career Pathways</h2>
           <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
           <li>
               <a href="#" data-filter="*">
