@@ -52,14 +52,14 @@ while ( have_posts() ) : the_post(); ?>
           <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
           <li>
               <a href="#" data-filter="*">
-                  <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
+                <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
               </a>
               </li>
               <?php
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name):   //for each term: ?>
           <li>
-                  <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
-                </a>
+              <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
+            </a>
           </li>
             <?php endforeach;?>
       </ul>
