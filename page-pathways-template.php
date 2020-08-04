@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded" data-equalizer>
+        <div class="row expanded">
           <div class="columns medium-6">
             <?php
             $args= array(
@@ -33,7 +33,6 @@ while ( have_posts() ) : the_post(); ?>
             'order' => 'ASC',
             );
             ?>
-
             <?php
             $programs = new WP_Query($args);
             if(is_array($programs->posts) && !empty($programs->post)) {
@@ -47,12 +46,12 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-            <h2>Browse our Career Pathways</h2>
-           
+          <h2>Browse our Career Pathways</h2>
+           <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-4">
-                  <a href="#" data-filter="*" class="button alert expanded text-center">
+                  <a href="#" data-filter="*" class="button alert expanded text-center" data-equalizer-watch>
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
                   </a>
                 </div>
@@ -62,13 +61,14 @@ while ( have_posts() ) : the_post(); ?>
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
                 <div class="columns medium-4">
-                <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center">
+                <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center" data-equalizer-watch>
                   <i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
                 </a>
               </div>
             </li>
             <?php endforeach;?>
           </ul>
+        </div>
       </div>
         <div class="columns medium-6">
           <!-- Bottom Left -->
