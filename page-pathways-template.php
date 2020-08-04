@@ -63,7 +63,7 @@ while ( have_posts() ) : the_post(); ?>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-2">
-                  <a href="#" data-filter="*" class="button alert expanded text-center" >
+                  <a href="#" data-filter="*" class="button alert expanded text-center">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
                   </a>
                 </div>
