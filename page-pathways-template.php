@@ -25,6 +25,7 @@ while ( have_posts() ) : the_post(); ?>
       <div class="entry-content" id="main">
         <div class="row expanded">
           <div class="columns medium-5">
+            <div class="callout" data-equalizer-watch>
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -69,6 +70,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
           </ul>
         </div>
+      </div>
       </div>
         <div class="columns medium-7">
           <!-- Bottom Left -->
