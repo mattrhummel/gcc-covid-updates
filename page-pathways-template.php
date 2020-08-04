@@ -24,7 +24,7 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns medium-5">
+          <div class="columns large-5">
             <div class="callout" data-equalizer-watch>
             <?php
             $args= array(
@@ -48,7 +48,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
           <h2>Browse our Career Pathways</h2>
-          <div class="hide-for-xlarge">
+          <div class="hide-for-large">
           <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
           <li>
               <a href="#" data-filter="*">
@@ -64,7 +64,7 @@ while ( have_posts() ) : the_post(); ?>
             <?php endforeach;?>
       </ul>
      </div>
-      <div class="show-for-xlarge">
+      <div class="show-for-large">
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -90,9 +90,9 @@ while ( have_posts() ) : the_post(); ?>
       </div>
       </div>
       </div>
-        <div class="columns medium-7">
+        <div class="columns large-7">
           <!-- Bottom Left -->
-          <div class="callout hide-for-small-only show-for-xlarge" data-equalizer-watch>
+          <div class="callout hide-for-small-only show-for-large" data-equalizer-watch>
             <?php the_content(); ?>
          </div>
         </div>
