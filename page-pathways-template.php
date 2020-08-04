@@ -24,7 +24,7 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-          <div class="columns medium-4 xlarge-9">
+          <div class="columns medium-4 xlarge-6">
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -33,6 +33,7 @@ while ( have_posts() ) : the_post(); ?>
             'order' => 'ASC',
             );
             ?>
+
             <?php
             $programs = new WP_Query($args);
             if(is_array($programs->posts) && !empty($programs->post)) {
@@ -56,7 +57,7 @@ while ( have_posts() ) : the_post(); ?>
               </a>
               </li>
               <?php
-              foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
+              foreach ( $program_taxs as $program_tax_slug => $program_tax_name):   //for each term: ?>
           <li>
                   <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
                 </a>
@@ -68,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
             <div class="show-for-xlarge">
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
-                <div class="columns medium-6 large-3">
+                <div class="columns medium-6 large-4">
                   <a href="#" data-filter="*" class="text-center">
                     <div class="callout large alert" data-equalizer-watch>
                       <h2 class="h5"><i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs</h2>
@@ -77,9 +78,10 @@ while ( have_posts() ) : the_post(); ?>
                 </div>
               </li>
               <?php
+
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
-                <div class="columns medium-6 large-3">
+                <div class="columns medium-6 large-4">
                   <a data-filter=".<?php echo $program_tax_slug; ?>"><div class="filter callout large alert text-center" data-equalizer-watch><h2 class="h5"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?></h2></div>
                 </a>
               </div>
