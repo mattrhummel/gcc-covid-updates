@@ -92,8 +92,8 @@ while ( have_posts() ) : the_post(); ?>
       </div>
         <div class="columns medium-8 xlarge-6">
           <!-- Bottom Left -->
-         <div class="hid-for-small-only">
-          <?php the_content(); ?>
+         <div class="hide-for-small-only">
+            <?php the_content(); ?>
          </div>
         </div>
       </div>
