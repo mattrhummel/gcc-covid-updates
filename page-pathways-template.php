@@ -24,6 +24,8 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
+                    <h2>Select a Career Pathway</h2>          
+
           <div class="columns large-5"> 
             <div class="show-for-large">          
             <?php
@@ -47,7 +49,6 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-          <h2>Select a Career Pathway</h2>          
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
