@@ -1,4 +1,4 @@
-<div class="row expanded" data-equalizer>
+<div class="row expanded">
 <div class="columns medium-6">
 	<div class="callout" data-equalizer-watch>
 <div class="row">
