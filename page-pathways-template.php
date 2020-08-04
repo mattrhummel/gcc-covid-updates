@@ -22,12 +22,31 @@ while ( have_posts() ) : the_post(); ?>
   </div>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
-
       <div class="entry-content" id="main">
-        
-          <!-- Bottom Left -->
-            <?php the_content(); ?>
-         
+        <div class="row expanded">
+        <div class="columns medium-6">
+        <?php
+            $args= array(
+            'post_type' => 'gcc_programs',
+            'posts_per_page'=> -1,
+            'orderby' => 'title',
+            'order' => 'ASC',
+            );
+            ?>
+
+            <?php
+            $programs = new WP_Query($args);
+            if(is_array($programs->posts) && !empty($programs->post)) {
+            foreach($programs->posts as $programs->post) {
+            $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
+            if(is_array($post_taxs) && !empty($post_taxs)) {
+            foreach($post_taxs as $post_tax) {
+            $program_taxs[$post_tax->slug] = $post_tax->name;
+            }
+            }
+            }
+            }
+            ?>
 
           <h2>Browse our Career Pathways</h2>
            
@@ -51,8 +70,6 @@ while ( have_posts() ) : the_post(); ?>
             </li>
             <?php endforeach;?>
           </ul>
-  
-  
           <div id="isotope-list">
             <div class="row expanded">
               <div class="columns">
@@ -126,9 +143,23 @@ while ( have_posts() ) : the_post(); ?>
               </div>
             </div>
           </div>
+
+       </div>
+        <div class="columns medium-6">
+          <!-- Bottom Left -->
+         <div class="hide-for-small-only">
+            <?php the_content(); ?>
+         </div>
         </div>
-          </div>
+      </div>
+      <div class="row expanded">
+        <div class="columns medium-12">
+       
         </div>
+      </div>
+    </div>
+  </div>
+</div>
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
