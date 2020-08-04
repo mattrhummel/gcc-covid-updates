@@ -92,7 +92,7 @@ while ( have_posts() ) : the_post(); ?>
       </div>
         <div class="columns medium-7">
           <!-- Bottom Left -->
-          <div class="callout hide-for-small-only" data-equalizer-watch>
+          <div class="callout hide-for-small-only show-for-xlarge" data-equalizer-watch>
             <?php the_content(); ?>
          </div>
         </div>
