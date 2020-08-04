@@ -70,7 +70,7 @@ while ( have_posts() ) : the_post(); ?>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-6">
-                  <a href="#" data-filter="*" class="button alert text-center">
+                  <a href="#" data-filter="*" class="button alert expanded text-center">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
                   </a>
                 </div>
@@ -80,7 +80,7 @@ while ( have_posts() ) : the_post(); ?>
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
                 <div class="columns medium-6">
-                <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert text-center">
+                <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center">
                   <i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
                 </a>
               </div>
