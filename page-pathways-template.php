@@ -24,8 +24,9 @@ while ( have_posts() ) : the_post(); ?>
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
-                    <h2>Select a Career Pathway</h2>          
-
+          <div class="show-for-xlarge">
+            <h2>Select a Career Pathway</h2>          
+          </div>
           <div class="columns large-5"> 
             <div class="show-for-large">          
             <?php
