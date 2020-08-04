@@ -8,7 +8,7 @@ jQuery(function ($) {
  });
  
  //Add the class selected to the item that is clicked, and remove from the others
- var $optionSets = $('#filters-large'),
+ var $optionSets = $('#filters-large, #filters-small'),
  
  $optionLinks = $optionSets.find('a');
  
@@ -19,7 +19,7 @@ jQuery(function ($) {
    return false;
  }
  
- var $optionSet = $this.parents('#filters-large');
+ var $optionSet = $this.parents('#filters-large, #filters-small');
  $optionSets.find('.selected').removeClass('selected');
  $this.addClass('selected');
  

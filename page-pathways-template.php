@@ -48,6 +48,22 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
           <h2>Browse our Career Pathways</h2>
+           <div class="hide-for-xlarge">
+        <ul class="vertical menu" id="filters-small">
+          <li>
+              <a href="#" data-filter="*">
+                  <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
+              </a>
+              </li>
+              <?php
+              foreach ( $program_taxs as $program_tax_slug => $program_tax_name):   //for each term: ?>
+          <li>
+                  <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
+                </a>
+          </li>
+            <?php endforeach;?>
+      </ul>
+     </div>
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
