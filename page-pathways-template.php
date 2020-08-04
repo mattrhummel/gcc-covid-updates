@@ -116,14 +116,14 @@ while ( have_posts() ) : the_post(); ?>
                     <div class="columns small-12" style="width: 100%;">
                         <div class="callout" style="width: 100%;">
                         <div class="row expanded" style="width: 100%;">
-                          <div class="columns xlarge-4">
+                          <div class="columns large-4">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a>
                           </div>
-                          <div class="columns xlarge-3" >
+                          <div class="columns large-3" >
                             <?php the_field( 'program_degree' );?>
                           </div>
                           <div class="columns small-1" >
