@@ -116,7 +116,7 @@ while ( have_posts() ) : the_post(); ?>
                     <div class="columns small-12" style="width: 100%;">
                         <div class="callout" style="width: 100%;">
                         <div class="row expanded" style="width: 100%;">
-                          <div class="columns large-4">
+                          <div class="columns large-3">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
@@ -128,33 +128,33 @@ while ( have_posts() ) : the_post(); ?>
                           </div>
                           <div class="columns small-1" >
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
-                            <i class="fa fa-chalkboard-teacher fa-2x" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
+                            <i class="fa fa-chalkboard-teacher" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
                             ?>
                             <?php if( get_field('online_degree') == 'no' ) { ?>
-                            <i class="fas fa-times fa-2x" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Online Degree</span></i>
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Online Degree</span></i>
                             <?php }
                             ?>
                           </div>
                           <div class="columns small-1" >
                             <?php if( get_field('accelerated_program') == 'yes' ) { ?>
-                            <i class="fas fa-running fa-2x" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <i class="fas fa-running" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                              <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                            <i class="fas fa-times fa-2x" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                           </div>
                            <div class="columns small-1">
                             <?php if( get_field('transfer_program') == 'yes' ) { ?>
-                            <i class="fas fa-random fa-2x" aria-hidden="true"><span class="show-for-sr">transfer program</span></i>
+                            <i class="fas fa-random" aria-hidden="true"><span class="show-for-sr">transfer program</span></i>
                             <?php }
                             ?>
                           </div>
                           <div class="columns small-1">
                             <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-                            <i class="fas fa-dollar-sign fa-2x" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+                            <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
                             <?php }
                             ?>
                           </div>
