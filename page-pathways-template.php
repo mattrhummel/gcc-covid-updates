@@ -47,12 +47,22 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
+      </div>
+        <div class="columns medium-12">
+          <!-- Bottom Left -->
+         <div class="hide-for-small-only">
+            <?php the_content(); ?>
+         </div>
+        </div>
+      </div>
+      <div class="row expanded">
+        <div class="columns medium-12">
 
           <h2>Browse our Career Pathways</h2>
            
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
-                <div class="columns medium-6">
+                <div class="columns medium-2">
                   <a href="#" data-filter="*" class="button alert expanded text-center">
                   <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i><br/>All Programs
                   </a>
@@ -62,7 +72,7 @@ while ( have_posts() ) : the_post(); ?>
 
               foreach ( $program_taxs as $program_tax_slug => $program_tax_name ):   //for each term: ?>
               <li style="list-style-type: none;">
-                <div class="columns medium-6">
+                <div class="columns medium-2">
                 <a data-filter=".<?php echo $program_tax_slug; ?>" class="button alert expanded text-center">
                   <i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><br/><?php echo $program_tax_name;  ?>
                 </a>
@@ -70,16 +80,6 @@ while ( have_posts() ) : the_post(); ?>
             </li>
             <?php endforeach;?>
           </ul>
-      </div>
-        <div class="columns medium-8 xlarge-6">
-          <!-- Bottom Left -->
-         <div class="hide-for-small-only">
-            <?php the_content(); ?>
-         </div>
-        </div>
-      </div>
-      <div class="row expanded">
-        <div class="columns medium-12">
           <div id="isotope-list">
             <div class="row expanded">
               <div class="columns">
