@@ -48,23 +48,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
           <h2>Browse our Career Pathways</h2>
-          <div class="hide-for-large">
-          <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
-          <li>
-              <a href="#" data-filter="*">
-                <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
-              </a>
-              </li>
-              <?php
-              foreach ( $program_taxs as $program_tax_slug => $program_tax_name):   //for each term: ?>
-          <li>
-              <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
-            </a>
-          </li>
-            <?php endforeach;?>
-      </ul>
-     </div>
-      <div class="show-for-large">
+       <div class="show-for-xlarge">
            <div class="row expanded" data-equalizer>
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -91,8 +75,27 @@ while ( have_posts() ) : the_post(); ?>
       </div>
       </div>
         <div class="columns large-7">
+
+        <div class="hide-for-xlarge">
+         <h2>Browse our Career Pathways</h2>
+          <ul class="dropdown menu" id="filters-small" data-dropdown-menu>
+          <li>
+              <a href="#" data-filter="*">
+                <i class="fas fa-asterisk" style="margin-bottom: 10px;"></i>All Programs               
+              </a>
+              </li>
+              <?php
+              foreach ( $program_taxs as $program_tax_slug => $program_tax_name):   //for each term: ?>
+          <li>
+              <a data-filter=".<?php echo $program_tax_slug; ?>"><i class="<?php echo $program_icon->term ?>" style="margin-bottom: 10px;"></i><?php echo $program_tax_name;  ?>
+            </a>
+          </li>
+            <?php endforeach;?>
+      </ul>
+     </div>
+
           <!-- Bottom Left -->
-          <div class="callout hide-for-small-only show-for-large" data-equalizer-watch>
+          <div class="callout " data-equalizer-watch>
             <?php the_content(); ?>
          </div>
         </div>
