@@ -57,10 +57,34 @@ while ( have_posts() ) : the_post(); ?>
                   </a>
                 </div>
               </li>
+                       <li style="list-style-type: none;">
+                <div class="columns medium-12 xlarge-6">
+                  <a data-filter=".humanities-and-arts-pathway" class="h3 button alert expanded large text-center">
+                  <i class="fas fa-palette fa-2x" style="margin-bottom: 10px;"></i><br/>Arts &amp; Humanities</a>
+              </div>
+            </li>
               <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".business-pathway" class="h3 button alert large expanded text-center">
                   <i class="fas fa-briefcase fa-2x" style="margin-bottom: 10px;"></i><br/>Business</a>
+              </div>
+            </li>
+                      <li style="list-style-type: none;">
+                <div class="columns medium-12 xlarge-6">
+                  <a data-filter=".social-science-and-education" class="h3 button alert expanded large text-center">
+                  <i class="fas fa-school fa-2x" style="margin-bottom: 10px;"></i><br/>Education &amp; Social Science</a>
+              </div>
+            </li>
+                          <li style="list-style-type: none;">
+                <div class="columns medium-12 xlarge-6">
+                  <a data-filter=".health-science-pathway" class="h3 button alert expanded large text-center">
+                  <i class="fas fa-user-nurse fa-2x" style="margin-bottom: 10px;"></i><br/>Healthcare</a>
+              </div>
+            </li>
+                     <li style="list-style-type: none;">
+                <div class="columns medium-12 xlarge-6">
+                  <a data-filter=".it-and-technical-studies-pathway" class="h3 button alert large expanded text-center">
+                  <i class="fas fa-laptop-code fa-2x" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
               </div>
             </li>
               <li style="list-style-type: none;">
@@ -69,34 +93,10 @@ while ( have_posts() ) : the_post(); ?>
                   <i class="fas fa-gavel fa-2x" style="margin-bottom: 10px;"></i><br/>Public Service</a>
               </div>
             </li>
-              <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".it-and-technical-studies-pathway" class="h3 button alert large expanded text-center">
-                  <i class="fas fa-laptop-code fa-2x" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
-              </div>
-            </li>
-              <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".health-science-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-user-nurse fa-2x" style="margin-bottom: 10px;"></i><br/>Healthcare</a>
-              </div>
-            </li>
-              <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".social-science-and-education" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-school fa-2x" style="margin-bottom: 10px;"></i><br/>Education &amp; Social Science</a>
-              </div>
-            </li>
                <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".science-and-engineering-pathway" class="h3 button alert expanded large text-center">
                   <i class="fas fa-atom fa-2x" style="margin-bottom: 10px;"></i><br/>Science &amp; Engineering</a>
-              </div>
-            </li>
-            <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".humanities-and-arts-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-palette fa-2x" style="margin-bottom: 10px;"></i><br/>Arts &amp; Humanities</a>
               </div>
             </li>
          </ul>
