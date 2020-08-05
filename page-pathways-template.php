@@ -239,15 +239,15 @@ while ( have_posts() ) : the_post(); ?>
                         <div class="row expanded" style="width: 100%;">
                           <div class="columns small-12 medium-5">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
-                            <a href="<?php the_field( 'curriculum_url' ); ?>">
+                           <p> <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
-                            </a>
+                            </a></p>
                           </div>
                           <div class="columns small-12 medium-4" >
-                            <?php the_field( 'program_degree' );?>
+                            <p><?php the_field( 'program_degree' );?></p>
                           </div>
-                          <div class="columns small-3" >
+                          <div class="columns small-12 medium-3" >
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
                             <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
