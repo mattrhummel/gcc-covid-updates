@@ -23,12 +23,10 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded" data-equalizer>
-          <div class="show-for-xlarge">
+        <div class="row expanded collapse" data-equalizer>
+          <div class="columns xlarge-6"> 
+            <div class="show-for-xlarge"> 
             <h2>Select a Career Pathway</h2>          
-          </div>
-          <div class="columns large-6"> 
-            <div class="show-for-large">          
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -105,8 +103,11 @@ while ( have_posts() ) : the_post(); ?>
       </div>
       </div>
       </div>
-        <div class="columns large-6">
-        <div class="hide-for-large">
+        <div class="columns xlarge-6">
+          <div class="show-for-xlarge">
+            <h2>Definitions</h2>      
+        </div>
+        <div class="hide-for-xlarge">
          <button class="button expanded text-center alert" type="button" data-toggle="example-dropdown-1" data-close-on-click="true">Select a Career Pathway</button>
 <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" style="min-width: 100%; text-align: center;">
   <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
@@ -170,8 +171,7 @@ while ( have_posts() ) : the_post(); ?>
          </ul>
 </div>
      </div>
-          <div class="callout" data-equalizer-watch>
-            
+          <div class="callout" data-equalizer-watch>    
         <div class="row expanded collapse" data-equalizer>
 <div class="columns medium-6" style="padding-left: 0;">
 <div class="callout" data-equalizer-watch>
