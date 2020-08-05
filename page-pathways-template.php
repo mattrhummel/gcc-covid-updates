@@ -49,6 +49,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
            <div class="row expanded">
+            <div class="columns">
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
                 <div class="columns medium-12 xlarge-6">
@@ -57,7 +58,7 @@ while ( have_posts() ) : the_post(); ?>
                   </a>
                 </div>
               </li>
-                       <li style="list-style-type: none;">
+              <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".humanities-and-arts-pathway" class="h3 button alert expanded large text-center">
                   <i class="fas fa-palette fa-2x" style="margin-bottom: 10px;"></i><br/>Arts &amp; Humanities</a>
@@ -101,12 +102,10 @@ while ( have_posts() ) : the_post(); ?>
             </li>
          </ul>
       </div>
+    </div>
       </div>
       </div>
         <div class="columns xlarge-6">
-          <div class="show-for-xlarge">
-            <h2>Definitions</h2>      
-        </div>
         <div class="hide-for-xlarge">
          <button class="button expanded text-center alert" type="button" data-toggle="example-dropdown-1" data-close-on-click="true">Select a Career Pathway</button>
           <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" style="min-width: 100%; text-align: center;">
@@ -166,72 +165,59 @@ while ( have_posts() ) : the_post(); ?>
                     <i class="fas fa-palette" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
               </li>
            </ul>
-      </div>
-     </div>
-        <div class="row expanded collapse" data-equalizer>
-<div class="columns medium-6" style="padding-left: 0;">
-<div class="row">
-<div class="columns small-1"><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i></div>
-<div class="columns small-11"><p class="h4">Online</p>
-<p>Available completely online.</p></div>
-</div>
-<div class="row">
-<div class="columns small-1"><i class="fa fa-running" style="margin-top:10px;"></i></div>
-<div class="columns small-11"><p class="h4">Accelerated</p>
-<p>Complete within 1 year.</p>
-</div>
-</div>
-<div class="row">
-<div class="columns small-1"><i class="fas fa-random" style="margin-top:10px;"></i></div>
-<div class="columns small-11"><p class="h4">Transfer</p>
-<p>Finish at a 4-year college or university.</p></div>
-</div>
-<div class="row">
-<div class="columns small-1"><i class="fa fa-dollar-sign" style="margin-top:10px;"></i></div>
-<div class="columns small-11"><p class="h4">Financial Aid Eligible</p>
-<p>Use your financial aid awards with.</p>
-</div>
-</div>
-</div>
-<div class="columns medium-6">
-<ul class="accordion" data-accordion data-allow-all-closed="true">
+                </div>
+           <ul class="accordion" data-accordion data-allow-all-closed="true">
   <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Associate of Arts & Sciences Degree (AA&S)</a>
-    <div class="accordion-content" data-tab-content>
-  <p>This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-</div>
-</li>
-<li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Associate of Science (AS):</a>
-    <div class="accordion-content" data-tab-content>
-<p>This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-</div>
-</li>
-<li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Associate of Applied Science Degree (AAS):</a>
-    <div class="accordion-content" data-tab-content>
-<p>Students who plan to obtain full-time employment upon graduation from Germanna.</p>
-</div>
-</li>
-<li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Certificate (CERT):</a>
-    <div class="accordion-content" data-tab-content>
-<p>Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
-</div>
-</li>
-<li class="accordion-item" data-accordion-item>
-  <a href="#" class="accordion-title">Career Studies Certificate (CSC)</a>
-  <div class="accordion-content" data-tab-content>
-  <p>Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
-  </div>
-</li>
+    <a href="#" class="accordion-title">Definitions</a>
 
-</ul>
+    <div class="accordion-content" data-tab-content>
+ 
+ <p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
+
+<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong>Complete within 1 year.</p>
+
+<p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
+
+<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong>Use your financial aid awards with.</p>
+
+    <p><strong>Associate of Arts &amp; Science Degree</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+
+    <p><strong>Associate of Science</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+
+    <p><strong>Associate of Applied Science Degree</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
+
+    <p><strong>Certificate</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
+
+     <p><strong>Career Studies Certificate</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
+
+    </div>
+   </li>
+ </ul>
+ 
 </div>
+<div class="show-for-xlarge" >
+<h2>Definitions</h2> 
+<p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
+
+<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong>Complete within 1 year.</p>
+
+<p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
+
+<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong>Use your financial aid awards with.</p>
+
+    <p><strong>Associate of Arts &amp; Science Degree</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+
+    <p><strong>Associate of Science</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+
+    <p><strong>Associate of Applied Science Degree</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
+
+    <p><strong>Certificate</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
+
+     <p><strong>Career Studies Certificate</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
 </div>
-        </div>
+ </div>
       </div>
-      <div class="row expanded">
+      <div class="row expanded collapse">
         <div class="columns medium-12">
           <div id="isotope-list">
             <div class="row expanded">
@@ -251,51 +237,54 @@ while ( have_posts() ) : the_post(); ?>
                     <div class="columns small-12" style="width: 100%;">
                         <div class="callout" style="width: 100%;">
                         <div class="row expanded" style="width: 100%;">
-                          <div class="columns small-12 medium-3">
+                          <div class="columns small-12 medium-5">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
                             <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a>
                           </div>
-                          <div class="columns small-12 medium-3" >
+                          <div class="columns small-12 medium-4" >
                             <?php the_field( 'program_degree' );?>
                           </div>
-                          <div class="columns small-1" >
+                          <div class="columns small-3" >
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
-                            <i class="fa fa-chalkboard-teacher" aria-hidden="true"><span  class="show-for-sr">Online Option</span></i>
+                            <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i>
                             <?php }
                             ?>
                             <?php if( get_field('online_degree') == 'no' ) { ?>
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Online Degree</span></i>
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Online Degree</span></i>
                             <?php }
                             ?>
-                          </div>
-                          <div class="columns small-1" >
+
                             <?php if( get_field('accelerated_program') == 'yes' ) { ?>
-                            <i class="fas fa-running" aria-hidden="true"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <i class="fas fa-running" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
                              <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9;"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
                             <?php }
                             ?>
-                          </div>
-                           <div class="columns small-1">
+                          
                             <?php if( get_field('transfer_program') == 'yes' ) { ?>
-                            <i class="fas fa-random" aria-hidden="true"><span class="show-for-sr">transfer program</span></i>
+                            <i class="fas fa-random" aria-hidden="true" style="margin-right: 10px;"><span class="show-for-sr">transfer program</span></i>
                             <?php }
                             ?>
-                          </div>
-                          <div class="columns small-1">
+                            
+                            <?php if( get_field('transfer_program') == 'no' ) { ?>
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <?php }
+                            ?>
+
                             <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
                             <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
                             <?php }
                             ?>
-                          </div>
-                        </div>
-                      </div>
+                            
+                      </div> 
                     </div>
+                  </div>
+                </div>
                   </div>
                 </div>
                 <?php     }
