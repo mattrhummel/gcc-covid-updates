@@ -23,7 +23,7 @@ while ( have_posts() ) : the_post(); ?>
   <div class="row expanded">
     <div class="columns medium-12" id="main">
       <div class="entry-content" id="main">
-        <div class="row expanded collapse" data-equalizer>
+        <div class="row expanded" data-equalizer>
           <div class="columns xlarge-6"> 
             <div class="show-for-xlarge"> 
             <h2>Select a Career Pathway</h2>          
