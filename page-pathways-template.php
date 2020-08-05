@@ -74,7 +74,7 @@ while ( have_posts() ) : the_post(); ?>
               <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".it-and-technical-studies-pathway" class="button alert expanded text-center">
-                  <i class="" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
+                  <i class="fas fa-laptop-code" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
               </div>
             </li>
               <li style="list-style-type: none;">
