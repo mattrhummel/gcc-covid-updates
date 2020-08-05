@@ -109,72 +109,67 @@ while ( have_posts() ) : the_post(); ?>
         </div>
         <div class="hide-for-xlarge">
          <button class="button expanded text-center alert" type="button" data-toggle="example-dropdown-1" data-close-on-click="true">Select a Career Pathway</button>
-<div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" style="min-width: 100%; text-align: center;">
-  <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
-              <li style="list-style: none;">
-                  <a href="#" data-filter="*" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-asterisk" style="margin-right: 10px;"></i> All Programs
-                 </div>
+          <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" style="min-width: 100%; text-align: center;">
+            <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
+                <li style="list-style: none;">
+                    <a href="#" data-filter="*" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-asterisk" style="margin-right: 10px;"></i> All Programs
+                   </div>
+                    </a>
+                </li>
+                <li style="list-style-type: none;">
+                    <a data-filter=".business-pathway" cclass="text-center">
+                     <div class="callout alert">
+                        <i class="fas fa-briefcase" style="margin-right: 10px;"></i>Business
+                    </div>
+                  </a>            
+              </li>
+                <li style="list-style-type: none;">
+                    <a data-filter=".public-service-pathway" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-gavel" style="margin-right: 10px;"></i> Public Service
+                  </div>
                   </a>
               </li>
-              <li style="list-style-type: none;">
-                  <a data-filter=".business-pathway" cclass="text-center">
+                <li style="list-style-type: none;">
+                    <a data-filter=".it-and-technical-studies-pathway" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-laptop-code" style="margin-right: 10px;"></i> IT &amp; 
+                   Cybersecurity
+                  </div>
+                 </a>
+              </li>
+                <li style="list-style-type: none;">
+                    <a data-filter=".health-science-pathway" class="text-center">
                     <div class="callout alert">
-                  <i class="fas fa-briefcase" style="margin-right: 10px;"></i>Business
-                
-  </div>
-
-                </a>
-             
-            </li>
-              <li style="list-style-type: none;">
-                  <a data-filter=".public-service-pathway" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-gavel" style="margin-right: 10px;"></i> Public Service
+                    <i class="fas fa-user-nurse" style="margin-right: 10px;"></i> Healthcare
                 </div>
-                </a>
-            </li>
+                  </a>
+              </li>
+                <li style="list-style-type: none;">
+                    <a data-filter=".social-science-and-education" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-school" style="margin-right: 10px;"></i> Education &amp; Social Science
+                  </div>
+                  </a>
+              </li>
+                 <li style="list-style-type: none;">
+                    <a data-filter=".science-and-engineering-pathway" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-atom" style="margin-right: 10px;"></i> Science &amp; Engineering
+                  </div></a>
+              </li>
               <li style="list-style-type: none;">
-                  <a data-filter=".it-and-technical-studies-pathway" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-laptop-code" style="margin-right: 10px;"></i> IT &amp; 
-                 Cybersecurity
-                </div>
-               </a>
-            </li>
-              <li style="list-style-type: none;">
-                  <a data-filter=".health-science-pathway" class="text-center">
-                  <div class="callout alert">
-                  <i class="fas fa-user-nurse" style="margin-right: 10px;"></i> Healthcare
-              </div>
-                </a>
-            </li>
-              <li style="list-style-type: none;">
-                  <a data-filter=".social-science-and-education" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-school" style="margin-right: 10px;"></i> Education &amp; Social Science
-                </div>
-                </a>
-            </li>
-               <li style="list-style-type: none;">
-                  <a data-filter=".science-and-engineering-pathway" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-atom" style="margin-right: 10px;"></i> Science &amp; Engineering
-                </div></a>
-            </li>
-            <li style="list-style-type: none;">
-                  <a data-filter=".humanities-and-arts-pathway" class="text-center">
-                    <div class="callout alert">
-                  <i class="fas fa-palette" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
-            </li>
-         </ul>
-</div>
+                    <a data-filter=".humanities-and-arts-pathway" class="text-center">
+                      <div class="callout alert">
+                    <i class="fas fa-palette" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
+              </li>
+           </ul>
+      </div>
      </div>
-          <div class="callout" data-equalizer-watch>    
         <div class="row expanded collapse" data-equalizer>
 <div class="columns medium-6" style="padding-left: 0;">
-<div class="callout" data-equalizer-watch>
 <div class="row">
 <div class="columns small-1"><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i></div>
 <div class="columns small-11"><p class="h4">Online</p>
@@ -198,9 +193,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-</div>
 <div class="columns medium-6">
-<div class="callout" data-equalizer-watch>
 <ul class="accordion" data-accordion data-allow-all-closed="true">
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Associate of Arts & Sciences Degree (AA&S)</a>
@@ -236,9 +229,6 @@ while ( have_posts() ) : the_post(); ?>
 </ul>
 </div>
 </div>
-</div>
- 
-         </div>
         </div>
       </div>
       <div class="row expanded">
