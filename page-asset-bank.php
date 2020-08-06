@@ -90,7 +90,7 @@ $the_query = new WP_Query( $args ); ?>
   
   <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="card-section">
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+      <a href="<?php echo $asset_image_url; ?>"><?php echo get_the_title(); ?></a>
     </div>
   </div>
  </div>
@@ -144,7 +144,7 @@ $the_query = new WP_Query( $args ); ?>
    
     <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="card-section" style="padding-top: 0;">
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+      <a href="<?php echo $asset_image_url; ?>"><?php echo get_the_title(); ?></a>
     </div>
   </div>
  </div>
@@ -198,7 +198,7 @@ $the_query = new WP_Query( $args ); ?>
   
   <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
     <div class="card-section">
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+      <a href="<?php echo $asset_image_url; ?>"><?php echo get_the_title(); ?></a>
     </div>
   </div>
  </div>
@@ -244,7 +244,7 @@ $the_query = new WP_Query( $args ); ?>
   <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
 
     <li>
-      <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+      <a href="<?php echo $asset_image_url; ?>" ><?php echo get_the_title(); ?></a>
     </li>
 
 <?php  }
@@ -279,7 +279,7 @@ $the_query = new WP_Query( $args ); ?>
       ?>
       <?php $asset_image_url = wp_get_attachment_url( get_post_thumbnail_id() ); ?>
       <li>
-        <a href="<?php echo $asset_image_url; ?>" download><?php _e('Download', 'gcc-wp-2018'); ?> <?php echo get_the_title(); ?></a>
+        <a href="<?php echo $asset_image_url; ?>"><?php echo get_the_title(); ?></a>
       </li>
 
   <?php  }

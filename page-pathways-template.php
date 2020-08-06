@@ -59,30 +59,30 @@ while ( have_posts() ) : the_post(); ?>
                 </div>
               </li>
               <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
+              <div class="columns medium-12 xlarge-6">
                   <a data-filter=".humanities-and-arts-pathway" class="h3 button alert expanded large text-center">
                   <i class="fas fa-palette fa-2x" style="margin-bottom: 10px;"></i><br/>Arts &amp; Humanities</a>
               </div>
             </li>
-              <li style="list-style-type: none;">
+            <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".business-pathway" class="h3 button alert large expanded text-center">
                   <i class="fas fa-briefcase fa-2x" style="margin-bottom: 10px;"></i><br/>Business</a>
               </div>
             </li>
-                      <li style="list-style-type: none;">
+            <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".social-science-and-education" class="h3 button alert expanded large text-center">
                   <i class="fas fa-school fa-2x" style="margin-bottom: 10px;"></i><br/>Education &amp; Social Science</a>
               </div>
             </li>
-                          <li style="list-style-type: none;">
+               <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".health-science-pathway" class="h3 button alert expanded large text-center">
                   <i class="fas fa-user-nurse fa-2x" style="margin-bottom: 10px;"></i><br/>Healthcare</a>
               </div>
             </li>
-                     <li style="list-style-type: none;">
+              <li style="list-style-type: none;">
                 <div class="columns medium-12 xlarge-6">
                   <a data-filter=".it-and-technical-studies-pathway" class="h3 button alert large expanded text-center">
                   <i class="fas fa-laptop-code fa-2x" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
@@ -112,8 +112,8 @@ while ( have_posts() ) : the_post(); ?>
                 <li style="list-style: none;">
                     <div class="columns small-6">
                     <a href="#" data-filter="*" class="text-center" data-equalizer-watch>
-                      <div class="callout alert" data-equalizer-watch>
-                    <i class="fas fa-asterisk show-for-medium" style="margin-right: 10px;"></i> All Programs
+                     <div class="callout alert" data-equalizer-watch>
+                      <i class="fas fa-asterisk show-for-medium" style="margin-right: 10px;"></i> All Programs
                    </div>
                     </a>
                   </div>
@@ -190,46 +190,45 @@ while ( have_posts() ) : the_post(); ?>
  
  <p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
 
-<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong>Complete within 1 year.</p>
+<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong> Complete within 1 year.</p>
 
 <p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
 
-<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong>Use your financial aid awards with.</p>
+<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong> Use your financial aid awards with.</p>
 
-    <p><strong>Associate of Arts &amp; Science Degree</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+    <p><strong>Associate of Arts &amp; Science Degree:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
 
-    <p><strong>Associate of Science</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+    <p><strong>Associate of Science:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
 
-    <p><strong>Associate of Applied Science Degree</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
+    <p><strong>Associate of Applied Science Degree:</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
 
-    <p><strong>Certificate</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
+    <p><strong>Certificate:</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
 
-     <p><strong>Career Studies Certificate</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
+     <p><strong>Career Studies Certificate:</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
 
     </div>
    </li>
  </ul>
- 
 </div>
-<div class="show-for-xlarge" >
+<div class="show-for-xlarge">
 <h2>Definitions</h2> 
 <p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
 
-<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong>Complete within 1 year.</p>
+<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong> Complete within 1 year.</p>
 
 <p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
 
-<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong>Use your financial aid awards with.</p>
+<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong> Use your financial aid awards with.</p>
 
-    <p><strong>Associate of Arts &amp; Science Degree</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+    <p><strong>Associate of Arts &amp; Science Degree:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
 
-    <p><strong>Associate of Science</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+    <p><strong>Associate of Science:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
 
-    <p><strong>Associate of Applied Science Degree</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
+    <p><strong>Associate of Applied Science Degree:</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
 
-    <p><strong>Certificate</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
+    <p><strong>Certificate:</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
 
-     <p><strong>Career Studies Certificate</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
+     <p><strong>Career Studies Certificate:</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
 </div>
  </div>
       </div>
@@ -264,46 +263,48 @@ while ( have_posts() ) : the_post(); ?>
                             <p style="margin-bottom: 0;"><?php the_field( 'program_degree' );?></p>
                           </div>
                           <div class="columns small-12 medium-3" >
-                            <?php if( get_field('online_degree') == 'yes' ) { ?>
-                            <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i>
+                            <?php if( get_field('online_degree') == 'yes' ) { ?> <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i></span>
                             <?php }
                             ?>
                             <?php if( get_field('online_degree') == 'no' ) { ?>
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Online Degree</span></i>
+                              <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Online Degree</span></i></span>
                             <?php }
                             ?>
 
-                            <?php if( get_field('accelerated_program') == 'yes' ) { ?>
+                            <?php if( get_field('accelerated_program') == 'yes' ) { ?> <span style="min-width: 50px;">
                             <i class="fas fa-running" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
+                          </span>
                             <?php }
                             ?>
                              <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
+                              <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i></span>
                             <?php }
                             ?>
                           
-                            <?php if( get_field('transfer_program') == 'yes' ) { ?>
-                            <i class="fas fa-random" aria-hidden="true" style="margin-right: 10px;"><span class="show-for-sr">transfer program</span></i>
+                            <?php if( get_field('transfer_program') == 'yes' ) { ?> <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fas fa-random" aria-hidden="true" style="margin-right: 10px;"><span class="show-for-sr">transfer program</span></i></span>
                             <?php }
                             ?>
                             
-                            <?php if( get_field('transfer_program') == 'no' ) { ?>
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
+                            <?php if( get_field('transfer_program') == 'no' ) { ?> <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i></span>
                             <?php }
                             ?>
 
-                            <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-                            <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
+                            <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?> <span style="min-width: 50px; width: 50px; display: inline-block;">
+                            <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i></span>
                             <?php }
-                            ?>
-                            
+                            ?>    
                       </div> 
                     </div>
                   </div>
                 </div>
                   </div>
                 </div>
-                <?php     }
+                <?php  }
                 endif;
                 ?>
                 <?php wp_reset_query(); ?>
