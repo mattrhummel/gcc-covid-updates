@@ -259,13 +259,13 @@ while ( have_posts() ) : the_post(); ?>
                         <div class="row expanded" style="width: 100%;">
                           <div class="columns small-12 medium-5">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
-                           <p style="margin-bottom: 0;"> <a href="<?php the_field( 'curriculum_url' ); ?>">
+                           <p style="margin-bottom: 0; padding: 10px 0 0 0;"> <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a></p>
                           </div>
                           <div class="columns small-12 medium-4" >
-                            <p style="margin-bottom: 0;"><?php the_field( 'program_degree' );?></p>
+                            <p style="margin-bottom: 0; padding: 10px 0 0 0;"><?php the_field( 'program_degree' );?></p>
                           </div>
                           <div class="columns small-12 medium-3" >
                             <ul class="menu expanded" style="padding: 5px 0;">
