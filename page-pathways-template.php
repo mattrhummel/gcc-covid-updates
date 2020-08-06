@@ -25,8 +25,7 @@ while ( have_posts() ) : the_post(); ?>
       <div class="entry-content" id="main">
         <div class="row expanded" data-equalizer>
           <div class="columns xlarge-6"> 
-            <div class="show-for-xlarge"> 
-            <h2>Select a Career Pathway</h2>          
+            <div class="show-for-xlarge">           
             <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -49,6 +48,8 @@ while ( have_posts() ) : the_post(); ?>
             }
             ?>
            <div class="row expanded">
+            <h2>Select a Career Pathway</h2>
+            <div class="row expanded collapse">
             <div class="columns">
             <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
               <li style="list-style: none;">
@@ -103,11 +104,12 @@ while ( have_posts() ) : the_post(); ?>
          </ul>
       </div>
     </div>
+    </div>
       </div>
       </div>
         <div class="columns xlarge-6">
         <div class="hide-for-xlarge">
-        <div class="row expanded" data-equalizer>
+        <div class="row expanded collapse" data-equalizer>
             <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
                 <li style="list-style: none;">
                     <div class="columns small-6">
@@ -181,8 +183,9 @@ while ( have_posts() ) : the_post(); ?>
               </li>
            </ul>
          </div>
-                
-           <ul class="accordion" data-accordion data-allow-all-closed="true">
+                <div class="row expanded collapse">
+                  <div class="columns">
+           <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Definitions</a>
 
@@ -209,6 +212,8 @@ while ( have_posts() ) : the_post(); ?>
     </div>
    </li>
  </ul>
+</div>
+</div>
 </div>
 <div class="show-for-xlarge">
 <h2>Definitions</h2> 
@@ -263,7 +268,7 @@ while ( have_posts() ) : the_post(); ?>
                             <p style="margin-bottom: 0;"><?php the_field( 'program_degree' );?></p>
                           </div>
                           <div class="columns small-12 medium-3" >
-                            <ul class="menu expanded">
+                            <ul class="menu expanded" style="padding: 5px 0;">
                               <li>
                             <?php if( get_field('online_degree') == 'yes' ) { ?> 
                             <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i>
