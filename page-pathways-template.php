@@ -276,29 +276,29 @@ while ( have_posts() ) : the_post(); ?>
                             ?>
                           </li>
                           <li>
-                            <?php if( get_field('accelerated_program') == 'yes' ) { ?> <span style="min-width: 100px; text-align:right">
+                            <?php if( get_field('accelerated_program') == 'yes' ) { ?> <span style="min-width: 100px;">
                             <i class="fas fa-running" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
                           </span>
                             <?php }
                             ?>
                             <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                              <span style="min-width: 100px; width: 100px; display: inline-block; text-align: right">
+                              <span style="min-width: 100px; width: 100px; display: inline-block; ">
                             <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i></span>
                             <?php }
                             ?>
                           </li>
                           <li>
-                            <?php if( get_field('transfer_program') == 'yes' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block; text-align: right">
+                            <?php if( get_field('transfer_program') == 'yes' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block;">
                             <i class="fas fa-random" aria-hidden="true" style="margin-right: 10px;"><span class="show-for-sr">transfer program</span></i></span>
                             <?php }
                             ?>
-                            <?php if( get_field('transfer_program') == 'no' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block; text-align: right">
+                            <?php if( get_field('transfer_program') == 'no' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block;">
                             <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i></span>
                             <?php }
                             ?>
                           </li>
                            <li>
-                            <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block; text-align: right">
+                            <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?> <span style="min-width: 100px; width: 100px; display: inline-block;">
                             <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i></span>
                             <?php }
                             ?> 
