@@ -107,65 +107,81 @@ while ( have_posts() ) : the_post(); ?>
       </div>
         <div class="columns xlarge-6">
         <div class="hide-for-xlarge">
-         <button class="button expanded text-center alert" type="button" data-toggle="example-dropdown-1" data-close-on-click="true">Select a Career Pathway</button>
-          <div class="dropdown-pane" id="example-dropdown-1" data-dropdown data-hover="false" data-hover-pane="false" style="min-width: 100%; text-align: center;">
+        <div class="row expanded" data-equalizer>
             <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
                 <li style="list-style: none;">
-                    <a href="#" data-filter="*" class="text-center">
-                      <div class="callout alert">
-                    <i class="fas fa-asterisk" style="margin-right: 10px;"></i> All Programs
+                    <div class="columns small-6">
+                    <a href="#" data-filter="*" class="text-center" data-equalizer-watch>
+                      <div class="callout alert" data-equalizer-watch>
+                    <i class="fas fa-asterisk show-for-medium" style="margin-right: 10px;"></i> All Programs
                    </div>
                     </a>
+                  </div>
                 </li>
                 <li style="list-style-type: none;">
-                    <a data-filter=".business-pathway" cclass="text-center">
-                     <div class="callout alert">
-                        <i class="fas fa-briefcase" style="margin-right: 10px;"></i>Business
+                    <div class="columns small-6">
+                    <a data-filter=".business-pathway" class="text-center" data-equalizer-watch>
+                     <div class="callout alert" data-equalizer-watch>
+                        <i class="fas fa-briefcase  show-for-medium" style="margin-right: 10px;"></i>Business
                     </div>
-                  </a>            
+                  </a>        
+                  </div>    
               </li>
                 <li style="list-style-type: none;">
-                    <a data-filter=".public-service-pathway" class="text-center">
-                      <div class="callout alert">
-                    <i class="fas fa-gavel" style="margin-right: 10px;"></i> Public Service
+                    <div class="columns small-6">
+                    <a data-filter=".public-service-pathway" class="text-center" data-equalizer-watch>
+                      <div class="callout alert" data-equalizer-watch>
+                    <i class="fas fa-gavel  show-for-medium" style="margin-right: 10px;"></i> Public Service
                   </div>
                   </a>
+                </div>
               </li>
                 <li style="list-style-type: none;">
-                    <a data-filter=".it-and-technical-studies-pathway" class="text-center">
-                      <div class="callout alert">
-                    <i class="fas fa-laptop-code" style="margin-right: 10px;"></i> IT &amp; 
+                    <div class="columns small-6">
+                    <a data-filter=".it-and-technical-studies-pathway" class="text-center" data-equalizer-watch>
+                      <div class="callout alert" data-equalizer-watch>
+                    <i class="fas fa-laptop-code  show-for-medium" style="margin-right: 10px;"></i> IT &amp; 
                    Cybersecurity
                   </div>
                  </a>
+               </div>
               </li>
                 <li style="list-style-type: none;">
-                    <a data-filter=".health-science-pathway" class="text-center">
-                    <div class="callout alert">
-                    <i class="fas fa-user-nurse" style="margin-right: 10px;"></i> Healthcare
+                  <div class="columns small-6">
+                    <a data-filter=".health-science-pathway" class="text-center" data-equalizer-watch>
+                    <div class="callout alert"data-equalizer-watch>
+                    <i class="fas fa-user-nurse  show-for-medium" style="margin-right: 10px;"></i> Healthcare
                 </div>
                   </a>
+                </div>
               </li>
                 <li style="list-style-type: none;">
-                    <a data-filter=".social-science-and-education" class="text-center">
-                      <div class="callout alert">
-                    <i class="fas fa-school" style="margin-right: 10px;"></i> Education &amp; Social Science
+                    <div class="columns small-6">
+                    <a data-filter=".social-science-and-education" class="text-center" data-equalizer-watch>
+                      <div class="callout alert" data-equalizer-watch>
+                    <i class="fas fa-school  show-for-medium" style="margin-right: 10px;"></i> Education &amp; Social Science
                   </div>
                   </a>
+                </div>
               </li>
                  <li style="list-style-type: none;">
-                    <a data-filter=".science-and-engineering-pathway" class="text-center">
+                    <div class="columns small-6">
+                    <a data-filter=".science-and-engineering-pathway" class="text-center"  data-equalizer-watch>
                       <div class="callout alert">
-                    <i class="fas fa-atom" style="margin-right: 10px;"></i> Science &amp; Engineering
+                    <i class="fas fa-atom  show-for-medium" style="margin-right: 10px;"></i> Science &amp; Engineering
                   </div></a>
+                </div>
               </li>
               <li style="list-style-type: none;">
-                    <a data-filter=".humanities-and-arts-pathway" class="text-center">
+                  <div class="columns small-6">
+                    <a data-filter=".humanities-and-arts-pathway" class="text-center" data-equalizer-watch>
                       <div class="callout alert">
-                    <i class="fas fa-palette" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
+                    <i class="fas fa-palette  show-for-medium" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
+                  </div>
               </li>
            </ul>
-                </div>
+         </div>
+                
            <ul class="accordion" data-accordion data-allow-all-closed="true">
   <li class="accordion-item" data-accordion-item>
     <a href="#" class="accordion-title">Definitions</a>
@@ -239,13 +255,13 @@ while ( have_posts() ) : the_post(); ?>
                         <div class="row expanded" style="width: 100%;">
                           <div class="columns small-12 medium-5">
                             <?php $curriculum_url = get_field('curriculum_url'); ?>
-                           <p> <a href="<?php the_field( 'curriculum_url' ); ?>">
+                           <p style="margin-bottom: 0;"> <a href="<?php the_field( 'curriculum_url' ); ?>">
                               <?php
                               the_title();?>
                             </a></p>
                           </div>
                           <div class="columns small-12 medium-4" >
-                            <p><?php the_field( 'program_degree' );?></p>
+                            <p style="margin-bottom: 0;"><?php the_field( 'program_degree' );?></p>
                           </div>
                           <div class="columns small-12 medium-3" >
                             <?php if( get_field('online_degree') == 'yes' ) { ?>
