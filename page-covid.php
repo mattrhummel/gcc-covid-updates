@@ -41,14 +41,16 @@ get_header(); ?>
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'posts_per_page'=> -1,
-          $args2['tax_query'] = array(
+         );
+        
+         $args2['tax_query'] = array(
 
-      array(
-        'taxonomy' => 'covid_resources_categories',
-        'terms' => array( 'top-resources' ),
+          array(
+          'taxonomy' => 'covid_resources_categories',
+          'terms' => array( 'top-resources' ),
           'field' => 'slug',
           ),
-          ));
+          );
           ?>
 
           <?php
@@ -90,14 +92,16 @@ get_header(); ?>
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'posts_per_page'=> -1,
-          $args2['tax_query'] = array(
+          );
+        
+        $args2['tax_query'] = array(
 
-      array(
-        'taxonomy' => 'covid_resources_categories',
-        'terms' => array( 'student-resources' ),
+          array(
+          'taxonomy' => 'covid_resources_categories',
+          'terms' => array( 'student-resources' ),
           'field' => 'slug',
           ),
-          ));
+          );
           ?>
 
           <?php
@@ -139,14 +143,15 @@ get_header(); ?>
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'posts_per_page'=> -1,
+          );
           $args2['tax_query'] = array(
 
-      array(
-        'taxonomy' => 'covid_resources_categories',
-        'terms' => array( 'employee_resources' ),
+          array(
+          'taxonomy' => 'covid_resources_categories',
+          'terms' => array( 'employee-resources' ),
           'field' => 'slug',
           ),
-          ));
+          );
           ?>
 
           <?php
