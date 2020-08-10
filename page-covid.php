@@ -41,13 +41,21 @@ get_header(); ?>
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'posts_per_page'=> -1,
-          );
+          $args2['tax_query'] = array(
+
+      array(
+        'taxonomy' => 'covid_resources_categories',
+        'terms' => array( 'top-resources' ),
+          'field' => 'slug',
+          ),
+          ));
           ?>
 
           <?php
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
-              <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
+        <h2>Top Resources</h2>
+         <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
           <?php while ( $query->have_posts() ) : $query->the_post();?>
           
           <li class="accordion-item" data-accordion-item>
@@ -63,7 +71,105 @@ get_header(); ?>
               
         </div>
 
-     </li>
+         </li>
+          
+          <?php endwhile; ?>
+        </ul>
+          <?php wp_reset_postdata(); ?>
+          <?php else : ?>
+          <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
+          <?php endif; ?>
+        </div>
+
+                <div class="row expanded">
+
+          <?php
+          $args =  array (
+          'post_type' => 'covid_19',
+          'post_status' => 'publish',
+          'orderby' => 'publish_date',
+          'order' => 'DESC',
+          'posts_per_page'=> -1,
+          $args2['tax_query'] = array(
+
+      array(
+        'taxonomy' => 'covid_resources_categories',
+        'terms' => array( 'student-resources' ),
+          'field' => 'slug',
+          ),
+          ));
+          ?>
+
+          <?php
+          $query = new WP_Query( $args ); ?>
+          <?php if ( $query->have_posts() ) : ?>
+        <h2>Student Resources</h2>
+         <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
+          <?php while ( $query->have_posts() ) : $query->the_post();?>
+          
+          <li class="accordion-item" data-accordion-item>
+         
+         <a href="#" class="accordion-title"><?php the_title(); ?></a>
+
+        <div class="accordion-content" data-tab-content>
+
+          <h3><?php the_title(); ?></h3>
+                   <p><?php echo get_the_date(); ?></p>
+      
+          <?php the_content(); ?>
+              
+        </div>
+
+         </li>
+          
+          <?php endwhile; ?>
+        </ul>
+          <?php wp_reset_postdata(); ?>
+          <?php else : ?>
+          <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
+          <?php endif; ?>
+        </div>
+
+                <div class="row expanded">
+
+          <?php
+          $args =  array (
+          'post_type' => 'covid_19',
+          'post_status' => 'publish',
+          'orderby' => 'publish_date',
+          'order' => 'DESC',
+          'posts_per_page'=> -1,
+          $args2['tax_query'] = array(
+
+      array(
+        'taxonomy' => 'covid_resources_categories',
+        'terms' => array( 'employee_resources' ),
+          'field' => 'slug',
+          ),
+          ));
+          ?>
+
+          <?php
+          $query = new WP_Query( $args ); ?>
+          <?php if ( $query->have_posts() ) : ?>
+        <h2>Employee Resources</h2>
+         <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
+          <?php while ( $query->have_posts() ) : $query->the_post();?>
+          
+          <li class="accordion-item" data-accordion-item>
+         
+         <a href="#" class="accordion-title"><?php the_title(); ?></a>
+
+        <div class="accordion-content" data-tab-content>
+
+          <h3><?php the_title(); ?></h3>
+                   <p><?php echo get_the_date(); ?></p>
+      
+          <?php the_content(); ?>
+              
+        </div>
+
+         </li>
           
           <?php endwhile; ?>
         </ul>
