@@ -47,18 +47,25 @@ get_header(); ?>
           <?php
           $query = new WP_Query( $args ); ?>
           <?php if ( $query->have_posts() ) : ?>
+              <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
           <?php while ( $query->have_posts() ) : $query->the_post();?>
           
-          <div class="card" style="padding: 1rem;">
-            
-            <?php the_title('<h2 style="margin-bottom: 0; padding-bottom: 0;">', '</h2>', 'gcc-wp-2018'); ?>
-            <p><?php echo get_the_date(); ?></p>
-            
-            <?php the_content(); ?>
+          <li class="accordion-item" data-accordion-item>
+         
+         <a href="#" class="accordion-title"><?php the_title(); ?></a>
 
-          </div>
+        <div class="accordion-content" data-tab-content>
+
+          <h3><?php the_title(); ?></h3>
+          
+          <?php the_content(); ?>
+              
+        </div>
+
+     </li>
           
           <?php endwhile; ?>
+        </ul>
           <?php wp_reset_postdata(); ?>
           <?php else : ?>
           <p><?php esc_html_e( 'Sorry, no events to display', 'gcc-wp-2018'); ?></p>
