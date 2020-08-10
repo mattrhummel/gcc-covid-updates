@@ -57,7 +57,8 @@ get_header(); ?>
         <div class="accordion-content" data-tab-content>
 
           <h3><?php the_title(); ?></h3>
-          
+                   <p><?php echo get_the_date(); ?></p>
+      
           <?php the_content(); ?>
               
         </div>
