@@ -43,7 +43,7 @@ get_header(); ?>
           'posts_per_page'=> -1,
          );
         
-         $args2['tax_query'] = array(
+         $args['tax_query'] = array(
 
           array(
           'taxonomy' => 'covid_resources_categories',
@@ -94,7 +94,7 @@ get_header(); ?>
           'posts_per_page'=> -1,
           );
         
-        $args2['tax_query'] = array(
+        $args['tax_query'] = array(
 
           array(
           'taxonomy' => 'covid_resources_categories',
@@ -144,7 +144,7 @@ get_header(); ?>
           'order' => 'DESC',
           'posts_per_page'=> -1,
           );
-          $args2['tax_query'] = array(
+          $args['tax_query'] = array(
 
           array(
           'taxonomy' => 'covid_resources_categories',
