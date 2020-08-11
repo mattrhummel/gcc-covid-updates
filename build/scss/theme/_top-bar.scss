@@ -130,13 +130,6 @@
 
 .top-bar-right {
 
-  .covid-link {
-    color: $warning;
-      &:hover {
-        color: $black;
-      }
-}
-
 .search-container {
 
   padding: 1rem 0;
@@ -164,9 +157,16 @@
             }   
 
       }
-  }
+}
 
- .active > a {
+li.covid-link a {
+    color: $warning;
+      &:hover {
+        color: $black;
+      }
+}
+
+.active > a {
     background-color: $white;
     color: $black;
   }
