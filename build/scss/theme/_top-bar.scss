@@ -130,6 +130,13 @@
 
 .top-bar-right {
 
+  .covid-link {
+    color: $warning;
+      &:hover {
+        color: $black;
+      }
+}
+
 .search-container {
 
   padding: 1rem 0;
