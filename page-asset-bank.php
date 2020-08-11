@@ -58,6 +58,9 @@ $args = array(
 'post_status' => 'inherit',
 'posts_per_page' => -1,
 'post_type' => 'attachment',
+'meta_key'      => 'display_order',
+'orderby'     => 'meta_value',
+'order'       => 'ASC'
 );
 
 $args['tax_query'] = array(
