@@ -159,11 +159,15 @@
       }
 }
 
-li.covid-link a {
+li.covid-link  {
+
+  a {
     color: $warning;
       &:hover {
         color: $black;
       }
+  }
+  
 }
 
 .active > a {
