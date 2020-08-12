@@ -105,10 +105,6 @@ function getRandomImage(imgAr, path) {
 
 $(document).foundation();
 
-$(function() {
-$('.lazy').Lazy();
-});
-
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
@@ -220,7 +216,6 @@ if (Boolean(readCookie('hide'))) {
             }
 
 </script>
-<?php } ?>
 <script>
 $(document).scroll(function() {
     if ($(this).scrollTop()>200)
@@ -233,6 +228,7 @@ $(document).scroll(function() {
      }
  });
 </script>
+<?php } ?>
 <style>
 .reveal-overlay {
 

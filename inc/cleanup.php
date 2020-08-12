@@ -30,6 +30,7 @@ function gcc_wp_2018_deregister_style() {
     wp_deregister_style( 'fb_data_style' );
     wp_deregister_style( 'jquery-ui-css' );
     wp_deregister_style('aioseop-toolbar-menu-css');
+    wp_deregister_style('aioseop-toolbar-menu');
     wp_deregister_style( 'UserAccessManagerLoginForm'  );
     wp_deregister_style( 'jquery-lazyloadxt-fadein' );
     wp_deregister_style( 'wp-block-library' );
