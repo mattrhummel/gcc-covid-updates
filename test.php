@@ -1,5 +1,5 @@
-<div class="row expanded" data-equalizer>
-<div class="columns medium-6">
+<div class="row expanded collapse" data-equalizer>
+<div class="columns medium-6" style="padding-left: 0;">
 <div class="callout" data-equalizer-watch>
 <div class="row">
 <div class="columns small-1"><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i></div>
@@ -27,15 +27,39 @@
 </div>
 <div class="columns medium-6">
 <div class="callout" data-equalizer-watch>
-<p><strong>Associate of Arts & Sciences Degree (AA&S):</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+<ul class="accordion" data-accordion data-allow-all-closed="true">
+  <li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Associate of Arts & Sciences Degree (AA&S)</a>
+    <div class="accordion-content" data-tab-content>
+	<p>This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+</div>
+</li>
+<li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Associate of Science (AS):</a>
+    <div class="accordion-content" data-tab-content>
+<p>This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
+</div>
+</li>
+<li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Associate of Applied Science Degree (AAS):</a>
+    <div class="accordion-content" data-tab-content>
+<p>Students who plan to obtain full-time employment upon graduation from Germanna.</p>
+</div>
+</li>
+<li class="accordion-item" data-accordion-item>
+    <a href="#" class="accordion-title">Certificate (CERT):</a>
+    <div class="accordion-content" data-tab-content>
+<p>Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
+</div>
+</li>
+<li class="accordion-item" data-accordion-item>
+	<a href="#" class="accordion-title">Accordion 2, you can't open me.</a>
+	<div class="accordion-content" data-tab-content>
+	<p><strong>Career Studies Certificate (CSC):</strong>Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
+	</div>
+</li>
 
-<p><strong>Associate of Science (AS):</strong>This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-
-<p><strong>Associate of Applied Science Degree (AAS):</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
-
-<p><strong>Certificate (CERT):</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
-
-<p><strong>Career Studies Certificate (CSC):</strong>Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
+</ul>
 </div>
 </div>
 </div>

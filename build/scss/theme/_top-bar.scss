@@ -171,6 +171,7 @@ li.covid-link  {
 }
 
 .active > a {
+
     background-color: $white;
     color: $black;
   }
@@ -187,6 +188,33 @@ li.covid-link  {
        padding: .5rem;
     }
 }
+
+  .button {
+    align-items: center;
+    padding: .275rem .5rem;
+    font-size: .96rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: $success;
+    text-align: center;
+    white-space: nowrap;
+    background-color: $light-gray;
+  
+            &:hover {
+              color: rgb(44,87,81);
+             
+            }
+            &:focus {
+              color: rgb(44,87,81);
+            }
+
+  }
+.dropdown-pane {
+  width: 400px;
+  padding: 15px 10px 0 10px;
+  border: none;
+  background-color: $light-gray;
+  
   .input-group {
     font-size: 1rem;
     font-weight: 400;
@@ -196,21 +224,24 @@ li.covid-link  {
     background-clip: padding-box;
     border-radius: .25rem;
     transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
-  }
+    width: auto;
 
-  [type="text"] {
-    height: 36px;
+ input {
     border: none;
     box-shadow: none;
-    border-left: 1px solid $medium-gray;
+    width: 345px;
+    padding: 0 0 0 5px;
+    line-height: .8rem;
+    margin-bottom: 0;
+    margin-right: 0;
+    max-width: 100%;
     border-top: 1px solid $medium-gray;
     border-bottom: 1px solid $medium-gray;
-    width: 150px;
-    min-width: 150px;
+    border-left: 1px solid $medium-gray;
   }
-  .button {
+
+ .input-group-button {
     align-items: center;
-    padding: .275rem .25rem;
     font-size: .96rem;
     font-weight: 400;
     line-height: 1.5;
@@ -230,19 +261,23 @@ li.covid-link  {
             }
 
   }
+  
+
+
+
+}
+
 
 }
  
 }
-
-
 }
 
 }
 
+}
 .banner-bottom {
   padding: .5rem 0 1rem 0;
-
 
   .button-group {
    margin: 0 1rem 1rem 1rem;

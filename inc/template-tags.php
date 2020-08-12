@@ -226,7 +226,7 @@ if ( is_singular() ) :
 	<div class="button-group stacked-for-small expanded button-group">
 		
 	    <a href="/admissions/request-information/" class="button primary"><?php _e('future students', 'gcc-wp-2018') ?></a>
-	    <a href="/pathways/online-degrees/" class="button alert"><?php _e('online degrees', 'gcc-wp-2018') ?></a>
+	
 		<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
 	</div>
 	<?php }
@@ -237,7 +237,6 @@ if ( is_singular() ) :
 	<div class="button-group stacked show-for-large">
  	<a href="/support/" class="button hollow expanded" style=""><?php _e('support germanna', 'gcc-wp-2018') ?></a>
 	<a href="/admissions/request-information/" class="button primary expanded"><?php _e('future students', 'gcc-wp-2018') ?></a>
-		<a href="/pathways/online-degrees/" class="button alert"><?php _e('online degrees', 'gcc-wp-2018') ?></a>
 		<a href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084" class="button secondary expanded"><?php _e('apply now', 'gcc-wp-2018'); ?></a>
 	</div>
 	<?php }
@@ -245,40 +244,48 @@ if ( is_singular() ) :
 	<?php
 	//desktop top bar search
 	function gcc_wp_2018_search_desktop() { ?>
+<button class="button" type="button" data-toggle="example-dropdown-bottom-right" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+
+<div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-hover="true" data-hover-pane="true">
+
 	<form class="float-right" role="search" method="get" id="searchform-desktop" action="<?php echo get_home_url(); ?>/search_gcse/">
+		<div class="input-group">
 			<input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
 			<input type="hidden" name="ie" value="utf8" title="hidden" />
 			<input type="hidden" name="oe" value="utf8" title="hidden" />
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
+			<label for="q" style="display:none;">Search</label> 
 			
-			<button class="button" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>" data-toggle="example-dropdown-bottom-right"><span class="fa  fa-search"></span></button>
+			<input type="text" name="q" id="search-field">
 			
-			<div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
-				<label for="q" style="display:none;">Search</label> 
-				<input type="text" name="q" id="search-field-mobile" class="input-group-field">
-				<button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>" data-toggle="example-dropdown-bottom-right"><span class="fa fa-search"></span></button>
+			<div class="input-group-button">
+				<button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
 			</div>
+		</div>
 	</form>
+
+</div>
+
 	<?php }
 	?>
 	<?php
 	//desktop top bar search
 	function gcc_wp_2018_search_mobile() { ?>
 	<form class="float-right" role="search" method="get" id="searchform-mobile" action="<?php echo get_home_url(); ?>/search_gcse/">
+		<div class="input-group">
 			<input type="hidden" name="cx" value="015787986713984774933:no8dqwkyepy" title="hidden">
 			<input type="hidden" name="ie" value="utf8" title="hidden" />
 			<input type="hidden" name="oe" value="utf8" title="hidden" />
 			<input type=hidden name=domains value="<?php echo get_home_url();     //get the domain base for the search submit?>" title="home" />
 			<input type=hidden name=sitesearch value="<?php echo get_home_url(); //get the url base for the search submit?>" title="home"  />
-
-				<button class="button" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>" data-toggle="example-dropdown-bottom-right"><span class="fa fa-search"></span></button>
-				<div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-auto-focus="true">
-				<label for="q" style="display:none;">Search</label> 
-				<input type="text" name="q" id="search-field-mobile" class="input-group-field">
-				<button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>" data-toggle="example-dropdown-bottom-right"><span class="fa fa-search"></span></button>
+			<label for="q" style="display:none;">Search</label> 
+			<input type="text" name="q" id="search-field-mobile" class="input-group-field">
+			
+			<div class="input-group-button">
+				<button id="searchsubmit-mobile" type="submit" class="button" value="" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
 			</div>
-			</div>
+		</div>
 	</form>
 	<?php }
 	?>
