@@ -244,7 +244,7 @@ if ( is_singular() ) :
 	<?php
 	//desktop top bar search
 	function gcc_wp_2018_search_desktop() { ?>
-<button class="button" type="button" data-toggle="example-dropdown-bottom-right" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
+<button class="button float-right" type="button" data-toggle="example-dropdown-bottom-right" aria-label="<?php _e('fa fa-eyeglass', 'gcc-wp-2018')?>"><span class="fa fa-search"></span></button>
 
 <div class="dropdown-pane" data-position="bottom" data-alignment="right" id="example-dropdown-bottom-right" data-dropdown data-hover="true" data-hover-pane="true">
 
