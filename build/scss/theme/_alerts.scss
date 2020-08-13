@@ -235,13 +235,14 @@
     strong {
       font-weight: 600;
     }
+    
     a {
       font-weight: 800;
       text-decoration: underline;
       margin-left: .2rem;
 
       &:hover {
-        text-decoration: underline;
+        text-decoration: none;
       }
     }
   }
