@@ -16,8 +16,16 @@ get_header(); ?>
       </button>
       
     </div>
-
+  
      <aside class="columns small-12 large-3 float-right page-nav hide-for-print" id="section-menu">
+          <style>
+.widget:first-of-type {
+    background-color: #f9f9f9;
+}
+      .widget h3 {
+    padding: 1rem 0;
+}
+</style>
       <?php dynamic_sidebar( 'covid-widgets' ); ?>
     </aside>
 
