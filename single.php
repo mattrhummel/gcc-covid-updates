@@ -17,6 +17,14 @@ get_header(); ?>
       </button>
       
     </div>
+    <style>
+.widget:first-of-type {
+    background-color: #f9f9f9;
+}
+    	.widget h3 {
+    padding: 1rem 0;
+}
+</style>
 		<?php get_sidebar();?>
 	  <div class="columns small-12 large-9 float-left">
 			
@@ -48,7 +56,7 @@ get_header(); ?>
 			</header>
 			
 			<div class="entry-content" id="main" style="margin-top: 20px;">
-				<?php the_content(); ?>
+				 <?php the_content(); ?>
 			</div>
 
 		</div>

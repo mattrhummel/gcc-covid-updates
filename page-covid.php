@@ -87,11 +87,10 @@ while ( have_posts() ) : the_post(); ?>
       <?php while ( $query->have_posts() ) : $query->the_post();?>
       
       <li>
-        <h3 class="h4">
-          <a class="<?php echo get_the_permalink(); ?>"><span class="subheader"><?php echo get_the_date(); ?></span><br />
+        <a class="<?php echo get_the_permalink(); ?>"> <h3 class="h4">
+         <span class="subheader"><?php echo get_the_date(); ?></span><br />
            <?php the_title(); ?>
-         </a>
-       </h3>
+       </h3></a>
       </li>
 
     <?php endwhile; ?>
