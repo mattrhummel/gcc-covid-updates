@@ -45,12 +45,15 @@ while ( have_posts() ) : the_post(); ?>
 <div class="callout large">
 
   <style>
+    .widget .textwidget {
+    padding: 0;
+}
     .widget:first-of-type {
     background-color: #f9f9f9;
 
 }
 .widget h3 {
-    padding: 1rem 1rem 1rem 0;
+    padding: 0rem 1rem 1rem 0;
 }
 
   </style>
