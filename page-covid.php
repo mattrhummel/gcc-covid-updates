@@ -70,7 +70,7 @@ while ( have_posts() ) : the_post(); ?>
           'post_status' => 'publish',
           'orderby' => 'publish_date',
           'order' => 'DESC',
-          'posts_per_page'=> -1,
+          'posts_per_page'=> 4,
         );
           ?>
 
@@ -93,6 +93,17 @@ while ( have_posts() ) : the_post(); ?>
       </li>
 
     <?php endwhile; ?>
+
+    <?php
+
+the_posts_pagination( array(
+    'prev_text' => twentyseventeen_get_svg( array( 'icon' => 'arrow-left' ) ) . '<span class="screen-reader-text">' . __( 'Previous page', 'twentyseventeen' ) . '</span>',
+    'next_text' => '<span class="screen-reader-text">' . __( 'Next page', 'twentyseventeen' ) . '</span>' . twentyseventeen_get_svg( array( 'icon' => 'arrow-right' ) ),
+    'before_page_number' => '<span class="meta-nav screen-reader-text">' . __( 'Page', 'twentyseventeen' ) . ' </span>',
+) );
+
+
+     ?>
 
           <?php wp_reset_postdata(); ?>
           <?php else : ?>
