@@ -66,7 +66,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <h2 class="h3">Latest College Updates</h2>
 <ul class="no-bullet">
-  <?php echo do_shortcode( '[ajax_load_more id="8325301004" container_type="div" css_classes="no-bullet" paging="true" paging_show_at_most="5" paging_controls="true" paging_previous_label="<" paging_next_label=">" post_type="covid_19" posts_per_page="3" placeholder="true"]' ); ?>
+  <?php echo do_shortcode( '[ajax_load_more id="8325301004" container_type="div" css_classes="no-bullet" paging="true" paging_show_at_most="5" paging_controls="true" paging_previous_label="<" paging_next_label=">" post_type="covid_19" posts_per_page="5" placeholder="true"]' ); ?>
 </ul>
 
 </div>
