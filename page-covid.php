@@ -65,15 +65,15 @@ while ( have_posts() ) : the_post(); ?>
 <div class="callout large" data-equalizer-watch>
 
       <?php
-          $args =  array (
+          $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;          $args =  array (
           'post_type' => 'covid_19',
           'post_status' => 'publish',
           'orderby' => 'publish_date',
           'order' => 'DESC',
           'posts_per_page'=> 4,
+          'paged' => $paged
         );
-          ?>
-
+      ?>
 
 <?php
           $query = new WP_Query( $args ); ?>
@@ -94,13 +94,10 @@ while ( have_posts() ) : the_post(); ?>
 
     <?php endwhile; ?>
 
-<div class="nav-previous alignleft"><?php previous_posts_link( 'Older posts' ); ?></div>
-<div class="nav-next alignright"><?php next_posts_link( 'Newer posts' ); ?></div>
+    <?php misha_paginator( get_pagenum_link() ); ?>
 
-
-          <?php wp_reset_postdata(); ?>
-          <?php else : ?>
-          <?php endif; ?>
+    <?php else : ?>
+    <?php endif; ?>
 
   </ul>
 </div>
