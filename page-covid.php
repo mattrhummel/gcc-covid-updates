@@ -62,44 +62,13 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 <div class="column medium-8">
-<div class="callout large" data-equalizer-watch>
-
-      <?php
-          $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;          $args =  array (
-          'post_type' => 'covid_19',
-          'post_status' => 'publish',
-          'orderby' => 'publish_date',
-          'order' => 'DESC',
-          'posts_per_page'=> 4,
-          'paged' => $paged
-        );
-      ?>
-
-<?php
-          $query = new WP_Query( $args ); ?>
-          <?php if ( $query->have_posts() ) : ?>
+<div class="callout large" data-equalizer-watch id="covid-post-container">
 
 <h2 class="h3">Latest College Updates</h2>
+<ul class="no-bullet">
+  <?php echo do_shortcode( '[ajax_load_more id="8325301004" container_type="ul" paging="true" paging_classes="pagenation" paging_show_at_most="3" paging_controls="true" paging_previous_label="<" paging_next_label=">" post_type="covid_19" posts_per_page="3" placeholder="true"]' ); ?>
+</ul>
 
-  <ul class="no-bullet">
-
-      <?php while ( $query->have_posts() ) : $query->the_post();?>
-      
-      <li>
-        <a href="<?php the_permalink(); ?>"><h3 class="h4">
-         <span class="subheader"><?php echo get_the_date(); ?></span><br />
-           <?php the_title(); ?>
-       </h3></a>
-      </li>
-
-    <?php endwhile; ?>
-
-    <?php misha_paginator( get_pagenum_link() ); ?>
-
-    <?php else : ?>
-    <?php endif; ?>
-
-  </ul>
 </div>
 </div>
 </div>
