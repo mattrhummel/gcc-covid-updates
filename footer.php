@@ -45,14 +45,11 @@ get_template_part( 'template-parts/content', 'mobile-nav' );
 
 <?php
 if ( is_page('8')  ) {  ?>
-
 <div class="popout-banner">
-
 <div class="callout alert show-for-xlarge text-center" style="padding: 10px 0; margin-bottom: 0;"  data-closable>
 <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
 </button>
-
 <script type="text/javascript">
 // place your images in this array
 var random_images_array = ['GCCheadshots080.jpg', 'GCCheadshots099.jpg'];
@@ -64,9 +61,7 @@ function getRandomImage(imgAr, path) {
     document.write(imgStr); document.close();
 }
 </script>
-
 <script type="text/javascript">getRandomImage(random_images_array, '/wp-content/uploads/')</script>
-
   <div class="row">
     <div class="columns" style="padding-left: 10px;">
       <h5 class="hide-for-small-only" style="margin-top: 10px;">Get Started</h5>
@@ -82,7 +77,6 @@ function getRandomImage(imgAr, path) {
   <button class="close-button" aria-label="Dismiss alert" type="button" data-close>
     <span aria-hidden="true">&times;</span>
   </button>
-
       <h2 id="request-info-formHeader"><?php _e('Request Information', 'gcc-wp-2018') ?></h2>
       <p><?php _e('Tell us more about yourself and your goals. Fill out our form below to receive more information about our programs, the cost of attendance and how to get started', 'gcc-wp-2018') ?></p>
      <?php echo do_shortcode('[wpforms id="27548"]') ?>
@@ -91,8 +85,6 @@ function getRandomImage(imgAr, path) {
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
-
-
 </div>
 
 </div><!--.close-canvas-content-->
@@ -102,13 +94,10 @@ function getRandomImage(imgAr, path) {
 
 <?php wp_footer(); ?>
 <script>
-
 $(document).foundation();
-
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
-<!-- begin SnapEngage code for testing -->
 <script type="text/javascript">
 (function() {
 var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
@@ -124,13 +113,11 @@ done = true;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
 })();
 </script>
-<!-- end SnapEngage code -->
 <?php
 }
 ?>
 <?php
 if ( is_page('44') || $post->post_parent == '44' ) {  ?>
-<!-- begin SnapEngage code for counseling -->
 <script type="text/javascript">
 (function() {
 var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
@@ -146,13 +133,11 @@ done = true;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
 })();
 </script>
-<!-- end SnapEngage code -->
 <?php
 }
 ?>
 <?php
 if ( is_page('11434') || is_page('8') || is_page('24') || is_page('40526') || is_page('20') || is_page('44712') || is_page('44700') || is_page('44715') ) {  ?>
-<!-- begin SnapEngage code for counseling -->
 <script type="text/javascript">
 (function() {
 var se = document.createElement('script'); se.type = 'text/javascript'; se.async = true;
@@ -168,7 +153,6 @@ done = true;
 var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(se, s);
 })();
 </script>
-<!-- end SnapEngage code -->
 <?php
 }
 ?>
