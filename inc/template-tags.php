@@ -304,13 +304,10 @@ if ( is_singular() ) :
 			<li class="gray-button"><a href="/veterans/">military & families</a></li>
 			<li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
 			<ul class="menu">
-				<li><a href="/alumni/">Alumni</a>
-			</li>
 			<li><a href="/bookstore/">Bookstore</a></li>
 			<li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
 			<li><a href="/library/">Libraries</a></li>
 			<li><a href="/about-germanna/locations/">Locations</a></li>			
-			<li><a href="/veterans/">Military & Families</a></li>
 			<li><a href="/academic-center-for-excellence/">Tutoring</a></li>
 			<!-- ... -->
 		</ul>
@@ -336,13 +333,10 @@ function gcc_wp_2018_resources_desktop() { ?>
 <li class="gray-button"><a href="/veterans/">military & families</a></li>
 <li class="black-button"><a href="#" class="primary">resources <span class="fa fa-caret-down"></span></a>
 <ul class="menu">
-	<li><a href="/alumni/">Alumni</a>
-</li>
 <li><a href="/bookstore/">Bookstore</a></li>
 <li><a href="https://calendar.activedatax.com/germanna/default.aspx?type=&view=Summary">Calendar</a></li>
 <li><a href="/library/">Libraries</a></li>
 <li><a href="/about-germanna/locations/">Locations</a></li>
-<li><a href="/veterans/">Military & Families</a></li>
 <li><a href="/academic-center-for-excellence/">Tutoring</a></li>
 </ul>
 </li>
