@@ -54,7 +54,10 @@ while ( have_posts() ) : the_post(); ?>
 .widget h3 {
     padding: 0rem 1rem 1rem 0;
 }
-
+ul.alm-paging li.active a {
+    background: #b22144 !important;
+    border-color: #b22144 !important;
+}
   </style>
 
    <?php dynamic_sidebar( 'covid-widgets' ); ?>
