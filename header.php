@@ -30,14 +30,14 @@
       get_template_part( 'template-parts/content', 'weather-alert' );
     ?>
 
-
-    <div class="off-canvas-wrapper no-js">
-      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
-        <?php main_menu(); //main sidebar navigation ?>
-        <div class="off-canvas-content" data-off-canvas-content>
           <?php  //quicklinks
           get_template_part( 'template-parts/content', 'quicklinks' );
           ?>
+    <div class="off-canvas-wrapper no-js">
+      
+      <div class="off-canvas-wrapper-inner" data-off-canvas-wrapper>
+        <?php main_menu(); //main sidebar navigation ?>
+        <div class="off-canvas-content" data-off-canvas-content>
 
           <main class=" clearfix">
 
