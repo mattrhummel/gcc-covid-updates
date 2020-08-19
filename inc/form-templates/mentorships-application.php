@@ -1,4 +1,4 @@
-<?php if ( class_exists( 'WPForms_Template', false ) ) :
+<?phpif ( class_exists( 'WPForms_Template', false ) ) :
 /**
  * College Wide Mentorship Program Application
  * Template for WPForms.
@@ -116,4 +116,5 @@ class WPForms_Template_college_wide_mentorship_program_application extends WPFor
 	}
 }
 new WPForms_Template_college_wide_mentorship_program_application;
-endif; ?>
+endif;
+?>

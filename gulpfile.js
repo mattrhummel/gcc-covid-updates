@@ -17,7 +17,7 @@ gulp.src('build/scss/style.scss')
   }));
 
 gulp.task('php', function() {
-    php.server({ base: '/', port: 8888, keepalive: true});
+    php.server({ base: '/', port: 8889, keepalive: true});
 });
 
 gulp.task('browser-sync', ['php'], function() {
