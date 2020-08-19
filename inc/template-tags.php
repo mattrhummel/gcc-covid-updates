@@ -303,7 +303,7 @@ if ( is_singular() ) :
 			</li>
 			<li class="gray-button"><a href="/students/">online students</a></li>
 			<li  class="gray-button"><a href="/faculty-staff/">faculty &amp; staff</a></li>
-			<li class="gray-button"><a href="/educational-foundation/alumni">alumni</a></li>
+			<li class="gray-button"><a href="/alumni">alumni</a></li>
 			<li class="gray-button"><a href="/veterans/">military & families</a></li>
 			<li class="black-button"><a href="#" class="primary">resources  <span class="fa fa-caret-down"></span></a>
 			<ul class="menu">
@@ -335,7 +335,7 @@ function gcc_wp_2018_resources_desktop() { ?>
 </li>
 <li class="gray-button"><a href="/students/">online students</a></li>
 <li class="gray-button"><a href="/faculty-staff/">faculty & staff</a></li>
-<li class="gray-button"><a href="/educational-foundation/alumni">alumni</a></li>
+<li class="gray-button"><a href="/alumni/">alumni</a></li>
 <li class="gray-button"><a href="/veterans/">military & families</a></li>
 <li class="black-button"><a href="#" class="primary">resources <span class="fa fa-caret-down"></span></a>
 <ul class="menu">

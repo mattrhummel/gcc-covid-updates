@@ -71,7 +71,7 @@ ul.alm-paging li.active a {
 
 <ul class="no-bullet">
 
-  <?php echo do_shortcode( '[ajax_load_more paging="true" paging_show_at_most="4" paging_controls="true" paging_previous_label="<i class="fas fa-angle-left"></i>" paging_next_label="<i class="fas fa-angle-right"></i>" post_type="covid_19" posts_per_page="10"]' ); 
+  <?php echo do_shortcode( '[ajax_load_more paging="true" paging_show_at_most="4" paging_controls="true" paging_previous_label="<i class="fas fa-angle-left"></i>" paging_next_label="<i class="fas fa-angle-right"></i>" post_type="covid_19" posts_per_page="10"]'); 
   ?>
 
 </ul>
@@ -80,8 +80,7 @@ ul.alm-paging li.active a {
 </div>
 </div>
            
-
-    </div>
+  </div>
   </div>
 </article>
 <?php endwhile; // End of the loop. ?>
