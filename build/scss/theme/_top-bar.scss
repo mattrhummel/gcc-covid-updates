@@ -51,7 +51,20 @@
 
       
       }
+      li.yellow-button {
+        
+           a {
+            background-color: $alert;
 
+            &:hover {
+              background-color: rgb(147,27,56);
+            }
+            &:focus {
+               background-color: rgb(147,27,56);
+            }
+          }
+        
+      }
       li.red-button {
         
            a {

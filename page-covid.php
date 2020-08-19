@@ -39,7 +39,7 @@ while ( have_posts() ) : the_post(); ?>
       the_content();
       ?>
 
- <div class="row expanded" data-equalizer>
+<div class="row expanded" data-equalizer>
 <div class="column medium-4">
 <div class="callout large" data-equalizer-watch>
 
