@@ -20,13 +20,43 @@ while ( have_posts() ) : the_post(); ?>
       </header>
     </div>
   </div>
-  <div class="row expanded">
-    <div class="columns medium-12" id="main">
-      <div class="entry-content" id="main">
-        <div class="row expanded" data-equalizer>
-          <div class="columns xlarge-6"> 
-            <div class="show-for-xlarge">           
-            <?php
+  
+<div class="row expanded" data-equalizer>
+<div class="columns medium-7">
+<div class="callout large" data-equalizer-watch>
+<h2>Your future is bright</h2>
+<p class="lead">Up-skill, re-skill or skill-up at Germanna through <strong>60+ career programs</strong>. Or start working toward your bachelor&#8217;s degree through <strong>six</strong> majors designed to transfer. Take advantage of <strong>guaranteed transfer agreements</strong> with top Virginia four-year schools.</p>
+</p></div>
+</p></div>
+<div class="columns medium-5">
+<div class="hide-for-small-only callout" style="background-image: url('/wp-content/uploads/ShortpixelBackups/wp-content/uploads/revslider/diversity-slider/bhm-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-equalizer-watch=""> </div>
+</p></div>
+</div>
+<div class="row expanded">
+<div class="columns">
+<div class="callout secondary">
+<div class="row expanded">
+<div class="columns medium-3">
+<label class="h5">By Goal</label>
+<select><option value="">All</option><option value="">Career preparation</option><option value="">Four-year transfer</option></select><br />
+</label>
+</div>
+<div class="columns medium-3">
+<label class="h5">By Career Pathway</label>
+<select><option value="">All</option><option value="">Arts &amp; Humanities</option><option value="" selected>Business</option><option value="">Education &amp; Social Science</option><option value="">Healthcare</option><option value="">IT &amp; Cybersecurity</option><option value="">Public Service</option><option value="">Science &amp; Engineering</option></select>
+</div>
+<div class="columns medium-3">
+<label class="h5">By Degree Type</label>
+<select><option value="">All</option><option value="">Associate Degree</option><option value="">Certificate</option></select><br />
+</div>
+<div class="columns medium-3">
+<label class="h5">By Delivery</label>
+<select><option value="">100% Online Option</option><option value="">Any Option</option></select>
+</div>
+</div>
+</div>
+</div>
+<?php
             $args= array(
             'post_type' => 'gcc_programs',
             'posts_per_page'=> -1,
@@ -47,202 +77,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-           <div class="row expanded">
-            <h2>Select a Career Pathway</h2>
-            <div class="row expanded collapse">
-            <div class="columns">
-            <ul id="filters-large" style="list-style-type: none; margin-left: 0;">
-              <li style="list-style: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a href="#" data-filter="*" class="h3 button alert large expanded text-center">
-                  <i class="fas fa-asterisk fa-2x" style="margin-bottom: 10px;"></i><br/>All Programs
-                  </a>
-                </div>
-              </li>
-              <li style="list-style-type: none;">
-              <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".humanities-and-arts-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-palette fa-2x" style="margin-bottom: 10px;"></i><br/>Arts &amp; Humanities</a>
-              </div>
-            </li>
-            <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".business-pathway" class="h3 button alert large expanded text-center">
-                  <i class="fas fa-briefcase fa-2x" style="margin-bottom: 10px;"></i><br/>Business</a>
-              </div>
-            </li>
-            <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".social-science-and-education" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-school fa-2x" style="margin-bottom: 10px;"></i><br/>Education &amp; Social Science</a>
-              </div>
-            </li>
-               <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".health-science-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-user-nurse fa-2x" style="margin-bottom: 10px;"></i><br/>Healthcare</a>
-              </div>
-            </li>
-              <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".it-and-technical-studies-pathway" class="h3 button alert large expanded text-center">
-                  <i class="fas fa-laptop-code fa-2x" style="margin-bottom: 10px;"></i><br/>IT &amp; Cybersecurity</a>
-              </div>
-            </li>
-              <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".public-service-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-gavel fa-2x" style="margin-bottom: 10px;"></i><br/>Public Service</a>
-              </div>
-            </li>
-               <li style="list-style-type: none;">
-                <div class="columns medium-12 xlarge-6">
-                  <a data-filter=".science-and-engineering-pathway" class="h3 button alert expanded large text-center">
-                  <i class="fas fa-atom fa-2x" style="margin-bottom: 10px;"></i><br/>Science &amp; Engineering</a>
-              </div>
-            </li>
-         </ul>
-      </div>
-    </div>
-    </div>
-      </div>
-      </div>
-        <div class="columns xlarge-6">
-        <div class="hide-for-xlarge">
-        <div class="row expanded collapse" data-equalizer>
-            <ul id="filters-small" style="list-style-type: none; margin-left: 0;">
-                <li style="list-style: none;">
-                    <div class="columns small-6">
-                    <a href="#" data-filter="*" class="text-center" data-equalizer-watch>
-                     <div class="callout alert" data-equalizer-watch>
-                      <i class="fas fa-asterisk show-for-medium" style="margin-right: 10px;"></i> All Programs
-                   </div>
-                    </a>
-                  </div>
-                </li>
-                <li style="list-style-type: none;">
-                    <div class="columns small-6">
-                    <a data-filter=".business-pathway" class="text-center" data-equalizer-watch>
-                     <div class="callout alert" data-equalizer-watch>
-                        <i class="fas fa-briefcase  show-for-medium" style="margin-right: 10px;"></i>Business
-                    </div>
-                  </a>        
-                  </div>    
-              </li>
-                <li style="list-style-type: none;">
-                    <div class="columns small-6">
-                    <a data-filter=".public-service-pathway" class="text-center" data-equalizer-watch>
-                      <div class="callout alert" data-equalizer-watch>
-                    <i class="fas fa-gavel  show-for-medium" style="margin-right: 10px;"></i> Public Service
-                  </div>
-                  </a>
-                </div>
-              </li>
-                <li style="list-style-type: none;">
-                    <div class="columns small-6">
-                    <a data-filter=".it-and-technical-studies-pathway" class="text-center" data-equalizer-watch>
-                      <div class="callout alert" data-equalizer-watch>
-                    <i class="fas fa-laptop-code  show-for-medium" style="margin-right: 10px;"></i> IT &amp; 
-                   Cybersecurity
-                  </div>
-                 </a>
-               </div>
-              </li>
-                <li style="list-style-type: none;">
-                  <div class="columns small-6">
-                    <a data-filter=".health-science-pathway" class="text-center" data-equalizer-watch>
-                    <div class="callout alert"data-equalizer-watch>
-                    <i class="fas fa-user-nurse  show-for-medium" style="margin-right: 10px;"></i> Healthcare
-                </div>
-                  </a>
-                </div>
-              </li>
-                <li style="list-style-type: none;">
-                    <div class="columns small-6">
-                    <a data-filter=".social-science-and-education" class="text-center" data-equalizer-watch>
-                      <div class="callout alert" data-equalizer-watch>
-                    <i class="fas fa-school  show-for-medium" style="margin-right: 10px;"></i> Education &amp; Social Science
-                  </div>
-                  </a>
-                </div>
-              </li>
-                 <li style="list-style-type: none;">
-                    <div class="columns small-6">
-                    <a data-filter=".science-and-engineering-pathway" class="text-center"  data-equalizer-watch>
-                      <div class="callout alert">
-                    <i class="fas fa-atom  show-for-medium" style="margin-right: 10px;"></i> Science &amp; Engineering
-                  </div></a>
-                </div>
-              </li>
-              <li style="list-style-type: none;">
-                  <div class="columns small-6">
-                    <a data-filter=".humanities-and-arts-pathway" class="text-center" data-equalizer-watch>
-                      <div class="callout alert">
-                    <i class="fas fa-palette  show-for-medium" style="margin-bottom: 10px;"></i> Arts &amp; Humanities</div></a>
-                  </div>
-              </li>
-           </ul>
-         </div>
-                <div class="row expanded collapse">
-                  <div class="columns">
-           <ul class="accordion" data-accordion data-allow-all-closed="true" style="margin-bottom: 15px;">
-  <li class="accordion-item" data-accordion-item>
-    <a href="#" class="accordion-title">Definitions</a>
-
-    <div class="accordion-content" data-tab-content>
- 
- <p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
-
-<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong> Complete within 1 year.</p>
-
-<p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
-
-<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong> Use your financial aid awards with.</p>
-
-    <p><strong>Associate of Arts &amp; Science Degree:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-
-    <p><strong>Associate of Science:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-
-    <p><strong>Associate of Applied Science Degree:</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
-
-    <p><strong>Certificate:</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
-
-     <p><strong>Career Studies Certificate:</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
-
-    </div>
-   </li>
- </ul>
-</div>
-</div>
-</div>
-<div class="show-for-xlarge">
-<h2>Definitions</h2> 
-<p><strong><i class="fa fa-chalkboard-teacher" style="margin-top:10px;"></i> Online:</strong> Available completely online.</p>
-
-<p><strong><i class="fa fa-running" style="margin-top:10px;"></i> Accelerated:</strong> Complete within 1 year.</p>
-
-<p><strong><i class="fas fa-random" style="margin-top:10px;"></i> Transfer:</strong> Finish at a 4-year college or university.</p>
-
-<p><strong><i class="fa fa-dollar-sign" style="margin-top:10px;"></i> Financial Aid Eligible: </strong> Use your financial aid awards with.</p>
-
-    <p><strong>Associate of Arts &amp; Science Degree:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-
-    <p><strong>Associate of Science:</strong> This degree is appropriate for those students who plan to transfer to four-year institutions.</p>
-
-    <p><strong>Associate of Applied Science Degree:</strong> Students who plan to obtain full-time employment upon graduation from Germanna.</p>
-
-    <p><strong>Certificate:</strong> Awarded to students who complete one of the approved non-degree curricula which are is usually less than two years in length.</p>
-
-     <p><strong>Career Studies Certificate:</strong> Career studies programs are developed and implemented in response to community needs when institutional resources permit.</p>
-</div>
- </div>
-      </div>
-      <div class="row expanded collapse">
-        <div class="columns medium-12">
-          <div id="isotope-list">
-            <div class="row expanded">
-              <div class="columns">
-                <?php
+ <?php
                 while($programs->have_posts()) : $programs->the_post();
                 $idd = get_the_ID();
                 $item_classes = '';
@@ -250,84 +85,74 @@ while ( have_posts() ) : the_post(); ?>
                 if($item_cats):
                 
                 foreach($item_cats as $item_cat) {
-                $item_classes .= $item_cat->slug . ' '; ?>
-                
-                <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
-                  <div class="row expanded" style="width: 100%;">
-                    <div class="columns small-12" style="width: 100%;">
-                        <div class="callout" style="width: 100%;">
-                        <div class="row expanded" style="width: 100%;">
-                          <div class="columns small-12 medium-5">
-                            <?php $curriculum_url = get_field('curriculum_url'); ?>
-                           <p style="margin-bottom: 0; padding: 10px 0 0 0;"> <a href="<?php the_field( 'curriculum_url' ); ?>">
-                              <?php
-                              the_title();?>
-                            </a></p>
-                          </div>
-                          <div class="columns small-12 medium-4" >
-                            <p style="margin-bottom: 0; padding: 10px 0 0 0;"><?php the_field( 'program_degree' );?></p>
-                          </div>
-                          <div class="columns small-12 medium-3" >
-                            <ul class="menu expanded" style="padding: 5px 0;">
-                              <li>
-                            <?php if( get_field('online_degree') == 'yes' ) { ?> 
-                            <i class="fa fa-chalkboard-teacher" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Online Option</span></i>
-                            <?php }
-                            ?>
-                            <?php if( get_field('online_degree') == 'no' ) { ?>
-                              
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Online Degree</span></i>
-                            <?php }
-                            ?>
-                          </li>
-                          <li>
-                            <?php if( get_field('accelerated_program') == 'yes' ) { ?>
-                            <i class="fas fa-running" aria-hidden="true" style="margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
-                         
-                            <?php }
-                            ?>
-                            <?php if( get_field('accelerated_program') == 'no' ) { ?>
-                             
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
-                            <?php }
-                            ?>
-                          </li>
-                          <li>
-                            <?php if( get_field('transfer_program') == 'yes' ) { ?> 
-                            <i class="fas fa-random" aria-hidden="true" style="margin-right: 10px;"><span class="show-for-sr">transfer program</span></i>
-                            <?php }
-                            ?>
-                            <?php if( get_field('transfer_program') == 'no' ) { ?> 
-                            <i class="fas fa-times" aria-hidden="true" style="color: #f9f9f9; margin-right: 10px;"><span  class="show-for-sr">Accelerated Option</span></i>
-                            <?php }
-                            ?>
-                          </li>
-                           <li>
-                            <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?>
-                            <i class="fas fa-dollar-sign" aria-hidden="true"><span  class="show-for-sr">financial aid eligible</span></i>
-                            <?php }
-                            ?> 
-                            </li>
-                            </ul>   
-                      </div> 
-                    </div>
-                  </div>
-                </div>
-                  </div>
-                </div>
-                <?php  }
-                endif;
+                $item_classes .= $item_cat->slug . '';
                 ?>
-                <?php wp_reset_query(); ?>
-                <?php endwhile;  ?>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+<div class="row expanded" data-equalizer>
+<div class="columns medium-7">
+<div class="callout large" data-equalizer-watch>
+<h2><?php the_title();?></h2>
+<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="<?php echo $degree_tax->name; ?>"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
+<p class="lead"><?php the_field( 'program_description' ); ?></p>
+<div class="row expanded">
+<div class="columns medium-6">
+<h3 class="subheader h4">Transfer Partners</h3>
+<?php the_field( 'transfer_partners' ); ?>
+<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore college transfer</a> </p>
+</p></div>
+<div class="columns medium-6">
+<h3 class="subheader h4">Sample Courses</h3>
+<?php the_field( 'sample_courses' ); ?>
+<p><a href="" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
 </div>
+<div class="columns medium-6">
+<h3 class="subheader h4">Careers</h3>
+<?php the_field( 'sample_courses' ); ?>
+<p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="columns medium-5">
+<div class="callout alert large" data-equalizer-watch>
+<ul class="no-bullet">
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+<li class="label"><i class="fa fa-laptop-code" aria-hidden="true"></i><?php _e('Complete 100% Online','gcc-wp-2018') ?></li>
+<?php } ?>
+<?php if( get_field('accelerated_program') == 'yes' ) { ?>
+<li class="label"><i class="fa fa-fast-forward" aria-hidden="true"></i><?php _e('Accelerated, 100% Online Option','gcc-wp-2018'); ?></li>
+<?php } ?>
+ <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?><li class="label"><i class="fa fa-check-circle" aria-hidden="true"></i><?php _e(' Eligible for Financial Aid', 'gcc-wp-2018'); ?></li>
+<?php } ?> 
+</ul>
+
+<h3 class="subheader h4">Flexible</h3>
+<ul class="no-bullet">
+
+<!--time-to-complete-->
+<li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?></li>
+<!--if-schedule-amount-->
+<li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?></li>
+<!--if-start-date-->
+<li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?></li>
+</ul>
+
+<h3 class="subheader h4">Affordable</h3>
+<ul class="no-bullet">
+<li><i class="fa fa-donate" aria-hidden="true"></i> <strong><?php the_field( 'program_cost' ); ?></strong> <?php _e(', estimated total program cost','gcc-wp-2018'); ?></li>
+</ul></div>
+</p></div>
+</div>
+<?php  }
+
+endif;
+?>
+<?php wp_reset_query(); ?>
+<?php endwhile;  ?>
+
+    </div>
+  </div>  
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
