@@ -122,19 +122,26 @@ while ( have_posts() ) : the_post(); ?>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
 <div class="columns medium-6">
+<?php if( get_field('transfer_partners') ): ?>
 <h3 class="subheader h4">Transfer Partners</h3>
 <?php the_field( 'transfer_partners' ); ?>
-<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore college transfer</a> </p>
-</p></div>
+<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Explore college transfer</a> </p>
+</p>
+<?php endif; ?>
+</div>
 <div class="columns medium-6">
+<?php if( get_field('sample_courses') ): ?>
 <h3 class="subheader h4">Sample Courses</h3>
 <?php the_field( 'sample_courses' ); ?>
 <p><a href="" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
+<?php endif; ?>
 </div>
 <div class="columns medium-6">
+<?php if( get_field('career_options') ): ?>
 <h3 class="subheader h4">Careers</h3>
-<?php the_field( 'sample_courses' ); ?>
+<?php the_field( 'career_options' ); ?>
 <p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
+<?php endif; ?>
 </div>
 </div>
 </div>
@@ -177,10 +184,14 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 
 <?php  }
-                endif;
-                ?>
-                <?php wp_reset_query(); ?>
-                <?php endwhile;  ?>
+
+endif;
+
+?>
+<?php wp_reset_query(); ?>
+<?php endwhile;  
+?>
+
 </div>
   
 </article>
