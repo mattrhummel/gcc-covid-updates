@@ -46,7 +46,7 @@ while ( have_posts() ) : the_post(); ?>
             $programs = new WP_Query($args);
             if(is_array($programs->posts) && !empty($programs->post)) {
             foreach($programs->posts as $programs->post) {
-            $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
+            $post_taxs = wp_get_post_terms($programs->post->ID, array('pathway_names', 'program_degrees'), array("fields" => "all"));
             if(is_array($post_taxs) && !empty($post_taxs)) {
             foreach($post_taxs as $post_tax) {
             $program_taxs[$post_tax->slug] = $post_tax->name;
@@ -55,24 +55,25 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
+  <div class="filters">
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
-<select id="filters-goal"><option value="">All</option>
-  <option value="">Career preparation</option>
-  <option value="">Four-year transfer</option>
+<select class="filters-select"><option value="">All</option>
+  <option value=".career-preparation">Career preparation</option>
+  <option value=".four-year-transfer">Four-year transfer</option>
 </select>
 </label>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select id="filters-pathway">
-  <option value="*" selected>All</option>
+<select class="filters-select">
+  <option value="*">All</option>
   <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
-  <option value=".business-pathway">Business</option>
+  <option value=".business-pathway" selected>Business</option>
   <option value=".social-science-and-education">Education &amp; Social Science</option>
   <option value=".health-science-pathway">Healthcare</option>
   <option value=".it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
@@ -82,23 +83,25 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
-<select id="filters-degree"><option value="">All</option>
-  <option value="">Associate Degree</option>
-  <option value="">Certificate</option>
+<select class="filters-select">
+  <option value="*">All</option>
+  <option value=".associate-degree">Associate Degree</option>
+  <option value=".certificate">Certificate</option>
 </select>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
-<select id="filters-delivery"><option value="">100% Online Option</option>
-<option value="">Any Option</option>
+<select class="filters-select">
+<option value=".online-option">100% Online Option</option>
+<option value=".any-option">Any Option</option>
 </select>
+</div>
 </div>
 </div>
 </div>
 </div>
 </div>
 <div id="isotope-list">
-  
 <?php
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
@@ -178,7 +181,6 @@ while ( have_posts() ) : the_post(); ?>
                 ?>
                 <?php wp_reset_query(); ?>
                 <?php endwhile;  ?>
-</div>
 </div>
   
 </article>
