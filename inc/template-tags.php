@@ -293,10 +293,9 @@ if ( is_singular() ) :
 	//mobile resources menu
 	function gcc_wp_2018_resources_mobile() { ?>
 	<div class="mobile-resources">
-		<map title="Resources Menu Mobile" id="resources-menu-mobile">
 		<ul class="vertical menu accordion-menu"  data-accordion-menu>
 			<li class="yellow-button">
-				<a href="https://gcc.my.vccs.edu/"><span class="fas fa-info-circle"></span>COVID-19 INFO</a>
+				<a href="/COVID-19/"><span class="fas fa-info-circle"></span>COVID-19 INFO</a>
 			</li>
 			<li class="red-button">
 				<a href="https://gcc.my.vccs.edu/"><span class="fa fa-lock"></span>mygcc</a>
@@ -317,7 +316,6 @@ if ( is_singular() ) :
 	</li>
 	<li class="green-button"><a href="/donate/">give now</a></li>
 </ul>
-</map>
 <hr>
 </div>
 <?php }
@@ -325,7 +323,6 @@ if ( is_singular() ) :
 <?php
 //desktop resources menu
 function gcc_wp_2018_resources_desktop() { ?>
-<map title="Resources Menu Desktop" id="resources-menu-desktop">
 <ul class="dropdown menu align-center hide-for-medium-only hide-for-large-only show-for-xlarge" data-dropdown-menu>
 <li class="yellow-button">
 <a href="/COVID-19/"><span class="fas fa-info-circle"></span>COVID-19 INFO</a>
@@ -348,7 +345,6 @@ function gcc_wp_2018_resources_desktop() { ?>
 </li>
 <li  class="green-button"><a href="/donate/">give now</a></li>
 </ul>
-</map>
 <?php }
 ?>
 <?php
