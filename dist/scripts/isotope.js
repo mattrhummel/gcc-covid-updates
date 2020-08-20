@@ -7,28 +7,13 @@ jQuery(function ($) {
  layoutMode : 'masonry'
  });
  
- //Add the class selected to the item that is clicked, and remove from the others
- var $optionSets = $('#filters-large, #filters-small'),
- 
- $optionLinks = $optionSets.find('a');
- 
- $optionLinks.click(function(){
- var $this = $(this);
- // don't proceed if already selected
- if ( $this.hasClass('selected') ) {
-   return false;
- }
- 
- var $optionSet = $this.parents('#filters-large, #filters-small');
- $optionSets.find('.selected').removeClass('selected');
- $this.addClass('selected');
- 
- //When an item is clicked, sort the items.
- var selector = $(this).attr('data-filter');
- $container.isotope({ filter: selector });
- 
- return false;
- });
 
- 
+  $('#filters-pathway').change( function() {
+    $container.isotope({
+      filter: this.value
+    });
+  });
+
+
 });
+

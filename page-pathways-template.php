@@ -26,36 +26,14 @@ while ( have_posts() ) : the_post(); ?>
 <div class="callout large" data-equalizer-watch>
 <h2>Your future is bright</h2>
 <p class="lead">Up-skill, re-skill or skill-up at Germanna through <strong>60+ career programs</strong>. Or start working toward your bachelor&#8217;s degree through <strong>six</strong> majors designed to transfer. Take advantage of <strong>guaranteed transfer agreements</strong> with top Virginia four-year schools.</p>
-</p></div>
-</p></div>
+</div>
+</div>
 <div class="columns medium-5">
-<div class="hide-for-small-only callout" style="background-image: url('/wp-content/uploads/ShortpixelBackups/wp-content/uploads/revslider/diversity-slider/bhm-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-equalizer-watch=""> </div>
-</p></div>
-</div>
-<div class="row expanded">
-<div class="columns">
-<div class="callout secondary">
-<div class="row expanded">
-<div class="columns medium-3">
-<label class="h5">By Goal</label>
-<select><option value="">All</option><option value="">Career preparation</option><option value="">Four-year transfer</option></select><br />
-</label>
-</div>
-<div class="columns medium-3">
-<label class="h5">By Career Pathway</label>
-<select><option value="">All</option><option value="">Arts &amp; Humanities</option><option value="" selected>Business</option><option value="">Education &amp; Social Science</option><option value="">Healthcare</option><option value="">IT &amp; Cybersecurity</option><option value="">Public Service</option><option value="">Science &amp; Engineering</option></select>
-</div>
-<div class="columns medium-3">
-<label class="h5">By Degree Type</label>
-<select><option value="">All</option><option value="">Associate Degree</option><option value="">Certificate</option></select><br />
-</div>
-<div class="columns medium-3">
-<label class="h5">By Delivery</label>
-<select><option value="">100% Online Option</option><option value="">Any Option</option></select>
+<div class="hide-for-small-only callout" style="background-image: url('/wp-content/uploads/ShortpixelBackups/wp-content/uploads/revslider/diversity-slider/bhm-slide-2.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-equalizer-watch=""> 
 </div>
 </div>
 </div>
-</div>
+
 <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -77,17 +55,62 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
- <?php
-                while($programs->have_posts()) : $programs->the_post();
-                $idd = get_the_ID();
-                $item_classes = '';
-                $item_cats = get_the_terms($post->ID, 'pathway_names');
-                if($item_cats):
-                
-                foreach($item_cats as $item_cat) {
-                $item_classes .= $item_cat->slug . '';
-                ?>
+<div class="row expanded">
+<div class="columns">
+<div class="callout secondary">
+<div class="row expanded">
+<div class="columns medium-3">
+<label class="h5">By Goal</label>
+<select id="filters-goal"><option value="">All</option>
+  <option value="">Career preparation</option>
+  <option value="">Four-year transfer</option>
+</select>
+</label>
+</div>
+<div class="columns medium-3">
+<label class="h5">By Career Pathway</label>
+<select id="filters-pathway">
+  <option value="*" selected>All</option>
+  <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
+  <option value=".business-pathway">Business</option>
+  <option value=".social-science-and-education">Education &amp; Social Science</option>
+  <option value=".health-science-pathway">Healthcare</option>
+  <option value=".it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
+  <option value=".public-service-pathway">Public Service</option>
+  <option value=".science-and-engineering-pathway">Science &amp; Engineering</option>
+</select>
+</div>
+<div class="columns medium-3">
+<label class="h5">By Degree Type</label>
+<select id="filters-degree"><option value="">All</option>
+  <option value="">Associate Degree</option>
+  <option value="">Certificate</option>
+</select>
+</div>
+<div class="columns medium-3">
+<label class="h5">By Delivery</label>
+<select id="filters-delivery"><option value="">100% Online Option</option>
+<option value="">Any Option</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div id="isotope-list">
+  
+<?php
+      while($programs->have_posts()) : $programs->the_post();
+      $idd = get_the_ID();
+      $item_classes = '';
+      $item_cats = get_the_terms($post->ID, 'pathway_names');
+      if($item_cats):
+      
+      foreach($item_cats as $item_cat) {
+      $item_classes .= $item_cat->slug . ' '; 
+?>
 
+<div class="<?php echo $item_classes?> item" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
@@ -129,13 +152,17 @@ while ( have_posts() ) : the_post(); ?>
 
 <h3 class="subheader h4">Flexible</h3>
 <ul class="no-bullet">
-
-<!--time-to-complete-->
-<li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?></li>
-<!--if-schedule-amount-->
-<li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?></li>
-<!--if-start-date-->
-<li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?></li>
+<?php if( get_field('time_to_complete_text') == 'yes' ) { ?>
+<li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?>
+</li>
+<?php } ?> 
+<?php if( get_field('schedule_amount_text') == 'yes' ) { ?>
+<li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?>
+</li>
+<?php } ?> 
+<?php if( get_field('semester_start_date_text') == 'yes' ) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?>
+</li>
+<?php } ?> 
 </ul>
 
 <h3 class="subheader h4">Affordable</h3>
@@ -144,15 +171,16 @@ while ( have_posts() ) : the_post(); ?>
 </ul></div>
 </p></div>
 </div>
+</div>
+
 <?php  }
-
-endif;
-?>
-<?php wp_reset_query(); ?>
-<?php endwhile;  ?>
-
-    </div>
-  </div>  
+                endif;
+                ?>
+                <?php wp_reset_query(); ?>
+                <?php endwhile;  ?>
+</div>
+</div>
+  
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
