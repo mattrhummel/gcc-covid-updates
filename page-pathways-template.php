@@ -46,7 +46,7 @@ while ( have_posts() ) : the_post(); ?>
             $programs = new WP_Query($args);
             if(is_array($programs->posts) && !empty($programs->post)) {
             foreach($programs->posts as $programs->post) {
-            $post_taxs = wp_get_post_terms($programs->post->ID, array('pathway_names', 'program_degrees'), array("fields" => "all"));
+            $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
             if(is_array($post_taxs) && !empty($post_taxs)) {
             foreach($post_taxs as $post_tax) {
             $program_taxs[$post_tax->slug] = $post_tax->name;
