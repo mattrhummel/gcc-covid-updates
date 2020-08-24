@@ -21,20 +21,19 @@ get_header(); ?>
       <?php //Page Heading
       the_content();
       ?>
-      
-    </div>
+
 
 <?php get_template_part( 'template-parts/content', 'promotions' );  ?>
-
-<div class="row expanded">
-<div class="columns">
-
-	<?php the_field( 'feature_banner' ); ?>
-
-</div>
-</div>
   
 <?php get_template_part( 'template-parts/content', 'news' );  ?>
+
+ <div id="newsletter-form" class="reveal medium" data-reveal="">	 	 
+<p><button class="close-button" type="button" data-close="" aria-label="Close modal"><span aria-hidden="true">×</span></button></p>	 	 
+<img style="width: 100%;" src="https://germannacc.staging.wpengine.com/wp-content/uploads/home-sign-up.jpg" width="300" height="300" alt="germanna staffer demario speaking with a student" />	 	 
+<p class="h4">Get the latest updates from Germanna</p>
+<?php echo do_shortcode( '[wpforms id="43592"]' ); ?>	 	 
+<p>By submitting this form, you are granting Germanna Community College permission to email you. You may unsubscribe at any time by clicking on a link included at the bottom of every email.</p>	 	 
+</div>
 
 </div>
 </div>
