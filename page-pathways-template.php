@@ -118,8 +118,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
-<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="
-"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
+<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title=""><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
 <div class="columns medium-6">
