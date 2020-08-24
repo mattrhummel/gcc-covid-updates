@@ -105,12 +105,12 @@ while ( have_posts() ) : the_post(); ?>
 <?php
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
-      $pathway_classes = '';
-      $pathway_cats = get_the_terms($post->ID, 'pathway_names');
+      $item_classes = '';
+      $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
       
-      foreach($pathway_cats as $pathway_cat) {
-      $pathway_classes .= $pathway_cat->slug . ' '; 
+      foreach($item_cats as $item_cat) {
+      $item_classes .= $item_cat->slug . ' '; 
 ?>
 
 <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
@@ -123,7 +123,7 @@ while ( have_posts() ) : the_post(); ?>
 // get the current taxonomy term
 $queried_object = get_queried_object();
 $taxonomy = $queried_object->taxonomy;
-$term_id = $queried_object->term_id;?>
+echo $degree_description ?>
 "><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
