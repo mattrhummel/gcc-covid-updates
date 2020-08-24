@@ -55,7 +55,7 @@ while ( have_posts() ) : the_post(); ?>
             }
             }
             ?>
-  <div class="filters">
+ <div class="filters">
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
@@ -107,12 +107,10 @@ while ( have_posts() ) : the_post(); ?>
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):
-      
+      if($item_cats):     
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
 ?>
-
 <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
@@ -133,7 +131,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php if( get_field('sample_courses') ): ?>
 <h3 class="subheader h4">Sample Courses</h3>
 <?php the_field( 'sample_courses' ); ?>
-<p><a href="" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
+<p><a href="<?php the_field( 'curriculum_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
 <?php endif; ?>
 </div>
 <div class="columns medium-6">
