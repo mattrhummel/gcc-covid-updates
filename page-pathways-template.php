@@ -105,12 +105,12 @@ while ( have_posts() ) : the_post(); ?>
 <?php
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
-      $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names');
+      $pathway_classes = '';
+      $pathway_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):
       
-      foreach($item_cats as $item_cat) {
-      $item_classes .= $item_cat->slug . ' '; 
+      foreach($pathway_cats as $pathway_cat) {
+      $pathway_classes .= $pathway_cat->slug . ' '; 
 ?>
 
 <div class="<?php echo $item_classes?> item" style="min-width: 100%;">
@@ -118,7 +118,13 @@ while ( have_posts() ) : the_post(); ?>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
-<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="degree description"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
+<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="
+<?php 
+// get the current taxonomy term
+$queried_object = get_queried_object();
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;?>
+"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
 <div class="columns medium-6">
@@ -191,7 +197,101 @@ endif;
 <?php wp_reset_query(); ?>
 <?php endwhile;  
 ?>
+<?php
+      while($programs->have_posts()) : $programs->the_post();
+      $idd = get_the_ID();
+      $degree_classes = '';
+      $degree_cats = get_the_terms($post->ID, 'program_degree');
+      if($degree_cats):
+      
+      foreach($degreey_cats as $degree_cat) {
+      $degree_classes .= $degree_cat->slug . ' '; 
+?>
 
+<div class="<?php echo $item_classes?> item" style="min-width: 100%;">
+<div class="row expanded" data-equalizer>
+<div class="columns medium-7">
+<div class="callout large" data-equalizer-watch>
+<h2><?php the_title();?></h2>
+<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="
+<?php 
+// get the current taxonomy term
+$queried_object = get_queried_object();
+$taxonomy = $queried_object->taxonomy;
+$term_id = $queried_object->term_id;?>
+"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
+<p class="lead"><?php the_field( 'program_description' ); ?></p>
+<div class="row expanded">
+<div class="columns medium-6">
+<?php if( get_field('transfer_partners') ): ?>
+<h3 class="subheader h4">Transfer Partners</h3>
+<?php the_field( 'transfer_partners' ); ?>
+<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Explore college transfer</a> </p>
+</p>
+<?php endif; ?>
+</div>
+<div class="columns medium-6">
+<?php if( get_field('sample_courses') ): ?>
+<h3 class="subheader h4">Sample Courses</h3>
+<?php the_field( 'sample_courses' ); ?>
+<p><a href="" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
+<?php endif; ?>
+</div>
+<div class="columns medium-6">
+<?php if( get_field('career_options') ): ?>
+<h3 class="subheader h4">Careers</h3>
+<?php the_field( 'career_options' ); ?>
+<p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
+<?php endif; ?>
+</div>
+</div>
+</div>
+</div>
+
+<div class="columns medium-5">
+<div class="callout alert large" data-equalizer-watch>
+<ul class="no-bullet">
+<?php if( get_field('online_degree') == 'yes' ) { ?>
+<li class="label"><i class="fa fa-laptop-code" aria-hidden="true"></i><?php _e('Complete 100% Online','gcc-wp-2018') ?></li>
+<?php } ?>
+<?php if( get_field('accelerated_program') == 'yes' ) { ?>
+<li class="label"><i class="fa fa-fast-forward" aria-hidden="true"></i><?php _e('Accelerated, 100% Online Option','gcc-wp-2018'); ?></li>
+<?php } ?>
+ <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?><li class="label"><i class="fa fa-check-circle" aria-hidden="true"></i><?php _e(' Eligible for Financial Aid', 'gcc-wp-2018'); ?></li>
+<?php } ?> 
+</ul>
+
+<h3 class="subheader h4">Flexible</h3>
+<ul class="no-bullet">
+<?php if( get_field('time_to_complete_text') == 'yes' ) { ?>
+<li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?>
+</li>
+<?php } ?> 
+<?php if( get_field('schedule_amount_text') == 'yes' ) { ?>
+<li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?>
+</li>
+<?php } ?> 
+<?php if( get_field('semester_start_date_text') == 'yes' ) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?>
+</li>
+<?php } ?> 
+</ul>
+
+<h3 class="subheader h4">Affordable</h3>
+<ul class="no-bullet">
+<li><i class="fa fa-donate" aria-hidden="true"></i> <strong><?php the_field( 'program_cost' ); ?></strong> <?php _e(', estimated total program cost','gcc-wp-2018'); ?></li>
+</ul></div>
+</p></div>
+</div>
+</div>
+
+<?php  }
+
+endif;
+
+?>
+<?php wp_reset_query(); ?>
+<?php endwhile;  
+?>
 </div>
   
 </article>
