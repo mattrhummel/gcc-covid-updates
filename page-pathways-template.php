@@ -204,7 +204,7 @@ endif;
       $degree_cats = get_the_terms($post->ID, 'program_degree');
       if($degree_cats):
       
-      foreach($degreey_cats as $degree_cat) {
+      foreach($degree_cats as $degree_cat) {
       $degree_classes .= $degree_cat->slug . ' '; 
 ?>
 
