@@ -33,7 +33,6 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-
 <?php
             $args= array(
             'post_type' => 'gcc_programs',
@@ -120,6 +119,13 @@ while ( have_posts() ) : the_post(); ?>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
 <div class="columns medium-6">
+<?php if( get_field('career_options') ): ?>
+<h3 class="subheader h4">Careers</h3>
+<?php the_field( 'career_options' ); ?>
+<p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
+<?php endif; ?>
+</div>
+<div class="columns medium-6">
 <?php if( get_field('transfer_partners') ): ?>
 <h3 class="subheader h4">Transfer Partners</h3>
 <?php the_field( 'transfer_partners' ); ?>
@@ -132,13 +138,6 @@ while ( have_posts() ) : the_post(); ?>
 <h3 class="subheader h4">Sample Courses</h3>
 <?php the_field( 'sample_courses' ); ?>
 <p><a href="<?php the_field( 'curriculum_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
-<?php endif; ?>
-</div>
-<div class="columns medium-6">
-<?php if( get_field('career_options') ): ?>
-<h3 class="subheader h4">Careers</h3>
-<?php the_field( 'career_options' ); ?>
-<p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
 <?php endif; ?>
 </div>
 </div>
@@ -160,15 +159,15 @@ while ( have_posts() ) : the_post(); ?>
 
 <h3 class="subheader h4">Flexible</h3>
 <ul class="no-bullet">
-<?php if( get_field('time_to_complete_text') == 'yes' ) { ?>
+<?php if( get_field('time_to_complete_text')) { ?>
 <li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?>
 </li>
 <?php } ?> 
-<?php if( get_field('schedule_amount_text') == 'yes' ) { ?>
+<?php if( get_field('schedule_amount_text')) { ?>
 <li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?>
 </li>
 <?php } ?> 
-<?php if( get_field('semester_start_date_text') == 'yes' ) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?>
+<?php if( get_field('semester_start_date_text')) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?>
 </li>
 <?php } ?> 
 </ul>
