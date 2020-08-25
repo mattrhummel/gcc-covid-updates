@@ -156,7 +156,7 @@ while ( have_posts() ) : the_post(); ?>
 <li class="label"><i class="fa fa-laptop-code" aria-hidden="true"></i><?php _e('Complete 100% Online','gcc-wp-2018') ?></li>
 <?php } ?>
 <?php if( get_field('accelerated_program') == 'yes' ) { ?>
-<li class="label"><i class="fa fa-fast-forward" aria-hidden="true"></i><?php _e('Accelerated, 100% Online Option','gcc-wp-2018'); ?></li>
+<li class="label"><i class="fa fa-fast-forward" aria-hidden="true"></i> <?php _e('Accelerated, 100% Online Option','gcc-wp-2018'); ?></li>
 <?php } ?>
  <?php if( get_field('financial_aid_eligible') == 'yes' ) { ?><li class="label"><i class="fa fa-check-circle" aria-hidden="true"></i><?php _e(' Eligible for Financial Aid', 'gcc-wp-2018'); ?></li>
 <?php } ?> 
