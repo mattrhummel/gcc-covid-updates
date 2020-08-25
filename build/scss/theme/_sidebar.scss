@@ -73,17 +73,21 @@ button.mobile-sidebar-button {
 .mobile-logo {
   margin: .5rem;
 }
-
-#branding-menu,
-#menu-container,
 #popout-menu {
+    background-color: $light-gray;
+    z-index: 99999;
+    overflow: visible;
+}
+#branding-menu,
+#menu-container
+{
   //main sidebar styles
   background-color: $light-gray;
   //do not change these styles
   overflow: visible;
   position: absolute;
   z-index: 99999;
-  top: 0;
+  
 
   .gcc-main-nav {
     //sidebar navigation styles
