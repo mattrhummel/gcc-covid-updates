@@ -164,10 +164,10 @@ while ( have_posts() ) : the_post(); ?>
 </li>
 <?php } ?> 
 <?php if( get_field('schedule_amount_text')) { ?>
-<li><i class="fa fa-clock" aria-hidden="true"></i><?php the_field( 'schedule_amount_text' ); ?>
+<li><i class="fa fa-clock" aria-hidden="true"></i> <?php the_field( 'schedule_amount_text' ); ?>
 </li>
 <?php } ?> 
-<?php if( get_field('semester_start_date_text')) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i><?php the_field( 'semester_start_date_text' ); ?>
+<?php if( get_field('semester_start_date_text')) { ?><li><i class="fa fa-calendar" aria-hidden="true"></i> <?php the_field( 'semester_start_date_text' ); ?>
 </li>
 <?php } ?> 
 </ul>
