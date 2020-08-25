@@ -147,7 +147,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="columns medium-5">
   <style>
     .label {
-      margin-bottom:  1rem;
+      margin-bottom:  .5rem;
     }
   </style>
 <div class="callout alert large" data-equalizer-watch>
