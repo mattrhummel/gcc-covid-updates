@@ -123,7 +123,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php if( get_field('transfer_partners') ): ?>
 <h3 class="subheader h4">Transfer Partners</h3>
 <?php the_field( 'transfer_partners' ); ?>
-<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i>Explore college transfer</a> </p>
+<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore college transfer</a> </p>
 </p>
 <?php endif; ?>
 </div>
