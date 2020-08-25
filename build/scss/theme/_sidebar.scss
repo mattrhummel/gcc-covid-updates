@@ -79,8 +79,11 @@ button.mobile-sidebar-button {
 #popout-menu {
   //main sidebar styles
   background-color: $light-gray;
+  //do not change these styles
   overflow: visible;
+  position: absolute;
   z-index: 99999;
+  top: 0;
 
   .gcc-main-nav {
     //sidebar navigation styles
