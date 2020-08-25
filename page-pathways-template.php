@@ -160,7 +160,7 @@ while ( have_posts() ) : the_post(); ?>
 <h3 class="subheader h4">Flexible</h3>
 <ul class="no-bullet">
 <?php if( get_field('time_to_complete_text')) { ?>
-<li><i class="fa fa-hourglass" aria-hidden="true"></i><?php the_field( 'time_to_complete_text' ); ?>
+<li><i class="fa fa-hourglass" aria-hidden="true"></i>     <?php the_field( 'time_to_complete_text' ); ?>
 </li>
 <?php } ?> 
 <?php if( get_field('schedule_amount_text')) { ?>
