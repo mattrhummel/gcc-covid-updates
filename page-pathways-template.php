@@ -145,6 +145,11 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 
 <div class="columns medium-5">
+  <style>
+    .label {
+      margin-bottom:  1rem;
+    }
+  </style>
 <div class="callout alert large" data-equalizer-watch>
 <ul class="no-bullet">
 <?php if( get_field('online_degree') == 'yes' ) { ?>
