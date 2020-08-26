@@ -179,7 +179,9 @@ $args= array(
 </div>
 </div>
 
-<?php  } }
+<?php 
+endwhile; }  
+endif; }
 ?>
 
 <?php wp_reset_query(); ?>
