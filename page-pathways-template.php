@@ -105,7 +105,7 @@ while ( have_posts() ) : the_post(); ?>
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names'));
+      $item_cats = get_the_terms($post->ID, 'pathway_names');
       if($item_cats):     
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
