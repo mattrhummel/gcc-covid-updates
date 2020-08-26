@@ -82,7 +82,8 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div id="isotope-list">
 <?php
-$program_filters = get_the_terms( $post->ID, 'pathway_names' );
+$program_filters = get_terms( $post->ID, 'pathway_names' );
+
 $args= array(
       'post_type' => 'gcc_programs',
       'posts_per_page'=> -1,
