@@ -45,7 +45,7 @@ while ( have_posts() ) : the_post(); ?>
       $programs = new WP_Query($args);
       if(is_array($programs->posts) && !empty($programs->post)) {
       foreach($programs->posts as $programs->post) {
-      $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
+      $post_taxs = wp_get_post_terms($programs->post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
       if(is_array($post_taxs) && !empty($post_taxs)) {
       foreach($post_taxs as $post_tax) {
       $program_taxs[$post_tax->slug] = $post_tax->name;
@@ -101,26 +101,16 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 <div id="isotope-list">
-
-  <?php $postid = get_the_ID(); ?>
-    <?php
-        $args = array(
-            'post_type' => 'gcc_programs',
-            'post_status' => 'publish',
-            'posts_per_page' => 1
-        );
-    ?>
-    <?php $query = new WP_Query( $args ); ?>
-    <?php if($query -> have_posts()): ?>
-    <?php while($query -> have_posts()): $query->the_post();?>
-       <?php
-                if ($gcc_programs_terms = wp_get_object_terms($post->ID,  array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ))) :                    
-                    foreach ( $gcc_programs_terms as $term ) :
-                    $term_slug = $term->slug;
-                    $term_link = get_term_link( $term, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ) );
-                    ?>
-
-<div class="item <?php echo $term_slug ?>" style="min-width: 100%;">
+<?php
+      while($programs->have_posts()) : $programs->the_post();
+      $idd = get_the_ID();
+      $item_classes = '';
+      $item_cats = get_the_terms($post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
+      if($item_cats):     
+      foreach($item_cats as $item_cat) {
+      $item_classes .= $item_cat->slug . ' '; 
+?>
+<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
@@ -195,15 +185,14 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 
-<?php
-                    endforeach;
+<?php  }
 
-                endif;
-                ?>
+endif;
 
-<?php endwhile; ?>
-<?php endif; ?>
-<?php wp_reset_postdata();  ?>
+?>
+<?php wp_reset_query(); ?>
+<?php endwhile;  
+?>
 
 </div>
   
