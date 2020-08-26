@@ -103,7 +103,8 @@ while ( have_posts() ) : the_post(); ?>
 <div id="isotope-list">
 <?php
       while($programs->have_posts()) : $programs->the_post();
-      
+      if ( $programs ) {
+    // do stuff
 ?>
 <div class="item 
 <?php 
@@ -191,7 +192,13 @@ $idd = get_the_ID();
 </div>
 </div>
 
-
+<?php } else {
+    // do something else
+  ?>
+<p>no post found</p>
+  <?php
+}
+?>
 
 <?php wp_reset_query(); ?>
 <?php endwhile;  
