@@ -107,7 +107,7 @@ while ( have_posts() ) : the_post(); ?>
         $args = array(
             'post_type' => 'gcc_programs',
             'post_status' => 'publish',
-            'posts_per_page' => 1,
+            'posts_per_page' => 1
         );
     ?>
     <?php $query = new WP_Query( $args ); ?>
