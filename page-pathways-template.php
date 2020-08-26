@@ -105,7 +105,7 @@ while ( have_posts() ) : the_post(); ?>
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'program_goal');
+      $item_cats = get_the_terms($post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
       if($item_cats):     
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
