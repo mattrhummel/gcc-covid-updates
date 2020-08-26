@@ -109,12 +109,12 @@ while ( have_posts() ) : the_post(); ?>
 $idd = get_the_ID();
 $item_classes = '';
 $item_cats = get_the_terms($post->ID, 'pathway_names');
-if($item_cats):     
+if($item_cats){     
 foreach($item_cats as $item_cat) {
 $item_classes .= $item_cat->slug . ' '; 
 $do_not_duplicate = $post->ID; //This is the magic line?>
 <?php echo $item_classes; ?>
-<?php }
+<?php }}
 ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
