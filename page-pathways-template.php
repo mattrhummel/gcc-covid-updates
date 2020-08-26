@@ -36,7 +36,7 @@ while ( have_posts() ) : the_post(); ?>
 <?php
       $args= array(
       'post_type' => 'gcc_programs',
-      'posts_per_page'=> 1,
+      'posts_per_page'=> -1,
       'orderby' => 'title',
       'order' => 'ASC',
       );
