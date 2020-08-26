@@ -49,6 +49,7 @@ while ( have_posts() ) : the_post(); ?>
       if(is_array($post_taxs) && !empty($post_taxs)) {
       foreach($post_taxs as $post_tax) {
       $program_taxs[$post_tax->slug] = $post_tax->name;
+      $do_not_duplicate = $post->ID; //This is the magic line
       }
       }
       }
