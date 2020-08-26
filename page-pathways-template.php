@@ -82,10 +82,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div id="isotope-list">
 <?php
-$terms= get_terms( array(
-        'taxonomy' => 'pathway_names',
-        'fields'   => 'id=>slug',
-) );
+$program_filters = get_the_terms( $post->ID, 'pathway_names' );
 $args= array(
       'post_type' => 'gcc_programs',
       'posts_per_page'=> -1,
@@ -102,7 +99,7 @@ $args= array(
     $the_query->the_post();
 
 ?>
-<div class="item <?php echo $terms->slug ?>" style="min-width: 100%;">
+<div class="item <?php echo $program_filters ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
