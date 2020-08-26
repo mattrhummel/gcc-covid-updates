@@ -100,9 +100,9 @@ $args= array(
     
     while ( $the_query->have_posts() ) :
     $the_query->the_post();
-    
+
 ?>
-<div class="item <?php echo $terms ?>" style="min-width: 100%;">
+<div class="item <?php echo $terms->slug ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
