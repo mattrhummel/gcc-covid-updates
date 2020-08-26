@@ -91,19 +91,15 @@ $args= array(
 
       $the_query = new WP_Query( $args ); ?>
 
-<?php if ( $the_query->have_posts() ) : ?>
+<?php if ( $the_query->have_posts() ) : 
 
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
      
-
-?>
- 
-  <?php
     while ( $the_query->have_posts() ) :
     $the_query->the_post();
-  ?>
+?>
 <div class="item <?php echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
@@ -180,7 +176,11 @@ $args= array(
 </div>
 
 
-<?php wp_reset_query(); ?>
+<?php
+endwhile;
+endif; 
+
+wp_reset_query(); ?>
 ?>
 
 </div>
