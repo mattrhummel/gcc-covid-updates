@@ -194,6 +194,12 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 
+<?php
+                    endforeach;
+
+                endif;
+                ?>
+                
 <?php endwhile; ?>
 <?php endif; ?>
 <?php wp_reset_postdata();  ?>
