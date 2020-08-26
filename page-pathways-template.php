@@ -110,7 +110,7 @@ $idd = get_the_ID();
 $item_classes = '';
 $item_cats = get_the_terms($post->ID, 'pathway_names');
 if($item_cats):     
-foreach($item_cats as $item_cat) {?
+foreach($item_cats as $item_cat) {
 $item_classes .= $item_cat->slug . ' '; 
 $do_not_duplicate = $post->ID; //This is the magic line?>
 <?php echo $item_classes; ?>
