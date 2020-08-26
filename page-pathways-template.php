@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
-<select class="filters-select button-group  js-radio-button-group"><option value="">All</option>
+<select class="filters-select button-group  js-radio-button-group" data-filter-group="goal"><option value="">All</option>
   <option value=".career-preparation">Career preparation</option>
   <option value=".four-year-transfer">Four-year transfer</option>
 </select>
@@ -69,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select class="filters-select button-group  js-radio-button-group">
+<select class="filters-select button-group  js-radio-button-group" data-filter-group="pathway">
   <option value="*">All</option>
   <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
   <option value=".business-pathway" selected>Business</option>
@@ -82,7 +82,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
-<select class="filters-select button-group  js-radio-button-group">
+<select class="filters-select button-group  js-radio-button-group" data-filter-group="degree">
   <option value="*">All</option>
   <option value=".associate-degree">Associate Degree</option>
   <option value=".certificate">Certificate</option>
@@ -90,7 +90,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
-<select class="filters-select button-group  js-radio-button-group">
+<select class="filters-select button-group  js-radio-button-group" data-filter-group="delivery">
 <option value=".online-option">100% Online Option</option>
 <option value=".any-option">Any Option</option>
 </select>
