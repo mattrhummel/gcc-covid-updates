@@ -105,17 +105,18 @@ while ( have_posts() ) : the_post(); ?>
       while($programs->have_posts()) : $programs->the_post();
       
 ?>
-<div class="item <?php
+<div class="item 
+<?php 
 $idd = get_the_ID();
-$item_classes = '';
-$item_cats = get_the_terms($post->ID, 'pathway_names');
-if($item_cats){     
-foreach($item_cats as $item_cat) {
-$item_classes .= $item_cat->slug . ' '; 
-$do_not_duplicate = $post->ID; //This is the magic line?>
-<?php echo $item_classes; ?>
-<?php }}
-?>" style="min-width: 100%;">
+      $item_classes = '';
+      $item_cats = get_the_terms($post->ID, 'pathway_names');
+      if($item_cats):     
+      foreach($item_cats as $item_cat) {
+      $item_classes .= $item_cat->slug . ' '; 
+      $do_not_duplicate = $post->ID; //This is the magic line
+      } 
+      echo $item_classes;?>
+<?php endif; ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
@@ -152,7 +153,7 @@ $do_not_duplicate = $post->ID; //This is the magic line?>
 <div class="columns medium-5">
   <style>
     .label {
-      margin-bottom:  .3rem;
+      margin-bottom:  .2rem;
     }
   </style>
 <div class="callout alert large" data-equalizer-watch>
@@ -189,6 +190,7 @@ $do_not_duplicate = $post->ID; //This is the magic line?>
 </p></div>
 </div>
 </div>
+
 
 
 <?php wp_reset_query(); ?>
