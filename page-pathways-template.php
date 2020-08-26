@@ -61,7 +61,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
-<select class="filters-select"><option value="">All</option>
+<select class="filters-select button-group  js-radio-button-group"><option value="">All</option>
   <option value=".career-preparation">Career preparation</option>
   <option value=".four-year-transfer">Four-year transfer</option>
 </select>
@@ -69,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select class="filters-select">
+<select class="filters-select button-group  js-radio-button-group">
   <option value="*">All</option>
   <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
   <option value=".business-pathway" selected>Business</option>
@@ -82,7 +82,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
-<select class="filters-select">
+<select class="filters-select button-group  js-radio-button-group">
   <option value="*">All</option>
   <option value=".associate-degree">Associate Degree</option>
   <option value=".certificate">Certificate</option>
@@ -90,7 +90,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
-<select class="filters-select">
+<select class="filters-select button-group  js-radio-button-group">
 <option value=".online-option">100% Online Option</option>
 <option value=".any-option">Any Option</option>
 </select>
@@ -100,7 +100,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-<div id="isotope-list">
+<div class="grid">
 <?php
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
@@ -110,7 +110,7 @@ while ( have_posts() ) : the_post(); ?>
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
 ?>
-<div class="<?php echo $item_classes?> item" style="min-width: 100%;">
+<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
