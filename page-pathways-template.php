@@ -106,7 +106,7 @@ while ( have_posts() ) : the_post(); ?>
     <?php
         $args = array(
             'post_type' => 'gcc_programs',
-            'post_status' => 'publish'
+            'post_status' => 'publish',
             'posts_per_page' => 1,
         );
     ?>
