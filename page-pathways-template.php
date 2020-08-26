@@ -72,7 +72,7 @@ while ( have_posts() ) : the_post(); ?>
 <select class="filters-select button-group  js-radio-button-group" data-filter-group="pathway">
   <option value="*">All</option>
   <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
-  <option value=".business-pathway" selected>Business</option>
+  <option value=".business-pathway">Business</option>
   <option value=".social-science-and-education">Education &amp; Social Science</option>
   <option value=".health-science-pathway">Healthcare</option>
   <option value=".it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
