@@ -82,25 +82,27 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div id="isotope-list">
 <?php
+$terms= get_terms( array(
+        'taxonomy' => 'pathway_names',
+        'fields'   => 'id=>slug',
+) );
 $args= array(
       'post_type' => 'gcc_programs',
       'posts_per_page'=> -1,
       'orderby' => 'title',
       'order' => 'ASC',
+
       );
 
       $the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) : 
-
-      $idd = get_the_ID();
-      $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names');
-     
+    
     while ( $the_query->have_posts() ) :
     $the_query->the_post();
+    
 ?>
-<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
+<div class="item <?php echo $terms ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
