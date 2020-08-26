@@ -152,7 +152,7 @@ $do_not_duplicate = $post->ID; //This is the magic line?>
 <div class="columns medium-5">
   <style>
     .label {
-      margin-bottom:  .2rem;
+      margin-bottom:  .3rem;
     }
   </style>
 <div class="callout alert large" data-equalizer-watch>
