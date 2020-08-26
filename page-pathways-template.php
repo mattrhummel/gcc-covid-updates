@@ -34,25 +34,25 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 <?php
-            $args= array(
-            'post_type' => 'gcc_programs',
-            'posts_per_page'=> -1,
-            'orderby' => 'title',
-            'order' => 'ASC',
-            );
-            ?>
-            <?php
-            $programs = new WP_Query($args);
-            if(is_array($programs->posts) && !empty($programs->post)) {
-            foreach($programs->posts as $programs->post) {
-            $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
-            if(is_array($post_taxs) && !empty($post_taxs)) {
-            foreach($post_taxs as $post_tax) {
-            $program_taxs[$post_tax->slug] = $post_tax->name;
-            }
-            }
-            }
-            }
+      $args= array(
+      'post_type' => 'gcc_programs',
+      'posts_per_page'=> -1,
+      'orderby' => 'title',
+      'order' => 'ASC',
+      );
+      ?>
+      <?php
+      $programs = new WP_Query($args);
+      if(is_array($programs->posts) && !empty($programs->post)) {
+      foreach($programs->posts as $programs->post) {
+      $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names', array("fields" => "all"));
+      if(is_array($post_taxs) && !empty($post_taxs)) {
+      foreach($post_taxs as $post_tax) {
+      $program_taxs[$post_tax->slug] = $post_tax->name;
+      }
+      }
+      }
+      }
             ?>
  <div class="filters">
 <div class="row expanded">
@@ -115,7 +115,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
-<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title=""><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
+<h3 class="subheader"><?php the_field( 'program_degree' );?><sup><span data-tooltip tabindex="1" title="<?php the_field( 'degree_info_text' ); ?>"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
 <p class="lead"><?php the_field( 'program_description' ); ?></p>
 <div class="row expanded">
 <div class="columns medium-6">
