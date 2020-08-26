@@ -91,7 +91,7 @@ $args= array(
 
       $the_query = new WP_Query( $args ); ?>
 
-<?php if ( $the_query->have_posts() ) { ?>
+<?php if ( $the_query->have_posts() ) : ?>
 
       $idd = get_the_ID();
       $item_classes = '';
@@ -101,7 +101,7 @@ $args= array(
 ?>
  
   <?php
-    while ( $the_query->have_posts() ) {
+    while ( $the_query->have_posts() ) :
     $the_query->the_post();
   ?>
 <div class="item <?php echo $item_classes?>" style="min-width: 100%;">
@@ -180,8 +180,8 @@ $args= array(
 </div>
 
 <?php 
-endwhile; }  
-endif; }
+endwhile;   
+endif;
 ?>
 
 <?php wp_reset_query(); ?>
