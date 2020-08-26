@@ -101,16 +101,25 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 <div id="isotope-list">
-<?php
-      while($programs->have_posts()) : $programs->the_post();
-      $idd = get_the_ID();
-      $item_classes = '';
-      $item_cats = get_the_terms($post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
-      if($item_cats):     
-      foreach($item_cats as $item_cat) {
-      $item_classes .= $item_cat->slug . ' '; 
-?>
-<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
+
+  <?php $postid = get_the_ID(); ?>
+    <?php
+        $args = array(
+            'post_type' => 'gcc_programs',
+            'post_status' => 'publish'
+        );
+    ?>
+    <?php $query = new WP_Query( $args ); ?>
+    <?php if($query -> have_posts()): ?>
+    <?php while($query -> have_posts()): $query->the_post();?>
+       <?php
+                if ($gcc_programs_terms = wp_get_object_terms($post->ID,  array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ))) :                    
+                    foreach ( $gcc_programs_terms as $term ) :
+                    $term_slug = $term->slug;
+                    $term_link = get_term_link( $term, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ) );
+                    ?>
+
+<div class="item <?php echo $term_slug ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
@@ -185,14 +194,9 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 
-<?php  }
-
-endif;
-
-?>
-<?php wp_reset_query(); ?>
-<?php endwhile;  
-?>
+<?php endwhile; ?>
+<?php endif; ?>
+<?php wp_reset_postdata();  ?>
 
 </div>
   
