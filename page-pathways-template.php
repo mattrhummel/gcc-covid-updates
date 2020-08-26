@@ -184,9 +184,8 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 
-<?php  }
 
-endif;
+<?php endif;
 
 ?>
 <?php wp_reset_query(); ?>
