@@ -92,7 +92,7 @@ while ( have_posts() ) : the_post(); ?>
 <label class="h5">By Delivery</label>
 <select class="filters-select button-group  js-radio-button-group" data-filter-group="delivery">
 <option value=".online-option">100% Online Option</option>
-<option value=".any-option">Any Option</option>
+<option value="*">Any Option</option>
 </select>
 </div>
 </div>
