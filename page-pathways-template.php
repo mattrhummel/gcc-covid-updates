@@ -54,12 +54,11 @@ while ( have_posts() ) : the_post(); ?>
       }
       }
             ?>
-<div class="filters">
+ <div class="filters">
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
 <div class="row expanded">
- <div class="filters">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
 <select class="filters-select button-group  js-radio-button-group" data-filter-group="goal"><option value="">All</option>
@@ -70,7 +69,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select class="filters-select button-group js-radio-button-group" data-filter-group="pathway">
+<select class="filters-select button-group  js-radio-button-group" data-filter-group="pathway">
   <option value="*">All</option>
   <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
   <option value=".business-pathway" selected>Business</option>
@@ -101,7 +100,6 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-</div>
 <div id="isotope-list">
 <?php
       while($programs->have_posts()) : $programs->the_post();
@@ -111,8 +109,10 @@ while ( have_posts() ) : the_post(); ?>
       if($item_cats):     
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
+      $do_not_duplicate = $post->ID; //This is the magic line
+
 ?>
-<div class="item <?php echo $item_classes ?>" style="min-width: 100%;">
+<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
