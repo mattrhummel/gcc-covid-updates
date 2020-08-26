@@ -100,7 +100,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-<div class="grid">
+<div id="isotope-list">
 <?php
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
