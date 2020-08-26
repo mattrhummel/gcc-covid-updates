@@ -103,16 +103,17 @@ while ( have_posts() ) : the_post(); ?>
 <div id="isotope-list">
 <?php
       while($programs->have_posts()) : $programs->the_post();
-      $idd = get_the_ID();
-      $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):     
-      foreach($item_cats as $item_cat) {
-      $item_classes .= $item_cat->slug . ' '; 
-      $do_not_duplicate = $post->ID; //This is the magic line
-
-?>
-<div class="item <?php echo $item_classes?>" style="min-width: 100%;">
+     
+      ?>
+<div class="item <?php
+$idd = get_the_ID();
+$item_classes = '';
+$item_cats = get_the_terms($post->ID, 'pathway_names');
+if($item_cats):     
+foreach($item_cats as $item_cat) {
+$item_classes .= $item_cat->slug . ' '; 
+$do_not_duplicate = $post->ID; //This is the magic line
+echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
