@@ -100,12 +100,7 @@ $the_query = new WP_Query( $args ); ?>
     $the_query->the_post();
 
 ?>
-<div class="item <?php 
-if (! empty($terms)) {
-  foreach ($terms as $term) {
-    echo $term->slug
-}}
-?>" style="min-width: 100%;">
+<div class="item <?php echo $terms->slug; ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
