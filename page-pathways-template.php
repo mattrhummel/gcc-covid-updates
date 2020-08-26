@@ -33,29 +33,8 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-<?php
-      $args= array(
-      'post_type' => 'gcc_programs',
-      'posts_per_page'=> -1,
-      'orderby' => 'title',
-      'order' => 'ASC',
-      );
-      ?>
-      <?php
-      $programs = new WP_Query($args);
-      if(is_array($programs->posts) && !empty($programs->post)) {
-      foreach($programs->posts as $programs->post) {
-      $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names');
-      if(is_array($post_taxs) && !empty($post_taxs)) {
-      foreach($post_taxs as $post_tax) {
-      $program_taxs[$post_tax->slug] = $post_tax->name;
-      $do_not_duplicate = $post->ID; //This is the magic line
-      }
-      }
-      }
-      }
-            ?>
- <div class="filters">
+
+<div class="filters">
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
@@ -103,12 +82,28 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div id="isotope-list">
 <?php
-      while($programs->have_posts()) : $programs->the_post();
+$args= array(
+      'post_type' => 'gcc_programs',
+      'posts_per_page'=> -1,
+      'orderby' => 'title',
+      'order' => 'ASC',
+      );
+
+      $the_query = new WP_Query( $args ); ?>
+
+<?php if ( $the_query->have_posts() ) { ?>
+
       $idd = get_the_ID();
       $item_classes = '';
       $item_cats = get_the_terms($post->ID, 'pathway_names');
      
+
 ?>
+ 
+  <?php
+    while ( $the_query->have_posts() ) {
+    $the_query->the_post();
+  ?>
 <div class="item <?php echo $item_classes?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
@@ -184,12 +179,10 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 
-
-<?php endif;
-
+<?php  } }
 ?>
+
 <?php wp_reset_query(); ?>
-<?php endwhile;  
 ?>
 
 </div>
