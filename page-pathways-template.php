@@ -114,7 +114,7 @@ foreach($item_cats as $item_cat) {
 $item_classes .= $item_cat->slug . ' '; 
 $do_not_duplicate = $post->ID; //This is the magic line?>
 <?php echo $item_classes; ?>
-<?php endif; }
+<?php }
 ?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
