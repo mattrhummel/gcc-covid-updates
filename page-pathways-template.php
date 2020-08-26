@@ -45,7 +45,7 @@ while ( have_posts() ) : the_post(); ?>
       $programs = new WP_Query($args);
       if(is_array($programs->posts) && !empty($programs->post)) {
       foreach($programs->posts as $programs->post) {
-      $post_taxs = wp_get_post_terms($programs->post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
+      $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names');
       if(is_array($post_taxs) && !empty($post_taxs)) {
       foreach($post_taxs as $post_tax) {
       $program_taxs[$post_tax->slug] = $post_tax->name;
@@ -105,7 +105,7 @@ while ( have_posts() ) : the_post(); ?>
       while($programs->have_posts()) : $programs->the_post();
       $idd = get_the_ID();
       $item_classes = '';
-      $item_cats = get_the_terms($post->ID, array( 'program_goal', 'pathway_names', 'program_delivery', 'program_degree' ));
+      $item_cats = get_the_terms($post->ID, 'pathway_names'));
       if($item_cats):     
       foreach($item_cats as $item_cat) {
       $item_classes .= $item_cat->slug . ' '; 
