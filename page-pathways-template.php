@@ -83,8 +83,7 @@ while ( have_posts() ) : the_post(); ?>
 <div id="isotope-list">
 
 <?php 
-$program_filter = get_the_terms( $post->ID, 'pathway_names' );
-
+$terms = get_the_terms($post->ID, 'pathway_names');
 $args= array(
       'post_type' => 'gcc_programs',
       'posts_per_page'=> -1,
@@ -93,7 +92,7 @@ $args= array(
 
       );
 
-      $the_query = new WP_Query( $args ); ?>
+$the_query = new WP_Query( $args ); ?>
 
 <?php if ( $the_query->have_posts() ) : 
     
@@ -101,12 +100,12 @@ $args= array(
     $the_query->the_post();
 
 ?>
-<div class="item <?php
-foreach( $program_filters as $program_filter ) {
-
-echo $collection->slug;
-
-} ?>" style="min-width: 100%;">
+<div class="item <?php 
+if (! empty($terms)) {
+  foreach ($terms as $term) {
+    echo $term->slug
+}}
+?>" style="min-width: 100%;">
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
