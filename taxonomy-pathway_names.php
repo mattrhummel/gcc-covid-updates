@@ -90,13 +90,13 @@ $query = new WP_Query( $args );
 
      while($query->have_posts()) : $query->the_post();
 ?>
-        
-  <div class="row expanded" data-equalizer>
+
+<div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
 <h3 class="subheader"><?php the_field( 'program_degree' );?> <sup><span data-tooltip tabindex="1" title="<?php the_field( 'degree_info_text' ); ?>"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
-<p><?php the_field( 'program_description' ); ?></p>
+<p class="lead"><?php the_field( 'program_description' ); ?></p>
 
 <div class="show-for-small-only">
   <ul class="accordion"  data-accordion data-allow-all-closed="true">
@@ -131,10 +131,8 @@ $query = new WP_Query( $args );
 </li>
 </ul>
 </div>
-</div>
 
-<div class="show-for-medium">
-
+<div class="hide-for-small-only">
 <div class="row expanded">
 <div class="columns large-6">
 <?php if( get_field('career_options') ): ?>
@@ -162,7 +160,6 @@ $query = new WP_Query( $args );
 </div>
 </div>
 </div>
-
 <div class="columns medium-5">
   <style>
     .label {
@@ -199,9 +196,13 @@ $query = new WP_Query( $args );
 <h3 class="subheader h4">Affordable</h3>
 <ul class="no-bullet">
 <li><i class="fa fa-donate" aria-hidden="true"></i> <strong><?php the_field( 'program_cost' ); ?></strong> <?php _e(', estimated total program cost','gcc-wp-2018'); ?></li>
-</ul></div>
-</p></div>
+</ul>
 </div>
+</p>
+</div>
+</div>
+</div>
+
 
 <?php endwhile; 
 wp_reset_query();
