@@ -61,8 +61,8 @@ while ( have_posts() ) : the_post(); ?>
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
 <select  name="goal" onchange="location = this.value;"><option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/certificate/">Career preparation</option>
-  <option value="/pathways/career-pathways/programs/certificate/four-year-transfer">Four-year transfer</option>
+  <option value="/pathways/career-pathways/programs/career-preparation/">Career preparation</option>
+  <option value="/pathways/career-pathways/programs/four-year-transfer">Four-year transfer</option>
 </select>
 </label>
 </div>
@@ -70,27 +70,27 @@ while ( have_posts() ) : the_post(); ?>
 <label class="h5">By Career Pathway</label>
 <select name="career" onchange="location = this.value;">
   <option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/certificate/humanities-and-arts-pathway">Arts &amp; Humanities</option>
-  <option value="/pathways/career-pathways/programs/certificate/business-pathway">Business</option>
-  <option value="/pathways/career-pathways/programs/certificate/social-science-and-education">Education &amp; Social Science</option>
-  <option value="/pathways/career-pathways/programs/certificate/health-science-pathway">Healthcare</option>
-  <option value="/pathways/career-pathways/programs/certificate/it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
-  <option value="/pathways/career-pathways/programs/certificate/public-service-pathway">Public Service</option>
-  <option value="/pathways/career-pathways/programs/certificate/science-and-engineering-pathway">Science &amp; Engineering</option>
+  <option value="/pathways/career-pathways/programs/humanities-and-arts-pathway">Arts &amp; Humanities</option>
+  <option value="/pathways/career-pathways/programs/business-pathway">Business</option>
+  <option value="/pathways/career-pathways/programs/social-science-and-education">Education &amp; Social Science</option>
+  <option value="/pathways/career-pathways/programs/health-science-pathway">Healthcare</option>
+  <option value="/pathways/career-pathways/programs/it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
+  <option value="/pathways/career-pathways/programs/public-service-pathway">Public Service</option>
+  <option value="/pathways/career-pathways/programs/science-and-engineering-pathway">Science &amp; Engineering</option>
 </select>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
 <select name="degree" onchange="location = this.value;">
   <option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/certificate/associate-degree">Associate Degree</option>
-  <option value="/pathways/career-pathways/programs/certificate/certificate">Certificate</option>
+  <option value="/pathways/career-pathways/programs/associate-degree">Associate Degree</option>
+  <option value="/pathways/career-pathways/programs/certificate">Certificate</option>
 </select>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
 <select name="delivery" onchange="location = this.value;">
-<option value="/pathways/career-pathways/programs/certificate/online-option">100% Online Option</option>
+<option value="/pathways/career-pathways/programs/online-option">100% Online Option</option>
 <option value="/pathways/career-pathways/">Any Option</option>
 </select>
 </div>
