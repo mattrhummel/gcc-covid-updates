@@ -96,16 +96,54 @@ $query = new WP_Query( $args );
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
 <h3 class="subheader"><?php the_field( 'program_degree' );?> <sup><span data-tooltip tabindex="1" title="<?php the_field( 'degree_info_text' ); ?>"><i class="h5 fa fa-info-circle" aria-hidden="true" style="color:#376d66;"></i> </span></sup></h3>
-<p class="lead"><?php the_field( 'program_description' ); ?></p>
+<p><?php the_field( 'program_description' ); ?></p>
+
+<div class="show-for-small-only">
+  <ul class="accordion"  data-accordion data-allow-all-closed="true">
+<li class="accordion-item" data-accordion-item>
+   <a href="#" class="accordion-title">Learn more</a>
+  <div class="accordion-content" data-tab-content>
 <div class="row expanded">
 <div class="columns medium-6">
+<?php if( get_field('career_options') ): ?>
+<h3 class="subheader h2">Careers</h3>
+<?php the_field( 'career_options' ); ?>
+<p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow" style="margin-top: 10px;"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
+<?php endif; ?>
+</div>
+<div class="columns medium-6">
+<?php if( get_field('transfer_partners') ): ?>
+<h3 class="subheader h2">Transfer Partners</h3>
+<?php the_field( 'transfer_partners' ); ?>
+<p><a href="/transfer-services/" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"  style="margin-top: 10px;"></i> Explore college transfer</a> </p>
+</p>
+<?php endif; ?>
+</div>
+<div class="columns medium-6">
+<?php if( get_field('sample_courses') ): ?>
+<h3 class="subheader h2">Sample Courses</h3>
+<?php the_field( 'sample_courses' ); ?>
+<p><a href="<?php the_field( 'curriculum_url' ); ?>" class="button hollow"  style="margin-top: 10px;"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
+<?php endif; ?>
+</div>
+</div>
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div class="show-for-medium">
+
+<div class="row expanded">
+<div class="columns large-6">
 <?php if( get_field('career_options') ): ?>
 <h3 class="subheader h4">Careers</h3>
 <?php the_field( 'career_options' ); ?>
 <p><a href="<?php the_field( 'career_information_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> Explore Careers</a></p>
 <?php endif; ?>
 </div>
-<div class="columns medium-6">
+<div class="columns large-6">
 <?php if( get_field('transfer_partners') ): ?>
 <h3 class="subheader h4">Transfer Partners</h3>
 <?php the_field( 'transfer_partners' ); ?>
@@ -113,12 +151,13 @@ $query = new WP_Query( $args );
 </p>
 <?php endif; ?>
 </div>
-<div class="columns medium-6">
+<div class="columns large-6">
 <?php if( get_field('sample_courses') ): ?>
 <h3 class="subheader h4">Sample Courses</h3>
 <?php the_field( 'sample_courses' ); ?>
 <p><a href="<?php the_field( 'curriculum_url' ); ?>" class="button hollow"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i> View full curriculum</a></p>
 <?php endif; ?>
+</div>
 </div>
 </div>
 </div>
