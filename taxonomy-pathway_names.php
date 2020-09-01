@@ -171,7 +171,7 @@ wp_reset_query();
 
 ?>
 
-</div>
+
   
 </article>
       
