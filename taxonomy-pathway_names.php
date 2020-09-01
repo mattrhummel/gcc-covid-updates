@@ -76,7 +76,7 @@ get_header(); ?>
 $args = array(
   'post_type' => 'gcc_programs',
   'orderby'     => 'TITLE',
-  'order'       => 'ASC'
+  'order'       => 'ASC',
   'tax_query' => array(
     array(
       'taxonomy' => 'pathway_names',
