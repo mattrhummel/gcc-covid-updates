@@ -60,7 +60,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
-<select><option value="/pathways/career-pathways/">All</option>
+<select  name="goal" onchange="location = this.value;"><option value="/pathways/career-pathways/">All</option>
   <option value="/pathways/career-pathways/programs/certificate/">Career preparation</option>
   <option value="/pathways/career-pathways/programs/certificate/four-year-transfer">Four-year transfer</option>
 </select>
@@ -68,7 +68,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select>
+<select name="career" onchange="location = this.value;">
   <option value="/pathways/career-pathways/">All</option>
   <option value="/pathways/career-pathways/programs/certificate/humanities-and-arts-pathway">Arts &amp; Humanities</option>
   <option value="/pathways/career-pathways/programs/certificate/business-pathway">Business</option>
@@ -81,7 +81,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
-<select>
+<select name="degree" onchange="location = this.value;">
   <option value="/pathways/career-pathways/">All</option>
   <option value="/pathways/career-pathways/programs/certificate/associate-degree">Associate Degree</option>
   <option value="/pathways/career-pathways/programs/certificate/certificate">Certificate</option>
@@ -89,7 +89,7 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
-<select class="button-group">
+<select name="delivery" onchange="location = this.value;">
 <option value="/pathways/career-pathways/programs/certificate/online-option">100% Online Option</option>
 <option value="/pathways/career-pathways/">Any Option</option>
 </select>

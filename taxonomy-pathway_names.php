@@ -25,44 +25,44 @@ get_header(); ?>
     </div>
   </div>
 
-  <div class="row expanded">
+<div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
-<select class="filters-select button-group  js-radio-button-group" data-filter-group="goal"><option value="">All</option>
-  <option value=".career-preparation">Career preparation</option>
-  <option value=".four-year-transfer">Four-year transfer</option>
+<select  name="goal" onchange="location = this.value;"><option value="/pathways/career-pathways/">All</option>
+  <option value="/pathways/career-pathways/programs/certificate/">Career preparation</option>
+  <option value="/pathways/career-pathways/programs/certificate/four-year-transfer">Four-year transfer</option>
 </select>
 </label>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Career Pathway</label>
-<select class="filters-select button-group  js-radio-button-group" data-filter-group="pathway">
-  <option value="*">All</option>
-  <option value=".humanities-and-arts-pathway">Arts &amp; Humanities</option>
-  <option value=".business-pathway">Business</option>
-  <option value=".social-science-and-education">Education &amp; Social Science</option>
-  <option value=".health-science-pathway">Healthcare</option>
-  <option value=".it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
-  <option value=".public-service-pathway">Public Service</option>
-  <option value=".science-and-engineering-pathway">Science &amp; Engineering</option>
+<select name="career" onchange="location = this.value;">
+  <option value="/pathways/career-pathways/">All</option>
+  <option value="/pathways/career-pathways/programs/certificate/humanities-and-arts-pathway">Arts &amp; Humanities</option>
+  <option value="/pathways/career-pathways/programs/certificate/business-pathway">Business</option>
+  <option value="/pathways/career-pathways/programs/certificate/social-science-and-education">Education &amp; Social Science</option>
+  <option value="/pathways/career-pathways/programs/certificate/health-science-pathway">Healthcare</option>
+  <option value="/pathways/career-pathways/programs/certificate/it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
+  <option value="/pathways/career-pathways/programs/certificate/public-service-pathway">Public Service</option>
+  <option value="/pathways/career-pathways/programs/certificate/science-and-engineering-pathway">Science &amp; Engineering</option>
 </select>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Degree Type</label>
-<select class="filters-select button-group  js-radio-button-group" data-filter-group="degree">
-  <option value="*">All</option>
-  <option value=".associate-degree">Associate Degree</option>
-  <option value=".certificate">Certificate</option>
+<select name="degree" onchange="location = this.value;">
+  <option value="/pathways/career-pathways/">All</option>
+  <option value="/pathways/career-pathways/programs/certificate/associate-degree">Associate Degree</option>
+  <option value="/pathways/career-pathways/programs/certificate/certificate">Certificate</option>
 </select>
 </div>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
-<select class="filters-select button-group  js-radio-button-group" data-filter-group="delivery">
-<option value=".online-option">100% Online Option</option>
-<option value="*">Any Option</option>
+<select name="delivery" onchange="location = this.value;">
+<option value="/pathways/career-pathways/programs/certificate/online-option">100% Online Option</option>
+<option value="/pathways/career-pathways/">Any Option</option>
 </select>
 </div>
 </div>
