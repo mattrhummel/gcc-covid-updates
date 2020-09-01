@@ -33,6 +33,8 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
+
+
 <?php
       $args= array(
       'post_type' => 'gcc_programs',
@@ -57,6 +59,7 @@ while ( have_posts() ) : the_post(); ?>
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
+
 <div class="row expanded">
 <div class="columns medium-3">
 <label class="h5">By Goal</label>
@@ -98,13 +101,11 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 </div>
 </div>
-<div id="isotope-list">
 <?php
       while($programs->have_posts()) : $programs->the_post();
       if ( $programs ) {
     // do stuff
 ?>
-<div class="item 
 <?php 
 $idd = get_the_ID();
       $item_classes = '';
@@ -114,11 +115,10 @@ $idd = get_the_ID();
       $item_classes .= $item_cat->slug . ' '; 
       $do_not_duplicate = $post->ID; //This is the magic line
       } 
-      echo $item_classes;?>
-<?php endif; ?>" style="min-width: 100%;">
+      ?>
+<?php endif; ?>
 
 <div class="show-for-medium">
-
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
@@ -193,7 +193,7 @@ $idd = get_the_ID();
 </p></div>
 </div>
 </div>
-<
+
 <?php } else {
     // do something else
   ?>
