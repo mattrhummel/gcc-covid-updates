@@ -189,7 +189,7 @@ $idd = get_the_ID();
 
 </div>
 </div>
-</div>
+
 <div class="columns medium-5">
   <style>
     .label {
@@ -229,7 +229,7 @@ $idd = get_the_ID();
 </ul></div>
 </p></div>
 </div>
-</div>
+
 
 <?php } else {
     // do something else
@@ -241,7 +241,7 @@ $idd = get_the_ID();
 <?php wp_reset_query(); ?>
 <?php endwhile;  
 ?>
-
+</div>
 </div>
   
 </article>
