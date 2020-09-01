@@ -61,7 +61,8 @@ get_header(); ?>
 <div class="columns medium-3">
 <label class="h5">By Delivery</label>
 <select name="delivery" onchange="location = this.value;">
-<option value="/pathways/career-pathways/programs/online-option">100% Online Option</option>
+<option value="/pathways/career-pathways/">All</option>
+<option value="/pathways/career-pathways/programs/100-percent-online-option/">100% Online Option</option>
 <option value="/pathways/career-pathways/">Any Option</option>
 </select>
 </div>
