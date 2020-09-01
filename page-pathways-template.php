@@ -121,6 +121,7 @@ $idd = get_the_ID();
 
 
 <div class="row expanded" data-equalizer>
+
 <div class="columns medium-7">
 <div class="callout large" data-equalizer-watch>
 <h2><?php the_title();?></h2>
@@ -187,6 +188,7 @@ $idd = get_the_ID();
 </div>
 </div>
 </div>
+
 </div>
 </div>
 <div class="columns medium-5">
@@ -229,8 +231,7 @@ $idd = get_the_ID();
 </div>
 </p>
 </div>
-</div>
-</div>
+
 
 
 <?php } else {
@@ -245,7 +246,8 @@ $idd = get_the_ID();
 ?>
 
 </div>
-  
+</div>
+
 </article>
 <?php endwhile; // End of the loop. ?>
 <?php
