@@ -35,89 +35,40 @@ while ( have_posts() ) : the_post(); ?>
 </div>
 
 
-<?php
-      $args= array(
-      'post_type' => 'gcc_programs',
-      'posts_per_page'=> -1,
-      'orderby' => 'title',
-      'order' => 'ASC',
-      );
-      ?>
-      <?php
-      $programs = new WP_Query($args);
-      if(is_array($programs->posts) && !empty($programs->post)) {
-      foreach($programs->posts as $programs->post) {
-      $post_taxs = wp_get_post_terms($programs->post->ID, 'pathway_names');
-      if(is_array($post_taxs) && !empty($post_taxs)) {
-      foreach($post_taxs as $post_tax) {
-      $program_taxs[$post_tax->slug] = $post_tax->name;
-      }
-      }
-      }
-      }
-            ?>
+
 <div class="row expanded">
 <div class="columns">
 <div class="callout secondary">
 
-<div class="row expanded">
-<div class="columns medium-3">
-<label class="h5">By Goal</label>
-<select  name="goal" onchange="location = this.value;"><option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/career-preparation/">Career preparation</option>
-  <option value="/pathways/career-pathways/programs/four-year-transfer">Four-year transfer</option>
-</select>
-</label>
-</div>
-<div class="columns medium-3">
-<label class="h5">By Career Pathway</label>
-<select name="career" onchange="location = this.value;">
-  <option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/humanities-and-arts-pathway">Arts &amp; Humanities</option>
-  <option value="/pathways/career-pathways/programs/business-pathway">Business</option>
-  <option value="/pathways/career-pathways/programs/social-science-and-education">Education &amp; Social Science</option>
-  <option value="/pathways/career-pathways/programs/health-science-pathway">Healthcare</option>
-  <option value="/pathways/career-pathways/programs/it-and-technical-studies-pathway">IT &amp; Cybersecurity</option>
-  <option value="/pathways/career-pathways/programs/public-service-pathway">Public Service</option>
-  <option value="/pathways/career-pathways/programs/science-and-engineering-pathway">Science &amp; Engineering</option>
-</select>
-</div>
-<div class="columns medium-3">
-<label class="h5">By Degree Type</label>
-<select name="degree" onchange="location = this.value;">
-  <option value="/pathways/career-pathways/">All</option>
-  <option value="/pathways/career-pathways/programs/associate-degree">Associate Degree</option>
-  <option value="/pathways/career-pathways/programs/certificate">Certificate</option>
-</select>
-</div>
-<div class="columns medium-3">
-<label class="h5">By Delivery</label>
-<select name="delivery" onchange="location = this.value;">
-<option value="/pathways/career-pathways/">All</option>
-<option value="/pathways/career-pathways/programs/100-percent-online-option/">100% Online Option</option>
-<option value="/pathways/career-pathways/">Any Option</option>
-</select>
+<?php do_action('show_beautiful_filters'); ?>
+
 </div>
 </div>
 </div>
 </div>
 </div>
-<?php
-      while($programs->have_posts()) : $programs->the_post();
-      if ( $programs ) {
-    // do stuff
+
+ <?php
+
+$args = array(
+  'post_type' => 'gcc_programs',
+  'orderby'     => 'TITLE',
+  'order'       => 'ASC',
+  'tax_query' => array(
+    array(
+      'taxonomy' => 'pathway_names',
+      'field'    => 'slug',
+      'terms'    => $term,
+    ),
+  ),
+);
+$query = new WP_Query( $args );
+
+  if($query->have_posts()) { 
+
+
+     while($query->have_posts()) : $query->the_post();
 ?>
-<?php 
-$idd = get_the_ID();
-      $item_classes = '';
-      $item_cats = get_the_terms($post->ID, 'pathway_names');
-      if($item_cats):     
-      foreach($item_cats as $item_cat) {
-      $item_classes .= $item_cat->slug . ' '; 
-      $do_not_duplicate = $post->ID; //This is the magic line
-      } 
-      ?>
-<?php endif; ?>
 
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
@@ -232,15 +183,11 @@ $idd = get_the_ID();
 </div>
 
 
-<?php } else {
-    // do something else
-  ?>
-  <?php
-}
-?>
+  <?php endwhile; 
+  wp_reset_query();
 
-<?php wp_reset_query(); ?>
-<?php endwhile;  
+} 
+
 ?>
 </div>
 </div>
