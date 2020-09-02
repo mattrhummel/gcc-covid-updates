@@ -45,27 +45,24 @@ $post_page_title= get_field('post_page_title', 'option');
    <?php $custom_terms = get_terms('gcc_programs'); ?>
 
    <?php foreach($custom_terms as $custom_term) {
-    wp_reset_query();
     
       $args = array('post_type' => 'gcc_programs',
           'orderby' => 'title',
           'order' => 'ASC'
        ); 
+      
       ?>
 
-      <?php $loop = new WP_Query($args);
+  <?php $loop = new WP_Query($args);
 
-      do_action('show_beautiful_filters'); 
-     
-      if($loop->have_posts()) { 
+    do_action('show_beautiful_filters'); 
+ 
+    if($loop->have_posts()) { 
 
-        while($loop->have_posts()) : $loop->the_post();
+      while($loop->have_posts()) : $loop->the_post();
 
-      ?>
+  ?>
     
-
-
-
 <div class="row expanded" data-equalizer>
 <div class="columns medium-7">
 
@@ -107,7 +104,6 @@ $post_page_title= get_field('post_page_title', 'option');
 </li>
 </ul>
 </div>
-
 
 <div class="hide-for-small-only">
 <div class="row expanded">
@@ -178,13 +174,14 @@ $post_page_title= get_field('post_page_title', 'option');
 </div>
 </p>
 </div>
-
           
-        <?php 
+<?php 
 
-         endwhile; } }
-        
-         ?>
+  endwhile; } }
+
+?>
+
 <?php endif; ?>
+
 <?php
 get_footer();
