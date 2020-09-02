@@ -5,6 +5,8 @@
  * @link https://developer.wordpress.org/themes/basics/template-hierarchy/
  *
  * @package gccwp-2018
+ * 
+ * Template Name: Pathway Archives
  */
 get_header();
 $post_page_title= get_field('post_page_title', 'option');
