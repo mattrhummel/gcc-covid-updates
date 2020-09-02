@@ -44,15 +44,11 @@ $post_page_title= get_field('post_page_title', 'option');
 
 
     <?php foreach($custom_terms as $custom_term) {
-    wp_reset_query();
-    $args = array('post_type' => 'cw_events',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'cw_event_categories',
-                'field' => 'slug',
-                'terms' => $custom_term->slug,
-            ),
-        ),
+      
+      wp_reset_query();
+     
+     $args = array('post_type' => 'gcc_programs',
+        
      ); ?>
 
      <?php do_action('show_beautiful_filters'); ?>
