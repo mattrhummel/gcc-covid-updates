@@ -40,8 +40,6 @@ $post_page_title= get_field('post_page_title', 'option');
 
     <?php $custom_terms = get_terms('gcc_programs'); ?>
 
-     <?php do_action('show_beautiful_filters'); ?>
-
     <?php foreach($custom_terms as $custom_term) {
     wp_reset_query();
     $args = array('post_type' => 'gcc_programs',
@@ -49,8 +47,9 @@ $post_page_title= get_field('post_page_title', 'option');
      ); ?>
 
 
-
     <?php $loop = new WP_Query($args);
+
+    do_action('show_beautiful_filters'); 
      
     if($loop->have_posts()) { 
 
