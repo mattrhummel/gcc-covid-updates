@@ -40,9 +40,8 @@ $post_page_title= get_field('post_page_title', 'option');
         </nav>
     </header>
 
-      <?php $custom_terms = get_terms('cw_event_categories'); ?>
+   <?php $custom_terms = get_terms('gcc_programs'); ?>
 
-   
    <?php foreach($custom_terms as $custom_term) {
     wp_reset_query();
     
