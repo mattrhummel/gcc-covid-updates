@@ -24,6 +24,10 @@
   //custom department widgets
   dynamic_sidebar( 'tutoring-services-widgets' );
   }
+  if ( is_page('title-ix') || $post->post_parent == 'title-ix' ) {
+  //custom department widgets
+  dynamic_sidebar( 'title-ix-widgets' );
+  }
   //about germanna
   if ( is_page('25') || $post->post_parent == '25' || $post->post_parent == '1222' || $post->post_parent == '1223' || $post->post_parent == '1228' || $post->post_parent == '1224' ) {
   //custom department widgets
