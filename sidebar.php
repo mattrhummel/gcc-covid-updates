@@ -24,10 +24,6 @@
   //custom department widgets
   dynamic_sidebar( 'tutoring-services-widgets' );
   }
-  if ( is_page('48438') || $post->post_parent == '48438' ) {
-  //title nine widgets
-  dynamic_sidebar( 'title-nine-widgets' );
-  }
   //about germanna
   if ( is_page('25') || $post->post_parent == '25' || $post->post_parent == '1222' || $post->post_parent == '1223' || $post->post_parent == '1228' || $post->post_parent == '1224' ) {
   //custom department widgets
@@ -463,6 +459,10 @@
   if ( is_page('113') || $post->post_parent == '113' || is_post_type_archive( 'workforce-updates' ) ) {
   //custom department widgets
   dynamic_sidebar( 'workforce-widgets' );
+  }
+  if ( is_page('48438') || $post->post_parent == '48438' ) {
+  //title nine widgets
+  dynamic_sidebar( 'title-nine-widgets' );
   }
   ?>
 </aside>
