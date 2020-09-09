@@ -462,7 +462,7 @@
   }
   if ( is_page('48438') || $post->post_parent == '48438' ) {
   //title nine widgets
-  dynamic_sidebar( 'title-nine-widgets' );
+  dynamic_sidebar( 'titlenine-widgets' );
   }
   ?>
 </aside>
