@@ -738,6 +738,15 @@ register_sidebar(array(
 	'after_title' => '</h3>',
 	));
 register_sidebar(array(
+	'id' => 'title-nine-widgets',
+	'name' => __( 'Title-IX Sidebar widgets', 'gcc-wp-2018' ),
+	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
+	'before_widget' => '<div class="widget">',
+	'after_widget' => '</div>',
+	'before_title' => '<h3>',
+	'after_title' => '</h3>',
+	));
+register_sidebar(array(
 	'id' => 'technical-services-widgets',
 	'name' => __( 'Technical Services Sidebar widgets', 'gcc-wp-2018' ),
 	'description' => __( 'Drag widgets to this sidebar container.', 'gcc-wp-2018' ),
