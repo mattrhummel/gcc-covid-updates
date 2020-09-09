@@ -99,7 +99,7 @@
     'testing-menu' => 'Testing Menu',
     'transfer-services-menu' => 'Transfer Services Menu',
     'tutoring-menu' => 'Tutoring Menu',
-    'title-ix-menu' => 'Title-IX Menu',
+    'titleix-menu' => 'TitleIX Menu',
     'veterans-sidebar-menu' => 'Veterans Menu',
     'welcome-day-menu' => 'Welcome Day Menu',
     'workforce-menu' => 'Workforce Menu',
