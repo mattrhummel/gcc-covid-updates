@@ -96,7 +96,7 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
       window.almOnLoad = function(alm){
-  .foundation();
+ var elem = new Foundation.Accordion(element, options);
 };
 </script>
 <?php
