@@ -96,7 +96,7 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
       window.almOnLoad = function(alm){
-  console.log("Ajax Load More is now loaded");
+  .foundation();
 };
 </script>
 <?php
