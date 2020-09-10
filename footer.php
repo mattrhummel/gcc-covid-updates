@@ -95,9 +95,7 @@ function getRandomImage(imgAr, path) {
 <?php wp_footer(); ?>
 <script>
       $(document).foundation();
-      window.almComplete = function(alm){
-      $(document).foundation();
-}
+    
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
