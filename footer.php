@@ -95,6 +95,9 @@ function getRandomImage(imgAr, path) {
 <?php wp_footer(); ?>
 <script>
       $(document).foundation();
+      window.almOnLoad = function(alm){
+  console.log("Ajax Load More is now loaded");
+};
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
