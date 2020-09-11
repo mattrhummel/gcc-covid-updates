@@ -96,8 +96,12 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
   window.almComplete = function(alm){
-Foundation.reInit(['tooltip', 'dropdown', 'equalizer']);
-};
+    new Foundation.reInit(['tooltip']);
+    new Foundation.Equalizer($("#ajax_content")).getHeightsByRow(resetHeights);
+  };
+  function resetHeights(groups) {
+  $('#ajax-load-more').foundation('applyHeightByRow', groups);
+  }
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
