@@ -100,7 +100,7 @@ function getRandomImage(imgAr, path) {
   $.getScript( base_url1 + "/ajax/libs/jquery/3.5.1/jquery.min.js" );
   var base_url2 = 'https://cdnjs.cloudflare.com';
   $.getScript( base_url2 + "/ajax/libs/foundation/6.6.1/js/foundation.min.js" );
-  Foundation.reInit($('tooltip, accordion, data-equalizer');
+  Foundation.reInit(['tooltip, data-equalizer']);
 };
 </script>
 <?php
