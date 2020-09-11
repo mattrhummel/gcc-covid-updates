@@ -96,6 +96,8 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
 window.almComplete = function(alm){
+  var base_url2 = 'https://ajax.googleapis.com';
+  $.getScript( base_url2 + "/ajax/libs/jquery/3.5.1/jquery.min.js" );
   var base_url = 'https://cdnjs.cloudflare.com';
   $.getScript( base_url + "/ajax/libs/foundation/6.6.1/js/foundation.min.js" );
 };
