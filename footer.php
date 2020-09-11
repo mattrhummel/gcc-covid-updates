@@ -101,7 +101,7 @@ function getRandomImage(imgAr, path) {
   var base_url2 = 'https://cdnjs.cloudflare.com';
   $.getScript( base_url2 + "/ajax/libs/foundation/6.6.1/js/foundation.min.js" );
   var elem = new Foundation.Equalizer(element, options);
-  $('#element').foundation('getHeightsByRow', cb);
+  $('.row, .callout').foundation('getHeightsByRow', cb);
 };
 </script>
 <?php
