@@ -96,7 +96,7 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
   window.almComplete = function(alm){
-Foundation.reInit(['tooltip, applyHeightByRow']);
+Foundation.reInit(['tooltip', 'accordion']);
 };
 </script>
 <?php
