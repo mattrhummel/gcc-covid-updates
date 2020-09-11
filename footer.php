@@ -96,8 +96,7 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
   window.almComplete = function(alm){
-Foundation.reInit(['tooltip, data-equalizer']);
- $('.alm-listing').foundation('applyHeightByRow', groups);
+Foundation.reInit(['tooltip, applyHeightByRow']);
 };
 </script>
 <?php
