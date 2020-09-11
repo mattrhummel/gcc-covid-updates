@@ -95,6 +95,10 @@ function getRandomImage(imgAr, path) {
 <?php wp_footer(); ?>
 <script>
       $(document).foundation();
+window.almComplete = function(alm){
+  var base_url = 'https://cdnjs.cloudflare.com';
+  $.getScript( base_url + "/ajax/libs/foundation/6.6.1/js/foundation.min.js" );
+};
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
