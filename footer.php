@@ -96,8 +96,7 @@ function getRandomImage(imgAr, path) {
 <script>
       $(document).foundation();
   window.almComplete = function(alm){
-  new Foundation.reInit($(".tooltip"));
-  new Foundation.Accordion(($("#ajax-load-more"));
+  new Foundation.reInit($(".tooltip, data-equalizer"));
   new Foundation.Equalizer($("#ajax-load-more")).getHeightsByRow(resetHeights);
   };
   function resetHeights(groups) {
