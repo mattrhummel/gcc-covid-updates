@@ -376,6 +376,11 @@
   //custom department widgets
   dynamic_sidebar( 'payingforcollege-widgets' );
   }
+   //planned giving
+  if ( is_page('48405') || $post->post_parent == '48405' ) {
+  //custom department widgets
+  dynamic_sidebar( 'planned-giving-widgets' );
+  }
   //pta
   if ( is_page('92') || $post->post_parent == '92' ) {
   //custom department widgets
@@ -460,7 +465,7 @@
   //custom department widgets
   dynamic_sidebar( 'workforce-widgets' );
   }
-  if ( is_page('48438') || $post->post_parent == '48438' ) {
+  if ( is_page('45808') || $post->post_parent == '45808' ) {
   //title nine widgets
   dynamic_sidebar( 'titlenine-widgets' );
   }

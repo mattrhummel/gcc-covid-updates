@@ -87,6 +87,7 @@
     'policies-menu' => 'Policies Menu',
     'publications-menu' => 'Publications Menu',
     'presidents-office-menu' => 'Presidents Office Menu',
+    'planned-giving-menu' => 'Planned Giving Menu',
     'printing-sidebar-menu' => 'Printing Menu',
     'professional-technical-menu' => 'Professional Technical Menu',
     'programs-menu' => 'Programs Menu',

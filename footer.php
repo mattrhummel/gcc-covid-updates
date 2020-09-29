@@ -94,15 +94,22 @@ function getRandomImage(imgAr, path) {
 
 <?php wp_footer(); ?>
 <script>
-      $(document).foundation();
+  $(document).foundation();
   window.almComplete = function(alm){
-  new Foundation.reInit($(".tooltip, .accordion, data-equalizer"));
-  
-  new Foundation.Equalizer($("#ajax-load-more")).getHeightsByRow(resetHeights);
-  };
-  function resetHeights(groups) {
-    $('#ajax-load-more').foundation('applyHeightByRow', groups);
+  $('#tooltip, .accordion').foundation();
+  new Foundation.Equalizer($("#ajax-load-more"));
+  function resetHeights() {
+    $('#ajax-load-more').foundation();
   }
+  };
+
+  window.almOnLoad = function(alm){
+  $('#tooltip, .accordion').foundation();
+  new Foundation.Equalizer($("#ajax-load-more"));
+   function resetHeights() {
+    $('#ajax-load-more').foundation();
+  }
+  };
 </script>
 <?php
 if ( is_page('107') || $post->post_parent == '107' ) {  ?>
