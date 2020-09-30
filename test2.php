@@ -1,187 +1,157 @@
+
       <div class="row expanded">
 <div class="columns">
-<div class="callout small text-center">
-<p><strong>We’re open for you.</strong> Our physical locations are closed, but the college remains open as learning continues online.</p>
-<p><a href="/COVID-19">COVID-19 Resources</a> • <a href="/financial-aid/cares-emergency-funding/">CARES Act Emergency Financial Aid Grants for Students</a> • <a href="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/GCC-Reopening-Plan.pdf">Campus Reopening Plan</a> • <a href="/covid_19/gcc-return-to-campus-self-wellness-check-forms-and-qr-codes/">Self-Wellness Check</a></p>
+<div class="callout" style="background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/open-house-3.jpg'); background-repeat: no-repeat; background-size: cover; background-position: top right;min-height:65vh;">
+<div class="row expanded collapse">
+<div class="medium-6 columns"></div>
+<div class="medium-6 columns">
+<div class="callout large" style="background-color:#fff;border-top:14px solid #b22144;">
+<p class="label secondary alert">VIRTUAL EVENT</p>
+<h2 class="h1"><span style="color:#b22144">Open House</span> at <em>your</em> house</h2>
+<h4 class="subheader">October 15, 6:30 p.m. EST</h4>
+<p class="lead">Discover what makes us a top-ranked community college in Virginia and the country.</p>
+<p><a class="button large" href="https://vccs.zoom.us/meeting/register/tJUvcumopj8iHNWwbuomrMMka7-eodk5bSy0">Register today</a></p>
+<p>This event will be held via Zoom.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row expanded" data-equalizer="">
+<div class="columns">
+<div class="callout large">
+<h2 class="text-center">Your future is bright.</h2>
+<h3 class="text-center">During the event, we&#8217;ll explore all we have to offer:</h3>
+</div>
+</div>
+</div>
+<div class="row expanded" data-equalizer="">
+<div class="medium-4 columns">
+<div class="callout large alert" data-equalizer-watch="">
+<div class="stat text-center"><i style="color:#b22144" class="fa fa-exchange-alt" aria-hidden="true"></i> </div>
+<h2 class="h4 text-center">College Transfer</h2>
+<p><strong>Save thousands</strong> by completing the first two years of your bachelor’s degree here. Take advantage of guaranteed transfer to a top VA four-year school.</p>
+<ul>
+<li>45+ Transfer Partners</li>
+<li>#1 in UMW transfers</li>
+<li>1/3 of the cost</li>
+</ul>
+<div class="row expanded">
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%;"/>
+    </div>
+<div class="columns medium-10">
+	<p><strong>Marie Hawely</strong>, Coordinator Career &amp; Transfer Services</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="medium-4 columns">
+<div class="callout large alert" data-equalizer-watch="">
+<div class="stat text-center"><i style="color:#b22144" class="fa fa-heartbeat h1" aria-hidden="true"></i> </div>
+<h2 class="h4 text-center">Career Training</h2>
+<p><strong>A four-year degree isn’t your only option.</strong> Earn an industry-recognized credential. Get to work and start earning within weeks, not years.</p>
+<ul>
+<li>Apprenticeships</li>
+<li>In-demand careers</li>
+<li>Fast training in weeks</li>
+</ul>
+<div class="row expanded">
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%;"/>
+    </div>
+<div class="columns medium-10">
+	<p><strong>Barbara Taylor</strong>, Director, Business Development Services</p>
+</div>
+</div>
+</div>
+</div>
+<div class="medium-4 columns">
+<div class="callout large alert" data-equalizer-watch="">
+<div class="stat text-center"><i style="color:#b22144" class="fa fa-university" aria-hidden="true"></i> </div>
+<h2 class="h4 text-center">Early College for high school students</h2>
+<p><strong>Start college early.</strong> Save time and money by earning transferable college credit while in high school.</p>
+<ul>
+<li>Gain real college experience</li>
+<li>Earn college credit</li>
+<li>Complete your degree in high school</li>
+</ul>
+<div class="row expanded">
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%;"/>
+    </div>
+<div class="columns medium-10">
+	<p><strong>Lawana Burnett</strong>, Academic Advisor, Gladys P. Todd Academy</p>
+</div>
 </div>
 </div>
 </div>
 <div class="row expanded">
 <div class="columns">
-<div class="callout large" style="background-color: #fff; background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/home-summer-multi.jpg'); background-position: left center; background-size: cover; background-repeat: no-repeat;" data-equalizer-watch="">
+<div class="callout secondary large text-center">
+<h2 class="h3">College Everywhere, 100% online, accelerated degrees</h2>
+<p class="lead"><strong>Get to your future, fast.</strong> Complete your transferable two-year associate degree in half the time, completely online.</p>
+<p class="lead">Degrees offered in <strong>Business, College Transfer, Cybersecurity, and Healthcare.</strong></p>
 <div class="row expanded">
-<div class="columns medium-7">
-<h1>Virtual Open House</h1>
-<h2 class="subheader">For high school and home school students and families</h2>
-<h3>Thursday, August 6</h3>
-<p class="lead">Discover all that Germanna has to offer your student this fall.</p>
-<p><a class="button large" href="/openhouse">Join Us</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="medium-8 columns">
-<div class="callout large" style="background-color: #fff; background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/home-fall.jpg'); background-repeat: no-repeat; background-size: contain; background-position: top right;" data-equalizer-watch="">
-<h2 class="hide-for-small-only">We&#8217;re online for you this fall</h2>
-<h3>Smart. Quality. Flexible.</h3>
-<p class="lead hide-for-small-only">Our decision to be fully online this fall is based, first-and-foremost, on your health and safety. We’re committed to providing a high-quality, safe and smart option for you to keep working towards your goals and brighter future.</p>
-<h2 class="label success">Don&#8217;t miss it</h2>
-<p class="lead">Register by <strong>August 15</strong> and be automatically entered into a drawing for one of 20 $500 scholarships or one $1,000 scholarship</p>
-<h3>It&#8217;s not too late to regsiter for fall classes</h3>
-<ul class="lead">
-<li>15-week term starts <strong>August 24</strong></li>
-<li>Accelerated class sessions start <strong>August 10</strong></li>
-</ul>
-<p><a class="button" href="/admissions/fall-classes/">Fall classes</a> <a class="button" href="/admissions/request-information">Meet us virtually</a></p>
-</div>
-</div>
-<div class="medium-4 columns">
-<div class="hide-for-small-only callout" style="background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/fall-online.jpg'); background-repeat: no-repeat; background-size: cover; background-position: top center;" data-equalizer-watch=""> </div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="columns medium-6">
-<div class="callout large warning" data-equalizer-watch="">
-<h3>Future Students</h3>
-<h4>Don&#8217;t wait, start today</h4>
-<p><a class="button" href="https://www.apply.vccs.edu/applications/vccs/apply.html?application_id=4084">Apply Now</a> <a class="button" href="/admissions/request-information">Next steps for Future Students</a></p>
-</div>
-</div>
-<div class="columns medium-6">
-<div class="callout large warning" data-equalizer-watch="">
-<h3>Current Students</h3>
-<h4>Keep learning, we&#8217;re here for you</h4>
-<p><a class="button" href="/students">Online Resources for Current Students</a></p>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="columns medium-7">
-<div class="callout large success" data-equalizer-watch="">
-<h2 class="label alert">College Transfer</h2>
-<h3>An online, affordable path to completing your bachelor&#8217;s degree</h3>
-<p class="lead">Fully accreditated and top-ranked, we&#8217;re the smart choice for completing the first two years of your bachelor&#8217;s degree.</p>
-<ul>
-<li>Learn anywhere through flexible, online classes</li>
-<li>Make a transfer plan with expert advisors</li>
-<li>Save even more by staying home while pursuing your degree</li>
-</ul>
-<p><a class="button" href="/fall">Start your transfer path</a></p>
-</div>
-</div>
-<div class="columns medium-5 text-center">
-<div class="callout alert large" data-equalizer-watch="">
-<div class="stat"><i class="fa fa-exchange-alt h1" aria-hidden="true"></i> </div>
-<h3>45+ transfer partners</h3>
-<div class="stat"><i class="fa fa-university h1" aria-hidden="true"></i> </div>
-<h3>#1 in UMW transfers</h3>
-<div class="stat"><i class="fa fa-search-dollar h1" aria-hidden="true"></i> </div>
-<h3>1/3 cost of most VA four-year schools</h3>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="columns medium-6">
-<div class="callout secondary large" style="background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/college-everywhere-hero-affordable-online-degree-programs.jpg'); background-repeat: no-repeat; background-size: cover; background-position: center center;" data-equalizer-watch=""><small class="label alert">Register by August 7</small></p>
-<h2>College everywhere</h2>
-<h3 class="subheader hide-for-small-only">Your future. Fast.</h3>
-<p class="lead">100% online, accelerated degree programs</p>
-<ul>
-<li>Business Administration</li>
-<li>General Studies</li>
-<li>Information Systems Technology, Cybersecurity</li>
-<li>Pre-Bachelor&#8217;s of Science in Nursing (BSN)</li>
-</ul>
-<p><a class="button success" href="/pathways/college-everywhere">Fast track your degree</a></p>
-</div>
-</div>
-<div class="columns medium-6">
-<div class="callout large" data-equalizer-watch="">
-<h2>Wellness Wednesdays</h2>
-<h3 class="subheader">30 minute virtual sessions exploring the eight pillars of wellness.</h3>
-<p class="lead">Each Wednesday at noon in July and August</p>
-<div class="row expanded collapse" style="margin-bottom: 10px;">
-<div class="columns medium-2" style="padding-right: 10px;"><img class="hide-for-small-only" style="border-radius: 100%;" src="https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/tracey.png" alt="suzanne amoruso" width="150px" height="150px" /></div>
-<div class="columns medium-10">
-<h3>Intellectual Wellness, Wednesday, August 5, noon</h3>
-<p>Tracey F. Williams, M.Ed., PTA, is the Director of Clinical Education and an assistant professor at Germanna Community College in the Physical Therapist Assistant program.</p>
-<p><a class="button" href="https://www.germanna.edu/wellness-wednesdays/">Learn more and register</a></p>
-</div>
-</div>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="small-6 columns">
-<div class="callout alert" data-equalizer-watch="">
-<h3>Online learning.<br />
-Real support.</h3>
-<ul class="no-bullet lead hide-for-small-only ">
-<li>World-class online learning platform</li>
-<li>Online academic resources</li>
-<li>Suite of online support services</li>
-</ul>
-</div>
-</div>
-<div class="small-6 columns">
-<div class="callout success" data-equalizer-watch="">
-<h3>Virtual classrooms.<br />
-Amazing people.</h3>
-<ul class="no-bullet lead hide-for-small-only ">
-<li>300+ credentialed faculty</li>
-<li>13,000 students</li>
-<li>22:1 student-faculty ratio</li>
-</ul>
-</div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="medium-8 columns">
-<div class="callout secondary large" data-equalizer-watch="">
-<h2>Career Training</h2>
-<p class="lead hide-for-small-only ">A four-year degree isn’t your only option. Earn an industry-recognized credential. Get to work and start earning.</p>
-<ul class="no-bullet">
-<li>
-<h3>Industry &amp; Construction</h3>
-</li>
-<li>
-<h3>IT &amp; Cybersecurity</h3>
-</li>
-<li>
-<h3>Healthcare &amp; Wellness</h3>
-</li>
-</ul>
-<p><a class="button" href="/pathways">More Career Paths</a> <a class="button" href="/workforce">Workforce Training</a></div>
-</div>
-<div class="medium-4 columns">
-<div class="hide-for-small-only callout small" style="background-image: url('https://78bbm3rv7ks4b6i8j3cuklc1-wpengine.netdna-ssl.com/wp-content/uploads/home-career.jpg'); background-repeat: no-repeat; background-size: cover; background-position: top center;" data-equalizer-watch=""> </div>
-</div>
-</div>
-<div class="row expanded" data-equalizer="">
-<div class="small-6 columns">
-<div class="callout success" data-equalizer-watch="">
-<h3>College-level learning.<br />
-Completely online.</h3>
-<ul class="no-bullet lead hide-for-small-only ">
-<li>College degrees and career training</li>
-<li>Flexible for working adults</li>
-<li>Classes for high school students</li>
-</ul>
-</div>
-</div>
-<div class="small-6 columns">
-<div class="callout alert" data-equalizer-watch="">
-<h3>Affordable, accredited<br />
-and top-ranked.</h3>
-<ul class="no-bullet lead hide-for-small-only ">
-<li>Low cost. Financial support available</li>
-<li>Same quality as VA 4-year schools</li>
-<li>#1 Virginia Community College</li>
-</ul>
-</div>
-</div>
-</div>
-      
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%; float: right;"/>
     </div>
+<div class="columns medium-10">
+<p><strong>Sandra Staymates</strong>, College Everywhere, Academic Advisor</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row expanded">
+<div class="medium-6 columns">
+<div class="callout large" data-equalizer-watch="">
+<div class="stat text-center"><i style="color:#b22144" class="fa fa-user-edit" aria-hidden="true"></i> </div>
+<h2 class="h3 text-center">Admissions</h2>
+<p><strong>We&#8217;re open to all and always enrolling.</strong> No application fees or minimum GPA requirements. You&#8217;re ready for Germanna.</p>
+<ul>
+<li>One-step admissions process</li>
+<li>Credit for prior experience</li>
+<li>Next steps</li>
+</ul>
+<div class="row expanded">
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%;"/>
+    </div>
+<div class="columns medium-10">
+<p><strong>Cheri Maea</strong>, Director of Enrollment Services</p>
+</div>
+</div>
+</div>
+</div>
+<div class="medium-6 columns">
+<div class="callout large" data-equalizer-watch="">
+<div class="stat text-center"><i style="color:#b22144" class="fa fa-search-dollar" aria-hidden="true"></i> </div>
+<h2 class="h3 text-center">Paying for your future</h2>
+<p><strong>Pay a fraction of the cost</strong> for the same high-quality education you would receive at our partner colleges and universities. Financial assistance is available.</p>
+<ul>
+<li>Financial aid and tuition assistance</li>
+<li>Local scholarships</li>
+<li>Military benefits</li>
+</ul>
+<div class="row expanded">
+<div class="columns medium-2" style="padding-right: 10px;">
+<img loading="lazy" src="/wp-content/uploads/robert.png" height="150px" width="150px" alt="alane cameron ford" style="border-radius: 100%;"/>
+    </div>
+<div class="columns medium-10">
+<p><strong>Saberina Ballard</strong>, Financial Aid Advisor</p>
+</div>
+</div>
+</div>
+</div>
+<div class="columns">
+<div class="callout large text-center" style="background-color:#fff;border-top:14px solid #b22144;">
+<h2 class="h1"><span style="color:#b22144">Open House</span> at <em>your</em> house</h2>
+<h3 class="subheader">We can&#8217;t wait to meet you virtually.</h3>
+<h4 class="subheader">October 15, 6:30 p.m. EST</h4>
+<p><a class="button large" href="https://vccs.zoom.us/meeting/register/tJUvcumopj8iHNWwbuomrMMka7-eodk5bSy0">Register today</a></p>
+</div>
+</div>
+</div>
